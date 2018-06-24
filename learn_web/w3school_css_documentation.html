@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Documentation</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="css_style.css" />
+  <link rel="stylesheet" href="examples.css" />
+  <link rel="stylesheet" href="id.css" />
+  <link rel="stylesheet" href="tables.css" />
+</head>
+
+<body>
+
+  <div id="intro">
+    <h1><a href="https://www.w3schools.com/css/default.asp" target="_blank">Intro</a></h1>
+    <h2>body</h2>
+    <p>
+      background-color: lightblue<br/> color: black<br/>font-size: 100%
+    </p>
+    <h2>p</h2>
+    <p>font-family: verdana<br/> font-size: 15px<br/>color: green
+    </p>
+  </div>
+  <p id="border"></p>
+
+  <div id="selectors">
+    <h1><a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank">Selectors</a></h1>
+    <div class="note">Note: Selector name cannot start with a number!</div>
+    <h2>id — #selector</h2>
+    <p id="selector">color: magenta</p>
+    <h2>class — .example1</h2>
+    <h4 class="example1">text-align: center</h4>
+    <h2>p.example2<h2>
+    <p class="example2">font-size: 10px</p>
+    <h2>few classes (class="example1 example2")</h2>
+    <p class="example1 example2">text-align: center</br>font-size: 10px</p>
+  </div>
+  <p id="border"></p>
+
+  <div id="colors">
+    <h1><a href="https://www.w3schools.com/css/css_colors.asp" target="_blank">Colors</a></h1>
+    <h2>named</h2>
+    <p style="color: darkkhaki">color: darkkhaki</p>
+    <h2>rgb (red, green, blue)</h2>
+    <p style="color: rgb(255, 99, 71)">color: rgb(255, 99, 71)</p>
+    <h2>rgba (red, green, blue, alpha)</h2>
+    <p style="color: rgba(255, 99, 71, 0.5)">color: rgba(255, 99, 71, 0.5)</p>
+    <h2>hex (hexadecimal)<a></h2>
+    <p style="color: #6a5acd">color: #6a5acd</p>
+    <h2>hsl (hue, saturation, lightness)</h2>
+    <p style="color: hsl(0, 40%, 50%)">color: hsl(0, 40%, 50%)</p>
+    <h2>hsl (hue, saturation, lightness, alpha)</h2>
+    <p style="color: hsla(0, 40%, 50%, 0.3)">color: hsla(0, 40%, 50%, 0.3)</p>
+  </div>
+  <p id="border"></p>
+
+  <div id="backgrounds">
+    <h1><a href="https://www.w3schools.com/css/css_background.asp" target="_blank">Backgrounds</a></h1>
+    <div class="note">Note: When using a background image, use an image that does not disturb the text.</div>
+    <div class="note">Tip: To repeat an image vertically, set background-repeat: repeat-y.</div>
+    <h2>background color</h2>
+    <p style="height: 80px; background-color: white;">background-color: white</p>
+    <h2>background image (in right top angle)</h2>
+    <p>background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfjCQ8gpwvAwT-CH1N_4cT7QidAzzS5oUcMyQMf0-B2OXBTfhKkA")</br>
+      background-repeat: no-repeat</br>
+      background-position: right top</br>
+      background-attachment: fixed;</p>
+    <h2>shorthand properties (the order of the property values)</h2>
+    <p>background: background-color background-image background-repeat background-attachment background-position</p>
+  </div>
+  <p id="border"></p>
+
+  <div id="borders">
+    <h1><a href="https://www.w3schools.com/css/css_border.asp" target="_blank">Borders</a></h1>
+    <div class="note">
+      Note: None of the OTHER CSS border properties described below will have ANY effect unless the border-style property is set!
+    </div>
+    <h2>border width, style and color</h2>
+    <p style="border:2px solid">border-width: 2px; border-style: solid</p>
+    <p style="border:2px dotted">border-width: 2px; border-style: dotted</p>
+    <p style="border:2px dashed blue">border-width: 2px; border-color: blue, border-style: dashed</p>
+    <p style="border:6px double">border-width: 6px, border-style: double</p>
+    <p style="border:6px groove">border-width: 6px, border-style: groove</p>
+    <p style="border:6px ridge">border-width: 6px, border-style: ridge</p>
+    <p style="border:1em inset">border-width: 1em; border-style: inset</p>
+    <p style="border:1em outset">border-width: 1em; border-style: outset</p>
+    <p style="border:2px none">border-style: none</p>
+    <p style="border:2px hidden">border-style: hidden</p>
+    <p style="height: 6em; border-style: dotted dashed solid groove; border-color: yellow red blue green">
+      border-style: dotted (top) dashed (right) solid (bottom) groove (left), border-color: yellow (top) red (right) blue (bottom) green (left)
+    </p>
+    <h2>shorthand properties (the order of the property values)</h2>
+    <p>border: border-width border-style (required) border-color</p>
+    <p style="border: 10px ridge grey">border: 10px ridge grey</p>
+    <h2>individual border properties</h2>
+    <p style="border-top: 4px dashed yellow; border-bottom: 2px dotted black">border-top: 4px dashed yellow, border-bottom: 2px dotted black</p>
+    <h2>rounded borders</h2>
+    <p style="border: 8px solid rgba(120, 90, 250, 0.4); border-bottom-width: 22px; border-radius: 12px">
+      border: 8px solid rgba(120, 90, 250, 0.4), border-bottom-width: 22px, border-radius: 12px
+    </p>
+  </div>
+  <p id="border"></p>
+
+  <div id="margins">
+    <h1><a href="https://www.w3schools.com/css/css_margin.asp" target="_blank">Margins (margin: 50px 100px 70px 30px;)</a></h1>
+    <div class="note">Tip: Negative values are allowed.</div>
+    <h2>individual sides</h2>
+    <p class="margin">
+      border: 1px solid black;</br>
+      margin-top: 50px;</br>
+      margin-bottom: 100px;</br>
+      margin-right: 150px;</br>
+      margin-left: 30px;</br>
+      background-color: lightgreen;
+    </p>
+    <h2>auto value</h2>
+    <p class="note" ; style="background-color: slateblue">
+      width: 830px;</br>
+      margin: auto;</br>
+      padding: 5px;</br>
+      text-align: center;</br>
+      background-color: slateblue;
+    </p>
+    <h2>inherit value (from the main element: 50px 100px 70px 30px)</h2>
+    <p style="background-color: tomato; margin: inherit;">
+      margin: inherit;</br>
+      background-color: tomato;
+    </p>
+    <h2>shorthand properties</h2>
+    <h3>four values</h3>
+    <p>margin: top right bottom left</p>
+    <p style="border: 1px dotted; margin: 30px 40px 10px 100px">border: 1px dotted; margin: 30px 40px 10px 100px</p>
+    <h3>three values</h3>
+    <p>margin: top right-left bottom</p>
+    <p style="border: 1px dotted; margin: 30px 40px 10px">border: 1px dotted; margin: 30px 40px 10px</p>
+    <h3>two values</h3>
+    <p>margin: top-bottom right-left</p>
+    <p style="border: 1px dotted; margin: 30px 40px">border: 1px dotted; margin: 30px 40px</p>
+    <h3>one value</h3>
+    <p>margin: all margins</p>
+    <p style="border: 1px dotted; margin: 100px">border: 1px dotted; margin: 100px</p>
+  </div>
+  <p id="border"></p>
+
+  <div id="paddings">
+    <h1><a href="https://www.w3schools.com/css/css_padding.asp" target="_blank">Padding</a></h1>
+    <div class="note">Tip: Negative values are allowed.</div>
+    <h2>Individual sides</h2>
+    <p class="padding">
+      border: 1px solid black;</br>
+      padding-top: 50px;</br>
+      padding-bottom: 100px;</br>
+      padding-right: 150px;</br>
+      padding-left: 30px;</br>
+      background-color: lightgreen;
+    </p>
+    <h2>Shorthand properties</h2>
+    <h3>Four values</h3>
+    <p>padding: top right bottom left</p>
+    <p style="border: 1px dotted; padding: 30px 40px 10px 100px">border: 1px dotted; padding: 30px 40px 10px 100px</p>
+    <h3>Three values</h3>
+    <p>padding: top right-left bottom</p>
+    <p style="border: 1px dotted; padding: 30px 40px 10px">border: 1px dotted; padding: 30px 40px 10px</p>
+    <h3>Two values</h3>
+    <p>padding: top-bottom right-left</p>
+    <p style="border: 1px dotted; padding: 30px 40px">border: 1px dotted; padding: 30px 40px</p>
+    <h3>One value</h3>
+    <p>padding: all paddings</p>
+    <p style="border: 1px dotted; padding: 100px">border: 1px dotted; padding: 100px</p>
+    <h2>padding and width</h2>
+    <h3>width + padding</h3>
+    <p class="example3">width: 300px;</br>
+      background-color: skyblue;</p>
+    <p class="example4">width: 300px;</br>
+      padding: 25px;</br>
+      background-color: violet;</p>
+    <h3>padding inside the width</h3>
+    <p class="example3">width: 300px;</br>
+      background-color: skyblue;</p>
+    <p class="example5">width: 300px;</br>
+      padding: 25px;</br>
+      box-sizing: border-box;</br>
+      background-color: violet;</p>
+  </div>
+  <p id="border"></p>
+
+  <div id="dimensions">
+    <h1><a href="https://www.w3schools.com/css/css_dimension.asp" target="_blank">Height and Width</a></h1>
+    <div class="note">
+      Note: The height and width properties do not include padding, borders, or margins; they set the height/width of the area inside the padding, border, and margin of the element!
+    </div>
+    <h2>settings height and width</h2>
+    <p class="example6">
+      height: 100px;</br>
+      width: 50%;</br>
+      background-color: hsl(39, 90%, 40%);</p>
+    <p class="example7">
+      height: 5cm;</br>
+      width: 22em;</br>
+      background-color: hsl(120, 90%, 40%);</p>
+    <h2>max and min sizes</h2>
+    <p class="example8">
+      max-width: 1000px;</br>
+      height: 100px;</br>
+      background-color: hsl(120, 90%, 90%);
+    </p>
+    <p class="example9">
+      max-height: 600px; min-height: 200px; background-color: hsl(180, 90%, 90%);
+    </p>
+  </div>
+  <p id="border"></p>
+
+  <div id="boxmodel">
+    <h1><a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">Box model</a></h1>
+    <div class="note">
+      Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
+    </div>
+    <h2>View</h2>
+    <p class="example10">
+      background-color: lightgrey;</br>
+      width: 300px;</br>
+      border: 25px solid green;</br>
+      padding: 25px;</br>
+      margin: 25px;
+    </p>
+  </div>
+  <p id="border"></p>
+
+  <div id="outline">
+    <h1><a href="https://www.w3schools.com/css/css_outline.asp" target="_blank">Outline</a></h1>
+    <div class="note">
+      Note: Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the
+      width of the outline.
+    </div>
+    <div class="note">
+      Note: None of the other outline properties will have any effect, unless the outline-style property is set!
+    </div>
+    <h2>View</h2>
+    <p class="example11">
+      border: 2px solid black; outline: #4CAF50 solid 10px; margin: auto; padding: 20px; text-align: center;
+    </p>
+    <h2>Style (outline width, style and color same as the border properties)</h2>
+    <p style="outline:2px solid">outline-width: 2px; outline-style: solid</p>
+    <p style="outline:2px dotted">outline-width: 2px; outline-style: dotted</p>
+    <p style="outline:2px dashed blue">outline-width: 2px; outline-color: blue, outline-style: dashed</p>
+    <p style="outline:6px double">outline-width: 6px, outline-style: double</p>
+    <p style="outline:6px groove magenta">outline-width: 6px, outline-style: groove</p>
+    <p style="outline:6px ridge green">outline-width: 6px, outline-style: ridge</p>
+    <p style="outline:0.5em inset yellow">outline-width: 0.5em; outline-style: inset</p>
+    <p style="outline:0.5em outset blue">outline-width: 0.5em; outline-style: outset</p>
+    <p style="outline:2px none">outline-style: none</p>
+    <p style="outline:2px hidden">outline-style: hidden</p>
+    <p style="border: 1px solid magenta; outline-style: solid; outline-color: invert;">
+      border: 1px solid magenta; outline-style: solid; outline-color: invert;
+    </p>
+    <h2>Additional width properties</h2>
+    <p style="border: 1px solid; outline: thin solid red;">
+      thin outline
+    </p>
+    <p style="border: 1px solid; outline: medium solid red;">
+      medium outline
+    </p>
+    <p style="border: 1px solid; outline: thick solid red;">
+      thick outline
+    </p>
+    <h2>Shorthand properties (the order of the property values)</h2>
+    <p>outline: outline-width outline-style (required) outline-color</p>
+    <h2>Offset</h2>
+    <p class="example12">
+      margin: 30px; background: yellow; border: 1px solid black; outline: 1px solid red; outline-offset: 15px;
+    </p>
+  </div>
+  <p id="border"></p>
+
+  <div id="text">
+    <h1><a href="https://www.w3schools.com/css/css_text.asp" target="_blank">Text</a></h1>
+    <div class="note">Note: For W3C compliant CSS: If you define the color property, you must also define the background-color.</div>
+    <div class="note">Note: It is not recommended to underline text that is not a link, as this often confuses the reader.</div>
+    <h2>Color</h2>
+    <p style="color: red">color: red</p>
+    <h2>Alignment</h2>
+    <p style="text-align: right;">text-align: right</p>
+    <p style="text-align: center;">text-align: center</p>
+    <p style="text-align: left;">text-align: left</p>
+    <p style="text-align: justify;">text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align:
+      justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify text-align: justify
+    </p>
+    <h2>Decoration</h2>
+    <p style="text-decoration: overline;">text-decoration: overline</p>
+    <p style="text-decoration: line-through;">text-decoration: line-through</p>
+    <p style="text-decoration: underline;">text-decoration: underline</p>
+    <h2>Transformation</h2>
+    <p style="text-transform: uppercase;">text-transform: uppercase;</p>
+    <p style="text-transform: lowercase;">text-transform: lowercase;</p>
+    <p style="text-transform: capitalize;">text-transform: capitalize;</p>
+    <h2>Indentantion</h2>
+    <p style="text-indent: 50px;">text-indent: 50px;</p>
+    <h2>Letter spacing</h2>
+    <p style="letter-spacing: 3px">letter-spacing: 3px</p>
+    <p style="letter-spacing: -2px">letter-spacing: -2px</p>
+    <h2>Line height</h2>
+    <p style="line-height: 0.8;">line-height: 0.8; line-height: 0.8; line-height: 0.8; line-height: 0.8; line-height: 0.8; line-height: 0.8; line-height: 0.8; line-height: 0.8; line-height: 0.8; line-height: 0.8; line-height: 0.8; line-height: 0.8; line-height: 0.8; line-height:
+      0.8; line-height: 0.8; line-height: 0.8;
+    </p>
+    <p style="line-height: 1.8;">line-height: 1.8; line-height: 1.8; line-height: 1.8; line-height: 1.8; line-height: 1.8; line-height: 1.8; line-height: 1.8; line-height: 1.8; line-height: 1.8; line-height: 1.8; line-height: 1.8; line-height: 1.8; line-height: 1.8; line-height:
+      1.8; line-height: 1.8; line-height: 1.8;
+    </p>
+    <h2>Direction</h2>
+    <p style="direction: rtl">direction: rtl</p>
+    <p style="float: left;">direction: rtl; unicode-bidi: bidi-override;=======></p>
+    <p style="direction: rtl; unicode-bidi: bidi-override;">direction: rtl; unicode-bidi: bidi-override;</p>
+    <h2 style="text-indent: -413px;">Word spacing</h2>
+    <p style="word-spacing: 10px;">word-spacing: 10px; word-spacing: 10px; word-spacing: 10px;</p>
+    <p style="word-spacing: -8px;">word-spacing: -8px; word-spacing: -8px; word-spacing: -8px;</p>
+    <p style="white-space: nowrap;">white-space: nowrap; white-space: nowrap; white-space: nowrap; white-space: nowrap; white-space: nowrap; white-space: nowrap; white-space: nowrap; white-space: nowrap; whit
+    </p>
+    <h2>Shadow</h2>
+    <p> text-shadow: horizontal shadow vertical shadow color</p>
+    <p style="text-shadow: 3px 2px red;">text-shadow: 3px 2px red;</p>
+  </div>
+  <p id="border"></p>
+
+  <div id="fonts">
+    <h1><a href="https://www.w3schools.com/css/css_font.asp" target="_blank">Fonts</a></h1>
+    <div class="note">Note: On computer screens, sans-serif fonts are considered easier to read than serif fonts.</div>
+    <div class="note">Note: If the name of a font family is more than one word, it must be in quotation marks, like: "Times New Roman".</div>
+    <div class="note">Note: If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).</div>
+    <div class="note">Tip: If you use pixels, you can still use the zoom tool to resize the entire page.</div>
+    <h2>Family</h2>
+    <p style="font-family: 'Times New Roman', Times, serif;">font-family: "Times New Roman", Times, serif;</p>
+    <p style="font-family: 'Courier New', 'Lucida Console', monospace;">'Courier New', 'Lucida Console', monospace;</p>
+    <p style="font-family: Arial, Verdana, sans-serif;">Arial, Verdana, sans-serif;</p>
+    <h2>Style</h2>
+    <p style="font-style: normal;">font-style: normal;</p>
+    <p style="font-style: italic;">font-style: italic;</p>
+    <p style="font-style: oblique;">font-style: oblique;</p>
+    <h2>Size</h2>
+    <p style="font-size: 40px;">font-size: 40px;</p>
+    <p style="font-size: 60px;">font-size: 60px;</p>
+    <h2>Size with em</h2>
+    <p style="font-size: 2.5em;">font-size: 2.5em; /* 40px/16=2.5em */;</p>
+    <p style="font-size: 1.875em;">font-size: 1.875em; /* 30px/16=1.875em */</p>
+    <h2>Combination of percent and em</h2>
+    <div class="note">The solution that works in all browsers, is to set a default font-size in percent for the 'body' element.</div>
+    <h2>Shorthand properties</h2>
+    <p style="font:italic bold 20px/60px Georgia, serif;">font:italic bold 12px/30px Georgia, serif;</p>
+    <p style="font-weight: normal;">Normal — font-weight: normal;</p>
+    <p style="font-weight: lighter;">Light — font-weight: lighter;</p>
+    <p style="font-weight: bold;">Thick — font-weight: bold;</p>
+    <p style="font-weight: 900;">Thicker — font-weight: 900;</p>
+    <h2>Responsive font size</h2>
+    <div class="note">Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</div>
+    <p style="font-size: 2vw;">font-size: 2vw;</p>
+    <p style="font-size:3vw;">font-size: 3vw; Resize the browser window to see how the text size scales.</p>
+    <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+    <h2>Variant</h2>
+    <p style="font-variant: normal;">font-variant: normal;</p>
+    <p style="font-variant: small-caps;">font-variant: small-caps;</p>
+  </div>
+  <p id="border"></p>
+
+  <div id="icons">
+    <h1><a href="https://www.w3schools.com/css/css_icons.asp" target="_blank">Icons</a></h1>
+    <div class="note">Note: No downloading or installation is required!</div>
+    <div class="note">To use the Font Awesome icons, add the following line inside the 'head' section of your HTML page:</br>
+      link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"</div>
+    <div class="note">Add the name of the specified icon class to any inline HTML element (like 'i' or 'span').</div>
+    <h2>Awesome icons</h2>
+    <i class="fa fa-cloud"> — class="fa fa-cloud"</i></br>
+    <i class="fa fa-heart"> — class="fa fa-heart"</i></br>
+    <i class="fa fa-car"> — class="fa fa-car"</i></br>
+    <i class="fa fa-file"> — class="fa fa-file"</i></br>
+    <i class="fa fa-bars"> — class="fa fa-bars"</i>
+    <h2>Bootstrap icons</h2>
+    <div class="note">To use the Bootstrap glyphicons, add the following line inside the 'head' section of your HTML page:</br>
+      rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</div>
+    <i class="glyphicon glyphicon-cloud"> — class="glyphicon glyphicon-cloud"></i></br>
+    <i class="glyphicon glyphicon-remove"> — class="glyphicon glyphicon-remove"</i></br>
+    <i class="glyphicon glyphicon-user"> — class="glyphicon glyphicon-user"</i></br>
+    <i class="glyphicon glyphicon-envelope"> — class="glyphicon glyphicon-envelope"</i></br>
+    <i class="glyphicon glyphicon-thumbs-up"> — class="glyphicon glyphicon-thumbs-up"</i>
+    <h2>Google icons</h2>
+    <div class="note">To use the Google icons, add the following line inside the 'head' section of your HTML page:</br>
+      rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"</div>
+    <i class="material-icons">cloud</i>
+    <i class="material-icons">favorite</i>
+    <i class="material-icons">attachment</i>
+    <i class="material-icons">computer</i>
+    <i class="material-icons">traffic</i>
+  </div>
+  <p id="border"></p>
+
+  <div id="links">
+    <h1><a href="https://www.w3schools.com/css/css_link.asp" target="_blank">Links</a></h1>
+    <div class="note";>
+      Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!</br>
+      a:active MUST come after a:hover in the CSS definition in order to be effective!
+    </div>
+    <h2><a class="link" style="border: 2px solid black" href="https://www.w3schools.com/css/default.asp" target="_blank">This is a link</a></h2>
+    <p>This is a link properties:</br>
+      border: 2px solid black;</br>
+      /* unvisited link */</br>
+      a:link {color: red;}</br>
+      text-decoration: none;</br>
+      background-color: black;</br>
+      /* visited link */</br>
+      a:visited {color: green;}</br>
+      text-decoration: none;</br>
+      background-color: hotpink;</br>
+      /* mouse over link */</br>
+      a:hover {color: hotpink;}</br>
+      text-decoration: underline;</br>
+      background-color: green;</br>
+      /* selected link */</br>
+      a:active {color: blue;}</br>
+      text-decoration: underline</br>
+      background-color: cyan;
+    </p>
+    <h2>Change the cursor</h2>
+    <p class="cursor-style" style="cursor:auto">cursor: auto</p>
+    <p class="cursor-style" style="cursor:crosshair">cursor: crosshair</p>
+    <p class="cursor-style" style="cursor:default">cursor: default</p>
+    <p class="cursor-style" style="cursor:e-resize">cursor: e-resize</p>
+    <p class="cursor-style" style="cursor:help">cursor: help</p>
+    <p class="cursor-style" style="cursor:move">cursor: move</p>
+    <p class="cursor-style" style="cursor:n-resize">cursor: n-resize</p>
+    <p class="cursor-style" style="cursor:ne-resize">cursor: ne-resize</p>
+    <p class="cursor-style" style="cursor:nw-resize">cursor: nw-resize</p>
+    <p class="cursor-style" style="cursor:pointer">cursor: pointer</p>
+    <p class="cursor-style" style="cursor:progress">cursor: progress</p>
+    <p class="cursor-style" style="cursor:s-resize">cursor: s-resize</p>
+    <p class="cursor-style" style="cursor:se-resize">cursor: se-resize</p>
+    <p class="cursor-style" style="cursor:sw-resize">cursor: sw-resize</p>
+    <p class="cursor-style" style="cursor:text">cursor: text</p>
+    <p class="cursor-style" style="cursor:w-resize">cursor: w-resize</p>
+    <p class="cursor-style" style="cursor:wait">cursor: wait</p>
+  </div>
+  <p id="border"></p>
+
+  <div id="lists">
+    <h1><a href="https://www.w3schools.com/css/css_list.asp" target="_blank">Lists</a></h1>
+    <div class="note">Note: Some of the values are for unordered lists, and some for ordered lists.</div>
+    <h2>Example of unordered lists:</h2>
+    <ul style="list-style-type: square; list-style-position: inside;">list-style-type: square; list-style-position: inside;
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+
+    <ul style="list-style-type: circle; list-style-position: outside;">list-style-type: circle; list-style-position: outside;
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+
+    <h2>Example of ordered lists:</h2>
+    <ol style="list-style-type: upper-roman; list-style-position: outside;">list-style-type: upper-roman; list-style-position: outside;
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ol>
+
+    <ol style="list-style-type: lower-alpha; list-style-position: inside;">list-style-type: lower-alpha; list-style-position: inside;
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ol>
+    <h2>An image as the list item marker</h2>
+    <ul style="list-style-image: url('http://tradelike.ru/wp-content/themes/forex/images/smile/icon_cool.png');">
+      list-style-image: url('http://tradelike.ru/wp-content/themes/forex/images/smile/icon_cool.png');
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+    <h2>Remove Default Settings</h2>
+    <ol style="list-style-type: none; margin: 0; padding: 0;">list-style-type: none; margin: 0; padding: 0;
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ol>
+    <h2>Shorthand properties</h2>
+    <ul style="list-style: square inside url('http://tradelike.ru/wp-content/themes/forex/images/smile/icon_cool.png');">
+      list-style: square inside url('http://tradelike.ru/wp-content/themes/forex/images/smile/icon_cool.png
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+    <h2>Full-width bordered list:</h2>
+    <p>
+      ul.example13 { list-style-type: none; padding: 0; border: 1px solid #aaa; }
+      </br>
+
+      ul.example13 li { padding: 8px 16px; border-bottom: 1px solid #aaa; }
+      </br>
+
+      ul.example13 li:last-child { border-bottom: none }
+    </p>
+    <ul class="example13">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+    <h2>Some more examples</h2>
+    <ol style="list-style-type: armenian;">list-style-type: armenian;
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ol>
+    <ol style="list-style-type: hebrew;">list-style-type: hebrew;
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ol>
+    <ol style="list-style-type: hiragana;">list-style-type: hiragana;
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ol>
+    <ol style="list-style-type: katakana;">list-style-type: katakana;
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ol>
+  </div>
+  <p id="border"></p>
+
+  <div id="tables">
+    <h1><a href="https://www.w3schools.com/css/css_table.asp" target="_blank">Tables</a></h1>
+    <div class="note">Note: In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though "overflow:scroll" is set).</div>
+    <h2>Table borders</h2>
+    <p>.table1 {</p>
+    <p style="text-indent: 20px" ;>font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;</p>
+    <p style="text-indent: 20px" ;>border-collapse: collapse;</p>
+    <p style="text-indent: 20px" ;>width: 100%;</p>
+    <p>}</p>
+
+    <p>.table1 td, .table1 th {</p>
+    <p style="text-indent: 20px" ;>border: 1px solid #ddd;</p>
+    <p style="text-indent: 20px" ;>padding: 8px;</p>
+    <p>}</p>
+
+    <p>.table1 tr:nth-child(even){background-color: #f2f2f2;}</p>
+    <p>.table1 tr:nth-child(odd){background-color: #f2f2d2;}</p>
+
+    <p>.table1 tr:hover {background-color: #ddd;}</p>
+
+    <p>.table1 th {</p>
+    <p style="text-indent: 20px" ;>padding-top: 12px;</p>
+    <p style="text-indent: 20px" ;>padding-bottom: 12px;</p>
+    <p style="text-indent: 20px" ;>text-align: left;</p>
+    <p style="text-indent: 20px" ;>background-color: #4CAF50;</p>
+    <p style="text-indent: 20px" ;>color: white;</p>
+    <p>}</p>
+    <table style="overflow-x: auto;" class="table1">
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Berglunds snabbköp</td>
+        <td>Christina Berglund</td>
+        <td>Sweden</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Königlich Essen</td>
+        <td>Philip Cramer</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+      <tr>
+        <td>North/South</td>
+        <td>Simon Crowther</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Paris spécialités</td>
+        <td>Marie Bertrand</td>
+        <td>France</td>
+      </tr>
+    </table>
+  </div>
+  <p id="border"></p>
+
+  <div id="display">
+    <h1><a href="https://www.w3schools.com/css/css_display_visibility.asp" target="_blank">Layout: display</a></h1>
+    <div class="note">
+      Note: Setting the display property of an element only changes how the element is displayed, NOT what kind of element it is.</br>
+      So, an inline element with display: block; is not allowed to have other block elements inside it.
+    </div>
+    <div class="note">Notice that the h1 element with display: none; does not take up any space.</div>
+    <div class="note">Notice that the hidden heading still takes up space.</div>
+    <h2>Override the default display value</h2>
+    <ul class="list1">display: default;</br>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <ul class="list2">display: inline;</br>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <ul class="list3">display: block;</br>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <p class="flip" onclick="myFunction()">Click to show panel</p>
+    <div id="panel">
+      <p>This panel contains a div element, which is hidden by default (display: none).</p>
+      <p>It is styled with CSS and we use JavaScript to show it (display: block).</p>
+    </div>
+    <h2>Visibility</h2>
+    <p class="imgbox" id="imgbox1">Box 1<br>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZ7cvasFzUhh5z6l6afFBqLq7yW8k7S2i1x6Hec7gkuTfY59RDQ" alt="Shiva" style="width:100%">
+      <button onclick="removeElement()">Remove</button>
+    </p>
+    <p class="imgbox" id="imgbox2">Box 2<br>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiFosa4QHWF3hFoOt75tZFjp5UP6BML3yXcj8LEsvt_VHPtvo2Sw" alt="Unknow" style="width:100%">
+      <button onclick="changeVisibility()">Hide</button>
+    </p>
+    <p class="imgbox">Box 3<br>
+      <img src="http://img.phone.baidu.com/public/uploads/store_4/b/b/7/bb754bcb81600301666c9e8f655eb830_200x200.png" alt="Vishnu" style="width:100%">
+      <button onclick="resetElement()">Reset All</button>
+    </p>
+  </div>
+  <p id="border"></p>
+
+  <div id="maxwidts">
+    <h1><a href="https://www.w3schools.com/css/css_max-width.asp" target="_blank">Layout: max-width</a></h1>
+    <div class="note">
+      Note: The problem with the 'div' above occurs when the browser window is smaller than the width of the element.</br>
+      The browser then adds a horizontal scrollbar to the page.
+    </div>
+    <p></p>
+    <p class="example14">This div element has width: 1300px;</p>
+    <p class="example15">This div element has max-width: 1300px;</p>
+    <p></p>
+  </div>
+  <p id="border"></p>
+
+  <div id="position">
+    <h1><a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">Layout: position</a></h1>
+    <div class="note">Note: A "positioned" element is one whose position is anything except static.</div>
+    <div class="note">Note: Internet Explorer, Edge 15 and earlier versions do not support sticky positioning.</br>
+      Safari requires a -webkit- prefix.</br>
+      You must also specify at least one of top, right, bottom or left for sticky positioning to work.
+    </div>
+    <div class="note">Note: If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.</div>
+    <p><iframe src="iframe_position.html" class="iframe"></iframe></p>
+    <p><iframe src="iframe_img_position.html"></iframe></p>
+    <div class="text_inside_image">
+      <img class="flower" src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350" />
+      <p class="topleft">Top left</p>
+    </div>
+  </div>
+  <p id="border"></p>
+
+  <div id="overflow">
+    <h1><a href="https://www.w3schools.com/css/css_overflow.asp" target="_blank">Layout: overflow</a></h1>
+    <div class="note">Note: The overflow property only works for block elements with a specified height.</div>
+    <div class="note">Note: In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though "overflow:scroll" is set).</div>
+    <h2>Visible</h2>
+    <p class="over_visible">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+    </p>
+    <h2>Hidden</h2>
+    <p class="over_hidden">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+    </p>
+    <h2>Scroll</h2>
+    <p class="over_scroll">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+    </p>
+    <h2>Auto</h2>
+    <p class="over_auto">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+    </p>
+    <h2>Overflow-x and overflow-y</h2>
+    <p class="over_xy">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+    </p>
+  </div>
+  <p id="border"></p>
+
+  <div id="float">
+    <h1><a href="https://www.w3schools.com/css/css_float.asp" target="_blank">Layout: float and clear</a></h1>
+    <h2>Float right</h2>
+    <p style=" overflow: auto;"><img src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" style="float: right; width:170px; height:170px; margin-left:15px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+      lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent
+      convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla
+      congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+    <h2>Float left</h2>
+    <p style="overflow: auto;"><img src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" style="float: left; width:170px; height:170px; margin-right:15px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+      lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent
+      convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla
+      congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+    <h2>Without clear</h2>
+    <div class="float1">div1</div>
+    <div class="float2">
+      div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</div>
+    </br>
+    </br>
+    <h2>With clear</h2>
+    <div class="float3">div3</div>
+    <div class="float4">
+      div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".
+    </div>
+    <div class="clearfix">
+      <div class="img-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZ7cvasFzUhh5z6l6afFBqLq7yW8k7S2i1x6Hec7gkuTfY59RDQ" alt="Fjords" style="width:100%">
+      </div>
+      <div class="img-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiFosa4QHWF3hFoOt75tZFjp5UP6BML3yXcj8LEsvt_VHPtvo2Sw" alt="Forest" style="width:100%">
+      </div>
+      <div class="img-container">
+        <img src="http://img.phone.baidu.com/public/uploads/store_4/b/b/7/bb754bcb81600301666c9e8f655eb830_200x200.png" alt="Mountains" style="width:100%">
+      </div>
+    </div>
+    <h2>Navigation Menu</h2>
+    <ul class="float5">
+      <li class="active">Home</a>
+      </li>
+      <li>News</a>
+      </li>
+      <li>Contact</a>
+      </li>
+      <li>About</a>
+      </li>
+    </ul>
+  </div>
+  <div class="header">
+    <h1>Chania</h1>
+  </div>
+  <div class="clearfix">
+    <div class="column menu">
+      <ul>
+        <li>The Flight</li>
+        <li>The City</li>
+        <li>The Island</li>
+        <li>The Food</li>
+      </ul>
+    </div>
+    <div class="column content">
+      <h1>The City</h1>
+      <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+      <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Footer Text</p>
+  </div>
+  <p id="border"></p>
+
+  <div id="inline-block">
+    <h1><a href="https://www.w3schools.com/css/css_inline-block.asp" target="_blank">Inline-block</a></h1>
+    <h2>display: inline</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus
+      fermentum velit sed laoreet. </div>
+
+    <h2>display: inline-block</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus
+      fermentum velit sed laoreet. </div>
+
+    <h2>display: block</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus
+      fermentum velit sed laoreet. </div>
+  </div>
+  <p id="border"></p>
+
+  <div id="align">
+    <h1><a href="https://www.w3schools.com/css/css_align.asp" target="_blank">Align</a></h1>
+    <div class="note">Note: Center aligning has no effect if the width property is not set (or set to 100%).</div>
+    <div class="note">Note: Using margin:auto will not work in IE8, unless a !DOCTYPE is declared.</div>
+    <h2>Center</h2>
+    <p class="center">To horizontally center a block element (like div), use margin: auto;</p></br>
+    <div class="note">Note: To center an image, set left and right margin to auto, and make it into a block element.</div></br>
+    <img src="https://www.w3schools.com/css/paris.jpg" alt="Paris" style="width:20%; display: block; margin-left: auto; margin-right: auto;">
+    <h2>Vertically</h2>
+    <h3>Using padding</h3>
+    <div style="padding: 30px 0; "><p>I'am centered vertically.</p></div>
+  </div>
+  <p id="border"></p>
+
+  <div id="combinators">
+    <h1><a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank">Combinators</a></h1>
+    <h2>Descendant selector (space)</h2>
+    <p>.descendant p {</p>
+    <p style="text-indent: 20px;">background-color: yellow;</p>
+    <p>}</p>
+    <div class="descendant">
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <span><p>Paragraph 3 in the div.</p></span>
+    </div>
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+    <h2>Child selector (>)</h2>
+    <p>.child > p {</p>
+    <p style="text-indent: 20px;">background-color: yellow;</p>
+    <p>}</p>
+    <div class="child">
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <span><p>Paragraph 3 in the div.</p></span>
+    </div>
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+    <h2>Adjacent sibling selector (+)</h2>
+    <p>.adjacent + p {</p>
+    <p style="text-indent: 20px;">background-color: yellow;</p>
+    <p>}</p>
+    <div class="adjacent">
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <span><p>Paragraph 3 in the div.</p></span>
+    </div>
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+    <h2>General sibling selector (~)</h2>
+    <p>.general ~ p {</p>
+    <p style="text-indent: 20px;">background-color: yellow;</p>
+    <p>}</p>
+    <div class="general">
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <span><p>Paragraph 3 in the div.</p></span>
+    </div>
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+  </div>
+  <p id="border"></p>
+
+  <div id="pseudo-class">
+    <h1><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Pseudo-class</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="Pseudo-element">
+    <h1><a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">Pseudo-element</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="opacity">
+    <h1><a href="https://www.w3schools.com/css/css_overflow.asp" target="_blank">Opacity</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="navigation-bar">
+    <h1><a href="https://www.w3schools.com/css/css_float.asp" target="_blank">Navigation-bar</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="Pseudo-element">
+    <h1><a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">Pseudo-element</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="opacity">
+    <h1><a href="https://www.w3schools.com/css/css_overflow.asp" target="_blank">Opacity</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="navigation-bar">
+    <h1><a href="https://www.w3schools.com/css/css_float.asp" target="_blank">Navigation-bar</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="Pseudo-element">
+    <h1><a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">Pseudo-element</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="opacity">
+    <h1><a href="https://www.w3schools.com/css/css_overflow.asp" target="_blank">Opacity</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="navigation-bar">
+    <h1><a href="https://www.w3schools.com/css/css_float.asp" target="_blank">Navigation-bar</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="Pseudo-element">
+    <h1><a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">Pseudo-element</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="opacity">
+    <h1><a href="https://www.w3schools.com/css/css_overflow.asp" target="_blank">Opacity</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="navigation-bar">
+    <h1><a href="https://www.w3schools.com/css/css_float.asp" target="_blank">Navigation-bar</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="Pseudo-element">
+    <h1><a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">Pseudo-element</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="opacity">
+    <h1><a href="https://www.w3schools.com/css/css_overflow.asp" target="_blank">Opacity</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="navigation-bar">
+    <h1><a href="https://www.w3schools.com/css/css_float.asp" target="_blank">Navigation-bar</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="Pseudo-element">
+    <h1><a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">Pseudo-element</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="opacity">
+    <h1><a href="https://www.w3schools.com/css/css_overflow.asp" target="_blank">Opacity</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <div id="navigation-bar">
+    <h1><a href="https://www.w3schools.com/css/css_float.asp" target="_blank">Navigation-bar</a></h1>
+  </div>
+  <p id="border"></p>
+
+  <script src="display.js"></script>
+
+
+</body>
+
+</html>

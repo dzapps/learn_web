@@ -1,0 +1,100 @@
+.example1 {
+  text-align: center;
+}
+
+p.example2 {
+  font-size: 10px;
+}
+
+.example3 {
+  width: 300px;
+  background-color: skyblue;
+}
+
+.example4 {
+  width: 300px;
+  padding: 25px;
+  background-color: violet;
+}
+
+.example5 {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: violet;
+}
+
+.example6 {
+  height: 100px;
+  width: 50%;
+  background-color: hsl(39, 90%, 40%);
+}
+
+.example7 {
+  height: 5cm;
+  width: 22em;
+  background-color: hsl(120, 90%, 40%);
+}
+
+.example8 {
+  max-width: 1000px;
+  height: 100px;
+  background-color: hsl(120, 90%, 90%);
+}
+
+.example9 {
+  max-height: 600px;
+  min-height: 200px;
+  background-color: hsl(180, 90%, 90%);
+}
+
+.example10 {
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+
+.example11 {
+    border: 2px solid black;
+    outline: #4CAF50 solid 10px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.example12 {
+    margin: 30px;
+    background: yellow;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+}
+
+ul.example13 {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #aaa;
+}
+
+ul.example13 li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #aaa;
+}
+
+ul.example13 li:last-child {
+    border-bottom: none
+}
+
+.example14 {
+    width:1300px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+
+.example15 {
+    max-width:1300px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}

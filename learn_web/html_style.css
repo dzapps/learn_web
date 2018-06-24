@@ -1,0 +1,123 @@
+body {
+  font-family: Ubuntu;
+  background-color: lightblue;
+  font-size: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfjCQ8gpwvAwT-CH1N_4cT7QidAzzS5oUcMyQMf0-B2OXBTfhKkA");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+div {
+  border: 2px solid white;
+  margin: 1em;
+}
+
+.note {
+  width: 700px;
+  margin: auto;
+  padding: 1px;
+  background-color: sandybrown;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+a {
+  color: inherit;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2, h3, p {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+h1, h2 {
+  color: green;
+}
+
+h3, #brown {
+  color: brown;
+}
+
+h4 {
+  color: dimgray;
+}
+
+p, span {
+  font-size: 15px;
+  color: black;
+}
+
+#blue {
+  color: blue;
+}
+
+#crimson {
+  color: crimson;
+}
+
+#value {
+  color: black;
+}
+
+#left-padding {
+  padding-left: 1em;
+}
+
+.more-padding {
+  padding-left: 2em;
+}
+
+#folder_link {
+  color: olive;
+}
+
+#arrow {
+  display: block;
+  font-size: 2em;
+  text-align: center;
+}
+
+.float {
+  float: left;
+  margin-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.3em;
+  border-right: 2px solid teal;
+}
+
+table {
+  margin-top: 1em;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 5px;
+}
+
+.city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+}
+
+.maroon {
+  color: maroon;
+}
+
+.main {
+    text-align: center;
+}
+
+#myHeader {
+    background-color: tomato;
+    color: black;
+    padding: 40px;
+    text-align: center;
+}

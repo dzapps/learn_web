@@ -1,0 +1,12 @@
+#border {
+  margin-top: 10px;
+  border-bottom: 3px solid red;
+}
+
+#selector {
+  color: magenta;
+}
+
+#margins {
+  margin: 50px 100px 70px 30px;
+}
