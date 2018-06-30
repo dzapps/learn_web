@@ -39,7 +39,7 @@ h1, h2 {
   color: green;
 }
 
-h3, #brown {
+h3, .brown {
   color: brown;
 }
 
@@ -47,24 +47,23 @@ h4 {
   color: dimgray;
 }
 
-p, span {
-  font-size: 15px;
-  color: black;
+.maroon {
+  color: maroon;
 }
 
-#blue {
+.blue {
   color: blue;
 }
 
-#crimson {
+.crimson {
   color: crimson;
 }
 
-#value {
+.black {
   color: black;
 }
 
-#left-padding {
+.left-padding {
   padding-left: 1em;
 }
 
@@ -72,14 +71,23 @@ p, span {
   padding-left: 2em;
 }
 
-#folder_link {
+.olive {
   color: olive;
+}
+
+.teal {
+  color: teal;
 }
 
 #arrow {
   display: block;
   font-size: 2em;
   text-align: center;
+}
+
+p, span {
+  font-size: 15px;
+  color: black;
 }
 
 .float {
@@ -107,12 +115,12 @@ th, td {
     padding: 10px;
 }
 
-.maroon {
-  color: maroon;
-}
-
 .main {
     text-align: center;
+}
+
+.none {
+  border: none;
 }
 
 #myHeader {
