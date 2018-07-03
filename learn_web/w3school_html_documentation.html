@@ -279,7 +279,7 @@
         &lt;<span class="brown">small</span>&gt;<span><small>Small text</small></span>&lt;<span class="brown">small</span>&gt;
       </span>
 
-      <span class="float blue" style="border: none;">
+      <span class="float blue none">
         &lt;<span class="brown">del</span>&gt;<span><del>Deleted text</del></span>&lt;<span class="brown">/del</span>&gt;<br />
         &lt;<span class="brown">ins</span>&gt;<span><ins>Inserted text</ins></span>&lt;<span class="brown">/ins</span>&gt;<br />
         &lt;<span class="brown">sub</span>&gt;<span><sub>Subscript text</sub></span>&lt;<span class="brown">/sub</span>&gt;<br />
@@ -338,7 +338,7 @@
                       With comments you can place notifications and reminders in your HTML.</div>
 
     <h2>Examples</h2>
-    <span class="float blue" style="border: none">
+    <span class="float blue none">
       <span style="color: green;">&lt;!-- This is a comment --&gt;</span>
     </span>
 
@@ -349,7 +349,7 @@
 
   <div>
     <h1>9/ CSS</h1>
-    <span class="float">
+    <span class="float none">
       <h2>Description</h2>
       <ul>
         <li>CSS stands for Cascading Style Sheets.</li>
@@ -358,7 +358,7 @@
       </ul>
     </span>
 
-    <span class="float">
+    <span class="float none">
       <h2>Examples</h2>
       <span class="float blue">
         <h3>Inline</h3>
@@ -379,7 +379,7 @@
         &lt;<span class="brown">/style</span>&gt;
       </span>
 
-      <span class="float blue">
+      <span class="float blue none">
         <h3>External</h3>
         &lt;<span class="brown">head</span>&gt;<br />
         <span class="left-padding blue">
@@ -393,6 +393,7 @@
     <p style="clear: both;"></p>
   </div>
   <hr color="red" />
+
 
   <div>
     <h1>10/ Links</h1>
@@ -419,6 +420,7 @@
         <a href="http://fb.ru/misc/i/gallery/58679/2351462.jpg"><span>This is a link on the Interner</span></a>
         &lt;<span class="brown">a</span>&gt;
       </span>
+      <hr class="teal" />
 
       <h3>The target attribute</h3>
       <span class="left-padding" style="color: blue;">
@@ -482,67 +484,97 @@
                       The &lt;img&gt; element is used by browsers that do not support the &lt;picture&gt; element, or if none of the &lt;source&gt; tags matched.</div>
 
     <h2>Examples</h2>
-      <span class="float blue">
-        <h3>Images in another folder</h3>
-        <p class="blue">&lt;<span class="brown">img </span><span class="crimson">src</span><span>=</span>"/images/example.jpeg"
-          <span class="crimson">alt</span><span>=</span>"image_name"
-          <span class="crimson">style</span><span>=</span>"width: 100%; height: 200px;"&gt;
+    <span class="float blue">
+      <h3>Images in another folder</h3>
+      <p class="blue">&lt;<span class="brown">img </span><span class="crimson">src</span><span>=</span>"/images/example.jpeg"
+        <span class="crimson">alt</span><span>=</span>"image_name"
+        <span class="crimson">style</span><span>=</span>"width: 100%; height: 200px;"&gt;
+      </p>
+    </span>
+
+    <span class="float blue none">
+      <h3>Images in another server</h3>
+      <p class="blue">&lt;<span class="brown">img </span><span class="crimson">src</span><span>=</span>"https://www.example.com/images/example.jpeg"
+        <span class="crimson">alt</span><span>=</span>"image_name"&gt;
+      </p>
+    </span>
+    <p style="clear: both;"></p>
+    <hr class="teal" />
+
+    <span class="float blue">
+      <h3>Image as a link</h3>
+      &lt;<span class="brown">a </span><span class="crimson">href</span><span>=</span>
+      "w3school_css_documentation.html"&gt;<br />
+      <span class="left-padding blue">&lt;<span class="brown">img </span><span class="crimson">src</span><span>=</span>"images.png"
+        <span class="crimson">alt</span><span>=</span>"image_css"&gt;<br />
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span id="arrow" style="clear: both;">⇩</span>
+      <span>
+        <a href="w3school_css_documentation.html">
+          <img src="images.png" alt="image" style="display: block; margin-left: auto; margin-right: auto; width: 40%; width: 20%; height: 20%;" />
+        </a>
+      </span>
+    </span>
+
+    <span class="float none">
+      <span class="blue">
+        <h3>Background image</h3>
+        &lt;<span class="brown">p </span><span class="crimson">style</span><span>=</span>"background-image:
+        <span class="function">url</span>(<span class="olive">'elefants.jpg'</span>)"&gt;
+        <p style="background-image:url('elefants.jpg'); width: 70em; height: 24em; text-align: center;">
+          You can specify background images<br>
+          for any visible HTML element.<br>
         </p>
+        &lt;<span class="brown">/p</span>&gt;
       </span>
+    </span>
+    <p style="clear: both;"></p>
+    <hr class="teal" />
 
-      <span class="float blue none">
-        <h3>Images in another server</h3>
-        <p class="blue">&lt;<span class="brown">img </span><span class="crimson">src</span><span>=</span>"https://www.example.com/images/example.jpeg"
-          <span class="crimson">alt</span><span>=</span>"image_name"&gt;
-        </p>
-      </span>
-      <p style="clear: both;"></p>
-      <hr class="teal" />
-
-      <span class="float blue">
-        <h3>Image as a link</h3>
-        &lt;<span class="brown">a </span><span class="crimson">href</span><span>=</span>
-        "w3school_css_documentation.html"&gt;<br />
-        <span class="left-padding blue">&lt;<span class="brown">img </span><span class="crimson">src</span><span>=</span>"images.png"
-          <span class="crimson">alt</span><span>=</span>"image_css"&gt;<br />
-          &lt;<span class="brown">/a</span>&gt;
-        </span>
-        <span id="arrow" style="clear: both;">⇩</span>
-        <span>
-          <a href="w3school_css_documentation.html">
-            <img src="images.png" alt="image" style="display: block; margin-left: auto; margin-right: auto; width: 40%; width: 20%; height: 20%;" />
-          </a>
-        </span>
-      </span>
-
-      <span class="float blue none">
-        <span>
-          <h3>Background image</h3>
-          <p style="background-image:url('elefants.jpg'); width: 70em; height: 24em; color: white; text-align: center;">Elefants</p>
-          <p class="blue">&lt;<span class="brown">img </span><span class="crimson">src</span><span>=</span>"https://www.example.com/images/example.jpeg"
-            <span class="crimson">alt</span><span>=</span>"image_name"&gt;
-          </p>
-        </span>
-      </span>
-
-      <p style="clear: both;"></p>
-      <hr class="teal" />
-
-      <span class="float blue none">
-        <h3>Image maps</h3>
-        <p class="blue">&lt;<span class="brown">img </span><span class="crimson">src</span><span>=</span>"https://www.example.com/images/example.jpeg"
-          <span class="crimson">alt</span><span>=</span>"image_name"&gt;
-        </p>
+    <span class="float none">
+      <h3>Image maps</h3>
+      <span class="float none">
         <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
         <map name="workmap">
-          <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-          <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-          <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+          <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.jpg">
+          <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.jpg">
+          <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.jpg">
         </map>
       </span>
+      <span class="float blue none">
+        &lt;<span class="brown">img </span>
+        <span class="crimson">src</span><span>=</span>"workplace.jpeg"
+        <span class="crimson">usemap</span><span>=</span>"#workmap"
+        <span class="crimson">width</span><span>=</span>"400"
+        <span class="crimson">height</span><span>=</span>"379"&gt;<br />
 
-
-
+        &lt;<span class="brown">map </span>
+        <span class="crimson">name</span><span>=</span>"workmap"&gt;<br />
+        <span class="left-padding blue">
+          &lt;<span class="brown">area </span>
+          <span class="crimson">shape</span><span>=</span>"rect"
+          <span class="crimson">coords</span><span>=</span>"34, 44, 270, 350"
+          <span class="crimson">alt</span><span>=</span>"computer"
+          <span class="crimson">href</span><span>=</span>"computer.jpg"&gt;
+        </span><br />
+        <span class="left-padding blue">
+          &lt;<span class="brown">area </span>
+          <span class="crimson">shape</span><span>=</span>"rect"
+          <span class="crimson">coords</span><span>=</span>"290, 172, 333, 250"
+          <span class="crimson">alt</span><span>=</span>"phone"
+          <span class="crimson">href</span><span>=</span>"phone.jpg"&gt;
+        </span><br />
+        <span class="left-padding blue">
+          &lt;<span class="brown">area </span>
+          <span class="crimson">shape</span><span>=</span>"circle"
+          <span class="crimson">coords</span><span>=</span>"337, 300, 44"
+          <span class="crimson">alt</span><span>=</span>"phone"
+          <span class="crimson">href</span><span>=</span>"coffee.jpg"&gt;
+        </span><br />
+      &lt;<span class="brown">/map</span>&gt;
+      </span>
+    </span>
 
     <p style="clear: both;"></p>
   </div>
@@ -568,7 +600,7 @@
       </span>
     </span>
 
-    <table id="collapse" style="width: 90%; margin-left: 4em; border: 2px solid; border-spacing: 1em;">
+    <table id="collapse" class="table" style="width: 90%; margin-left: 4em; border: 2px solid; border-spacing: 1em;">
       <caption>
         <span class="blue">&lt;</span><span class="brown">caption</span><span class="blue">&gt;</span>
         <span class="blue">&lt;</span><span class="brown">b</span><span class="blue">&gt;</span>
@@ -832,7 +864,7 @@
         &lt;<span class="brown">/style</span>&gt;
       </span>
 
-      <span class="float blue" style="border: none;">
+      <span class="float blue none">
         <h4>HTML</h4>
         &lt;<span class="brown">h2</span>
         <span class="crimson">class</span><span>=</span><span class="blue">"city main"</span>&gt;<span>London</span>&lt;<span class="brown">h2</span>&gt;<br />
@@ -880,20 +912,21 @@
         <span class="left-padding">}</span><br />
         &lt;<span class="brown">/style</span>&gt;
       </span>
-      <span class="float blue" style="border: none;">
+      <span class="float blue none">
         <h4>HTML</h4>
         &lt;<span class="brown">h1</span>
         <span class="crimson">id</span><span>=</span><span class="blue">"myHeader"</span>&gt;<span>My Header</span>&lt;<span class="brown">h1</span>&gt;<br />
       </span>
-      <span id="arrow" style="clear: both;">⇩</span><br />
+      <span id="arrow" style="clear: both;">⇩</span>
       <span>
         <h2 id="myHeader">My Header</h2>
       </span>
+
     </span>
 
-    <span class="float" style="border: none;">
+    <span class="float none">
       <h3>Bookmarks</h3>
-      <span class="float blue" style="border: none;">
+      <span class="float blue none">
         &lt;<span class="brown">h1 </span><span class="crimson">id</span><span>=</span>
         "C1"&lt;<span class="brown">h1</span>&gt;<br />
         &lt;<span class="brown">a </span><span class="crimson">href</span><span>=</span>
@@ -943,11 +976,11 @@
 
 
   <div>
-    <h1>17/ Iframes</h1>
+    <h1>18/ JavaScript</h1>
     <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
 
     <h2>Examples</h2>
-    <span class="float blue" style="border: none;">
+    <span class="float blue none">
 
     </span>
 
@@ -957,12 +990,242 @@
 
 
   <div>
-    <h1>17/ Iframes</h1>
-    <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
+    <h1>19/ File paths</h1>
+    <div class="note">Tip: When using relative file paths, your web pages will not be bound to your current base URL.
+                      All links will work on your own computer (localhost) as well as on your current public domain and your future public domains.
+    </div>
 
     <h2>Examples</h2>
-    <span class="float blue" style="border: none;">
+    <span class="float blue none">
+      <h3>Absolute file paths</h3>
+      <span class="blue none">
+        &lt;<span class="brown">img </span><span class="crimson">src</span><span>=</span>
+        "https://zeynepnazan.files.wordpress.com/2016/12/metin-altiok-tesbih.jpg "<span class="crimson">alt</span><span>=</span>"mountain"&gt;
+      </span><br />
+      <p><img src="https://zeynepnazan.files.wordpress.com/2016/12/metin-altiok-tesbih.jpg" alt="sunset" style="width: 200px; height: 100px;"/></p>
+    </span>
+    <p style="clear: both;"></p>
+    <hr class="teal" />
 
+    <span class="float blue none">
+      <h3>Relative file paths</h3>
+      <span class="float blue" style="width: 30%;">
+         <h4>The file path points to a file in the images folder located at the root of the current web.</h4>
+        &lt;<span class="brown">img </span><span class="crimson">src</span><span>=</span>
+        "/images/mountain.jpg "<span class="crimson">alt</span><span>=</span>"mountain"&gt;<br />
+        <p><img src="images/mountain.jpg" alt="montain" style="width: 200px; height: 100px;" /></p>
+      </span>
+
+      <span class="float blue" style="width: 30%;">
+        <h4>The file path points to a file in the images folder located in the current folder.</h4>
+        &lt;<span class="brown">img </span><span class="crimson">src</span><span>=</span>
+        "images/mountain.jpg "<span class="crimson">alt</span><span>=</span>"mountain"&gt;<br />
+        <p><img src="images/rainbow_mountain.jpg" alt="montain" style="width: 200px; height: 100px;" /></p>
+      </span>
+
+      <span class="float blue none" style="width: 30%;">
+        <h4>The file path points to a file in the images folder located in the folder one level above the current folder.</h4>
+        &lt;<span class="brown">img </span><span class="crimson">src</span><span>=</span>
+        "../images/montain.jpg "<span class="crimson">alt</span><span>=</span>"mountain"&gt;<br />
+        <p><img src="images/column_montain.jpg" alt="montain" style="width: 200px; height: 100px;" /></p>
+      </span>
+    </span>
+
+    <p style="clear: both;"></p>
+  </div>
+  <hr color="red" />
+
+
+  <div>
+    <h1>20/ Head</h1>
+    <div class="note">Note: Not recommended omitting the &lt;html&gt; and &lt;body&gt; tags.
+                      Omitting these tags can crash DOM or XML software and produce errors in older browsers (IE9).
+    </div>
+
+    <h2>Examples</h2>
+    <span class="float blue">
+      <h3>&lt;head&gt;</h3>
+      <h4>Description</h4>
+      <ul class="black">
+        <li>HTML metadata is data about the HTML document. Metadata is not displayed</li>
+        <li>metadata typically define the document title, character set, styles, links, scripts, and other meta information</li>
+      </ul>
+    </span>
+
+    <span class="float blue none">
+      <h3>&lt;title&gt;</h3>
+      <h4>Description</h4>
+      <ul class="black">
+        <li>defines a title in the browser tab</li>
+        <li>provides a title for the page when it is added to favorites</li>
+        <li>displays a title for the page in search engine results</li>
+      </ul><br />
+      <h4>Use</h4>
+      &lt;<span class="brown">head</span>&gt;
+      <br />
+      <span class="left-padding blue">
+        &lt;<span class="brown">title</span>&gt;
+        <span>Page title</span>
+        &lt;<span class="brown">/title</span>&gt;<br />
+        &lt;<span class="brown">/head</span>&gt;
+      </span>
+    </span>
+    <p style="clear: both;"></p>
+    <hr class="teal" />
+
+    <span class="float blue">
+      <h3>&lt;style&gt;</h3>
+      <h4>Description</h4>
+      <ul class="black">
+        <li>the &lt;style&gt; element is used to define style information for a single HTML page</li>
+      </ul>
+      <h4>Use</h4>
+      &lt;<span class="brown">style</span>&gt;<br />
+      <span class="left-padding"><span class="maroon">.city</span><span> {</span></span><br />
+        <span class="more-padding"><span class="crimson">background-color</span>: <span class="blue">tomato</span>;</span><br />
+        <span class="more-padding"><span class="crimson">color</span>: <span class="blue">white</span>;</span><br />
+        <span class="more-padding"><span class="crimson">padding</span>: <span class="blue">10px</span>;</span  ><br />
+      <span class="left-padding">}</span><br />
+      &lt;<span class="brown">/style</span>&gt;
+    </span>
+
+    <span class="float blue none">
+      <h3>&lt;link&gt;</h3>
+      <h4>Description</h4>
+      <ul class="black">
+        <li>the &lt;link&gt; element is used to link to external style sheets</li>
+      </ul>
+      <h4>Use</h4>
+      &lt;<span class="brown">link </span><span class="crimson">rel</span><span>=</span>"stylesheet"
+      <span class="crimson">href</span><span>=</span>"mystyle.css" <span class="brown">/</span>&gt;
+    </span>
+    <p style="clear: both;"></p>
+    <hr class="teal" />
+
+    <span class="float blue">
+      <h3>&lt;script&gt;</h3>
+      <h4>Description</h4>
+      <ul class="black">
+        <li>the &lt;script&gt; element is used to define client-side JavaScripts</li>
+      </ul>
+      <h4>Use</h4>
+      &lt;<span class="brown">script</span>&gt;<br />
+      <span class="left-padding">
+        <span class="purple">function </span><span>myFunction {</span>
+      </span><br />
+      <span class="more-padding black">
+        document.<span class="darkslateblue">getElementById</span>
+        (<span class="olive">"demo"</span>).innerHTML = <span class="olive">"Hello JavaScript!"</span><br />
+        <span class="left-padding">}</span>
+      </span>
+      <br />
+      &lt;<span class="brown">/script</span>&gt;
+      <script>
+        function myFunction {
+         document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        }
+      </script>
+    </span>
+
+    <span class="float blue none">
+      <h3>&lt;base&gt;</h3>
+      <h4>Description</h4>
+      <ul class="black">
+        <li>the &lt;base&gt; element specifies the base URL and base target for all relative URLs in a page</li>
+      </ul>
+      <h4>Use</h4>
+      <span class="blue">
+        &lt;<span class="brown">base </span><span class="crimson">href</span><span>=</span>"https://www.example.com/images"
+        <span class="crimson">target</span><span>=</span>"_blank" <span class="brown">/</span>&gt;
+      </span>
+    </span>
+    <p style="clear: both;"></p>
+    <hr class="teal" />
+
+    <span class="float blue">
+      <h3>&lt;meta&gt;</h3>
+      <h4>Description</h4>
+      <ul class="black">
+        <li>define the character set used</li>
+        <li>define a description of your web page</li>
+        <li>define keywords for search engines</li>
+        <li>define the author of a page</li>
+        <li>refresh document every 30 seconds</li>
+      </ul>
+      <h4>Use</h4>
+      &lt;<span class="brown">meta </span><span class="crimson">charset</span><span>=</span>"utf-8" <span class="brown">/</span>&gt;<br />
+      &lt;<span class="brown">meta </span><span class="crimson">name</span><span>=</span>"description"
+      <span class="crimson">content</span><span>=</span>"Free Web tutorials" <span class="brown">/</span>&gt;<br />
+      &lt;<span class="brown">meta </span><span class="crimson">name</span><span>=</span>"keyword"
+      <span class="crimson">content</span><span>=</span>"HTML, CSS, XML, JavaScript" <span class="brown">/</span>&gt;<br />
+      &lt;<span class="brown">meta </span><span class="crimson">name</span><span>=</span>"autor"
+      <span class="crimson">content</span><span>=</span>"John Doe" <span class="brown">/</span>&gt;<br />
+      &lt;<span class="brown">meta </span><span class="crimson">http-equiv</span><span>=</span>"refresh"
+      <span class="crimson">content</span><span>=</span>"30" <span class="brown">/</span>&gt;
+    </span>
+
+    <span class="float blue none">
+      <h3>&lt;viewport&gt;</h3>
+      <h4>Description</h4>
+      <ul class="black">
+        <li>The viewport is the user's visible area of a web page.<br />
+            It varies with the device, and will be smaller on a mobile phone than on a computer screen.</li>
+      </ul>
+      <h4>Use</h4>
+      &lt;<span class="brown">meta </span><span class="crimson">name</span><span>=</span>"viewport"
+      <span class="crimson">content</span><span>=</span>"width=device-width, initial-scale=1.0" <span class="brown">/</span>&gt;
+    </span>
+
+    <p style="clear: both;"></p>
+  </div>
+  <hr color="red" />
+
+
+  <div>
+    <h1>21/ Layout</h1>
+    <div class="note">Tip: Do NOT use tables for your page layout!</div>
+
+    <h2>Examples</h2>
+    <table id="layout" class="float">
+      <tr><td colspan="2">&lt;header&gt;</td></tr>
+      <tr><td colspan="2">&lt;nav&gt;</td></tr>
+      <tr>
+        <td>&lt;section&gt;</td>
+        <td rowspan="2">&lt;aside&gt;</td>
+      </tr>
+      <tr><td>&lt;article&gt;</td></tr>
+      <tr><td colspan="2">&lt;footer&gt;</td></tr>
+    </table>
+
+    <span class="float none">
+      <ul>
+        <li>&lt;header&gt; — Defines a header for a document or a section</li>
+        <li>&lt;nav&gt; — Defines a container for navigation links</li>
+        <li>&lt;section&gt; — Defines a section in a document</li>
+        <li>&lt;article&gt; — Defines an independent self-contained article</li>
+        <li>&lt;aside&gt; — Defines content aside from the content (like a sidebar)</li>
+        <li>&lt;footer&gt; — Defines a footer for a document or a section</li>
+        <li>&lt;details&gt; — Defines additional details</li>
+        <li>&lt;summary&gt; — Defines a heading for the &lt;details&gt; element</li>
+      </ul>
+    </span>
+    <p style="clear: both;"></p>
+    <hr class="teal" />
+    <h3>Layout techniques</h3>
+    <span class="float none">
+      <h4>CSS Frameworks</h4>
+      <ul><li>If you want to create your layout fast, you can use a framework, like W3.CSS or Bootstrap.</li></ul>
+    </span>
+    <p style="clear: both;"></p>
+    <hr class="teal" />
+    <span class="float">
+      <h4>CSS Floats</h4>
+      <ul><li>Disadvantages: Floating elements are tied to the document flow, which may harm the flexibility.</li></ul>
+    </span>
+    <span class="float none" style="width: 48%">
+      <h4>CSS Flexbox</h4>
+      <ul><li>Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices.
+              Disadvantages: Does not work in IE10 and earlier.</li></ul>
     </span>
 
     <p style="clear: both;"></p>
@@ -972,11 +1235,11 @@
 
 
   <div>
-    <h1>17/ Iframes</h1>
+    <h1>22/ Responsive</h1>
     <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
 
     <h2>Examples</h2>
-    <span class="float blue" style="border: none;">
+    <span class="float blue none">
 
     </span>
 
@@ -986,11 +1249,58 @@
 
 
   <div>
-    <h1>17/ Iframes</h1>
+    <h1>23/ Computercode</h1>
     <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
 
     <h2>Examples</h2>
-    <span class="float blue" style="border: none;">
+    <span class="float blue">
+      <h3>&lt;kbd&gt; for keyboard input</h3>
+      &lt;<span class="crimson">p</span>&gt;<span>Save the document by pressing</span>
+      &lt;<span class="crimson">kbd</span>&gt;<span>Ctrl + S</span>&lt;<span class="crimson">/kbd</span>&gt;&lt;<span class="crimson">/p</span>&gt;
+      <span id="arrow" style="clear: both;">⇩</span>
+      <span style="display: block; text-align: center;">Save the document by pressing <kbd>Ctrl + S</kbd></span>
+    </span>
+
+    <span class="float blue none">
+      <h3>&lt;samp&gt; for program output</h3>
+      &lt;<span class="crimson">p</span>&gt;<span>If you input wrong value, the program will return</span>
+      &lt;<span class="crimson">samp</span>&gt;<span>Error!</span>&lt;<span class="crimson">/samp</span>&gt;&lt;<span class="crimson">/p</span>&gt;
+      <span id="arrow" style="clear: both;">⇩</span>
+      <span style="display: block; text-align: center;">If you input wrong value, the program will return <samp>Error!</samp></span>
+    </span>
+    <p style="clear: both;"></p>
+    <hr class="teal" />
+
+    <span class="float blue">
+      <h3>&lt;code&gt; for computer code</h3>
+      &lt;<span class="crimson">p</span>&gt;
+      &lt;<span class="crimson">code</span>&gt;<span>x = 5; y = 6; z = x + y;</span>&lt;<span class="crimson">/code</span>&gt;&lt;<span class="crimson">/p</span>&gt;
+      <span id="arrow" style="clear: both;">⇩</span>
+      <span style="display: block; text-align: center;"><code>x = 5; y = 6; z = x + y;</code></span>
+    </span>
+
+    <span class="float blue none">
+      <h3>&lt;var&gt; for variables</h3>
+      &lt;<span class="crimson">p</span>&gt;<span>Einstein wrote: </span>
+      &lt;<span class="crimson">var</span>&gt;<span>E</span>&lt;<span class="crimson">var</span>&gt;<span> = </span>
+      &lt;<span class="crimson">var</span>&gt;<span>mc</span>&lt;<span class="crimson">var</span>&gt;
+      &lt;<span class="crimson">sup</span>&gt;<span>2</span>&lt;<span class="crimson">sup</span>&gt;
+      &lt;<span class="crimson">/p</span>&gt;
+      <span id="arrow" style="clear: both;">⇩</span>
+      <span style="display: block; text-align: center;">Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup></span>
+    </span>
+
+    <p style="clear: both;"></p>
+  </div>
+  <hr color="red" />
+
+
+  <div>
+    <h1>24/ Entities</h1>
+    <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
+
+    <h2>Examples</h2>
+    <span class="float blue none">
 
     </span>
 
@@ -999,13 +1309,54 @@
   <hr color="red" />
 
 
-
   <div>
-    <h1>17/ Iframes</h1>
+    <h1>25/ Symbols</h1>
     <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
 
     <h2>Examples</h2>
-    <span class="float blue" style="border: none;">
+    <span class="float blue none">
+
+    </span>
+
+    <p style="clear: both;"></p>
+  </div>
+  <hr color="red" />
+
+
+  <div>
+    <h1>26/ Charset</h1>
+    <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
+
+    <h2>Examples</h2>
+    <span class="float blue none">
+
+    </span>
+
+    <p style="clear: both;"></p>
+  </div>
+  <hr color="red" />
+
+
+  <div>
+    <h1>27/ URL encode</h1>
+    <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
+
+    <h2>Examples</h2>
+    <span class="float blue none">
+
+    </span>
+
+    <p style="clear: both;"></p>
+  </div>
+  <hr color="red" />
+
+
+  <div>
+    <h1>28/ XHTML</h1>
+    <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
+
+    <h2>Examples</h2>
+    <span class="float blue none">
 
     </span>
 

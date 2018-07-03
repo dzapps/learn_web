@@ -47,6 +47,14 @@ h4 {
   color: dimgray;
 }
 
+.purple {
+  color: purple;
+}
+
+.darkslateblue {
+  color: darkslateblue;
+}
+
 .maroon {
   color: maroon;
 }
@@ -63,20 +71,20 @@ h4 {
   color: black;
 }
 
-.left-padding {
-  padding-left: 1em;
-}
-
-.more-padding {
-  padding-left: 2em;
-}
-
 .olive {
   color: olive;
 }
 
 .teal {
   color: teal;
+}
+
+.left-padding {
+  padding-left: 1em;
+}
+
+.more-padding {
+  padding-left: 2em;
 }
 
 #arrow {
@@ -98,7 +106,7 @@ p, span {
   border-right: 2px solid teal;
 }
 
-table {
+.table {
   margin-top: 1em;
 }
 
@@ -128,4 +136,15 @@ th, td {
     color: black;
     padding: 40px;
     text-align: center;
+}
+
+#layout {
+  margin-bottom: 0.5em;
+  padding: 0.2em;
+  text-align: center;
+  background-color: grey;
+}
+
+#layout td {
+  background-color: white;
 }
