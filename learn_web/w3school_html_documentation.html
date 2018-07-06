@@ -1297,12 +1297,104 @@
 
   <div>
     <h1>24/ Entities</h1>
-    <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
+    <div class="note">Note: Entity names are case sensitive.</div>
+    <div class="note">Note: Advantage of using an entity name: An entity name is easy to remember.<br />
+                      Disadvantage of using an entity name: Browsers may not support all entity names, but the support for numbers is good.
+    </div>
+    <div class="note">Tip: The non-breaking hyphen (&amp;#8209;) lets you use a hyphen character (‑) that won't break.</div>
 
     <h2>Examples</h2>
-    <span class="float blue none">
-
+    <span class="float">
+      <h3>Description</h3>
+      <span>If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.<br />
+            Character entities are used to display reserved characters in HTML.
+      </span>
     </span>
+
+    <span class="float none">
+      <h3>Syntax</h3>
+      <span><i>&entity_name;</i> or <i>&amp;#entity_number;</i></span>
+    </span>
+    <p style="clear: both;"></p>
+    <hr class="teal" />
+
+    <span class="float">
+      <h3>Some entities</h3>
+      <table id="entity">
+        <tr>
+          <th>Name</th>
+          <th>Number</th>
+          <th>Result</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>&amp;lt;</td>
+            <td>&amp;#60;</td>
+            <td><</td>
+          </tr>
+          <tr>
+            <td>&amp;gt;</td>
+            <td>&amp;#62;</td>
+            <td>></td>
+          </tr>
+        </tbody>
+      </table>
+    </span>
+
+    <span class="float">
+      <h3>Combining diacritical marks</h3>
+      <table id="combine">
+        <tr>
+          <th>Mark</th>
+          <th>Char</th>
+          <th>Construct </th>
+          <th>Result</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>`</td>
+            <td>a</td>
+            <td>a&amp;#768;</td>
+            <td>a&#768;</td>
+          </tr>
+          <tr>
+            <td>~</td>
+            <td>o</td>
+            <td>o&amp;#771;</td>
+            <td>o&#771;</td>
+          </tr>
+        </tbody>
+      </table>
+    </span>
+
+    <span class="float">
+      <h3>Symbols</h3>
+      <table id="entity">
+        <tr>
+          <th>Number</th>
+          <th>Entity</th>
+          <th>Char</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>&amp;#8704;</td>
+            <td>&amp;empty;</td>
+            <td>∅</td>
+          </tr>
+          <tr>
+            <td>&amp;#169;</td>
+            <td>&amp;copy;</td>
+            <td>©</td>
+          </tr>
+        </tbody>
+      </table>
+    </span>
+
+    <span class="float none">
+      <h3>Reference</h3>
+      <a href="character_entity_reference_chart.html"><button id="entity_ref">Сomplete set of entities</button></a>
+    </span>
+
 
     <p style="clear: both;"></p>
   </div>

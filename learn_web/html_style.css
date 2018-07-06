@@ -148,3 +148,29 @@ th, td {
 #layout td {
   background-color: white;
 }
+
+#entity, #combine{
+  border-collapse: collapse;
+}
+
+#entity td:nth-child(3) {
+  text-align: center;
+}
+
+#combine td:nth-child(4) {
+  text-align: center;
+}
+
+#entity_ref {
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: yellow;
+  color: black;
+}
+
+#entity_ref:hover {
+  padding: 5px;
+  background-color: aqua;
+  border-radius: 10px;
+}
