@@ -47,6 +47,14 @@ h4 {
   color: dimgray;
 }
 
+.mediumblue {
+  color: mediumblue;
+}
+
+.chocolate {
+  color: chocolate;
+}
+
 .purple {
   color: purple;
 }
@@ -87,7 +95,7 @@ h4 {
   padding-left: 2em;
 }
 
-#arrow {
+.arrow {
   display: block;
   font-size: 2em;
   text-align: center;
@@ -149,11 +157,11 @@ th, td {
   background-color: white;
 }
 
-#entity, #combine{
+.entity, #combine{
   border-collapse: collapse;
 }
 
-#entity td:nth-child(3) {
+.entity td:nth-child(3) {
   text-align: center;
 }
 
@@ -161,7 +169,7 @@ th, td {
   text-align: center;
 }
 
-#entity_ref {
+.entity_ref {
   padding: 5px;
   border-radius: 10px;
   text-decoration: none;
@@ -169,8 +177,16 @@ th, td {
   color: black;
 }
 
-#entity_ref:hover {
+.entity_ref:hover {
   padding: 5px;
   background-color: aqua;
   border-radius: 10px;
+}
+
+.half {
+  width: 47%;
+}
+
+.third {
+  width: 30%;
 }
