@@ -905,7 +905,7 @@
     <span class="float blue none">
         <h4>HTML</h4>
         &lt;<span class="brown">h1</span>
-    <span class="crimson">id</span><span>=</span><span class="blue">"myHeader"</span>&gt;<span>My Header</span>&lt;<span class="brown">h1</span>&gt;<br />
+    <span class="darkgreen">id</span><span>=</span><span class="blue">"myHeader"</span>&gt;<span>My Header</span>&lt;<span class="brown">h1</span>&gt;<br />
     </span>
     <span class="arrow" style="clear: both;">⇩</span>
     <span>
@@ -917,7 +917,7 @@
     <span class="float none">
       <h3>Bookmarks</h3>
       <span class="float blue none">
-        &lt;<span class="brown">h1 </span><span class="crimson">id</span><span>=</span> "C1"&lt;
+        &lt;<span class="brown">h1 </span><span class="darkgreen">id</span><span>=</span> "C1"&lt;
     <span class="brown">h1</span>&gt;<br /> &lt;
     <span class="brown">a </span><span class="crimson">href</span><span>=</span> "#C1"&gt;
     <a href="#C1">Jump to Chapter 1</a>&lt;<span class="brown">a</span>&gt;<br />
@@ -1095,10 +1095,10 @@
       <h4>Syntax</h4>
       &lt;<span class="brown">script</span>&gt;<br />
     <span class="left-padding">
-        <span class="purple">function </span><span class="mediumblue">myFunction</span><span>() {</span>
+        <span class="purple">function </span><span class="darkblue">myFunction</span><span>() {</span>
     </span><br />
     <span class="more-padding black">
-        <span class="chocolate">document</span>.<span class="darkslateblue">getElementById</span> (
+        <span class="chocolate">document</span>.<span class="darkslateblue">getElementById</span>(
     <span class="olive">"demo"</span>).<span class="chocolate">innerHTML</span> = <span class="olive">"Hello JavaScript!"</span><br />
     <span class="left-padding">}</span>
     </span>
@@ -1767,22 +1767,144 @@
           &lt;<span class="brown">/textarea</span>&gt;<br />
         </span>
         &lt;<span class="brown">/form</span>&gt;
+        <span class="arrow">⇩</span>
 
-        <form>
-          <textarea style="max-width: 550px; max-height: 150px;" name="message" rows="5" cols="20">The cat was playing in the garden.</textarea>
-        </form>
+        <p><form>
+          <textarea style="max-width: 550px; max-height: 150px;" name="message" rows="5" cols="20">
+            This is a multi-line input field. This is a multi-line input field. This is a multi-line input field.
+          </textarea>
+        </form></p>
 
       </span>
     </span>
     <p style="clear: both;"></p>
     <hr class="teal" />
 
-    <span class="float half">
+    <span class="float">
       <h3>The &lt;button&gt; element</h3>
       <h4>Description</h4>
       <ul>
         <li>The &lt;button&gt; element defines a clickable button.</li>
       </ul>
+
+      <h4>Syntax</h4>
+      <span class="blue">
+        &lt;<span class="brown">button</span>
+        <span class="crimson">type</span><span>=</span>"button"
+        <span class="crimson">onclick</span><span>=</span>"alert('Hello World!')"&gt;
+        <span>Click Me!</span>&lt;<span class="brown">/button</span>&gt;
+      </span>
+      <span class="arrow">⇩</span>
+      <p style="text-align: center;"><button type="button" onclick="alert('Hello World!')">Click Me!</button></p>
+    </span>
+
+    <span class="float half none">
+      <h3>HTML5 &lt;datalist&gt; element</h3>
+      <h4>Description</h4>
+      <ul>
+        <li>The &lt;datalist&gt; element specifies a list of pre-defined options for an &lt;input&gt; element.</li>
+      </ul>
+
+      <h4>Syntax</h4>
+      <span class="blue">
+        &lt;<span class="brown">form</span>&gt;<br />
+        <span class="left-padding blue">
+          &lt;<span class="brown">input </span>
+          <span class="crimson">list</span><span>=</span>"brausers"<span class="crimson"> /</span>&gt;
+        </span><br />
+        <span class="left-padding blue">
+          &lt;<span class="brown">datalist </span>
+          <span class="darkgreen">id</span><span>=</span>"brausers"&gt;
+        </span><br />
+        <span class="more-padding blue">
+          &lt;<span class="brown">option </span>
+          <span class="crimson">value</span><span>=</span>"Internet Explorer"<span class="crimson"> /</span>&gt;
+        </span><br />
+        <span class="more-padding blue">
+          &lt;<span class="brown">option </span>
+          <span class="crimson">value</span><span>=</span>"Firefox"<span class="crimson"> /</span>&gt;
+        </span><br />
+        <span class="more-padding blue">
+          &lt;<span class="brown">option </span>
+          <span class="crimson">value</span><span>=</span>"Chrome"<span class="crimson"> /</span>&gt;
+        </span><br />
+        <span class="more-padding blue">
+          &lt;<span class="brown">option </span>
+          <span class="crimson">value</span><span>=</span>"Opera"<span class="crimson"> /</span>&gt;
+        </span><br />
+        <span class="more-padding blue">
+          &lt;<span class="brown">option </span>
+          <span class="crimson">value</span><span>=</span>"Safari"<span class="crimson"> /</span>&gt;
+        </span><br />
+        <span class="left-padding blue">&lt;<span class="brown">/datalist</span>&gt;</span><br />
+        &lt;<span class="brown">/form</span>&gt;
+        <span class="arrow">⇩</span>
+
+        <p><form style="text-align: center;">
+          <input list="browsers" />
+          <datalist id="browsers">
+            <option value="Internet Explorer" />
+            <option value="Firefox" />
+            <option value="Chrome" />
+            <option value="Opera" />
+            <option value="Safari" />
+          </datalist>
+        </form></p>
+      </span>
+    </span>
+    <p style="clear: both;"></p>
+    <hr class="teal" />
+
+    <span class="float half none">
+      <h3>HTML5 &lt;datalist&gt; element</h3>
+      <h4>Description</h4>
+      <ul>
+        <li>Perform a calculation and show the result in an &lt;output&gt; element.</li>
+      </ul>
+
+      <h4>Syntax</h4>
+      <span class="blue">
+        &lt;<span class="brown">form </span><span class="crimson">oninput</span>
+        <span>=</span>"x.value=parseInt(a.value)+parseInt(b.value)"&gt;<br />
+        <span class="left-padding">0</span><br />
+        <span class="left-padding blue">
+          &lt;<span class="brown">input </span>
+          <span class="crimson">type</span><span>=</span>"range"
+          <span class="darkgreen">id</span><span>=</span>"a"
+          <span class="crimson">name</span><span>=</span>"a"
+          <span class="crimson">value</span><span>=</span>"50"
+          <span class="crimson"> /</span>&gt;<br />
+          <span class="left-padding">100 +</span>
+        </span><br />
+        <span class="left-padding blue">
+          &lt;<span class="brown">input </span>
+          <span class="crimson">type</span><span>=</span>"range"
+          <span class="darkgreen">id</span><span>=</span>"b"
+          <span class="crimson">name</span><span>=</span>"b"
+          <span class="crimson">value</span><span>=</span>"50"
+          <span class="crimson"> /</span>&gt;<br />
+          <span class="left-padding">=</span>
+        </span><br />
+        <span class="left-padding blue">
+          &lt;<span class="brown">output </span>
+          <span class="crimson">name</span><span>=</span>"x"
+          <span class="crimson">for</span><span>=</span>"a, b"
+          <span class="crimson">/output</span>&gt;
+        </span><br />
+        &lt;<span class="brown">/form</span>&gt;
+        <span class="arrow">⇩</span>
+
+        <p>
+          <form style="text-align: center;" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" name="a" value="50" />
+            100 +
+            <input type="number" id="b" name="b" value="50" />
+            =
+            <output name="x" for="a b"></output>
+          </form>
+        </p>
+      </span>
     </span>
 
     <p style="clear: both;"></p>
@@ -1791,7 +1913,37 @@
 
 
   <div>
-    <h1>28/ Forms</h1>
+    <h1>30/ Input Types</h1>
+    <div class="note">Note: The characters in a password field are masked (shown as asterisks or circles).</div>
+
+    <h3>Description</h3>
+    <span class="float blue">
+
+    </span>
+
+    <p style="clear: both;"></p>
+  </div>
+  <hr color="red" />
+
+
+  <div>
+    <h1>31/ Input attributes</h1>
+    <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
+
+    <h3>Description</h3>
+    <span class="float blue">
+
+    </span>
+
+    <p style="clear: both;"></p>
+  </div>
+  <hr color="red" />
+
+
+
+  <p style="text-align: center;"><h1 style="font-size: 70px;">HTML5</h1></p>
+  <div>
+    <h1>32/ Forms</h1>
     <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
 
     <h3>Description</h3>
@@ -1805,7 +1957,20 @@
 
 
   <div>
-    <h1>28/ Forms</h1>
+    <h1>33/ Forms</h1>
+    <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
+
+    <h3>Description</h3>
+    <span class="float blue">
+
+    </span>
+
+    <p style="clear: both;"></p>
+  </div>
+  <hr color="red" />
+
+  <div>
+    <h1>32/ Forms</h1>
     <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
 
     <h3>Description</h3>
@@ -1819,7 +1984,7 @@
 
 
   <div>
-    <h1>28/ Forms</h1>
+    <h1>33/ Forms</h1>
     <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
 
     <h3>Description</h3>
@@ -1833,7 +1998,7 @@
 
 
   <div>
-    <h1>28/ Forms</h1>
+    <h1>32/ Forms</h1>
     <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
 
     <h3>Description</h3>
@@ -1844,6 +2009,23 @@
     <p style="clear: both;"></p>
   </div>
   <hr color="red" />
+
+
+  <div>
+    <h1>33/ Forms</h1>
+    <div class="note">Note: Browsers automatically add some white space (a margin) before and after a paragraph.</div>
+
+    <h3>Description</h3>
+    <span class="float blue">
+
+    </span>
+
+    <p style="clear: both;"></p>
+  </div>
+  <hr color="red" />
+
+
+  
 
 </body>
 

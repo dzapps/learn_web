@@ -1,6 +1,6 @@
 body {
   font-family: Ubuntu;
-  background-color: lightblue;
+  background-color: rgba(226, 192, 51, 0.35);
   font-size: 100%;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfjCQ8gpwvAwT-CH1N_4cT7QidAzzS5oUcMyQMf0-B2OXBTfhKkA");
   background-repeat: no-repeat;
@@ -8,47 +8,91 @@ body {
   background-attachment: fixed;
 }
 
+nav {
+  /* padding-left: 1em; */
+   /* text-align: left; */
+}
+
 div {
-  border: 2px solid white;
+  /* border: 2px solid; */
   margin: 1em;
+}
+
+.mainBorder {
+  border: 2px solid white;
+  margin: 0.5em;
 }
 
 .note {
   width: 700px;
-  margin: auto;
-  padding: 1px;
+  height: auto;
+  margin: 0 15px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 3px;
   background-color: sandybrown;
-  text-align: center;
-  font-size: 0.8em;
+  font-size: 1.5em;
+}
+
+.note-value {
+  width: auto;
+  height: auto;
+  padding: 1px 5px;
+  border-left: 3px solid rgba(10, 23, 11, 1);
+  border-radius: 3px;
+  background-color: white;
+  font-style: italic;
+  font-size: 0.7em;
+}
+
+.tag {
+  line-height: 0.1em;
+}
+
+.examples {
+  margin: 0;
 }
 
 a {
   color: inherit;
 }
 
-h1 {
-  text-align: center;
-}
-
-h2, h3, p {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-}
-
 h1, h2 {
-  color: green;
+  color: rgb(233, 93, 24);
 }
 
-h3, .brown {
-  color: brown;
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3, p {
+  /* padding-left: 0.5em; */
+  /* padding-right: 0.5em; */
+}
+
+h3 {
+  font-size: 1.5em;
+  color: rgb(10, 96, 54);
 }
 
 h4 {
   color: dimgray;
 }
 
-.mediumblue {
-  color: mediumblue;
+.brown {
+  color: brown;
+}
+
+.darkblue {
+  color: darkblue;
+}
+
+.darkgreen {
+  color: darkgreen;
 }
 
 .chocolate {
@@ -118,9 +162,47 @@ p, span {
   margin-top: 1em;
 }
 
+.attr-list {
+  background-color: white;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border-right: 1px solid;
+  margin-bottom: 1em;
+}
+
+.attr-list td, .attr-list th {
+  padding: 13px;
+  border: none;
+  text-align: left;
+  border-spacing: 0;
+}
+
+.attr-list td {
+  vertical-align: top;
+  line-height: 1.1em;
+}
+
+.attr-list tr:nth-child(even) {
+  background-color: rgb(218, 136, 40);
+}
+
+.attr-list tr, .attr-list td {
+  border-color: rgb(218, 136, 40);
+}
+
+.attr-list td:nth-child(1) {
+  width: 20%;
+}
+
+.attr-list td:nth-child(2) {
+  width: 20%;
+}
+
 table, th, td {
     border: 1px solid black;
 }
+
 th, td {
     padding: 5px;
 }

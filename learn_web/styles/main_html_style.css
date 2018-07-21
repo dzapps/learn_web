@@ -1,0 +1,22 @@
+body {
+  background-color: rgba(226, 192, 51, 0.35);
+}
+
+nav {
+  margin-top: 50px;
+  text-align: center;
+}
+
+img {
+  float: left;
+  width: 5.5em;
+  height: 8em;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.view {
+  display: none;
+}
