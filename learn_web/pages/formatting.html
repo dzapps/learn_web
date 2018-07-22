@@ -1,16 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-  <title>Formatting</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="main_html_style.css" />
-  <!-- <link rel="stylesheet" href="reset.css" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formatting</title>
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
 </head>
+
 <body>
-  <nav style="text-align: left;">
-    <a href="main_window.html"><button style="position: absolute;" type="button">Home</button></a>
-  </nav>
+  <script src="../scripts/iframe.js"></script>
+
+  <div class="tag">
+    <h1>Formatting</h1>
+    <a href="main_window.html"><button class="home html-buttons" type="button">Home</button></a>
+  </div>
+
+  <div class="mainBorder">
+    <div class="tag"><h2>&lt;abbr&gt;</h2></div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="description">
+      Description:<br />
+      <div class="note-value">
+        The &lt;abbr&gt; tag defines an abbreviation or an acronym, like "Mr.", "Dec.", "ASAP", "ATM".
+      </div>
+      <div class="note-value">
+         Marking up abbreviations can give useful information to browsers, translation systems and search-engines.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="note">
+      Notes:<br />
+      <div class="note-value">
+        An abbreviation and an acronym are both shortened versions of something else.
+        Both are often represented as a series of letters.
+      </div>
+      <div class="note-value">
+        The global title attribute can be used in the &lt;abbr&gt; tag to show the full version of the abbreviation/acronym when you mouse over the &lt;abbr&gt; element.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="tag">
+      <h2 class="examples">Examples</h2>
+      <p class="blue">&lt;
+        <span class="brown">abbr </span>
+        <span class="crimson">title </span><span>=</span>"World Health Organization"&gt;
+        <span>The <abbr title = "World Health Organization">WHO</abbr> founded in 1948.</span>&lt;
+        <span class="brown">/abbr</span>&gt;<br />
+      </p>
+      <!-- <span class="brown">cite</span>&gt;<span><cite>The Scream</cite></span>&lt;<span class="brown">/cite</span>&gt;
+      <span>by Edvard Munch. Painted in 1893.</span><br /> &lt;
+      <span class="brown">bdo </span><span class="crimson">dir </span><span>=</span> "rtl"&gt; <span>This line will be written from right to left: <bdo dir="rtl"><b>This line will be written from right to left</b></bdo></span> &lt;
+      <span class="brown">/bdo</span>&gt;<br />
+      </span> -->
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+  </div>
+  <hr color="red" />
+
+
+  <div class="mainBorder">
+    <div class="tag"><h2>&lt;address&gt;</h2></div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="description">
+      Description:<br />
+      <div class="note-value">
+        The &lt;address&gt; tag defines the contact information for the author/owner of a document or an article.
+      </div>
+      <div class="note-value">
+        The text in the &lt;address&gt; element usually renders in italic.
+        Most browsers will add a line break before and after the address element.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="note">
+      Notes:<br />
+      <div class="note-value">
+        The &lt;address&gt; tag should NOT be used to describe a postal address, unless it is a part of the contact information.
+      </div>
+      <div class="note-value">
+        The &lt;address&gt; element will typically be included along with other information in a &lt;footer&gt; element.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="tag">
+      <h2 class="examples">Examples</h2>
+      <p class="blue">&lt;
+        <span class="brown">abbr </span>
+        <span class="crimson">title </span><span>=</span>"World Health Organization"&gt;
+        <span>The <abbr title = "World Health Organization">WHO</abbr> founded in 1948.</span>&lt;
+        <span class="brown">/abbr</span>&gt;<br />
+      </p>
+      <!-- <span class="brown">cite</span>&gt;<span><cite>The Scream</cite></span>&lt;<span class="brown">/cite</span>&gt;
+      <span>by Edvard Munch. Painted in 1893.</span><br /> &lt;
+      <span class="brown">bdo </span><span class="crimson">dir </span><span>=</span> "rtl"&gt; <span>This line will be written from right to left: <bdo dir="rtl"><b>This line will be written from right to left</b></bdo></span> &lt;
+      <span class="brown">/bdo</span>&gt;<br />
+      </span> -->
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+  </div>
+  <hr color="red" />
+
 </body>
 </html>

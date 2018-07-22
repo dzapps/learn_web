@@ -5,18 +5,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frames</title>
-  <!-- <link rel="stylesheet" href="main_html_style.css" /> -->
   <link rel="stylesheet" href="../styles/html_style.css" />
   <link rel="stylesheet" href="../styles/button.css" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
 </head>
 <body>
-<script src="../scripts/iframe.js"></script>
+<script src="../scripts/iframes.js"></script>
+  <div class="tag">
+    <h1>Frames</h1>
+    <a href="main_window.html"><button class="home html-buttons" type="button">Home</button></a>
+  </div>
   <div class="mainBorder">
-    <div class="tag">
-      <h1>Iframes</h1>
-      <a href="main_window.html"><button class="home html-buttons" type="button">Home</button></a>
-    </div>
+    <div class="tag"><h2>&lt;iframes&gt;</h2></div>
     <div><hr style="color: rgb(218, 216, 238);"/></div>
 
     <div class="note">
@@ -33,13 +33,15 @@
       <div class="note-value">
         Attribute srcdoc is expected to be used together with the sandbox and seamless attributes.
       </div>
+      <div class="note-value">
+        This property is read-only in DOM.
+      </div>
     </div>
-    <div>
-    <hr style="color: rgb(218, 216, 238);"/></div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
 
     <div class="tag">
       <h2>Attributes</h2>
-      <table class="attr-list" style="margin: 2px; margin-bottom: 1em;">
+      <table class="attr-list attr-list-3" style="margin: 2px; margin-bottom: 1em;">
         <thead>
           <tr>
             <th colspan="3" style="font-size: 20px; text-align: center; background-color: black; color: white;">
@@ -84,7 +86,7 @@
         </tbody>
       </table>
 
-      <table class="attr-list" style="margin: 2px; margin-bottom: 1em;">
+      <table class="attr-list attr-list-3" style="margin: 2px; margin-bottom: 1em;">
         <thead>
           <tr>
             <th colspan="3" style="font-size: 20px; text-align: center; background-color: black; color: white;">
@@ -138,10 +140,10 @@
     <div><hr style="color: rgb(218, 216, 238);"/></div>
 
     <div>
-      <h2 class="examples">Examples</h2>
+      <h2>Examples</h2>
       <span>
         <h3>Deprecated style</h3>
-        <p id="iframe-deprecated-text" class="blue">&lt;<span class="brown">iframe </span><span class="crimson">src</span><span>=</span>"demo_iframe.htm"
+        <p id="iframe-deprecated-text" class="blue">&lt;<span class="brown">iframe </span><span class="crimson">src</span><span>=</span>"demo_iframe.html"
           <span class="crimson">height</span><span>=</span>"200"
           <span class="crimson">width</span><span>=</span>"50%"
           <span class="crimson">align</span><span>=</span>"right"
@@ -162,7 +164,7 @@
 
       <span>
         <h3>HTML5 style</h3>
-        <span class="blue">&lt;<span class="brown">iframe </span><span class="crimson">src</span><span>=</span>"demo_iframe.html"
+        <span id="iframeStyleText" class="blue">&lt;<span class="brown">iframe </span><span class="crimson">src</span><span>=</span>"demo_iframe.html"
           <span class="crimson">width</span><span>=</span>"50%"
           <span class="crimson">height</span><span>=</span>"200px"
           <span class="crimson">srcdoc</span><span>=</span>"&lt;p&gt;srcdoc-example&lt;/p&gt;"
@@ -170,29 +172,29 @@
           <span class="crimson">style</span><span>=</span>"<span class="crimson">border</span><span>: </span>3px solid;"&gt;
           <span class="blue" style="padding-top: 1em;">&lt;<span class="brown">/iframe</span>&gt;</span>
         </span><br />
-      <span class="blue">
-        &lt;<span class="brown">a </span><span class="crimson">href</span><span>=</span>
-        <span class="olive">"https://liquimoly.ru"</span>
-        <span class="crimson">target</span><span>=</span>"framel"&gt;
-        &lt;<span class="brown">button</span>&gt;<span>Liqui Moly</span>&lt;<span class="brown">/button</span>&gt;
-        &lt;<span class="brown">a</span>&gt;
+        <span id="iframeLinkText" class="blue">
+          &lt;<span class="brown">a </span><span class="crimson">href</span><span>=</span>
+          <span class="olive">"https://liquimoly.ru"</span>
+          <span class="crimson">target</span><span>=</span>"framel"&gt;
+          &lt;<span class="brown">button</span>&gt;<span>Liqui Moly</span>&lt;<span class="brown">/button</span>&gt;
+          &lt;<span class="brown">a</span>&gt;
+        </span>
+        <p><a><button onclick="sandbox()" class="example-button" style="float: right;">sandbox</button></a></p>
+        <p><a>
+          <button onclick="allowScripts()" class="example-button" style="float: right; margin-right: 3px;">allow-scripts</button>
+        </a></p>
+        <p><a>
+          <button onclick="allowSameOrigin()" class="example-button" style="float: right; margin-right: 3px;">allow-same-origin</button>
+        </a></p>
+        <p><a href="https://liquimoly.ru" target="framel">
+          <button onclick="iframeSimple()" class="example-button" style="float: right; margin-right: 3px;">Liqui Moly</button>
+        </a></p>
+        <iframe id="iframe" src="../examples/demo_iframe.html" srcdoc="<p>srcdoc-example (If a browser supports the srcdoc attribute, it will override the content specified in the src attribute (if present)).</p>" style="height: 200px; width: 50%; background-color: white; border: 3px solid;" name="framel"></iframe>
+        <iframe id="iframeSandbox" src="../examples/demo_iframe_sandbox.html" style="display: none; height: 200px; width: 50%; background-color: white; border: 3px solid;" name="framel" sandbox></iframe>
+        <iframe id="iframeAllowScripts" src="../examples/demo_iframe_allow_scripts.html" style="display: none; height: 200px; width: 50%; background-color: white; border: 3px solid;" name="framel" sandbox="allow-scripts"></iframe>
+        <iframe id="iframeAllowSameOrigin" src="../examples/demo_iframe_allow_same_origin.html" style="display: none; height: 200px; width: 50%; background-color: white; border: 3px solid;" name="framel" sandbox="allow-scripts allow-same-origin"></iframe>
       </span>
-      <p><a><button onclick="sandbox()" class="example-button" style="float: right;">sandbox</button></a></p>
-      <p><a>
-        <button onclick="allowScripts()" class="example-button" style="float: right; margin-right: 3px;">allow-scripts</button>
-      </a></p>
-      <p><a>
-        <button onclick="allowSameOrigin()" class="example-button" style="float: right; margin-right: 3px;">allow-same-origin</button>
-      </a></p>
-      <p><a href="https://liquimoly.ru" target="framel">
-        <button onclick="iframeSimple()" class="example-button" style="float: right; margin-right: 3px;">Liqui Moly</button>
-      </a></p>
-      <iframe id="iframe" src="../examples/demo_iframe.html" srcdoc="<p>srcdoc-example (If a browser supports the srcdoc attribute, it will override the content specified in the src attribute (if present)).</p>" style="height: 200px; width: 50%; background-color: white; border: 3px solid;" name="framel"></iframe>
-      <iframe id="iframeSandbox" src="../examples/demo_iframe_sandbox.html" style="display: none; height: 200px; width: 50%; background-color: white; border: 3px solid;" name="framel" sandbox></iframe>
-      <iframe id="iframeAllowScripts" src="../examples/demo_iframe_allow_scripts.html" style="display: none; height: 200px; width: 50%; background-color: white; border: 3px solid;" name="framel" sandbox="allow-scripts"></iframe>
-      <iframe id="iframeAllowSameOrigin" src="../examples/demo_iframe_allow_same_origin.html" style="display: none; height: 200px; width: 50%; background-color: white; border: 3px solid;" name="framel" sandbox="allow-scripts allow-same-origin"></iframe>
 
-      </span>
       <p style="clear: both;"></p>
     </div>
 

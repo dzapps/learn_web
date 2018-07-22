@@ -8,19 +8,24 @@ body {
   background-attachment: fixed;
 }
 
-nav {
-  /* padding-left: 1em; */
-   /* text-align: left; */
-}
-
 div {
-  /* border: 2px solid; */
   margin: 1em;
 }
 
 .mainBorder {
   border: 2px solid white;
   margin: 0.5em;
+}
+
+.description {
+  width: 700px;
+  height: auto;
+  margin: 0 15px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 3px;
+  font-size: 1.5em;
+  background-color: rgba(205, 66, 29, 0.5);
 }
 
 .note {
@@ -50,7 +55,7 @@ div {
 }
 
 .examples {
-  margin: 0;
+  /* margin: 0; */
 }
 
 a {
@@ -67,11 +72,6 @@ h1 {
 
 h2 {
   font-size: 2em;
-}
-
-h3, p {
-  /* padding-left: 0.5em; */
-  /* padding-right: 0.5em; */
 }
 
 h3 {
@@ -172,10 +172,14 @@ p, span {
 }
 
 .attr-list td, .attr-list th {
-  padding: 13px;
+  padding: 5px;
   border: none;
   text-align: left;
   border-spacing: 0;
+}
+
+.attr-list th {
+  padding: 13px 5px;
 }
 
 .attr-list td {
@@ -184,27 +188,19 @@ p, span {
 }
 
 .attr-list tr:nth-child(even) {
-  background-color: rgb(218, 136, 40);
+  background-color: rgba(218, 136, 40, 0.7);
 }
 
 .attr-list tr, .attr-list td {
-  border-color: rgb(218, 136, 40);
+  border-color: rgba(218, 136, 40, 0.7);
 }
 
-.attr-list td:nth-child(1) {
+.attr-list-3 td:nth-child(1) {
   width: 20%;
 }
 
-.attr-list td:nth-child(2) {
+.attr-list-3 td:nth-child(2) {
   width: 20%;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
-
-th, td {
-    padding: 5px;
 }
 
 .city {
