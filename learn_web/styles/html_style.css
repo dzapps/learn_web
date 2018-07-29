@@ -14,11 +14,12 @@ div {
 
 .mainBorder {
   border: 2px solid white;
-  margin: 0.5em;
+  margin: 1em;
 }
 
 .description {
-  width: 700px;
+  min-width: 40%;
+  width: 55%;
   height: auto;
   margin: 0 15px;
   border-radius: 5px;
@@ -29,7 +30,8 @@ div {
 }
 
 .note {
-  width: 700px;
+  min-width: 30%;
+  width: 55%;
   height: auto;
   margin: 0 15px;
   border-radius: 5px;
@@ -37,6 +39,18 @@ div {
   padding: 3px;
   background-color: sandybrown;
   font-size: 1.5em;
+}
+
+/* .shadow:hover {
+  background-color: white;
+  padding: 1em;
+  box-shadow: 5px -2px 10px 3px rgba(0,0,0,0.5);
+} */
+
+.note:hover, .description:hover {
+  box-shadow: 5px -2px 10px 3px rgba(0,0,0,0.5);
+  height: auto;
+  font-size: 2em;
 }
 
 .note-value {
@@ -47,15 +61,15 @@ div {
   border-radius: 3px;
   background-color: white;
   font-style: italic;
-  font-size: 0.7em;
+  font-size: 0.5em;
 }
 
 .tag {
   line-height: 0.1em;
 }
 
-.examples {
-  /* margin: 0; */
+table {
+  max-width: 100%;
 }
 
 a {
@@ -139,15 +153,26 @@ h4 {
   padding-left: 2em;
 }
 
-.arrow {
-  display: block;
-  font-size: 2em;
+.rarrow {
+  margin: -15px 20px -20px 20px;
+  font-size: 40px;
+}
+
+.darrow {
+  margin: 0;
   text-align: center;
+  font-size: 40px;
 }
 
 p, span {
-  font-size: 15px;
+  /* margin: 0; */
+  font-size: 16px;
   color: black;
+}
+
+.float-borders-none {
+  float: left;
+  border: none;
 }
 
 .float {
@@ -158,16 +183,11 @@ p, span {
   border-right: 2px solid teal;
 }
 
-.table {
-  margin-top: 1em;
-}
-
 .attr-list {
   background-color: white;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  border-right: 1px solid;
   margin-bottom: 1em;
 }
 
@@ -188,11 +208,11 @@ p, span {
 }
 
 .attr-list tr:nth-child(even) {
-  background-color: rgba(218, 136, 40, 0.7);
+  background-color: rgba(218, 136, 40, 0.5);
 }
 
 .attr-list tr, .attr-list td {
-  border-color: rgba(218, 136, 40, 0.7);
+  border-color: rgba(218, 136, 40, 0.5);
 }
 
 .attr-list-3 td:nth-child(1) {
@@ -213,7 +233,7 @@ p, span {
     text-align: center;
 }
 
-.none {
+.borders-none {
   border: none;
 }
 

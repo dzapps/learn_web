@@ -6,7 +6,7 @@ function iframeWithoutBorder() {
   document.getElementById('iframe-deprecated').height = "100";
   document.getElementById('iframe-deprecated').width = "300";
   document.getElementById('iframe-deprecated-text').innerHTML =
-    '<span class="blue">&lt;<span class="brown">iframe </span><span class="crimson">src</span><span>=</span>"demo_iframe.htm" ' +
+    '<span class="blue">&lt;<span class="brown">iframe </span><span class="crimson">src</span><span>=</span>"demo_iframe.html" ' +
     '<span class="crimson">height</span><span>=</span>"100" ' +
     '<span class="crimson">width</span><span>=</span>"300" ' +
     '<span class="crimson">align</span><span>=</span>"right" ' +
@@ -26,7 +26,7 @@ function iframeWithBorder() {
   document.getElementById('iframe-deprecated').height = "200";
   document.getElementById('iframe-deprecated').width = "50%";
   document.getElementById('iframe-deprecated-text').innerHTML =
-    '<span class="blue">&lt;<span class="brown">iframe </span><span class="crimson">src</span><span>=</span>"demo_iframe.htm" ' +
+    '<span class="blue">&lt;<span class="brown">iframe </span><span class="crimson">src</span><span>=</span>"demo_iframe.html" ' +
     '<span class="crimson">height</span><span>=</span>"200" ' +
     '<span class="crimson">width</span><span>=</span>"50%" ' +
     '<span class="crimson">align</span><span>=</span>"right" ' +

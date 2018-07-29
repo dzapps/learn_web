@@ -17,6 +17,16 @@
   color: white;
 }
 
+.auxiliary-button {
+  color: grey;
+  background-color: white;
+}
+
+.auxiliary-button:hover {
+  color: white;
+  background-color: grey;
+}
+
 button {
   font-size: 20px;
   border-radius: 0px;
