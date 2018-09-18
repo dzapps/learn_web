@@ -18,15 +18,20 @@
 
 <body>
   <script src="../scripts/main_window.js"></script>
-  <div style="width: 440px; margin: 6em auto;">
-    <a href="../pages/main_window_html.html"><img src="../images/html5_logo.png" alt="html5_logo" /></a>
-    <img onclick="chooseCSS()" style="margin-left: 5em; margin-top: -4em;" src="../images/css3_logo.png" alt="css3_logo"/>
-    <a href="../pages/main_window_js.html"><img style="width: 8em; height: 8.1em; margin-left: 3.4em; margin-top: -0.1em;" onclick="chooseJS()" src="../images/js_logo.png" alt="css3_logo"/></a>
+  <div style="width: 530px; height: 230px; margin: 6em auto 3em; overflow: none;">
+    <a href="../pages/main_window_html.html">
+      <img style="padding-top: 3em;" onclick="shooseHTML()" src="../images/html5_logo.png" alt="html5_logo" />
+    </a>
+    <img style="padding-left: 5em; padding-top: -4em;" src="../images/css3_logo.png" alt="css3_logo"/>
+    <a href="../pages/main_window_js.html">
+      <img style="position: absolute; width: 8em; height: 8.1em; padding-left: 3.4em; padding-top: 3em;" onclick="chooseJS()" src="../images/js_logo.png" alt="css3_logo"/>
+    </a>
   </div>
   <p style="clear: left;"></p>
 
   <nav id="cssButtons" style="display: block;">
     <a href="../examples/character_entity_reference_chart.html"><button class="main-buttons auxiliary-button">Entities</button></a>
+    <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><button class="main-buttons auxiliary-button">Media types</button></a>
     <p style="margin: 2em 0;"></p>
     <a href="#"><button class="main-buttons css-buttons" type="button">A</button></a>
     <a href="#"><button class="main-buttons css-buttons" type="button">B</button></a>

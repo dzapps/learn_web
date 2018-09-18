@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lists</title>
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+
+<body>
+  <script src="../scripts/lists.js"></script>
+  <span id="up"></span>
+  <!-- <script src="../scripts/main_window.js"></script> -->
+
+  <a href="#up"><button class="up-button up-button-left" type="button">&Uarr;</button></a>
+  <a href="#up"><button class="up-button up-button-right" type="button">&Uarr;</button></a>
+
+
+  <div class="tag">
+    <h1>Links</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">Home</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+
+  <div class="mainBorder" style="overflow: hidden;">
+   <div class="tag">
+     <h2>Tags</h2>
+     <table class="attr-list attr-list-dark-first-row">
+       <tbody>
+          <tr>
+            <th>Tag</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><a href="#a">&lt;a&gt;</a></td>
+            <td>Defines a hyperlink</td>
+          </tr>
+          <tr>
+            <td><a href="#link">&lt;link&gt;</a></td>
+            <td>Defines the relationship between a document and an external resource (most used to link to style sheets)</td>
+          </tr>
+          <tr>
+            <td><a href="#nav">&lt;nav&gt;</a></td>
+            <td>Defines navigation links</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <div id="a" class="mainBorder">
+    <div class="tag"><h2 class="not-support">&lt;a&gt;</h2></div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="description">
+      Description:<br />
+      <div class="note-value">
+         The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.
+      </div>
+      <div class="note-value">
+        The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="note">
+      Notes:<br />
+      <div class="note-value">
+         The following attributes: download, hreflang, media, rel, target, and type cannot be present if the href attribute is not present.
+      </div>
+      <div class="note-value">
+        A linked page is normally displayed in the current browser window, unless you specify another target.
+      </div>
+      <div class="note-value">
+        The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="tag">
+      <h2>Attributes</h2>
+      <table class="attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th colspan="3" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+              Not supported HTML5
+            </th>
+          </tr>
+          <tr style="background-color: rgba(218, 136, 40, 0.5);">
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#charset">&lt;charset&gt;</a></td>
+            <td>char_encoding</td>
+            <td>Specifies the character-set of a linked document</td>
+          </tr>
+          <tr>
+            <td><a href="#coords">&lt;coords&gt;</a></td>
+            <td>coordinates</td>
+            <td>Specifies the coordinates of a link</td>
+          </tr>
+          <tr>
+            <td><a href="#name">&lt;name&gt;</a></td>
+            <td>section_name</td>
+            <td>Specifies the name of an anchor</td>
+          </tr>
+          <tr>
+            <td><a href="#rev">&lt;rev&gt;</a></td>
+            <td>text</td>
+            <td>Specifies the relationship between the linked document and the current document</td>
+          </tr>
+          <tr>
+            <td><a href="#shape">&lt;shape&gt;</a></td>
+            <td>default<br />rect<br />circle<br />poly</td>
+            <td>Specifies the shape of a link</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tag">
+      <table class="attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th colspan="3" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+              Supported and new in HTML5
+            </th>
+          </tr>
+          <tr style="background-color: rgba(218, 136, 40, 0.5);">
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#download">&lt;download&gt;</a></td>
+            <td>filename</td>
+            <td>Specifies that the target will be downloaded when a user clicks on the hyperlink</td>
+          </tr>
+          <tr>
+            <td><a href="#href">&lt;href&gt;</a></td>
+            <td>URL</td>
+            <td>Specifies the URL of the page the link goes to</td>
+          </tr>
+          <tr>
+            <td><a href="#hreflang">&lt;hreflang&gt;</a></td>
+            <td>language_code</td>
+            <td>Specifies the language of the linked document</td>
+          </tr>
+          <tr>
+            <td><a href="#media">&lt;media&gt;</a></td>
+            <td>media_query</td>
+            <td>Specifies what media/device the linked document is optimized for</td>
+          </tr>
+          <tr>
+            <td><a href="#ping">&lt;ping&gt;</a></td>
+            <td>list_of_URLs</td>
+            <td>Specifies a space-separated list of URLs to which, when the link is followed,
+              post requests with the body ping will be sent by the browser (in the background).
+              Typically used for tracking.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#rel">&lt;rel&gt;</a></td>
+            <td>alternate<br />autor<br />bookmark<br />external<br />help<br />license<br />next<br />nofollow
+              <br />noreferrer<br />noopener<br />prev<br />search<br />tag</td>
+            <td>Specifies the relationship between the current document and the linked document</td>
+          </tr>
+          <tr>
+            <td><a href="#target">&lt;target&gt;</a></td>
+            <td>_blank<br />_parent<br />_self<br />_top<br />framename</td>
+            <td>Specifies where to open the linked document</td>
+          </tr>
+          <tr>
+            <td><a href="#type">&lt;type&gt;</a></td>
+            <td>media_type</td>
+            <td>Specifies the media type of the linked document</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div class="left-padding">
+      <button onclick="funccharset()" class="example-button">charset</button>
+      <a href="#coords"><button onclick="funccoords()" class="example-button">coords</button></a>
+      <a href="#download"><button onclick="funcdownload()" class="example-button">download</button></a>
+      <a href="#href"><button onclick="funchref()" class="example-button">href</button></a>
+      <button onclick="funchreflang()" class="example-button">hreflang</button>
+      <button onclick="funcmedia()" class="example-button">media</button>
+      <button onclick="funcname()" class="example-button">name</button>
+      <button onclick="funcping()" class="example-button">ping</button>
+      <button onclick="funcrel()" class="example-button">rel</button>
+      <button onclick="funcrev()" class="example-button">rev</button>
+      <button onclick="funcshape()" class="example-button">shape</button>
+      <button onclick="functarget()" class="example-button">target</button>
+      <button onclick="functype()" class="example-button">type</button>
+    </div>
+
+    <div id="charset" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">charset</span><span>=</span>"UTF-8"
+        <span class="crimson">href</span><span>=</span>"https://www.w3schools.com"&gt;
+        <span>Visit W3Schools.com!</span>
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+        <a charset="UTF-8" href="https://www.w3schools.com">Visit W3Schools.com!</a>
+      </span>
+    </div>
+
+    <div id="coords" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">object</span>
+        <span class="crimson">data</span><span>=</span>"../images/planets.gif"
+        <span class="crimson">alt</span><span>=</span>"Planets"
+        <span class="crimson">type</span><span>=</span>"image/gif"
+        <span class="crimson">usemap</span><span>=</span>"#Map1"&gt;<br />
+          <span class="blue left-padding">&lt;<span class="brown">map </span><span class="crimson">name</span><span>=</span>"Map1"&gt;</span><br />
+            <span class="blue more-padding">&lt;<span class="brown">a</span>
+            <span class="crimson">href</span><span>=</span>"../examples/sun.html"
+            <span class="crimson">shape</span><span>=</span>"rect"
+            <span class="crimson">coords</span><span>=</span>"0 ,0 ,82, 126"&gt;
+            <span>The Sun</span>&lt;<span class="brown">/a</span>&gt;<br /></span>
+            <span class="blue more-padding">&lt;<span class="brown">a</span>
+            <span class="crimson">href</span><span>=</span>"../examples/mercury.html"
+            <span class="crimson">shape</span><span>=</span>"circle"
+            <span class="crimson">coords</span><span>=</span>"90, 58, 3"&gt;
+            <span>Mercury</span>&lt;<span class="brown">/a</span>&gt;<br /></span>
+            <span class="blue more-padding">&lt;<span class="brown">a</span>
+            <span class="crimson">href</span><span>=</span>"../examples/venus.html"
+            <span class="crimson">shape</span><span>=</span>"circle"
+            <span class="crimson">coords</span><span>=</span>"124, 58, 3"&gt;
+            <span>Venus</span>&lt;<span class="brown">/a</span>&gt;<br /></span>
+          <span class="blue left-padding">&lt;<span class="brown">/map</span>&gt;</span><br />
+        &lt;<span class="brown">/object</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+        <object data="../images/planets.gif" alt="Planets" type="image/gif" usemap="#Map1">
+         <map name="Map1">
+           <a href="../examples/sun.html" shape="rect" coords="0,0,82,126">The Sun</a>
+           <a href="mercur.html"shape="circle" coords="90,58,3">Mercury</a>
+           <a href="venus.html" shape="circle" coords="124,58,8">Venus</a>
+         </map>
+        </object>
+      </span>
+      <p style="clear: both;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>x1, y1, x2, y2</td>
+              <td>If the shape attribute is set to "rect",
+                  it specifies the coordinates of the top-left corner and the bottom-right corner of the rectangle
+              </td>
+            </tr>
+            <tr>
+              <td>x, y, radius</td>
+              <td>If the shape attribute is set to "circle", it specifies the coordinates of the circle center and the radius</td>
+            </tr>
+            <tr>
+              <td>x1, y1, x2, y2, .., xn, yn</td>
+              <td>If the shape attribute is set to "poly", it specifies the coordinates of the edges of the polygon.
+                  If the first and last coordinate pairs are not the same,
+                  the browser must add the last coordinate pair to close the polygon
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="download" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"../images/skull_with_mushrooms.jpg"
+        <span class="crimson">download</span><span>=</span>"skull"&gt;<br />
+          <span class="blue left-padding"><span class="brown">img</span>
+          <span class="crimson">src</span><span>=</span>"../images/skull_with_mushrooms.jpg"
+          <span class="crimson">alt</span><span>=</span>"skull"
+          <span class="crimson">width</span><span>=</span>"104"
+          <span class="crimson">height</span><span>=</span>"142"&gt;</span><br />
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+        <a href="../images/skull_with_mushrooms.jpg" download>
+          <img src="../images/skull_with_mushrooms.jpg" alt="W3Schools" width="104" height="142">
+        </a>
+      </span>
+      <p style="clear: both;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>filename</td>
+              <td>Optional. Specifies the new filename for the downloaded file</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="href" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="left-padding">
+        <span class="blue float-borders-none">
+          &lt;<span class="brown">a</span>
+          <span class="crimson">href</span><span>=</span>"#a"&gt;
+          &lt;<span class="brown">button</span>&gt;
+          <span>Link to an element</span>
+          &lt;<span class="brown">/button</span>&gt;
+          &lt;<span class="brown">/a</span>&gt;
+        </span>
+        <span class="rarrow float-borders-none">&Rarr;</span>
+          <a href="#a"><button class="example-double-level-button">Link to an element</button></a>
+      </span>
+      <!-- <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"../images/skull_with_mushrooms.jpg"
+        <span class="crimson">download</span><span>=</span>"skull"&gt;<br />
+          <span class="blue left-padding"><span class="brown">img</span>
+          <span class="crimson">src</span><span>=</span>"../images/skull_with_mushrooms.jpg"
+          <span class="crimson">alt</span><span>=</span>"skull"
+          <span class="crimson">width</span><span>=</span>"104"
+          <span class="crimson">height</span><span>=</span>"142"&gt;</span><br />
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+        <a href="../images/skull_with_mushrooms.jpg" download>
+          <img src="../images/skull_with_mushrooms.jpg" alt="W3Schools" width="104" height="142">
+        </a>
+      </span>
+      <p style="clear: both;"></p><br /> -->
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>URL</td>
+              <td>The URL of the link.<p></p>Possible values:<br />
+                  An absolute URL - points to another web site (like href="http://www.example.com/default.htm")<br />
+                  A relative URL - points to a file within a web site (like href="default.htm")<br />
+                  Link to an element with a specified id within the page (like href="#top")<br />
+                  Other protocols (like https://, ftp://, mailto:, file:, etc..)<br />
+                  A script (like href="javascript:alert('Hello');")
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+    <!-- An absolute URL: <a href="https://www.w3schools.com">W3Schools</a> -->
+
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+  </div>
+  <hr color="red" />
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audio&Video</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/main_html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+<body>
+  <span id="up"></span>
+  <script src="../scripts/audio_and_video.js"></script>
+  <script src="../scripts/main_window.js"></script>
+
+  <a href="#up"><button class="up-button up-button-left" type="button">&Uarr;</button></a>
+  <a href="#up"><button class="up-button up-button-right" type="button">&Uarr;</button></a>
+
+
+  <div class="tag">
+    <h1>Audio and video</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">Home</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="mainBorder" style="overflow: hidden;">
+   <div class="tag">
+     <h2>Tags</h2>
+     <table class="attr-list attr-list-dark-first-row">
+       <tbody>
+          <tr>
+            <th>Tag</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><a href="#audio" class="attr-links">&lt;audio&gt;</a></td>
+            <td>Defines sound content.</td>
+          </tr>
+          <tr>
+            <td><a href="#source" class="attr-links">&lt;source&gt;</a></td>
+            <td>Defines multiple media resources for media elements (&lt;video&gt;, &lt;audio&gt; and &lt;picture&gt;).</td>
+          </tr>
+          <tr>
+            <td><a href="#track" class="attr-links">&lt;track&gt;</a></td>
+            <td>Defines text tracks for media elements (&lt;video&gt; and &lt;audio&gt;).</td>
+          </tr>
+          <tr>
+            <td><a href="#video" class="attr-links">&lt;video&gt;</a></td>
+            <td>Defines a video or movie.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr color="red" />
+
+  <div id="audio" class="mainBorder">
+    <div class="tag"><h2 class="not-support">&lt;audio&gt;</h2></div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="description">
+      Description:<br />
+      <div class="note-value">
+         The &lt;audio&gt; tag defines sound, such as music or other audio streams.
+      </div>
+      <div class="note-value">
+        The &lt;audio&gt; tag defines sound, such as music or other audio streams.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="note">
+      Notes:<br />
+      <div class="note-value">
+         Any text inside the between &lt;audio&gt; and &lt;/audio&gt; will be displayed in browsers that do not support the &lt;audio&gt; tag.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="tag">
+      <h2>Attributes</h2>
+      <table class="attr-list attr-list-3">
+        <thead>
+          <tr style="background-color: rgba(218, 136, 40, 0.5);">
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#audio-examples-bar" class="attr-links">&lt;autoplay&gt;</a></td>
+            <td>autoplay</td>
+            <td>Specifies that the audio will start playing as soon as it is ready.</td>
+          </tr>
+          <tr>
+            <td><a href="#audio-examples-bar" class="attr-links">&lt;controls&gt;</a></td>
+            <td>controls</td>
+            <td>Specifies that audio controls should be displayed (such as a play/pause button etc).</td>
+          </tr>
+          <tr>
+            <td><a href="#audio-examples-bar" class="attr-links">&lt;loop&gt;</a></td>
+            <td>loop</td>
+            <td>Specifies that the audio will start over again, every time it is finished.</td>
+          </tr>
+          <tr>
+            <td><a href="#audio-examples-bar" class="attr-links">&lt;muted&gt;</a></td>
+            <td>muted</td>
+            <td>Specifies that the audio output should be muted.</td>
+          </tr>
+          <tr>
+            <td><a href="#audio-examples-bar" class="attr-links">&lt;preload&gt;</a></td>
+            <td>preload</td>
+            <td>Specifies if and how the author thinks the audio should be loaded when the page loads.<td>
+          </tr>
+          <tr>
+            <td><a href="#audio-examples-bar" class="attr-links">&lt;src&gt;</a></td>
+            <td>URL</td>
+            <td>Specifies the URL of the audio file.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="audio-examples-bar" class="left-padding">
+      <a href="#audio-examples-bar"><button onclick="funcAutoplay()" class="example-button">autoplay</button></a>
+      <a href="#audio-examples-bar"><button onclick="funcControls()" class="example-button">controls</button></a>
+      <a href="#audio-examples-bar"><button onclick="funcLoop()" class="example-button">download</button></a>
+      <a href="#audio-examples-bar"><button onclick="funcMuted()" class="example-button">href</button></a>
+      <a href="#audio-examples-bar"><button onclick="funcPreload()" class="example-button">hreflang</button></a>
+    </div><br />
+
+    <div id="autoplay" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">audio</span><span class="crimson"> controls</span><span class="crimson"> autoplay</span>&gt;<br />
+          <span class="blue left-padding">
+            &lt;<span class="brown">source</span>
+            <span class="crimson">crc</span><span>=</span>"../sounds/cat_mewing.mp3"
+            <span class="crimson">type</span><span>=</span>"audio/mpeg"<span class="brown"> /</span>&gt;
+          </span><br />
+          <span class="left-padding">Your browser does not support the audio element.</span><br />
+        &lt;<span class="brown">/audio</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="result float-borders-none">
+        <audio controls="controls">
+          <source src="../sounds/cat_mewing.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+       </audio>
+      </span>
+      <p style="clear: left;"></p>
+    </div>
+
+</body>
+</html>

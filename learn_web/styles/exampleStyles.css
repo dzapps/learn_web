@@ -1,0 +1,10 @@
+.relFrame {
+  background-color: lightgreen;
+}
+
+.relFrameData {
+  color: blue;
+  width: 230px;
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+}

@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Links</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/rabbit_on_the_pad.jpg" type="image/jpg" sizes="32x32" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/exampleStyles.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+
+<body>
+  <span id="up"></span>
+  <script src="../scripts/links.js"></script>
+  <script src="../scripts/main_window.js"></script>
+
+  <a href="#up"><button class="up-button up-button-left" type="button">&Uarr;</button></a>
+  <a href="#up"><button class="up-button up-button-right" type="button">&Uarr;</button></a>
+
+
+  <div class="tag">
+    <h1>Links</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">Home</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+
+  <div class="mainBorder" style="overflow: hidden;">
+   <div class="tag">
+     <h2>Tags</h2>
+     <table class="attr-list attr-list-dark-first-row">
+       <tbody>
+          <tr>
+            <th>Tag</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><a href="#a" class="attr-links">&lt;a&gt;</a></td>
+            <td>Defines a hyperlink</td>
+          </tr>
+          <tr>
+            <td><a href="#link" class="attr-links">&lt;link&gt;</a></td>
+            <td>Defines the relationship between a document and an external resource (most used to link to style sheets)</td>
+          </tr>
+          <tr>
+            <td><a href="#nav" class="attr-links">&lt;nav&gt;</a></td>
+            <td>Defines navigation links</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr color="red" />
+
+
+  <div id="a" class="mainBorder">
+    <div class="tag"><h2 class="not-support">&lt;a&gt;</h2></div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="description">
+      Description:<br />
+      <div class="note-value">
+         The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.
+      </div>
+      <div class="note-value">
+        The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="note">
+      Notes:<br />
+      <div class="note-value">
+         The following attributes: download, hreflang, media, rel, target, and type cannot be present if the href attribute is not present.
+      </div>
+      <div class="note-value">
+        A linked page is normally displayed in the current browser window, unless you specify another target.
+      </div>
+      <div class="note-value">
+        The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="tag">
+      <h2>Attributes</h2>
+      <table class="attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th colspan="3" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+              Not supported HTML5
+            </th>
+          </tr>
+          <tr style="background-color: rgba(218, 136, 40, 0.5);">
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a name="charsets" href="#a-examples-bar" class="attr-links">&lt;charset&gt;</a></td>
+            <td>char_encoding</td>
+            <td>Specifies the character-set of a linked document.</td>
+          </tr>
+          <tr>
+            <td><a href="#a-examples-bar" class="attr-links">&lt;coords&gt;</a></td>
+            <td>coordinates</td>
+            <td>Specifies the coordinates of a link.</td>
+          </tr>
+          <tr>
+            <td><a href="#a-examples-bar" class="attr-links">&lt;name&gt;</a></td>
+            <td>section_name</td>
+            <td>Specifies the name of an anchor.</td>
+          </tr>
+          <tr>
+            <td><a href="#a-examples-bar" class="attr-links">&lt;rev&gt;</a></td>
+            <td>reversed relationship
+            </td>
+            <td>Specifies the relationship between the linked document and the current document.
+                Browsers do not use this attribute in any way.
+                However, search engines can use this attribute to get more information about a link.</td>
+          </tr>
+          <tr>
+            <td><a href="#a-examples-bar" class="attr-links">&lt;shape&gt;</a></td>
+            <td>default<br />rect<br />circle<br />poly</td>
+            <td>Specifies the entire region.<br />
+                Defines a rectangular region.<br />
+                Defines a circular region.<br />
+                Defines a polygonal region.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tag">
+      <table class="attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th colspan="3" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+              Supported and new in HTML5
+            </th>
+          </tr>
+          <tr style="background-color: rgba(218, 136, 40, 0.5);">
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#a-examples-bar" class="attr-links">&lt;download&gt;</a></td>
+            <td>filename</td>
+            <td>Specifies that the target will be downloaded when a user clicks on the hyperlink.</td>
+          </tr>
+          <tr>
+            <td><a href="#a-examples-bar" class="attr-links">&lt;href&gt;</a></td>
+            <td>URL</td>
+            <td>Specifies the URL of the page the link goes to.</td>
+          </tr>
+          <tr>
+            <td><a href="#a-examples-bar" class="attr-links">&lt;hreflang&gt;</a></td>
+            <td>language_code</td>
+            <td>Specifies the language of the linked document. This attribute is purely advisory.</td>
+          </tr>
+          <tr>
+            <td><a href="#a-examples-bar" class="attr-links">&lt;media&gt;</a></td>
+            <td>media_query</td>
+            <td>Specifies what media/device the linked document is optimized for.
+                This attribute can accept several values.
+                This attribute is purely advisory.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#a-examples-bar" class="attr-links">&lt;ping&gt;</a></td>
+            <td>list_of_URLs</td>
+            <td>Specifies a space-separated list of URLs to which, when the link is followed,
+              post requests with the body ping will be sent by the browser (in the background). Typically used for tracking.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#a-examples-bar" class="attr-links">&lt;rel&gt;</a></td>
+            <td>alternate<br />autor<br />bookmark<br />external<br />help<br />license<br />next<br />nofollow
+              <br />noreferrer<br />noopener<br />prev<br />search<br />tag</td>
+            <td>Specifies the relationship between the current document and the linked document.
+                Browsers do not use this attribute in any way.
+                However, search engines can use this attribute to get more information about a link.</td>
+          </tr>
+          <tr>
+            <td><a href="#a-examples-bar" class="attr-links">&lt;target&gt;</a></td>
+            <td>_blank<br />_parent<br />_self<br />_top<br />framename</td>
+            <td>Opens the linked document in a new window or tab.<br />
+                Opens the linked document in the same frame as it was clicked (this is default).<br />
+                Opens the linked document in the parent frame.<br />
+                Opens the linked document in the full body of the window.<br />
+               	Opens the linked document in a named frame.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#a-examples-bar" class="attr-links">&lt;type&gt;</a></td>
+            <td>media_type</td>
+            <td>Specifies the media type of the linked document. This attribute is purely advisory.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="a-examples-bar" class="left-padding">
+      <a href="#a-examples-bar"><button onclick="funccharset()" class="example-button">charset</button></a>
+      <a href="#a-examples-bar"><button onclick="funccoords()" class="example-button">coords & shape</button></a>
+      <a href="#a-examples-bar"><button onclick="funcdownload()" class="example-button">download</button></a>
+      <a href="#a-examples-bar"><button onclick="funchref()" class="example-button">href</button></a>
+      <a href="#a-examples-bar"><button onclick="funchreflang()" class="example-button">hreflang</button></a>
+      <a href="#a-examples-bar"><button onclick="funcmedia()" class="example-button">media</button></a>
+      <a href="#a-examples-bar"><button onclick="funcname()" class="example-button">name</button></a>
+      <a href="#a-examples-bar"><button onclick="funcping()" class="example-button">ping</button></a>
+      <a href="#a-examples-bar"><button onclick="funcrel()" class="example-button">rel</button></a>
+      <a href="#a-examples-bar"><button onclick="funcrev()" class="example-button">rev</button></a>
+      <a href="#a-examples-bar"><button onclick="functarget()" class="example-button">target</button></a>
+      <a href="#a-examples-bar"><button onclick="functype()" class="example-button">type</button></a>
+    </div><br />
+
+    <div id="charset" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">charset</span><span>=</span>"UTF-8"
+        <span class="crimson">href</span><span>=</span>"https://www.w3schools.com"&gt;
+        <span>Visit W3Schools.com!</span>
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+        <a charset="UTF-8" href="https://www.w3schools.com">Visit W3Schools.com!</a>
+      </span>
+    </div>
+
+    <div id="coords" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">object</span>
+        <span class="crimson">data</span><span>=</span>"../images/planets.gif"
+        <span class="crimson">alt</span><span>=</span>"Planets"
+        <span class="crimson">type</span><span>=</span>"image/gif"
+        <span class="crimson">usemap</span><span>=</span>"#Map1"&gt;<br />
+          <span class="blue left-padding">&lt;<span class="brown">map </span><span class="crimson">name</span><span>=</span>"Map1"&gt;</span><br />
+            <span class="blue more-padding">&lt;<span class="brown">a</span>
+            <span class="crimson">href</span><span>=</span>"../examples/sun.html"
+            <span class="crimson">shape</span><span>=</span>"rect"
+            <span class="crimson">coords</span><span>=</span>"0 ,0 ,82, 126"&gt;
+            <span>The Sun</span>&lt;<span class="brown">/a</span>&gt;<br /></span>
+            <span class="blue more-padding">&lt;<span class="brown">a</span>
+            <span class="crimson">href</span><span>=</span>"../examples/mercury.html"
+            <span class="crimson">shape</span><span>=</span>"circle"
+            <span class="crimson">coords</span><span>=</span>"90, 58, 3"&gt;
+            <span>Mercury</span>&lt;<span class="brown">/a</span>&gt;<br /></span>
+            <span class="blue more-padding">&lt;<span class="brown">a</span>
+            <span class="crimson">href</span><span>=</span>"../examples/venus.html"
+            <span class="crimson">shape</span><span>=</span>"circle"
+            <span class="crimson">coords</span><span>=</span>"124, 58, 3"&gt;
+            <span>Venus</span>&lt;<span class="brown">/a</span>&gt;<br /></span>
+          <span class="blue left-padding">&lt;<span class="brown">/map</span>&gt;</span><br />
+        &lt;<span class="brown">/object</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+        <object data="../images/planets.gif" alt="Planets" type="image/gif" usemap="#Map1">
+         <map name="Map1">
+           <a href="../examples/sun.html" shape="rect" coords="0,0,82,126">The Sun</a>
+           <a href="mercur.html"shape="circle" coords="90,58,3">Mercury</a>
+           <a href="venus.html" shape="circle" coords="124,58,8">Venus</a>
+         </map>
+        </object>
+      </span>
+      <p style="clear: both;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>x1, y1, x2, y2</td>
+              <td>If the shape attribute is set to "rect",
+                  it specifies the coordinates of the top-left corner and the bottom-right corner of the rectangle
+              </td>
+            </tr>
+            <tr>
+              <td>x, y, radius</td>
+              <td>If the shape attribute is set to "circle", it specifies the coordinates of the circle center and the radius</td>
+            </tr>
+            <tr>
+              <td>x1, y1, x2, y2, .., xn, yn</td>
+              <td>If the shape attribute is set to "poly", it specifies the coordinates of the edges of the polygon.
+                  If the first and last coordinate pairs are not the same,
+                  the browser must add the last coordinate pair to close the polygon
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="download" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"../images/skull_with_mushrooms.jpg"
+        <span class="crimson">download</span><span>=</span>"skull"&gt;<br />
+          <span class="blue left-padding"><span class="brown">img</span>
+          <span class="crimson">src</span><span>=</span>"../images/skull_with_mushrooms.jpg"
+          <span class="crimson">alt</span><span>=</span>"skull"
+          <span class="crimson">width</span><span>=</span>"104"
+          <span class="crimson">height</span><span>=</span>"142"&gt;</span><br />
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+        <a href="../images/skull_with_mushrooms.jpg" download>
+          <img src="../images/skull_with_mushrooms.jpg" alt="W3Schools" width="104" height="142">
+        </a>
+      </span>
+      <p style="clear: both;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>filename</td>
+              <td>Optional. Specifies the new filename for the downloaded file</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="href" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"#a"&gt;
+        &lt;<span class="brown">button <span>(styled)</span></span>&gt;
+        <span>Link to an element</span>
+        &lt;<span class="brown">/button</span>&gt;
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none"><a href="#a"><button class="example-double-level-button">Link to an element</button></a></span>
+      <p style="clear: left;"></p><br />
+
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"javascript:alert('Hello World!');"&gt;
+        &lt;<span class="brown">button <span>(styled)</span></span>&gt;
+        <span>Link to a JavaScript</span>
+        &lt;<span class="brown">/button</span>&gt;
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none"> <a href="javascript:alert('Hello World!');"><button class="example-double-level-button">Execute JavaScript</button></a></span>
+      <p style="clear: left;"></p><br />
+
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"http://www.tinydog.ru/wp-content/uploads/2016/10/koshka-ochen-silno-linyaet-2.jpg"&gt;
+        &lt;<span class="brown">button <span>(styled)</span></span>&gt;
+        <span>An absolute URL</span>
+        &lt;<span class="brown">/button</span>&gt;
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none"><a href="http://www.tinydog.ru/wp-content/uploads/2016/10/koshka-ochen-silno-linyaet-2.jpg"><button class="example-double-level-button">An absolute URL</button></a></span>
+      <p style="clear: left;"></p><br />
+
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"../images/vasserman_big.jpg"&gt;
+        &lt;<span class="brown">button <span>(styled)</span></span>&gt;
+        <span>A relative URL</span>
+        &lt;<span class="brown">/button</span>&gt;
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none"><a href="../images/vasserman_big.jpg"><button class="example-double-level-button">A relative URL</button></a></span>
+      <p style="clear: left;"></p><br />
+
+      <span class="blue float-borders-none" style="width: 60%;">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!"&gt;<br />
+        &lt;<span class="brown">button <span>(styled)</span></span>&gt;
+        <span>Send mail!</span>
+        &lt;<span class="brown">/button</span>&gt;
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+        <a href="mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!">
+          <button class="example-double-level-button">Send mail!</button>
+        </a>
+      </span>
+      <p style="clear: left;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>URL</td>
+              <td>The URL of the link.<p></p>Possible values:<br />
+                  An absolute URL - points to another web site (like href="http://www.example.com/default.htm")<br />
+                  A relative URL - points to a file within a web site (like href="default.htm")<br />
+                  Link to an element with a specified id within the page (like href="#top")<br />
+                  Other protocols (like https://, ftp://, mailto:, file:, etc..)<br />
+                  A script (like href="javascript:alert('Hello');")
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="hreflang" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">hreflang</span><span>=</span>"en"
+        <span class="crimson">href</span><span>=</span>"https://www.w3schools.com"&gt;
+        <span>W3Schools.com!</span>
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+         <a hreflang="en" href="https://www.w3schools.com">W3Schools</a>
+      </span>
+      <p style="clear: left;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>language_code</td>
+              <td>A two-letter language code that specifies the language of the linked document.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="media" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"att_a_media.asp?output=print"
+        <span class="crimson">media</span><span>=</span>"print and (resolution:300dpi)"&gt;
+        <span>Open media attribute page for print.</span>
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+        <a href="att_a_media.asp?output=print"
+          media="print and (resolution:300dpi)">
+          Open media attribute page for print.
+        </a>
+      </span>
+      <p style="clear: left;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Possible operators
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>and</td>
+              <td>Specifies an AND operator.</td>
+            </tr>
+            <tr>
+              <td>not</td>
+              <td>Specifies an NOT operator.</td>
+            </tr>
+            <tr>
+              <td>,</td>
+              <td>Specifies an OR operator.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Devices
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>all</td>
+              <td>Default. Suitable for all devices.</td>
+            </tr>
+            <tr>
+              <td>aural</td>
+              <td>Speech synthesizers.
+              </td>
+            </tr>
+            <tr>
+              <td>braille</td>
+              <td>Braille feedback devices.</td>
+            </tr>
+            <tr>
+              <td>handheld</td>
+              <td>Handheld devices (small screen, limited bandwidth).</td>
+            </tr>
+            <tr>
+              <td>projection</td>
+              <td>Projectors.</td>
+            </tr>
+            <tr>
+              <td>print</td>
+              <td>Print preview mode/printed pages.</td>
+            </tr>
+            <tr>
+              <td>screen</td>
+              <td>Computer screens.</td>
+            </tr>
+            <tr>
+              <td>tty</td>
+              <td>Teletypes and similar media using a fixed-pitch character grid.
+              </td>
+            </tr>
+            <tr>
+              <td>tv</td>
+              <td>Television type devices (low resolution, limited scroll ability).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>width</td>
+              <td>Specifies the width of the targeted display area.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="screen and (min-width:500px)".
+              </td>
+            </tr>
+            <tr>
+              <td>height</td>
+              <td>Specifies the width of the targeted display area.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="screen and (max-height:500px)".</td>
+            </tr>
+            <tr>
+              <td>device-width</td>
+              <td>Specifies the width of the targeted display area.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="screen and (device-width:500px)".</td>
+            </tr>
+            <tr>
+              <td>device-height</td>
+              <td>Specifies the width of the targeted display area.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="screen and (device-height: 500px)".</td>
+            </tr>
+            <tr>
+              <td>orientation</td>
+              <td>Specifies the orientation of the target display/paper.
+                  Possible values: "portrait" or "landscape"
+                  Example: media="all and (orientation: landscape)".
+              </td>
+            </tr>
+            <tr>
+              <td>aspect-ratio</td>
+              <td>Specifies the width/height ratio of the targeted display area.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="screen and (aspect-ratio:16/9)".
+              </td>
+            </tr>
+            <tr>
+              <td>device-aspect-ratio</td>
+              <td>Specifies the device-width/device-height ratio of the target display/paper.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="screen and (aspect-ratio:16/9)".
+              </td>
+            </tr>
+            <tr>
+              <td>color</td>
+              <td>Specifies the bits per color of target display.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="screen and (color:3)".
+              </td>
+            </tr>
+            <tr>
+              <td>color-index</td>
+              <td>Specifies the number of colors the target display can handle.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="screen and (min-color-index:256)".
+              </td>
+            </tr>
+            <tr>
+              <td>monochrome</td>
+              <td>Specifies the bits per pixel in a monochrome frame buffer.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="screen and (monochrome:2)".
+              </td>
+            </tr>
+            <tr>
+              <td>resolution</td>
+              <td>Specifies the pixel density (dpi or dpcm) of the target display/paper.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="print and (resolution:300dpi)".
+              </td>
+            </tr>
+            <tr>
+              <td>scan</td>
+              <td>Specifies scanning method of a tv display.
+                  Possible values are "progressive" and "interlace".
+                  Example: media="tv and (scan:interlace)".
+              </td>
+            </tr>
+            <tr>
+              <td>grid</td>
+              <td>Specifies if the output device is grid or bitmap.
+                  Possible values are "1" for grid, and "0" otherwise.
+                  Example: media="handheld and (grid:1)".
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="names" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"#charset"&gt;
+        <span>charset</span>
+        &lt;<span class="brown">/a</span>&gt;<br />
+        &lt;<span class="brown">a</span>
+        <span class="crimson">name</span><span>=</span>"charset"&gt;
+        <span>&lt;charset&gt;</span>
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+        <a href="#charsets">charset</a>
+      </span>
+      <p style="clear: left;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>anchor_name</td>
+              <td>The name of an anchor</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="ping" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"https://www.example.com/html"
+        <span class="crimson">ping</span><span>=</span>"https://www.example.com/trackpings"
+        &lt;<span class="brown">/a</span>&gt;<br />
+      </span>
+    </div>
+
+    <div id="rel" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">rel</span><span>=</span>"nofollow"&gt;
+        <span class="crimson">href</span><span>=</span>"http://www.functravel.com/"&gt;
+        <span>Cheap Flights</span>
+        &lt;<span class="brown">/a</span>&gt;<br />
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+         <a rel="nofollow" href="http://www.functravel.com/">Cheap Flights</a>
+      </span>
+      <p style="clear: left;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>alternate</td>
+              <td>Provides a link to an alternate representation of the document (i.e. print page, translated or mirror).</td>
+            </tr>
+            <tr>
+              <td>author</td>
+              <td>Provides a link to the author of the document.</td>
+            </tr>
+            <tr>
+              <td>bookmark</td>
+              <td>Permanent URL used for bookmarking.</td>
+            </tr>
+            <tr>
+              <td>external</td>
+              <td>Indicates that the referenced document is not part of the same site as the current document.</td>
+            </tr>
+            <tr>
+              <td>help</td>
+              <td>Provides a link to a help document.</td>
+            </tr>
+            <tr>
+              <td>license</td>
+              <td>Provides a link to copyright information for the document.</td>
+            </tr>
+            <tr>
+              <td>next</td>
+              <td>Provides a link to the next document in the series.</td>
+            </tr>
+            <tr>
+              <td>nofollow</td>
+              <td>Links to an unendorsed document, like a paid link.
+                  ("nofollow" is used by Google, to specify that the Google search spider should not follow that link).</td>
+            </tr>
+            <tr>
+              <td>noreferrer</td>
+              <td>Requires that the browser should not send an HTTP referer header if the user follows the hyperlink.</td>
+            </tr>
+            <tr>
+              <td>noopener</td>
+              <td>Requires that any browsing context created by following the hyperlink must not have an opener browsing context.</td>
+            </tr>
+            <tr>
+              <td>prev</td>
+              <td>The previous document in a selection.</td>
+            </tr>
+            <tr>
+              <td>search</td>
+              <td>Links to a search tool for the document.</td>
+            </tr>
+            <tr>
+              <td>rectangular</td>
+              <td>A tag (keyword) for the current document.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="rev" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">rev</span><span>=</span>"nofollow"&gt;
+        <span class="crimson">href</span><span>=</span>"http://www.functravel.com/"&gt;
+        <span>Cheap Flights</span>
+        &lt;<span class="brown">/a</span>&gt;<br />
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+         <a rev="nofollow" href="http://www.functravel.com/">Cheap Flights</a>
+      </span>
+      <p style="clear: left;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>alternate</td>
+              <td>Provides a link to an alternate representation of the document (i.e. print page, translated or mirror).</td>
+            </tr>
+            <tr>
+              <td>stylesheet</td>
+              <td>An external style sheet for the document.</td>
+            </tr>
+            <tr>
+              <td>start</td>
+              <td>The first document in a selection.</td>
+            </tr>
+            <tr>
+              <td>next</td>
+              <td>The next document in a selection.</td>
+            </tr>
+            <tr>
+              <td>prev</td>
+              <td>The previous document in a selection.</td>
+            </tr>
+            <tr>
+              <td>contents</td>
+              <td>A table of contents for the document.</td>
+            </tr>
+            <tr>
+              <td>index</td>
+              <td>An index for the document.</td>
+            </tr>
+            <tr>
+              <td>glossary</td>
+              <td>A glossary (explanation) of words used in the document.</td>
+            </tr>
+            <tr>
+              <td>copyright</td>
+              <td>A document containing copyright information.</td>
+            </tr>
+            <tr>
+              <td>chapter</td>
+              <td>A chapter of the document.</td>
+            </tr>
+            <tr>
+              <td>section</td>
+              <td>A section of the document.</td>
+            </tr>
+            <tr>
+              <td>subsection</td>
+              <td>A subsection of the document.</td>
+            </tr>
+            <tr>
+              <td>appendix</td>
+              <td>An appendix for the document.</td>
+            </tr>
+            <tr>
+              <td>help</td>
+              <td>A help document.</td>
+            </tr>
+            <tr>
+              <td>bookmark</td>
+              <td>A related document.</td>
+            </tr>
+            <tr>
+              <td>nofollow</td>
+              <td>"nofollow" is used by Google, to specify that the Google search spider should not follow that link (mostly used for paid links).</td>
+            </tr>
+            <tr>
+              <td>licence</td>
+              <td>The previous document in a selection.</td>
+            </tr>
+            <tr>
+              <td>tag</td>
+              <td>Links to a search tool for the document.</td>
+            </tr>
+            <tr>
+              <td>friend</td>
+              <td>A tag (keyword) for the current document.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="target" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"https://www.w3schools.com"
+        <span class="crimson">target</span><span>=</span>"_blank"&gt;
+        &lt;<span class="brown">button <span>(styled)</span></span>&gt;
+        <span>_blank</span>
+        &lt;<span class="brown">/button</span>&gt;
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none"><a href="https://www.w3schools.com" target="_blank"><button class="example-double-level-button">_blank</button></a></span>
+      <p style="clear: left;"></p><br />
+
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"https://www.w3schools.com"
+        <span class="crimson">target</span><span>=</span>"_self"&gt;
+        &lt;<span class="brown">button <span>(styled)</span></span>&gt;
+        <span>_self</span>
+        &lt;<span class="brown">/button</span>&gt;
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none"><a href="https://www.w3schools.com" target="_self"><button class="example-double-level-button">_self</button></a></span>
+      <p style="clear: left;"></p><br />
+
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"https://www.w3schools.com"
+        <span class="crimson">target</span><span>=</span>"_parent"&gt;
+        &lt;<span class="brown">button <span>(styled)</span></span>&gt;
+        <span>_parent</span>
+        &lt;<span class="brown">/button</span>&gt;
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none"><a href="https://www.w3schools.com" target="_parent"><button class="example-double-level-button">_parent</button></a></span>
+      <p style="clear: left;"></p><br />
+
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"https://www.w3schools.com"
+        <span class="crimson">target</span><span>=</span>"_top"&gt;
+        &lt;<span class="brown">button <span>(styled)</span></span>&gt;
+        <span>_top</span>
+        &lt;<span class="brown">/button</span>&gt;
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none"><a href="https://www.w3schools.com" target="_top"><button class="example-double-level-button">_top</button></a></span>
+      <p style="clear: left;"></p><br />
+
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"https://liquimoly.ru"
+        <span class="crimson">target</span><span>=</span>"framename"&gt;
+        &lt;<span class="brown">button <span>(styled)</span></span>&gt;
+        <span>framename</span>
+        &lt;<span class="brown">/button</span>&gt;
+        &lt;<span class="brown">/a</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none"><a href="https://liquimoly.ru" target="tframe"><button class="example-double-level-button">framename</button></a></span>
+      <span style="display: block;" class="float-borders-none"><iframe style="margin-left: 3em; margin-top: -11em;" max-width="150%" height="250px" name="tframe"></iframe></span>
+      <p style="clear: left;"></p><br />
+    </div>
+
+    <div id="type" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">a</span>
+        <span class="crimson">href</span><span>=</span>"https://www.example.com/html"
+        <span class="crimson">type</span><span>=</span>"text/html"&gt;
+        <span>W3Schools</span>
+        &lt;<span class="brown">/a</span>&gt;<br />
+      </span>
+    </div>
+
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+  </div>
+
+  <hr color="red" />
+
+
+  <div id="link" class="mainBorder">
+    <div class="tag"><h2 class="not-support">&lt;link&gt;</h2></div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="description">
+      Description:<br />
+      <div class="note-value">
+         The &lt;link&gt; tag defines a link between a document and an external resource.
+      </div>
+      <div class="note-value">
+        The &lt;link&gt; tag is used to link to external style sheets.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="note">
+      Notes:<br />
+      <div class="note-value">
+         The &lt;link&gt; element is an empty element, it contains attributes only.
+      </div>
+      <div class="note-value">
+        This element goes only in the head section, but it can appear any number of times.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="tag">
+      <h2>Attributes</h2>
+      <table class="attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th colspan="3" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+              Not supported HTML5
+            </th>
+          </tr>
+          <tr style="background-color: rgba(218, 136, 40, 0.5);">
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a name="charsets" href="#link-examples-bar" class="attr-links">&lt;charset&gt;</a></td>
+            <td>char_encoding</td>
+            <td>Specifies the character encoding of the linked document.</td>
+          </tr>
+          <tr>
+            <td><a href="#link-examples-bar" class="attr-links">&lt;rev&gt;</a></td>
+            <td>reversed relationship</td>
+            <td>Specifies the relationship between the linked document and the current document.
+                The rev attribute is the reverse of the rel attribute.</td>
+          </tr>
+          <tr>
+            <td><a href="#link-examples-bar" class="attr-links">&lt;target&gt;</a></td>
+            <td>_blank<br />_parent<br />_self<br />_top<br />framename</td>
+            <td>Load in a new window.<br />
+                Load in the same frame as it was clicked.<br />
+                Load in the parent frameset.<br />
+                Load in the full body of the window.<br />
+                Load in a named frame.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tag">
+      <table class="attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th colspan="3" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+              Supported and new in HTML5
+            </th>
+          </tr>
+          <tr style="background-color: rgba(218, 136, 40, 0.5);">
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#link-examples-bar" class="attr-links">&lt;crossorigin&gt;</a></td>
+            <td>anonymous<br />use-credentials</td>
+            <td>Specifies how the element handles cross-origin requests.</td>
+          </tr>
+          <tr>
+            <td><a href="#link-examples-bar" class="attr-links">&lt;href&gt;</a></td>
+            <td>URL</td>
+            <td>The href attribute specifies the location (URL) of the external resource (most often a style sheet file).</td>
+          </tr>
+          <tr>
+            <td><a href="#link-examples-bar" class="attr-links">&lt;hreflang&gt;</a></td>
+            <td>language_code</td>
+            <td>Specifies the language of the linked document. This attribute is purely advisory.</td>
+          </tr>
+          <tr>
+            <td><a href="#link-examples-bar" class="attr-links">&lt;media&gt;</a></td>
+            <td>media_query</td>
+            <td>Specifies what media/device the linked document is optimized for.
+                This attribute is mostly used with CSS stylesheets to specify different styles for different media types.
+                This attribute can accept several values.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#link-examples-bar" class="attr-links">&lt;rel&gt;</a></td>
+            <td>alternate<br />autor<br />dns-prefetch<br />help<br />icon<br />license<br />next<br />pingback
+              <br />preconnect<br />prefetch<br />preload<br />prerender<br />prev<br />search<br />stylesheet</td>
+            <td>The required rel attribute specifies the relationship between the current document and the linked document/resource.</td>
+          </tr>
+          <tr>
+            <td><a href="#link-examples-bar" class="attr-links">&lt;sizes&gt;</a></td>
+            <td>HeightxWidth<br />any</td>
+            <td>Specifies the size of the linked resource. Only for rel="icon".
+                The sizes attribute is not currently supported in any of the major browsers.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#link-examples-bar" class="attr-links">&lt;type&gt;</a></td>
+            <td>media_type</td>
+            <td>Specifies the media type of the linked document. This attribute is purely advisory.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="link-examples-bar" class="left-padding">
+      <a href="#link-examples-bar"><button onclick="funccharsetLink()" class="example-button">charset</button></a>
+      <a href="#link-examples-bar"><button onclick="funccrossoriginLink()" class="example-button">crossorigin</button></a>
+      <a href="#link-examples-bar"><button onclick="funchrefLink()" class="example-button">href</button></a>
+      <a href="#link-examples-bar"><button onclick="funchreflangLink()" class="example-button">hreflang</button></a>
+      <a href="#link-examples-bar"><button onclick="funcmediaLink()" class="example-button">media</button></a>
+      <a href="#link-examples-bar"><button onclick="funcrelLink()" class="example-button">rel</button></a>
+      <a href="#link-examples-bar"><button onclick="funcrevLink()" class="example-button">rev</button></a>
+      <a href="#link-examples-bar"><button onclick="funcsizesLink()" class="example-button">sizes</button></a>
+      <a href="#link-examples-bar"><button onclick="functargetLink()" class="example-button">target</button></a>
+      <a href="#link-examples-bar"><button onclick="functypeLink()" class="example-button">type</button></a>
+    </div><br />
+
+    <div id="charset_link" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">link</span>
+        <span class="crimson">href</span><span>=</span>"example.html"
+        <span class="crimson">rel</span><span>=</span>"parent"
+        <span class="crimson">charset</span><span>=</span>"ISO-2022-JP"<span class="brown"> /</span>&gt;
+      </span>
+    </div>
+
+    <div id="href_link" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">link</span>
+        <span class="crimson">rel</span><span>=</span>"stylesheet"
+        <span class="crimson">type</span><span>=</span>"text/css"
+        <span class="crimson">href</span><span>=</span>"example.css"<span class="brown"> /</span>&gt;
+      </span>
+      <p style="clear: left;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>URL</td>
+              <td>The URL of the link.<p></p>Possible values:<br />
+                  An absolute URL - points to another web site (like href="http://www.example.com/default.htm")<br />
+                  A relative URL - points to a file within a web site (like href="default.htm")<br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="hreflang_link" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">link</span>
+        <span class="crimson">href</span><span>=</span>"example.html"
+        <span class="crimson">rev</span><span>=</span>"subsection"
+        <span class="crimson">rel</span><span>=</span>"parent"
+        <span class="crimson">hreflang</span><span>=</span>"en"<span class="brown"> /</span>&gt;
+      </span>
+      <p style="clear: left;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>language_code</td>
+              <td>A two-letter language code that specifies the language of the linked document.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="media_link" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">link</span>
+        <span class="crimson">rel</span><span>=</span>"stylesheet"
+        <span class="crimson">type</span><span>=</span>"text/css"
+        <span class="crimson">href</span><span>=</span>"exampleTheme.css"<span class="brown"> /</span>&gt;<br />
+        &lt;<span class="brown">link</span>
+        <span class="crimson">rel</span><span>=</span>"stylesheet"
+        <span class="crimson">type</span><span>=</span>"text/css"
+        <span class="crimson">href</span><span>=</span>"examplePrint.css"
+        <span class="crimson">media</span><span>=</span>"print and (resolution:300dpi)"<span class="brown"> /</span>&gt;
+      </span>
+      <p style="clear: left;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Possible operators
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>and</td>
+              <td>Specifies an AND operator.</td>
+            </tr>
+            <tr>
+              <td>not</td>
+              <td>Specifies an NOT operator.</td>
+            </tr>
+            <tr>
+              <td>,</td>
+              <td>Specifies an OR operator.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Devices
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>all</td>
+              <td>Default. Suitable for all devices.</td>
+            </tr>
+            <tr>
+              <td>aural</td>
+              <td><span class="deprecated">Deprecated.</span> Speech synthesizers.
+              </td>
+            </tr>
+            <tr>
+              <td>braille</td>
+              <td><span class="deprecated">Deprecated.</span> Braille feedback devices.</td>
+            </tr>
+            <tr>
+              <td>handheld</td>
+              <td><span class="deprecated">Deprecated.</span> Handheld devices (small screen, limited bandwidth).</td>
+            </tr>
+            <tr>
+              <td>projection</td>
+              <td><span class="deprecated">Deprecated.</span> Projectors.</td>
+            </tr>
+            <tr>
+              <td>print</td>
+              <td>Print preview mode/printed pages.</td>
+            </tr>
+            <tr>
+              <td>screen</td>
+              <td>Computer screens.</td>
+            </tr>
+            <tr>
+              <td>speech</td>
+              <td>Used for screenreaders that "reads" the page out loud.</td>
+            </tr>
+            <tr>
+              <td>tty</td>
+              <td><span class="deprecated">Deprecated.</span> Teletypes and similar media using a fixed-pitch character grid.
+              </td>
+            </tr>
+            <tr>
+              <td>tv</td>
+              <td><span class="deprecated">Deprecated.</span> Television type devices (low resolution, limited scroll ability).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>aspect-ratio</td>
+              <td>Specifies the width/height ratio of the targeted display area.
+                "min-" and "max-" prefixes can be used.
+                Example: media="screen and (aspect-ratio:16/9)".
+              </td>
+            </tr>
+            <tr>
+              <td>color</td>
+              <td>Specifies the bits per color of target display.
+                "min-" and "max-" prefixes can be used.
+                Example: media="screen and (color:3)".
+              </td>
+            </tr>
+            <tr>
+              <td>color-index</td>
+              <td>Specifies the number of colors the target display can handle.
+                "min-" and "max-" prefixes can be used.
+                Example: media="screen and (min-color-index:256)".
+              </td>
+            </tr>
+            <tr>
+              <td>device-width</td>
+              <td><span class="deprecated">Deprecated.</span> Specifies the width of the targeted display area.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="screen and (device-width:500px)".</td>
+            </tr>
+            <tr>
+              <td>device-height</td>
+              <td><span class="deprecated">Deprecated.</span> Specifies the width of the targeted display area.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="screen and (device-height: 500px)".</td>
+            </tr>
+            <tr>
+              <td>device-aspect-ratio</td>
+              <td><span class="deprecated">Deprecated.</span> Specifies the device-width/device-height ratio of the target display/paper.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="screen and (aspect-ratio:16/9)".
+              </td>
+            </tr>
+            <tr>
+              <td>grid</td>
+              <td>Specifies if the output device is grid or bitmap.
+                Possible values are "1" for grid, and "0" otherwise.
+                Example: media="handheld and (grid:1)".
+              </td>
+            </tr>
+            <tr>
+              <td>height</td>
+              <td>Specifies the width of the targeted display area.
+                "min-" and "max-" prefixes can be used.
+                Example: media="screen and (max-height:500px)".</td>
+              </tr>
+            <tr>
+              <td>monochrome</td>
+              <td>Specifies the bits per pixel in a monochrome frame buffer.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="screen and (monochrome:2)".
+              </td>
+            </tr>
+            <tr>
+              <td>orientation</td>
+              <td>Specifies the orientation of the target display/paper.
+                Possible values: "portrait" or "landscape"
+                Example: media="all and (orientation: landscape)".
+              </td>
+            </tr>
+            <tr>
+              <td>resolution</td>
+              <td>Specifies the pixel density (dpi or dpcm) of the target display/paper.
+                  "min-" and "max-" prefixes can be used.
+                  Example: media="print and (resolution:300dpi)".
+              </td>
+            </tr>
+            <tr>
+              <td>scan</td>
+              <td>Specifies scanning method of a tv display.
+                  Possible values are "progressive" and "interlace".
+                  Example: media="tv and (scan:interlace)".
+              </td>
+            </tr>
+            <tr>
+              <td>width</td>
+              <td>Specifies the width of the targeted display area.
+                "min-" and "max-" prefixes can be used.
+                Example: media="screen and (min-width:500px)".
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="rel_link" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">link</span>
+        <span class="crimson">rel</span><span>=</span>"stylesheet"
+        <span class="crimson">type</span><span>=</span>"text/css"
+        <span class="crimson">href</span><span>=</span>"exampleStyles.css"<span class="brown"> /</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none">&Rarr;</span>
+      <span class="float-borders-none">
+          <iframe src="../examples/link_iframe.html" class="relFrame" width="400px" height="150px"></iframe>
+      </span>
+      <p style="clear: left;"></p><br />
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>alternate</td>
+              <td>Provides a link to an alternate representation of the document (i.e. print page, translated or mirror).</td>
+            </tr>
+            <tr>
+              <td>author</td>
+              <td>Provides a link to the author of the document.</td>
+            </tr>
+            <tr>
+              <td>dns-prefetch</td>
+              <td>Specifies that the browser should preemptively perform DNS resolution for the target resource's origin.</td>
+            </tr>
+            <tr>
+              <td>help</td>
+              <td>Provides a link to a help document.</td>
+            </tr>
+            <tr>
+              <td>icon</td>
+              <td>Imports an icon to represent the document.
+                Example: &lt;link rel="icon" href="/favicon.ico" type="image/x-icon"&gt;.</td>
+              </tr>
+            <tr>
+              <td>license</td>
+              <td>Provides a link to copyright information for the document.</td>
+            </tr>
+            <tr>
+              <td>next</td>
+              <td>Provides a link to the next document in the series.</td>
+            </tr>
+            <tr>
+              <td>pingback</td>
+              <td>Provides the address of the pingback server that handles pingbacks to the current document.</td>
+            </tr>
+            <tr>
+              <td>preconnect</td>
+              <td>Specifies that the browser should preemptively connect to the target resource's origin.</td>
+            </tr>
+            <tr>
+              <td>prefetch</td>
+              <td>Specifies that the browser should preemptively fetch and cache the target resource as it is likely to be required for a follow-up navigation.</td>
+            </tr>
+            <tr>
+              <td>preload</td>
+              <td>Specifies that the browser agent must preemptively fetch and cache the target resource for current navigation
+                  according to the destination given by the "as" attribute (and the priority associated with that destination).
+              </td>
+            </tr>
+            <tr>
+              <td>prev</td>
+              <td>The previous document in a selection.</td>
+            </tr>
+            <tr>
+              <td>search</td>
+              <td>Links to a search tool for the document.</td>
+            </tr>
+            <tr>
+              <td>stylesheet</td>
+              <td>Imports a style sheet.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="rev_link" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue">
+        &lt;<span class="brown">link</span>
+        <span class="crimson">rev</span><span>=</span>"parent"&gt;
+        <span class="crimson">href</span><span>=</span>example.html"<span class="brown"> /</span>&gt;<br />
+      </span>
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>alternate</td>
+              <td>An alternate version of the document (i.e. print page, translated or mirror).</td>
+            </tr>
+            <tr>
+              <td>stylesheet</td>
+              <td>An external style sheet for the document.</td>
+            </tr>
+            <tr>
+              <td>start</td>
+              <td>The first document in a selection.</td>
+            </tr>
+            <tr>
+              <td>next</td>
+              <td>The next document in a selection.</td>
+            </tr>
+            <tr>
+              <td>prev</td>
+              <td>The previous document in a selection.</td>
+            </tr>
+            <tr>
+              <td>contents</td>
+              <td>A table of contents for the document.</td>
+            </tr>
+            <tr>
+              <td>index</td>
+              <td> 	An index for the document.</td>
+            </tr>
+            <tr>
+              <td>glossary</td>
+              <td>A glossary (explanation) of words used in the document.</td>
+            </tr>
+            <tr>
+              <td>copyright</td>
+              <td>A document containing copyright information.</td>
+            </tr>
+            <tr>
+              <td>chapter</td>
+              <td>A chapter of the document.</td>
+            </tr>
+            <tr>
+              <td>section</td>
+              <td>A section of the document.</td>
+            </tr>
+            <tr>
+              <td>subsection</td>
+              <td>A subsection of the document.</td>
+            </tr>
+            <tr>
+              <td>appendix</td>
+              <td>An appendix for the document.</td>
+            </tr>
+            <tr>
+              <td>help</td>
+              <td>A help document.</td>
+            </tr>
+            <tr>
+              <td>bookmark</td>
+              <td>A related document.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="sizes_link" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue">
+        &lt;<span class="brown">link</span>
+        <span class="crimson">rel</span><span>=</span>"icon"
+        <span class="crimson">type</span><span>=</span>"image/jpg"
+        <span class="crimson">sizes</span><span>=</span>"32x32"
+        <span class="crimson">href</span><span>=</span>"../images/rabbit_on_the_pad.jpg"<span class="brown"> /</span>&gt;
+      </span>
+
+      <div class="tag">
+        <table class="attr-list">
+          <thead>
+            <tr>
+              <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+                Attribute values
+              </th>
+            </tr>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HeightxWidth</td>
+              <td>Specifies one or more sizes for the linked icon.<br />
+                  The height and width values are separated by an "x" or "X".
+                  <p>Examples:</p>
+                  <ul>
+                    <li>&lt;link rel="icon" href="favicon.png" sizes="16x16" type="image/png" /&gt; (1 size)</li>
+                    <li>&lt;link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png" /&gt; (2 sizes)</li>
+                  </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>any</td>
+              <td>Specifies that the icon is scalable (like an SVG image).
+                  <p>Examples:</p>
+                  <ul>
+                    <li>&lt;link rel="icon" href="icon.svg" sizes="any" type="image/svg+xml"> /&gt; (any size)</li>
+                  </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="target_link" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue">
+        &lt;<span class="brown">link</span>
+        <span class="crimson">rel</span><span>=</span>"parent"
+        <span class="crimson">href</span><span>=</span>"example.html"
+        <span class="crimson">target</span><span>=</span>"_blank"<span class="brown"> /</span>&gt;
+      </span>
+    </div>
+
+    <div id="type_link" class="left-padding" style="overflow: hidden; display: none;">
+      <span class="blue">
+        &lt;<span class="brown">link</span>
+        <span class="crimson">rel</span><span>=</span>"stylesheet"
+        <span class="crimson">href</span><span>=</span>"exampleTheme.css"
+        <span class="crimson">type</span><span>=</span>"text/css"<span class="brown"> /</span>&gt;
+      </span>
+    </div>
+
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+  </div>
+  <hr color="red" />
+
+
+  <div id="nav" class="mainBorder">
+    <div class="tag"><h2 class="not-support">&lt;nav&gt;</h2></div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="description">
+      Description:<br />
+      <div class="note-value">
+        The &lt;nav&gt; tag defines a set of navigation links.
+      </div>
+      <div class="note-value">
+        Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div class="note">
+      Notes:<br />
+      <div class="note-value">
+        Notice that NOT all links of a document should be inside a &lt;nav&gt; element. The &lt;nav&gt; element is intended only for major block of navigation links.
+      </div>
+    </div>
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div class="left-padding">
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">nav</span>&gt;<br />
+          <span class="blue left-padding">
+            &lt;<span class="brown">a</span>
+            <span class="crimson">href</span><span>=</span>"example.html"&gt;
+            <span>HTML</span>
+            &lt;<span class="brown">/a</span>&gt; |
+          </span><br />
+          <span class="blue left-padding">
+            &lt;<span class="brown">a</span>
+            <span class="crimson">href</span><span>=</span>"example.html"&gt;
+            <span>CSS</span>
+            &lt;<span class="brown">/a</span>&gt; |
+          </span><br />
+          <span class="blue left-padding">
+            &lt;<span class="brown">a</span>
+            <span class="crimson">href</span><span>=</span>"example.html"&gt;
+            <span>JavaScript</span>
+            &lt;<span class="brown">/a</span>&gt;
+          </span><br />
+        &lt;<span class="brown">/nav</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none" style="padding: 47px 0;">&Rarr;</span>
+      <span class="float-borders-none" style="padding: 46px 0;">
+        <nav>
+         <a href="main_window_html.html">HTML</a> |
+         <a href="main_window_css.html">CSS</a> |
+         <a href="main_window_js.html">JavaScript</a>
+        </nav>
+      </span>
+      <p style="clear: left;"></p>
+    </div><br />
+    <div><hr style="color: rgb(218, 216, 238);"/></div>
+  </div>
+
+</body>
+</html>

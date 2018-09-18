@@ -10,11 +10,23 @@
 .example-button {
   background-color: white;
   color: rgb(10, 96, 54);
+  padding: 2px 5px;
 }
 
 .example-button:hover {
   background-color: rgb(10, 96, 54);
   color: white;
+}
+
+.example-double-level-button {
+  background-color: white;
+  color: rgb(156, 14, 14);
+  padding: 3px 5px;
+}
+
+.example-double-level-button:hover {
+  color: white;
+  background-color: rgb(156, 14, 14);
 }
 
 .auxiliary-button {
