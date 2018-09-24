@@ -1,0 +1,210 @@
+body {
+  font-family: Ubuntu;
+  font-size: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfjCQ8gpwvAwT-CH1N_4cT7QidAzzS5oUcMyQMf0-B2OXBTfhKkA");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+div {
+  margin: 1em;
+}
+
+.mainBorder {
+  border: 2px solid white;
+  margin: 1em;
+}
+
+.description {
+  min-width: 40%;
+  width: 55%;
+  height: auto;
+  margin: 0 15px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 3px;
+  font-size: 1.5em;
+  background-color: rgba(205, 66, 29, 0.5);
+}
+
+.note {
+  min-width: 30%;
+  width: 55%;
+  height: auto;
+  margin: 0 15px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 3px;
+  background-color: sandybrown;
+  font-size: 1.5em;
+}
+
+.attr-links:hover {
+  color: rgb(12, 108, 144);
+}
+
+.not-support {
+  color: rgba(233, 93, 24, 0.5);
+}
+
+.note:hover, .description:hover {
+  box-shadow: 5px -2px 10px 3px rgba(0,0,0,0.7);
+  /* border: 2px solid; */
+  height: auto;
+  /* margin-bottom: -1px;
+  margin-top: -1px; */
+}
+
+.note-value {
+  width: auto;
+  height: auto;
+  padding: 1px 5px;
+  border-left: 3px solid rgba(10, 23, 11, 1);
+  border-radius: 3px;
+  background-color: white;
+  font-size: 0.6em;
+}
+
+.tag {
+  line-height: 0.1em;
+}
+
+table {
+  max-width: 100%;
+}
+
+.deprecated {
+  color: red;
+}
+
+.left-padding {
+  padding-left: 1em;
+}
+
+.more-padding {
+  padding-left: 2em;
+}
+
+.rarrow {
+  margin: -12px 30px 0 30px;
+  font-size: 40px;
+}
+
+.darrow {
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+.attr-list {
+  background-color: white;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.attr-list td, .attr-list th {
+  padding: 5px;
+  border: none;
+  text-align: left;
+  border-spacing: 0;
+}
+
+.attr-list th {
+  padding: 13px 5px;
+}
+
+.attr-list td {
+  vertical-align: top;
+  line-height: 1.1em;
+}
+
+.attr-list-3 td:nth-child(1) {
+  width: 18%;
+}
+
+.attr-list-3 td:nth-child(2) {
+  width: 18%;
+}
+
+.borders-none {
+  border: none;
+}
+
+
+.half {
+  width: 47%;
+}
+
+.third {
+  width: 30%;
+}
+
+.hr-length-90perc {
+  color: rgb(97, 203, 174);
+  margin-left: 1em;
+  width: 90%;
+}
+
+.float-borders-none {
+  float: left;
+  border: none;
+}
+
+.float {
+  float: left;
+  margin-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.3em;
+  border-right: 2px solid teal;
+}
+
+.brown {
+  color: brown;
+}
+
+.darkblue {
+  color: darkblue;
+}
+
+.darkgreen {
+  color: darkgreen;
+}
+
+.chocolate {
+  color: chocolate;
+}
+
+.purple {
+  color: purple;
+}
+
+.darkslateblue {
+  color: darkslateblue;
+}
+
+.maroon {
+  color: maroon;
+}
+
+.blue {
+  color: blue;
+}
+
+.crimson {
+  color: crimson;
+}
+
+.black {
+  color: black;
+}
+
+.olive {
+  color: olive;
+}
+
+.teal {
+  color: teal;
+}

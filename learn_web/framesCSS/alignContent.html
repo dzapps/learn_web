@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<title>cssA</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+
+<script src="../scripts/cssPropertiesA.js"></script>
+
+<body>
+
+  <div id="alignContentsDiv" class="window">
+  <p><button class="css-buttons-prop close-but-pos" onclick="changeStateSingle('alignContentDiv', 'none')">X</button></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The align-content property modifies the behavior of the flex-wrap property.
+      It is similar to align-items, but instead of aligning flex items, it aligns flex lines.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Notes:<br />
+    <div class="note-value">
+      There must be multiple lines of items for this property to have any effect!
+    </div>
+    <div class="note-value">
+      Use the justify-content property to align the items on the main-axis (horizontally).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>stretch</td>
+          <td>Default value. Lines stretch to take up the remaining space.
+          </td>
+        </tr>
+        <tr>
+          <td>center</td>
+          <td>Lines are packed toward the center of the flex container.</td>
+        </tr>
+        <tr>
+          <td>flex-start</td>
+          <td>Lines are packed toward the start of the flex container.
+          </td>
+        </tr>
+        <tr>
+          <td>flex-end</td>
+          <td>Lines are packed toward the end of the flex container.</td>
+        </tr>
+        <tr>
+          <td>space-between</td>
+          <td>Lines are evenly distributed in the flex container.
+          </td>
+        </tr>
+        <tr>
+          <td>space-around</td>
+          <td>Lines are evenly distributed in the flex container, with half-size spaces on either end.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.
+          </td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="link-examples-bar" class="left-padding">
+      <a href="#link-examples-bar">
+        <button onclick="changeState('alContStretch')" class="example-button example-rounded-buttons">stretch</button>
+      </a>
+      <a href="#link-examples-bar">
+        <button onclick="changeState('alContCenter')" class="example-button example-rounded-buttons">center</button>
+      </a>
+      <a href="#link-examples-bar">
+        <button onclick="changeState('alContFlexStart')" class="example-button example-rounded-buttons">flex-start</button>
+      </a>
+      <a href="#link-examples-bar">
+        <button onclick="changeState('alContFlexEnd')" class="example-button example-rounded-buttons">flex-end</button>
+      </a>
+      <a href="#link-examples-bar">
+        <button onclick="changeState('alContSpaceBetween')" class="example-button example-rounded-buttons">space-between</button>
+      </a>
+      <a href="#link-examples-bar">
+        <button onclick="changeState('alContSpaceAround')" class="example-button example-rounded-buttons">space-around</button>
+      </a>
+      <a href="#link-examples-bar">
+        <button onclick="changeState('alContInitial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#link-examples-bar">
+        <button onclick="changeState('alContInherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="alContStretch" class="visibility exampleDiv al-cont-flex-stretch">
+    <span style="background-color: red;"></span>
+    <span style="background-color: green;"></span>
+    <span style="background-color: blue;"></span>
+  </div>
+
+  <div id="alContCenter" class="visibility exampleDiv al-cont-flex-center">
+    <span style="background-color: red;"></span>
+    <span style="background-color: green;"></span>
+    <span style="background-color: blue;"></span>
+  </div>
+
+  <div id="alContFlexStart" class="visibility exampleDiv al-cont-flex-start">
+    <span style="background-color: red;"></span>
+    <span style="background-color: green;"></span>
+    <span style="background-color: blue;"></span>
+  </div>
+
+  <div id="alContFlexEnd" class="visibility exampleDiv al-cont-flex-end">
+    <span style="background-color: red;"></span>
+    <span style="background-color: green;"></span>
+    <span style="background-color: blue;"></span>
+  </div>
+
+  <div id="alContSpaceBetween" class="visibility exampleDiv al-cont-space-between">
+    <span style="background-color: red;"></span>
+    <span style="background-color: green;"></span>
+    <span style="background-color: blue;"></span>
+  </div>
+
+  <div id="alContSpaceAround" class="visibility exampleDiv al-cont-space-around">
+    <span style="background-color: red;"></span>
+    <span style="background-color: green;"></span>
+    <span style="background-color: blue;"></span>
+  </div>
+
+  <div id="alContInitial" class="visibility exampleDiv al-cont-initial">
+    <span style="background-color: red;"></span>
+    <span style="background-color: green;"></span>
+    <span style="background-color: blue;"></span>
+  </div>
+
+  <div id="alContInherit" class="visibility exampleDiv al-cont-inherit">
+    <span style="background-color: red;"></span>
+    <span style="background-color: green;"></span>
+    <span style="background-color: blue;"></span>
+  </div>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

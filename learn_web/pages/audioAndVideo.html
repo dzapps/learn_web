@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../styles/main_html_style.css" />
   <link rel="stylesheet" href="../styles/button.css" />
   <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/common.css" />
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
 </head>
@@ -112,7 +113,7 @@
           </tr>
           <tr>
             <td><a href="#audio-examples-bar" class="attr-links">&lt;preload&gt;</a></td>
-            <td>preload</td>
+            <td>auto<br />metadata<br />none</td>
             <td>Specifies if and how the author thinks the audio should be loaded when the page loads.<td>
           </tr>
           <tr>
@@ -127,33 +128,178 @@
 
     <div><h2 class="tag">Examples</h2></div>
     <div id="audio-examples-bar" class="left-padding">
-      <a href="#audio-examples-bar"><button onclick="funcAutoplay()" class="example-button">autoplay</button></a>
-      <a href="#audio-examples-bar"><button onclick="funcControls()" class="example-button">controls</button></a>
-      <a href="#audio-examples-bar"><button onclick="funcLoop()" class="example-button">download</button></a>
-      <a href="#audio-examples-bar"><button onclick="funcMuted()" class="example-button">href</button></a>
-      <a href="#audio-examples-bar"><button onclick="funcPreload()" class="example-button">hreflang</button></a>
+      <a href="#audio-examples-bar"><button onclick="funcAutoplay()" class="example-button">src, autoplay, controls, loop & muted</button></a>
+      <a href="#audio-examples-bar"><button onclick="funcPreload()" class="example-button">preload</button></a>
     </div><br />
 
     <div id="autoplay" class="left-padding" style="overflow: hidden; display: none;">
       <span class="blue float-borders-none">
-        &lt;<span class="brown">audio</span><span class="crimson"> controls</span><span class="crimson"> autoplay</span>&gt;<br />
+        &lt;<span class="brown">audio</span><span class="crimson"> controls autoplay loop muted</span>&gt;<br />
           <span class="blue left-padding">
             &lt;<span class="brown">source</span>
-            <span class="crimson">crc</span><span>=</span>"../sounds/cat_mewing.mp3"
+            <span class="crimson">src</span><span>=</span>"../sounds/cat_mewing.mp3"
             <span class="crimson">type</span><span>=</span>"audio/mpeg"<span class="brown"> /</span>&gt;
           </span><br />
           <span class="left-padding">Your browser does not support the audio element.</span><br />
         &lt;<span class="brown">/audio</span>&gt;
       </span>
-      <span class="rarrow float-borders-none">&Rarr;</span>
-      <span class="result float-borders-none">
-        <audio controls="controls">
+      <span class="rarrow float-borders-none" style="margin-top: 22px;">&Rarr;</span>
+      <span class="result float-borders-none" style="margin-top: 26px;">
+        <audio id="startplay" controls="controls" loop="loop" muted="muted">
           <source src="../sounds/cat_mewing.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
        </audio>
       </span>
       <p style="clear: left;"></p>
     </div>
+
+    <div id="preload" class="left-padding" style="overflow: hidden; display: none;">
+
+      <div><hr style="color: rgb(218, 216, 238);"/></div>
+      <div class="description">
+        Description:<br />
+        <div class="note-value">
+           The &lt;preload&gt; attribute specifies if and how the author thinks that the audio file should be loaded when the page loads.
+        </div>
+        <div class="note-value">
+          The &lt;preload&gt; allows the author to provide a hint to the browser about what he/she thinks will lead to the best user experience.
+          This attribute may be ignored in some instances.
+        </div>
+      </div>
+      <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+      <div class="note">
+        Notes:<br />
+        <div class="note-value">
+           The &lt;preload&gt; attribute is ignored if autoplay is present.
+        </div>
+      </div>
+      <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+      <div class="tag">
+        <h2>Attributes</h2>
+        <table class="attr-list">
+          <thead>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>auto</td>
+              <td>The author thinks that the browser should load the entire audio file when the page loads.</td>
+            </tr>
+            <tr>
+              <td>metadata</td>
+              <td>The author thinks that the browser should load only metadata when the page loads.</td>
+            </tr>
+            <tr>
+              <td>none</td>
+              <td>The author thinks that the browser should NOT load the audio file when the page loads.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+      <span class="blue float-borders-none">
+        &lt;<span class="brown">audio</span><span class="crimson"> preload</span><span>=</span>"none"&gt;<br />
+          <span class="blue left-padding">
+            &lt;<span class="brown">source</span>
+            <span class="crimson">src</span><span>=</span>"../sounds/cat_mewing.mp3"
+            <span class="crimson">type</span><span>=</span>"audio/mpeg"<span class="brown"> /</span>&gt;
+          </span><br />
+          <span class="left-padding">Your browser does not support the audio element.</span><br />
+        &lt;<span class="brown">/audio</span>&gt;
+      </span>
+      <span class="rarrow float-borders-none" style="margin-top: 22px;">&Rarr;</span>
+      <span class="result float-borders-none" style="margin-top: 26px;">
+        <audio controls preload="none">
+          <source src="../sounds/cat_mewing.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+       </audio>
+      </span>
+      <p style="clear: left;"></p>
+    </div>
+    <hr color="red" />
+
+
+    <div id="source" class="mainBorder">
+      <div class="tag"><h2 class="not-support">&lt;audio&gt;</h2></div>
+      <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+      <div class="description">
+        Description:<br />
+        <div class="note-value">
+           The &lt;source&gt; tag is used to specify multiple media resources for media elements,
+           such as &lt;video&gt;, &lt;audio&gt;, and &lt;picture&gt;.
+        </div>
+        <div class="note-value">
+          The &lt;source&gt; tag allows you to specify alternative video/audio/image files which the browser may choose from,
+          based on its media type, codec support or media query.
+        </div>
+      </div>
+      <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+      <div class="note">
+        Notes:<br />
+        <div class="note-value">
+           Any text inside the between &lt;audio&gt; and &lt;/audio&gt; will be displayed in browsers that do not support the &lt;audio&gt; tag.
+        </div>
+      </div>
+      <div><hr style="color: rgb(218, 216, 238);"/></div>
+
+      <div class="tag">
+        <h2>Attributes</h2>
+        <table class="attr-list attr-list-3">
+          <thead>
+            <tr style="background-color: rgba(218, 136, 40, 0.5);">
+              <th>Attribute</th><th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#source-examples-bar" class="attr-links">&lt;src&gt;</a></td>
+              <td>URL</td>
+              <td>Required when &lt;source&gt; is used in &lt;audio&gt; and &lt;video&gt;. Specifies the URL of the media file.</td>
+            </tr>
+            <tr>
+              <td><a href="#source-examples-bar" class="attr-links">&lt;srcset&gt;</a></td>
+              <td>URL</td>
+              <td>Required when &lt;source&gt; is used in &lt;picture&gt;. Specifies the URL of the image to use in different situations.</td>
+            </tr>
+            <tr>
+              <td><a href="#source-examples-bar" class="attr-links">&lt;media&gt;</a></td>
+              <td>media_query</td>
+              <td>Accepts any valid media query that would normally be defined in a CSS.</td>
+            </tr>
+            <tr>
+              <td><a href="#source-examples-bar" class="attr-links">&lt;sizes&gt;</a></td>
+              <td></td>
+              <td>Specifies image sizes for different page layouts.</td>
+            </tr>
+            <tr>
+              <td><a href="#source-examples-bar" class="attr-links">&lt;type&gt;</a></td>
+              <td>MIME-type</td>
+              <td>Specifies the MIME-type of the resource.<td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div><hr style="color: rgb(218, 216, 238);"/></div>
+      <!-- <div style="overflow: hidden; resize: horizontal;"> -->
+        <picture>
+          <!-- <source media="(min-width: 450px)" srcset="../images/british_cat.jpg"> -->
+          <img src="../images/many_cats.jpg" alt="Flowers" style="width: auto; height: auto">
+          <source media="(min-width: 365px)" srcset="../images/filtered_cat.jpg">
+        </picture>
+        <p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+The browser looks for the first source element where the media query matches the user's current viewport width,
+and fetches the image specified in the srcset attribute.</p>
+      <!-- </div> -->
+      <p style="clear: left;"></p>
+    </div>
+
 
 </body>
 </html>
