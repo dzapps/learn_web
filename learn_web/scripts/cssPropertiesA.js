@@ -2,7 +2,7 @@ function changeStateSingle(id, state) {
   document.getElementById(id).style.display = state;
 }
 
-function changeState(id) {
+function changeVisib(id) {
   let elemsarr = document.getElementsByClassName('visibility');
   length = elemsarr.length;
   for (i=0; i<=length; i++) {
