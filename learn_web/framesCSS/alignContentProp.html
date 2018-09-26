@@ -92,78 +92,63 @@
     <div><h2 class="tag">Examples</h2></div>
     <div id="link-examples-bar" class="left-padding">
       <a href="#link-examples-bar">
-        <button onclick="changeVisib('alContStretch')" class="example-button example-rounded-buttons">stretch</button>
+        <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'stretch', 'block')" class="example-button example-rounded-buttons">stretch</button>
       </a>
       <a href="#link-examples-bar">
-        <button onclick="changeVisib('alContCenter')" class="example-button example-rounded-buttons">center</button>
+        <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'center', 'block')" class="example-button example-rounded-buttons">center</button>
       </a>
       <a href="#link-examples-bar">
-        <button onclick="changeVisib('alContFlexStart')" class="example-button example-rounded-buttons">flex-start</button>
+        <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'flex-start', 'block')" class="example-button example-rounded-buttons">flex-start</button>
       </a>
       <a href="#link-examples-bar">
-        <button onclick="changeVisib('alContFlexEnd')" class="example-button example-rounded-buttons">flex-end</button>
+        <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'flex-end', 'block')" class="example-button example-rounded-buttons">flex-end</button>
       </a>
       <a href="#link-examples-bar">
-        <button onclick="changeVisib('alContSpaceBetween')" class="example-button example-rounded-buttons">space-between</button>
+        <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'space-between', 'block')" class="example-button example-rounded-buttons">space-between</button>
       </a>
       <a href="#link-examples-bar">
-        <button onclick="changeVisib('alContSpaceAround')" class="example-button example-rounded-buttons">space-around</button>
+        <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'space-around', 'block')" class="example-button example-rounded-buttons">space-around</button>
       </a>
       <a href="#link-examples-bar">
-        <button onclick="changeVisib('alContInitial')" class="example-button example-rounded-buttons">initial</button>
+        <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'initial', 'block')" class="example-button example-rounded-buttons">initial</button>
       </a>
       <a href="#link-examples-bar">
-        <button onclick="changeVisib('alContInherit')" class="example-button example-rounded-buttons">inherit</button>
+        <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'inherit', 'block')" class="example-button example-rounded-buttons">inherit</button>
       </a>
     </div>
   </div>
 
-  <div id="alContStretch" class="visibility exampleDiv al-cont-flex-stretch">
+  <div id="alignContDiv" class="exampleDiv al-cont-flex">
     <span style="background-color: red;"></span>
     <span style="background-color: yellow;"></span>
     <span style="background-color: blue;"></span>
   </div>
-
-  <div id="alContCenter" class="visibility exampleDiv al-cont-flex-center">
-    <span style="background-color: red;"></span>
-    <span style="background-color: yellow;"></span>
-    <span style="background-color: blue;"></span>
-  </div>
-
-  <div id="alContFlexStart" class="visibility exampleDiv al-cont-flex-start">
-    <span style="background-color: red;"></span>
-    <span style="background-color: yellow;"></span>
-    <span style="background-color: blue;"></span>
-  </div>
-
-  <div id="alContFlexEnd" class="visibility exampleDiv al-cont-flex-end">
-    <span style="background-color: red;"></span>
-    <span style="background-color: yellow;"></span>
-    <span style="background-color: blue;"></span>
-  </div>
-
-  <div id="alContSpaceBetween" class="visibility exampleDiv al-cont-space-between">
-    <span style="background-color: red;"></span>
-    <span style="background-color: yellow;"></span>
-    <span style="background-color: blue;"></span>
-  </div>
-
-  <div id="alContSpaceAround" class="visibility exampleDiv al-cont-space-around">
-    <span style="background-color: red;"></span>
-    <span style="background-color: yellow;"></span>
-    <span style="background-color: blue;"></span>
-  </div>
-
-  <div id="alContInitial" class="visibility exampleDiv al-cont-initial">
-    <span style="background-color: red;"></span>
-    <span style="background-color: yellow;"></span>
-    <span style="background-color: blue;"></span>
-  </div>
-
-  <div id="alContInherit" class="visibility exampleDiv al-cont-inherit">
-    <span style="background-color: red;"></span>
-    <span style="background-color: yellow;"></span>
-    <span style="background-color: blue;"></span>
+  <div id="alignContDivCode" class="left-padding" style="border: none;">
+    <p class="float-borders-none">
+      <span class="brown" style="display: block;">div </span><span class="black">{</span>
+      <p class="blue left-padding" style="margin: 0;">
+        <span class="crimson">display</span><span class="black">:</span> -webkit-flex;<br />
+        <span class="crimson">display</span><span class="black">:</span> flex;<br />
+        <span class="crimson">-webkit-flex-wrap</span><span class="black">:</span> wrap;<br />
+        <span class="crimson">flex-wrap</span><span class="black">:</span> wrap;<br />
+        <span class="crimson">-webkit-align-content</span><span class="black">:</span> center;<br />
+        <span class="crimson">align-content</span><span class="black">:</span> center;<br />
+      </p>
+      <span class="black" style="display: block;">}</span>
+    </p>
+    <p class="float-borders-none">
+      <span class="brown" style="display: block;">div </span><span class="black">{</span>
+      <p class="blue left-padding" style="margin: 0;">
+        <span class="crimson">display</span><span class="black">:</span> -webkit-flex;<br />
+        <span class="crimson">display</span><span class="black">:</span> flex;<br />
+        <span class="crimson">-webkit-flex-wrap</span><span class="black">:</span> wrap;<br />
+        <span class="crimson">flex-wrap</span><span class="black">:</span> wrap;<br />
+        <span class="crimson">-webkit-align-content</span><span class="black">:</span> center;<br />
+        <span class="crimson">align-content</span><span class="black">:</span> center;<br />
+      </p>
+      <span class="black" style="display: block;">}</span>
+    </p>
+    <p style="clear: left;"></p>
   </div>
 
   <div><hr class="hr-length-90perc" /></div>

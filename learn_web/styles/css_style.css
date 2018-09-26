@@ -40,7 +40,7 @@ body {
   margin-left: 10%;
   width: 80%;
   position: absolute;
-  background-color: rgb(28, 173, 214);
+  background-color: rgb(143, 193, 207);
   z-index: 1;
 }
 
@@ -52,68 +52,11 @@ body {
   background-color: rgba(73, 170, 249, 0.44);
 }
 
-.al-cont-flex-stretch {
+.al-cont-flex {
+  display: flex;
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-align-content: stretch;
-  align-content: stretch;
-}
-
-.al-cont-flex-center {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: center;
-  align-content: center;
-}
-
-.al-cont-flex-start {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: flex-start;
-  align-content: flex-start;
-}
-
-.al-cont-flex-end {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: flex-end;
-  align-content: flex-end;
-}
-
-.al-cont-space-around {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: space-around;
-  align-content: space-around;
-}
-
-.al-cont-space-between {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: space-between;
-  align-content: space-between;
-}
-
-.al-cont-initial {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: initial;
-  align-content: initial;
-}
-
-.al-cont-inherit {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: inherit;
-  align-content: inherit;
 }
 
 .just-cont-flex-center {
@@ -143,7 +86,6 @@ body {
 }
 
 .exampleDiv {
-  display: none;
   width: 90%;
   height: 100px;
   margin-left: 2em;
