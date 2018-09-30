@@ -4,6 +4,7 @@
 <title>Align content</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
 <link rel="stylesheet" href="../styles/button.css" />
 <link rel="stylesheet" href="../styles/reset.css" />
 <link rel="stylesheet" href="../styles/common.css" />
@@ -32,6 +33,12 @@
     </div>
     <div class="note-value">
       Use the justify-content property to align the items on the main-axis (horizontally).
+    </div>
+    <div class="note-value">
+      Internet Explorer 10 and earlier versions do not support the align-content property.
+    </div>
+    <div class="note-value">
+      Safari 7.0 to 9.0 supports an alternative, the <b>-webkit-align-content</b> property.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -90,29 +97,29 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="link-examples-bar" class="left-padding">
-      <a href="#link-examples-bar">
+    <div id="alContExamplesBar" class="left-padding">
+      <a href="#alContExamplesBar">
         <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'stretch', 'block')" class="example-button example-rounded-buttons">stretch</button>
       </a>
-      <a href="#link-examples-bar">
+      <a href="#alContExamplesBar">
         <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'center', 'block')" class="example-button example-rounded-buttons">center</button>
       </a>
-      <a href="#link-examples-bar">
+      <a href="#alContExamplesBar">
         <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'flex-start', 'block')" class="example-button example-rounded-buttons">flex-start</button>
       </a>
-      <a href="#link-examples-bar">
+      <a href="#alContExamplesBar">
         <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'flex-end', 'block')" class="example-button example-rounded-buttons">flex-end</button>
       </a>
-      <a href="#link-examples-bar">
+      <a href="#alContExamplesBar">
         <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'space-between', 'block')" class="example-button example-rounded-buttons">space-between</button>
       </a>
-      <a href="#link-examples-bar">
+      <a href="#alContExamplesBar">
         <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'space-around', 'block')" class="example-button example-rounded-buttons">space-around</button>
       </a>
-      <a href="#link-examples-bar">
+      <a href="#alContExamplesBar">
         <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'initial', 'block')" class="example-button example-rounded-buttons">initial</button>
       </a>
-      <a href="#link-examples-bar">
+      <a href="#alContExamplesBar">
         <button onclick="changeVisibAndState('alignContDiv', 'alignContDivCode', 'inherit', 'block')" class="example-button example-rounded-buttons">inherit</button>
       </a>
     </div>
@@ -126,27 +133,24 @@
 
   <div id="alignContDivCode" style="border: none;">
     <div class="blue float-borders-none">
-      <p class="blue left-padding" style="margin: 0">
-        &lt;<span class="brown">div</span>&gt;<br />
-        <p class="more-padding" style="margin: 0;">
-          &lt;<span class="brown">span</span>
-          <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color</span><span class="black">: </span>
-          red<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
-          &lt;<span class="brown">span</span>
-          <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color</span><span class="black">: </span>
-          yellow<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
-          &lt;<span class="brown">span</span>
-          <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color</span><span class="black">: </span>
-          blue<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
-        </p>
-        <span class="left-padding">&lt;<span class="brown">/div</span>&gt;</span>
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">span</span>
+        <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color</span><span class="black">: </span>
+        red<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span</span>
+        <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color</span><span class="black">: </span>
+        yellow<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span</span>
+        <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color</span><span class="black">: </span>
+        blue<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
       </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
     </div>
 
     <div class="float-borders-none">
-      <p class="blue left-padding" style="margin: 0">
         <span class="brown">div </span><span class="black">{</span><br />
-          <p class="blue more-padding" style="margin: 0;">
+          <p class="blue left-padding" style="margin: 0;">
             <span class="crimson">display</span><span class="black">:</span> -webkit-flex;<br />
             <span class="crimson">display</span><span class="black">:</span> flex;<br />
             <span class="crimson">-webkit-flex-wrap</span><span class="black">:</span> wrap;<br />
@@ -154,19 +158,16 @@
             <span class="crimson">-webkit-align-content</span><span class="black">: </span><span class="text">stretch;</span><br />
             <span class="crimson">align-content</span><span class="black">: </span><span class="text">stretch;</span><br />
           </p>
-        <span class="black left-padding">}</span>
-      </p>
+        <span class="black">}</span>
     </div>
 
     <div class="float-borders-none">
-      <p class="blue left-padding" style="margin: 0">
-        <span class="brown">span </span><span class="black">{</span><br />
-          <p class="blue more-padding" style="margin: 0;">
-            <span class="crimson">width</span><span class="black">:</span> 100%<br />
-            <span class="crimson">height</span><span class="black">:</span> 20%<br />
-          </p>
-        <span class="black left-padding">}</span>
-      </p>
+      <span class="brown">span </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">width</span><span class="black">:</span> 100%<br />
+          <span class="crimson">height</span><span class="black">:</span> 20%<br />
+        </p>
+      <span class="black">}</span>
     </div>
   </div>
   <p style="clear: left;"></p>

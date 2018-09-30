@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<title>Animation direction</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesA.js"></script>
+
+<body>
+  <!-- <script>
+  playAnimation();
+</script> -->
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesA.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The animation-direction property defines whether an animation should be played forwards, backwards or in alternate cycles.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Notes:<br />
+    <div class="note-value">
+      The animation-direction property is not supported in Internet Explorer 9 and earlier versions.
+    </div>
+    <div class="note-value">
+      The following browsers need a prefix: Safari and Chrome 4.0 and Opera 15.0 (-webkit-), Mozilla 5.0 (-moz-), Opera 12.0 (-o-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>normal</td>
+          <td>Default value. The animation is played as normal (forwards).</td>
+        </tr>
+        <tr>
+          <td>reverse</td>
+          <td>The animation is played in reverse direction (backwards).</td>
+        </tr>
+        <tr>
+          <td>alternate</td>
+          <td>The animation is played forwards first, then backwards.</td>
+        </tr>
+        <tr>
+          <td>alternate-reverse</td>
+          <td>The animation is played backwards first, then forwards.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="animDirectionExamplesBar" class="left-padding">
+      <a href="#animDirectionExamplesBar">
+        <button onclick="animAttributesAddit('animationDiv', '0px', '200px', '0px', '200px', 4000, 'ease', 1000, 1, 'normal', 'none')" class="example-button example-rounded-buttons">normal</button>
+      </a>
+      <a href="#animDirectionExamplesBar">
+        <button onclick="animAttributesAddit('animationDiv', '0px', '200px', '0px', '200px', 4000, 'ease', 1000, 1, 'reverse', 'none')" class="example-button example-rounded-buttons">reverse</button>
+      </a>
+      <a href="#animDirectionExamplesBar">
+        <button onclick="animAttributesAddit('animationDiv', '0px', '200px', '0px', '200px', 4000, 'ease', 1000, 1, 'alternate', 'none')" class="example-button example-rounded-buttons">alternate</button>
+      </a>
+      <a href="#animDirectionExamplesBar">
+        <button onclick="animAttributesAddit('animationDiv', '0px', '200px', '0px', '200px', 4000, 'ease', 1000, 1, 'alternate-reverse', 'none')" class="example-button example-rounded-buttons">alternate-reverse</button>
+      </a>
+      <a href="#animDirectionExamplesBar">
+        <button onclick="animAttributesAddit('animationDiv', '0px', '200px', '0px', '200px', 4000, 'ease', 1000, 1, 'initial', 'none')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#animDirectionExamplesBar">
+        <button onclick="animAttributesAddit('animationDiv', '0px', '200px', '0px', '200px', 4000, 'ease', 1000, 1, 'inherit', 'none')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv">
+    <div id="animationDiv" class="animation-state"></div>
+  </div>
+
+  <div id="animationDivCode" style="border: none;">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">div</span>
+        <span class="darkblue">id</span><span class="black">=</span>"<span class="olive">example</span>&gt;&lt;<span class="brown">/div</span>&gt;
+      </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+        <span class="darkblue">#example </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">width:</span> 68px;<br />
+            <span class="crimson">height:</span> 68px;<br />
+            <span class="crimson">background-color:</span> darkblue;<br />
+            <span class="crimson">position:</span> relative;<br />
+            <span class="crimson">animation: </span>name 4s 1;<br />
+            <span class="crimson">animation-delay: </span><span class="text">0s;</span><br />
+          </p>
+        <span class="black">}</span>
+    </div>
+
+    <div class="float-borders-none">
+      <span class="darkblue">@keyframes</span>
+      <span class="brown"> name </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">from {left: </span>0px;<span class="crimson">}</span><br />
+          <span class="crimson">from {left: </span>200px;<span class="crimson">}</span><br />
+        </p>
+      <span class="black">}</span>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

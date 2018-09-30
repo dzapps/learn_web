@@ -151,7 +151,7 @@ button:hover {
 }
 
 .shadow {
-    box-shadow: 8px -4px 1px 1px rgba(0,0,0,1);
+  box-shadow: 4px -4px 1px 1px rgba(0,0,0,1);
 }
 
 .link-buttons:active {
@@ -159,5 +159,5 @@ button:hover {
   margin-bottom: -2px;
   margin-left: 2px;
   margin-right: -2px;
-  box-shadow: 4px -2px 1px 0px rgba(0,0,0,1);
+  box-shadow: 2px -2px 0px 0px rgba(0,0,0,0.5);
 }

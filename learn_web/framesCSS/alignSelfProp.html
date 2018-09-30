@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<title>Align items</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesA.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesA.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The align-self property specifies the alignment for the selected item inside the flexible container.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Notes:<br />
+    <div class="note-value">
+      The align-self property overrides the flexible container's align-items property.
+    </div>
+    <div class="note-value">
+      Internet Explorer 10 and earlier versions do not support the align-self property.
+    </div>
+    <div class="note-value">
+      Safari 7.0 to 9.0 supports an alternative, the <b>-webkit-align-self</b> property.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>auto</td>
+          <td>Default. The element inherits its parent container's align-items property, or "stretch" if it has no parent container.
+          </td>
+        </tr>
+        <tr>
+          <td>stretch</td>
+          <td>The element is positioned to fit the container.
+          </td>
+        </tr>
+        <tr>
+          <td>center</td>
+          <td>The element is positioned at the center of the container.</td>
+        </tr>
+        <tr>
+          <td>flex-start</td>
+          <td>Items are positioned at the beginning of the container.
+          </td>
+        </tr>
+        <tr>
+          <td>flex-end</td>
+          <td>Items are positioned at the end of the container.</td>
+        </tr>
+        <tr>
+          <td>basiline</td>
+          <td>Items are positioned at the baseline of the container.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.
+          </td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="alignSelfExamplesBar" class="left-padding">
+      <a href="#alignSelfExamplesBar">
+        <button onclick="alignSelf('alignSelfDiv', 'alignSelfDivCode', 'auto', 'block')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#alignSelfExamplesBar">
+        <button onclick="alignSelf('alignSelfDiv', 'alignSelfDivCode', 'stretch', 'block')" class="example-button example-rounded-buttons">stretch</button>
+      </a>
+      <a href="#alignSelfExamplesBar">
+        <button onclick="alignSelf('alignSelfDiv', 'alignSelfDivCode', 'center', 'block')" class="example-button example-rounded-buttons">center</button>
+      </a>
+      <a href="#alignSelfExamplesBar">
+        <button onclick="alignSelf('alignSelfDiv', 'alignSelfDivCode', 'flex-start', 'block')" class="example-button example-rounded-buttons">flex-start</button>
+      </a>
+      <a href="#alignSelfExamplesBar">
+        <button onclick="alignSelf('alignSelfDiv', 'alignSelfDivCode', 'flex-end', 'block')" class="example-button example-rounded-buttons">flex-end</button>
+      </a>
+      <a href="#alignSelfExamplesBar">
+        <button onclick="alignSelf('alignSelfDiv', 'alignSelfDivCode', 'baseline', 'block')" class="example-button example-rounded-buttons">baseline</button>
+      </a>
+      <a href="#alignSelfExamplesBar">
+        <button onclick="alignSelf('alignSelfDiv', 'alignSelfDivCode', 'initial', 'block')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#alignSelfExamplesBar">
+        <button onclick="alignSelf('alignSelfDiv', 'alignSelfDivCode', 'inherit', 'block')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv al-self-flex">
+    <span style="background-color: red;">Red</span>
+    <span id="alignSelfDiv" style="background-color: yellow;">Yellow</span>
+    <span style="background-color: blue;">BlueBlueBlueBlue BlueBlueBlueBlue BlueBlueBlue BlueBlueBlue BlueBlueBlue BlueBlueBlue BlueBlueBlue BlueBlueBlue</span>
+  </div>
+
+  <div class="borders-none">
+    <div class="blue float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        &lt;<span class="brown">div</span>&gt;<br />
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">span</span>
+          <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color</span><span class="black">: </span>
+          red<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
+          &lt;<span class="brown">span</span>
+          <span class="darkblue">id</span><span class="black">=</span>"<span class="olive">example</span>"
+          <span class="crimson"> style</span><span class="black">=</span>"<span class="crimson">background-color</span><span class="black">: </span>
+          yellow<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
+          &lt;<span class="brown">span</span>
+          <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color</span><span class="black">: </span>
+          blue<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
+        </p>
+        <span class="left-padding">&lt;<span class="brown">/div</span>&gt;</span>
+      </p>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">display</span><span class="black">:</span> -webkit-flex;<br />
+            <span class="crimson">display</span><span class="black">:</span> flex;<br />
+            <span class="crimson">-webkit-align-items</span><span class="black">: </span><span>flex-start;</span><br />
+            <span class="crimson">align-items</span><span class="black">: </span><span>flex-start;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+    <p style="clear: left;"></p>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">span </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">-webkit-flex</span><span class="black">:</span> 1<br />
+            <span class="crimson">flex</span><span class="black">:</span> 1<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div  id="alignSelfDivCode" class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="darkblue">#example </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">-webkit-align-self</span><span class="black">: </span><span class="text">auto</span><br />
+            <span class="crimson">align-self</span><span class="black">: </span><span class="text">auto</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

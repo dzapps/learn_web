@@ -52,13 +52,6 @@ body {
   background-color: rgba(73, 170, 249, 0.44);
 }
 
-.al-cont-flex {
-  display: flex;
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
 .just-cont-flex-center {
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
@@ -85,6 +78,81 @@ body {
   align-items: center; */
 }
 
+.al-cont-flex {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.al-cont-flex span {
+  height: 20%;
+}
+
+.al-items-flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.al-items-flex span {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.al-self-flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.al-self-flex span {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+#allDiv {
+  font-size: small; color: blue;
+}
+
+#allDiv p {
+  background-color: yellow; color: red;
+}
+
+#animationDiv {
+  width: 68px;
+  height: 68px;
+  background-color: darkblue;
+  position: relative;
+}
+
+.animation-class {
+  -webkit-animation: movie 5s infinite 3s;
+  animation: movie 5s infinite 3s;
+}
+
+.animation-state {
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes movie {
+  from {left: 0px;}
+  to {left: 30%;}
+}
+
+@keyframes movie {
+  from {left: 0px;}
+  to {left: 30%;}
+}
+
+@keyframes directMovie {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
+
 .exampleDiv {
   width: 90%;
   height: 100px;
@@ -93,7 +161,7 @@ body {
 }
 
 .exampleDiv span {
-  width: 100%; height: 20%;
+  width: 100%;
 }
 
 h2 {
