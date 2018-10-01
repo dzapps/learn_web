@@ -126,12 +126,19 @@ body {
   position: relative;
 }
 
+#animationDivCode {
+  borders: none;
+   font-family: ubuntu-mono;
+   font-size: 85%;
+}
+
 .animation-class {
   -webkit-animation: movie 5s infinite 3s;
   animation: movie 5s infinite 3s;
 }
 
 .animation-state {
+  animation: directMovie 5s infinite 1s;
   animation-play-state: paused;
 }
 
@@ -146,11 +153,11 @@ body {
 }
 
 @keyframes directMovie {
-  0%   {background: red; left: 0px; top: 0px;}
-  25%  {background: yellow; left: 200px; top: 0px;}
-  50%  {background: blue; left: 200px; top: 200px;}
-  75%  {background: green; left: 0px; top: 200px;}
-  100% {background: red; left: 0px; top: 0px;}
+  0%   {background: darkblue; left: 0px; top: 0px;}
+  25%  {background: blue; left: 200px; top: 0px;}
+  50%  {background: lightblue; left: 200px; top: 200px;}
+  75%  {background: blue; left: 0px; top: 200px;}
+  100% {background: darkblue; left: 0px; top: 0px;}
 }
 
 .exampleDiv {

@@ -1,3 +1,7 @@
+function animPaused(id, state) {
+  document.getElementById(id).style.animationPlayState = state;
+}
+
 function changeStateSingle(id, state) {
   document.getElementById(id).style.display = state;
 }
@@ -49,8 +53,14 @@ function clearAllProp() {
   document.getElementById('allDivExamp').style.display = 'block';
 }
 
-function animAttributes(id, x1, x2, duration, easing, delay, repeat, direction, fill) {
-  document.getElementsByClassName('text')[0].innerHTML = (delay / 1000) + 's;';
+function animDirection(id, state1) {
+  document.getElementById(id).style.animationPlayState = "running";
+  document.getElementById(id).style.animationDirection = state1;
+  document.getElementsByClassName('text')[0].innerHTML = state1;
+}
+
+function animAttributes(id, x1, x2, duration, easing, delay, repeat, direction, fill, target) {
+  document.getElementsByClassName('text')[0].innerHTML = target;
   document.getElementById(id).animate([
     {transform: `translateX(${x1})`},
     {transform: `translateX(${x2})`}
@@ -64,8 +74,8 @@ function animAttributes(id, x1, x2, duration, easing, delay, repeat, direction, 
   });
 }
 
-function animAttributesAddit(id, x1, x2, y1, y2, duration, easing, delay, repeat, direction, fill) {
-  document.getElementsByClassName('text')[0].innerHTML = (delay / 1000) + 's;';
+function animAttributesAddit(id, x1, x2, y1, y2, duration, easing, delay, repeat, direction, fill, target) {
+  document.getElementsByClassName('text')[0].innerHTML = target;
   document.getElementById(id).animate([
     {transform: `translateY(${y1})`},
     {transform: `translateY(${y2})`},
@@ -89,9 +99,3 @@ function animAttributesAddit(id, x1, x2, y1, y2, duration, easing, delay, repeat
     fill: fill
   });
 }
-
-// 0%   {background: red; left: 0px; top: 0px;}
-// 25%  {background: yellow; left: 200px; top: 0px;}
-//   50% {left: 200px; top: 200px;}
-// 75%  {background: green; left: 0px; top: 200px;}
-// 100% {background: red; left: 0px; top: 0px;}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Animation direction</title>
+<title>Animation duration</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -23,7 +23,7 @@
   <div class="note descriptionCSS  noteCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The animation-direction property defines whether an animation should be played forwards, backwards or in alternate cycles.
+      The animation-duration property defines how long an animation should take to complete one cycle.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -53,20 +53,11 @@
       </thead>
       <tbody>
         <tr>
-          <td>normal</td>
-          <td>Default value. The animation is played as normal (forwards).</td>
-        </tr>
-        <tr>
-          <td>reverse</td>
-          <td>The animation is played in reverse direction (backwards).</td>
-        </tr>
-        <tr>
-          <td>alternate</td>
-          <td>The animation is played forwards first, then backwards.</td>
-        </tr>
-        <tr>
-          <td>alternate-reverse</td>
-          <td>The animation is played backwards first, then forwards.</td>
+          <td>time</td>
+          <td>Specifies the length of time an animation should take to complete one cycle.
+              This can be specified in seconds or milliseconds.
+              Default value is 0, which means that no animation will occur.
+          </td>
         </tr>
         <tr>
           <td>initial</td>
@@ -83,26 +74,15 @@
     <div><h2 class="tag">Examples</h2></div>
     <div id="animDirectionExamplesBar" class="left-padding">
       <a href="#animDirectionExamplesBar">
-        <button onclick="animDirection('animationDiv', 'normal')" class="example-button example-rounded-buttons">normal</button>
+        <button onclick="animAttributes('animationDiv', '0px', '200px', 10000, 'ease', 1000, 1, 'normal', 'none', '10s')" class="example-button example-rounded-buttons">duration 10s</button>
       </a>
       <a href="#animDirectionExamplesBar">
-        <button onclick="animDirection('animationDiv', 'reverse')" class="example-button example-rounded-buttons">reverse</button>
+        <button onclick="animAttributes('animationDiv', '0px', '200px', 5000, 'ease', 1000, 1, 'normal', 'none', '5s')" class="example-button example-rounded-buttons">duration 5s</button>
       </a>
       <a href="#animDirectionExamplesBar">
-        <button onclick="animDirection('animationDiv', 'alternate')" class="example-button example-rounded-buttons">alternate</button>
+        <button onclick="animAttributes('animationDiv', '0px', '200px', 1000, 'ease', 1000, 1, 'normal', 'none', '1s')" class="example-button example-rounded-buttons">duration 1s</button>
       </a>
-      <a href="#animDirectionExamplesBar">
-        <button onclick="animDirection('animationDiv', 'alternate-reverse')" class="example-button example-rounded-buttons">alternate-reverse</button>
-      </a>
-      <a href="#animDirectionExamplesBar">
-        <button onclick="animDirection('animationDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
-      </a>
-      <a href="#animDirectionExamplesBar">
-        <button onclick="animDirection('animationDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
-      </a>
-      <a href="#animDirectionExamplesBar">
-        <button onclick="animPaused('animationDiv', 'paused')" class="example-button example-rounded-buttons" style="margin-left: 1em;">Pause</button>
-      </a>
+    </a>
     </div>
   </div>
 
@@ -110,7 +90,7 @@
     <div id="animationDiv" class="animation-state"></div>
   </div>
 
-  <div id="animationDivCode">
+  <div id="animationDivCode" style="border: none;">
     <div class="blue float-borders-none">
       &lt;<span class="brown">div</span>&gt;<br />
       <p class="left-padding" style="margin: 0;">
@@ -128,10 +108,8 @@
             <span class="crimson">background-color:</span> darkblue;<br />
             <span class="crimson">position:</span> relative;<br />
             <span class="crimson">animation-name: </span>name;<br />
-            <span class="crimson">animation-iteration-count: </span>infinity;<br />
-            <span class="crimson">animation-delay: </span>1s;<br />
-            <span class="crimson">animation-duration: </span>5s;<br />
-            <span class="crimson">animation-direction: </span><span class="text" style="font-size: 90%;">?;</span><br />
+            <span class="crimson">animation-iteration-count: </span>1;<br />
+            <span class="crimson">animation-duration: </span><span class="text">0s;</span><br />
           </p>
         <span class="black">}</span>
     </div>
@@ -140,21 +118,8 @@
       <span class="darkblue">@keyframes</span>
       <span class="brown"> name </span><span class="black">{</span><br />
         <p class="blue left-padding" style="margin: 0;">
-          <span class="crimson">0% {background: <span class="blue">darkblue</span>;
-                                    left: <span class="blue">0px</span>;
-                                    top: <span class="blue">0px</span>;<span class="crimson">}</span><br />
-          <span class="crimson">25% {background: <span class="blue">blue</span>;
-                                    left: <span class="blue">200px</span>;
-                                    top: <span class="blue">0px</span>;<span class="crimson">}</span><br />
-          <span class="crimson">50% {background: <span class="blue">lightblue</span>;
-                                    left: <span class="blue">200px</span>;
-                                    top: <span class="blue">200px</span>;<span class="crimson">}</span><br />
-          <span class="crimson">75% {background: <span class="blue">blue</span>;
-                                    left: <span class="blue">0px</span>;
-                                    top: <span class="blue">200px</span>;<span class="crimson">}</span><br />
-          <span class="crimson">100% {background: <span class="blue">darkblue</span>;
-                                    left: <span class="blue">0px</span>;
-                                    top: <span class="blue">0px</span>;<span class="crimson">}</span><br />
+          <span class="crimson">from {left: </span>0px;<span class="crimson">}</span><br />
+          <span class="crimson">from {left: </span>200px;<span class="crimson">}</span><br />
         </p>
       <span class="black">}</span>
     </div>
