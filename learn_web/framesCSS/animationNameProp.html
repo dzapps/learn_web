@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Animation iteration count</title>
+<title>Animation name</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -20,7 +20,7 @@
   <div class="note descriptionCSS  noteCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The animation-iteration-count property specifies the number of times an animation should be played.
+      The animation-name property specifies a name for the @keyframes animation.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -28,10 +28,13 @@
   <div class="note noteCSS note-round-bord">
     Notes:<br />
     <div class="note-value">
-      The animation-iteration-count property is not supported in Internet Explorer 9 and earlier versions.
+      The animation-name property is not supported in Internet Explorer 9 and earlier versions.
     </div>
     <div class="note-value">
       The following browsers need a prefix: Safari and Chrome 4.0 and Opera 15.0 (-webkit-), Mozilla 5.0 (-moz-), Opera 12.0 (-o-).
+    </div>
+    <div class="note-value">
+      Always specify the animation-duration property. Otherwise the duration is 0, and the animation will not be played.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -50,12 +53,12 @@
       </thead>
       <tbody>
         <tr>
-          <td>number</td>
-          <td>A number that defines how many times an animation should be played. Default value is 1.</td>
+          <td>keyframename</td>
+          <td>Specifies the name of the keyframe you want to bind to the selector.</td>
         </tr>
         <tr>
-          <td>infinite</td>
-          <td>Specifies that the animation should be played infinite times (for ever).</td>
+          <td>none</td>
+          <td>Default value. Specifies that there will be no animation (can be used to override animations coming from the cascade).</td>
         </tr>
         <tr>
           <td>initial</td>
@@ -72,19 +75,16 @@
     <div><h2 class="tag">Examples</h2></div>
     <div id="animFillModeExamplesBar" class="left-padding">
       <a href="#animFillModeExamplesBar">
-        <button onclick="animAttributes('animationDiv', '', '0px', '200px', 2000, 'ease', 1000, 1, 'normal', 'none', '1')" class="example-button example-rounded-buttons">1 time</button>
+        <button onclick="animAttributesFull('animationDiv', 'name1', '0px', '200px', 2000, 'ease', 1000, 1, 'normal', 'none', 'name1')" class="example-button example-rounded-buttons">name1</button>
       </a>
       <a href="#animFillModeExamplesBar">
-        <button onclick="animAttributes('animationDiv', '', '0px', '200px', 2000, 'ease', 1000, 3, 'normal', 'none', '3')" class="example-button example-rounded-buttons">3 times</button>
-      </a>
-      <a href="#animFillModeExamplesBar">
-        <button onclick="animAttributes('animationDiv', '', '0px', '200px', 2000, 'ease', 1000, 'infinite', 'normal', 'none', 'infinite')" class="example-button example-rounded-buttons">infinite</button>
+        <button onclick="animAttributesY('animationDiv', 'name2', '', '', '0px', '200px', 2000, 'ease', 1000, 1, 'normal', 'none', 'name2')" class="example-button example-rounded-buttons">name2</button>
       </a>
     </div>
   </div>
 
   <div class="exampleDiv">
-    <div id="animationDiv" class="animation-fill-class"></div>
+    <div id="animationDiv" class="animation-name-class"></div>
   </div>
 
   <div id="animationDivCode">
@@ -100,8 +100,8 @@
             <span class="crimson">height: </span>68px;<br />
             <span class="crimson">background-color: </span>darkblue;<br />
             <span class="crimson">position: </span>relative;<br />
-            <span class="crimson">animation-name: </span>name;<br />
-            <span class="crimson">animation-iteration-count: </span><span class="text">?;</span><br />
+            <span class="crimson">animation-name: </span><span class="text">?;</span><br />
+            <span class="crimson">animation-iteration-count: </span>1<br />
             <span class="crimson">animation-delay: </span>1s;<br />
             <span class="crimson">animation-duration: </span>2s;<br />
             <span class="crimson">animation-direction: </span>normal;<br />
@@ -110,12 +110,22 @@
         <span class="black">}</span>
     </div>
 
-    <div class="float-borders-none">
+    <div id="name1" class="float-borders-none" style="display: none";>
       <span class="darkblue">@keyframes</span>
-      <span class="brown"> name </span><span class="black">{</span><br />
+      <span class="brown"> name1 </span><span class="black">{</span><br />
         <p class="blue left-padding" style="margin: 0;">
           <span class="crimson">{left:</span> 0px<span class="crimson">;}</span><br />
           <span class="crimson">{left:</span> 200px<span class="crimson">;}</span>
+        </p>
+      <span class="black">}</span>
+    </div>
+
+    <div id="name2" class="float-borders-none" style="display: none";>
+      <span class="darkblue">@keyframes</span>
+      <span class="brown"> name2 </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">{top:</span> 0px<span class="crimson">;}</span><br />
+          <span class="crimson">{top:</span> 200px<span class="crimson">;}</span>
         </p>
       <span class="black">}</span>
     </div>

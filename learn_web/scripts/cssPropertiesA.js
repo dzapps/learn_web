@@ -71,12 +71,49 @@ function animFillMode(id, state1) {
   document.getElementsByClassName('text')[0].innerHTML = state1;
 }
 
-function animAttributes(id, x1, x2, duration, easing, delay, repeat, direction, fill, target) {
+function animAttributes(id, name, x1, x2, duration, easing, delay, repeat, direction, fill, target) {
   document.getElementsByClassName('text')[0].innerHTML = target;
   document.getElementById(id).animate([
     {transform: `translateX(${x1})`},
     {transform: `translateX(${x2})`}
   ], {
+    name: name,
+    duration: duration,
+    easing: easing,
+    delay: delay,
+    iterations: repeat,
+    direction: direction,
+    fill: fill
+  });
+}
+
+function animAttributesFull(id, name, x1, x2, duration, easing, delay, repeat, direction, fill, target) {
+  document.getElementById('name1').style.display = "block";
+  document.getElementById('name2').style.display = "none";
+  document.getElementsByClassName('text')[0].innerHTML = target;
+  document.getElementById(id).animate([
+    {transform: `translateX(${x1})`},
+    {transform: `translateX(${x2})`}
+  ], {
+    name: name,
+    duration: duration,
+    easing: easing,
+    delay: delay,
+    iterations: repeat,
+    direction: direction,
+    fill: fill
+  });
+}
+
+function animAttributesY(id, name, x1, x2, y1, y2, duration, easing, delay, repeat, direction, fill, target) {
+  document.getElementById('name2').style.display = "block";
+  document.getElementById('name1').style.display = "none";
+  document.getElementsByClassName('text')[0].innerHTML = target;
+  document.getElementById(id).animate([
+    {transform: `translateY(${y1})`},
+    {transform: `translateY(${y2})`}
+  ], {
+    name: name,
     duration: duration,
     easing: easing,
     delay: delay,

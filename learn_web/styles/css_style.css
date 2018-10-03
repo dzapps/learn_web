@@ -146,6 +146,10 @@ body {
   animation-play-state: paused;
 }
 
+.animation-name-class {
+  animation-play-state: paused;
+}
+
 @keyframes movie {
   from {left: 0px;}
   to {left: 30%;}
