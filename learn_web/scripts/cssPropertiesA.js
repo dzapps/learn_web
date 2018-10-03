@@ -59,6 +59,18 @@ function animDirection(id, state1) {
   document.getElementsByClassName('text')[0].innerHTML = state1;
 }
 
+function animFillMode(id, state1) {
+  document.getElementById(id).style.animationPlayState = "running";
+  document.getElementById(id).style.animationFillMode = state1;
+  document.getElementsByClassName('text')[0].innerHTML = state1;
+}
+
+function animFillMode(id, state1) {
+  document.getElementById(id).style.animationPlayState = "running";
+  document.getElementById(id).style.animationIterationCount = state1;
+  document.getElementsByClassName('text')[0].innerHTML = state1;
+}
+
 function animAttributes(id, x1, x2, duration, easing, delay, repeat, direction, fill, target) {
   document.getElementsByClassName('text')[0].innerHTML = target;
   document.getElementById(id).animate([

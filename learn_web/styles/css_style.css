@@ -133,7 +133,6 @@ body {
 }
 
 .animation-class {
-  -webkit-animation: movie 5s infinite 3s;
   animation: movie 5s infinite 3s;
 }
 
@@ -142,14 +141,19 @@ body {
   animation-play-state: paused;
 }
 
-@-webkit-keyframes movie {
-  from {left: 0px;}
-  to {left: 30%;}
+.animation-fill-class {
+  animation: movie2 5s;
+  animation-play-state: paused;
 }
 
 @keyframes movie {
   from {left: 0px;}
   to {left: 30%;}
+}
+
+@keyframes movie2 {
+  from {left: 0px;}
+  to {left: 200px;}
 }
 
 @keyframes directMovie {

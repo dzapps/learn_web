@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<title>Animation fill mode</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesA.js"></script>
+
+<body>
+  <!-- <script>
+  playAnimation();
+</script> -->
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesA.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The animation-fill-mode property specifies a style for the element
+      when the animation is not playing (before it starts, after it ends, or both).
+    </div>
+    <div class="note-value">
+      CSS animations do not affect the element before the first keyframe is played or after the last keyframe is played.
+      The animation-fill-mode property can override this behavior.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Notes:<br />
+    <div class="note-value">
+      The animation-fill-mode property is not supported in Internet Explorer 9 and earlier versions.
+    </div>
+    <div class="note-value">
+      The following browsers need a prefix: Safari and Chrome 4.0 and Opera 15.0 (-webkit-), Mozilla 5.0 (-moz-), Opera 12.0 (-o-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>Default value. Animation will not apply any styles to the element before or after it is executing.</td>
+        </tr>
+        <tr>
+          <td>forwards</td>
+          <td>The element will retain the style values that is set by the last keyframe
+              (depends on animation-direction and animation-iteration-count).
+          </td>
+        </tr>
+        <tr>
+          <td>backwards</td>
+          <td>The element will get the style values that is set by the first keyframe (depends on animation-direction),
+              and retain this during the animation-delay period.
+          </td>
+        </tr>
+        <tr>
+          <td>both</td>
+          <td>The animation will follow the rules for both forwards and backwards,
+              extending the animation properties in both directions.
+          </td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="animFillModeExamplesBar" class="left-padding">
+      <a href="#animFillModeExamplesBar">
+        <button onclick="animAttributes('animationDiv', '0px', '200px', 3000, 'ease', 1000, 1, 'normal', 'none', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#animFillModeExamplesBar">
+        <button onclick="animAttributes('animationDiv', '0px', '200px', 3000, 'ease', 1000, 1, 'normal', 'forwards', 'forwards')" class="example-button example-rounded-buttons">forwards</button>
+      </a>
+      <a href="#animFillModeExamplesBar">
+        <button onclick="animAttributes('animationDiv', '0px', '200px', 3000, 'ease', 1000, 1, 'normal', 'backwards', 'backwards')" class="example-button example-rounded-buttons">backwards</button>
+      </a>
+      <a href="#animFillModeExamplesBar">
+        <button onclick="animAttributes('animationDiv', '0px', '200px', 3000, 'ease', 1000, 1, 'normal', 'both', 'both')" class="example-button example-rounded-buttons">both</button>
+      </a>
+      <a href="#animFillModeExamplesBar">
+        <button onclick="animAttributes('animationDiv', '0px', '200px', 3000, 'ease', 1000, 1, 'normal', 'initial', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#animFillModeExamplesBar">
+        <button onclick="animAttributes('animationDiv', '0px', '200px', 3000, 'ease', 1000, 1, 'normal', 'inherit', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv">
+    <div id="animationDiv" class="animation-fill-class"></div>
+  </div>
+
+  <div id="animationDivCode">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">div</span>
+        <span class="darkblue">id</span><span class="black">=</span>"<span class="olive">example</span>&gt;&lt;<span class="brown">/div</span>&gt;
+      </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+        <span class="darkblue">#example </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">width:</span> 68px;<br />
+            <span class="crimson">height:</span> 68px;<br />
+            <span class="crimson">background-color:</span> darkblue;<br />
+            <span class="crimson">position:</span> relative;<br />
+            <span class="crimson">animation-name: </span>name;<br />
+            <span class="crimson">animation-iteration-count: </span>1;<br />
+            <span class="crimson">animation-delay: </span>1s;<br />
+            <span class="crimson">animation-duration: </span>5s;<br />
+            <span class="crimson">animation-direction: </span>normal;<br />
+            <span class="crimson">animation-fill-mode: </span><span class="text" style="font-size: 90%;">?;<span><br />
+            <span class="crimson">animation-direction: </span>normal;</span><br />
+          </p>
+        <span class="black">}</span>
+    </div>
+
+    <div class="float-borders-none">
+      <span class="darkblue">@keyframes</span>
+      <span class="brown"> name </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">{left:</span> 0px<span class="crimson">;}</span><br />
+          <span class="crimson">{left:</span> 200px<span class="crimson">;}</span>
+        </p>
+      <span class="black">}</span>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
