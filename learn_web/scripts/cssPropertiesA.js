@@ -2,6 +2,10 @@ function animPaused(id, state) {
   document.getElementById(id).style.animationPlayState = state;
 }
 
+function animResume(id, state) {
+  document.getElementById(id).style.animationPlayState = state;
+}
+
 function changeStateSingle(id, state) {
   document.getElementById(id).style.display = state;
 }

@@ -141,6 +141,10 @@ body {
   animation-play-state: paused;
 }
 
+.none-paused {
+  animation-play-state: running;
+}
+
 .animation-fill-class {
   animation: movie2 5s;
   animation-play-state: paused;
