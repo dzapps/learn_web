@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<title>Backface visibility</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+  <script></script>
+
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Notes:<br />
+    <div class="note-value">
+      Internet Explorer 8 and earlier versions do not support multiple background images on one element.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>scroll</td>
+          <td>The background image will scroll with the page. This is default.
+          </td>
+        </tr>
+        <tr>
+          <td>fixed</td>
+          <td>The background image will not scroll with the page.</td>
+        </tr>
+        <tr>
+          <td>local</td>
+          <td>The background image will scroll with the element's contents.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.
+          </td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="bacgrAttachExamplesBar" class="left-padding">
+      <a href="#bacgrAttachExamplesBar">
+        <button onclick="bacgrAttach('bacgrAttachDiv', 'visible', 'visible;')" class="example-button example-rounded-buttons">scroll</button>
+      </a>
+      <a href="#bacgrAttachExamplesBar">
+        <button onclick="bacgrAttach('bacgrAttachDiv', 'visible', 'visible;')" class="example-button example-rounded-buttons">fixed</button>
+      </a>
+      <a href="#bacgrAttachExamplesBar">
+        <button onclick="backgrAttach('bacgrAttachDiv', 'hidden', 'hidden;')" class="example-button example-rounded-buttons">local</button>
+      </a>
+      <a href="#bacgrAttachExamplesBar">
+        <button onclick="bacgrAttach('bacgrAttachDiv', 'initial', 'initial;')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#bacgrAttachExamplesBar">
+        <button onclick="bacgrAttach('bacgrAttachDiv', 'inherit', 'inherit;')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="backgrAttachD" class="exampleDiv" style="font-size: 30px; overflow: auto; height: 150px;"></div>
+
+  <div>
+
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;
+      <span class="black">Backface text</span>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">background-color: </span>rgb(36, 90, 162);<br />
+            <span class="crimson">font-size: </span>30px;<br />
+            <span class="crimson">text-align: </span>center;<br />
+            <span class="crimson">transform: </span><span class="text">rotateY(0deg);</span><br />
+            <span class="crimson">backface-visibility: </span><span class="text">visible;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

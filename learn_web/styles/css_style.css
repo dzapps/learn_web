@@ -3,14 +3,27 @@ body {
 }
 
 #alignContentMenu {
-  width: 80%;
-  height: 600px;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
 #alignContentMenu p {
-  margin-left: 30px;
+  margin: 20px 10px;
+}
+
+.show-and-hide {
+  border-radius: 20px;
+  background-color: rgba(60, 37, 125, 0.86);
+  box-shadow: 4px 1px 15px 10px rgba(77, 110, 115, 0.7);
+  margin-top: 3em;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.show-and-hide p {
+  margin: 10px;
 }
 
 .note-round-bord {
@@ -53,6 +66,7 @@ body {
 }
 
 .just-cont-flex-center {
+  display: flex;
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -61,6 +75,7 @@ body {
 }
 
 .just-cont-flex-space-around {
+  display: flex;
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -69,6 +84,7 @@ body {
 }
 
 .just-cont-flex-space-between {
+  display: flex;
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<title>cssB</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="just-cont-flex-center" style="width: 70%; margin-left: auto; margin-right: auto;">
+    <a href="main_window_html.html">
+      <button class="home html-buttons shadow link-buttons" type="button">HTML</button>
+    </a>
+    <a href="main_window_css.html">
+      <button class="css-buttons shadow link-buttons" type="button" style="padding: 10px 24px;">CSS</button>
+    </a>
+    <a href="main_window_js.html">
+      <button class="js-buttons shadow link-buttons" type="button" style="padding: 10px 31px;">JS</button>
+    </a>
+  </div>
+
+  <div id="alignContentMenu" class="al-cont-flex just-cont-flex-center" style="margin-top: 4em;">
+    <p><a href="../framesCSS/backfaceVisibProp.html"><button class="css-buttons-prop">backface-visibility</button></a></p>
+    <p><a href="#showBackgr"><button onclick="showAndHide('showBackgr')" class="css-buttons-prop">background</button></a></p>
+    <p><a href="../framesCSS/borderProp.html"><button class="css-buttons-prop">border</button></a></p>
+    <p><a href="#showBordBottom"><button onclick="showAndHide('showBordBottom')" class="css-buttons-prop">border-bottom</button></a></p>
+    <p><a href="../framesCSS/bordCollapseProp.html"><button class="css-buttons-prop">border-collapse</button></a></p>
+    <p><a href="../framesCSS/bordColorProp.html"><button class="css-buttons-prop">border-color</button></a></p>
+    <p><a href="#showBordImage"><button onclick="showAndHide('showBordImage')" class="css-buttons-prop">border-image</button></a></p>
+    <p><a href="#showBordLeft"><button onclick="showAndHide('showBordLeft')" class="css-buttons-prop">border-left</button></a></p>
+    <p><a href="../framesCSS/bordRadiusProp.html"><button class="css-buttons-prop">border-radius</button></a></p>
+    <p><a href="#showBordRight"><button onclick="showAndHide('showBordRight')" class="css-buttons-prop">border-right</button></a></p>
+    <p><a href="../framesCSS/bordSpacingProp.html"><button class="css-buttons-prop">border-spacing</button></a></p>
+    <p><a href="../framesCSS/bordStyleProp.html"><button class="css-buttons-prop">border-style</button></a></p>
+    <p><a href="#showBordTop"><button onclick="showAndHide('showBordTop')" class="css-buttons-prop">border-top</button></a></p>
+    <p><a href="../framesCSS/bordBotomProp.html"><button class="css-buttons-prop">bottom</button></a></p>
+    <p><a href="#showBox"><button onclick="showAndHide('showBox')" class="css-buttons-prop">box</button></a></p>
+  </div>
+
+  <div id="showBackgr" class="show-and-hide just-cont-flex-center" style="display: none;">
+    <p><a href="../framesCSS/backgrAttachProp.html"><button class="css-buttons-prop css-buttons-prop-sub">background-attachment</button></a></p>
+    <p><a href="../framesCSS/backgrBlendModeProp.html"><button class="css-buttons-prop css-buttons-prop-sub">background-blend-mode</button></a></p>
+    <p><a href="../framesCSS/backgrClipProp.html"><button class="css-buttons-prop css-buttons-prop-sub">background-clip</button></a></p>
+    <p><a href="../framesCSS/backgrColorProp.html"><button class="css-buttons-prop css-buttons-prop-sub">background-color</button></a></p>
+    <p><a href="../framesCSS/backgrImageProp.html"><button class="css-buttons-prop css-buttons-prop-sub">background-image</button></a></p>
+    <p><a href="../framesCSS/backgrOriginProp.html"><button class="css-buttons-prop css-buttons-prop-sub">background-origin</button></a></p>
+    <p><a href="../framesCSS/backgrPosProp.html"><button class="css-buttons-prop css-buttons-prop-sub">background-position</button></a></p>
+    <p><a href="../framesCSS/backgrRepeatProp.html"><button class="css-buttons-prop css-buttons-prop-sub">background-repeat</button></a></p>
+    <p><a href="../framesCSS/backgrSizeProp.html"><button class="css-buttons-prop css-buttons-prop-sub">background-size</button></a></p>
+  </div>
+
+  <div id="showBordBottom" class="show-and-hide just-cont-flex-center" style="display: none;">
+    <p><a href="../framesCSS/bordBottColorProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-bottom-color</button></a></p>
+    <p><a href="../framesCSS/bordBottLeftRadProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-bottom-left-radius</button></a></p>
+    <p><a href="../framesCSS/bordBottRightRadProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-bottom-right-radius</button></a></p>
+    <p><a href="../framesCSS/bordBottStyleProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-bottom-style</button></a></p>
+    <p><a href="../framesCSS/bordBottWidthProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-bottom-width</button></a></p>
+  </div>
+
+  <div id="showBordImage" class="show-and-hide just-cont-flex-center" style="display: none;">
+    <p><a href="../framesCSS/bordImageProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-image</button></a></p>
+    <p><a href="../framesCSS/bordImageOutsetProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-image-outser</button></a></p>
+    <p><a href="../framesCSS/bordImageRepeatProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-image-repeat</button></a></p>
+    <p><a href="../framesCSS/bordImageSliceProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-image-slice</button><a></p>
+    <p><a href="../framesCSS/bordImageSrcProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-image-source</button></a></p>
+    <p><a href="../framesCSS/bordImageWidthProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-image-width</button></a></p>
+  </div>
+
+  <div id="showBordLeft" class="show-and-hide just-cont-flex-center" style="display: none;">
+    <p><a href="../framesCSS/bordLeftColorProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-left-color</button></a></p>
+    <p><a href="../framesCSS/bordLeftStyleProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-left-style</button></a></p>
+    <p><a href="../framesCSS/bordLeftWidthProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-left-width</button></a></p>
+  </div>
+
+  <div id="showBordRight" class="show-and-hide just-cont-flex-center" style="display: none;">
+    <p><a href="../framesCSS/bordRightColorProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-right-color</button></a></p>
+    <p><a href="../framesCSS/bordRightStyleProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-right-style</button></a></p>
+    <p><a href="../framesCSS/bordRightWidthProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-right-width</button></a></p>
+  </div>
+
+  <div id="showBordTop" class="show-and-hide just-cont-flex-center" style="display: none;">
+    <p><a href="../framesCSS/bordTopColorProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-top-color</button></a></p>
+    <p><a href="../framesCSS/bordTopLeftRadProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-top-left-radius</button></a></p>
+    <p><a href="../framesCSS/bordTopRightRadProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-top-right-radius</button></a></p>
+    <p><a href="../framesCSS/bordTopStyleProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-top-style</button></a></p>
+    <p><a href="../framesCSS/bordTopWidthProp.html"><button class="css-buttons-prop css-buttons-prop-sub">border-top-width</button></a></p>
+  </div>
+
+  <div id="showBox" class="show-and-hide just-cont-flex-center" style="display: none;">
+    <p><a href="../framesCSS/bordBoxProp.html"><button class="css-buttons-prop css-buttons-prop-sub">box-decoration-break</button></a></p>
+    <p><a href="../framesCSS/bordBoxProp.html"><button class="css-buttons-prop css-buttons-prop-sub">box-shadow</button></a></p>
+    <p><a href="../framesCSS/bordBoxProp.html"><button class="css-buttons-prop css-buttons-prop-sub">box-sizing</button></a></p>
+  </div>
+
+</body>
+</html>
