@@ -19,7 +19,7 @@
 
   <div class="frameWindow">
   <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
-  <div class="note descriptionCSS  noteCSS note-round-bord">
+  <div class="note noteCSS descriptionCSS note-round-bord">
     Description:<br />
     <div class="note-value">
       The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.
@@ -77,42 +77,62 @@
     <div><h2 class="tag">Examples</h2></div>
     <div id="bacgrAttachExamplesBar" class="left-padding">
       <a href="#bacgrAttachExamplesBar">
-        <button onclick="bacgrAttach('bacgrAttachDiv', 'visible', 'visible;')" class="example-button example-rounded-buttons">scroll</button>
+        <button onclick="backgrAttach('backgrAttachDiv', 'scroll', '', '', 'red', 'url(\'../images/vasserman_thinking.gif\')', '', 'right top', 'no-repeat', '')" class="example-button example-rounded-buttons">global scroll</button>
       </a>
-      <a href="#bacgrAttachExamplesBar">
-        <button onclick="bacgrAttach('bacgrAttachDiv', 'visible', 'visible;')" class="example-button example-rounded-buttons">fixed</button>
+      <a href="#backgrAttachExamplesBar">
+        <button onclick="backgrAttach('backgrAttachDiv', 'visible', 'visible;')" class="example-button example-rounded-buttons">global fixed</button>
       </a>
-      <a href="#bacgrAttachExamplesBar">
-        <button onclick="backgrAttach('bacgrAttachDiv', 'hidden', 'hidden;')" class="example-button example-rounded-buttons">local</button>
+      <a href="#backgrAttachExamplesBar">
+        <button onclick="backgrAttach('backgrAttachDiv', 'hidden', 'hidden;')" class="example-button example-rounded-buttons">global local</button>
       </a>
-      <a href="#bacgrAttachExamplesBar">
-        <button onclick="bacgrAttach('bacgrAttachDiv', 'initial', 'initial;')" class="example-button example-rounded-buttons">initial</button>
+      <a href="#backgrAttachExamplesBar">
+        <button onclick="backgrAttach('backgrAttachDiv', 'visible', 'visible;')" class="example-button example-rounded-buttons">div scroll</button>
       </a>
-      <a href="#bacgrAttachExamplesBar">
-        <button onclick="bacgrAttach('bacgrAttachDiv', 'inherit', 'inherit;')" class="example-button example-rounded-buttons">inherit</button>
+      <a href="#backgrAttachExamplesBar">
+        <button onclick="backgrAttach('backgrAttachDiv', 'visible', 'visible;')" class="example-button example-rounded-buttons">div fixed</button>
+      </a>
+      <a href="#backgrAttachExamplesBar">
+        <button onclick="backgrAttach('backgrAttachDiv', 'hidden', 'hidden;')" class="example-button example-rounded-buttons">div local</button>
+      </a>
+      <a href="#backgrAttachExamplesBar">
+        <button onclick="backgrAttach('backgrAttachDiv', 'initial', 'initial;')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#backgrAttachExamplesBar">
+        <button onclick="backgrAttach('backgrAttachDiv', 'inherit', 'inherit;')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+      <a href="#backgrAttachExamplesBar">
+        <button onclick="backgrAttach('backgrAttachDiv', 'inherit', 'inherit;')" class="example-button example-rounded-buttons">rabbit</button>
       </a>
     </div>
   </div>
 
-  <div id="backgrAttachD" class="exampleDiv" style="font-size: 30px; overflow: auto; height: 150px;"></div>
+  <div id="backgrAttachDiv" class="exampleDiv" style="font-size: 30px; overflow: auto; height: 150px;">
+    Example text. Example text. Example text. Example text. Example text. Example text. Example text.
+    Example text. Example text. Example text. Example text. Example text. Example text. Example text.
+    Example text. Example text. Example text. Example text. Example text. Example text. Example text.
+    Example text. Example text. Example text. Example text. Example text. Example text. Example text.
+    Example text. Example text. Example text. Example text. Example text. Example text. Example text.
+    Example text. Example text. Example text. Example text. Example text. Example text. Example text.
+    Example text. Example text.
+  </div>
 
   <div>
 
     <div class="blue float-borders-none">
       &lt;<span class="brown">div</span>&gt;
-      <span class="black">Backface text</span>
+      <span class="black">Example text. Example text. Exam...</span>
       <span>&lt;<span class="brown">/div</span>&gt;</span>
     </div>
 
     <div class="float-borders-none">
       <p class="blue left-padding" style="margin: 0">
-        <span class="brown">div </span><span class="black">{</span><br />
+        <span class="brown text">? </span><span class="black">{</span><br />
           <p class="blue more-padding" style="margin: 0;">
-            <span class="crimson">background-color: </span>rgb(36, 90, 162);<br />
-            <span class="crimson">font-size: </span>30px;<br />
-            <span class="crimson">text-align: </span>center;<br />
-            <span class="crimson">transform: </span><span class="text">rotateY(0deg);</span><br />
-            <span class="crimson">backface-visibility: </span><span class="text">visible;</span><br />
+            <span class="crimson">overflow: </span><span class="text">auto;</span><br />
+            <span class="crimson">background-image: </span><span class="text">?;</span><br />
+            <span class="crimson">background-position: </span>right top;<br />
+            <span class="crimson">background-repeat: </span>no-repeat;<br />
+            <span class="crimson">background-attachment: </span><span class="text">?;</span><br />
           </p>
         <span class="black left-padding">}</span>
       </p>

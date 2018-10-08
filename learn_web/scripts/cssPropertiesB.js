@@ -36,11 +36,15 @@ function frontSide() {
   document.getElementsByClassName('text')[0].innerHTML = 'rotateY(0deg);';
 }
 
-function backgrAttach(id) {
-  let html = document.getElementById(id).innerHTML;
-  let text = 'Example text. ';
-  for (let j=0; j<=43; j++) {
-    html += text;
-  }
+function backgrAttach(id, attach, blend, clip, color, image, origin, position, repeat, size) {
+  let doc = document.getElementById(id).style;
+  doc.backgroundAttachment = attach;
+  doc.backgroundBlendMode = blend;
+  doc.backgroundClip = clip;
+  doc.backgroundColor = color;
+  doc.backgroundImage = image;
+  doc.backgroundOrigin = origin;
+  doc.backgroundPosition = position;
+  doc.backgroundRepeat = repeat;
+  doc.backgroundSize = size;
 }
-backgrAttach('backgrAttachD');
