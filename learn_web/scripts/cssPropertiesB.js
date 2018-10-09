@@ -36,15 +36,37 @@ function frontSide() {
   document.getElementsByClassName('text')[0].innerHTML = 'rotateY(0deg);';
 }
 
-function backgrAttach(id, attach, blend, clip, color, image, origin, position, repeat, size) {
+function backgrAttach(id, attach, blend, clip, color, image, origin, position, repeat, size, backgrImage) {
+  let bodyImgState = document.body.style;
   let doc = document.getElementById(id).style;
-  doc.backgroundAttachment = attach;
-  doc.backgroundBlendMode = blend;
-  doc.backgroundClip = clip;
-  doc.backgroundColor = color;
-  doc.backgroundImage = image;
-  doc.backgroundOrigin = origin;
-  doc.backgroundPosition = position;
-  doc.backgroundRepeat = repeat;
-  doc.backgroundSize = size;
+  let changeText = document.getElementsByClassName('text');
+  changeText[2].innerHTML = attach;
+  if (backgrImage) {
+    bodyImgState.backgroundImage = backgrImage;
+    bodyImgState.backgroundAttachment = attach;
+    changeText[0].innerHTML = 'body ';
+    changeText[1].innerHTML = backgrImage;
+  }
+  else {
+    doc.backgroundAttachment = attach;
+    doc.backgroundBlendMode = blend;
+    doc.backgroundClip = clip;
+    doc.backgroundColor = color;
+    doc.backgroundImage = image;
+    doc.backgroundOrigin = origin;
+    doc.backgroundPosition = position;
+    doc.backgroundRepeat = repeat;
+    doc.backgroundSize = size;
+    changeText[1].innerHTML = image;
+    changeText[0].innerHTML = 'div ';
+  }
+}
+
+function rabbit() {
+  let changeText = document.getElementsByClassName('text');
+  document.body.style.backgroundImage = 'url("../images/rabbit_on_the_grass.jpeg")';
+  document.body.style.backgroundAttachment = 'fixed';
+  changeText[0].innerHTML = 'body ';
+  changeText[1].innerHTML = "url('../images/rabbit_on_the_grass.jpeg')";
+  changeText[2].innerHTML = 'fixed';
 }

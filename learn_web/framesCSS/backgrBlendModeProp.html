@@ -14,15 +14,13 @@
 <script src="../scripts/cssPropertiesB.js"></script>
 
 <body>
-  <script></script>
-
 
   <div class="frameWindow">
   <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
   <div class="note noteCSS descriptionCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.
+      The background-blend-mode property defines the blending mode of each background layer (color and/or image).
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -30,7 +28,7 @@
   <div class="note noteCSS note-round-bord">
     Notes:<br />
     <div class="note-value">
-      Internet Explorer 8 and earlier versions do not support multiple background images on one element.
+      Edge/Internet Explorer do not support the background-blend-mode property.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -49,26 +47,48 @@
       </thead>
       <tbody>
         <tr>
-          <td>scroll</td>
-          <td>The background image will scroll with the page. This is default.
+          <td>normal</td>
+          <td>This is default. Sets the blending mode to normal.
           </td>
         </tr>
         <tr>
-          <td>fixed</td>
-          <td>The background image will not scroll with the page.</td>
+          <td>multiply</td>
+          <td>Sets the blending mode to multiply.</td>
         </tr>
         <tr>
-          <td>local</td>
-          <td>The background image will scroll with the element's contents.</td>
+          <td>screen</td>
+          <td>Sets the blending mode to screen.</td>
         </tr>
         <tr>
-          <td>initial</td>
-          <td>Sets this property to its default value.
+          <td>overlay</td>
+          <td>Sets the blending mode to overlay.
           </td>
         </tr>
         <tr>
-          <td>inherit</td>
-          <td>Inherits this property from its parent element.</td>
+          <td>darken</td>
+          <td>Sets the blending mode to darken.</td>
+        </tr>
+        <tr>
+          <td>lighten</td>
+          <td>Sets the blending mode to lighten.
+          </td>
+        </tr>
+        <tr>
+          <td>color-dodge</td>
+          <td>Sets the blending mode to color-dodge.</td>
+        </tr>
+        <tr>
+          <td>saturation</td>
+          <td>Sets the blending mode to saturation.</td>
+        </tr>
+        <tr>
+          <td>color</td>
+          <td>Sets the blending mode to color.
+          </td>
+        </tr>
+        <tr>
+          <td>luminosity</td>
+          <td>Sets the blending mode to luminosity.</td>
         </tr>
       </tbody>
     </table>

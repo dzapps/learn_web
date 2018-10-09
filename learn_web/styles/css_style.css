@@ -199,13 +199,6 @@ body {
   width: 100%;
 }
 
-#backgrAttachDiv {
-  background-image: url('../images/vasserman_thinking.gif');
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 h2 {
   color: rgb(8, 27, 191);
 }
