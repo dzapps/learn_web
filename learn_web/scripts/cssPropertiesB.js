@@ -70,3 +70,12 @@ function rabbit() {
   changeText[1].innerHTML = "url('../images/rabbit_on_the_grass.jpeg')";
   changeText[2].innerHTML = 'fixed';
 }
+
+function blend(id, blend, img, secImg) {
+  let doc = document.getElementById(id).style;
+  let changeText = document.getElementsByClassName('text');
+
+  doc.backgroundBlendMode = blend;
+  doc.backgroundImage = img + ', ' + secImg;
+  doc.backgroundRepeat = 'no-repeat, repeat';
+}

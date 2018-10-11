@@ -148,6 +148,11 @@ body {
    font-size: 85%;
 }
 
+#blendDiv {
+  background-image: url('../images/background_img.jpeg');
+  /* background-repeat: no-repeat; */
+}
+
 .animation-class {
   animation: movie 5s infinite 3s;
 }
@@ -190,7 +195,7 @@ body {
 
 .exampleDiv {
   width: 90%;
-  height: 100px;
+  height: 150px;
   margin-left: 2em;
   border: 1px solid white;
 }

@@ -95,52 +95,49 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="bacgrAttachExamplesBar" class="left-padding">
-      <a href="#bacgrAttachExamplesBar">
-        <button onclick="backgrAttach('backgrAttachDiv', 'scroll', '', '', '', '', '', 'right top', 'no-repeat', '', 'url(\'../images/vasserman_thinking.gif\')')" class="example-button example-rounded-buttons">global scroll</button>
+    <div id="blendExamplesBar" class="left-padding">
+      <a href="#blendExamplesBar">
+        <button onclick="blend('blendDiv', 'normal', 'url(\'../images/vasserman_big.jpg\')', 'url(\'../images/background_img.jpeg\')')" class="example-button example-rounded-buttons">normal</button>
       </a>
-      <a href="#backgrAttachExamplesBar">
-        <button onclick="backgrAttach('backgrAttachDiv', 'fixed', '', '', '', '', '', 'right top', 'no-repeat', '', 'url(\'../images/vasserman_thinking.gif\')')" class="example-button example-rounded-buttons">global fixed</button>
+      <a href="#blendExamplesBar">
+        <button onclick="blend('blendDiv', 'multiply', 'url(\'../images/vasserman_big.jpg\')', 'url(\'../images/background_img.jpeg\')')" class="example-button example-rounded-buttons">multiplay</button>
       </a>
-      <a href="#backgrAttachExamplesBar">
-        <button onclick="backgrAttach('backgrAttachDiv', 'local', '', '', '', '', '', 'right top', 'no-repeat', '', 'url(\'../images/vasserman_thinking.gif\')')" class="example-button example-rounded-buttons">global local</button>
+      <a href="#blendExamplesBar">
+        <button onclick="blend('blendDiv', 'screen', 'url(\'../images/vasserman_big.jpg\')', 'url(\'../images/background_img.jpeg\')')" class="example-button example-rounded-buttons">screen</button>
       </a>
-      <a href="#backgrAttachExamplesBar">
-        <button onclick="backgrAttach('backgrAttachDiv', 'scroll', '', '', '', 'url(\'../images/vasserman_thinking.gif\')', '', 'right top', 'no-repeat', '', '')" class="example-button example-rounded-buttons">div scroll</button>
+      <a href="#blendExamplesBar">
+        <button onclick="blend('blendDiv', 'overlay', 'url(\'../images/vasserman_big.jpg\')', 'url(\'../images/background_img.jpeg\')')" class="example-button example-rounded-buttons">overlay</button>
       </a>
-      <a href="#backgrAttachExamplesBar">
-        <button onclick="backgrAttach('backgrAttachDiv', 'fixed', '', '', '', 'url(\'../images/vasserman_thinking.gif\')', '', 'right top', 'no-repeat', '', '')" class="example-button example-rounded-buttons">div fixed</button>
+      <a href="#blendExamplesBar">
+        <button onclick="blend('blendDiv', 'darken', 'url(\'../images/vasserman_big.jpg\')', 'url(\'../images/background_img.jpeg\')')" class="example-button example-rounded-buttons">darken</button>
       </a>
-      <a href="#backgrAttachExamplesBar">
-        <button onclick="backgrAttach('backgrAttachDiv', 'local', '', '', '', 'url(\'../images/vasserman_thinking.gif\')', '', 'right top', 'no-repeat', '', '')" class="example-button example-rounded-buttons">div local</button>
+      <a href="#blendExamplesBar">
+        <button onclick="blend('blendDiv', 'lighten', 'url(\'../images/vasserman_big.jpg\')', 'url(\'../images/background_img.jpeg\')')" class="example-button example-rounded-buttons">saturation</button>
       </a>
-      <a href="#backgrAttachExamplesBar">
-        <button onclick="backgrAttach('backgrAttachDiv', 'initial', '', '', '', 'url(\'../images/vasserman_thinking.gif\')', '', 'right top', 'no-repeat', '', '')" class="example-button example-rounded-buttons">initial</button>
+      <a href="#blendExamplesBar">
+        <button onclick="blend('blendDiv', 'color-dodge', 'url(\'../images/vasserman_big.jpg\')', 'url(\'../images/background_img.jpeg\')')" class="example-button example-rounded-buttons">lighten</button>
       </a>
-      <a href="#backgrAttachExamplesBar">
-        <button onclick="backgrAttach('backgrAttachDiv', 'inherit', '', '', '', 'url(\'../images/vasserman_thinking.gif\')', '', 'right top', 'no-repeat', '', '')" class="example-button example-rounded-buttons">inherit</button>
+      <a href="#blendExamplesBar">
+        <button onclick="blend('blendDiv', 'saturation', 'url(\'../images/vasserman_big.jpg\')', 'url(\'../images/background_img.jpeg\')')" class="example-button example-rounded-buttons">color-dodge</button>
       </a>
-      <a href="#backgrAttachExamplesBar">
-        <button onclick="rabbit()" class="example-button example-rounded-buttons">rabbit</button>
+      <a href="#blendExamplesBar">
+        <button onclick="blend('blendDiv', 'color', 'url(\'../images/vasserman_big.jpg\')', 'url(\'../images/background_img.jpeg\')')" class="example-button example-rounded-buttons">color</button>
+      </a>
+      <a href="#blendExamplesBar">
+        <button onclick="blend('blendDiv', 'luminosity', 'url(\'../images/vasserman_big.jpg\')', 'url(\'../images/background_img.jpeg\')')" class="example-button example-rounded-buttons">luminosity</button>
       </a>
     </div>
   </div>
 
-  <div id="backgrAttachDiv" class="exampleDiv" style="font-size: 30px; overflow: auto; height: 150px;">
-    Example text. Example text. Example text. Example text. Example text. Example text. Example text.
-    Example text. Example text. Example text. Example text. Example text. Example text. Example text.
-    Example text. Example text. Example text. Example text. Example text. Example text. Example text.
-    Example text. Example text. Example text. Example text. Example text. Example text. Example text.
-    Example text. Example text. Example text. Example text. Example text. Example text. Example text.
-    Example text. Example text. Example text. Example text. Example text. Example text. Example text.
-    Example text. Example text.
+  <div id="blendDiv" class="exampleDiv" style="font-size: 30px;">
   </div>
 
-  <div>
+  <div id='animationDivCode'>
 
-    <div class="blue float-borders-none">
+    <div class="code blue float-borders-none">
       &lt;<span class="brown">div</span>&gt;
-      <span class="black">Example text. Example text. Exam...</span>
+      <span class="crimson">background-image:</span>
+      <span>url('../images/vasserman_big.jpg;');</span>
       <span>&lt;<span class="brown">/div</span>&gt;</span>
     </div>
 
