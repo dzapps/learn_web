@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Backface visibility</title>
+<title>Background blend mode</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -124,7 +124,7 @@
         <button onclick="blend('blendDiv', 'color', 'url(\'../images/vasserman_big.jpg\')', 'url(\'../images/background_img.jpeg\')')" class="example-button example-rounded-buttons">color</button>
       </a>
       <a href="#blendExamplesBar">
-        <button onclick="blend('blendDiv', 'luminosity', 'url(\'../images/vasserman_big.jpg\')', 'url(\'../images/background_img.jpeg\')')" class="example-button example-rounded-buttons">luminosity</button>
+        <button onclick="blend('blendDiv', 'luminosity', 'url(\'../images/vasserman_big.jpg\')', 'url(\'../images/background_img.jpeg\')')" class="example-button example-rounded-buttons" style="margin-bottom: -1px; margin-top: 3px;">luminosity</button>
       </a>
     </div>
   </div>
@@ -136,19 +136,16 @@
 
     <div class="code blue float-borders-none">
       &lt;<span class="brown">div</span>&gt;
-      <span class="crimson">background-image:</span>
-      <span>url('../images/vasserman_big.jpg;');</span>
       <span>&lt;<span class="brown">/div</span>&gt;</span>
     </div>
 
     <div class="float-borders-none">
       <p class="blue left-padding" style="margin: 0">
-        <span class="brown text">? </span><span class="black">{</span><br />
+        <span class="brown">div </span><span class="black">{</span><br />
           <p class="blue more-padding" style="margin: 0;">
-            <span class="crimson">background-image: </span><span class="text">?;</span><br />
-            <span class="crimson">background-position: </span>right top;<br />
-            <span class="crimson">background-repeat: </span>no-repeat;<br />
-            <span class="crimson">background-attachment: </span><span class="text">?;</span><br />
+            <span class="crimson">background-image: </span><span class="text">url('../images/background_img.jpg;');</span><br />
+            <span class="crimson">background-repeat: </span><span class="text">no-repeat;</span><br />
+            <span class="crimson">background-blend-mode: </span><span class="text">?;</span><br />
           </p>
         <span class="black left-padding">}</span>
       </p>

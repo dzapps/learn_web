@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<title>Background clip</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The background-clip property defines how far the background (color or image) should extend within an element.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Notes:<br />
+    <div class="note-value">
+      The background-clip property is not supported in Internet Explorer 8 and earlier versions.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>border-box</td>
+          <td>Default value. The background extends behind the border.
+          </td>
+        </tr>
+        <tr>
+          <td>padding-box</td>
+          <td>The background extends to the inside edge of the border.</td>
+        </tr>
+        <tr>
+          <td>content-box</td>
+          <td>The background extends to the edge of the content box.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="clipExamplesBar" class="left-padding">
+      <a href="#clipExamplesBar">
+        <button onclick="clip('clipDiv', 'border-box')" class="example-button example-rounded-buttons">border-box</button>
+      </a>
+      <a href="#clipExamplesBar">
+        <button onclick="clip('clipDiv', 'padding-box')" class="example-button example-rounded-buttons">padding-box</button>
+      </a>
+      <a href="#clipExamplesBar">
+        <button onclick="clip('clipDiv', 'content-box')" class="example-button example-rounded-buttons">content-box</button>
+      </a>
+      <a href="#clipExamplesBar">
+        <button onclick="clip('clipDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#clipExamplesBar">
+        <button onclick="clip('clipDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="clipDiv" class="exampleDiv"><p>Example text</p></div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <span class=" left-padding">&lt;<span class="brown">p</span>&gt;
+        <span class="black">Example text</span>
+        <span>&lt;<span class="brown">/p</span>&gt;</span><br />
+      </span>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border: </span>5px dotted white;<br />
+            <span class="crimson">text-align: </span>center;<br />
+            <span class="crimson">padding: </span>10px;<br />
+            <span class="crimson">background-color: </span><span class="text">?;</span><br />
+            <span class="crimson">background-clip: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
