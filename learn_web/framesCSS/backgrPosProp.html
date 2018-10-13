@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<title>Background position</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The background-position property sets the starting position of a background image.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    <div class="note-value">
+      By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.
+    </div>
+    <div class="note-value">
+      IE8 and earlier do not support multiple background images on one element.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>left top</br />left center</br />left bottom</br />right top</br />
+              right center</br />right bottom</br />center top</br />center center</br />center bottom
+          </td>
+          <td>If you only specify one keyword, the other value will be "center".</td>
+        </tr>
+        <tr>
+          <td>x% y%</td>
+          <td>The first value is the horizontal position and the second value is the vertical.
+              The top left corner is 0% 0%. The right bottom corner is 100% 100%.
+              If you only specify one value, the other value will be 50%.
+              Default value is: 0% 0%.
+          </td>
+        </tr>
+        <tr>
+          <td>xpos ypos</td>
+          <td>The first value is the horizontal position and the second value is the vertical.
+              The top left corner is 0 0. Units can be pixels (0px 0px) or any other CSS units.
+              If you only specify one value, the other value will be 50%. You can mix % and positions.
+          </td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="positionExamplesBar" class="left-padding;">
+      <a href="#positionExamplesBar">
+        <button onclick="showPosition()" class="example-button example-rounded-buttons">border-box</button>
+      </a>
+      <a href="#positionExamplesBar">
+        <button onclick="position('positionDiv', '', '', '70%', '30%', '')" class="example-button example-rounded-buttons">x% y%</button>
+      </a>
+      <a href="#positionExamplesBar">
+        <button onclick="position('positionDiv', '200px', '80px', '', '', '')" class="example-button example-rounded-buttons">xpos ypos</button>
+      </a>
+      <a href="#positionExamplesBar">
+        <button onclick="position('positionDiv', '200px', '80px', '', '', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#positionExamplesBar">
+        <button onclick="position('positionDiv', '200px', '80px', '', '', 'initial')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+
+    <div id="posExampleBarDoubleLevel" class="more-padding" style="display: none;">
+      <a href="#positionExamplesBar">
+        <button onclick="position('positionDiv', '', '', '', '', 'left top')" class="example-button, example-double-level-rounded-buttons">left top</button>
+      </a>
+      <a href="#positionExamplesBar">
+        <button onclick="position('positionDiv', '', '', '', '', 'left center')" class="example-button, example-double-level-rounded-buttons">left center</button>
+      </a>
+      <a href="#positionExamplesBar">
+        <button onclick="position('positionDiv', '', '', '', '', 'left bottom')" class="example-button, example-double-level-rounded-buttons">left bottom</button>
+      </a>
+      <a href="#positionExamplesBar">
+        <button onclick="position('positionDiv', '', '', '', '', 'right top')" class="example-button, example-double-level-rounded-buttons">right top</button>
+      </a>
+      <a href="#positionExamplesBar">
+        <button onclick="position('positionDiv', '', '', '', '', 'right center')" class="example-button, example-double-level-rounded-buttons">right center</button>
+      </a>
+      <a href="#positionExamplesBar">
+        <button onclick="position('positionDiv', '', '', '', '', 'right bottom')" class="example-button, example-double-level-rounded-buttons">right bottom</button>
+      </a>
+      <a href="#positionExamplesBar">
+        <button onclick="position('positionDiv', '', '', '', '', 'center top')" class="example-button, example-double-level-rounded-buttons">center top</button>
+      </a>
+      <a href="#positionExamplesBar">
+        <button onclick="position('positionDiv', '', '', '', '', 'center center')" class="example-button, example-double-level-rounded-buttons" style="margin-top: 5px;">center center</button>
+      </a>
+      <a href="#positionExamplesBar">
+        <button onclick="position('positionDiv', '', '', '', '', 'center bottom')" class="example-button, example-double-level-rounded-buttons">center bottom</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="positionDiv" class="exampleDiv"></div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border: </span>5px dotted white;<br />
+            <span class="crimson">text-align: </span>center;<br />
+            <span class="crimson">background-color: </span>blue;<br />
+            <span class="crimson">background-image: </span>url('../images/html_digit.jpg');<br />
+            <span class="crimson">background-repeat: </span>no-repeat;<br />
+            <span class="crimson">background-position: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

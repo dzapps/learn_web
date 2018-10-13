@@ -88,8 +88,8 @@ function clip(id, clip) {
   let doc = document.getElementById(id).style;
   let changeText = document.getElementsByClassName('text');
 
-  doc.backgroundClip = clip;
   doc.backgroundColor = 'blue';
+  doc.backgroundClip = clip;
 
   changeText[0].innerHTML = 'blue;';
   changeText[1].innerHTML = clip + ';';
@@ -99,4 +99,70 @@ function color(id, color) {
   document.getElementById(id).style.backgroundColor = color;
 
   document.getElementsByClassName('text')[0].innerHTML = color + ';';
+}
+
+function img(id, img, secImg) {
+  let changeText = document.getElementsByClassName('text');
+
+  if (secImg) {
+    let doc = document.getElementById(id).style;
+    doc.backgroundImage = img + ', ' + secImg;
+    doc.backgroundRepeat = 'no-repeat, repeat';
+    changeText[1].style.display = 'block';
+    changeText[0].innerHTML = img + ', ' + secImg + ';';
+
+  } else {
+    document.getElementById(id).style.backgroundImage = img;
+    changeText[1].style.display = 'none';
+    changeText[0].innerHTML = img + ';';
+  }
+}
+
+function origin(id, origin) {
+  let doc = document.getElementById(id).style;
+  let changeText = document.getElementsByClassName('text');
+
+  doc.backgroundImage = 'url("../images/html_digit.jpg")';
+  doc.backgroundColor = 'blue';
+  doc.backgroundRepeat = 'no-repeat';
+  doc.backgroundOrigin = origin;
+  doc.backgroundSize = '80px 80px';
+
+  changeText[0].innerHTML = origin + ';';
+}
+
+function position(id, x, y, Xperc, Yperc, pos) {
+  let doc = document.getElementById(id).style;
+  let changeText = document.getElementsByClassName('text');
+
+  doc.backgroundImage = 'url("../images/html_digit.jpg")';
+  doc.backgroundColor = 'blue';
+  doc.backgroundRepeat = 'no-repeat';
+  doc.backgroundSize = '60px 60px';
+
+  if(Xperc) {
+    doc.backgroundPosition = Xperc + ' ' + Yperc;
+    changeText[0].innerHTML = Xperc + ' ' + Yperc + ';';
+  } else if (x) {
+    doc.backgroundPosition = x + ' ' + y;
+    changeText[0].innerHTML = x + ' ' +  y + ';';
+  } else {
+    doc.backgroundPosition = pos;
+    changeText[0].innerHTML = pos + ';';
+  }
+}
+
+function showPosition() {
+  document.getElementById('posExampleBarDoubleLevel').style.display = 'block';
+  document.getElementsByClassName('text')[0].innerHTML = '?;'
+}
+
+function repeat(id, repeat) {
+  let doc = document.getElementById(id).style;
+
+  doc.backgroundImage = 'url("../images/html_digit.jpg")';
+  doc.backgroundRepeat = repeat;
+  doc.backgroundSize = '60px 60px';
+
+  document.getElementsByClassName('text')[0].innerHTML = repeat + ';';
 }

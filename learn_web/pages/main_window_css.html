@@ -7,6 +7,7 @@
   <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
   <link rel="stylesheet" href="../styles/initial_page_style.css" />
   <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" href="../styles/common.css" />
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
 </head>
@@ -19,18 +20,20 @@
 
 <body>
   <script src="../scripts/main_window.js"></script>
-  <div style="width: 530px; height: 230px; margin: 6em auto 3em; overflow: none;">
+  <div id="logos">
     <a href="../pages/main_window_html.html">
-      <img style="padding-top: 3em;" onclick="shooseHTML()" src="../images/html5_logo.png" alt="html5_logo" />
+      <img onclick="shooseHTML()" src="../images/html5_logo.png" alt="html5_logo" />
     </a>
-    <img style="padding-left: 5em; padding-top: -4em;" src="../images/css3_logo.png" alt="css3_logo"/>
+    <a href="../pages/main_window_css.html">
+      <img style="margin: -30px 0 0 24px;" src="../images/css3_logo.png" alt="css3_logo"/>
+    </a>
     <a href="../pages/main_window_js.html">
-      <img style="position: absolute; width: 8em; height: 8.1em; padding-left: 3.4em; padding-top: 3em;" onclick="chooseJS()" src="../images/js_logo.png" alt="css3_logo"/>
+      <img style=" width: 8em; height: 8.1em;" onclick="chooseJS()" src="../images/js_logo.png" alt="css3_logo"/>
     </a>
   </div>
   <p style="clear: left;"></p>
 
-  <nav id="cssButtons">
+  <nav id="cssButtons" class="just-cont-flex-space-around">
     <a href="../examples/character_entity_reference_chart.html"><button class="main-buttons auxiliary-button">Entities</button></a>
     <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><button class="main-buttons auxiliary-button">Media types</button></a>
     <p style="margin: 2em 0;"></p>
@@ -45,7 +48,6 @@
     <a href="../pages/cssPropertiesI.html"><button class="main-buttons css-buttons" type="button">I</button></a>
     <a href="../pages/cssPropertiesJ.html"><button class="main-buttons css-buttons" type="button">J</button></a>
     <a href="../pages/cssPropertiesK.html"><button class="main-buttons css-buttons" type="button">K</button></a>
-    <p style="margin: 2em 0;"></p>
     <a href="../pages/cssPropertiesL.html"><button class="main-buttons css-buttons" type="button">L</button></a>
     <a href="../pages/cssPropertiesM.html"><button class="main-buttons css-buttons" type="button">M</button></a>
     <a href="../pages/cssPropertiesO.html"><button class="main-buttons css-buttons" type="button">O</button></a>

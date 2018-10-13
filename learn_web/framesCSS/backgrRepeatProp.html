@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<title>Background repeat</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The background-repeat property sets if/how a background image will be repeated.
+    </div>
+    <div class="note-value">
+      By default, a background-image is repeated both vertically and horizontally.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    <div class="note-value">
+      The background image is placed according to the background-position property.
+      If no background-position is specified, the image is always placed at the element's top left corner.
+    </div>
+    <div class="note-value">
+      IE8 and earlier do not support multiple background images on one element.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>repeat</td>
+          <td>The background image is repeated both vertically and horizontally.
+              The last image will be clipped if it does not fit. This is default.</td>
+        </tr>
+        <tr>
+          <td>repeat-x</td>
+          <td>The background image is repeated only horizontally.</td>
+        </tr>
+        <tr>
+          <td>repeat-y</td>
+          <td>The background image is repeated only vertically.</td>
+        </tr>
+        <tr>
+          <td>no-repeat</td>
+          <td>The background-image is not repeated. The image will only be shown once.</td>
+        </tr>
+        <tr>
+          <td>space</td>
+          <td>The background-image is repeated as much as possible without clipping.
+              The first and last images are pinned to either side of the element,
+              and whitespace is distributed evenly between the images.
+          </td>
+        </tr>
+        <tr>
+          <td>round</td>
+          <td>The background-image is repeated and squished or stretched to fill the space (no gaps).</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="repeatExamplesBar" class="left-padding;">
+      <a href="#repeatExamplesBar">
+        <button onclick="repeat('repeatDiv', 'repeat')" class="example-button example-rounded-buttons">repeat</button>
+      </a>
+      <a href="#repeatExamplesBar">
+        <button onclick="repeat('repeatDiv', 'repeat-x')" class="example-button example-rounded-buttons">repeat-x</button>
+      </a>
+      <a href="#repeatExamplesBar">
+        <button onclick="repeat('repeatDiv', 'repeat-y')" class="example-button example-rounded-buttons">repeat-y</button>
+      </a>
+      <a href="#repeatExamplesBar">
+        <button onclick="repeat('repeatDiv', 'no-repeat')" class="example-button example-rounded-buttons">no-repeat</button>
+      </a>
+      <a href="#repeatExamplesBar">
+        <button onclick="repeat('repeatDiv', 'space')" class="example-button example-rounded-buttons">space</button>
+      </a>
+      <a href="#repeatExamplesBar">
+        <button onclick="repeat('repeatDiv', 'round')" class="example-button example-rounded-buttons">round</button>
+      </a>
+      <a href="#repeatExamplesBar">
+        <button onclick="repeat('repeatDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#repeatExamplesBar">
+        <button onclick="repeat('repeatDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="repeatDiv" class="exampleDiv"></div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">background-color: </span>blue;<br />
+            <span class="crimson">background-image: </span>url('../images/html_digit.jpg');<br />
+            <span class="crimson">background-repeat: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

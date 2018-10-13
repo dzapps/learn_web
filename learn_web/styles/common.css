@@ -11,6 +11,25 @@ div {
   margin: 1em;
 }
 
+#logos {
+  position: relative;
+  left: 8px;
+  width: 370px;
+  margin: 3em auto;
+}
+
+#cssButtons button {
+  margin: 5px;
+}
+
+ #jsButtons button {
+   margin: 5px;
+ }
+
+ #htmlButtons button {
+   margin: 5px;
+ }
+
 .mainBorder {
   border: 2px solid white;
   margin: 1em;

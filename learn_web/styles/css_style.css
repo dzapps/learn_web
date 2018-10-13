@@ -61,6 +61,10 @@ body {
   width: 95%;
 }
 
+.attr-list-css td:nth-child(1) {
+  width: 15%;
+}
+
 .attr-list-css tr:nth-child(even) {
   background-color: rgba(73, 170, 249, 0.44);
 }
