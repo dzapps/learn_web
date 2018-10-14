@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<title>Border</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The border property is a shorthand property for: border-width, border-style (required), border-color.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    <div class="note-value">
+      If border-color is omitted, the color applied will be the color of the text.
+    </div>
+    <div class="note-value">
+      The following browsers need a prefix: Safari 3.0, Chrome 1.0 (-webkit-), Opera 10.0 (-o-), Mozilla 3.6 (-moz-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>border-width</td>
+          <td>Specifies the width of the border. Default value is "medium".</td>
+        </tr>
+        <tr>
+          <td>border-style</td>
+          <td>Specifies the style of the border. Default value is "none".</td>
+        </tr>
+        <tr>
+          <td>border-color</td>
+          <td>Specifies the color of the border. Default value is the color of the text.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="borderExamplesBar" class="left-padding;">
+      <a href="#borderExamplesBar">
+        <button onclick="border('borderDiv', '1px solid red')" class="example-button example-rounded-buttons">example1</button>
+      </a>
+      <a href="#borderExamplesBar">
+        <button onclick="border('borderDiv', '5px solid yellow')" class="example-button example-rounded-buttons">example2</button>
+      </a>
+      <a href="#borderExamplesBar">
+        <button onclick="border('borderDiv', '10px solid magenta')" class="example-button example-rounded-buttons">example3</button>
+      </a>
+      <a href="#borderExamplesBar">
+        <button onclick="border('borderDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#borderExamplesBar">
+        <button onclick="border('borderDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="borderDiv" class="exampleDiv"></div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

@@ -75,6 +75,7 @@ button:hover {
 .html-buttons {
   background-color: white;
   color: rgb(233, 93, 24);
+  margin: 5px;
 }
 
 .html-buttons:hover {
@@ -86,6 +87,7 @@ button:hover {
 .css-buttons {
   background-color: white;
   color: blue;
+  margin: 5px;
 }
 
 .css-buttons:hover {
@@ -131,6 +133,7 @@ button:hover {
 .js-buttons {
   background-color: white;
   color: rgb(204, 163, 0);
+  margin: 5px;
 }
 
 .js-buttons:hover {

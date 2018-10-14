@@ -162,7 +162,33 @@ function repeat(id, repeat) {
 
   doc.backgroundImage = 'url("../images/html_digit.jpg")';
   doc.backgroundRepeat = repeat;
+  doc.backgroundColor = 'blue';
   doc.backgroundSize = '60px 60px';
 
   document.getElementsByClassName('text')[0].innerHTML = repeat + ';';
+}
+
+function size(id, size) {
+  let doc = document.getElementById(id).style;
+
+  doc.backgroundImage = 'url("../images/html_digit.jpg")';
+  doc.backgroundRepeat = 'no-repeat';
+  doc.backgroundColor = 'blue';
+  doc.backgroundSize = size;
+
+  document.getElementsByClassName('text')[0].innerHTML = size + ';';
+}
+
+function border(id, style) {
+  document.getElementById(id).style.border = style;
+
+  document.getElementsByClassName('text')[0].innerHTML = style + ';';
+}
+
+function borderCollapse(id, style) {
+  let doc = document.getElementById(id).style;
+  doc.borderCollapse = style;
+  doc.display = 'inline-block';
+
+  document.getElementsByClassName('text')[0].innerHTML = style + ';';
 }

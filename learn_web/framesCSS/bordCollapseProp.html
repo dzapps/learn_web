@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<title>Border collapse</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The border-collapse property sets whether table borders should collapse into a single border or be separated as in standard HTML.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>separate</td>
+          <td>Borders are separated; each cell will display its own borders. This is default.</td>
+        </tr>
+        <tr>
+          <td>collapse</td>
+          <td>Borders are collapsed into a single border when possible (border-spacing and empty-cells properties have no effect).</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="borderCollapseExamplesBar" class="left-padding;">
+      <a href="#borderCollapseExamplesBar">
+        <button onclick="borderCollapse('tableBordColl', 'separate')" class="example-button example-rounded-buttons">separate</button>
+      </a>
+      <a href="#borderCollapseExamplesBar">
+        <button onclick="borderCollapse('tableBordColl', 'collapse')" class="example-button example-rounded-buttons">collapse</button>
+      </a>
+      <a href="#borderCollapseExamplesBar">
+        <button onclick="borderCollapse('tableBordColl', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#borderCollapseExamplesBar">
+        <button onclick="borderCollapse('tableBordColl', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="borderCollapseDiv" class="exampleDiv">
+    <table id="tableBordColl" style="display: none;">
+      <tr>
+        <th>First column</th>
+        <th>Second column</th>
+        <th>Third column</th>
+      </tr>
+      <tr>
+        <td>First data</td>
+        <td>Second data</td>
+        <td>Third data</td>
+      </tr>
+      <tr>
+        <td>Fourth data</td>
+        <td>Fifth data</td>
+        <td>Sixth data</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id='animationDivCode'>
+
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          &lt;<span class="brown">table</span>&gt;<br />
+        </p>
+        <p class="blue more-padding" style="margin: 0;">
+          &lt;<span class="brown">tr</span>&gt;<br />
+        </p>
+        <p class="blue max-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>&gt;First column&lt;<span class="brown">/th</span>&gt;<br />
+          &lt;<span class="brown">th</span>&gt;Second column&lt;<span class="brown">/th</span>&gt;<br />
+          &lt;<span class="brown">th</span>&gt;Third column&lt;<span class="brown">/th</span>&gt;<br />
+        </p>
+        <p class="blue more-padding" style="margin: 0;">
+          &lt;<span class="brown">/tr</span>&gt;<br />
+        </p>
+        <p class="blue more-padding" style="margin: 0;">
+          &lt;<span class="brown">tr</span>&gt;<br />
+        </p>
+        <p class="blue max-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;First data&lt;<span class="brown">/td</span>&gt;<br />
+          &lt;<span class="brown">td</span>&gt;Second data&lt;<span class="brown">/td</span>&gt;<br />
+          &lt;<span class="brown">td</span>&gt;Third data&lt;<span class="brown">/td</span>&gt;<br />
+        </p>
+        <p class="blue more-padding" style="margin: 0;">
+          &lt;<span class="brown">/tr</span>&gt;<br />
+        </p>
+        <p class="blue more-padding" style="margin: 0;">
+          &lt;<span class="brown">tr</span>&gt;<br />
+        </p>
+        <p class="blue max-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;Fourth data&lt;<span class="brown">/td</span>&gt;<br />
+          &lt;<span class="brown">td</span>&gt;Fifth data&lt;<span class="brown">/td</span>&gt;<br />
+          &lt;<span class="brown">td</span>&gt;Sixth data&lt;<span class="brown">/td</span>&gt;<br />
+        </p>
+        <p class="blue more-padding" style="margin: 0;">
+          &lt;<span class="brown">/tr</span>&gt;<br />
+        </p>
+        <p class="blue left-padding" style="margin: 0;">
+          &lt;<span class="brown">/table</span>&gt;<br />
+        </p>
+
+
+
+
+
+      &lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">table, th, td </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border: </span>2px solid white;<br />
+            <span class="crimson">border-collapse: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

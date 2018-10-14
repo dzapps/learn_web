@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<title>Background size</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The background-size property specifies the size of the background images.
+    </div>
+    <div class="note-value">
+       There are four different syntaxes you can use with this property: the keyword syntax ("auto", "cover" and "contain"),
+       the one-value syntax (sets the width of the image (height becomes "auto"),
+       the two-value syntax (first value: width of the image, second value: height),
+       and the multiple background syntax (separated with comma).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    <div class="note-value">
+      The background image is placed according to the background-position property.
+      If no background-position is specified, the image is always placed at the element's top left corner.
+    </div>
+    <div class="note-value">
+      The following browsers need a prefix: Safari 3.0, Chrome 1.0 (-webkit-), Opera 10.0 (-o-), Mozilla 3.6 (-moz-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>auto</td>
+          <td>Default value. The background image is displayed in its original size.</td>
+        </tr>
+        <tr>
+          <td>length</td>
+          <td>Sets the width and height of the background image.
+              The first value sets the width, the second value sets the height.
+              If only one value is given, the second is set to "auto".
+          </td>
+        </tr>
+        <tr>
+          <td>percentage</td>
+          <td>Sets the width and height of the background image in percent of the parent element.
+              The first value sets the width, the second value sets the height.
+              If only one value is given, the second is set to "auto".
+          </td>
+        </tr>
+        <tr>
+          <td>cover</td>
+          <td>Resize the background image to cover the entire container,
+              even if it has to stretch the image or cut a little bit off one of the edges.
+          </td>
+        </tr>
+        <tr>
+          <td>contain</td>
+          <td>Resize the background image to make sure the image is fully visible.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="sizeExamplesBar" class="left-padding;">
+      <a href="#sizeExamplesBar">
+        <button onclick="size('sizeDiv', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#sizeExamplesBar">
+        <button onclick="size('sizeDiv', '3em 90px')" class="example-button example-rounded-buttons">length</button>
+      </a>
+      <a href="#sizeExamplesBar">
+        <button onclick="size('sizeDiv', '100% 50%')" class="example-button example-rounded-buttons">percentage</button>
+      </a>
+      <a href="#sizeExamplesBar">
+        <button onclick="size('sizeDiv', 'cover')" class="example-button example-rounded-buttons">cover</button>
+      </a>
+      <a href="#sizeExamplesBar">
+        <button onclick="size('sizeDiv', 'contain')" class="example-button example-rounded-buttons">contain</button>
+      </a>
+      <a href="#sizeExamplesBar">
+        <button onclick="size('sizeDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#sizeExamplesBar">
+        <button onclick="size('sizeDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="sizeDiv" class="exampleDiv"></div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">background-color: </span>blue;<br />
+            <span class="crimson">background-image: </span>url('../images/html_digit.jpg');<br />
+            <span class="crimson">background-repeat: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

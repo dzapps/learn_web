@@ -148,8 +148,8 @@ body {
 
 #animationDivCode {
   borders: none;
-   font-family: ubuntu-mono;
-   font-size: 85%;
+  font-family: ubuntu-mono;
+  font-size: 85%;
 }
 
 #blendDiv {
@@ -163,6 +163,12 @@ body {
   text-align: center;
   height: auto;
   padding: 10px;
+}
+
+#borderCollapseDiv table, th, td {
+  border: 2px solid blue;
+  /* padding: 15px; */
+  /* width: 100%; */
 }
 
 .animation-class {
