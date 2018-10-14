@@ -185,6 +185,12 @@ function border(id, style) {
   document.getElementsByClassName('text')[0].innerHTML = style + ';';
 }
 
+function borderBott(id, style) {
+  document.getElementById(id).style.borderBottom = style;
+
+  document.getElementsByClassName('text')[0].innerHTML = style + ';';
+}
+
 function borderCollapse(id, style) {
   let doc = document.getElementById(id).style;
   doc.borderCollapse = style;
