@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<title>Border bottom color</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The border-bottom-color property sets the color of an element's bottom border.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+       Always declare the border-style or the border-bottom-style property before the border-bottom-color property.
+       An element must have a border before you can change the color.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>color</td>
+          <td>Specifies the background color. Default color is the color of the element.</td>
+        </tr>
+        <tr>
+          <td>transparent</td>
+          <td>Specifies that the border color should be transparent.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="bordBottExamplesBar" class="left-padding;">
+      <a href="#bordBottExamplesBar">
+        <button onclick="showBordBottColor()" class="example-button example-rounded-buttons">color</button>
+      </a>
+      <a href="#bordBottColorExamplesBar">
+        <button onclick="bordBottColor('bordBottColorDiv', 'transparent')" class="example-button example-rounded-buttons">transparent</button>
+      </a>
+      <a href="#bordBottColorExamplesBar">
+        <button onclick="bordBottColor('bordBottColorDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#bordBottColorExamplesBar">
+        <button onclick="bordBottColor('bordBottColorDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+
+    <div id="bordBottColorExampleBarDoubleLevel" class="more-padding" style="display: none;">
+      <a href="#bordBottColorExamplesBar">
+        <button onclick="bordBottColor('bordBottColorDiv', 'blue')" class="example-button, example-double-level-rounded-buttons">blue</button>
+      </a>
+      <a href="#bordBottColorExamplesBar">
+        <button onclick="bordBottColor('bordBottColorDiv', 'rgb(201, 76, 76)')" class="example-button, example-double-level-rounded-buttons">rgb(201, 76, 76)</button>
+      </a>
+      <a href="#bordBottColorExamplesBar">
+        <button onclick="bordBottColor('bordBottColorDiv', 'rgba(201, 76, 76, 0.3)')" class="example-button, example-double-level-rounded-buttons">rgba(201, 76, 76, 0.3)</button>
+      </a>
+      <a href="#bordBottColorExamplesBar">
+        <button onclick="bordBottColor('bordBottColorDiv', 'hsl(89, 43%, 51%)')" class="example-button, example-double-level-rounded-buttons">hsl(89, 43%, 51%)</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="bordBottColorDiv" class="exampleDiv"></div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border-bottom-color: </span><span class="text">?;</span><br />
+            <span class="crimson">border-bottom-width: </span><span class="text">3px;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

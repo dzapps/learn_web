@@ -191,6 +191,17 @@ function borderBott(id, style) {
   document.getElementsByClassName('text')[0].innerHTML = style + ';';
 }
 
+function bordBottColor(id, color) {
+  document.getElementById(id).style.borderBottomColor = color;
+  document.getElementById(id).style.borderBottomWidth = '3px';
+
+  document.getElementsByClassName('text')[0].innerHTML = color + ';';
+}
+
+function showBordBottColor() {
+  document.getElementById('bordBottColorExampleBarDoubleLevel').style.display = 'block';
+}
+
 function borderCollapse(id, style) {
   let doc = document.getElementById(id).style;
   doc.borderCollapse = style;
