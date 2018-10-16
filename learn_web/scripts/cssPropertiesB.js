@@ -202,6 +202,33 @@ function showBordBottColor() {
   document.getElementById('bordBottColorExampleBarDoubleLevel').style.display = 'block';
 }
 
+function bordBottLeftRad(id, rad) {
+  document.getElementById(id).style.borderBottomLeftRadius = rad;
+  document.getElementById(id).style.borderBottomWidth = '3px';
+
+  document.getElementsByClassName('text')[0].innerHTML = rad + ';';
+}
+
+function bordBottRightRad(id, rad) {
+  document.getElementById(id).style.borderBottomRightRadius = rad;
+  document.getElementById(id).style.borderBottomWidth = '3px';
+
+  document.getElementsByClassName('text')[0].innerHTML = rad + ';';
+}
+
+function bordBottStyle(id, style) {
+  document.getElementById(id).style.borderBottomStyle = style;
+  document.getElementById(id).style.borderBottomWidth = '5px';
+
+  document.getElementsByClassName('text')[0].innerHTML = style + ';';
+}
+
+function bordBottWidth(id, width) {
+  document.getElementById(id).style.borderBottomWidth = width;
+
+  document.getElementsByClassName('text')[0].innerHTML = width + ';';
+}
+
 function borderCollapse(id, style) {
   let doc = document.getElementById(id).style;
   doc.borderCollapse = style;
