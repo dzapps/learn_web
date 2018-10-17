@@ -236,3 +236,74 @@ function borderCollapse(id, style) {
 
   document.getElementsByClassName('text')[0].innerHTML = style + ';';
 }
+
+function bordColor(id, color) {
+  document.getElementById(id).style.borderColor = color;
+  document.getElementById(id).style.borderWidth = '3px';
+
+  document.getElementsByClassName('text')[0].innerHTML = color + ';';
+}
+
+function showBordColor() {
+  document.getElementById('bordColorExampleBarDoubleLevel').style.display = 'block';
+}
+
+function bordLeft(id, color) {
+  document.getElementById(id).style.borderLeft = color;
+
+  document.getElementsByClassName('text')[0].innerHTML = color + ';';
+}
+
+function bordLeftColor(id, color) {
+  document.getElementById(id).style.borderLeftColor = color;
+  document.getElementById(id).style.borderLeftWidth = '3px';
+
+  document.getElementsByClassName('text')[0].innerHTML = color + ';';
+}
+
+function showBordLeftColor() {
+  document.getElementById('bordLeftColorExampleBarDoubleLevel').style.display = 'block';
+}
+
+function bordRightColor(id, color) {
+  document.getElementById(id).style.borderRightColor = color;
+  document.getElementById(id).style.borderRightWidth = '3px';
+
+  document.getElementsByClassName('text')[0].innerHTML = color + ';';
+}
+
+function showBordRightColor() {
+  document.getElementById('bordRightColorExampleBarDoubleLevel').style.display = 'block';
+}
+
+function bordLeftStyle(id, style) {
+  document.getElementById(id).style.borderLeftStyle = style;
+  document.getElementById(id).style.borderLeftWidth = '5px';
+
+  document.getElementsByClassName('text')[0].innerHTML = style + ';';
+}
+
+function bordRightStyle(id, style) {
+  document.getElementById(id).style.borderRightStyle = style;
+  document.getElementById(id).style.borderRightWidth = '5px';
+
+  document.getElementsByClassName('text')[0].innerHTML = style + ';';
+}
+
+function bordLeftWidth(id, width) {
+  document.getElementById(id).style.borderLeftWidth = width;
+
+  document.getElementsByClassName('text')[0].innerHTML = width + ';';
+}
+
+function bordRightWidth(id, width) {
+  document.getElementById(id).style.borderRightWidth = width;
+
+  document.getElementsByClassName('text')[0].innerHTML = width + ';';
+}
+
+function bordRight(id, style) {
+  document.getElementById(id).style.borderRight = style;
+
+  document.getElementsByClassName('text')[0].innerHTML = style + ';';
+}

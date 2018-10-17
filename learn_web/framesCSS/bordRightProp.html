@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Border bottom style</title>
+<title>Border right</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -20,7 +20,11 @@
   <div class="note noteCSS descriptionCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-        The border-bottom-width property sets the width of an element's bottom border.
+       The border-right property is a shorthand property for (in the following order):
+       border-right-width, border-right-style (required), border-right-color.
+    </div>
+    <div class="note-value">
+       If border-right-color is omitted, the color applied will be the color of the text.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -28,8 +32,8 @@
   <div class="note noteCSS noteCSS note-round-bord">
     Note:<br />
     <div class="note-value">
-       Always declare the border-style or the border-bottom-style property before the border-bottom-width property.
-       An element must have borders before you can change the width.
+       Always declare the border-style or the border-right-style property before the border-right-color property.
+       An element must have a border before you can change the color.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -48,20 +52,12 @@
       </thead>
       <tbody>
         <tr>
-          <td>medium</td>
-          <td>Specifies a medium bottom border. This is default.</td>
+          <td>color</td>
+          <td>Specifies the background color. Default color is the color of the element.</td>
         </tr>
         <tr>
-          <td>thin</td>
-          <td>Specifies a thin bottom border.</td>
-        </tr>
-        <tr>
-          <td>thick</td>
-          <td>Specifies a thick bottom border.</td>
-        </tr>
-        <tr>
-          <td>length</td>
-          <td>Allows you to define the thickness of the bottom border.</td>
+          <td>transparent</td>
+          <td>Specifies that the border color should be transparent.</td>
         </tr>
         <tr>
           <td>initial</td>
@@ -76,29 +72,30 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="bordBottWidthExamplesBar" class="left-padding;">
-      <a href="#bordBottWidthExamplesBar">
-        <button onclick="bordBottWidth('bordBottWidthDiv', 'medium')" class="example-button example-rounded-buttons">medium</button>
+    <div id="bordRightExamplesBar" class="left-padding;">
+      <a href="#bordRightExamplesBar">
+        <button onclick="bordRight('bordRightDiv', '3px solid blue')" class="example-button example-rounded-buttons">blue</button>
       </a>
-      <a href="#bordBottWidthExamplesBar">
-        <button onclick="bordBottWidth('bordBottWidthDiv', 'thin')" class="example-button example-rounded-buttons">thin</button>
+      <a href="#bordRightExamplesBar">
+        <button onclick="bordRight('bordRightDiv', '3px solid rgb(201, 76, 76)')" class="example-button example-rounded-buttons">rgb(201, 76, 76)</button>
       </a>
-      <a href="#bordBottWidthExamplesBar">
-        <button onclick="bordBottWidth('bordBottWidthDiv', 'thick')" class="example-button example-rounded-buttons">thick</button>
+      <a href="#bordRightExamplesBar">
+        <button onclick="bordRight('bordRightDiv', '3px solid rgba(201, 76, 76, 0.3)')" class="example-button example-rounded-buttons">rgba(201, 76, 76, 0.3)</button>
       </a>
-      <a href="#bordBottWidthExamplesBar">
-        <button onclick="bordBottWidth('bordBottWidthDiv', '20px')" class="example-button example-rounded-buttons">length</button>
+      <a href="#bordRightExamplesBar">
+        <button onclick="bordRight('bordRightDiv', 'transparent')" class="example-button example-rounded-buttons">transparent</button>
       </a>
-      <a href="#bordBottWidthExamplesBar">
-        <button onclick="bordBottWidth('bordBottWidthDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      <a href="#bordRightExamplesBar">
+        <button onclick="bordRight('bordRightDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
       </a>
-      <a href="#bordBottWidthExamplesBar">
-        <button onclick="bordBottWidth('bordBottWidthDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      <a href="#bordRightExamplesBar">
+        <button onclick="bordRight('bordRightDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
       </a>
     </div>
+
   </div>
 
-  <div id="bordBottWidthDiv" class="exampleDiv"></div>
+  <div id="bordRightDiv" class="exampleDiv"></div>
 
   <div id='animationDivCode'>
     <div class="code blue float-borders-none">
@@ -109,8 +106,7 @@
       <p class="blue left-padding" style="margin: 0">
         <span class="brown">div </span><span class="black">{</span><br />
           <p class="blue more-padding" style="margin: 0;">
-            <span class="crimson">border-bottom-style: </span>solid;<br />
-            <span class="crimson">border-bottom-width: </span><span class="text">?;</span><br />
+            <span class="crimson">border-right: </span><span class="text">?;</span><br />
           </p>
         <span class="black left-padding">}</span>
       </p>
