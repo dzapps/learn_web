@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<title>Border top</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" type="" />
+<link rel="stylesheet" href="../styles/reset.css" type="" />
+<link rel="stylesheet" href="../styles/common.css" type="" />
+<link rel="stylesheet" href="../styles/css_style.css" type="" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js" type=""></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The border-top property is a shorthand property for: border-top-width, border-top-style, border-top-color.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    <div class="note-value">
+      If border-top-color is omitted, the color applied will be the color of the text.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>border-top-width</td>
+          <td>Required. Specifies the width of the top border. Default value is "medium".</td>
+        </tr>
+        <tr>
+          <td>border-top-style</td>
+          <td>Required. Specifies the style of the top border. Default value is "none".</td>
+        </tr>
+        <tr>
+          <td>border-top-color</td>
+          <td>Specifies the color of the top border. Default value is the color of the text.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="borderTopExamplesBar" class="left-padding;">
+      <a href="#borderTopExamplesBar">
+        <button onclick="borderTop('borderTopDiv', '1px solid red')" class="example-button example-rounded-buttons">example1</button>
+      </a>
+      <a href="#borderTopExamplesBar">
+        <button onclick="borderTop('borderTopDiv', '5px solid yellow')" class="example-button example-rounded-buttons">example2</button>
+      </a>
+      <a href="#borderTopExamplesBar">
+        <button onclick="borderTop('borderTopDiv', '10px solid magenta')" class="example-button example-rounded-buttons">example3</button>
+      </a>
+      <a href="#borderTopExamplesBar">
+        <button onclick="borderTop('borderTopDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#borderTopExamplesBar">
+        <button onclick="borderTop('borderTopDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="borderTopDiv" class="exampleDiv"></div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border-top: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

@@ -167,8 +167,6 @@ body {
 
 #borderCollapseDiv table, th, td {
   border: 2px solid blue;
-  /* padding: 15px; */
-  /* width: 100%; */
 }
 
 .animation-class {

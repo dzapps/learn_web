@@ -307,3 +307,57 @@ function bordRight(id, style) {
 
   document.getElementsByClassName('text')[0].innerHTML = style + ';';
 }
+
+function borderTop(id, style) {
+  document.getElementById(id).style.borderTop = style;
+
+  document.getElementsByClassName('text')[0].innerHTML = style + ';';
+}
+
+function bordTopColor(id, color) {
+  document.getElementById(id).style.borderTopColor = color;
+  document.getElementById(id).style.borderTopWidth = '3px';
+
+  document.getElementsByClassName('text')[0].innerHTML = color + ';';
+}
+
+function showBordTopColor() {
+  document.getElementById('bordTopColorExampleBarDoubleLevel').style.display = 'block';
+}
+
+function bordTopStyle(id, style) {
+  document.getElementById(id).style.borderTopStyle = style;
+  document.getElementById(id).style.borderTopWidth = '5px';
+
+  document.getElementsByClassName('text')[0].innerHTML = style + ';';
+}
+
+function bordTopLeftRad(id, rad) {
+  document.getElementById(id).style.borderTopLeftRadius = rad;
+  document.getElementById(id).style.borderTopWidth = '3px';
+
+  document.getElementsByClassName('text')[0].innerHTML = rad + ';';
+}
+
+function bordTopRightRad(id, rad) {
+  document.getElementById(id).style.borderTopRightRadius = rad;
+  document.getElementById(id).style.borderTopWidth = '3px';
+
+  document.getElementsByClassName('text')[0].innerHTML = rad + ';';
+}
+
+function bordTopWidth(id, width) {
+  document.getElementById(id).style.borderTopWidth = width;
+
+  document.getElementsByClassName('text')[0].innerHTML = width + ';';
+}
+
+function bordSpacing(id, spacing, collapse) {
+  let doc = document.getElementById(id).style;
+  doc.borderSpacing = spacing;
+  doc.borderCollapse = collapse;
+  doc.display = 'inline-block';
+
+  document.getElementsByClassName('text')[0].innerHTML = spacing + ';';
+  document.getElementsByClassName('text')[1].innerHTML = collapse + ';';
+}
