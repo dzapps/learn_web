@@ -14,8 +14,8 @@ body {
 
 .show-and-hide {
   border-radius: 20px;
-  background-color: rgba(60, 37, 125, 0.86);
-  box-shadow: 4px 1px 15px 10px rgba(77, 110, 115, 0.7);
+  /* background-color: rgba(60, 37, 125, 0.86); */
+  /* box-shadow: 4px 1px 15px 10px rgba(77, 110, 115, 0.7); */
   margin-top: 3em;
   width: 60%;
   margin-left: auto;

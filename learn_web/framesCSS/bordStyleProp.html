@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<title>Border style</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The border-style property sets the style of an element's four borders.
+    </div>
+    <div class="note-value">
+      One value: all four borders.
+    </div>
+    <div class="note-value">
+      Two values: top and bottom, right and left.
+    </div>
+    <div class="note-value">
+      Three values: top, right and left, bottom.
+    </div>
+    <div class="note-value">
+      Four values: top, right, bottom, left.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+       The value "hidden" is not supported in IE7 and earlier.
+       IE8 requires a !DOCTYPE. IE9 and later support "hidden".
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>Specifies no border. This is default.</td>
+        </tr>
+        <tr>
+          <td>hidden</td>
+          <td>The same as "none", except in border conflict resolution for table elements.</td>
+        </tr>
+        <tr>
+          <td>dotted</td>
+          <td>Specifies a dotted border.</td>
+        </tr>
+        <tr>
+          <td>dashed</td>
+          <td>Specifies a dashed border.</td>
+        </tr>
+        <tr>
+          <td>solid</td>
+          <td>Specifies a solid border.</td>
+        </tr>
+        <tr>
+          <td>double</td>
+          <td>Specifies a double border.</td>
+        </tr>
+        <tr>
+          <td>groove</td>
+          <td>Specifies a 3D grooved border. The effect depends on the border-color value.</td>
+        </tr>
+        <tr>
+          <td>ridge</td>
+          <td>Specifies a 3D ridged border. The effect depends on the border-color value.</td>
+        </tr>
+        <tr>
+          <td>inset</td>
+          <td>Specifies a 3D inset border. The effect depends on the border-color value.</td>
+        </tr>
+        <tr>
+          <td>outset</td>
+          <td>Specifies a 3D outset border. The effect depends on the border-color value.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="bordStyleExamplesBar" class="left-padding;">
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'hidden')" class="example-button example-rounded-buttons">hidden</button>
+      </a>
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'dotted')" class="example-button example-rounded-buttons">dotted</button>
+      </a>
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'dashed')" class="example-button example-rounded-buttons">dashed</button>
+      </a>
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'solid')" class="example-button example-rounded-buttons">solid</button>
+      </a>
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'double')" class="example-button example-rounded-buttons">double</button>
+      </a>
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'groove')" class="example-button example-rounded-buttons">groove</button>
+      </a>
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'ridge')" class="example-button example-rounded-buttons">ridge</button>
+      </a>
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'inset')" class="example-button example-rounded-buttons">inset</button>
+      </a>
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'outset')" class="example-button example-rounded-buttons">outset</button>
+      </a><br />
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'ridge dotted')" class="example-button example-rounded-buttons">two values</button>
+      </a>
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'inset solid dotted')" class="example-button example-rounded-buttons">three values</button>
+      </a>
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'outset none double groove')" class="example-button example-rounded-buttons">four values</button>
+      </a>
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#bordStyleExamplesBar">
+        <button onclick="bordStyle('bordStyleDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 0px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="bordStyleDiv" class="exampleDiv"></div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border-style: </span><span class="text">?;</span><br />
+            <span class="crimson">border-width: </span>5px;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<title>Border style</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      Length is a number followed by a length unit, such as 10px, 2em, etc.
+    </div>
+    <div class="note-value">
+      A whitespace cannot appear between the number and the unit. However, if the value is 0, the unit can be omitted.
+    </div>
+    <div class="note-value">
+      For some CSS properties, negative lengths are allowed.
+    </div>
+    <div class="note-value">
+      There are two types of length units: absolute and relative.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+       The em and rem units are practical in creating perfectly scalable layout!
+    </div>
+    <div class="note-value">
+       Pixels (px) are relative to the viewing device.
+       For low-dpi devices, 1px is one device pixel (dot) of the display.
+       For printers and high resolution screens 1px implies multiple device pixels.
+    </div>
+    <div class="note-value">
+       Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Absolute lengths
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Unit</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>cm</td>
+          <td>Centimeters.</td>
+        </tr>
+        <tr>
+          <td>mm</td>
+          <td>Millimeters.</td>
+        </tr>
+        <tr>
+          <td>in</td>
+          <td>Inches (1in = 96px = 2.54cm).</td>
+        </tr>
+        <tr>
+          <td>px</td>
+          <td>Pixels (1px = 1/96th of 1in).</td>
+        </tr>
+        <tr>
+          <td>pt</td>
+          <td>Points (1pt = 1/72 of 1in).</td>
+        </tr>
+        <tr>
+          <td>pc</td>
+          <td>Picas (1pc = 12 pt).</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Relative lengths
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Unit</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>em</td>
+          <td>Relative to the font-size of the element (2em means 2 times the size of the current font).</td>
+        </tr>
+        <tr>
+          <td>ex</td>
+          <td>Relative to the x-height of the current font (rarely used).</td>
+        </tr>
+        <tr>
+          <td>ch</td>
+          <td>Relative to width of the "0" (zero).</td>
+        </tr>
+        <tr>
+          <td>rem</td>
+          <td>Relative to font-size of the root element.</td>
+        </tr>
+        <tr>
+          <td>vw</td>
+          <td>Relative to 1% of the width of the viewport.</td>
+        </tr>
+        <tr>
+          <td>vh</td>
+          <td>Relative to 1% of the height of the viewport.</td>
+        </tr>
+        <tr>
+          <td>vmin</td>
+          <td>Relative to 1% of viewport's smaller dimension.</td>
+        </tr>
+        <tr>
+          <td>vmax</td>
+          <td>Relative to 1% of viewport's larger dimension.</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Relative to the parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+  </div>
+
+  <div class="left-padding"><h3>Absolute length</h3></div>
+  <div id="bordStyleDiv" class="exampleDiv">
+    <span style="padding-left: 10px; font-size: 1cm;">1cm: A; </span>
+    <span style="font-size: 5mm;">5mm: A; </span>
+    <span style="font-size: 1in;">1in: A; </span>
+    <span style="font-size: 10px;">10px: A;</span>
+    <span style="font-size: 10pt;">10pt: A; </span>
+    <span style="font-size: 1pc;">1pc: A; </span>
+  </div>
+
+  <div class="left-padding"><h3>Relative length (font-size: 20px;)</h3></div>
+  <div id="bordStyleDiv" class="exampleDiv" style="font-size: 20px;">
+    <span style="padding-left: 10px; font-size: 1em;">1em: A; </span>
+    <span style="font-size: 1ex;">1ex: A; </span>
+    <span style="font-size: 1ch;">1ch: A; </span>
+    <span style="font-size: 1rem;">1rem: A;</span>
+    <span style="font-size: 1vw;">1vw: A; </span>
+    <span style="font-size: 1vh;">1vh: A; </span>
+    <span style="font-size: 1vmin;">1vmin: A;</span>
+    <span style="font-size: 1vmax;">1vmax: A; </span>
+    <span style="font-size: 50%;">50%: A;</span>
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

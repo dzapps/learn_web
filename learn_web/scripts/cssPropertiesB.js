@@ -361,3 +361,44 @@ function bordSpacing(id, spacing, collapse) {
   document.getElementsByClassName('text')[0].innerHTML = spacing + ';';
   document.getElementsByClassName('text')[1].innerHTML = collapse + ';';
 }
+
+function bordRad(id, rad) {
+  document.getElementById(id).style.borderRadius = rad;
+
+  document.getElementsByClassName('text')[0].innerHTML = rad + ';';
+
+  let a = document.getElementsByClassName('exampleDivCont');
+  let lenA = a.length;
+  for (var j=0; j<=lenA; j++) {
+    a[j].style.display = "none";
+  }
+}
+
+function bordRadCont(id, rad, idCont) {
+  document.getElementById(id).style.borderRadius = rad;
+  document.getElementsByClassName('text')[0].innerHTML = rad + ';';
+  let a = document.getElementsByClassName('exampleDivCont');
+  let lenA = a.length;
+  for (var j=0; j<=lenA; j++) {
+    document.getElementById(idCont).style.display = "block";
+    a[j].style.display = "none";
+  }
+}
+
+function bordStyle(id, style) {
+  document.getElementById(id).style.borderStyle = style;
+  document.getElementById(id).style.borderWidth = '5px';
+
+  document.getElementsByClassName('text')[0].innerHTML = style + ';';
+}
+
+function bottom(id, pos) {
+  doc = document.getElementById(id).style
+  doc.position = pos;
+  doc.bottom = '10px';
+  doc.width = '110px';
+  doc.height = '30px';
+  doc.border = '2px solid blue';
+
+  document.getElementsByClassName('text')[0].innerHTML = pos + ';';
+}

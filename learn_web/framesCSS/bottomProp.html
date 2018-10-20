@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<title>Background size</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/cssPropertiesB.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The bottom property affects the vertical position of a positioned element.
+       This property has no effect on non-positioned elements.
+    </div>
+    <div class="note-value">
+       If position: absolute; or position: fixed; - the bottom property sets the bottom edge of an element
+       to a unit above/below the bottom edge of its nearest positioned ancestor.
+    </div>
+    <div class="note-value">
+       If position: relative; - the bottom property makes the element's bottom edge to move above/below its normal position.
+    </div>
+    <div class="note-value">
+       If position: sticky; - the bottom property behaves like its position is relative when the element is inside the viewport,
+       and like its position is fixed when it is outside.
+    </div>
+    <div class="note-value">
+       If position: static; - the bottom property has no effect.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>auto</td>
+          <td>Lets the browser calculate the bottom edge position. This is default.</td>
+        </tr>
+        <tr>
+          <td>length</td>
+          <td>Sets the bottom edge position in px, cm, etc. Negative values are allowed.</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Sets the bottom edge position in % of containing element. Negative values are allowed.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="bordExamplesBar" class="left-padding;">
+      <a href="#bottomExamplesBar">
+        <button onclick="bottom('bottomDivCont', 'absolute')" class="example-button example-rounded-buttons">absolute</button>
+      </a>
+      <a href="#bottomExamplesBar">
+        <button onclick="bottom('bottomDivCont', 'fixed')" class="example-button example-rounded-buttons">fixed</button>
+      </a>
+      <a href="#bordExamplesBar">
+        <button onclick="bottom('bottomDivCont', 'relative')" class="example-button example-rounded-buttons">relative</button>
+      </a>
+      <a href="#bottomExamplesBar">
+        <button onclick="bottom('bottomDivCont', 'static')" class="example-button example-rounded-buttons">static</button>
+      </a>
+      <a href="#bottomExamplesBar">
+        <button onclick="bottom('bottomDivCont', 'sticky')" class="example-button example-rounded-buttons">sticky</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="bottomDiv" class="exampleDiv">
+    <p id="bottomDivCont">Example text</p>
+  </div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span><br />
+        <span class="left-padding">&lt;<span class="brown">p</span>&gt;Example text<span>&lt;<span class="brown">/p</span>&gt;</span></span><br />
+      &lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">p </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">bottom: </span>10px;<br />
+            <span class="crimson">position: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
