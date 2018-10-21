@@ -374,6 +374,59 @@ function bordRad(id, rad) {
   }
 }
 
+function bordImg(id, src, slice, width, outset, repeat, backgrcolor) {
+  doc = document.getElementById(id).style;
+  doc.borderImage = src + ' ' + slice + ' ' + repeat;
+  doc.borderImageWidth = width;
+  doc.borderImageOutset = outset;
+  doc.backgroundColor = backgrcolor;
+
+  document.getElementsByClassName('text')[0].innerHTML = src + ' ' + slice + ' ' + repeat +';';
+}
+
+function bordImgOutset(id, src, slice, width, outset, repeat) {
+  doc = document.getElementById(id).style;
+  doc.borderImage = src + ' ' + slice + ' ' + repeat;
+  doc.borderImageWidth = width;
+  doc.borderImageOutset = outset;
+  doc.backgroundColor = 'blue';
+
+  document.getElementsByClassName('text')[0].innerHTML = outset + ';';
+}
+
+function bordImgSlice(id, src, slice, width, outset, repeat) {
+  doc = document.getElementById(id).style;
+  doc.borderImage = src + ' ' + slice + ' ' + repeat;
+  doc.borderImageWidth = width;
+  doc.borderImageOutset = outset;
+
+  document.getElementsByClassName('text')[0].innerHTML = slice;
+}
+
+function bordImgRepeat(id, src, slice, width, outset, repeat) {
+  doc = document.getElementById(id).style;
+  doc.borderImage = src + ' ' + slice + ' ' + repeat;
+  doc.borderImageWidth = width;
+  doc.borderImageOutset = outset;
+
+  document.getElementsByClassName('text')[0].innerHTML = repeat + ';';
+}
+
+
+function bordImgSrc(id, src, slice, width, outset, repeat) {
+  doc = document.getElementById(id).style;
+  doc.borderImage = src + ' ' + slice + ' ' + repeat;
+  doc.borderImageWidth = width;
+  doc.borderImageOutset = outset;
+
+  document.getElementsByClassName('text')[0].innerHTML = src + ';';
+
+  let len = src.length;
+  console.log(src.substr(4, 28));
+  document.getElementById('bordImgDiv').src = src.substr(4, len-5);
+
+}
+
 function bordRadCont(id, rad, idCont) {
   document.getElementById(id).style.borderRadius = rad;
   document.getElementsByClassName('text')[0].innerHTML = rad + ';';

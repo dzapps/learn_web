@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<title>Background image</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/border.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The border-image property allows you to specify an image to be used as the border around an element.
+    </div>
+    <div class="note-value">
+      The border-image property is a shorthand property for: border-image-source,
+      border-image-slice, border-image-width, border-image-outset, border-image-repeat.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      Internet Explorer 10, and earlier versions, do not support the border-image property.
+    </div>
+    <div class="note-value">
+      The following browsers need a prefix: Safari 3.1 and Chrome 4.0 (-webkit-), Mozilla 3.5 (-moz-), Opera 11.0 (-o-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>border-image-source</td>
+          <td>The path to the image to be used as a border.</td>
+        </tr>
+        <tr>
+          <td>border-image-slice</td>
+          <td>How to slice the border image.</td>
+        </tr>
+        <tr>
+          <td>border-image-width</td>
+          <td>The width of the border image.</td>
+        </tr>
+        <tr>
+          <td>border-image-outset</td>
+          <td>The amount by which the border image area extends beyond the border box.</td>
+        </tr>
+        <tr>
+          <td>border-image-repeat</td>
+          <td>Whether the border image should be repeated, rounded or stretched.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="bordImgExamplesBar" class="left-padding;">
+      <a href="#bordImgExamplesBar">
+        <button onclick="bordImg('bordImgDiv', 'url(../images/example_border2.png)', '10%', '5px', '', 'stretch', '')" class="example-button example-rounded-buttons">example1</button>
+      </a>
+      <a href="#bordImgExamplesBar">
+        <button onclick="bordImg('bordImgDiv', 'url(../images/example_border2.png)', '20%', '5px', '', 'stretch', '')" class="example-button example-rounded-buttons">example2</button>
+      </a>
+      <a href="#bordImgExamplesBar">
+        <button onclick="bordImg('bordImgDiv', 'url(../images/example_border2.png)', '40%', '5px', '', 'stretch', '')" class="example-button example-rounded-buttons">example3</button>
+      </a>
+      <a href="#bordImgExamplesBar">
+        <button onclick="bordImg('bordImgDiv', 'url(../images/example_border2.png)', '10', '5px', '', 'stretch', '')" class="example-button example-rounded-buttons">example4</button>
+      </a>
+      <a href="#bordImgExamplesBar">
+        <button onclick="bordImg('bordImgDiv', 'url(../images/example_border2.png)', '20', '5px', '', 'stretch', '')" class="example-button example-rounded-buttons">example5</button>
+      </a>
+      <a href="#bordImgExamplesBar">
+        <button onclick="bordImg('bordImgDiv', 'url(../images/example_border2.png)', '40', '5px', '', 'stretch', '')" class="example-button example-rounded-buttons">example6</button>
+      </a>
+      <a href="#bordImgExamplesBar">
+        <button onclick="bordImg('bordImgDiv', 'url(../images/example_border2.png)', '100%', '5px', '', 'stretch', '')" class="example-button example-rounded-buttons">example7</button>
+      </a>
+      <a href="#bordImgExamplesBar">
+        <button onclick="bordImg('bordImgDiv', 'initial', '', '', '', '', '')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#bordImgExamplesBar">
+        <button onclick="bordImg('bordImgDiv', 'inherit', '', '', '', '', '')" class="example-button example-rounded-buttons" style="margin-top: 5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="bordImgDiv" class="exampleDiv">Original image<br /><img src="../images/example_border2.png" style="padding: 20px;"/></div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <!-- <span class="crimson">background-color: </span>blue;<br /> -->
+            <span class="crimson">border-image: </span><span class="text">?;</span><br />
+            <span><span class="crimson">border-width: </span>5px;</span>
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

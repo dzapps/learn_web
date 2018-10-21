@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Border</title>
+<title>Background image source</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -20,17 +20,16 @@
   <div class="note noteCSS descriptionCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-       The border property is a shorthand property for: border-width, border-style (required), border-color.
+      The border-image-source property specifies the path to the image to be used as a border
+      (instead of the normal border around an element).
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
 
   <div class="note noteCSS note-round-bord">
+    Note:<br />
     <div class="note-value">
-      If border-color is omitted, the color applied will be the color of the text.
-    </div>
-    <div class="note-value">
-      The following browsers need a prefix: Safari 3.0, Chrome 1.0 (-webkit-), Opera 10.0 (-o-), Mozilla 3.6 (-moz-).
+      If the value is "none", or if the image cannot be displayed, the border styles will be used.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -49,16 +48,12 @@
       </thead>
       <tbody>
         <tr>
-          <td>border-width</td>
-          <td>Specifies the width of the border. Default value is "medium".</td>
+          <td>none</td>
+          <td>Default value. The image is stretched to fill the area.</td>
         </tr>
         <tr>
-          <td>border-style</td>
-          <td>Specifies the style of the border. Default value is "none".</td>
-        </tr>
-        <tr>
-          <td>border-color</td>
-          <td>Specifies the color of the border. Default value is the color of the text.</td>
+          <td>image</td>
+          <td>The image is tiled (repeated) to fill the area.</td>
         </tr>
         <tr>
           <td>initial</td>
@@ -73,26 +68,26 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="borderExamplesBar" class="left-padding;">
-      <a href="#borderExamplesBar">
-        <button onclick="border('borderDiv', '1px solid red')" class="example-button example-rounded-buttons">example1</button>
+    <div id="bordImgSrcExamplesBar" class="left-padding;">
+      <a href="#bordImgSrcExamplesBar">
+        <button onclick="bordImgSrc('bordImgSrcDiv', 'none', '10', '15px', '', 'repeat')" class="example-button example-rounded-buttons">none</button>
       </a>
-      <a href="#borderExamplesBar">
-        <button onclick="border('borderDiv', '5px solid yellow')" class="example-button example-rounded-buttons">example2</button>
+      <a href="#bordImgSrcExamplesBar">
+        <button onclick="bordImgSrc('bordImgSrcDiv', 'url(../images/example_border.png)', '10', '15px', '', 'repeat')" class="example-button example-rounded-buttons">image1</button>
       </a>
-      <a href="#borderExamplesBar">
-        <button onclick="border('borderDiv', '10px solid magenta')" class="example-button example-rounded-buttons">example3</button>
+      <a href="#bordImgSrcExamplesBar">
+        <button onclick="bordImgSrc('bordImgSrcDiv', 'url(../images/example_border2.png)', '10', '15px', '', 'repeat')" class="example-button example-rounded-buttons">image2</button>
       </a>
-      <a href="#borderExamplesBar">
-        <button onclick="border('borderDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      <a href="#bordImgSrcExamplesBar">
+        <button onclick="bordImgSrc('bordImgSrcDiv', 'initial', '', '', '', '')" class="example-button example-rounded-buttons">initial</button>
       </a>
-      <a href="#borderExamplesBar">
-        <button onclick="border('borderDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      <a href="#bordImgSrcExamplesBar">
+        <button onclick="bordImgSrc('bordImgSrcDiv', 'inherit', '', '', '', '')" class="example-button example-rounded-buttons" style="margin-top: 5px;">inherit</button>
       </a>
     </div>
   </div>
 
-  <div id="borderDiv" class="exampleDiv"></div>
+  <div id="bordImgSrcDiv" class="exampleDiv">Original image<br /><img id="bordImgDiv" style="padding: 20px;"/></div>
 
   <div id='animationDivCode'>
 
@@ -104,7 +99,9 @@
       <p class="blue left-padding" style="margin: 0">
         <span class="brown">div </span><span class="black">{</span><br />
           <p class="blue more-padding" style="margin: 0;">
-            <span class="crimson">border: </span><span class="text">?;</span><br />
+            <span class="crimson">border-image-src: </span><span class="text">?;</span><br />
+            <span class="crimson">border-image-repeat: </span>repeat;<br />
+            <span><span class="crimson">border-width: </span>15px;</span>
           </p>
         <span class="black left-padding">}</span>
       </p>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<title>Background image outset</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/border.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The border-image-repeat property specifies whether the border image should be repeated, rounded or stretched.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      This property specifies how the images for the sides and the middle part of the border image are scaled and tiled.
+      So, you can specify two values here. If the second value is omitted, it is assumed to be the same as the first.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>stretch</td>
+          <td>Default value. The image is stretched to fill the area.</td>
+        </tr>
+        <tr>
+          <td>repeat</td>
+          <td>The image is tiled (repeated) to fill the area.</td>
+        </tr>
+        <tr>
+          <td>round</td>
+          <td>The image is tiled (repeated) to fill the area.
+            If it does not fill the area with a whole number of tiles, the image is rescaled so it fits.
+          </td>
+        </tr>
+        <tr>
+          <td>space</td>
+          <td>The image is tiled (repeated) to fill the area.
+            If it does not fill the area with a whole number of tiles, the extra space is distributed around the tiles.
+          </td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="bordImgRepeatExamplesBar" class="left-padding;">
+      <a href="#bordImgRepeatExamplesBar">
+        <button onclick="bordImgRepeat('bordImgRepeatDiv', 'url(../images/example_border2.png)', '10', '15px', '', 'stretch')" class="example-button example-rounded-buttons">stretch</button>
+      </a>
+      <a href="#bordImgRepeatExamplesBar">
+        <button onclick="bordImgRepeat('bordImgRepeatDiv', 'url(../images/example_border2.png)', '10', '15px', '', 'repeat')" class="example-button example-rounded-buttons">repeat</button>
+      </a>
+      <a href="#bordImgRepeatExamplesBar">
+        <button onclick="bordImgRepeat('bordImgRepeatDiv', 'url(../images/example_border2.png)', '10', '15px', '', 'round')" class="example-button example-rounded-buttons">round</button>
+      </a>
+      <a href="#bordImgRepeatExamplesBar">
+        <button onclick="bordImgRepeat('bordImgRepeatDiv', 'url(../images/example_border2.png)', '10', '15px', '', 'space')" class="example-button example-rounded-buttons">space</button>
+      </a>
+      <a href="#bordImgRepeatExamplesBar">
+        <button onclick="bordImgRepeat('bordImgRepeatDiv', 'url(../images/example_border2.png)', '10', '15px', '', 'stretch space')" class="example-button example-rounded-buttons">stretch space</button>
+      </a>
+      <a href="#bordImgRepeatExamplesBar">
+        <button onclick="bordImgRepeat('bordImgRepeatDiv', '', '', '', '', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#bordImgRepeatExamplesBar">
+        <button onclick="bordImgRepeat('bordImgRepeatDiv', '', '', '', '', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="bordImgRepeatDiv" class="exampleDiv">Original image<br /><img src="../images/example_border2.png" style="padding: 20px;"/></div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span><span class="crimson">border-image: </span>url(../images/example_border2.png) 10;</span><br />
+            <span class="crimson">border-image-repeat: </span><span class="text">?;</span><br />
+            <span><span class="crimson">border-width: </span>15px;</span>
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

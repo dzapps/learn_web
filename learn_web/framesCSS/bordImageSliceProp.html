@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<title>Background image slice</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesB.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/border.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The border-image-slice property specifies how to slice the image specified by border-image-source.
+      The image is always sliced into nine sections: four corners, four edges and the middle.
+    </div>
+    <div class="note-value">
+      The "middle" part is treated as fully transparent, unless the fill keyword is set.
+    </div>
+    <div class="note-value">
+      The border-image-slice property specifies how to slice the image specified by border-image-source.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      The border-image-slice property can take from one to four values.<br />
+      If the fourth value is omitted, it is the same as the second.<br />
+      If the third one is also omitted, it is the same as the first.<br />
+      If the second one is also omitted, it is the same as the first.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>number</td>
+          <td>The number(s) represent pixels for raster images or coordinates for vector images.</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Percentages are relative to the height or width of the image.</td>
+        </tr>
+        <tr>
+          <td>fill</td>
+          <td>Causes the middle part of the image to be displayed.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="bordImgSliceExamplesBar" class="left-padding;">
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', 'url(../images/example_border2.png)', '10', '10px', '', 'stretch')" class="example-button example-rounded-buttons">10</button>
+      </a>
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', 'url(../images/example_border2.png)', '20', '10px', '', 'stretch')" class="example-button example-rounded-buttons">20</button>
+      </a>
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', 'url(../images/example_border2.png)', '70', '10px', '', 'stretch')" class="example-button example-rounded-buttons">70</button>
+      </a>
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', 'url(../images/example_border2.png)', '10%', '10px', '', 'stretch')" class="example-button example-rounded-buttons">10%</button>
+      </a>
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', 'url(../images/example_border2.png)', '20%', '10px', '', 'stretch')" class="example-button example-rounded-buttons">20%</button>
+      </a>
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', 'url(../images/example_border2.png)', '70%', '10px', '', 'stretch')" class="example-button example-rounded-buttons">70%</button>
+      </a>
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', 'url(../images/example_border2.png)', '10% fill', '10px', '', 'stretch')" class="example-button example-rounded-buttons">10% fill</button>
+      </a>
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', 'url(../images/example_border2.png)', '20% fill', '10px', '', 'stretch')" class="example-button example-rounded-buttons">20% fill</button>
+      </a>
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', 'url(../images/example_border2.png)', '70% fill', '10px', '', 'stretch')" class="example-button example-rounded-buttons">70% fill</button>
+      </a>
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', 'url(../images/example_border2.png)', '10% 30%', '10px', '', 'stretch')" class="example-button example-rounded-buttons">10% 30%</button>
+      </a>
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', 'url(../images/example_border2.png)', '20% 60% 10%', '10px', '', 'stretch')" class="example-button example-rounded-buttons">20% 60% 10%</button>
+      </a>
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', 'url(../images/example_border2.png)', '70% 15% 10% 100%', '10px', '', 'stretch')" class="example-button example-rounded-buttons">70% 15% 10% 100%</button>
+      </a>
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', '', 'initial', '', '', '', '')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#bordImgSliceExamplesBar">
+        <button onclick="bordImgSlice('bordImgSliceDiv', '', 'inherit', '', '', '', '')" class="example-button example-rounded-buttons" style="margin-top: 5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="bordImgSliceDiv" class="exampleDiv">Original image<br /><img src="../images/example_border2.png" style="padding: 20px;"/></div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">background-color: </span>blue;<br />
+            <span><span class="crimson">border-image: </span>url(../images/example_border2.png) stretch;</span><br />
+            <span><span class="crimson">border-width: </span><span class="text">?;</span></span><br />
+            <span><span class="crimson">border-width: </span>10px;</span>
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
