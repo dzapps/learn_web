@@ -412,7 +412,6 @@ function bordImgRepeat(id, src, slice, width, outset, repeat) {
   document.getElementsByClassName('text')[0].innerHTML = repeat + ';';
 }
 
-
 function bordImgSrc(id, src, slice, width, outset, repeat) {
   doc = document.getElementById(id).style;
   doc.borderImage = src + ' ' + slice + ' ' + repeat;
@@ -424,7 +423,14 @@ function bordImgSrc(id, src, slice, width, outset, repeat) {
   let len = src.length;
   console.log(src.substr(4, 28));
   document.getElementById('bordImgDiv').src = src.substr(4, len-5);
+}
 
+function bordImgWidth(id, src, slice, width, outset, repeat) {
+  doc = document.getElementById(id).style;
+  doc.borderImage = src + ' ' + slice + ' ' + repeat;
+  doc.borderImageWidth = width;
+
+  document.getElementsByClassName('text')[0].innerHTML = width +';';
 }
 
 function bordRadCont(id, rad, idCont) {
