@@ -223,3 +223,13 @@ body {
 h2 {
   color: rgb(8, 27, 191);
 }
+
+/* flex */
+#flexDiv {
+  display: flex;
+}
+
+#flexDiv p {
+  /* width: 33%;
+  height: 80%; */
+}
