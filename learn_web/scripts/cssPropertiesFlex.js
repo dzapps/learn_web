@@ -14,3 +14,22 @@ function flex(cls, style) {
     doc[j].style.flex = style;
   }
 }
+
+function flexBasis(cls, grow, shrink, basis) {
+  let text = document.getElementsByClassName('text');
+  for (let j=0; j<=text.length; j++) {
+    text[j].innerHTML = basis;
+    document.getElementById('flexBasisExam').style.flex = `${grow} ${shrink} ${basis}`;
+    document.getElementById('flexBasisExam').innerHTML = basis;
+  }
+}
+
+function flexDirection(id, direct) {
+  document.getElementById(id).style.flexDirection = direct;
+  document.getElementsByClassName('text')[0].innerHTML = direct + ';';
+}
+
+function flexFlow(id, direct, wrap) {
+  document.getElementById(id).style.flexFlow = `${direct} ${wrap}`;
+  document.getElementsByClassName('text')[0].innerHTML = direct + ' ' + wrap + ';';
+}

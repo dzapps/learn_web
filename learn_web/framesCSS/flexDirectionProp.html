@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Flex basis</title>
+<title>Flex direction</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -20,7 +20,7 @@
   <div class="note noteCSS descriptionCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The flex-basis property specifies the initial length of a flexible item.
+      The flex-direction property specifies the direction of the flexible items.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -28,7 +28,7 @@
   <div class="note noteCSS note-round-bord">
     Note:<br />
     <div class="note-value">
-       If the element is not a flexible item, the flex-basis property has no effect.
+       If the element is not a flexible item, the flex-direction property has no effect.
     </div>
     <div class="note-value">
        The following browsers need a prefix: Chrome 21.0 and Safari 6.1 (-webkit-), Firefox 18.0 (-moz-).
@@ -53,12 +53,20 @@
       </thead>
       <tbody>
         <tr>
-          <td>number</td>
-          <td>A number specifying how much the item will grow relative to the rest of the flexible items.</td>
+          <td>row</td>
+          <td>Default value. The flexible items are displayed horizontally, as a row.</td>
         </tr>
         <tr>
-          <td>auto</td>
-          <td>A number specifying how much the item will shrink relative to the rest of the flexible items.</td>
+          <td>row-reverse</td>
+          <td>Same as row, but in reverse order.</td>
+        </tr>
+        <tr>
+          <td>column</td>
+          <td>The flexible items are displayed vertically, as a column.</td>
+        </tr>
+        <tr>
+          <td>column-reverse</td>
+          <td>Same as column, but in reverse order.</td>
         </tr>
         <tr>
           <td>initial</td>
@@ -73,37 +81,34 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="flexBasisExamplesBar" class="left-padding;">
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '', '', 'auto')" class="example-button example-rounded-buttons">auto</button>
+    <div id="flexDirectionExamplesBar" class="left-padding;">
+      <a href="#flexDirectionExamplesBar">
+        <button onclick="flexDirection('flexDirectionDiv', 'row')" class="example-button example-rounded-buttons">row</button>
       </a>
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '0', '0', '50px')" class="example-button example-rounded-buttons">50px</button>
+      <a href="#flexDirectionExamplesBar">
+        <button onclick="flexDirection('flexDirectionDiv', 'row-reverse')" class="example-button example-rounded-buttons">row-reverse</button>
       </a>
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '0', '0', '100px')" class="example-button example-rounded-buttons">100px</button>
+      <a href="#flexDirectionExamplesBar">
+        <button onclick="flexDirection('flexDirectionDiv', 'column')" class="example-button example-rounded-buttons">column</button>
       </a>
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '0', '0', '200px')" class="example-button example-rounded-buttons">200px</button>
+      <a href="#flexDirectionExamplesBar">
+        <button onclick="flexDirection('flexDirectionDiv', 'column-reverse')" class="example-button example-rounded-buttons">column-reverse</button>
       </a>
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '0', '0', '700px')" class="example-button example-rounded-buttons">700px</button>
+      <a href="#flexDirectionExamplesBar">
+        <button onclick="flexDirection('flexDirectionDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
       </a>
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '', '','initial')" class="example-button example-rounded-buttons">initial</button>
-      </a>
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '', '', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      <a href="#flexDirectionExamplesBar">
+        <button onclick="flexDirection('flexDirectionDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
       </a>
     </div>
   </div>
 
-  <div id="flexDiv" class="exampleDiv">
-    <p class="flexBasisDivP" style="background-color: blue;">30px</p>
-    <p class="flexBasisDivP" style="background-color: green;">30px</p>
-    <p id="flexBasisExam" class="flexBasisDivP" style="background-color: yellow;"></p>
-    <p class="flexBasisDivP" style="background-color: lightblue;">30px</p>
-    <p class="flexBasisDivP" style="background-color: coral;">30px</p>
+  <div id="flexDirectionDiv" class="exampleDiv">
+    <p class="flexDirectionDivP" style="background-color: blue;">A</p>
+    <p class="flexDirectionDivP" style="background-color: green;">B</p>
+    <p class="flexDirectionDivP" style="background-color: yellow;">C</p>
+    <p class="flexDirectionDivP" style="background-color: lightblue;">D</p>
+    <p class="flexDirectionDivP" style="background-color: coral;">E</p>
   </div>
 
   <div id='animationDivCode'>
@@ -114,37 +119,35 @@
         <span class="left-padding">
           &lt;<span class="brown">p</span>
           <span class="crimson">background-color: </span>blue;&gt;
-          <span class="black">30px</span>
+          <span class="black">A</span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
         <span class="left-padding">
           &lt;<span class="brown">p</span>
           <span class="crimson">background-color: </span>green;&gt;
-          <span class="black">30px</span>
+          <span class="black">B</span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
         <span class="left-padding">
           &lt;<span class="brown">p</span>
-          <span class="purple">id= </span><span class="olive">"example" </span>&gt;
           <span class="crimson">background-color: </span>yellow;&gt;
-          <span class="text black">?</span>
-          <span class="black"></span>
+          <span class="black">C</span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
         <span class="left-padding">
           &lt;<span class="brown">p</span>
           <span class="crimson">background-color: </span>lightblue;&gt;
-          <span class="black">30px</span>
+          <span class="black">D</span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
         <span class="left-padding">
           &lt;<span class="brown">p</span>
           <span class="crimson">background-color: </span>coral;&gt;
-          <span class="black">30px</span>
+          <span class="black">E</span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
@@ -156,33 +159,11 @@
         <span class="brown">div </span><span class="black">{</span><br />
           <p class="blue more-padding" style="margin: 0;">
             <span class="crimson">display: </span>flex;<br />
+            <span class="crimson">flex-direction: </span><span class="text">?;</span><br />
           </p>
         <span class="black left-padding">}</span>
       </p>
     </div>
-
-    <div class="float-borders-none">
-      <p class="blue left-padding" style="margin: 0">
-        <span class="brown">p </span><span class="black">{</span><br />
-          <p class="blue more-padding" style="margin: 0;">
-            <span class="crimson">flex-grow: </span>0<br />
-            <span class="crimson">flex-shrink: </span>0<br />
-            <span class="crimson">flex-basis: </span>30px<br />
-          </p>
-        <span class="black left-padding">}</span>
-      </p>
-    </div>
-
-    <div class="float-borders-none">
-      <p class="blue left-padding" style="margin: 0">
-        <span class="purple">#example </span><span class="black">{</span><br />
-          <p class="blue more-padding" style="margin: 0;">
-            <span class="crimson">flex-basis: </span><span class="text">?;</span><br />
-          </p>
-        <span class="black left-padding">}</span>
-      </p>
-    </div>
-
 
   </div>
   <p style="clear: left;"></p>

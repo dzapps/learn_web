@@ -229,7 +229,22 @@ h2 {
   display: flex;
 }
 
-#flexDiv p {
-  /* width: 33%;
-  height: 80%; */
+#flexDirectionDiv p {
+  margin: 0px;
+  width: 30px;
+  height: 30px;
+}
+
+#flexDirectionDiv {
+  display: flex;
+}
+
+#flexFlowDiv {
+  display: flex;
+}
+
+#flexFlowDiv p {
+  margin: 0px;
+  width: 40px;
+  height: 40px;
 }
