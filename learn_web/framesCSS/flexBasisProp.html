@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Flex</title>
+<title>Flex basis</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -20,7 +20,7 @@
   <div class="note noteCSS descriptionCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The flex property sets the flexible length on flexible items.
+      The flex-basis property specifies the initial length of a flexible item.
     </div>
     <div class="note-value">
       The flex property is a shorthand property for: flex-grow, flex-shrink, flex-basis.
@@ -31,10 +31,13 @@
   <div class="note noteCSS note-round-bord">
     Note:<br />
     <div class="note-value">
-       If the element is not a flexible item, the flex property has no effect.
+       If the element is not a flexible item, the flex-basis property has no effect.
     </div>
     <div class="note-value">
-       The following browsers need a prefix: Chrome 21.0 anc Safari 6.1 (-webkit-), Firefox 18.0 (-moz-), IE/Edge 10.0 (-ms-).
+       The following browsers need a prefix: Chrome 21.0 anc Safari 6.1 (-webkit-), Firefox 18.0 (-moz-).
+    </div>
+    <div class="note-value">
+      Internet Explorer 10 and earlier versions do not support the flex-basis property.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -53,24 +56,12 @@
       </thead>
       <tbody>
         <tr>
-          <td>flex-grow</td>
+          <td>number</td>
           <td>A number specifying how much the item will grow relative to the rest of the flexible items.</td>
         </tr>
         <tr>
-          <td>flex-shrink</td>
-          <td>A number specifying how much the item will shrink relative to the rest of the flexible items.</td>
-        </tr>
-        <tr>
-          <td>flex-basis</td>
-          <td>The length of the item. Legal values: "auto", "inherit", or a number followed by "%", "px", "em" or any other length unit.</td>
-        </tr>
-        <tr>
           <td>auto</td>
-          <td>Same as 1 1 auto.</td>
-        </tr>
-        <tr>
-          <td>none</td>
-          <td>Same as 0 0 auto.</td>
+          <td>A number specifying how much the item will shrink relative to the rest of the flexible items.</td>
         </tr>
         <tr>
           <td>initial</td>
