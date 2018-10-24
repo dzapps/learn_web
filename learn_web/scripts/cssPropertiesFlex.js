@@ -36,5 +36,10 @@ function flexFlow(id, direct, wrap) {
 
 function flexGrow(id, grow) {
   document.getElementById(id).style.flexGrow = grow;
-  document.getElementsByClassName('text')[0].innerHTML = grow + ';';
+  document.getElementsByClassName('text')[0].innerHTML = grow;
+}
+
+function flexShrink(id, shrink) {
+  document.getElementById(id).style.flexShrink = shrink;
+  document.getElementsByClassName('text')[0].innerHTML = shrink;
 }
