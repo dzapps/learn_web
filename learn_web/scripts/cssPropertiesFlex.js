@@ -43,3 +43,8 @@ function flexShrink(id, shrink) {
   document.getElementById(id).style.flexShrink = shrink;
   document.getElementsByClassName('text')[0].innerHTML = shrink;
 }
+
+function flexWrap(id, wrap) {
+  document.getElementById(id).style.flexWrap = wrap;
+  document.getElementsByClassName('text')[0].innerHTML = wrap + ';';
+}

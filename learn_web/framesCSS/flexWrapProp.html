@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Flex shrink</title>
+<title>Flex wrap</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -20,7 +20,7 @@
   <div class="note noteCSS descriptionCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container.
+      The flex-wrap property specifies whether the flexible items should wrap or not.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -28,10 +28,10 @@
   <div class="note noteCSS note-round-bord">
     Note:<br />
     <div class="note-value">
-       If the element is not a flexible item, the flex-shrink property has no effect.
+      If the elements are not flexible items, the flex-wrap property has no effect.
     </div>
     <div class="note-value">
-       The following browsers need a prefix: Chrome 21.0 and Safari 6.1 (-webkit-), Firefox 18.0 (-moz-).
+      The following browsers need a prefix: Chrome 21.0 and Safari 6.1 (-webkit-), Firefox 18.0 (-moz-).
     </div>
     <div class="note-value">
       Internet Explorer 10 and earlier versions do not support the flex-basis property.
@@ -53,8 +53,16 @@
       </thead>
       <tbody>
         <tr>
-          <td>number</td>
-          <td>A number specifying how much the item will shrink relative to the rest of the flexible items. Default value is 1.</td>
+          <td>nowrap</td>
+          <td>Default value. Specifies that the flexible items will not wrap.</td>
+        </tr>
+        <tr>
+          <td>wrap</td>
+          <td>Specifies that the flexible items will wrap if necessary.</td>
+        </tr>
+        <tr>
+          <td>wrap-reverse</td>
+          <td>Specifies that the flexible items will wrap, if necessary, in reverse order.</td>
         </tr>
         <tr>
           <td>initial</td>
@@ -69,34 +77,31 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="flexShrinkExamplesBar" class="left-padding;">
-      <a href="#flexShrinkExamplesBar">
-        <button onclick="flexShrink('flexShrinkExam', '1')" class="example-button example-rounded-buttons">1</button>
+    <div id="flexDirectionExamplesBar" class="left-padding;">
+      <a href="#flexDirectionExamplesBar">
+        <button onclick="flexWrap('flexFlowDiv', 'nowrap')" class="example-button example-rounded-buttons">nowrap</button>
       </a>
-      <a href="#flexShrinkExamplesBar">
-        <button onclick="flexShrink('flexShrinkExam', '3')" class="example-button example-rounded-buttons">3</button>
+      <a href="#flexDirectionExamplesBar">
+        <button onclick="flexWrap('flexFlowDiv', 'wrap')" class="example-button example-rounded-buttons">wrap</button>
       </a>
-      <a href="#flexShrinkExamplesBar">
-        <button onclick="flexShrink('flexShrinkExam', '10')" class="example-button example-rounded-buttons">10</button>
+      <a href="#flexDirectionExamplesBar">
+        <button onclick="flexWrap('flexFlowDiv', 'wrap-reverse')" class="example-button example-rounded-buttons">wrap-reverse</button>
       </a>
-      <a href="#flexShrinkExamplesBar">
-        <button onclick="flexShrink('flexShrinkExam', '20')" class="example-button example-rounded-buttons">20</button>
+      <a href="#flexDirectionExamplesBar">
+        <button onclick="flexWrap('flexFlowDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
       </a>
-      <a href="#flexShrinkExamplesBar">
-        <button onclick="flexShrink('flexShrinkExam', 'initial')" class="example-button example-rounded-buttons">initial</button>
-      </a>
-      <a href="#flexShrinkExamplesBar">
-        <button onclick="flexShrink('flexShrinkExam', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      <a href="#flexDirectionExamplesBar">
+        <button onclick="flexWrap('flexFlowDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
       </a>
     </div>
   </div>
 
-  <div id="flexShrinkDiv" class="exampleDiv">
-    <p class="flexShrinkDivP" style="background-color: blue;"></p>
-    <p class="flexShrinkDivP" style="background-color: green;"></p>
-    <p id="flexShrinkExam" class="flexShrinkDivP" style="background-color: yellow;"></p>
-    <p class="flexShrinkDivP" style="background-color: lightblue;"></p>
-    <p class="flexShrinkDivP" style="background-color: coral;"></p>
+  <div id="flexFlowDiv" class="exampleDiv">
+    <p class="flexFlowDivP" style="background-color: blue;">A</p>
+    <p class="flexFlowDivP" style="background-color: green;">B</p>
+    <p class="flexFlowDivP" style="background-color: yellow;">C</p>
+    <p class="flexFlowDivP" style="background-color: lightblue;">D</p>
+    <p class="flexFlowDivP" style="background-color: coral;">E</p>
   </div>
 
   <div id='animationDivCode'>
@@ -107,36 +112,35 @@
         <span class="left-padding">
           &lt;<span class="brown">p</span>
           <span class="crimson">background-color: </span>blue;&gt;
-          <span class="black"></span>
+          <span class="black">A</span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
         <span class="left-padding">
           &lt;<span class="brown">p</span>
           <span class="crimson">background-color: </span>green;&gt;
-          <span class="black"></span>
+          <span class="black">B</span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
         <span class="left-padding">
           &lt;<span class="brown">p</span>
-          <span class="purple">id=</span><span class="olive">"example" </span>&gt;
           <span class="crimson">background-color: </span>yellow;&gt;
-          <span class="black"></span>
+          <span class="black">C</span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
         <span class="left-padding">
           &lt;<span class="brown">p</span>
           <span class="crimson">background-color: </span>lightblue;&gt;
-          <span class="black"></span>
+          <span class="black">D</span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
         <span class="left-padding">
           &lt;<span class="brown">p</span>
           <span class="crimson">background-color: </span>coral;&gt;
-          <span class="black"></span>
+          <span class="black">E</span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
@@ -148,24 +152,9 @@
         <span class="brown">div </span><span class="black">{</span><br />
           <p class="blue more-padding" style="margin: 0;">
             <span class="crimson">display: </span>flex;<br />
+            <span class="crimson">flex-wrap: </span><span class="text">?;</span><br />
           </p>
         <span class="black left-padding">}</span>
-      </p>
-    </div>
-    <!-- <p style="clear: left;"></p> -->
-
-    <div class="float-borders-none">
-      <p class="blue left-padding" style="margin: 0">
-        <span class="brown">div </span><span class="brown">p </span><span class="black">{</span><br />
-        <span class="left-padding crimson">flex: </span>1 1 200px;<br />
-        <span class="black">}</span>
-      </p>
-    </div>
-
-    <div class="float-borders-none">
-      <p class="blue left-padding" style="margin: 0">
-        <span class="purple">#example </span><span class="black">{</span><br />
-        <span class="left-padding crimson">flex-shrink: </span><span class="text">1</span>;<br /><span class="black">}</span>
       </p>
     </div>
 
