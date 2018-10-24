@@ -33,3 +33,8 @@ function flexFlow(id, direct, wrap) {
   document.getElementById(id).style.flexFlow = `${direct} ${wrap}`;
   document.getElementsByClassName('text')[0].innerHTML = direct + ' ' + wrap + ';';
 }
+
+function flexGrow(id, grow) {
+  document.getElementById(id).style.flexGrow = grow;
+  document.getElementsByClassName('text')[0].innerHTML = grow + ';';
+}

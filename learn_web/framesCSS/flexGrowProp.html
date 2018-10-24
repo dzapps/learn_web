@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Flex basis</title>
+<title>Flex grow</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -20,7 +20,7 @@
   <div class="note noteCSS descriptionCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The flex-basis property specifies the initial length of a flexible item.
+      The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -28,7 +28,7 @@
   <div class="note noteCSS note-round-bord">
     Note:<br />
     <div class="note-value">
-       If the element is not a flexible item, the flex-basis property has no effect.
+       If the element is not a flexible item, the flex-grow property has no effect.
     </div>
     <div class="note-value">
        The following browsers need a prefix: Chrome 21.0 and Safari 6.1 (-webkit-), Firefox 18.0 (-moz-).
@@ -57,10 +57,6 @@
           <td>A number specifying how much the item will grow relative to the rest of the flexible items.</td>
         </tr>
         <tr>
-          <td>auto</td>
-          <td>A number specifying how much the item will shrink relative to the rest of the flexible items.</td>
-        </tr>
-        <tr>
           <td>initial</td>
           <td>Sets this property to its default value.</td>
         </tr>
@@ -73,37 +69,34 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="flexBasisExamplesBar" class="left-padding;">
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '', '', 'auto')" class="example-button example-rounded-buttons">auto</button>
+    <div id="flexGrowExamplesBar" class="left-padding;">
+      <a href="#flexGrowExamplesBar">
+        <button onclick="flexGrow('flexGrowDExam', '1')" class="example-button example-rounded-buttons">1</button>
       </a>
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '0', '0', '50px')" class="example-button example-rounded-buttons">50px</button>
+      <a href="#flexGrowExamplesBar">
+        <button onclick="flexGrow('flexGrowDExam', '3')" class="example-button example-rounded-buttons">3</button>
       </a>
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '0', '0', '100px')" class="example-button example-rounded-buttons">100px</button>
+      <a href="#flexGrowExamplesBar">
+        <button onclick="flexGrow('flexGrowDExam', '10')" class="example-button example-rounded-buttons">10</button>
       </a>
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '0', '0', '200px')" class="example-button example-rounded-buttons">200px</button>
+      <a href="#flexGrowExamplesBar">
+        <button onclick="flexGrow('flexGrowDExam', '20')" class="example-button example-rounded-buttons">20</button>
       </a>
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '0', '0', '700px')" class="example-button example-rounded-buttons">700px</button>
+      <a href="#flexGrowExamplesBar">
+        <button onclick="flexGrow('flexGrowDExam', 'initial')" class="example-button example-rounded-buttons">initial</button>
       </a>
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '', '','initial')" class="example-button example-rounded-buttons">initial</button>
-      </a>
-      <a href="#flexBasisExamplesBar">
-        <button onclick="flexBasis('flexBasisDivP', '', '', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      <a href="#flexGrowExamplesBar">
+        <button onclick="flexGrow('flexGrowDExam', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
       </a>
     </div>
   </div>
 
   <div id="flexDiv" class="exampleDiv">
-    <p class="flexBasisDivP" style="background-color: blue;">30px</p>
-    <p class="flexBasisDivP" style="background-color: green;">30px</p>
-    <p id="flexBasisExam" class="flexBasisDivP" style="background-color: yellow;"></p>
-    <p class="flexBasisDivP" style="background-color: lightblue;">30px</p>
-    <p class="flexBasisDivP" style="background-color: coral;">30px</p>
+    <p class="flexGrowDivP" style="background-color: blue;"></p>
+    <p class="flexGrowDivP" style="background-color: green;"></p>
+    <p id="flexGrowExam" class="flexGrowDivP" style="background-color: yellow;"></p>
+    <p class="flexGrowDivP" style="background-color: lightblue;"></p>
+    <p class="flexGrowDivP" style="background-color: coral;"></p>
   </div>
 
   <div id='animationDivCode'>
@@ -114,14 +107,14 @@
         <span class="left-padding">
           &lt;<span class="brown">p</span>
           <span class="crimson">background-color: </span>blue;&gt;
-          <span class="black">30px</span>
+          <span class="black"></span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
         <span class="left-padding">
           &lt;<span class="brown">p</span>
           <span class="crimson">background-color: </span>green;&gt;
-          <span class="black">30px</span>
+          <span class="black"></span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
@@ -129,7 +122,6 @@
           &lt;<span class="brown">p</span>
           <span class="purple">id=</span><span class="olive">"example" </span>&gt;
           <span class="crimson">background-color: </span>yellow;&gt;
-          <span class="text black">?</span>
           <span class="black"></span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
@@ -137,14 +129,14 @@
         <span class="left-padding">
           &lt;<span class="brown">p</span>
           <span class="crimson">background-color: </span>lightblue;&gt;
-          <span class="black">30px</span>
+          <span class="black"></span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
         <span class="left-padding">
           &lt;<span class="brown">p</span>
           <span class="crimson">background-color: </span>coral;&gt;
-          <span class="black">30px</span>
+          <span class="black"></span>
           &lt;<span class="brown">/p</span>&gt;
         </span><br />
 
@@ -163,23 +155,21 @@
 
     <div class="float-borders-none">
       <p class="blue left-padding" style="margin: 0">
-        <span class="brown">p </span><span class="black">{</span><br />
-          <p class="blue more-padding" style="margin: 0;">
-            <span class="crimson">flex-grow: </span>0<br />
-            <span class="crimson">flex-shrink: </span>0<br />
-            <span class="crimson">flex-basis: </span>30px<br />
-          </p>
-        <span class="black left-padding">}</span>
-      </p>
-    </div>
-
-    <div class="float-borders-none">
-      <p class="blue left-padding" style="margin: 0">
-        <span class="purple">#example </span><span class="black">{</span><br />
-          <p class="blue more-padding" style="margin: 0;">
-            <span class="crimson">flex-basis: </span><span class="text">?;</span><br />
-          </p>
-        <span class="black left-padding">}</span>
+        <span class="brown">div </span>
+        <span class="brown">p:</span><span class="olive">nth-of-type</span>(1)
+        <span class="black">{</span><span class="crimson">flex-grow: </span>1;<span class="black">}</span><br />
+        <span class="brown">div </span>
+        <span class="brown">p:</span><span class="olive">nth-of-type</span>(2)
+        <span class="black">{</span><span class="crimson">flex-grow: </span>1;<span class="black">}</span><br />
+        <span class="brown">div </span>
+        <span class="brown">p:</span><span class="olive">nth-of-type</span>(3)
+        <span class="black">{</span><span class="crimson">flex-grow: </span><span class="text">1</span>;<span class="black">}</span><br />
+        <span class="brown">div </span>
+        <span class="brown">p:</span><span class="olive">nth-of-type</span>(4)
+        <span class="black">{</span><span class="crimson">flex-grow: </span>1;<span class="black">}</span><br />
+        <span class="brown">div </span>
+        <span class="brown">p:</span><span class="olive">nth-of-type</span>(5)
+        <span class="black">{</span><span class="crimson">flex-grow: </span>1;<span class="black">}</span><br />
       </p>
     </div>
 
