@@ -272,3 +272,13 @@ h2 {
   width: 200px;
   height: 30px;
 }
+
+#caretColorDiv {
+  text-align: center;
+}
+
+#caretColor {
+  padding: 10px;
+  font-size: 30px;
+  margin-top: 40px;
+}
