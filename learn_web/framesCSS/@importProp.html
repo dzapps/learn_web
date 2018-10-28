@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<title>@import</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropImport.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/main_window_css.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The @import rule allows you to import a style sheet into another style sheet..
+    </div>
+    <div class="note-value">
+      The @import rule must be at the top of the document (but after any @charset declaration).
+    </div>
+    <div class="note-value">
+      The @import rule also supports media queries, so you can allow the import to be media-dependent.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>url|string</td>
+          <td>A url or a string representing the location of the resource to import.
+            The url may be absolute or relative.
+          </td>
+        </tr>
+        <tr>
+          <td>list-of-mediaqueries</td>
+          <td>A comma-separated list of media queries conditioning the application of the CSS rules
+            defined in the linked URL.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="importsExamplesBar" class="left-padding;">
+      <a href="#importsExamplesBar">
+        <button onclick="imports('animationDivCode', ' \'example.css;\'')" class="example-button example-rounded-buttons">string</button>
+      </a>
+      <a href="#importsExamplesBar">
+        <button onclick="imports('animationDivCode', ' url(\'example.css\');')" class="example-button example-rounded-buttons">url</button>
+      </a>
+      <a href="#importsExamplesBar">
+        <button onclick="importsExam('animationDivCodeWithText', ' \'printstyle.css\' print;', 'Import the \'printstyle.css\' style sheet ONLY if the media is print:')" class="example-button example-rounded-buttons">example1</button>
+      </a>
+      <a href="#importsExamplesBar">
+        <button onclick="importsExam('animationDivCodeWithText', ' \'mobstyle.css\' screen and (max-width: 768px);', 'Import the \'mobstyle.css\' style sheet ONLY if the media is screen and the viewport is maximum 768 pixels:')" class="example-button example-rounded-buttons">example2</button>
+      </a>
+    </div>
+
+  </div>
+
+  <div id="animationDivCode" class="more-padding borders-none" style="display: none;">
+    <span class="purple">@import</span><span class="text olive"> "UTF-8";</span>
+  </div>
+
+  <div id="animationDivCodeWithText" class="code more-padding borders-none" style="display: none;">
+    <span class="addText"></span><br /><br />
+    <span class="purple">@import</span><span class="text olive"> "UTF-8";</span>
+  </div>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

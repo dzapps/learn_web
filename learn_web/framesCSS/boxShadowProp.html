@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<title>Box decoration break</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/box.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/box.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The box-shadow property attaches one or more shadows to an element.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      In Safari (on PC) the color parameter is required. If you do not specify the color, the shadow is not displayed at all.
+    </div>
+    <div class="note-value">
+      The following browsers need a prefix: Chrome 22.0 (-webkit-), IE/Edge (not support), Opera 15.0 (-o-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>Default value. No shadow is displayed.</td>
+        </tr>
+        <tr>
+          <td>h-offcet</td>
+          <td>Required. The horizontal offset of the shadow.
+            A positive value puts the shadow on the right side of the box,
+            a negative value puts the shadow on the left side of the box.
+          </td>
+        </tr>
+        <tr>
+          <td>v-offcet</td>
+          <td>Required. The vertical offset of the shadow.
+            A positive value puts the shadow below the box,
+            a negative value puts the shadow above the box.
+          </td>
+        </tr>
+        <tr>
+          <td>blur</td>
+          <td>Optional. The blur radius. The higher the number, the more blurred the shadow will be.</td>
+        </tr>
+        <tr>
+          <td>spread</td>
+          <td>Optional. The spread radius. A positive value increases the size of the shadow,
+            a negative value decreases the size of the shadow.
+          </td>
+        </tr>
+        <tr>
+          <td>color</td>
+          <td>Optional. The color of the shadow. The default value is the text color.
+            Look at CSS Color Values for a complete list of possible color values.
+          </td>
+        </tr>
+        <tr>
+          <td>inset</td>
+          <td>Optional. Changes the shadow from an outer shadow (outset) to an inner shadow.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="boxShadowExamplesBar" class="left-padding;">
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', 'none', '', '', '', '', '')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="showBoxShadow('boxShadowHOffset')" class="example-button example-rounded-buttons">h-offcet</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="showBoxShadow('boxShadowVOffset')" class="example-button example-rounded-buttons">v-offcet</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="showBoxShadow('boxShadowBlur')" class="example-button example-rounded-buttons">blur</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="showBoxShadow('boxShadowSpread')" class="example-button example-rounded-buttons">spread</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="showBoxShadow('boxShadowColor')" class="example-button example-rounded-buttons">color</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="showBoxShadow('boxShadowInset')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inset</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="showBoxShadow('boxShadowMult')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 0px;">multiple shadow</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', 'initial', '', '', '', '', '')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">initial</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', 'inherit', '', '', '', '', '')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+
+    <div id="boxShadowHOffset" class="show more-padding" style="display: none;">
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '5px', '0px', '0px', '0px', 'darkblue', '')" class="example-double-level-button example-double-level-rounded-buttons">h-offcet 5px</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '0px', '0px', '0px', 'darkblue', '',)" class="example-double-level-button example-double-level-rounded-buttons">h-offcet 10px</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '15px', '0px', '0px', '0px', 'darkblue', '',)" class="example-double-level-button example-double-level-rounded-buttons">h-offcet 15px</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '20px', '0px', '0px', '0px', 'darkblue', '',)" class="example-double-level-button example-double-level-rounded-buttons">h-offcet 20px</button>
+      </a>
+    </div>
+
+    <div id="boxShadowVOffset" class="show more-padding" style="display: none;">
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '0px', '5px', '0px', '0px', 'darkblue', '')" class="example-double-level-button example-double-level-rounded-buttons">v-offcet 5px</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '0px', '10px', '0px', '0px', 'darkblue', '',)" class="example-double-level-button example-double-level-rounded-buttons">v-offcet 10px</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '0px', '15px', '0px', '0px', 'darkblue', '',)" class="example-double-level-button example-double-level-rounded-buttons">v-offcet 15px</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '0px', '20px', '0px', '0px', 'darkblue', '',)" class="example-double-level-button example-double-level-rounded-buttons">v-offcet 20px</button>
+      </a>
+    </div>
+
+    <div id="boxShadowBlur" class="show more-padding" style="display: none;">
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '10px', '5px', '0px', 'darkblue', '')" class="example-double-level-button example-double-level-rounded-buttons">blur 5px</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '10px', '10px', '0px', 'darkblue', '',)" class="example-double-level-button example-double-level-rounded-buttons">blur 10px</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '10px', '15px', '0px', 'darkblue', '',)" class="example-double-level-button example-double-level-rounded-buttons">blur 15px</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '10px', '20px', '0px', 'darkblue', '',)" class="example-double-level-button example-double-level-rounded-buttons">blur 20px</button>
+      </a>
+    </div>
+
+    <div id="boxShadowSpread" class="show more-padding" style="display: none;">
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '10px', '10px', '5px', 'darkblue', '')" class="example-double-level-button example-double-level-rounded-buttons">spread 5px</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '10px', '10px', '10px', 'darkblue', '')" class="example-double-level-button example-double-level-rounded-buttons">spread 10px</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '10px', '10px', '15px', 'darkblue', '')" class="example-double-level-button example-double-level-rounded-buttons">spread 15px</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '10px', '10px', '20px', 'darkblue', '')" class="example-double-level-button example-double-level-rounded-buttons">spread 20px</button>
+      </a>
+    </div>
+
+    <div id="boxShadowColor" class="show more-padding" style="display: none;">
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '10px', '10px', '10px', 'darkblue', '')" class="example-double-level-button example-double-level-rounded-buttons">darkblue</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '10px', '10px', '10px', 'darkslateblue', '')" class="example-double-level-button example-double-level-rounded-buttons">darkslateblue</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '10px', '10px', '10px', 'purple', '')" class="example-double-level-button example-double-level-rounded-buttons">purple</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '10px', '10px', '10px', 'rgb(20, 118, 221)', '')" class="example-double-level-button example-double-level-rounded-buttons">rgb(20, 118, 221)</button>
+      </a>
+    </div>
+
+    <div id="boxShadowInset" class="show more-padding" style="display: none;">
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '5px', '5px', '10px', '10px', 'darkblue', 'inset')" class="example-double-level-button example-double-level-rounded-buttons">5px 5px inset</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '10px', '10px', '10px', '10px', 'darkblue', 'inset')" class="example-double-level-button example-double-level-rounded-buttons">10px 10px inset</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '15px', '15px', '10px', '10px', 'darkblue', 'inset')" class="example-double-level-button example-double-level-rounded-buttons">15px 15px inset</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadow('boxShadowDivP', '20px', '20px', '10px', '10px', 'darkblue', 'inset')" class="example-double-level-button example-double-level-rounded-buttons">20px 20px inset</button>
+      </a>
+    </div>
+
+    <div id="boxShadowMult" class="show more-padding" style="display: none;">
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadowMult('boxShadowDivP', '5px', '5px', '', 'darkblue', '10px', '10px', '', 'purple', '15px', '15px', '', 'darkslateblue')" class="example-double-level-button example-double-level-rounded-buttons">without blur</button>
+      </a>
+      <a href="#boxShadowExamplesBar">
+        <button onclick="boxShadowMult('boxShadowDivP', '5px', '5px', '5px', 'darkblue', '15px', '15px', '5px', 'purple', '25px', '25px', '5px', 'darkslateblue')" class="example-double-level-button example-double-level-rounded-buttons">with blur</button>
+      </a>
+    </div>
+
+  </div>
+
+  <div id="boxShadowDiv" class="exampleDiv">
+    <p id="boxShadowDivP">CSS is easy to learn</p>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span><br />
+        <span class="left-padding">&lt;<span class="brown">p</span>&gt;</span>
+        <span class="black">CSS </span><span class="black">is </span>
+        <span class="black">easy </span><span class="black">to learn</span><span>&lt;
+        <span class="brown">/p</span>&gt;</span><br />
+      &lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">p </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">width: </span><span>180px;</span><br />
+            <span class="crimson">text-align: </span><span>center;</span><br />
+            <span class="crimson">border: </span><span>3px solid blue;</span><br />
+            <span class="crimson">margin: </span><span>25px auto 0px;</span><br />
+            <span class="crimson">border-radius: </span><span>16px;</span><br />
+            <span class="crimson">font-size: </span><span>30px;</span><br />
+            <span class="crimson">line-height: </span><span>1.5;</span><br />
+            <span class="crimson">box-shadow: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

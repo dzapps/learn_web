@@ -186,9 +186,4 @@ button:hover {
 
 .link-buttons:active {
   background-color: green;
-  /* margin-top: -4px;
-  margin-bottom: -2px;
-  margin-left: 2px;
-  margin-right: -2px;
-  box-shadow: 2px -2px 0px 0px rgba(0,0,0,0.5); */
 }

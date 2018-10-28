@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<title>Box decoration break</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/box.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/box.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The box-decoration-break property specifies how the background, padding, border, border-image, box-shadow, margin,
+       and clip-path of an element is applied when the box for the element is fragmented.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      The following browsers need a prefix: Chrome 22.0 (-webkit-), IE/Edge (not support), Opera 15.0 (-o-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>slice</td>
+          <td>Default. Box decorations are applied to the element
+            as a whole and break at the edges of the element fragments.
+          </td>
+        </tr>
+        <tr>
+          <td>clone</td>
+          <td>Box decorations apply to each fragment of the element as if the fragments were individual elements.
+            Borders wrap the four edges of each fragment of the element,
+            and backgrounds are redrawn in full for each fragment.
+          </td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="boxDecorBreakExamplesBar" class="left-padding;">
+      <a href="#boxDecorBreakExamplesBar">
+        <button onclick="boxDecorBreak('boxDivP', 'slice')" class="example-button example-rounded-buttons">slice</button>
+      </a>
+      <a href="#boxDecorBreakExamplesBar">
+        <button onclick="boxDecorBreak('boxDivP', 'clone')" class="example-button example-rounded-buttons">clone</button>
+      </a>
+      <a href="#boxDecorBreakExamplesBar">
+        <button onclick="boxDecorBreak('boxDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#boxDecorBreakExamplesBar">
+        <button onclick="boxDecorBreak('boxDivP', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="boxDiv" class="exampleDiv" style="padding: 10px;">
+    <span id="boxDivP">CSS <br />is <br />easy <br />to learn</span>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span><br />
+        <span class="left-padding">&lt;<span class="brown">span</span>&gt;</span>
+        <span class="black">CSS</span><span class="brown">br /</span>&gt;
+        <span class="black">is</span>&lt;<span class="brown">br /</span>&gt;
+        <span class="black">easy</span><span class="brown">br /</span>&gt;
+        <span class="black">to learn</span><span>&lt;<span class="brown">/span</span>&gt;</span><br />
+      &lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">span </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border: </span><span>3px solid red;</span><br />
+            <span class="crimson">padding: </span><span>0em 1em;</span><br />
+            <span class="crimson">border-radius: </span><span>16px;</span><br />
+            <span class="crimson">font-size: </span><span>20px;</span><br />
+            <span class="crimson">line-height: </span><span>1.5;</span><br />
+            <span class="crimson">box-decoration-break: </span><span class="text">?;</span><br />
+
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

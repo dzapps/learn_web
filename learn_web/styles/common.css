@@ -13,9 +13,9 @@ div {
 
 #logos {
   position: relative;
-  left: 8px;
+  padding-left: 30px;
   width: 370px;
-  margin: 3em auto;
+  margin: 2.5em auto;
 }
 
 .mainBorder {
