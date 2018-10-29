@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<title>Flex basis</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesFlex.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/flex.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The flex-basis property specifies the initial length of a flexible item.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+       If the element is not a flexible item, the flex-basis property has no effect.
+    </div>
+    <div class="note-value">
+       The following browsers need a prefix: Chrome 21.0 and Safari 6.1 (-webkit-), Firefox 18.0 (-moz-).
+    </div>
+    <div class="note-value">
+      Internet Explorer 10 and earlier versions do not support the flex-basis property.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>number</td>
+          <td>A number specifying how much the item will grow relative to the rest of the flexible items.</td>
+        </tr>
+        <tr>
+          <td>auto</td>
+          <td>A number specifying how much the item will shrink relative to the rest of the flexible items.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="flexBasisExamplesBar" class="left-padding;">
+      <a href="#flexBasisExamplesBar">
+        <button onclick="flexBasis('flexBasisDivP', '', '', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#flexBasisExamplesBar">
+        <button onclick="flexBasis('flexBasisDivP', '0', '0', '50px')" class="example-button example-rounded-buttons">50px</button>
+      </a>
+      <a href="#flexBasisExamplesBar">
+        <button onclick="flexBasis('flexBasisDivP', '0', '0', '100px')" class="example-button example-rounded-buttons">100px</button>
+      </a>
+      <a href="#flexBasisExamplesBar">
+        <button onclick="flexBasis('flexBasisDivP', '0', '0', '200px')" class="example-button example-rounded-buttons">200px</button>
+      </a>
+      <a href="#flexBasisExamplesBar">
+        <button onclick="flexBasis('flexBasisDivP', '0', '0', '700px')" class="example-button example-rounded-buttons">700px</button>
+      </a>
+      <a href="#flexBasisExamplesBar">
+        <button onclick="flexBasis('flexBasisDivP', '', '','initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#flexBasisExamplesBar">
+        <button onclick="flexBasis('flexBasisDivP', '', '', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="flexDiv" class="exampleDiv">
+    <p class="flexBasisDivP" style="background-color: blue;">30px</p>
+    <p class="flexBasisDivP" style="background-color: green;">30px</p>
+    <p id="flexBasisExam" class="flexBasisDivP" style="background-color: yellow;"></p>
+    <p class="flexBasisDivP" style="background-color: lightblue;">30px</p>
+    <p class="flexBasisDivP" style="background-color: coral;">30px</p>
+  </div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+
+        <span class="left-padding">
+          &lt;<span class="brown">p</span>
+          <span class="crimson">background-color: </span>blue;&gt;
+          <span class="black">30px</span>
+          &lt;<span class="brown">/p</span>&gt;
+        </span><br />
+
+        <span class="left-padding">
+          &lt;<span class="brown">p</span>
+          <span class="crimson">background-color: </span>green;&gt;
+          <span class="black">30px</span>
+          &lt;<span class="brown">/p</span>&gt;
+        </span><br />
+
+        <span class="left-padding">
+          &lt;<span class="brown">p</span>
+          <span class="purple">id=</span><span class="olive">"example" </span>&gt;
+          <span class="crimson">background-color: </span>yellow;&gt;
+          <span class="text black">?</span>
+          <span class="black"></span>
+          &lt;<span class="brown">/p</span>&gt;
+        </span><br />
+
+        <span class="left-padding">
+          &lt;<span class="brown">p</span>
+          <span class="crimson">background-color: </span>lightblue;&gt;
+          <span class="black">30px</span>
+          &lt;<span class="brown">/p</span>&gt;
+        </span><br />
+
+        <span class="left-padding">
+          &lt;<span class="brown">p</span>
+          <span class="crimson">background-color: </span>coral;&gt;
+          <span class="black">30px</span>
+          &lt;<span class="brown">/p</span>&gt;
+        </span><br />
+
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">display: </span>flex;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">p </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">flex-grow: </span>0<br />
+            <span class="crimson">flex-shrink: </span>0<br />
+            <span class="crimson">flex-basis: </span>30px<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">#example </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">flex-basis: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

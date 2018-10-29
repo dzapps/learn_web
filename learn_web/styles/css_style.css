@@ -64,7 +64,7 @@ body {
 }
 
 .attr-list-css td:nth-child(1) {
-  width: 15%;
+  width: 20%;
 }
 
 .attr-list-css tr:nth-child(even) {
@@ -317,4 +317,13 @@ h2 {
   border: 3px solid blue;
   border-radius: 16px;
   font-size: 30px;
+}
+
+#clipImg {
+  position: absolute;
+}
+
+#colorDiv p{
+  font-size: 40px;
+  text-align: center;
 }
