@@ -26,3 +26,8 @@ function boxShadowMult(id, h, v, blur, color, h2, v2, blur2, color2, h3, v3, blu
   document.getElementById(id).style.boxShadow = data;
   document.getElementsByClassName('text')[0].innerHTML = data + ';';
 }
+
+function boxSizing(id, sizing) {
+  document.getElementById(id).style.boxSizing = sizing;
+  document.getElementsByClassName('text')[0].innerHTML = sizing + ';';
+}

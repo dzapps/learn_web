@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<title>Box decoration break</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/box.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/box.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The box-sizing property defines how the width and height of an element are calculated:
+      should they include padding and borders, or not.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      The following browsers need a prefix: Chrome 4.0 and Safari 3.2 (-webkit-), IE/Edge (not support), Firefox 2.0 (-moz-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>content-box</td>
+          <td>Default. The width and height properties (and min/max properties) includes only the content.
+            Border and padding are not included.
+          </td>
+        </tr>
+        <tr>
+          <td>border-box</td>
+          <td>The width and height properties (and min/max properties) includes content, padding and border.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="boxSizingExamplesBar" class="left-padding;">
+      <a href="#boxSizingExamplesBar">
+        <button onclick="boxSizing('boxSizingDivP', 'content-box')" class="example-button example-rounded-buttons">content-box</button>
+      </a>
+      <a href="#boxSizingExamplesBar">
+        <button onclick="boxSizing('boxSizingDivP', 'border-box')" class="example-button example-rounded-buttons">border-box</button>
+      </a>
+      <a href="#boxSizingExamplesBar">
+        <button onclick="boxSizing('boxSizingDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#boxSizingExamplesBar">
+        <button onclick="boxSizing('boxSizingDivP', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="boxSizingDiv" class="exampleDiv" style="padding: 10px;">
+    <p id="boxSizingDivP">CSS is easy to learn</p>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span><br />
+        <span class="left-padding">&lt;<span class="brown">span</span>&gt;</span>
+        <span class="black">CSS </span><span class="black">is </span>
+        <span class="black">easy </span><span class="black">to learn</span>
+        <span>&lt;<span class="brown">/span</span>&gt;</span><br />
+      &lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">span </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">width: </span><span>300px;</span><br />
+            <span class="crimson">text-align: </span><span>center;</span><br />
+            <span class="crimson">margin: </span><span>45px auto 0px;</span><br />
+            <span class="crimson">padding: </span><span>10px 50px;</span><br />
+            <span class="crimson">border: </span><span>3px solid red;</span><br />
+            <span class="crimson">border-radius: </span><span>16px;</span><br />
+            <span class="crimson">font-size: </span><span>30px;</span><br />
+            <span class="crimson">box-sizing: </span><span class="text">?;</span><br />
+
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
