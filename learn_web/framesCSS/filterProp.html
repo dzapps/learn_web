@@ -16,7 +16,7 @@
 <body>
 
   <div class="frameWindow">
-  <p><a href="../pages/border.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <p><a href="../pages/main_window_css.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
   <div class="note noteCSS descriptionCSS note-round-bord">
     Description:<br />
     <div class="note-value">
@@ -83,6 +83,7 @@
         </tr>
         <tr>
           <td>drop-shadow(h-shadow v-shadow blur spread color)</td>
+          Chrome, Safari and Opera, and maybe other browsers, do not support spread property; it will not render if added.
           <td>This filter is similar to the box-shadow property.</td>
         </tr>
         <tr>
@@ -160,7 +161,7 @@
         <button onclick="filter('filterImg', 'contrast(80%)')" class="example-button example-rounded-buttons">contrast(80%)</button>
       </a>
       <a href="#filterExamplesBar">
-        <button onclick="filter('filterImg', 'drop-shadow(10px 10px 10px 10px blue)')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">drop-shadow(10px 10px 10px 10px blue)</button>
+        <button onclick="filter('filterImg', 'drop-shadow(10px 10px 10px blue)')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">drop-shadow(10px 10px 10px blue)</button>
       </a>
       <a href="#filterExamplesBar">
         <button onclick="filter('filterImg', 'grayscale(80%)')" class="example-button example-rounded-buttons">grayscale(80%)</button>
@@ -190,14 +191,14 @@
   </div>
 
   <div class="exampleDiv" style="overflow: hidden;">
-    <img id="filterImg" src="../images/vasserman_big.jpg" alt="vasserman_big"/>
+    <img id="filterImg" src="../images/vasserman_thinking.gif" alt="vasserman_big"/>
   </div>
 
   <div id='animationDivCode'>
     <div class="code blue float-borders-none">
       &lt;<span class="brown">div</span>&gt;<span><br />
         <span class="left-padding">&lt;<span class="brown">img</span>
-        <span class="crimson">src=</span>"vasserman_big.jpg"
+        <span class="crimson">src=</span>"vasserman_thinking.gif"
       <span class="brown">/</span>&gt;</span><br />
       &lt;<span class="brown">/div</span>&gt;</span>
     </div>
