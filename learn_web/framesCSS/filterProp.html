@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<title>Border bottom left radius</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/filter.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/border.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The filter property defines visual effects (like blur and saturation) to an element (often &lt;img&gt;).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      Older versions of Internet Explorer (4.0 to 8.0) supported a non-standard "filter" property that has been deprecated.
+      This was mostly used for opacity when needed support from IE8 and down.
+    </div>
+    <div class="note-value">
+      To use multiple filters, separate each filter with a space.
+    </div>
+    <div class="note-value">
+      The filters that use percentage values (i.e. 75%), also accept the value as decimal (i.e. 0.75).
+    </div>
+    <div class="note-value">
+      The following browsers need a prefix: Safari 6.0, Chrome 18.0 and Opera 15.0 (-webkit-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>Default value. Specifies no effects.</td>
+        </tr>
+        <tr>
+          <td>blur(px)</td>
+          <td>Applies a blur effect to the image. A larger value will create more blur.<br />
+            If no value is specified, 0 is used.</td>
+        </tr>
+        <tr>
+          <td>brightness(%)</td>
+          <td>Adjusts the brightness of the image.<br />
+            0% will make the image completely black.
+            100% (1) is default and represents the original image.
+            Values over 100% will provide brighter results.
+          </td>
+        </tr>
+        <tr>
+          <td>contrast(%)</td>
+          <td>Adjusts the contrast of the image.<br />
+            0% will make the image completely black.
+            100% (1) is default and represents the original image.
+            Values over 100% will provide results with less contrast.
+          </td>
+        </tr>
+        <tr>
+          <td>drop-shadow(h-shadow v-shadow blur spread color)</td>
+          <td>This filter is similar to the box-shadow property.</td>
+        </tr>
+        <tr>
+          <td>grayscale(%)</td>
+          <td>Converts the image to grayscale.<br />
+            0% (0) is default and represents the original image.
+            100% will make the image completely gray (used for black and white images).<br  />
+            Negative values are not allowed.
+          </td>
+        </tr>
+        <tr>
+          <td>hue-rotate(deg)</td>
+          <td>Applies a hue rotation on the image. The value defines the number of degrees
+            around the color circle the image samples will be adjusted.
+            0deg is default, and represents the original image.<br />
+            Maximum value is 360deg.
+          </td>
+        </tr>
+        <tr>
+          <td>invert(%)</td>
+          <td>Inverts the samples in the image.<br />
+            0% (0) is default and represents the original image.
+            100% will make the image completely inverted.<br />
+            Negative values are not allowed.
+          </td>
+        </tr>
+        <tr>
+          <td>saturate(%)</td>
+          <td>Saturates the image.<br />
+            0% (0) will make the image completely un-saturated.
+            100% is default and represents the original image.
+            Values over 100% provides super-saturated results.<br />
+            Negative values are not allowed.
+          </td>
+        </tr>
+        <tr>
+          <td>sepia(%)</td>
+          <td>Converts the image to sepia.<br />
+            0% (0) is default and represents the original image.
+            100% will make the image completely sepia.<br />
+            Negative values are not allowed.
+          </td>
+        </tr>
+        <tr>
+          <td>url()</td>
+          <td>The url() function takes the location of an XML file that specifies an SVG filter,
+            and may include an anchor to a specific filter element.<br />
+            Example — filter: url(svg-url#element-id).
+          </td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="filterExamplesBar" class="left-padding;">
+      <a href="#filterExamplesBar">
+        <button onclick="filter('filterImg', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#filterExamplesBar">
+        <button onclick="filter('filterImg', 'blur(5px)')" class="example-button example-rounded-buttons">blur(5px)</button>
+      </a>
+      <a href="#filterExamplesBar">
+        <button onclick="filter('filterImg', 'brightness(80%)')" class="example-button example-rounded-buttons">brightness(80%)</button>
+      </a>
+      <a href="#filterExamplesBar">
+        <button onclick="filter('filterImg', 'contrast(80%)')" class="example-button example-rounded-buttons">contrast(80%)</button>
+      </a>
+      <a href="#filterExamplesBar">
+        <button onclick="filter('filterImg', 'drop-shadow(10px 10px 10px 10px blue)')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">drop-shadow(10px 10px 10px 10px blue)</button>
+      </a>
+      <a href="#filterExamplesBar">
+        <button onclick="filter('filterImg', 'grayscale(80%)')" class="example-button example-rounded-buttons">grayscale(80%)</button>
+      </a>
+      <a href="#filterExamplesBar">
+        <button onclick="filter('filterImg', 'hue-rotate(80deg)')" class="example-button example-rounded-buttons">hue-rotate(80deg)</button>
+      </a>
+      <a href="#filterExamplesBar">
+        <button onclick="filter('filterImg', 'invert(80%)')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">invert(80%)</button>
+      </a>
+      <a href="#filterExamplesBar">
+        <button onclick="filter('filterImg', 'saturate(10%)')" class="example-button example-rounded-buttons">saturate(10%)</button>
+      </a>
+      <a href="#filterExamplesBar">
+        <button onclick="filter('filterImg', 'sepia(80%)')" class="example-button example-rounded-buttons">sepia(80%)</button>
+      </a>
+      <a href="#filterExamplesBar">
+        <button onclick="filter('filterImg', 'url(80%)')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">url(80%)</button>
+      </a>
+      <a href="#filterExamplesBar">
+        <button onclick="filter('filterImg', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#filterExamplesBar">
+        <button onclick="filter('filterImg', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv" style="overflow: hidden;">
+    <img id="filterImg" src="../images/vasserman_big.jpg" alt="vasserman_big"/>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span><br />
+        <span class="left-padding">&lt;<span class="brown">img</span>
+        <span class="crimson">src=</span>"vasserman_big.jpg"
+      <span class="brown">/</span>&gt;</span><br />
+      &lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">img </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">filter: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

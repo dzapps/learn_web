@@ -148,26 +148,77 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="boxSizingExamplesBar" class="left-padding;">
-      <a href="#colorExamplesBar">
-        <button onclick="color('colorDiv', 'red')" class="example-button example-rounded-buttons">red</button>
+    <div id="displayExamplesBar" class="left-padding;">
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'inline')" class="example-button example-rounded-buttons">inline</button>
       </a>
-      <a href="#colorExamplesBar">
-        <button onclick="color('colorDiv', 'rgb(100, 200, 100)')" class="example-button example-rounded-buttons">rgb(100, 200, 100)</button>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'block')" class="example-button example-rounded-buttons">block</button>
       </a>
-      <a href="#colorExamplesBar">
-        <button onclick="color('colorDiv', 'rgba(19, 96, 244, 0.76)')" class="example-button example-rounded-buttons">rgba(19, 96, 244, 0.76)</button>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'contents')" class="example-button example-rounded-buttons">contents</button>
       </a>
-      <a href="#colorExamplesBar">
-        <button onclick="color('colorDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'flex')" class="example-button example-rounded-buttons">flex</button>
       </a>
-      <a href="#colorExamplesBar">
-        <button onclick="color('colorDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'grid')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">grid</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'inline-block')" class="example-button example-rounded-buttons">inline-block</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'inline-flex')" class="example-button example-rounded-buttons">inline-flex</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'inline-grid')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inline-grid</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'inline-table')" class="example-button example-rounded-buttons">inline-table</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'list-item')" class="example-button example-rounded-buttons">list-item</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'run-in')" class="example-button example-rounded-buttons">run-in</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'table')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">table</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'table-caption')" class="example-button example-rounded-buttons">table-caption</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'table-column-group')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">table-column-group</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'table-header-group')" class="example-button example-rounded-buttons">table-header-group</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'table-footer-group')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">table-footer-group</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'table-row-group')" class="example-button example-rounded-buttons">table-row-group</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'table-cell')" class="example-button example-rounded-buttons">table-cell</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'table-column')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">table-column</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'table-row')" class="example-button example-rounded-buttons">table-row</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#displayExamplesBar">
+        <button onclick="display('displayDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
       </a>
     </div>
   </div>
 
-  <div id="colorDiv" class="exampleDiv">
+  <div id="displayDiv" class="exampleDiv">
     <p>Example text</p>
   </div>
 
@@ -184,7 +235,7 @@
       <p class="blue left-padding" style="margin: 0">
         <span class="brown">p </span><span class="black">{</span><br />
           <p class="blue more-padding" style="margin: 0;">
-            <span class="crimson">color: </span><span class="text">?;</span><br />
+            <span class="crimson">display: </span><span class="text">?;</span><br />
           </p>
         <span class="black left-padding">}</span>
       </p>
