@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<title>Justify content</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesFlex.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/flex.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The justify-content property aligns the flexible container's items
+      when the items do not use all available space on the main-axis (horizontally).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Notes:<br />
+    <div class="note-value">
+      Use the align-items property to align the items vertically.
+    </div>
+    <div class="note-value">
+      Internet Explorer 10 and earlier versions do not support the justify-content property.
+    </div>
+    <div class="note-value">
+      The following browsers need a prefix: Chrome 21.0 and Safari 6.1 (-webkit-), Firefox 18.0 (-moz-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>center</td>
+          <td>Items are positioned at the center of the container.</td>
+        </tr>
+        <tr>
+          <td>flex-start</td>
+          <td>Default value. Items are positioned at the beginning of the container.
+          </td>
+        </tr>
+        <tr>
+          <td>flex-end</td>
+          <td>Items are positioned at the end of the container.</td>
+        </tr>
+        <tr>
+          <td>space-between</td>
+          <td>Items are positioned with space between the lines.</td>
+        </tr>
+        <tr>
+          <td>space-around</td>
+          <td>Items are positioned with space before, between, and after the lines.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="justContExamplesBar" class="left-padding">
+      <a href="#justContExamplesBar">
+        <button onclick="justCont('justContDiv', 'center')" class="example-button example-rounded-buttons">center</button>
+      </a>
+      <a href="#justContExamplesBar">
+        <button onclick="justCont('justContDiv', 'flex-start')" class="example-button example-rounded-buttons">flex-start</button>
+      </a>
+      <a href="#justContExamplesBar">
+        <button onclick="justCont('justContDiv', 'flex-end')" class="example-button example-rounded-buttons">flex-end</button>
+      </a>
+      <a href="#justContExamplesBar">
+        <button onclick="justCont('justContDiv', 'space-between')" class="example-button example-rounded-buttons">space-between</button>
+      </a>
+      <a href="#justContExamplesBar">
+        <button onclick="justCont('justContDiv', 'space-around')" class="example-button example-rounded-buttons">space-around</button>
+      </a>
+      <a href="#justContExamplesBar">
+        <button onclick="justCont('justContDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#justContExamplesBar">
+        <button onclick="justCont('justContDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="justContDiv" class="exampleDiv just-cont-flex">
+    <span style="background-color: red;"></span>
+    <span style="background-color: yellow;"></span>
+    <span style="background-color: blue;"></span>
+  </div>
+
+  <div id="animationDivCode"">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">span</span>
+        <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color</span><span class="black">: </span>
+        red<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span</span>
+        <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color</span><span class="black">: </span>
+        yellow<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span</span>
+        <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color</span><span class="black">: </span>
+        blue<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
+      </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">display</span><span class="black">:</span> flex;<br />
+            <span class="crimson">justify-content</span><span class="black">: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black">}</span>
+    </div>
+
+    <div class="float-borders-none">
+      <span class="brown">span </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">width</span><span class="black">:</span> 70px;<br />
+          <span class="crimson">height</span><span class="black">:</span> 70px;<br />
+        </p>
+      <span class="black">}</span>
+    </div>
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

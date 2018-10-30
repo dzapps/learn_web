@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<title>Order</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesFlex.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/flex.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The order property specifies the order of a flexible item relative to the rest of the flexible items inside the same container.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Notes:<br />
+    <div class="note-value">
+      If the element is not a flexible item, the order property has no effect.
+    </div>
+    <div class="note-value">
+      Internet Explorer 10 and earlier versions do not support the justify-content property.
+    </div>
+    <div class="note-value">
+      The following browsers need a prefix: Chrome 21.0 and Safari 6.1 (-webkit-), Firefox 18.0 (-moz-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>number</td>
+          <td>Default value 0. Specifies the order for the flexible item.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="orderExamplesBar" class="left-padding">
+      <a href="#orderExamplesBar">
+        <button onclick="order('orderDiv', 'center')" class="example-button example-rounded-buttons">center</button>
+      </a>
+      <a href="#orderExamplesBar">
+        <button onclick="order('orderDiv', 'flex-start')" class="example-button example-rounded-buttons">flex-start</button>
+      </a>
+      <a href="#orderExamplesBar">
+        <button onclick="order('orderDiv', 'flex-end')" class="example-button example-rounded-buttons">flex-end</button>
+      </a>
+      <a href="#orderExamplesBar">
+        <button onclick="order('orderDiv', 'space-between')" class="example-button example-rounded-buttons">space-between</button>
+      </a>
+      <a href="#orderExamplesBar">
+        <button onclick="order('orderDiv', 'space-around')" class="example-button example-rounded-buttons">space-around</button>
+      </a>
+      <a href="#orderExamplesBar">
+        <button onclick="order('orderDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#orderExamplesBar">
+        <button onclick="order('orderDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="orderDiv" class="exampleDiv just-cont-flex">
+    <span id="orderRed" style="background-color: red;"></span>
+    <span id="orderYellow" style="background-color: yellow;"></span>
+    <span id="orderBlue" style="background-color: blue;"></span>
+      <span id="orderBrown" style="background-color: brown;"></span>
+  </div>
+
+  <div id="animationDivCode">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">span </span><span class="purple">id=</span><span class="olive">"orderRed"</span>
+        <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color: </span>
+        red<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="purple">id=</span><span class="olive">"orderYellow"</span>
+        <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color: </span>
+        yellow<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="purple">id=</span><span class="olive">"orderBlue"</span>
+        <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color: </span>
+        blue<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="purple">id=</span><span class="olive">"orderBrown"</span>
+        <span class="crimson">style</span><span class="black">=</span>"<span class="crimson">background-color: </span>
+        brown<span class="black">;</span>"&gt;&lt;<span class="brown">/span</span>&gt;<br />
+      </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">display</span><span class="black">:</span> flex;<br />
+            <span class="crimson">justify-content</span><span class="black">: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black">}</span>
+    </div>
+
+    <div class="float-borders-none">
+      <span class="brown">span </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">width</span><span class="black">:</span> 70px;<br />
+          <span class="crimson">height</span><span class="black">:</span> 70px;<br />
+        </p>
+      <span class="black">}</span>
+    </div>
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

@@ -16,8 +16,6 @@ body {
 
 .show-and-hide {
   border-radius: 20px;
-  /* background-color: rgba(60, 37, 125, 0.86); */
-  /* box-shadow: 4px 1px 15px 10px rgba(77, 110, 115, 0.7); */
   margin-top: 3em;
   width: 60%;
   margin-left: auto;
@@ -71,33 +69,24 @@ body {
   background-color: rgba(73, 170, 249, 0.44);
 }
 
-.just-cont-flex-center {
+.just-cont-flex {
   display: flex;
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  justify-content: center;
+}
+
+#justContDiv span, #orderDiv span {
+  width: 70px;
+  height: 70px;
 }
 
 .just-cont-flex-space-around {
   display: flex;
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: space-around;
   justify-content: space-around;
 }
 
-.just-cont-flex-space-between {
+.just-cont-flex-center {
   display: flex;
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
+  justify-content: center;
   flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  /* -webkit-align-items: center;
-  align-items: center; */
 }
 
 .al-cont-flex {

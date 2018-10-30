@@ -1,12 +1,3 @@
-// function showAndHide(id) {
-//   let a = document.getElementsByClassName('show-and-hide');
-//   let lenA = a.length;
-//   for (var j=0; j<=lenA; j++) {
-//     document.getElementById(id).style.display = "flex";
-//     a[j].style.display = "none";
-//   }
-// }
-
 function flex(cls, style) {
   document.getElementsByClassName('text')[0].innerHTML = style + ';';
   let doc = document.getElementsByClassName(cls);
@@ -47,4 +38,14 @@ function flexShrink(id, shrink) {
 function flexWrap(id, wrap) {
   document.getElementById(id).style.flexWrap = wrap;
   document.getElementsByClassName('text')[0].innerHTML = wrap + ';';
+}
+
+function justCont(id, cont) {
+  document.getElementById(id).style.justifyContent = cont;
+  document.getElementsByClassName('text')[0].innerHTML = cont + ';';
+}
+
+function order(id, first, sec, third, fourth) {
+  document.getElementById(id).style.order = order;
+  document.getElementsByClassName('text')[0].innerHTML = order + ';';
 }
