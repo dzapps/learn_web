@@ -45,7 +45,13 @@ function justCont(id, cont) {
   document.getElementsByClassName('text')[0].innerHTML = cont + ';';
 }
 
-function order(id, first, sec, third, fourth) {
-  document.getElementById(id).style.order = order;
-  document.getElementsByClassName('text')[0].innerHTML = order + ';';
+function order(id1, id2, id3, id4, first, sec, third, fourth) {
+  document.getElementById(id1).style.order = first;
+  document.getElementById(id2).style.order = sec;
+  document.getElementById(id3).style.order = third;
+  document.getElementById(id4).style.order = fourth;
+  document.getElementsByClassName('text')[0].innerHTML = first + ';';
+  document.getElementsByClassName('text')[1].innerHTML = sec + ';';
+  document.getElementsByClassName('text')[2].innerHTML = third + ';';
+  document.getElementsByClassName('text')[3].innerHTML = fourth + ';';
 }

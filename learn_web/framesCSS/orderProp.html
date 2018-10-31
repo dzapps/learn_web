@@ -71,25 +71,19 @@
     <div><h2 class="tag">Examples</h2></div>
     <div id="orderExamplesBar" class="left-padding">
       <a href="#orderExamplesBar">
-        <button onclick="order('orderDiv', 'center')" class="example-button example-rounded-buttons">center</button>
+        <button onclick="order('orderRed', 'orderYellow', 'orderBlue', 'orderBrown', '1', '2', '3', '4')" class="example-button example-rounded-buttons">example1</button>
       </a>
       <a href="#orderExamplesBar">
-        <button onclick="order('orderDiv', 'flex-start')" class="example-button example-rounded-buttons">flex-start</button>
+        <button onclick="order('orderRed', 'orderYellow', 'orderBlue', 'orderBrown', '2', '3', '1', '4')" class="example-button example-rounded-buttons">example2</button>
       </a>
       <a href="#orderExamplesBar">
-        <button onclick="order('orderDiv', 'flex-end')" class="example-button example-rounded-buttons">flex-end</button>
+        <button onclick="order('orderRed', 'orderYellow', 'orderBlue', 'orderBrown', '4', '2', '1', '3')" class="example-button example-rounded-buttons">example3</button>
       </a>
       <a href="#orderExamplesBar">
-        <button onclick="order('orderDiv', 'space-between')" class="example-button example-rounded-buttons">space-between</button>
+        <button onclick="order('orderRed', 'orderYellow', 'orderBlue', 'orderBrown', 'initial', 'initial', 'initial', 'initial')" class="example-button example-rounded-buttons">initial</button>
       </a>
       <a href="#orderExamplesBar">
-        <button onclick="order('orderDiv', 'space-around')" class="example-button example-rounded-buttons">space-around</button>
-      </a>
-      <a href="#orderExamplesBar">
-        <button onclick="order('orderDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
-      </a>
-      <a href="#orderExamplesBar">
-        <button onclick="order('orderDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+        <button onclick="order('orderRed', 'orderYellow', 'orderBlue', 'orderBrown', 'inherit', 'inherit', 'inherit', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
       </a>
     </div>
   </div>
@@ -98,7 +92,7 @@
     <span id="orderRed" style="background-color: red;"></span>
     <span id="orderYellow" style="background-color: yellow;"></span>
     <span id="orderBlue" style="background-color: blue;"></span>
-      <span id="orderBrown" style="background-color: brown;"></span>
+    <span id="orderBrown" style="background-color: brown;"></span>
   </div>
 
   <div id="animationDivCode">
@@ -122,12 +116,10 @@
     </div>
 
     <div class="float-borders-none">
-        <span class="brown">div </span><span class="black">{</span><br />
-          <p class="blue left-padding" style="margin: 0;">
-            <span class="crimson">display</span><span class="black">:</span> flex;<br />
-            <span class="crimson">justify-content</span><span class="black">: </span><span class="text">?;</span><br />
-          </p>
-        <span class="black">}</span>
+      <span class="purple">#orderRed </span><span class="black">{ </span><span class="crimson">order: </span><span class="blue text">1; </span><span class="black">}</span><br />
+      <span class="purple">#orderYellow </span><span class="black">{ </span><span class="crimson">order: </span><span class="blue text">2; </span><span class="black">}</span><br />
+      <span class="purple">#orderBlue </span><span class="black">{ </span><span class="crimson">order: </span><span class="blue text">3; </span><span class="black">}</span><br />
+      <span class="purple">#orderBrown </span><span class="black">{ </span><span class="crimson">order: </span><span class="blue text">4; </span><span class="black">}</span>
     </div>
 
     <div class="float-borders-none">
