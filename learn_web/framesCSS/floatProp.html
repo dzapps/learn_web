@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<title>Float</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/float.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/main_window_css.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The float property specifies how an element should float.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Notes:<br />
+    <div class="note-value">
+      Absolutely positioned elements ignores the float property!
+    </div>
+    <div class="note-value">
+      Elements after a floating element will flow around it.
+      To avoid this, use the clear property or the clearfix hack (see example at the bottom of this page).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>The element does not float, (will be displayed just where it occurs in the text). This is default.</td>
+        </tr>
+        <tr>
+          <td>left</td>
+          <td>The element floats to the left of its container.</td>
+        </tr>
+        <tr>
+          <td>right</td>
+          <td>The element floats to the right of its container.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="floatExamplesBar" class="left-padding">
+      <a href="#floatExamplesBar">
+        <button onclick="float('floatDivImg', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#floatExamplesBar">
+        <button onclick="float('floatDivImg', 'left')" class="example-button example-rounded-buttons">left</button>
+      </a>
+      <a href="#floatExamplesBar">
+        <button onclick="float('floatDivImg', 'right')" class="example-button example-rounded-buttons">right</button>
+      </a>
+      <a href="#floatExamplesBar">
+        <button onclick="float('floatDivImg', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#floatExamplesBar">
+        <button onclick="float('floatDivImg', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv">
+    <span style="width: 300px; display: inline-block;">
+      <img id="floatDivImg" src="../images/vasserman_thinking.gif" alt="vasserman_thinking" />This image will be floating if you click on the buttons.
+    </span>
+  </div>
+
+  <div id="animationDivCode">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">span</span>&gt;<br />
+        <span class="left-padding">&lt;<span class="brown">img</span> </span><span class="crimson">src=</span><span class="olive">"../images/vasserman_thinking.gif"</span></span>
+        <span class="brown"></span><span class="crimson">alt=</span><span class="olive">"vasserman_thinking"</span><span class="brown"> /</span>&gt;<br />
+        <span class="left-padding black">This image will be floating if you click on the buttons.</span><br />
+        &lt;<span class="brown">span</span>&gt;<br />
+      </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="blue float-borders-none">
+      <span class="brown">img </span><span class="black">{ </span><span class="crimson">float: </span><span class="text">?</span>; <span class="black">}</span><br />
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

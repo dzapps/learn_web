@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<title>Clear</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/clear.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/main_window_css.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The clear property specifies on which sides of an element floating elements are not allowed to float.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>Default. Allows floating elements on both sides.</td>
+        </tr>
+        <tr>
+          <td>both</td>
+          <td>No floating elements allowed on either the left or the right side.</td>
+        </tr>
+        <tr>
+          <td>left</td>
+          <td>TNo floating elements allowed on the left side.</td>
+        </tr>
+        <tr>
+          <td>right</td>
+          <td>No floating elements allowed on the right side.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="clearExamplesBar" class="left-padding">
+      <a href="#clearExamplesBar">
+        <button onclick="clear('clearDivImg', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#clearExamplesBar">
+        <button onclick="clear('clearDivImg', 'both')" class="example-button example-rounded-buttons">both</button>
+      </a>
+      <a href="#clearExamplesBar">
+        <button onclick="clear('clearDivImg', 'left')" class="example-button example-rounded-buttons">left</button>
+      </a>
+      <a href="#clearExamplesBar">
+        <button onclick="clear('clearDivImg', 'right')" class="example-button example-rounded-buttons">right</button>
+      </a>
+      <a href="#clearExamplesBar">
+        <button onclick="clear('clearDivImg', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#clearExamplesBar">
+        <button onclick="clear('clearDivImg', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv">
+    <img id="clearDivImg" src="../images/vasserman_thinking.gif" alt="vasserman_thinking" style="float: left;"/>
+    <p style="width: 300px;">Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text.</p>
+    <p>Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text.</p>
+  </div>
+
+  <div id="animationDivCode">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">span</span>&gt;<br />
+        <span class="left-padding">&lt;<span class="brown">img</span> </span><span class="crimson">src=</span><span class="olive">"../images/vasserman_thinking.gif"</span></span>
+        <span class="brown"></span><span class="crimson">alt=</span><span class="olive">"vasserman_thinking"</span><span class="brown"> /</span>&gt;<br />
+        &lt;<span class="brown">span</span>&gt;<br />
+      </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="blue float-borders-none">
+      <span class="brown">img </span><span class="black">{ </span><br />
+      <p class="left-padding" style="margin: 0;">
+        <span class="crimson">float: </span>left;<br />
+        <span class="crimson">clear: </span><span class="text">?</span>;<br >
+      </p>
+      <span class="black">}</span>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
