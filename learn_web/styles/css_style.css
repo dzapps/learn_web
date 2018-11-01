@@ -316,3 +316,17 @@ h2 {
   font-size: 40px;
   text-align: center;
 }
+
+#keyframesSpan {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: blue;
+  display: block;
+  animation: keyframe 3s infinite;
+}
+
+@keyframes keyframe {
+  from {left: 0px;}
+  from {left: 30%;}
+}

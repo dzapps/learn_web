@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<title>@keyframes</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cssPropertiesA.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/animation.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The @keyframes rule specifies the animation code.
+    </div>
+    <div class="note-value">
+      The animation is created by gradually changing from one set of CSS styles to another.
+    </div>
+    <div class="note-value">
+      During the animation, you can change the set of CSS styles many times.
+    </div>
+    <div class="note-value">
+      Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the same as 0% and 100%.
+      0% is the beginning of the animation, 100% is when the animation is complete.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Notes:<br />
+    <div class="note-value">
+      Use the animation properties to control the appearance of the animation, and also to bind the animation to selectors.
+    </div>
+    <div class="note-value">
+      The !important rule is ignored in a keyframe (See last example on this page).
+    </div>
+    <div class="note-value">
+      The following browsers need a prefix: Chrome 4.0, Firefox 5.0, Opera 15.0 and Safari 4.0 (-webkit-),  Opera 12.0 (-o-).
+    </div>
+    <div class="note-value">
+      The @keyframes rule is not supported in Internet Explorer 9 and earlier versions.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>animationname</td>
+          <td>Required. Defines the name of the animation.</td>
+        </tr>
+        <tr>
+          <td>keyframes-selector</td>
+          <td>Required. Percentage of the animation duration.<br />
+            Legal values:<br />
+            0-100%<br />
+            from (same as 0%)<br />
+            to (same as 100%)<br />
+            You can have many keyframes-selectors in one animation.
+          </td>
+        </tr>
+        <tr>
+          <td>css-styles</td>
+          <td>Required. One or more legal CSS style properties.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="keyframesExamplesBar" class="left-padding">
+      <a href="#keyframesExamplesBar">
+        <button onclick="keyframess('keyPerc', 'keyframesSpan')" class="example-button example-rounded-buttons">example1</button>
+      </a>
+      <a href="#keyframesExamplesBar">
+        <button onclick="keyframess('keyPix', 'keyframesSpan')" class="example-button example-rounded-buttons">example2</button>
+      </a>
+      <a href="#keyframesExamplesBar">
+        <button onclick="keyframess('keyPixTriple', 'keyframesSpan')" class="example-button example-rounded-buttons">example3</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv">
+    <span id="keyframesSpan"></span>
+  </div>
+
+  <div id="animationDivCode">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">span</span>&gt;&lt;<span class="brown">span</span>&gt;<br />
+      </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="blue float-borders-none">
+      <span class="brown">span </span><span class="black">{</span><br />
+      <p class="left-padding" style="margin: 0;">
+        <span class="crimson">width: </span>100px;<br />
+        <span class="crimson">height: </span>100px;<br />
+        <span class="crimson">background-color: </span>blue;<br />
+        <span class="crimson">position: </span>relative;<br />
+        <span class="crimson">display: </span>block;<br />
+        <span class="crimson">animation: </span>name 3s infinite;<br />
+      </p>
+      <span class="black">{</span>
+    </div>
+
+    <div id="keyPerc" class="show-keyfr float-borders-none" style="display: none;">
+      <span class="darkblue">@keyframes</span>
+      <span class="brown"> name </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">from { left: </span>0px;<span class="crimson"> }</span><br />
+          <span class="crimson">from { left: </span>30%;<span class="crimson"> }</span><br />
+        </p>
+      <span class="black">}</span>
+    </div>
+
+    <div id="keyPix" class="show-keyfr float-borders-none" style="display: none;">
+      <span class="darkblue">@keyframes</span>
+      <span class="brown"> name </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">from { left: </span>0px;<span class="crimson"> }</span><br />
+          <span class="crimson">from { left: </span>200px;<span class="crimson"> }</span><br />
+        </p>
+      <span class="black">}</span>
+    </div>
+
+    <div id="keyPixTriple" class="show-keyfr float-borders-none" style="display: none;">
+      <span class="darkblue">@keyframes</span>
+      <span class="brown"> name </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">from { left: </span>0px;<span class="crimson"> }</span><br />
+          <span class="crimson">from { left: </span>30%;<span class="crimson"> }</span><br />
+        </p>
+      <span class="black">}</span>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

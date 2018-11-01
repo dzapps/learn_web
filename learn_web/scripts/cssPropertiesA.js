@@ -75,13 +75,12 @@ function animFillMode(id, state1) {
   document.getElementsByClassName('text')[0].innerHTML = state1;
 }
 
-function animAttributes(id, name, x1, x2, duration, easing, delay, repeat, direction, fill, target) {
+function animAttributes(id, x1, x2, duration, easing, delay, repeat, direction, fill, target) {
   document.getElementsByClassName('text')[0].innerHTML = target;
   document.getElementById(id).animate([
     {transform: `translateX(${x1})`},
     {transform: `translateX(${x2})`}
   ], {
-    name: name,
     duration: duration,
     easing: easing,
     delay: delay,
@@ -134,15 +133,6 @@ function animAttributesAddit(id, x1, x2, y1, y2, duration, easing, delay, repeat
     {transform: `translateY(${y2})`},
     {transform: 'translateX(20px)'},
     {transform: 'translateY(200px)'}
-    // {transform: `translateX(${x1})`},
-    // {transform: `translateX(${x2})`}
-    // {transform: `translateX(${x1})`}
-    // {transform: `translateX(${x2})`}
-    // {transform: `translateX(${x2})`},
-    // {transform: `translateY(${y1})`}
-    // {transform: `translateX(${x2})`},
-    // {transform: `translateX(${x1})`},
-    // {transform: `translateY(${y1})`}
   ], {
     duration: duration,
     easing: easing,
@@ -151,4 +141,23 @@ function animAttributesAddit(id, x1, x2, y1, y2, duration, easing, delay, repeat
     direction: direction,
     fill: fill
   });
+}
+
+function keyframess(idShow, idSpan) {
+  let list = document.getElementsByClassName('show-keyfr');
+  len = list.length;
+
+  for (let j=0; j<=len; j++) {
+    document.getElementById(idShow).style.display = "block";
+    list[j].style.display = 'none';
+    document.getElementById(idSpan).animate([
+      // {transform: `translateY(${y1})`},
+      // {transform: `translateY(${y2})`},
+      {transform: 'translateX(0px)'},
+      {transform: 'translateY(200px)'}
+    ], {
+      duration: 10,
+      iterations: 5
+    });
+  }
 }
