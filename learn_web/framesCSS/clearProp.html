@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="../styles/css_style.css" />
 <link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
 
-<script src="../scripts/clear.js"></script>
+<script src="../scripts/float.js"></script>
 
 <body>
 
@@ -69,30 +69,30 @@
     <div><h2 class="tag">Examples</h2></div>
     <div id="clearExamplesBar" class="left-padding">
       <a href="#clearExamplesBar">
-        <button onclick="clear('clearDivImg', 'none')" class="example-button example-rounded-buttons">none</button>
+        <button onclick="cleared('clearDivImg', 'none')" class="example-button example-rounded-buttons">none</button>
       </a>
       <a href="#clearExamplesBar">
-        <button onclick="clear('clearDivImg', 'both')" class="example-button example-rounded-buttons">both</button>
+        <button onclick="cleared('clearDivImg', 'both')" class="example-button example-rounded-buttons">both</button>
       </a>
       <a href="#clearExamplesBar">
-        <button onclick="clear('clearDivImg', 'left')" class="example-button example-rounded-buttons">left</button>
+        <button onclick="cleared('clearDivImg', 'left')" class="example-button example-rounded-buttons">left</button>
       </a>
       <a href="#clearExamplesBar">
-        <button onclick="clear('clearDivImg', 'right')" class="example-button example-rounded-buttons">right</button>
+        <button onclick="cleared('clearDivImg', 'right')" class="example-button example-rounded-buttons">right</button>
       </a>
       <a href="#clearExamplesBar">
-        <button onclick="clear('clearDivImg', 'initial')" class="example-button example-rounded-buttons">initial</button>
+        <button onclick="cleared('clearDivImg', 'initial')" class="example-button example-rounded-buttons">initial</button>
       </a>
       <a href="#clearExamplesBar">
-        <button onclick="clear('clearDivImg', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+        <button onclick="cleared('clearDivImg', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
       </a>
     </div>
   </div>
 
   <div class="exampleDiv">
-    <img id="clearDivImg" src="../images/vasserman_thinking.gif" alt="vasserman_thinking" style="float: left;"/>
-    <p style="width: 300px;">Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text.</p>
+    <img src="../images/vasserman_thinking.gif" alt="vasserman_thinking" style="float: left;" />
     <p>Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text.</p>
+    <p id="clearDivImg">Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text.</p>
   </div>
 
   <div id="animationDivCode">
