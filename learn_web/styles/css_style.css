@@ -330,3 +330,9 @@ h2 {
   from {left: 0px;}
   from {left: 30%;}
 }
+
+#fontFamilyP {
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+}

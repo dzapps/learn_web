@@ -3,7 +3,7 @@ function font(id, font) {
   document.getElementsByClassName('text')[0].innerHTML = font
 }
 
-function fontFull(id, style, variant, weight, size, height, family, target) {
-  document.getElementById(id).style.font = `${style} ${variant} ${weight} ${size} ${height} ${family}`
-  document.getElementsByClassName('text')[0].innerHTML = target
+function fontFamily(id, family) {
+  document.getElementById(id).style.fontFamily = family
+  document.getElementsByClassName('text')[0].innerHTML = family
 }
