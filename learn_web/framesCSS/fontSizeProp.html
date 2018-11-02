@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<title>Font size</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/font.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/font.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The font-size property sets the size of a font.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>medium</td>
+          <td>Sets the font-size to a medium size. This is default.</td>
+        </tr>
+        <tr>
+          <td>xx-small</td>
+          <td>Sets the font-size to an xx-small size.</td>
+        </tr>
+        <tr>
+          <td>x-small</td>
+          <td>Sets the font-size to an extra small size.</td>
+        </tr>
+        <tr>
+          <td>small</td>
+          <td>Sets the font-size to a small size.</td>
+        </tr>
+        <tr>
+          <td>large</td>
+          <td>Sets the font-size to a large size.</td>
+        </tr>
+        <tr>
+          <td>x-large</td>
+          <td>Sets the font-size to an extra large size.</td>
+        </tr>
+        <tr>
+          <td>xx-large</td>
+          <td>Sets the font-size to an xx-large size.</td>
+        </tr>
+        <tr>
+          <td>smaller</td>
+          <td>Sets the font-size to a smaller size than the parent element.</td>
+        </tr>
+        <tr>
+          <td>larger</td>
+          <td>Sets the font-size to a larger size than the parent element.</td>
+        </tr>
+        <tr>
+          <td>length</td>
+          <td>Sets the font-size to a fixed size in px, cm, etc.</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Sets the font-size to a percent of  the parent element's font size.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="fontSizeExamplesBar" class="left-padding">
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', 'medium')" class="example-button example-rounded-buttons">medium</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', 'xx-small')" class="example-button example-rounded-buttons">xx-small</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', 'x-small')" class="example-button example-rounded-buttons">x-small</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', 'small')" class="example-button example-rounded-buttons">small</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', 'large')" class="example-button example-rounded-buttons">large</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', 'x-large')" class="example-button example-rounded-buttons">x-large</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', 'xx-large')" class="example-button example-rounded-buttons">xx-large</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', 'smaller')" class="example-button example-rounded-buttons">smaller</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', 'larger')" class="example-button example-rounded-buttons">larger</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', '10px')" class="example-button example-rounded-buttons">10px</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', '20px')" class="example-button example-rounded-buttons">20px</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', '40px')" class="example-button example-rounded-buttons">40px</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', '10%')" class="example-button example-rounded-buttons">10%</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', '70%')" class="example-button example-rounded-buttons">70%</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', '100%')" class="example-button example-rounded-buttons">100%</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', '150%')" class="example-button example-rounded-buttons">150%</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#fontSizeExamplesBar">
+        <button onclick="fontSize('fontSizeP', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv">
+    <p id="fontSizeP">Example text. Example text. Example text.<br />Example text. Example text. Example text.</p>
+  </div>
+
+  <div id="animationDivCode" style="border: none;">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">p</span>&gt;<span class="black">Example text. Example text. Example text.</span>&lt;<span class="brown">/p</span>&gt;
+      </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+        <span class="brown">p </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">text-align:</span> center;<br />
+            <span class="crimson">line-height:</span> 40px;<br />
+            <span class="crimson">font-family:</span> Chilanka, sans-serif;<br />
+            <span class="crimson">font-size:</span> <span class="text">?</span>;<br />
+          </p>
+        <span class="black">}</span>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
