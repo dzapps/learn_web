@@ -87,6 +87,9 @@
         <button onclick="fontSizeAdjust('0.8')" class="example-button example-rounded-buttons">0.8</button>
       </a>
       <a href="#fontSizeAdjustExamplesBar">
+        <button onclick="fontSizeAdjust('1.4')" class="example-button example-rounded-buttons">1.4</button>
+      </a>
+      <a href="#fontSizeAdjustExamplesBar">
         <button onclick="fontSizeAdjust('none')" class="example-button example-rounded-buttons">none</button>
       </a>
       <a href="#fontSizeAdjustExamplesBar">
@@ -107,20 +110,40 @@
     <div class="blue float-borders-none">
       &lt;<span class="brown">div</span>&gt;<br />
       <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">p</span>&gt;<span class="black">Example text. Example text. Example text.</span>&lt;<span class="brown">/p</span>&gt;
+        &lt;<span class="brown">p </span><span class="purple">id=</span><span class="olive">p1</span>&gt;
+        <span class="black">Example text. Example text. Example text.</span>&lt;<span class="brown">/p</span>&gt;<br />
+        &lt;<span class="brown">p </span><span class="purple">id=</span><span class="olive">p2</span>&gt;
+        <span class="black">Example text. Example text. Example text.</span>&lt;<span class="brown">/p</span>&gt;
       </p>
       <span>&lt;<span class="brown">/div</span>&gt;</span>
     </div>
 
     <div class="float-borders-none">
-        <span class="brown">p </span><span class="black">{</span><br />
-          <p class="blue left-padding" style="margin: 0;">
-            <span class="crimson">text-align:</span> center;<br />
-            <span class="crimson">font-size:</span> 20px;<br />
-            <span class="crimson">font-family:</span> Chilanka, sans-serif;<br />
-            <span class="crimson">font-size-adjust:</span> <span class="text">?</span>;<br />
-          </p>
-        <span class="black">}</span>
+      <span class="brown">p </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">text-align:</span> center;<br />
+          <span class="crimson">font-size:</span> 20px;<br />
+        </p>
+      <span class="black">}</span>
+    </div>
+    <p style="clear: left;"></p>
+
+    <div class="float-borders-none">
+      <span class="purple">#p1 </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">font-family:</span> Chilanka, sans-serif;<br />
+          <span class="crimson">font-size-adjust:</span> <span class="text">?</span>;<br />
+        </p>
+      <span class="black">}</span>
+    </div>
+
+    <div class="float-borders-none">
+      <span class="purple">#p2 </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">font-family:</span> Times, sans-serif;<br />
+          <span class="crimson">font-size-adjust:</span> <span class="text">?</span>;<br />
+        </p>
+      <span class="black">}</span>
     </div>
     <p style="clear: left;"></p>
 

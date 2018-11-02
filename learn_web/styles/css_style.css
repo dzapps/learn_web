@@ -202,7 +202,7 @@ body {
 
 .exampleDiv {
   width: 85%;
-  height: 150px;
+  min-height: 150px;
   margin-left: 2em;
   border: 1px solid white;
 }
@@ -331,17 +331,17 @@ h2 {
   from {left: 30%;}
 }
 
-#fontFamilyP, #fontKerningP, #fontSizeP {
+#fontFamilyP, #fontKerningP, #fontSizeP, #fontStretchP, #fontStyleP, #fontVariantP {
   text-align: center;
   font-size: 20px;
   line-height: 40px;
 }
 
-#fontKerningP, #fontSizeP, #fontSizeAdjustP {
-  font-family: Chilanka, serif;
+#fontKerningP, #fontSizeP, #fontSizeAdjustP, #fontStretchP, #fontStyleP, #fontVariantP {
+  font-family: Times, serif;
 }
 
-#fontSizeAdjustP, #fontSizeAdjustP2 {
+#fontSizeAdjustP, #fontSizeAdjustP2, {
   text-align: center;
   font-size: 20px;
 }

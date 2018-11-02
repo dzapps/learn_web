@@ -22,4 +22,20 @@ function fontSizeAdjust (adjust) {
   document.getElementById('fontSizeAdjustP').style.fontSizeAdjust = adjust
   document.getElementById('fontSizeAdjustP2').style.fontSizeAdjust = adjust
   document.getElementsByClassName('text')[0].innerHTML = adjust
+  document.getElementsByClassName('text')[1].innerHTML = adjust
+}
+
+function fontStretch (id, stretch) {
+  document.getElementById(id).style.fontStretch = stretch
+  document.getElementsByClassName('text')[0].innerHTML = stretch
+}
+
+function fontStyle (id, style) {
+  document.getElementById(id).style.fontStyle = style
+  document.getElementsByClassName('text')[0].innerHTML = style
+}
+
+function fontVariant (id, variant) {
+  document.getElementById(id).style.fontVariant = variant
+  document.getElementsByClassName('text')[0].innerHTML = variant
 }

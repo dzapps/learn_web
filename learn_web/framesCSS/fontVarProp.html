@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<title>Font style</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/font.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/font.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      In a small-caps font, all lowercase letters are converted to uppercase letters.
+      However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text.
+    </div>
+    <div class="note-value">
+      The font-variant property specifies whether or not a text should be displayed in a small-caps font.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>normal</td>
+          <td>The browser displays a normal font. This is default.</td>
+        </tr>
+        <tr>
+          <td>small-caps</td>
+          <td>The browser displays a small-caps font.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="fontVariantExamplesBar" class="left-padding">
+      <a href="#fontVariantExamplesBar">
+        <button onclick="fontVariant('fontVariantP', 'normal')" class="example-button example-rounded-buttons">normal</button>
+      </a>
+      <a href="#fontVariantExamplesBar">
+        <button onclick="fontVariant('fontVariantP', 'small-caps')" class="example-button example-rounded-buttons">small-caps</button>
+      </a>
+      <a href="#fontVariantExamplesBar">
+        <button onclick="fontVariant('fontVariantP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#fontVariantExamplesBar">
+        <button onclick="fontVariant('fontVariantP', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv">
+    <p id="fontVariantP">Example text. Example text. Example text.<br />Example text. Example text. Example text.</p>
+  </div>
+
+  <div id="animationDivCode" style="border: none;">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="blue left-padding" style="margin: 0;">
+        &lt;<span class="brown">p</span>&gt;<span class="black">Example text. Example text. Example text.
+        &lt;<span class="brown">br /</span>&gt;<br />
+        Example text. Example text. Example text.</span>&lt;<span class="brown">/p</span>&gt;
+      </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <span class="brown">p </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">text-align:</span> center;<br />
+          <span class="crimson">font-size:</span> 20px;<br />
+          <span class="crimson">line-height:</span> 40px;<br />
+          <span class="crimson">font-family:</span> Times, serif;<br />
+          <span class="crimson">font-variant:</span> <span class="text">?</span>;<br />
+        </p>
+      <span class="black">}</span>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
