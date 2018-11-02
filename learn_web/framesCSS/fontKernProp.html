@@ -17,19 +17,27 @@
 
   <div class="frameWindow">
   <p><a href="../pages/font.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
-  <div class="note descriptionCSS  noteCSS note-round-bord">
+  <div class="note descriptionCSS noteCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The font-family property specifies the font for an element.
+      The font-kerning property controls the usage of the kerning information stored in a font.
     </div>
     <div class="note-value">
-      The font-family property can hold several font names as a "fallback" system.
-      If the browser does not support the first font, it tries the next font.
+      Kerning defines how letters are spaced.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      For fonts that do not include kerning data, this property will have no visible effect.
     </div>
     <div class="note-value">
-      There are two types of font family names:<br />
-      family-name - The name of a font-family, like "times", "courier", "arial", etc.<br />
-      generic-family - The name of a generic-family, like "serif", "sans-serif", "cursive", "fantasy", "monospace".
+      The following browsers need a prefix: Chrome 32.0 (-webkit-), Opera ?.
+    </div>
+    <div class="note-value">
+      Internet Explorer 9 and earlier versions do not support the font-kerning property.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -48,44 +56,37 @@
       </thead>
       <tbody>
         <tr>
-          <td>family-name<br />generic-family</td>
-          <td>A prioritized list of font family names and/or generic family names.</td>
+          <td>auto</td>
+          <td>Default. The browser determines whether font kerning should be applied or not.</td>
         </tr>
         <tr>
-          <td>initial</td>
-          <td>Sets this property to its default value.
-          </td>
+          <td>normal</td>
+          <td>Specifies that font kerning is applied.</td>
         </tr>
         <tr>
-          <td>inherit</td>
-          <td>Inherits this property from its parent element.</td>
+          <td>none</td>
+          <td>Specifies that font kerning is not applied.</td>
         </tr>
       </tbody>
     </table>
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="fontFamilyExamplesBar" class="left-padding">
-      <a href="#fontFamilyExamplesBar">
-        <button onclick="fontFamily('fontFamilyP', 'Arial, sans-serif')" class="example-button example-rounded-buttons">example1</button>
+    <div id="fontKerningExamplesBar" class="left-padding">
+      <a href="#fontKerningExamplesBar">
+        <button onclick="fontKerning('fontKerningP', 'auto')" class="example-button example-rounded-buttons">auto</button>
       </a>
-      <a href="#fontFamilyExamplesBar">
-        <button onclick="fontFamily('fontFamilyP', 'Chilanka, sans-serif', 'Chilanka, sans-serif')" class="example-button example-rounded-buttons">example2</button>
+      <a href="#fontKerningExamplesBar">
+        <button onclick="fontKerning('fontKerningP', 'normal')" class="example-button example-rounded-buttons">normal</button>
       </a>
-      <a href="#fontFamilyExamplesBar">
-        <button onclick="fontFamily('fontFamilyP', 'Times, Arial, serif', 'Times, Arial, serif')" class="example-button example-rounded-buttons">example1</button>
-      </a>
-      <a href="#fontFamilyExamplesBar">
-        <button onclick="fontFamily('fontFamilyP', 'initial', 'initial')" class="example-button example-rounded-buttons">initial</button>
-      </a>
-      <a href="#fontFamilyExamplesBar">
-        <button onclick="fontFamily('fontFamilyP', 'inherit', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      <a href="#fontKerningExamplesBar">
+        <button onclick="fontKerning('fontKerningP', 'none')" class="example-button example-rounded-buttons">none</button>
       </a>
     </div>
   </div>
 
   <div class="exampleDiv">
-    <p id="fontFamilyP">Example text. Example text. Example text.<br />Example text. Example text. Example text.</p>
+    <p id="fontKerningP">Example text. Example text. Example text.<br />Example text. Example text. Example text.</p>
   </div>
 
   <div id="animationDivCode" style="border: none;">
@@ -103,7 +104,8 @@
             <span class="crimson">text-align:</span> center;<br />
             <span class="crimson">font-size:</span> 20px;<br />
             <span class="crimson">line-height:</span> 40px;<br />
-            <span class="crimson">font-family:</span> <span class="text">?</span>;<br />
+            <span class="crimson">font-family:</span> Chilanka, sans-serif;<br />
+            <span class="crimson">font-kerning:</span> <span class="text">?</span>;<br />
           </p>
         <span class="black">}</span>
     </div>
