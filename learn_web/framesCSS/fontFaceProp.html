@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<title>Font face</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/font.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/font.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      With the @font-face rule, web designers do not have to use one of the "web-safe" fonts anymore.
+    </div>
+    <div class="note-value">
+      In the @font-face rule you must first define a name for the font (e.g. myFirstFont), and then point to the font file.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      Use lowercase letters for the font URL. Uppercase letters can give unexpected results in IE!
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-3 attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Font descriptor</th><th>Values</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>font-family</td>
+          <td>name</td>
+          <td>Required. Defines the name of the font..</td>
+        </tr>
+        <tr>
+          <td>src</td>
+          <td>URL</td>
+          <td>Required. Defines the URL(s) where the font should be downloaded from.</td>
+        </tr>
+        <tr>
+          <td>font-stretch</td>
+          <td>normal<br />condensed<br />ultra-condensed<br />extra-condensed<br />semi-condensed<br />
+            expanded<br />semi-expanded<br />extra-expanded<br />ultra-expanded
+          </td>
+          <td>Optional. Defines how the font should be stretched. Default value is "normal".</td>
+        </tr>
+        <tr>
+          <td>font-style</td>
+          <td>normal<br />italic<br />oblique</td>
+          <td>Optional. Defines how the font should be styled. Default value is "normal".</td>
+        </tr>
+        <tr>
+          <td>font-weight</td>
+          <td>normal<br />bold<br />100<br />200<br />300<br />400<br />500<br />600<br />700<br />800<br />900</td>
+          <td>Optional. Defines the boldness of the font. Default value is "normal".</td>
+        </tr>
+        <tr>
+          <td>unicode-range</td>
+          <td>unicode-range</td>
+          <td>Optional. Defines the range of unicode characters the font supports. Default value is "U+0-10FFFF".</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="fontFaceExamplesBar" class="left-padding">
+      <a href="#fontFaceExamplesBar">
+        <button onclick="fontFace('fontFaceP', 'normal')" class="example-button example-rounded-buttons">normal</button>
+      </a>
+      <a href="#fontFaceExamplesBar">
+        <button onclick="fontFace('fontFaceP', 'bold')" class="example-button example-rounded-buttons">bold</button>
+      </a>
+      <a href="#fontFaceExamplesBar">
+        <button onclick="fontFace('fontFaceP', 'bolder')" class="example-button example-rounded-buttons">bolder</button>
+      </a>
+      <a href="#fontFaceExamplesBar">
+        <button onclick="fontFace('fontFaceP', 'lighter')" class="example-button example-rounded-buttons">lighter</button>
+      </a>
+      <a href="#fontFaceExamplesBar">
+        <button onclick="fontFace('fontFaceP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#fontFaceExamplesBar">
+        <button onclick="fontFace('fontFaceP', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="fontFaceDiv" class="exampleDiv">
+    <p>Example text. Example text. Example text.<p/>
+    <p id="fontFaceP">Example text. Example text. Example text.</p>
+  </div>
+
+  <div id="animationDivCode" style="border: none;">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="blue left-padding" style="margin: 0;">
+        &lt;<span class="brown">p</span>&gt;<span class="black">Example text. Example text. Example text.</span>&lt;<span class="brown">/p</span>&gt;<br />
+        &lt;<span class="brown">p</span><span class="purple"> id=</span><span class="olive">"example"</span>&gt;<span class="black">Example text. Example text. Example text.</span>&lt;<span class="brown">/p</span>&gt;
+      </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <span class="brown">div </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">text-align:</span> center;<br />
+          <span class="crimson">font-size:</span> 20px;<br />
+          <span class="crimson">line-height:</span> 40px;<br />
+          <span class="crimson">font-family:</span> Ubuntu, sans-serif;<br />
+          <span class="crimson">font-weight:</span> <span class="text">?</span>;<br />
+        </p>
+      <span class="black">}</span>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

@@ -39,3 +39,13 @@ function fontVariant (id, variant) {
   document.getElementById(id).style.fontVariant = variant
   document.getElementsByClassName('text')[0].innerHTML = variant
 }
+
+function fontWeight (id, weight) {
+  document.getElementById(id).style.fontWeight = weight
+  document.getElementsByClassName('text')[0].innerHTML = weight
+}
+
+function fontFace (id, face) {
+  document.getElementById(id).style.fontFace = face
+  document.getElementsByClassName('text')[0].innerHTML = face
+}

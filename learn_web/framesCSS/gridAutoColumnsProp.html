@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<title>Grid area</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/grid.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/grid.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The grid-auto-columns property sets a size for the columns in a grid container.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      This property affects only columns with the size not set.
+    </div>
+    <div class="note-value">
+      The grid-template-columns property overrides this property.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>auto</td>
+          <td>Default value. The size of the columns is determined by the size of the container.</td>
+        </tr>
+        <tr>
+          <td>max-content</td>
+          <td>Sets the size of each column to depend on the largest item in the column.</td>
+        </tr>
+        <tr>
+          <td>min-content</td>
+          <td>Sets the size of each column to depend on the largest item in the column.</td>
+        </tr>
+        <tr>
+          <td>length</td>
+          <td>Sets the size of the columns, by using a legal length value.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="gridAutoColExamplesBar" class="left-padding">
+      <a href="#gridAutoColExamplesBar">
+        <button onclick="gridAutoCol('gridAutoColDiv', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#gridAutoColExamplesBar">
+        <button onclick="gridAutoCol('gridAutoColDiv', 'max-content')" class="example-button example-rounded-buttons">max-content</button>
+      </a>
+      <a href="#gridAutoColExamplesBar">
+        <button onclick="gridAutoCol('gridAutoColDiv', 'min-content')" class="example-button example-rounded-buttons">min-content</button>
+      </a>
+      <a href="#gridAutoColExamplesBar">
+        <button onclick="gridAutoCol('gridAutoColDiv', '100px')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">100px</button>
+      </a>
+      <a href="#gridAutoColExamplesBar">
+        <button onclick="gridAutoCol('gridAutoColDiv', '200px')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">200px</button>
+      </a>
+      <a href="#gridAutoColExamplesBar">
+        <button onclick="gridAutoCol('gridAutoColDiv', '300px')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">300px</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="gridAutoColDiv" class="exampleDiv">
+    <span class="item1">1</span>
+    <span class="item2">2</span>
+    <span class="item3">3</span>
+    <span class="item4">4</span>
+    <span class="item5">5</span>
+    <span class="item6">6</span>
+  </div>
+
+  <div id="animationDivCode" style="border: none;">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item1"</span>&gt;<span class="black">1</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item2"</span>&gt;<span class="black">2</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item3"</span>&gt;<span class="black">3</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item4"</span>&gt;<span class="black">4</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item5"</span>&gt;<span class="black">5</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item6"</span>&gt;<span class="black">6</span>&lt;<span class="brown">/span</span>&gt;<br />
+      </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <span class="brown">div </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">display:</span> grid;<br />
+          <span class="crimson">grid-auto-columns: </span><span class="text">?</span>;<br />
+          <span class="crimson">grid-gap:</span> 10px;<br />
+          <span class="crimson">background-color:</span> #2196F3;<br />
+          <span class="crimson">padding:</span> 10px;<br />
+        </p>
+      <span class="black">}</span>
+    </div>
+
+    <div class="float-borders-none">
+      <span class="brown">div<span class="black">&gt;</span>span </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">text-align:</span> center;<br />
+          <span class="crimson">font-size:</span> 18px;<br />
+          <span class="crimson">background-color:</span> rgba(255, 255, 255, 0.8);<br />
+          <span class="crimson">padding:</span> 10px 0;<br />
+        </p>
+      <span class="black">}</span>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<title>Font style</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/font.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/font.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The font-weight property sets how thick or thin characters in text should be displayed.
+    </div>
+    <div class="note-value">
+      The font-variant property specifies whether or not a text should be displayed in a small-caps font.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>normal</td>
+          <td>Defines normal characters. This is default.</td>
+        </tr>
+        <tr>
+          <td>bold</td>
+          <td>Defines thick characters.</td>
+        </tr>
+        <tr>
+          <td>bolder</td>
+          <td>Defines thicker characters.</td>
+        </tr>
+        <tr>
+          <td>lighter</td>
+          <td>Defines lighter characters.</td>
+        </tr>
+        <tr>
+          <td>100<br />200<br />300<br />400<br />500<br />600<br />700<br />800<br />900</td>
+          <td>Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="fontWeightExamplesBar" class="left-padding">
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', '100')" class="example-button example-rounded-buttons">100</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', '200')" class="example-button example-rounded-buttons">200</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', '300')" class="example-button example-rounded-buttons">300</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', '400')" class="example-button example-rounded-buttons">400</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', '500')" class="example-button example-rounded-buttons">500</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', '600')" class="example-button example-rounded-buttons">600</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', '700')" class="example-button example-rounded-buttons">700</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', '800')" class="example-button example-rounded-buttons">800</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', '900')" class="example-button example-rounded-buttons">900</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', 'normal')" class="example-button example-rounded-buttons">normal</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', 'bold')" class="example-button example-rounded-buttons">bold</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', 'bolder')" class="example-button example-rounded-buttons">bolder</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', 'lighter')" class="example-button example-rounded-buttons">lighter</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#fontWeightExamplesBar">
+        <button onclick="fontWeight('fontWeightP', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv">
+    <p id="fontWeightP">Example text. Example text. Example text.<br />Example text. Example text. Example text.</p>
+  </div>
+
+  <div id="animationDivCode" style="border: none;">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="blue left-padding" style="margin: 0;">
+        &lt;<span class="brown">p</span>&gt;<span class="black">Example text. Example text. Example text.
+        &lt;<span class="brown">br /</span>&gt;<br />
+        Example text. Example text. Example text.</span>&lt;<span class="brown">/p</span>&gt;
+      </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <span class="brown">p </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">text-align:</span> center;<br />
+          <span class="crimson">font-size:</span> 20px;<br />
+          <span class="crimson">line-height:</span> 40px;<br />
+          <span class="crimson">font-family:</span> Ubuntu, sans-serif;<br />
+          <span class="crimson">font-weight:</span> <span class="text">?</span>;<br />
+        </p>
+      <span class="black">}</span>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
