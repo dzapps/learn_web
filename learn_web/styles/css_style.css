@@ -380,14 +380,14 @@ h2 {
 
 #gridDiv>span, #gridAreaDiv>span, #gridGapDiv>span, #gridColDiv>span, #gridRowDiv>span, #gridAutoColDiv>span, #gridAutoFlowDiv>span,
 #gridAutoRowsDiv>span, #gridColStartDiv>span, #gridColEndDiv>span, #gridColGapDiv>span, #gridRowStartDiv>span,
-#gridRowEndDiv>span, #gridRowGapDiv>span, #gridTempColDiv>span, #gridTempRowDiv>span {
+#gridRowEndDiv>span, #gridRowGapDiv>span, #gridTemplDiv>span, #gridTempColDiv>span, #gridTempRowDiv>span, #gridTemplAreasDiv>span {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 10px 0;
   font-size: 18px;
 }
 
-#gridAutoColDiv, #gridAutoRowsDiv {
+#gridAutoColDiv, #gridAutoRowsDiv, #gridTemplAreasDiv, #gridTemplDiv {
   display: grid;
   grid-gap: 10px;
   background-color: #2196F3;

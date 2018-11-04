@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<title>Grid template areas</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/grid.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/grid.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The grid-template-areas property specifies areas within the grid layout.
+    </div>
+    <div class="note-value">
+      You can name grid items by using the grid-area property, and then reference to the name in the grid-template-areas property.
+    </div>
+    <div class="note-value">
+      Each area is defined by apostrophes. Use a period sign to refer to a grid item with no name.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>Default value. No named grid areas.</td>
+        </tr>
+        <tr>
+          <td>itemnames</td>
+          <td>A sequence that specifies how each columns and row should display.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="gridTemplAreasExamplesBar" class="left-padding">
+      <a href="#gridTemplAreasExamplesBar">
+        <button onclick="gridTemplAreas('gridTemplAreasDiv', '\'area1 area1\'')" class="example-button example-rounded-buttons">'area1 area1'</button>
+      </a>
+      <a href="#gridTemplAreasExamplesBar">
+        <button onclick="gridTemplAreas('gridTemplAreasDiv', '\'area1 area1 ...\' \'area1 area1 ...\'')" class="example-button example-rounded-buttons">'area1 area1 ...' 'area1 area1 ...'</button>
+      </a>
+      <a href="#gridTemplAreasExamplesBar">
+        <button onclick="gridTemplAreas('gridTemplAreasDiv', '\'area1 area1 area1\'')" class="example-button example-rounded-buttons">'area1 area1 area1'</button>
+      </a>
+      <a href="#gridTemplAreasExamplesBar">
+        <button onclick="gridTemplAreas('gridTemplAreasDiv', '\'area1 area1 area1 ...\'')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">'area1 area1 area1 ...'</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="gridTemplAreasDiv" class="exampleDiv">
+    <span class="item1">1</span>
+    <span class="item2">2</span>
+    <span class="item3">3</span>
+    <span class="item4">4</span>
+    <span class="item5">5</span>
+    <span class="item6">6</span>
+  </div>
+
+  <div id="animationDivCode" style="border: none;">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item1"</span>&gt;<span class="black">1</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item2"</span>&gt;<span class="black">2</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item3"</span>&gt;<span class="black">3</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item4"</span>&gt;<span class="black">4</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item5"</span>&gt;<span class="black">5</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item6"</span>&gt;<span class="black">6</span>&lt;<span class="brown">/span</span>&gt;<br />
+      </p>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="float-borders-none">
+      <span class="brown">div </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">display:</span> grid;<br />
+          <span class="crimson">grid-gap:</span> 10px;<br />
+          <span class="crimson">background-color:</span> #2196F3;<br />
+          <span class="crimson">padding:</span> 10px;<br />
+        </p>
+      <span class="black">}</span>
+    </div>
+
+    <div class="float-borders-none">
+      <span class="brown">div<span class="black">&gt;</span>span </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">text-align:</span> center;<br />
+          <span class="crimson">font-size:</span> 30px;<br />
+          <span class="crimson">grid-template-areas: </span><span class="text">?</span>;<br />
+          <span class="crimson">background-color:</span> rgba(255, 255, 255, 0.8);<br />
+          <span class="crimson">padding:</span> 20px 0;<br />
+        </p>
+      <span class="black">}</span>
+    </div>
+    <p style="clear: left;"></p>
+
+    <div class="float-borders-none">
+      <span class="brown">.item4 </span><span class="black">{</span><br />
+        <p class="blue left-padding" style="margin: 0;">
+          <span class="crimson">grid-area: </span>area1;<br />
+        </p>
+      <span class="black">}</span>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

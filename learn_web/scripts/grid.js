@@ -68,6 +68,11 @@ function gridRowGap(id, gridRowGap) {
   document.getElementsByClassName('text')[0].innerHTML = gridRowGap;
 }
 
+function gridTempl(id, gridTempl) {
+  document.getElementById(id).style.gridTemplate = gridTempl;
+  document.getElementsByClassName('text')[0].innerHTML = gridTempl;
+}
+
 function gridTempCol(id, gridTempCol) {
   document.getElementById(id).style.gridTemplateColumns = gridTempCol;
   document.getElementsByClassName('text')[0].innerHTML = gridTempCol;
@@ -76,4 +81,10 @@ function gridTempCol(id, gridTempCol) {
 function gridTempRow(id, gridTempRow) {
   document.getElementById(id).style.gridTemplateRows = gridTempRow;
   document.getElementsByClassName('text')[0].innerHTML = gridTempRow;
+}
+
+function gridTemplAreas(id, gridTemplAreas) {
+  document.getElementsByClassName('text')[0].innerHTML = gridTemplAreas;
+  document.getElementById(id).style.gridTemplateAreas = gridTemplAreas;
+  document.getElementsByClassName('item4')[0].style.gridArea = 'area1';
 }
