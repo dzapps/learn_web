@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Grid area</title>
+<title>Grid auto flow</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -20,7 +20,7 @@
   <div class="note descriptionCSS noteCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The grid-auto-columns property sets a size for the columns in a grid container.
+      The grid-auto-flow property controls how auto-placed items get inserted in the grid.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -28,10 +28,7 @@
   <div class="note noteCSS note-round-bord">
     Note:<br />
     <div class="note-value">
-      This property affects only columns with the size not set.
-    </div>
-    <div class="note-value">
-      The grid-template-columns property overrides this property.
+      Add the value "dense" to fill any holes in the grid.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -50,55 +47,50 @@
       </thead>
       <tbody>
         <tr>
-          <td>auto</td>
-          <td>Default value. The size of the columns is determined by the size of the container.</td>
+          <td>row</td>
+          <td>Default value. Insert auto-placed items by filling each row.</td>
         </tr>
         <tr>
-          <td>max-content</td>
-          <td>Sets the size of each column to depend on the largest item in the column.</td>
+          <td>column</td>
+          <td>Insert auto-placed items by filling each column.</td>
         </tr>
         <tr>
-          <td>min-content</td>
-          <td>Sets the size of each column to depend on the largest item in the column.</td>
+          <td>row dense</td>
+          <td>Insert auto-placed items by filling each row, and fill any holes in the grid.</td>
         </tr>
         <tr>
-          <td>length</td>
-          <td>Sets the size of the columns, by using a legal length value.</td>
+          <td>column dense</td>
+          <td>Insert auto-placed items by filling each column, and fill any holes in the grid.</td>
         </tr>
       </tbody>
     </table>
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="gridAutoColExamplesBar" class="left-padding">
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', 'auto')" class="example-button example-rounded-buttons">auto</button>
+    <div id="gridAutoFlowExamplesBar" class="left-padding">
+      <a href="#gridAutoFlowExamplesBar">
+        <button onclick="gridAutoFlow('gridAutoFlowDiv', 'row')" class="example-button example-rounded-buttons">row</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', 'max-content')" class="example-button example-rounded-buttons">max-content</button>
+      <a href="#gridAutoFlowExamplesBar">
+        <button onclick="gridAutoFlow('gridAutoFlowDiv', 'column')" class="example-button example-rounded-buttons">column</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', 'min-content')" class="example-button example-rounded-buttons">min-content</button>
+      <a href="#gridAutoFlowExamplesBar">
+        <button onclick="gridAutoFlow('gridAutoFlowDiv', 'row dense')" class="example-button example-rounded-buttons">row dense</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', '100px')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">100px</button>
-      </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', '200px')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">200px</button>
-      </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', '50%')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">50%</button>
+      <a href="#gridAutoFlowExamplesBar">
+        <button onclick="gridAutoFlow('gridAutoFlowDiv', 'column dense')" class="example-button example-rounded-buttons">column dense</button>
       </a>
     </div>
   </div>
 
-  <div id="gridAutoColDiv" class="exampleDiv">
+  <div id="gridAutoFlowDiv" class="exampleDiv">
     <span class="item1">1</span>
     <span class="item2">2</span>
     <span class="item3">3</span>
     <span class="item4">4</span>
     <span class="item5">5</span>
     <span class="item6">6</span>
+    <span class="item7">7</span>
   </div>
 
   <div id="animationDivCode" style="border: none;">
@@ -111,6 +103,7 @@
         &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item4"</span>&gt;<span class="black">4</span>&lt;<span class="brown">/span</span>&gt;<br />
         &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item5"</span>&gt;<span class="black">5</span>&lt;<span class="brown">/span</span>&gt;<br />
         &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item6"</span>&gt;<span class="black">6</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item7"</span>&gt;<span class="black">7</span>&lt;<span class="brown">/span</span>&gt;<br />
       </p>
       <span>&lt;<span class="brown">/div</span>&gt;</span>
     </div>
@@ -119,7 +112,7 @@
       <span class="brown">div </span><span class="black">{</span><br />
         <p class="blue left-padding" style="margin: 0;">
           <span class="crimson">display:</span> grid;<br />
-          <span class="crimson">grid-auto-columns: </span><span class="text">?</span>;<br />
+          <span class="crimson">grid-auto-flow: </span><span class="text">?</span>;<br />
           <span class="crimson">grid-gap:</span> 10px;<br />
           <span class="crimson">background-color:</span> #2196F3;<br />
           <span class="crimson">padding:</span> 10px;<br />

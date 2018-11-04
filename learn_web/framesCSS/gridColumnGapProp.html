@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Grid area</title>
+<title>Grid column gap</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -20,18 +20,7 @@
   <div class="note descriptionCSS noteCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The grid-auto-columns property sets a size for the columns in a grid container.
-    </div>
-  </div>
-  <div><hr class="hr-length-90perc" /></div>
-
-  <div class="note noteCSS note-round-bord">
-    Note:<br />
-    <div class="note-value">
-      This property affects only columns with the size not set.
-    </div>
-    <div class="note-value">
-      The grid-template-columns property overrides this property.
+      The grid-column-gap property defines the size of the gap between the columns in a grid layout.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -50,49 +39,37 @@
       </thead>
       <tbody>
         <tr>
-          <td>auto</td>
-          <td>Default value. The size of the columns is determined by the size of the container.</td>
-        </tr>
-        <tr>
-          <td>max-content</td>
-          <td>Sets the size of each column to depend on the largest item in the column.</td>
-        </tr>
-        <tr>
-          <td>min-content</td>
-          <td>Sets the size of each column to depend on the largest item in the column.</td>
-        </tr>
-        <tr>
           <td>length</td>
-          <td>Sets the size of the columns, by using a legal length value.</td>
+          <td>Any legal length value, like px or %. 0 is the default value.</td>
         </tr>
       </tbody>
     </table>
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="gridAutoColExamplesBar" class="left-padding">
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', 'auto')" class="example-button example-rounded-buttons">auto</button>
+    <div id="gridColGapExamplesBar" class="left-padding">
+      <a href="#gridColGapExamplesBar">
+        <button onclick="gridColGap('gridColGapDiv', '3px')" class="example-button example-rounded-buttons">3px</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', 'max-content')" class="example-button example-rounded-buttons">max-content</button>
+      <a href="#gridColGapExamplesBar">
+        <button onclick="gridColGap('gridColGapDiv', '10px')" class="example-button example-rounded-buttons">10px</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', 'min-content')" class="example-button example-rounded-buttons">min-content</button>
+      <a href="#gridColGapExamplesBar">
+        <button onclick="gridColGap('gridColGapDiv', '2em')" class="example-button example-rounded-buttons">2em</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', '100px')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">100px</button>
+      <a href="#gridColGapExamplesBar">
+        <button onclick="gridColGap('gridColGapDiv', '20%')" class="example-button example-rounded-buttons">20%</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', '200px')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">200px</button>
+      <a href="#gridColGapExamplesBar">
+        <button onclick="gridColGap('gridColGapDiv', '40%')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">40%</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', '50%')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">50%</button>
+      <a href="#gridColGapExamplesBar">
+        <button onclick="gridColGap('gridColGapDiv', '80%')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">80%</button>
       </a>
     </div>
   </div>
 
-  <div id="gridAutoColDiv" class="exampleDiv">
+  <div id="gridColGapDiv" class="exampleDiv">
     <span class="item1">1</span>
     <span class="item2">2</span>
     <span class="item3">3</span>
@@ -119,9 +96,9 @@
       <span class="brown">div </span><span class="black">{</span><br />
         <p class="blue left-padding" style="margin: 0;">
           <span class="crimson">display:</span> grid;<br />
-          <span class="crimson">grid-auto-columns: </span><span class="text">?</span>;<br />
-          <span class="crimson">grid-gap:</span> 10px;<br />
-          <span class="crimson">background-color:</span> #2196F3;<br />
+          <span class="crimson">grid-template-columns: </span>auto auto auto auto;<br />
+          <span class="crimson">grid-column-gap: </span><span class="text">?</span>;<br />
+          <span class="crimson">background-color: </span>#2196F3;<br />
           <span class="crimson">padding:</span> 10px;<br />
         </p>
       <span class="black">}</span>

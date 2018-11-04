@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Grid area</title>
+<title>Grid template rows</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -20,18 +20,10 @@
   <div class="note descriptionCSS noteCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The grid-auto-columns property sets a size for the columns in a grid container.
-    </div>
-  </div>
-  <div><hr class="hr-length-90perc" /></div>
-
-  <div class="note noteCSS note-round-bord">
-    Note:<br />
-    <div class="note-value">
-      This property affects only columns with the size not set.
+      The grid-template-rows property specifies the number (and the heights) of the rows in a grid layout.
     </div>
     <div class="note-value">
-      The grid-template-columns property overrides this property.
+      The values are a space-separated list, where each value specifies the height of the respective row.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -50,49 +42,73 @@
       </thead>
       <tbody>
         <tr>
+          <td>none</td>
+          <td>Default value. Rows are created if needed.</td>
+        </tr>
+        <tr>
           <td>auto</td>
-          <td>Default value. The size of the columns is determined by the size of the container.</td>
+          <td>The size of the rows is determined by the size of the container, and on the size of the content of the items in the row.</td>
         </tr>
         <tr>
           <td>max-content</td>
-          <td>Sets the size of each column to depend on the largest item in the column.</td>
+          <td>Sets the size of each row to depend on the largest item in the row.</td>
         </tr>
         <tr>
           <td>min-content</td>
-          <td>Sets the size of each column to depend on the largest item in the column.</td>
+          <td>Sets the size of each row to depend on the largest item in the row.</td>
         </tr>
         <tr>
           <td>length</td>
           <td>Sets the size of the columns, by using a legal length value.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
         </tr>
       </tbody>
     </table>
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="gridAutoColExamplesBar" class="left-padding">
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', 'auto')" class="example-button example-rounded-buttons">auto</button>
+    <div id="gridTempRowExamplesBar" class="left-padding">
+      <a href="#gridTempRowExamplesBar">
+        <button onclick="gridTempRow('gridTempRowDiv', 'none')" class="example-button example-rounded-buttons">none</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', 'max-content')" class="example-button example-rounded-buttons">max-content</button>
+      <a href="#gridTempRowExamplesBar">
+        <button onclick="gridTempRow('gridTempRowDiv', 'auto')" class="example-button example-rounded-buttons">auto</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', 'min-content')" class="example-button example-rounded-buttons">min-content</button>
+      <a href="#gridTempRowExamplesBar">
+        <button onclick="gridTempRow('gridTempRowDiv', 'max-content')" class="example-button example-rounded-buttons">max-content</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', '100px')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">100px</button>
+      <a href="#gridTempRowExamplesBar">
+        <button onclick="gridTempRow('gridTempRowDiv', 'min-content')" class="example-button example-rounded-buttons">min-content</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', '200px')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">200px</button>
+      <a href="#gridTempRowExamplesBar">
+        <button onclick="gridTempRow('gridTempRowDiv', 'auto auto')" class="example-button example-rounded-buttons">auto auto</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', '50%')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">50%</button>
+      <a href="#gridTempRowExamplesBar">
+        <button onclick="gridTempRow('gridTempRowDiv', '50px 30px')" class="example-button example-rounded-buttons">50px 30px</button>
+      </a>
+      <a href="#gridTempRowExamplesBar">
+        <button onclick="gridTempRow('gridTempRowDiv', '50px auto')" class="example-button example-rounded-buttons">50px auto</button>
+      </a>
+      <a href="#gridTempRowExamplesBar">
+        <button onclick="gridTempRow('gridTempRowDiv', 'auto 30px')" class="example-button example-rounded-buttons">auto 30px</button>
+      </a>
+      <a href="#gridTempRowExamplesBar">
+        <button onclick="gridTempRow('gridTempRowDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#gridTempRowExamplesBar">
+        <button onclick="gridTempRow('gridTempRowDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
       </a>
     </div>
   </div>
 
-  <div id="gridAutoColDiv" class="exampleDiv">
+  <div id="gridTempRowDiv" class="exampleDiv">
     <span class="item1">1</span>
     <span class="item2">2</span>
     <span class="item3">3</span>
@@ -119,7 +135,8 @@
       <span class="brown">div </span><span class="black">{</span><br />
         <p class="blue left-padding" style="margin: 0;">
           <span class="crimson">display:</span> grid;<br />
-          <span class="crimson">grid-auto-columns: </span><span class="text">?</span>;<br />
+          <span class="crimson">grid-template-columns: </span> auto auto auto auto;<br />
+          <span class="crimson">grid-template-rows: </span><span class="text"></span>;<br />
           <span class="crimson">grid-gap:</span> 10px;<br />
           <span class="crimson">background-color:</span> #2196F3;<br />
           <span class="crimson">padding:</span> 10px;<br />

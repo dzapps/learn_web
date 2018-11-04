@@ -20,7 +20,7 @@
   <div class="note descriptionCSS noteCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The grid-auto-columns property sets a size for the columns in a grid container.
+      The grid-auto-rows property sets a size for the rows in a grid container.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -28,10 +28,10 @@
   <div class="note noteCSS note-round-bord">
     Note:<br />
     <div class="note-value">
-      This property affects only columns with the size not set.
+      This property affects only rows with the size not set.
     </div>
     <div class="note-value">
-      The grid-template-columns property overrides this property.
+      The grid-template-rows property overrides this property.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -70,29 +70,32 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="gridAutoColExamplesBar" class="left-padding">
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', 'auto')" class="example-button example-rounded-buttons">auto</button>
+    <div id="gridAutoRowsExamplesBar" class="left-padding">
+      <a href="#gridAutoRowsExamplesBar">
+        <button onclick="gridAutoRows('gridAutoRowsDiv', 'auto')" class="example-button example-rounded-buttons">auto</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', 'max-content')" class="example-button example-rounded-buttons">max-content</button>
+      <a href="#gridAutoRowsExamplesBar">
+        <button onclick="gridAutoRows('gridAutoRowsDiv', 'max-content')" class="example-button example-rounded-buttons">max-content</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', 'min-content')" class="example-button example-rounded-buttons">min-content</button>
+      <a href="#gridAutoRowsExamplesBar">
+        <button onclick="gridAutoRows('gridAutoRowsDiv', 'min-content')" class="example-button example-rounded-buttons">min-content</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', '100px')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">100px</button>
+      <a href="#gridAutoRowsExamplesBar">
+        <button onclick="gridAutoRows('gridAutoRowsDiv', '50px')" class="example-button example-rounded-buttons">50px</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', '200px')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">200px</button>
+      <a href="#gridAutoRowsExamplesBar">
+        <button onclick="gridAutoRows('gridAutoRowsDiv', '100px')" class="example-button example-rounded-buttons">100px</button>
       </a>
-      <a href="#gridAutoColExamplesBar">
-        <button onclick="gridAutoCol('gridAutoColDiv', '50%')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">50%</button>
+      <a href="#gridAutoRowsExamplesBar">
+        <button onclick="gridAutoRows('gridAutoRowsDiv', '30%')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">30%</button>
+      </a>
+      <a href="#gridAutoRowsExamplesBar">
+        <button onclick="gridAutoRows('gridAutoRowsDiv', '300%')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">300%</button>
       </a>
     </div>
   </div>
 
-  <div id="gridAutoColDiv" class="exampleDiv">
+  <div id="gridAutoRowsDiv" class="exampleDiv">
     <span class="item1">1</span>
     <span class="item2">2</span>
     <span class="item3">3</span>
@@ -119,7 +122,7 @@
       <span class="brown">div </span><span class="black">{</span><br />
         <p class="blue left-padding" style="margin: 0;">
           <span class="crimson">display:</span> grid;<br />
-          <span class="crimson">grid-auto-columns: </span><span class="text">?</span>;<br />
+          <span class="crimson">grid-auto-rows: </span><span class="text">?</span>;<br />
           <span class="crimson">grid-gap:</span> 10px;<br />
           <span class="crimson">background-color:</span> #2196F3;<br />
           <span class="crimson">padding:</span> 10px;<br />

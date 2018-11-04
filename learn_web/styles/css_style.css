@@ -205,6 +205,7 @@ body {
   min-height: 150px;
   margin-left: 2em;
   border: 1px solid white;
+  overflow: auto;
 }
 
 .exampleDiv span {
@@ -377,16 +378,43 @@ h2 {
   padding: 5px;
 }
 
-#gridDiv>span, #gridAutoColDiv>span{
+#gridDiv>span, #gridAreaDiv>span, #gridGapDiv>span, #gridColDiv>span, #gridRowDiv>span, #gridAutoColDiv>span, #gridAutoFlowDiv>span,
+#gridAutoRowsDiv>span, #gridColStartDiv>span, #gridColEndDiv>span, #gridColGapDiv>span, #gridRowStartDiv>span,
+#gridRowEndDiv>span, #gridRowGapDiv>span, #gridTempColDiv>span, #gridTempRowDiv>span {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 10px 0;
   font-size: 18px;
 }
 
-#gridAutoColDiv {
+#gridAutoColDiv, #gridAutoRowsDiv {
   display: grid;
   grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+#gridAutoFlowDiv {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+#gridColDiv, #gridRowDiv, #gridColStartDiv, #gridColEndDiv, #gridRowStartDiv,
+#gridRowEndDiv, #gridTempColDiv, #gridTempRowDiv, #gridAreaDiv {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+#gridGapDiv, #gridColGapDiv, #gridRowGapDiv {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   background-color: #2196F3;
   padding: 10px;
 }
