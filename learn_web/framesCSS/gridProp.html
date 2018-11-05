@@ -82,28 +82,22 @@
     <div><h2 class="tag">Examples</h2></div>
     <div id="gridExamplesBar" class="left-padding">
       <a href="#gridExamplesBar">
-        <button onclick="grid('gridDiv', 'none')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 5px;">none</button>
+        <button onclick="grid('gridDiv', '150px / auto auto auto')" class="example-button example-rounded-buttons">150px / auto auto auto</button>
       </a>
       <a href="#gridExamplesBar">
-        <button onclick="grid('gridDiv', '150px / auto auto')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 5px;">grid-template-rows / grid-template-columns</button>
-      </a>
-      <!-- <a href="#gridExamplesBar">
-        <button onclick="grid('gridDiv', '200px')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 5px;">grid-template-areas</button>
+        <button onclick="grid('gridDiv', '100px / auto auto')" class="example-button example-rounded-buttons">100px / auto auto</button>
       </a>
       <a href="#gridExamplesBar">
-        <button onclick="grid('gridDiv', 'grid-template-rows / grid-auto-columns')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 5px;">grid-template-rows / grid-auto-columns</button>
+        <button onclick="grid('gridDiv', '50px 100px / auto')" class="example-button example-rounded-buttons">50px 100px / auto</button>
       </a>
       <a href="#gridExamplesBar">
-        <button onclick="grid('gridDiv', 'grid-auto-rows / grid-template-columns')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 5px;">grid-auto-rows / grid-template-columns</button>
+        <button onclick="grid('gridDiv', '100px auto / 50px 30px 100px auto')" class="example-button example-rounded-buttons">100px auto / 50px 30px 100px auto</button>
       </a>
       <a href="#gridExamplesBar">
-        <button onclick="grid('gridDiv', 'grid-template-rows / grid-auto-flow grid-auto-columns')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 5px;">grid-template-rows / grid-auto-flow grid-auto-columns</button>
+        <button onclick="gridTable('gridDiv2', '\'header header header header header header\' \'menu main main main right right\' \'menu additional additional additional additional additional\' \'menu footer footer footer footer footer\'')" class="example-button example-rounded-buttons">areas</button>
       </a>
       <a href="#gridExamplesBar">
-        <button onclick="grid('gridDiv', 'grid-auto-flow grid-auto-rows / grid-template-columns')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 5px;">grid-auto-flow grid-auto-rows / grid-template-columns</button>
-      </a> -->
-      <a href="#gridExamplesBar">
-        <button onclick="grid('gridDiv', 'initial')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 5px;">initial</button>
+        <button onclick="grid('gridDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
       </a>
       <a href="#gridExamplesBar">
         <button onclick="grid('gridDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
@@ -112,24 +106,33 @@
   </div>
 
   <div id="gridDiv" class="exampleDiv">
-    <p class="item1">1</p>
-    <p class="item2">2</p>
-    <p class="item3">3</p>
-    <p class="item4">4</p>
-    <p class="item5">5</p>
-    <p class="item6">6</p>
+    <span class="item1">1</span>
+    <span class="item2">2</span>
+    <span class="item3">3</span>
+    <span class="item4">4</span>
+    <span class="item5">5</span>
+    <span class="item6">6</span>
+  </div>
+
+  <div id="gridDiv2" class="exampleDiv" style="display: none;">
+    <span class="item7">1</span>
+    <span class="item8">2</span>
+    <span class="item9">3</span>
+    <span class="item10">4</span>
+    <span class="item11">5</span>
+    <span class="item12">6</span>
   </div>
 
   <div id="animationDivCode" style="border: none;">
     <div class="blue float-borders-none">
       &lt;<span class="brown">div</span>&gt;<br />
       <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">p </span><span class="crimson">class=</span><span class="olive">"item1"</span>&gt;<span class="black">1</span>&lt;<span class="brown">/p</span>&gt;<br />
-        &lt;<span class="brown">p </span><span class="crimson">class=</span><span class="olive">"item2"</span>&gt;<span class="black">2</span>&lt;<span class="brown">/p</span>&gt;<br />
-        &lt;<span class="brown">p </span><span class="crimson">class=</span><span class="olive">"item3"</span>&gt;<span class="black">3</span>&lt;<span class="brown">/p</span>&gt;<br />
-        &lt;<span class="brown">p </span><span class="crimson">class=</span><span class="olive">"item4"</span>&gt;<span class="black">4</span>&lt;<span class="brown">/p</span>&gt;<br />
-        &lt;<span class="brown">p </span><span class="crimson">class=</span><span class="olive">"item5"</span>&gt;<span class="black">5</span>&lt;<span class="brown">/p</span>&gt;<br />
-        &lt;<span class="brown">p </span><span class="crimson">class=</span><span class="olive">"item6"</span>&gt;<span class="black">6</span>&lt;<span class="brown">/p</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item1"</span>&gt;<span class="black">1</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item2"</span>&gt;<span class="black">2</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item3"</span>&gt;<span class="black">3</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item4"</span>&gt;<span class="black">4</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item5"</span>&gt;<span class="black">5</span>&lt;<span class="brown">/span</span>&gt;<br />
+        &lt;<span class="brown">span </span><span class="crimson">class=</span><span class="olive">"item6"</span>&gt;<span class="black">6</span>&lt;<span class="brown">/span</span>&gt;<br />
       </p>
       <span>&lt;<span class="brown">/div</span>&gt;</span>
     </div>
@@ -144,6 +147,22 @@
           <span class="crimson">padding:</span> 10px;<br />
         </p>
       <span class="black">}</span>
+    </div>
+    <p style="clear: left;"></p>
+
+    <div id="gridItemsDiv" class="blue float-borders-none" style="display: none;">
+      <span class="brown">.item1 </span>
+      <span class="black">{ </span><span class="crimson">grid-area: </span> header; <span class="black">} </span><br />
+      <span class="brown">.item2 </span>
+      <span class="black">{ </span><span class="crimson">grid-area: </span> menu; <span class="black">} </span><br />
+      <span class="brown">.item3 </span>
+      <span class="black">{ </span><span class="crimson">grid-area: </span> main; <span class="black">} </span><br />
+      <span class="brown">.item4 </span>
+      <span class="black">{ </span><span class="crimson">grid-area: </span> right; <span class="black">} </span><br />
+      <span class="brown">.item5 </span>
+      <span class="black">{ </span><span class="crimson">grid-area: </span> additional; <span class="black">} </span><br />
+      <span class="brown">.item6 </span>
+      <span class="black">{ </span><span class="crimson">grid-area: </span> footer; <span class="black">} </span><br />
     </div>
 
     <div class="float-borders-none">

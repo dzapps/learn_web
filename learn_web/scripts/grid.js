@@ -1,6 +1,23 @@
 function grid(id, grid) {
+  document.getElementById(id).style.display = "grid";
+  document.getElementById('gridDiv2').style.display = "none";
+  document.getElementById('gridItemsDiv').style.display = "none";
   document.getElementById(id).style.grid = grid;
   document.getElementsByClassName('text')[0].innerHTML = grid;
+}
+
+function gridTable(id, gridTable) {
+  document.getElementsByClassName('item7')[0].style.gridArea = 'header';
+  document.getElementsByClassName('item8')[0].style.gridArea = 'menu';
+  document.getElementsByClassName('item9')[0].style.gridArea = 'main';
+  document.getElementsByClassName('item10')[0].style.gridArea = 'right';
+  document.getElementsByClassName('item11')[0].style.gridArea = 'additional';
+  document.getElementsByClassName('item12')[0].style.gridArea = 'footer';
+  document.getElementById(id).style.grid = gridTable;
+  document.getElementById('gridItemsDiv').style.display = "block";
+  document.getElementById(id).style.display = "grid";
+  document.getElementById('gridDiv').style.display = "none";
+  document.getElementsByClassName('text')[0].innerHTML = gridTable;
 }
 
 function gridArea(gridArea) {
@@ -69,8 +86,25 @@ function gridRowGap(id, gridRowGap) {
 }
 
 function gridTempl(id, gridTempl) {
+  document.getElementById(id).style.display = "grid";
+  document.getElementById('gridTemplDiv2').style.display = "none";
+  document.getElementById('gridTemplItemsDiv').style.display = "none";
   document.getElementById(id).style.gridTemplate = gridTempl;
   document.getElementsByClassName('text')[0].innerHTML = gridTempl;
+}
+
+function gridTemplTable(id, gridTemplTable) {
+  document.getElementsByClassName('item7')[0].style.gridArea = 'header';
+  document.getElementsByClassName('item8')[0].style.gridArea = 'menu';
+  document.getElementsByClassName('item9')[0].style.gridArea = 'main';
+  document.getElementsByClassName('item10')[0].style.gridArea = 'right';
+  document.getElementsByClassName('item11')[0].style.gridArea = 'additional';
+  document.getElementsByClassName('item12')[0].style.gridArea = 'footer';
+  document.getElementById(id).style.gridTemplate = gridTemplTable;
+  document.getElementById('gridTemplItemsDiv').style.display = "block";
+  document.getElementById(id).style.display = "grid";
+  document.getElementById('gridTemplDiv').style.display = "none";
+  document.getElementsByClassName('text')[0].innerHTML = gridTemplTable;
 }
 
 function gridTempCol(id, gridTempCol) {

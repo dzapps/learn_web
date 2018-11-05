@@ -370,24 +370,16 @@ h2 {
   font-family: 'Arthur Gothic', sans-serif;
 }
 
-#gridDiv {
-  display: grid;
-  grid: 150px / auto auto auto;
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 5px;
-}
-
-#gridDiv>span, #gridAreaDiv>span, #gridGapDiv>span, #gridColDiv>span, #gridRowDiv>span, #gridAutoColDiv>span, #gridAutoFlowDiv>span,
+#gridDiv>span, #gridDiv2>span, #gridAreaDiv>span, #gridGapDiv>span, #gridColDiv>span, #gridRowDiv>span, #gridAutoColDiv>span, #gridAutoFlowDiv>span,
 #gridAutoRowsDiv>span, #gridColStartDiv>span, #gridColEndDiv>span, #gridColGapDiv>span, #gridRowStartDiv>span,
-#gridRowEndDiv>span, #gridRowGapDiv>span, #gridTemplDiv>span, #gridTempColDiv>span, #gridTempRowDiv>span, #gridTemplAreasDiv>span {
+#gridRowEndDiv>span, #gridRowGapDiv>span, #gridTemplDiv>span, #gridTemplDiv2>span, #gridTempColDiv>span, #gridTempRowDiv>span, #gridTemplAreasDiv>span {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 10px 0;
   font-size: 18px;
 }
 
-#gridAutoColDiv, #gridAutoRowsDiv, #gridTemplAreasDiv, #gridTemplDiv {
+#gridDiv, #gridDiv2, #gridAutoColDiv, #gridAutoRowsDiv, #gridTemplAreasDiv, #gridTemplDiv, #gridTemplDiv2 {
   display: grid;
   grid-gap: 10px;
   background-color: #2196F3;
