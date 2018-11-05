@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<title>Isolation</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/isolation.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/main_window_css.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The isolation property defines whether an element must create a new stacking content.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      The isolation property is helpful when used with background-blend-mode or mix-blend-mode.
+    </div>
+    <div class="note-value">
+      Edge/Internet Explorer do not support the isolation property.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>auto</td>
+          <td>Default. A new stacking context is created only if one of the properties applied to the element requires it.</td>
+        </tr>
+        <tr>
+          <td>isolate</td>
+          <td>A new stacking context must be created.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="isolationExamplesBar" class="left-padding">
+      <a href="#isolationExamplesBar">
+        <button onclick="isolation('isolationDivE', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#isolationExamplesBar">
+        <button onclick="isolation('isolationDivE', 'isolate')" class="example-button example-rounded-buttons">isolate</button>
+      </a>
+      <a href="#isolationExamplesBar">
+        <button onclick="isolation('isolationDivE', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#isolationExamplesBar">
+        <button onclick="isolation('isolationDivE', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="isolationDiv" class="exampleDiv isolationDivA">
+    <div id="isolationDivD">
+      <div class="isolationDivA isolationDivC">isolationDivD: isolation: auto;</div>
+    </div>
+    <div id="isolationDivE">
+      <div class="isolationDivA isolationDivC">isolationDivE: isolation: <span class="text">isolate</span>;</div>
+    </div>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span><span class="crimson"> class=</span><span class="olive">"isolationDivA"</span>&gt;<br />
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">div</span><span class="purple"> id=</span><span class="olive">"isolationDivD"</span>&gt;<br />
+            <span class="left-padding">&lt;<span class="brown">div</span>
+              <span class="crimson">class=</span><span class="olive">"isolationDivA isolationDivC"</span>&gt;
+            </span><br />
+            <span class="black more-padding">isolationDivD: isolation: auto;</span><br />
+            <span class="left-padding">&lt;<span class="brown">/div</span>&gt;</span><br />
+          &lt;<span class="brown">/div</span>&gt;<br />
+          &lt;<span class="brown">div</span><span class="purple"> id=</span><span class="olive">"isolationDivE"</span>&gt;<br />
+            <span class="left-padding">&lt;<span class="brown">div</span>
+              <span class="crimson">class=</span><span class="olive">"isolationDivA isolationDivC"</span>&gt;
+            </span><br />
+            <span class="black more-padding">isolationDivD: isolation: isolate;</span><br />
+            <span class="left-padding">&lt;<span class="brown">/div</span>&gt;</span><br />
+          &lt;<span class="brown">/div</span>&gt;
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">.isolationDivA </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">background-color: </span>blue;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">.isolationDivC </span><span class="black">{</span><br />
+        <p class="blue more-padding" style="margin: 0;">
+          <span class="crimson">width: </span>150px;<br />
+          <span class="crimson">height: </span>150px;<br />
+          <span class="crimson">border: </span>1px solid white;</span><br />
+          <span class="crimson">padding: </span>2px;<br />
+          <span class="crimson">mix-blend-mode: </span>difference;</span><br />
+        </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+    <p style="clear: left;"></p>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">#isolationDivD </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">isolation: </span>auto;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">#isolationDivE </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">isolation: </span><span class="text">isolation;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

@@ -410,3 +410,21 @@ h2 {
   background-color: #2196F3;
   padding: 10px;
 }
+
+.isolationDivA {
+  background-color: blue;
+}
+
+.isolationDivC {
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  padding: 2px;
+  mix-blend-mode: difference;
+}
+#isolationDivD {
+  isolation: auto;
+}
+#isolationDivE {
+  isolation: isolate;
+}

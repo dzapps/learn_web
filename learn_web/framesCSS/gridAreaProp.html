@@ -71,19 +71,22 @@
     <div><h2 class="tag">Examples</h2></div>
     <div id="gridAreaExamplesBar" class="left-padding">
       <a href="#gridAreaExamplesBar">
-        <button onclick="gridArea('1 / 1 / 1 / 1')" class="example-button example-rounded-buttons">1 / 1 / 1 / 1</button>
+        <button onclick="gridArea('gridAreaDiv', '1 / 1 / 1 / 1')" class="example-button example-rounded-buttons">1 / 1 / 1 / 1</button>
       </a>
       <a href="#gridAreaExamplesBar">
-        <button onclick="gridArea('2 / 3 / 3 / 2')" class="example-button example-rounded-buttons">2 / 3 / 3 / 2</button>
+        <button onclick="gridArea('gridAreaDiv', '2 / 3 / 3 / 2')" class="example-button example-rounded-buttons">2 / 3 / 3 / 2</button>
       </a>
       <a href="#gridAreaExamplesBar">
-        <button onclick="gridArea('2 / 2 / span 2 / span 2')" class="example-button example-rounded-buttons">2 / 2 / span 2 / span 2</button>
+        <button onclick="gridArea('gridAreaDiv', '2 / 2 / span 2 / span 2')" class="example-button example-rounded-buttons">2 / 2 / span 2 / span 2</button>
       </a>
       <a href="#gridAreaExamplesBar">
-        <button onclick="gridArea('span 2 / span 2 / 2 / 2')" class="example-button example-rounded-buttons">span 2 / span 2 / 2 / 2</button>
+        <button onclick="gridArea('gridAreaDiv', '3 / 3 / span 2 / span 2')" class="example-button example-rounded-buttons">3 / 3 / span 2 / span 2</button>
       </a>
       <a href="#gridAreaExamplesBar">
-        <button onclick="gridArea('span 2 / span 2 / span 2 / span 2')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">span 2 / span 2 / span 2 / span 2</button>
+        <button onclick="gridArea('gridAreaDiv', '5 / 5 / span 2 / span 2')" class="example-button example-rounded-buttons">5 / 5 / span 2 / span 2</button>
+      </a>
+      <a href="#gridAreaExamplesBar">
+        <button onclick="gridAreaTable('gridAreaDiv', 'area1')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">area</button>
       </a>
     </div>
   </div>
@@ -115,13 +118,15 @@
       <span class="brown">div </span><span class="black">{</span><br />
         <p class="blue left-padding" style="margin: 0;">
           <span class="crimson">display:</span> grid;<br />
-          <span class="crimson">grid-template-columns: </span>auto auto auto auto;<br />
+          <span id="columns"><span class="crimson">grid-template-columns: </span>auto auto auto auto;<br /></span>
+          <span id="areas" style="display: none;"><span class="crimson">grid-template-areas: </span>area1 area1 area1 area1 area1;<br /></span>
           <span class="crimson">grid-gap:</span> 10px;<br />
           <span class="crimson">background-color:</span> #2196F3;<br />
           <span class="crimson">padding:</span> 10px;<br />
         </p>
       <span class="black">}</span>
     </div>
+    <p style="clear: left;"></p>
 
     <div class="float-borders-none">
       <span class="brown">div<span class="black">&gt;</span>span </span><span class="black">{</span><br />
@@ -133,7 +138,6 @@
         </p>
       <span class="black">}</span>
     </div>
-    <p style="clear: left;"></p>
 
     <div class="float-borders-none">
       <span class="brown">.item4 </span><span class="black">{</span><br />

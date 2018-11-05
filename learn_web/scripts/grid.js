@@ -20,7 +20,19 @@ function gridTable(id, gridTable) {
   document.getElementsByClassName('text')[0].innerHTML = gridTable;
 }
 
-function gridArea(gridArea) {
+function gridArea(id, gridArea) {
+  document.getElementById(id).style.gridTemplateColumns = 'auto auto auto auto';
+  document.getElementById(id).style.gridTemplateAreas = '';
+  document.getElementById('columns').style.display = 'inline';
+  document.getElementById('areas').style.display = 'none';
+  document.getElementsByClassName('text')[0].innerHTML = gridArea;
+  document.getElementsByClassName('item4')[0].style.gridArea = gridArea;
+}
+
+function gridAreaTable(id, gridArea) {
+  document.getElementById('columns').style.display = 'none';
+  document.getElementById('areas').style.display = 'inline';
+  document.getElementById(id).style.gridTemplateAreas = `'${gridArea} ${gridArea} ${gridArea} ${gridArea} ${gridArea}'`;
   document.getElementsByClassName('text')[0].innerHTML = gridArea;
   document.getElementsByClassName('item4')[0].style.gridArea = gridArea;
 }
