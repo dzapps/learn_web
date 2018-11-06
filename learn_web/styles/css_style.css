@@ -428,3 +428,9 @@ h2 {
 #isolationDivE {
   isolation: isolate;
 }
+
+#listStylePosDiv li {
+  border: 2px solid blue;
+  width: 100px;
+  /* display: grid; */
+}

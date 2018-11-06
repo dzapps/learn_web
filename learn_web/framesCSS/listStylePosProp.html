@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>List style image</title>
+<title>List style position</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -20,16 +20,7 @@
   <div class="note descriptionCSS noteCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The list-style-image property replaces the list-item marker with an image.
-    </div>
-  </div>
-  <div><hr class="hr-length-90perc" /></div>
-
-  <div class="note noteCSS note-round-bord">
-    Note:<br />
-    <div class="note-value">
-      Always specify the list-style-type property in addition.
-      This property is used if the image for some reason is unavailable.
+      The list-style-position property specifies the position of the list-item markers (bullet points).
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -48,15 +39,12 @@
       </thead>
       <tbody>
         <tr>
-          <td>none</td>
-          <td>No image will be displayed.
-            Instead, the list-style-type property will define what type of list marker will be rendered.
-            This is default.
-          </td>
+          <td>inside</td>
+          <td>The bullet points will be inside the list item.</td>
         </tr>
         <tr>
-          <td>url</td>
-          <td>The path to the image to be used as a list-item marker.</td>
+          <td>outside</td>
+          <td>The bullet points will be outside the list item. This is default.</td>
         </tr>
         <tr>
           <td>initial</td>
@@ -71,27 +59,24 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="listExamplesBar" class="left-padding">
-      <a href="#listExamplesBar">
-        <button onclick="listStyleImg('listImgDivUl', 'ul', 'none')" class="example-button example-rounded-buttons">none</button>
+    <div id="listStylePosExamplesBar" class="left-padding">
+      <a href="#listStylePosExamplesBar">
+        <button onclick="listStylePos('listStylePosDiv', 'inside')" class="example-button example-rounded-buttons">inside</button>
       </a>
-      <a href="#listExamplesBar">
-        <button onclick="listStyleImg('listImgDivUl', 'ul', 'url(\'../images/list_style_image.png\')')" class="example-button example-rounded-buttons">url (ul)</button>
+      <a href="#listStylePosExamplesBar">
+        <button onclick="listStylePos('listStylePosDiv', 'outside')" class="example-button example-rounded-buttons">outside</button>
       </a>
-      <a href="#listExamplesBar">
-        <button onclick="listStyleImg('listImgDivLi', '.cake', 'url(\'../images/list_style_image.png\')')" class="example-button example-rounded-buttons">url (li)</button>
+      <a href="#listStylePosExamplesBar">
+        <button onclick="listStylePos('listStylePosDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
       </a>
-      <a href="#listExamplesBar">
-        <button onclick="listStyleImg('listImgDivUl', 'ul', 'initial')" class="example-button example-rounded-buttons">initial</button>
-      </a>
-      <a href="#listExamplesBar">
-        <button onclick="listStyleImg('listImgDivUl', 'ul', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      <a href="#listStylePosExamplesBar">
+        <button onclick="listStylePos('listStylePosDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
       </a>
     </div>
   </div>
 
   <div class="exampleDiv">
-    <ul id="listImgDivUl">
+    <ul id="listStylePosDiv">
       <li>Cake</li>
       <li>Biscuit</li>
       <li>Pie</li>
@@ -102,8 +87,7 @@
     <div class="code blue float-borders-none">
       &lt;<span class="brown">div</span>&gt;<br />
         <span class="left-padding">&lt;<span class="brown">ul</span>&gt;<br /></span>
-          <span class="more-padding">&lt;<span class="brown">li</span>
-          <span class&gt;<span class="brown">class=</span><span class="olive">"cake"</span><span class="black">Cake</span>&gt;&lt;<span class="brown">li</span>&gt;<br /></span>
+          <span class="more-padding">&lt;<span class="brown">li</span>&gt;<span class="black">Cake</span>&lt;<span class="brown">li</span>&gt;<br /></span>
           <span class="more-padding">&lt;<span class="brown">li</span>&gt;<span class="black">Bisсuit</span>&lt;<span class="brown">li</span>&gt;<br /></span>
           <span class="more-padding">&lt;<span class="brown">li</span>&gt;<span class="black">Pie</span>&lt;<span class="brown">li</span>&gt;<br /></span>
         <span class="left-padding">&lt;<span class="brown">/ul</span>&gt;<br /></span>
@@ -112,9 +96,9 @@
 
     <div class="code float-borders-none">
       <p class="blue left-padding" style="margin: 0">
-        <span class="brown text">ul</span><span class="black"> {</span><br />
+        <span class="brown">ul</span><span class="black"> {</span><br />
           <p class="blue more-padding" style="margin: 0;">
-            <span class="crimson">list-style-image: </span><span class="text">?</span>;<br />
+            <span class="crimson">list-style-position: </span><span class="text">?</span>;<br />
           </p>
         <span class="black left-padding">}</span>
       </p>
