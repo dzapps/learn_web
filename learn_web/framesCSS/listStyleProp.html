@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<title>List</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/list.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/list.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The list-style property is a shorthand for the following properties:
+      list-style-type, list-style-position, list-style-image.
+    </div>
+    <div class="note-value">
+      If one of the values are missing, the default value for that property will be used.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>list-style-type</td>
+          <td>Specifies the type of list-item marker. Default value is "disc".</td>
+        </tr>
+        <tr>
+          <td>list-style-position</td>
+          <td>Specifies where to place the list-item marker. Default value is "outside".</td>
+        </tr>
+        <tr>
+          <td>list-style-image</td>
+          <td>Specifies the type of list-item marker. Default value is "none".</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="listStyleExamplesBar" class="left-padding">
+      <a href="#listStyleExamplesBar">
+        <button onclick="listStyle('listStyleDivUl', 'georgian inside none')" class="example-button example-rounded-buttons">example1</button>
+      </a>
+      <a href="#listStyleExamplesBar">
+        <button onclick="listStyle('listStyleDivUl', 'upper-roman outside none')" class="example-button example-rounded-buttons">example2</button>
+      </a>
+      <a href="#listStyleExamplesBar">
+        <button onclick="listStyle('listStyleDivUl', 'decimal-leading-zero url(\'../images/list_style_image.png\')')" class="example-button example-rounded-buttons">example3</button>
+      </a>
+      <a href="#listStyleExamplesBar">
+        <button onclick="listStyle('listStyleDivUl', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#listStyleExamplesBar">
+        <button onclick="listStyle('listStyleDivUl', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv">
+    <ul id="listStyleDivUl">
+      <li>Cake</li>
+      <li>Biscuit</li>
+      <li>Pie</li>
+    </ul>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+        <span class="left-padding">&lt;<span class="brown">ul</span>&gt;<br /></span>
+          <span class="more-padding">&lt;<span class="brown">li</span>&gt;<span class="black">Cake</span>&lt;<span class="brown">li</span>&gt;<br /></span>
+          <span class="more-padding">&lt;<span class="brown">li</span>&gt;<span class="black">Bisсuit</span>&lt;<span class="brown">li</span>&gt;<br /></span>
+          <span class="more-padding">&lt;<span class="brown">li</span>&gt;<span class="black">Pie</span>&lt;<span class="brown">li</span>&gt;<br /></span>
+        <span class="left-padding">&lt;<span class="brown">/ul</span>&gt;<br /></span>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">ul</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">list-style-position: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

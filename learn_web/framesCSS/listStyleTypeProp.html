@@ -49,14 +49,91 @@
       <tbody>
         <tr>
           <td>none</td>
-          <td>No image will be displayed.
-            Instead, the list-style-type property will define what type of list marker will be rendered.
-            This is default.
-          </td>
+          <td>No marker is shown.</td>
         </tr>
         <tr>
-          <td>url</td>
-          <td>The path to the image to be used as a list-item marker.</td>
+          <td>disc</td>
+          <td>Default value. The marker is a filled circle.</td>
+        </tr>
+        <tr>
+          <td>armenian</td>
+          <td>The marker is traditional Armenian numbering.</td>
+        </tr>
+        <tr>
+          <td>circle</td>
+          <td>The marker is a circle.</td>
+        </tr>
+        <tr>
+          <td>cjk-ideographic</td>
+          <td>The marker is plain ideographic numbers.</td>
+        </tr>
+        <tr>
+          <td>decimal</td>
+          <td>The marker is a number.</td>
+        </tr>
+        <tr>
+          <td>decimal-leading-zero</td>
+          <td>The marker is a number with leading zeros (01, 02, 03, etc.).</td>
+        </tr>
+        <tr>
+          <td>georgian</td>
+          <td>The marker is traditional Georgian numbering.</td>
+        </tr>
+        <tr>
+          <td>hebrew</td>
+          <td>The marker is traditional Hebrew numbering.</td>
+        </tr>
+        <tr>
+          <td>hiragana</td>
+          <td>The marker is traditional Hiragana numbering.<td>
+        </tr>
+        <tr>
+          <td>hiragana-iroha</td>
+          <td>The marker is traditional Hiragana iroha numbering.</td>
+        </tr>
+        <tr>
+          <td>katakana</td>
+          <td>The marker is traditional Katakana numbering.</td>
+        </tr>
+        <tr>
+          <td>katakana-iroha</td>
+          <td>The marker is traditional Katakana iroha numbering.</td>
+        </tr>
+        <tr>
+          <td>lower-alpha</td>
+          <td>The marker is lower-alpha (a, b, c, d, e, etc.).</td>
+        </tr>
+        <tr>
+          <td>lower-greek</td>
+          <td>The marker is lower-greek.</td>
+        </tr>
+        <tr>
+          <td>lower-latin</td>
+          <td>The marker is lower-latin (a, b, c, d, e, etc.).</td>
+        </tr>
+        <tr>
+          <td>lower-roman</td>
+          <td>The marker is lower-roman (i, ii, iii, iv, v, etc.).</td>
+        </tr>
+        <tr>
+          <td>square</td>
+          <td>The marker is a square.</td>
+        </tr>
+        <tr>
+          <td>upper-alpha</td>
+          <td>The marker is upper-alpha (A, B, C, D, E, etc.).</td>
+        </tr>
+        <tr>
+          <td>upper-greek</td>
+          <td>The marker is upper-greek.</td>
+        </tr>
+        <tr>
+          <td>upper-latin</td>
+          <td>The marker is upper-latin (A, B, C, D, E, etc.).</td>
+        </tr>
+        <tr>
+          <td>upper-roman</td>
+          <td>The marker is upper-roman (I, II, III, IV, V, etc.).</td>
         </tr>
         <tr>
           <td>initial</td>
@@ -71,27 +148,95 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="listExamplesBar" class="left-padding">
-      <a href="#listExamplesBar">
-        <button onclick="listStyleImg('listImgDivUl', 'ul', 'none')" class="example-button example-rounded-buttons">none</button>
+    <div id="listStyleTypeExamplesBar" class="left-padding">
+      <a href="#listStyleTypeExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'none')" class="example-button example-rounded-buttons">none</button>
       </a>
       <a href="#listExamplesBar">
-        <button onclick="listStyleImg('listImgDivUl', 'ul', 'url(\'../images/list_style_image.png\')')" class="example-button example-rounded-buttons">url (ul)</button>
+        <button onclick="listStyleType('listStyleTypeDivUl', 'disc')" class="example-button example-rounded-buttons">disc</button>
+      </a>
+      <a href="#listStyleTypeExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'armenian')" class="example-button example-rounded-buttons">armenian</button>
       </a>
       <a href="#listExamplesBar">
-        <button onclick="listStyleImg('listImgDivLi', '.cake', 'url(\'../images/list_style_image.png\')')" class="example-button example-rounded-buttons">url (li)</button>
+        <button onclick="listStyleType('listStyleTypeDivUl', 'circle')" class="example-button example-rounded-buttons">circle</button>
+      </a>
+      <a href="#listStyleTypeExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'square')" class="example-button example-rounded-buttons">square</button>
       </a>
       <a href="#listExamplesBar">
-        <button onclick="listStyleImg('listImgDivUl', 'ul', 'initial')" class="example-button example-rounded-buttons">initial</button>
+        <button onclick="listStyleType('listStyleTypeDivUl', 'cjk-ideographic')" class="example-button example-rounded-buttons">cjk-ideographic</button>
+      </a>
+      <a href="#listStyleTypeExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'decimal')" class="example-button example-rounded-buttons">decimal</button>
       </a>
       <a href="#listExamplesBar">
-        <button onclick="listStyleImg('listImgDivUl', 'ul', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+        <button onclick="listStyleType('listStyleTypeDivUl', 'decimal-leading-zero')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 5px;">decimal-leading-zero</button>
+      </a>
+      <a href="#listStyleTypeExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'georgian')" class="example-button example-rounded-buttons">georgian</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'hebrew')" class="example-button example-rounded-buttons">hebrew</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'hiragana')" class="example-button example-rounded-buttons">hiragana</button>
+      </a>
+      <a href="#listStyleTypeExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'hiragana-iroha')" class="example-button example-rounded-buttons">hiragana-iroha</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'katakana')" class="example-button example-rounded-buttons">katakana</button>
+      </a>
+      <a href="#listStyleTypeExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'katakana-iroha')" class="example-button example-rounded-buttons">katakana-iroha</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'lower-alpha')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 5px;">lower-alpha</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'lower-greek')" class="example-button example-rounded-buttons">lower-greek</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'lower-latin')" class="example-button example-rounded-buttons">lower-latin</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'lower-roman')" class="example-button example-rounded-buttons">lower-roman</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'upper-alpha')" class="example-button example-rounded-buttons">upper-alpha</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'upper-greek')" class="example-button example-rounded-buttons">upper-greek</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'upper-latin')" class="example-button example-rounded-buttons">upper-latin</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'upper-roman')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 5px;">upper-roman</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleTypeContent('listStyleTypeContentDiv')" class="example-button example-rounded-buttons">any content</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#listExamplesBar">
+        <button onclick="listStyleType('listStyleTypeDivUl', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
       </a>
     </div>
   </div>
 
-  <div class="exampleDiv">
-    <ul id="listImgDivUl">
+  <div id="listStyleTypeDiv" class="exampleDiv">
+    <ul id="listStyleTypeDivUl">
+      <li>Cake</li>
+      <li>Biscuit</li>
+      <li>Pie</li>
+    </ul>
+  </div>
+
+  <div id="listStyleTypeContentDiv" class="exampleDiv" style="display: none;">
+    <ul id="listStyleTypeContentDivUl">
       <li>Cake</li>
       <li>Biscuit</li>
       <li>Pie</li>
@@ -102,22 +247,56 @@
     <div class="code blue float-borders-none">
       &lt;<span class="brown">div</span>&gt;<br />
         <span class="left-padding">&lt;<span class="brown">ul</span>&gt;<br /></span>
-          <span class="more-padding">&lt;<span class="brown">li</span>
-          <span class&gt;<span class="brown">class=</span><span class="olive">"cake"</span><span class="black">Cake</span>&gt;&lt;<span class="brown">li</span>&gt;<br /></span>
+          <span class="more-padding">&lt;<span class="brown">li</span>&gt;<span class="black">Cake</span>&gt;&lt;<span class="brown">li</span>&gt;<br /></span>
           <span class="more-padding">&lt;<span class="brown">li</span>&gt;<span class="black">Bisсuit</span>&lt;<span class="brown">li</span>&gt;<br /></span>
           <span class="more-padding">&lt;<span class="brown">li</span>&gt;<span class="black">Pie</span>&lt;<span class="brown">li</span>&gt;<br /></span>
         <span class="left-padding">&lt;<span class="brown">/ul</span>&gt;<br /></span>
       &lt;<span class="brown">/div</span>&gt;
     </div>
 
-    <div class="code float-borders-none">
+    <div id="animationDivCodeUl" class="code float-borders-none">
       <p class="blue left-padding" style="margin: 0">
-        <span class="brown text">ul</span><span class="black"> {</span><br />
+        <span class="brown">ul</span><span class="black"> {</span><br />
           <p class="blue more-padding" style="margin: 0;">
             <span class="crimson">list-style-image: </span><span class="text">?</span>;<br />
           </p>
         <span class="black left-padding">}</span>
       </p>
+    </div>
+
+    <div id="animationDivCodeLevel2" style="display: none;">
+      <div class="code float-borders-none">
+        <p class="blue left-padding" style="margin: 0">
+          <span class="brown">ul</span><span class="black"> {</span><br />
+            <p class="blue more-padding" style="margin: 0;">
+              <span class="crimson">list-style: </span>none;<br />
+              <span class="crimson">padding: </span>0;<br />
+            </p>
+          <span class="black left-padding">}</span>
+        </p>
+      </div>
+
+      <div class="code float-borders-none">
+        <p class="blue left-padding" style="margin: 0">
+          <span class="brown">li</span><span class="black"> {</span><br />
+            <p class="blue more-padding" style="margin: 0;">
+              <span class="crimson">padding-left: </span>16px;<br />
+            </p>
+          <span class="black left-padding">}</span>
+        </p>
+      </div>
+
+      <div class="code float-borders-none">
+        <p class="blue left-padding" style="margin: 0">
+          <span class="brown">li</span>:before<span class="black"> {</span><br />
+            <p class="blue more-padding" style="margin: 0;">
+              <span class="crimson">content: </span>"•";<br />
+              <span class="crimson">padding-right: </span>8px;<br />
+              <span class="crimson">color: </span>blue;<br />
+            </p>
+          <span class="black left-padding">}</span>
+        </p>
+      </div>
     </div>
 
   </div>
