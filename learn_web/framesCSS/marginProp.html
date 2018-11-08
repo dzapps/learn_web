@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<title>Margin</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/margin.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/margin.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The margin property sets the margins for an element, and is a shorthand property for the following properties:
+      margin-top, margin-right, margin-bottom, margin-left.
+    </div>
+    <div class="note-value">
+      If the margin property has four values: top, right, bottom, left.
+    </div>
+    <div class="note-value">
+      If the margin property has three values: top, right and left, bottom.
+    </div>
+    <div class="note-value">
+      If the margin property has two values: top and bottom, right and left.
+    </div>
+    <div class="note-value">
+      If the margin property has one value: all four margins.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      Negative values are allowed.
+    </div>
+    <div class="note-value">
+      Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+    </div>
+    <div class="note-value">
+      This does not happen on horizontal (left and right) margins! Only vertical (top and bottom) margins!
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>length</td>
+          <td>Specifies a margin in px, cm, em, etc. Default value is 0. Negative values are allowed.</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Specifies a margin in percent of the width of the containing element.</td>
+        </tr>
+        <tr>
+          <td>auto</td>
+          <td>The browser calculates a margin.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="marginExamplesBar" class="left-padding">
+      <a href="#marginExamplesBar">
+        <button onclick="margin('marginDivP', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#marginExamplesBar">
+        <button onclick="margin('marginDivP', '200px')" class="example-button example-rounded-buttons">200px</button>
+      </a>
+      <a href="#marginExamplesBar">
+        <button onclick="margin('marginDivP', '120px')" class="example-button example-rounded-buttons">120px</button>
+      </a>
+      <a href="#marginExamplesBar">
+        <button onclick="margin('marginDivP', '-10px')" class="example-button example-rounded-buttons">-10px</button>
+      </a>
+      <a href="#marginExamplesBar">
+        <button onclick="margin('marginDivP', '-400px')" class="example-button example-rounded-buttons">-400px</button>
+      </a>
+      <a href="#marginExamplesBar">
+        <button onclick="margin('marginDivP', '20%')" class="example-button example-rounded-buttons">20%</button>
+      </a>
+      <a href="#marginExamplesBar">
+        <button onclick="margin('marginDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#marginExamplesBar">
+        <button onclick="margin('marginDivP', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="marginDiv" class="marginExampleDiv">
+    <p id="marginDivP" style="border: 1px solid blue;">Example text. Example text.</p>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+        <span class="left-padding">&lt;<span class="brown">p</span>&gt;
+        </span><span class="black">Example text. Example text.</span>
+        <span>&lt;<span class="brown">/p</span>&gt;<br /></span>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div id="animationDivCodeUl" class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">p</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">margin: </span><span class="text">?</span>;<br />
+            <span class="crimson">border: </span>1px solid blue;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

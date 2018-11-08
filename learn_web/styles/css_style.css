@@ -208,6 +208,14 @@ body {
   overflow: auto;
 }
 
+.marginExampleDiv {
+  width: 85%;
+  /* height: 150px; */
+  margin-left: 2em;
+  border: 1px solid white;
+  overflow: auto;
+}
+
 .exampleDiv span {
   width: 100%;
 }

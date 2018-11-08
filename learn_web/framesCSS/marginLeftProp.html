@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<title>Margin left</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/margin.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/margin.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The margin-left property sets the left margin of an element.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      Negative values are allowed.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>length</td>
+          <td>Specifies a fixed left margin in px, cm, em, etc. Default value is 0. Negative values are allowed.</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Specifies a left margin in percent of the width of the containing element.</td>
+        </tr>
+        <tr>
+          <td>auto</td>
+          <td>The browser calculates a left margin.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="marginLeftExamplesBar" class="left-padding">
+      <a href="#marginLeftExamplesBar">
+        <button onclick="marginLeft('marginLeftDivP', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#marginLeftExamplesBar">
+        <button onclick="marginLeft('marginLeftDivP', '200px')" class="example-button example-rounded-buttons">200px</button>
+      </a>
+      <a href="#marginLeftExamplesBar">
+        <button onclick="marginLeft('marginLeftDivP', '120px')" class="example-button example-rounded-buttons">120px</button>
+      </a>
+      <a href="#marginLeftExamplesBar">
+        <button onclick="marginLeft('marginLeftDivP', '-10px')" class="example-button example-rounded-buttons">-10px</button>
+      </a>
+      <a href="#marginLeftExamplesBar">
+        <button onclick="marginLeft('marginLeftDivP', '-400px')" class="example-button example-rounded-buttons">-400px</button>
+      </a>
+      <a href="#marginLeftExamplesBar">
+        <button onclick="marginLeft('marginLeftDivP', '20%')" class="example-button example-rounded-buttons">20%</button>
+      </a>
+      <a href="#marginLeftExamplesBar">
+        <button onclick="marginLeft('marginLeftDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#marginLeftExamplesBar">
+        <button onclick="marginLeft('marginLeftDivP', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="marginLeftDiv" class="marginExampleDiv">
+    <p id="marginLeftDivP" style="border: 1px solid blue;">Example text. Example text.</p>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+        <span class="left-padding">&lt;<span class="brown">p</span>&gt;
+        </span><span class="black">Example text. Example text.</span>
+        <span>&lt;<span class="brown">/p</span>&gt;<br /></span>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div id="animationDivCodeUl" class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">p</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">margin-left: </span><span class="text">?</span>;<br />
+            <span class="crimson">border: </span>1px solid blue;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
