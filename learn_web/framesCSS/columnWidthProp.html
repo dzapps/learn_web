@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<title>Column width</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/columns.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/columns.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The column-width property specifies the column width.
+    </div>
+    <div class="note-value">
+      The number of columns will be the minimum number of columns needed to show all the content across the element.
+    </div>
+    <div class="note-value">
+      column-width is a flexible property. Think of column-width as a minimum width suggestion for the browser.
+      Once the browser cannot fit at least two columns at your specified width then the columns will stop and drop into a single column.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      Numbers followed by -webkit- or -moz- specify the first version that worked with a prefix:
+      Chrome 4.0, Safari 3.1 and Opera 15.0 (-webkit-), Firefox 2.0 (-moz-).
+    </div>
+    <div class="note-value">
+      The column-count property is not supported in Internet Explorer 9 and earlier versions.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>auto</td>
+          <td>Default value. The column width will be determined by the browser.</td>
+        </tr>
+        <tr>
+          <td>length</td>
+          <td>A length that specifies the width of the columns.
+            The number of columns will be the minimum number of columns needed to show all the content across the element.
+          </td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="columnWidthExamplesBar" class="left-padding">
+      <a href="#columnWidthExamplesBar">
+        <button onclick="columnWidth('columnWidthDivP', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#columnWidthExamplesBar">
+        <button onclick="columnWidth('columnWidthDivP', '100px')" class="example-button example-rounded-buttons">100px</button>
+      </a>
+      <a href="#columnWidthExamplesBar">
+        <button onclick="columnWidth('columnWidthDivP', '200px')" class="example-button example-rounded-buttons">200px</button>
+      </a>
+      <a href="#columnWidthExamplesBar">
+        <button onclick="columnWidth('columnWidthDivP', '300px')" class="example-button example-rounded-buttons">300px</button>
+      </a>
+      <a href="#columnWidthExamplesBar">
+        <button onclick="columnWidth('columnWidthDivP', '400px')" class="example-button example-rounded-buttons">400px</button>
+      </a>
+      <a href="#columnWidthExamplesBar">
+        <button onclick="columnWidth('columnWidthDivP', '600px')" class="example-button example-rounded-buttons">600px</button>
+      </a>
+      <a href="#columnWidthExamplesBar">
+        <button onclick="columnWidth('columnWidthDivP', '1900px')" class="example-button example-rounded-buttons">1900px</button>
+      </a>
+      <a href="#columnWidthExamplesBar">
+        <button onclick="columnWidth('columnWidthDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#columnWidthExamplesBar">
+        <button onclick="columnWidth('columnWidthDivP', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="columnWidthDiv" class="marginExampleDiv">
+    <p id="columnWidthDivP">I was born in the year 1632, in the city of York, of a good family,
+      though not of that country, my father being a foreigner of Bremen, who settled first at Hull.
+      He got a good estate by merchandise, and leaving off his trade, lived afterwards at York,
+      from whence he had married my mother, whose relations were named Robinson, a very good family in that country,
+      and from whom I was called Robinson Kreutznaer; but, by the usual corruption of words in England,
+      we are now called—nay we call ourselves and write our name—Crusoe; and so my companions always called me.</p>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+        <span class="left-padding">&lt;<span class="brown">p</span>&gt;
+        </span><span class="black">I was born in the year 1632, in the city of York, of...</span>
+        <span>&lt;<span class="brown">/p</span>&gt;<br /></span>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">p</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">column-width: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

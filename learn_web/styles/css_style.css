@@ -210,7 +210,6 @@ body {
 
 .marginExampleDiv {
   width: 85%;
-  /* height: 150px; */
   margin-left: 2em;
   border: 1px solid white;
   overflow: auto;
@@ -440,7 +439,6 @@ h2 {
 #listStylePosDiv li {
   border: 2px solid blue;
   width: 100px;
-  /* display: grid; */
 }
 
 #listStyleTypeContentDivUl {
