@@ -20,7 +20,7 @@
   <div class="note descriptionCSS noteCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The column-rule property sets the width, style, and color of the rule between columns.
+      The columns property is a shorthand property for: column-width, column-count.
     </div>
     <div class="note-value">
       This property is a shorthand property for: column-rule-width, column-rule-style (required), column-rule-color.
@@ -35,7 +35,7 @@
     Note:<br />
     <div class="note-value">
       Numbers followed by -webkit- or -moz- specify the first version that worked with a prefix:
-      Chrome 4.0, Safari 3.1 and Opera 15.0 (-webkit-), Firefox 2.0 (-moz-).
+      Chrome 4.0, Safari 3.1 and Opera 15.0 (-webkit-), Firefox 9.0 (-moz-).
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -54,16 +54,16 @@
       </thead>
       <tbody>
         <tr>
-          <td>column-rule-width</td>
-          <td>Sets the width of the rule between columns. Default value is medium.</td>
+          <td>auto</td>
+          <td>Default value. Sets both the column-width and column-count to "auto".</td>
         </tr>
         <tr>
-          <td>column-rule-style</td>
-          <td>Sets the style of the rule between columns. Default value is none.</td>
+          <td>column-width</td>
+          <td>Defines the minimum width for each column.</td>
         </tr>
         <tr>
-          <td>column-rule-color</td>
-          <td>Sets the color of the rule between columns. Default value is the color of the element.</td>
+          <td>column-count</td>
+          <td>Defines the maximum number of columns.</td>
         </tr>
         <tr>
           <td>initial</td>
@@ -78,24 +78,33 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="columnRuleExamplesBar" class="left-padding">
-      <a href="#columnRuleExamplesBar">
-        <button onclick="columnRule('columnRuleDivP', '5px solid blue')" class="example-button example-rounded-buttons">5px solid blue</button>
+    <div id="columnsExamplesBar" class="left-padding">
+      <a href="#columnsExamplesBar">
+        <button onclick="columns('columnsDivP', 'auto')" class="example-button example-rounded-buttons">auto</button>
       </a>
-      <a href="#columnRuleExamplesBar">
-        <button onclick="columnRule('columnRuleDivP', '10px double coral')" class="example-button example-rounded-buttons">10px double coral</button>
+      <a href="#columnsExamplesBar">
+        <button onclick="columns('columnsDivP', '100px 3')" class="example-button example-rounded-buttons">100px 3</button>
       </a>
-      <a href="#columnRuleExamplesBar">
-        <button onclick="columnRule('columnRuleDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      <a href="#columnsExamplesBar">
+        <button onclick="columns('columnsDivP', '80px 4')" class="example-button example-rounded-buttons">80px 4</button>
       </a>
-      <a href="#columnRuleExamplesBar">
-        <button onclick="columnRule('columnRuleDivP', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      <a href="#columnsExamplesBar">
+        <button onclick="columns('columnsDivP', '100px auto')" class="example-button example-rounded-buttons">100px auto</button>
+      </a>
+      <a href="#columnsExamplesBar">
+        <button onclick="columns('columnsDivP', 'auto 150px')" class="example-button example-rounded-buttons">auto 150px</button>
+      </a>
+      <a href="#columnsExamplesBar">
+        <button onclick="columns('columnsDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#columnsExamplesBar">
+        <button onclick="columns('columnsDivP', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
       </a>
     </div>
   </div>
 
-  <div id="columnRuleDiv" class="exampleDiv">
-    <p id="columnRuleDivP" style="column-count: 3;">I was born in the year 1632, in the city of York, of a good family,
+  <div id="columnsDiv" class="exampleDiv">
+    <p id="columnsDivP">I was born in the year 1632, in the city of York, of a good family,
       though not of that country, my father being a foreigner of Bremen, who settled first at Hull.
       He got a good estate by merchandise, and leaving off his trade, lived afterwards at York,
       from whence he had married my mother, whose relations were named Robinson, a very good family in that country,
@@ -116,8 +125,7 @@
       <p class="blue left-padding" style="margin: 0">
         <span class="brown">p</span><span class="black"> {</span><br />
           <p class="blue more-padding" style="margin: 0;">
-            <span class="crimson">column-count: </span>3;<br />
-            <span class="crimson">column-rule: </span><span class="text">?</span>;<br />
+            <span class="crimson">columns: </span><span class="text">?</span>;<br />
           </p>
         <span class="black left-padding">}</span>
       </p>

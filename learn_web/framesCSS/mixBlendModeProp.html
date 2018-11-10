@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<title>Mix blend mode</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/mixBlendMode.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/main_window_css.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The mix-blend-mode property specifies how an element's content should blend with its direct parent background.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      The mix-blend-mode property is not supported in Internet Explorer or Edge.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>normal</td>
+          <td>This is default. Sets the blending mode to normal.
+          </td>
+        </tr>
+        <tr>
+          <td>multiply</td>
+          <td>Sets the blending mode to multiply.</td>
+        </tr>
+        <tr>
+          <td>screen</td>
+          <td>Sets the blending mode to screen.</td>
+        </tr>
+        <tr>
+          <td>overlay</td>
+          <td>Sets the blending mode to overlay.
+          </td>
+        </tr>
+        <tr>
+          <td>darken</td>
+          <td>Sets the blending mode to darken.</td>
+        </tr>
+        <tr>
+          <td>lighten</td>
+          <td>Sets the blending mode to lighten.</td>
+        </tr>
+        <tr>
+          <td>color-dodge</td>
+          <td>Sets the blending mode to color-dodge.</td>
+        </tr>
+        <tr>
+          <td>color-burn</td>
+          <td>Sets the blending mode to color-burn.</td>
+        </tr>
+        <tr>
+          <td>difference</td>
+          <td>Sets the blending mode to difference.</td>
+        </tr>
+        <tr>
+          <td>exclusion</td>
+          <td>Sets the blending mode to exclusion.</td>
+        </tr>
+        <tr>
+          <td>hue</td>
+          <td>Sets the blending mode to hue.</td>
+        </tr>
+        <tr>
+          <td>saturation</td>
+          <td>Sets the blending mode to saturation.</td>
+        </tr>
+        <tr>
+          <td>color</td>
+          <td>Sets the blending mode to color.
+          </td>
+        </tr>
+        <tr>
+          <td>luminosity</td>
+          <td>Sets the blending mode to luminosity.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="mixBlendModeExamplesBar" class="left-padding">
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'normal')" class="example-button example-rounded-buttons">normal</button>
+      </a>
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'multiply')" class="example-button example-rounded-buttons">multiplay</button>
+      </a>
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'screen')" class="example-button example-rounded-buttons">screen</button>
+      </a>
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'overlay')" class="example-button example-rounded-buttons">overlay</button>
+      </a>
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'darken')" class="example-button example-rounded-buttons">darken</button>
+      </a>
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'lighten')" class="example-button example-rounded-buttons">saturation</button>
+      </a>
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'color-dodge')" class="example-button example-rounded-buttons">lighten</button>
+      </a>
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'color-burn')" class="example-button example-rounded-buttons">color-burn</button>
+      </a>
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'difference')" class="example-button example-rounded-buttons">difference</button>
+      </a>
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'exclusion')" class="example-button example-rounded-buttons">exclusion</button>
+      </a>
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'hue')" class="example-button example-rounded-buttons">hue</button>
+      </a>
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'saturation')" class="example-button example-rounded-buttons">color-dodge</button>
+      </a>
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'color')" class="example-button example-rounded-buttons">color</button>
+      </a>
+      <a href="#mixBlendModeExamplesBar">
+        <button onclick="mixBlendMode('mixBlendModeDiv', 'luminosity')" class="example-button example-rounded-buttons" style="margin-bottom: -5px; margin-top: 5px;">luminosity</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="mixBlendModeDiv" class="exampleDiv" style="background-color: blue; padding: 10px;">
+    <img src="../images/vasserman_big.jpg" alt="vass_big"/>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+        <span class="left-padding">&lt;<span class="brown">img</span>
+        </span><span class="crimson">src=</span><span class="olive">"vasserman_big.jpg"</span>&gt;<br /></span>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">background-color: </span>blue;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">img</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">mix-blend-mode: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

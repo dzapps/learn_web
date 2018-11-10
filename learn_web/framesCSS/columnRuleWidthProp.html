@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Column rule</title>
+<title>Column rule width</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -20,13 +20,7 @@
   <div class="note descriptionCSS noteCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-      The column-rule property sets the width, style, and color of the rule between columns.
-    </div>
-    <div class="note-value">
-      This property is a shorthand property for: column-rule-width, column-rule-style (required), column-rule-color.
-    </div>
-    <div class="note-value">
-      If column-rule-color is omitted, the color applied will be the color of the text.
+      The column-rule-width property specifies the width of the rule between columns.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -36,6 +30,9 @@
     <div class="note-value">
       Numbers followed by -webkit- or -moz- specify the first version that worked with a prefix:
       Chrome 4.0, Safari 3.1 and Opera 15.0 (-webkit-), Firefox 2.0 (-moz-).
+    </div>
+    <div class="note-value">
+      The column-count property is not supported in Internet Explorer 9 and earlier versions.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -54,16 +51,20 @@
       </thead>
       <tbody>
         <tr>
-          <td>column-rule-width</td>
-          <td>Sets the width of the rule between columns. Default value is medium.</td>
+          <td>medium</td>
+          <td>Default value. Defines a medium rule.</td>
         </tr>
         <tr>
-          <td>column-rule-style</td>
-          <td>Sets the style of the rule between columns. Default value is none.</td>
+          <td>thin</td>
+          <td>Defines a thin rule.</td>
         </tr>
         <tr>
-          <td>column-rule-color</td>
-          <td>Sets the color of the rule between columns. Default value is the color of the element.</td>
+          <td>thick</td>
+          <td>Defines a thick rule.</td>
+        </tr>
+        <tr>
+          <td>length</td>
+          <td>Specifies the width of the rule.</td>
         </tr>
         <tr>
           <td>initial</td>
@@ -78,24 +79,39 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="columnRuleExamplesBar" class="left-padding">
-      <a href="#columnRuleExamplesBar">
-        <button onclick="columnRule('columnRuleDivP', '5px solid blue')" class="example-button example-rounded-buttons">5px solid blue</button>
+    <div id="columnRuleWidthExamplesBar" class="left-padding">
+      <a href="#columnRuleWidthExamplesBar">
+        <button onclick="columnRuleWidth('columnRuleWidthDivP', 'medium')" class="example-button example-rounded-buttons">medium</button>
       </a>
-      <a href="#columnRuleExamplesBar">
-        <button onclick="columnRule('columnRuleDivP', '10px double coral')" class="example-button example-rounded-buttons">10px double coral</button>
+      <a href="#columnRuleWidthExamplesBar">
+        <button onclick="columnRuleWidth('columnRuleWidthDivP', 'thin')" class="example-button example-rounded-buttons">thin</button>
       </a>
-      <a href="#columnRuleExamplesBar">
-        <button onclick="columnRule('columnRuleDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      <a href="#columnRuleWidthExamplesBar">
+        <button onclick="columnRuleWidth('columnRuleWidthDivP', 'thick')" class="example-button example-rounded-buttons">thick</button>
       </a>
-      <a href="#columnRuleExamplesBar">
-        <button onclick="columnRule('columnRuleDivP', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      <a href="#columnRuleWidthExamplesBar">
+        <button onclick="columnRuleWidth('columnRuleWidthDivP', '3px')" class="example-button example-rounded-buttons">3px</button>
+      </a>
+      <a href="#columnRuleWidthExamplesBar">
+        <button onclick="columnRuleWidth('columnRuleWidthDivP', '5px')" class="example-button example-rounded-buttons">5px</button>
+      </a>
+      <a href="#columnRuleWidthExamplesBar">
+        <button onclick="columnRuleWidth('columnRuleWidthDivP', '10px')" class="example-button example-rounded-buttons">10px</button>
+      </a>
+      <a href="#columnRuleWidthExamplesBar">
+        <button onclick="columnRuleWidth('columnRuleWidthDivP', '2em')" class="example-button example-rounded-buttons">2em</button>
+      </a>
+      <a href="#columnRuleWidthExamplesBar">
+        <button onclick="columnRuleWidth('columnRuleWidthDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#columnRuleWidthExamplesBar">
+        <button onclick="columnRuleWidth('columnRuleWidthDivP', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
       </a>
     </div>
   </div>
 
-  <div id="columnRuleDiv" class="exampleDiv">
-    <p id="columnRuleDivP" style="column-count: 3;">I was born in the year 1632, in the city of York, of a good family,
+  <div id="columnRuleWidthDiv" class="marginExampleDiv">
+    <p id="columnRuleWidthDivP">I was born in the year 1632, in the city of York, of a good family,
       though not of that country, my father being a foreigner of Bremen, who settled first at Hull.
       He got a good estate by merchandise, and leaving off his trade, lived afterwards at York,
       from whence he had married my mother, whose relations were named Robinson, a very good family in that country,
@@ -117,7 +133,8 @@
         <span class="brown">p</span><span class="black"> {</span><br />
           <p class="blue more-padding" style="margin: 0;">
             <span class="crimson">column-count: </span>3;<br />
-            <span class="crimson">column-rule: </span><span class="text">?</span>;<br />
+            <span class="crimson">column-rule-style: </span>outset;<br />
+            <span class="crimson">column-width: </span><span class="text">?</span>;<br />
           </p>
         <span class="black left-padding">}</span>
       </p>
