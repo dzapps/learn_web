@@ -460,3 +460,9 @@ h2 {
   column-count: 3;
   column-rule-style: outset;
 }
+
+#opacityDiv p {
+  text-align: center;
+  margin: 55px auto;
+  font-size: 40px;
+}
