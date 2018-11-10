@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<title>Outline color</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/outline.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/outline.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      An outline is a line that is drawn around elements (outside the borders) to make the element "stand out".
+    </div>
+    <div class="note-value">
+      The outline-color property specifies the color of an outline.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      Always declare the outline-style property before the outline-color property.
+      An element must have an outline before you change the color of it.
+    </div>
+    <div class="note-value">
+      The outline is not a part of the element's dimensions,
+      therefore the element's width and height properties do not contain the width of the outline.
+    </div>
+    <div class="note-value">
+      IE7 and earlier versions do not support this property.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>invert</td>
+          <td>Performs a color inversion.
+            This ensures that the outline is visible, regardless of color background. This is default.
+          </td>
+        </tr>
+        <tr>
+          <td>color</td>
+          <td>Specifies the color of the outline. Look at CSS Color Values for a complete list of possible color values.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="outlineColorExamplesBar" class="left-padding">
+      <a href="#outlineColorExamplesBar">
+        <button onclick="outlineColor('outlineColorDiv', 'invert')" class="example-button example-rounded-buttons">invert</button>
+      </a>
+      <a href="#outlineColorExamplesBar">
+        <button onclick="outlineColor('outlineColorDiv', 'blue')" class="example-button example-rounded-buttons">blue</button>
+      </a>
+      <a href="#outlineColorExamplesBar">
+        <button onclick="outlineColor('outlineColorDiv', 'green')" class="example-button example-rounded-buttons">green</button>
+      </a>
+      <a href="#outlineColorExamplesBar">
+        <button onclick="outlineColor('outlineColorDiv', 'red')" class="example-button example-rounded-buttons">red</button>
+      </a>
+      <a href="#outlineColorExamplesBar">
+        <button onclick="outlineColor('outlineColorDiv', 'yellow')" class="example-button example-rounded-buttons">yellow</button>
+      </a>
+      <a href="#outlineColorExamplesBar">
+        <button onclick="outlineColor('outlineColorDiv', '', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#outlineColorExamplesBar">
+        <button onclick="outlineColor('outlineColorDiv', '', 'inherit')" class="example-button example-rounded-buttons" style="margin-bottom: -5px; margin-top: 5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="outlineColorDiv" class="exampleDiv" style="outline-style: dotted; outline-width: 5px;">
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;&lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">outline-style: </span>dotted;<br />
+            <span class="crimson">outline-width: </span>5px;<br />
+            <span class="crimson">outline-color: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

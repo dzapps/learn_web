@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<title>Outline offcet</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/outline.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/outline.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The outline-offset property adds space between an outline and the edge or border of an element.
+    </div>
+    <div class="note-value">
+      The space between an element and its outline is transparent.
+    </div>
+    <div class="note-value">
+      Outlines differ from borders in three ways: an outline is a line drawn around elements, outside the border edge
+      an outline does not take up space, an outline may be non-rectangular.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      Always declare the outline-style property before the outline-color property.
+      An element must have an outline before you change the color of it.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>length</td>
+          <td>The distance the outline is outset from the border edge.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="outlineOffsetExamplesBar" class="left-padding">
+      <a href="#outlineOffsetExamplesBar">
+        <button onclick="outlineOffset('outlineOffsetDiv', '3px')" class="example-button example-rounded-buttons">3px</button>
+      </a>
+      <a href="#outlineOffsetExamplesBar">
+        <button onclick="outlineOffset('outlineOffsetDiv', '6px')" class="example-button example-rounded-buttons">6px</button>
+      </a>
+      <a href="#outlineOffsetExamplesBar">
+        <button onclick="outlineOffset('outlineOffsetDiv', '1em')" class="example-button example-rounded-buttons">1em</button>
+      </a>
+      <a href="#outlineOffsetExamplesBar">
+        <button onclick="outlineOffset('outlineOffsetDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#outlineOffsetExamplesBar">
+        <button onclick="outlineOffset('outlineOffsetDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-bottom: -5px; margin-top: 5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="outlineOffsetDiv" class="exampleDiv" style="outline-style: dotted; outline-width: 5px;">
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;&lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">outline-style: </span>dotted;<br />
+            <span class="crimson">outline-width: </span>5px;<br />
+            <span class="crimson">outline-offcet: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

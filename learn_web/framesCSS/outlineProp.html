@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<title>Outline</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/outline.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/outline.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      An outline is a line that is drawn around elements, outside the borders, to make the element "stand out".
+    </div>
+    <div class="note-value">
+      The outline property is a shorthand property for: outline-width, outline-style (required), outline-color.
+    </div>
+    <div class="note-value">
+      If outline-color is omitted, the color applied will be the color of the text.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      The outline is not a part of the element's dimensions,
+      therefore the element's width and height properties do not contain the width of the outline.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>outline-width</td>
+          <td>Specifies the width of outline.</td>
+        </tr>
+        <tr>
+          <td>outline-style</td>
+          <td>Specifies the style of the outline.</td>
+        </tr>
+        <tr>
+          <td>outline-color</td>
+          <td>Specifies the color of the outline.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="outlineExamplesBar" class="left-padding">
+      <a href="#outlineExamplesBar">
+        <button onclick="outline('outlineDiv', '3px dashed blue')" class="example-button example-rounded-buttons">3px dashed blue</button>
+      </a>
+      <a href="#outlineExamplesBar">
+        <button onclick="outline('outlineDiv', '5px solid red')" class="example-button example-rounded-buttons">5px solid red</button>
+      </a>
+      <a href="#outlineExamplesBar">
+        <button onclick="outline('outlineDiv', '10px dotted yellow')" class="example-button example-rounded-buttons">10px dotted yellow</button>
+      </a>
+      <a href="#outlineExamplesBar">
+        <button onclick="outline('outlineDiv', '5px outset')" class="example-button example-rounded-buttons">5px outset</button>
+      </a>
+      <a href="#outlineExamplesBar">
+        <button onclick="outline('outlineDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#outlineExamplesBar">
+        <button onclick="outline('outlineDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 0px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="outlineDiv" class="exampleDiv" style="outline-width: 5px;">
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;&lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">outline: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

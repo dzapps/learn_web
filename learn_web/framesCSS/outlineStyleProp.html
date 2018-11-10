@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<title>Outline style</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/outline.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/outline.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      An outline is a line that is drawn around elements (outside the borders) to make the element "stand out".
+    </div>
+    <div class="note-value">
+      The outline-style property specifies the style of an outline.
+    </div>
+    <div class="note-value">
+      The outline is not a part of the element's dimensions,
+      therefore the element's width and height properties do not contain the width of the outline.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      Always declare the outline-style property before the outline-color property.
+      An element must have an outline before you change the color of it.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>Specifies no outline. This is default.</td>
+        </tr>
+        <tr>
+          <td>hidden</td>
+          <td>The same as "none", except in outline conflict resolution for table elements.</td>
+        </tr>
+        <tr>
+          <td>dotted</td>
+          <td>Specifies a dotted outline.</td>
+        </tr>
+        <tr>
+          <td>dashed</td>
+          <td>Specifies a dashed outline.</td>
+        </tr>
+        <tr>
+          <td>solid</td>
+          <td>Specifies a solid outline.</td>
+        </tr>
+        <tr>
+          <td>double</td>
+          <td>Specifies a double outline.</td>
+        </tr>
+        <tr>
+          <td>groove</td>
+          <td>Specifies a 3D grooved outline. The effect depends on the outline-color value.</td>
+        </tr>
+        <tr>
+          <td>ridge</td>
+          <td>Specifies a 3D ridged outline. The effect depends on the outline-color value.</td>
+        </tr>
+        <tr>
+          <td>inset</td>
+          <td>Specifies a 3D inset outline. The effect depends on the outline-color value.</td>
+        </tr>
+        <tr>
+          <td>outset</td>
+          <td>Specifies a 3D outset outline. The effect depends on the outline-color value.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="outlineStyleExamplesBar" class="left-padding">
+      <a href="#outlineStyleExamplesBar">
+        <button onclick="outlineStyle('outlineStyleDiv', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#outlineStyleExamplesBar">
+        <button onclick="outlineStyle('outlineStyleDiv', 'hidden')" class="example-button example-rounded-buttons">hidden</button>
+      </a>
+      <a href="#outlineStyleExamplesBar">
+        <button onclick="outlineStyle('outlineStyleDiv', 'dotted')" class="example-button example-rounded-buttons">dotted</button>
+      </a>
+      <a href="#outlineStyleExamplesBar">
+        <button onclick="outlineStyle('outlineStyleDiv', 'dashed')" class="example-button example-rounded-buttons">dashed</button>
+      </a>
+      <a href="#outlineStyleExamplesBar">
+        <button onclick="outlineStyle('outlineStyleDiv', 'solid')" class="example-button example-rounded-buttons">solid</button>
+      </a>
+      <a href="#outlineStyleExamplesBar">
+        <button onclick="outlineStyle('outlineStyleDiv', 'double')" class="example-button example-rounded-buttons">double</button>
+      </a>
+      <a href="#outlineStyleExamplesBar">
+        <button onclick="outlineStyle('outlineStyleDiv', 'groove')" class="example-button example-rounded-buttons">groove</button>
+      </a>
+      <a href="#outlineStyleExamplesBar">
+        <button onclick="outlineStyle('outlineStyleDiv', 'ridge')" class="example-button example-rounded-buttons">ridge</button>
+      </a>
+      <a href="#outlineStyleExamplesBar">
+        <button onclick="outlineStyle('outlineStyleDiv', 'inset')" class="example-button example-rounded-buttons">inset</button>
+      </a>
+      <a href="#outlineStyleExamplesBar">
+        <button onclick="outlineStyle('outlineStyleDiv', 'outset')" class="example-button example-rounded-buttons">outset</button>
+      </a><br />
+      <a href="#outlineStyleExamplesBar">
+        <button onclick="outlineStyle('outlineStyleDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#outlineStyleExamplesBar">
+        <button onclick="outlineStyle('outlineStyleDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 0px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="outlineStyleDiv" class="exampleDiv" style="outline-width: 5px;">
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;&lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">outline-width: </span>5px;<br />
+            <span class="crimson">outline-style: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
