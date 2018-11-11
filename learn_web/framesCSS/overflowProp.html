@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<title>Overflow</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/overflow.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/overflow.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The overflow property specifies what should happen if content overflows an element's box.
+    </div>
+    <div class="note-value">
+      This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      The overflow property only works for block elements with a specified height.
+    </div>
+    <div class="note-value">
+      In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though "overflow:scroll" is set).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>visible</td>
+          <td>The overflow is not clipped. It renders outside the element's box. This is default.</td>
+        </tr>
+        <tr>
+          <td>hidden</td>
+          <td>The overflow is clipped, and the rest of the content will be invisible.</td>
+        </tr>
+        <tr>
+          <td>scroll</td>
+          <td>The overflow is clipped, but a scroll-bar is added to see the rest of the content.</td>
+        </tr>
+        <tr>
+          <td>auto</td>
+          <td>If overflow is clipped, a scroll-bar should be added to see the rest of the content.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="overflowExamplesBar" class="left-padding">
+      <a href="#overflowExamplesBar">
+        <button onclick="overflow('overflowDiv', 'visible')" class="example-button example-rounded-buttons">visible</button>
+      </a>
+      <a href="#overflowExamplesBar">
+        <button onclick="overflow('overflowDiv', 'hidden')" class="example-button example-rounded-buttons">hidden</button>
+      </a>
+      <a href="#overflowExamplesBar">
+        <button onclick="overflow('overflowDiv', 'scroll')" class="example-button example-rounded-buttons">scroll</button>
+      </a>
+      <a href="#overflowExamplesBar">
+        <button onclick="overflow('overflowDiv', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#overflowExamplesBar">
+        <button onclick="overflow('overflowDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#overflowExamplesBar">
+        <button onclick="overflow('overflowDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 0px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="overflowDiv" class="exampleDiv" style="height: 100px;">
+    <img src="../images/vasserman_big.jpg" alt="vass_big" />
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;&lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">height: </span>100px;<br />
+            <span class="crimson">overflow: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

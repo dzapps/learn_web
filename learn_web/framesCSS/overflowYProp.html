@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<title>Overflow Y</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/overflow.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/overflow.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The overflow-x property specifies whether to clip the content, add a scroll bar,
+      or display overflow content of a block-level element, when it overflows at the left and right edges.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      IE 8.0 need a prefix (-ms-).
+    </div>
+
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>visible</td>
+          <td>The content is not clipped, and it may be rendered outside the content box. This is default.</td>
+        </tr>
+        <tr>
+          <td>hidden</td>
+          <td>The content is clipped and no scrolling mechanism is provided.</td>
+        </tr>
+        <tr>
+          <td>scroll</td>
+          <td>The content is clipped and a scrolling mechanism is provided.</td>
+        </tr>
+        <tr>
+          <td>auto</td>
+          <td>Should cause a scrolling mechanism to be provided for overflowing boxes.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="overflowYExamplesBar" class="left-padding">
+      <a href="#overflowYExamplesBar">
+        <button onclick="overflowY('overflowYDiv', 'visible')" class="example-button example-rounded-buttons">visible</button>
+      </a>
+      <a href="#overflowYExamplesBar">
+        <button onclick="overflowY('overflowYDiv', 'hidden')" class="example-button example-rounded-buttons">hidden</button>
+      </a>
+      <a href="#overflowYExamplesBar">
+        <button onclick="overflowY('overflowYDiv', 'scroll')" class="example-button example-rounded-buttons">scroll</button>
+      </a>
+      <a href="#overflowYExamplesBar">
+        <button onclick="overflowY('overflowYDiv', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#overflowYExamplesBar">
+        <button onclick="overflowY('overflowYDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#overflowYExamplesBar">
+        <button onclick="overflowY('overflowYDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: 0px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="overflowYDiv" class="exampleDiv" style="height: 100px;">
+    <img src="../images/vasserman_big.jpg" alt="vass_big" />
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;&lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">height: </span>100px;<br />
+            <span class="crimson">overflow-y: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
