@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<title>Resize</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/resize.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/main_window_css.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The resize property defines if (and how) an element is resizable by the user.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+        Numbers followed by -moz- specify the first version that worked with a prefix: Firefox 4.0 (-moz-).
+    </div>
+    <div class="note-value">
+       Internet Explorer does not support the resize property.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>Default value. The user cannot resize the element.</td>
+        </tr>
+        <tr>
+          <td>both</td>
+          <td>The user can resize both the height and width of the element.</td>
+        </tr>
+        <tr>
+          <td>horizontal</td>
+          <td>The user can resize the width of the element.</td>
+        </tr>
+        <tr>
+          <td>vertical</td>
+          <td>The user can resize the height of the element.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="resizeExamplesBar" class="left-padding;">
+      <a href="#resizeExamplesBar">
+        <button onclick="resize('resizeDivP', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#resizeDivP">
+        <button onclick="resize('resizeDivP', 'both')" class="example-button example-rounded-buttons">both</button>
+      </a>
+      <a href="#resizeExamplesBar">
+        <button onclick="resize('resizeDivP', 'horizontal')" class="example-button example-rounded-buttons">horizontal</button>
+      </a>
+      <a href="#resizeExamplesBar">
+        <button onclick="resize('resizeDivP', 'vertical')" class="example-button example-rounded-buttons">vertical</button>
+      </a>
+      <a href="#resizeExamplesBar">
+        <button onclick="resize('resizeDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#resizeExamplesBar">
+        <button onclick="resize('resizeDivP', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="resizeDiv" class="exampleDiv">
+    <div id="resizeDivP">Example text</div>
+  </div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span><br />
+        <span class="left-padding">&lt;<span class="brown">p</span>&gt;
+        <span class="black">Example text</span><span>&lt;<span class="brown">/p</span>&gt;</span></span><br />
+      &lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">p </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">color: </span>red;<br />
+            <span class="crimson">text-align: </span>center;<br />
+            <span class="crimson">padding: </span>70px 10px;<br />
+            <span class="crimson">background: </span>blue;<br />
+            <span class="crimson">width: </span>150px;<br />
+            <span class="crimson">resize: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

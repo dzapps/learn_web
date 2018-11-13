@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<title>Perspective origin</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/perspective.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/perspective.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The perspective-origin property defines at from which position the user is looking at the 3D-positioned element.
+    </div>
+    <div class="note-value">
+      When defining the perspective-origin property for an element,
+      it is the CHILD elements that will get the effect, NOT the element itself.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      This property must be used in conjunction with the perspective property!
+    </div>
+    <div class="note-value">
+      Numbers followed by -webkit- or -moz- specify the first version that worked with a prefix:
+      Chrome 12.0, Safari 4.0.3 and Opera 15.0 (-webkit-), Firefox 10.0 (-moz-).
+    </div>
+    <div class="note-value">
+      The perspective-origin property is not supported in IE9 and earlier versions.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>x-axis</td>
+          <td>Defining where the view is placed at the x-axis: top, center, bottom, length. Default: 50%.</td>
+        </tr>
+        <tr>
+          <td>y-axis</td>
+          <td>Defining where the view is placed at the y-axis: top, center, bottom, length. Default: 50%.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="perspectOrigExamplesBar" class="left-padding">
+      <a href="#perspectOrigExamplesBar">
+        <button onclick="perspectOrig('perspectOrigDivDiv', 'top')" class="example-button example-rounded-buttons">top</button>
+      </a>
+      <a href="#perspectOrigExamplesBar">
+        <button onclick="perspectOrig('perspectOrigDivDiv', 'center')" class="example-button example-rounded-buttons">center</button>
+      </a>
+      <a href="#perspectOrigExamplesBar">
+        <button onclick="perspectOrig('perspectOrigDivDiv', 'bottom')" class="example-button example-rounded-buttons">bottom</button>
+      </a>
+      <a href="#perspectOrigExamplesBar">
+        <button onclick="perspectOrig('perspectOrigDivDiv', '20px')" class="example-button example-rounded-buttons">20px</button>
+      </a>
+      <a href="#perspectOrigExamplesBar">
+        <button onclick="perspectOrig('perspectOrigDivDiv', '50px')" class="example-button example-rounded-buttons">50px</button>
+      </a>
+      <a href="#perspectOrigExamplesBar">
+        <button onclick="perspectOrig('perspectOrigDivDiv', '100px')" class="example-button example-rounded-buttons">100px</button>
+      </a>
+      <a href="#perspectOrigExamplesBar">
+        <button onclick="perspectOrig('perspectOrigDivDiv', '-100px')" class="example-button example-rounded-buttons">-100px</button>
+      </a>
+      <a href="#perspectOrigExamplesBar">
+        <button onclick="perspectOrig('perspectOrigDivDiv', '-300px')" class="example-button example-rounded-buttons">-300px</button>
+      </a>
+      <a href="#perspectOrigExamplesBar">
+        <button onclick="perspectOrig('perspectOrigDivDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#perspectOrigExamplesBar">
+        <button onclick="perspectOrig('perspectOrigDivDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="perspectOrigDiv" class="exampleDiv">
+    <div id="perspectOrigDivDiv">
+      <div id="perspectOrigDivSecDiv">Perspective</div>
+    </div>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+        <span class="left-padding">
+          &lt;<span class="brown">div</span>
+          <span class="purple">id=</span><span class="olive">"first"</span>&gt;
+        </span><br />
+        <span class="more-padding">
+          &lt;<span class="brown">div</span>
+          <span class="purple">id=</span><span class="olive">"second"</span>&gt;
+        </span>
+        &lt;<span class="brown">/div</span>&gt;<br />
+        <span class="left-padding">&lt;<span class="brown">/div</span>&gt;</span><br />
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">#first</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border: </span>2px solid blue;<br />
+            <span class="crimson">position: </span>relative;<br />
+            <span class="crimson">height: </span>150px;<br />
+            <span class="crimson">width: </span>150px;<br />
+            <span class="crimson">margin: </span>10px auto;<br />
+            <span class="crimson">perspective: </span>100px;<br />
+            <span class="crimson">perspective-origin: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">#second</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border: </span>1px solid blue;<br />
+            <span class="crimson">position: </span>absolute;<br />
+            <span class="crimson">padding: </span>50px;<br />
+            <span class="crimson">background: </span>rgba(100,100,100,0.5);<br />
+            <span class="crimson">transform-style: </span>preserve-3d;<br />
+            <span class="crimson">transform: </span>rotateX(50deg);<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

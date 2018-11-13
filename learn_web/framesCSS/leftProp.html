@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Bottom</title>
+<title>Left</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
@@ -20,22 +20,22 @@
   <div class="note noteCSS descriptionCSS note-round-bord">
     Description:<br />
     <div class="note-value">
-       The bottom property affects the vertical position of a positioned element.
+       The left property affects the horizontal position of a positioned element.
        This property has no effect on non-positioned elements.
     </div>
     <div class="note-value">
-       If position: absolute; or position: fixed; - the bottom property sets the bottom edge of an element
-       to a unit above/below the bottom edge of its nearest positioned ancestor.
+       If position: absolute; or position: fixed; - the left property sets the left edge of an element to a unit
+       to the left of the left edge of its nearest positioned ancestor.
     </div>
     <div class="note-value">
-       If position: relative; - the bottom property makes the element's bottom edge to move above/below its normal position.
+       If position: relative; - the left property sets the left edge of an element to a unit to the left/right of its normal position.
     </div>
     <div class="note-value">
-       If position: sticky; - the bottom property behaves like its position is relative when the element is inside the viewport,
+       If position: sticky; - the left property behaves like its position is relative when the element is inside the viewport,
        and like its position is fixed when it is outside.
     </div>
     <div class="note-value">
-       If position: static; - the bottom property has no effect.
+       If position: static; - the left property has no effect.
     </div>
   </div>
   <div><hr class="hr-length-90perc" /></div>
@@ -55,15 +55,15 @@
       <tbody>
         <tr>
           <td>auto</td>
-          <td>Lets the browser calculate the bottom edge position. This is default.</td>
+          <td>Lets the browser calculate the left edge position. This is default.</td>
         </tr>
         <tr>
           <td>length</td>
-          <td>Sets the bottom edge position in px, cm, etc. Negative values are allowed.</td>
+          <td>Sets the left edge position in px, cm, etc. Negative values are allowed.</td>
         </tr>
         <tr>
           <td>%</td>
-          <td>Sets the bottom edge position in % of containing element. Negative values are allowed.</td>
+          <td>Sets the left edge position in % of containing element. Negative values are allowed.</td>
         </tr>
         <tr>
           <td>initial</td>
@@ -78,39 +78,39 @@
     <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
 
     <div><h2 class="tag">Examples</h2></div>
-    <div id="bottomExamplesBar" class="left-padding;">
-      <a href="#topExamplesBar">
-        <button onclick="bottomPos('bottomDivP', 'auto')" class="example-button example-rounded-buttons">auto</button>
+    <div id="leftExamplesBar" class="left-padding;">
+      <a href="#leftExamplesBar">
+        <button onclick="leftPos('leftDivP', 'auto')" class="example-button example-rounded-buttons">auto</button>
       </a>
-      <a href="#bottomExamplesBar">
-        <button onclick="bottomPos('bottomDivP', '10px')" class="example-button example-rounded-buttons">10px</button>
+      <a href="#leftExamplesBar">
+        <button onclick="leftPos('leftDivP', '10px')" class="example-button example-rounded-buttons">10px</button>
       </a>
-      <a href="#bottomExamplesBar">
-        <button onclick="bottomPos('bottomDivP', '50px')" class="example-button example-rounded-buttons">50px</button>
+      <a href="#leftExamplesBar">
+        <button onclick="leftPos('leftDivP', '50px')" class="example-button example-rounded-buttons">50px</button>
       </a>
-      <a href="#bordExamplesBar">
-        <button onclick="bottomPos('bottomDivP', '2em')" class="example-button example-rounded-buttons">2em</button>
+      <a href="#leftExamplesBar">
+        <button onclick="leftPos('leftDivP', '2em')" class="example-button example-rounded-buttons">2em</button>
       </a>
-      <a href="#bordExamplesBar">
-        <button onclick="bottomPos('bottomDivP', '-2em')" class="example-button example-rounded-buttons">-2em</button>
+      <a href="#leftExamplesBar">
+        <button onclick="leftPos('leftDivP', '-2em')" class="example-button example-rounded-buttons">-2em</button>
       </a>
-      <a href="#bottomExamplesBar">
-        <button onclick="bottomPos('bottomDivP', '-150px')" class="example-button example-rounded-buttons">-150px</button>
+      <a href="#leftExamplesBar">
+        <button onclick="leftPos('leftDivP', '-150px')" class="example-button example-rounded-buttons">-150px</button>
       </a>
-      <a href="#bordExamplesBar">
-        <button onclick="bottomPos('bottomDivP', '30%')" class="example-button example-rounded-buttons">30%</button>
+      <a href="#leftExamplesBar">
+        <button onclick="leftPos('leftDivP', '30%')" class="example-button example-rounded-buttons">30%</button>
       </a>
-      <a href="#bottomExamplesBar">
-        <button onclick="bottomPos('bottomDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      <a href="#leftExamplesBar">
+        <button onclick="leftPos('leftDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
       </a>
-      <a href="#bottomExamplesBar">
-        <button onclick="bottomPos('bottomDivP', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      <a href="#leftExamplesBar">
+        <button onclick="leftPos('leftDivP', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
       </a>
     </div>
   </div>
 
-  <div id="bottomDiv" class="exampleDiv">
-    <p id="bottomDivP">Example text</p>
+  <div id="leftDiv" class="exampleDiv">
+    <p id="leftDivP">Example text</p>
   </div>
 
   <div id='animationDivCode'>
@@ -130,7 +130,7 @@
             <span class="crimson">position: </span>relative;<br />
             <span class="crimson">width: </span>110px;<br />
             <span class="crimson">height: </span>30px;<br />
-            <span class="crimson">bottom: </span><span class="text">?;</span><br />
+            <span class="crimson">left: </span><span class="text">?;</span><br />
           </p>
         <span class="black left-padding">}</span>
       </p>

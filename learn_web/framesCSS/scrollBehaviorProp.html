@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<title>Scroll behavior</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/scrollBehavior.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/main_window_css.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The scroll-behavior property specifies whether to smoothly animate the scroll position,
+       instead of a straight jump, when the user clicks on a link within a scrollable box.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+        Numbers followed by -moz- specify the first version that worked with a prefix: Firefox 4.0 (-moz-).
+    </div>
+    <div class="note-value">
+       Internet Explorer and Safari does not support the scroll-behavior property.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>auto</td>
+          <td>Allows a straight jump "scroll effect" between elements within the scrolling box. This is default.</td>
+        </tr>
+        <tr>
+          <td>smooth</td>
+          <td>Allows a smooth animated "scroll effect" between elements within the scrolling box.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="scrollBehaviorExamplesBar" class="left-padding;">
+      <a href="#scrollBehaviorExamplesBar">
+        <button onclick="scrollBehavior('scrollBehaviorDiv', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#scrollBehaviorExamplesBar">
+        <button onclick="scrollBehavior('scrollBehaviorDiv', 'smooth')" class="example-button example-rounded-buttons">smooth</button>
+      </a>
+      <a href="#scrollBehaviorExamplesBar">
+        <button onclick="scrollBehavior('scrollBehaviorDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#scrollBehaviorExamplesBar">
+        <button onclick="scrollBehavior('scrollBehaviorDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="scrollBehaviorDiv" class="exampleDiv">
+    <p id="scrollBehaviorDivFirst">Chapter 1<br /><a href="#scrollBehaviorDivSecond">Link to chapter 2</a></p>
+    <p id="scrollBehaviorDivSecond">Chapter 2<br /><a href="#scrollBehaviorDivFirst">Link to chapter 1</a></p>
+  </div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span><br />
+        <span class="left-padding">&lt;<span class="brown">p</span>
+          <span class="purple">id=</span><span class="olive">"first"</span>&gt;
+          <span class="black">Chapter 1</span><span>&lt;<span class="brown">/p</span>&gt;</span>
+          &lt;<span class="brown">br</span>&gt;&lt;<span class="brown">a</span>
+          <span class="crimson">href=</span><span class="olive">"#second"</span>&gt;
+          <span class="black">Link to chapter 2</span>&lt;<span class="brown">a</span>&gt;
+        </span><br />
+        <span class="left-padding">&lt;<span class="brown">p</span>
+          <span class="purple">id=</span><span class="olive">"first"</span>&gt;
+          <span class="black">Chapter 2</span><span>&lt;<span class="brown">/p</span>&gt;</span>
+          &lt;<span class="brown">br</span>&gt;&lt;<span class="brown">a</span>
+          <span class="crimson">href=</span><span class="olive">"#first"</span>&gt;
+          <span class="black">Link to chapter 1</span>&lt;<span class="brown">a</span>&gt;
+        </span><br />
+      &lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">body </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">scroll-behavior: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

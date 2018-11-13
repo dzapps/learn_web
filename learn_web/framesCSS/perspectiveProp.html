@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<title>Perspective</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/perspective.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/perspective.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The perspective property is used to give a 3D-positioned element some perspective.
+    </div>
+    <div class="note-value">
+      The perspective property defines how far the object is away from the user.
+      So, a lower value will result in a more intensive 3D effect than a higher value.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      Numbers followed by -webkit- or -moz- specify the first version that worked with a prefix:
+      Chrome 12.0, Safari 4.0.3 and Opera 15.0 (-webkit-), Firefox 10.0 (-moz-).
+    </div>
+    <div class="note-value">
+      The perspective property is not supported in IE9 and earlier versions.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>length</td>
+          <td>How far the element is placed from the view.</td>
+        </tr>
+        <tr>
+          <td>none</td>
+          <td>Default value. Same as 0. The perspective is not set.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="perspectExamplesBar" class="left-padding">
+      <a href="#perspectExamplesBar">
+        <button onclick="perspect('perspectDivDiv', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#perspectExamplesBar">
+        <button onclick="perspect('perspectDivDiv', '20px')" class="example-button example-rounded-buttons">20px</button>
+      </a>
+      <a href="#perspectExamplesBar">
+        <button onclick="perspect('perspectDivDiv', '50px')" class="example-button example-rounded-buttons">50px</button>
+      </a>
+      <a href="#perspectExamplesBar">
+        <button onclick="perspect('perspectDivDiv', '100px')" class="example-button example-rounded-buttons">100px</button>
+      </a>
+      <a href="#perspectExamplesBar">
+        <button onclick="perspect('perspectDivDiv', '150px')" class="example-button example-rounded-buttons">150px</button>
+      </a>
+      <a href="#perspectExamplesBar">
+        <button onclick="perspect('perspectDivDiv', '300px')" class="example-button example-rounded-buttons">300px</button>
+      </a>
+      <a href="#perspectExamplesBar">
+        <button onclick="perspect('perspectDivDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#perspectExamplesBar">
+        <button onclick="perspect('perspectDivDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="perspectDiv" class="exampleDiv">
+    <div id="perspectDivDiv">
+      <div id="perspectDivSecDiv">Perspective</div>
+    </div>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+        <span class="left-padding">
+          &lt;<span class="brown">div</span>
+          <span class="purple">id=</span><span class="olive">"first"</span>&gt;
+        </span><br />
+        <span class="more-padding">
+          &lt;<span class="brown">div</span>
+          <span class="purple">id=</span><span class="olive">"second"</span>&gt;
+        </span>
+        &lt;<span class="brown">/div</span>&gt;<br />
+        <span class="left-padding">&lt;<span class="brown">/div</span>&gt;</span><br />
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">#first</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border: </span>2px solid blue;<br />
+            <span class="crimson">position: </span>relative;<br />
+            <span class="crimson">height: </span>150px;<br />
+            <span class="crimson">width: </span>150px;<br />
+            <span class="crimson">margin: </span>10px auto;<br />
+            <span class="crimson">perspective: </span><span class="text">none</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">#second</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border: </span>1px solid blue;<br />
+            <span class="crimson">position: </span>absolute;<br />
+            <span class="crimson">padding: </span>50px;<br />
+            <span class="crimson">background: </span>rgba(100,100,100,0.5);<br />
+            <span class="crimson">transform-style: </span>preserve-3d;<br />
+            <span class="crimson">transform: </span>rotateX(50deg);<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

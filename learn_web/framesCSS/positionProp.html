@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<title>Right</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/position.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/position.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+       The sticky value is not supported in Internet Explorer or Edge 15 and earlier versions.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>static</td>
+          <td>Default value. Elements render in order, as they appear in the document flow.</td>
+        </tr>
+        <tr>
+          <td>absolute</td>
+          <td>The element is positioned relative to its first positioned (not static) ancestor element.</td>
+        </tr>
+        <tr>
+          <td>fixed</td>
+          <td>The element is positioned relative to the browser window.</td>
+        </tr>
+        <tr>
+          <td>relative</td>
+          <td>The element is positioned relative to its normal position,
+            so "left:20px" adds 20 pixels to the element's LEFT position.
+          </td>
+        </tr>
+        <tr>
+          <td>sticky</td>
+          <td>The element is positioned based on the user's scroll position.<br />
+            A sticky element toggles between relative and fixed, depending on the scroll position.
+            It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+          </td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="posExamplesBar" class="left-padding;">
+      <a href="#posExamplesBar">
+        <button onclick="pos('posDivP', 'static')" class="example-button example-rounded-buttons">static</button>
+      </a>
+      <a href="#posDivP">
+        <button onclick="pos('posDivP', 'absolute')" class="example-button example-rounded-buttons">absolute</button>
+      </a>
+      <a href="#posExamplesBar">
+        <button onclick="pos('posDivP', 'fixed')" class="example-button example-rounded-buttons">fixed</button>
+      </a>
+      <a href="#posExamplesBar">
+        <button onclick="pos('posDivP', 'relative')" class="example-button example-rounded-buttons">relative</button>
+      </a>
+      <a href="#posExamplesBar">
+        <button onclick="pos('posDivP', 'sticky')" class="example-button example-rounded-buttons">sticky</button>
+      </a>
+      <a href="#posExamplesBar">
+        <button onclick="pos('posDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#posExamplesBar">
+        <button onclick="pos('posDivP', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="posDiv" class="exampleDiv">
+    <p id="posDivP">Example text</p>
+  </div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span><br />
+        <span class="left-padding">&lt;<span class="brown">p</span>&gt;
+        <span class="black">Example text</span><span>&lt;<span class="brown">/p</span>&gt;</span></span><br />
+      &lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">p </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border: </span>2px solid blue;<br />
+            <span class="crimson">left: </span>300px;<br />
+            <span class="crimson">top: </span>70px;<br />
+            <span class="crimson">width: </span>210px;<br />
+            <span class="crimson">height: </span>80px;<br />
+            <span class="crimson">position: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

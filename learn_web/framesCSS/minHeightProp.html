@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<title>Min height</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/sizing.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/sizing.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The min-height property defines the minimum height of an element.
+    </div>
+    <div class="note-value">
+       If the content is smaller than the minimum height, the minimum height will be applied.
+    </div>
+    <div class="note-value">
+       If the content is larger than the minimum height, the min-height property has no effect.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+        This prevents the value of the height property from becoming smaller than min-height.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>length</td>
+          <td>Defines the minimum height in px, cm, etc.</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Defines the minimum height in percent of the containing block.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="minHeightExamplesBar" class="left-padding;">
+      <a href="#minHeightExamplesBar">
+        <button onclick="minHeight('minHeightDiv', '40px')" class="example-button example-rounded-buttons">40px</button>
+      </a>
+      <a href="#minHeightExamplesBar">
+        <button onclick="minHeight('minHeightDiv', '150px')" class="example-button example-rounded-buttons">150px</button>
+      </a>
+      <a href="#minHeightExamplesBar">
+        <button onclick="minHeight('minHeightDiv', '200px')" class="example-button example-rounded-buttons">200px</button>
+      </a>
+      <a href="#minHeightExamplesBar">
+        <button onclick="minHeight('minHeightDiv', '20em')" class="example-button example-rounded-buttons">20em</button>
+      </a>
+      <a href="#minHeightExamplesBar">
+        <button onclick="minHeight('minHeightDiv', '100%')" class="example-button example-rounded-buttons">100%</button>
+      </a
+      <a href="#minHeightExamplesBar">
+        <button onclick="minHeight('minHeightDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#minHeightExamplesBar">
+        <button onclick="minHeight('minHeightDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="minHeightDiv" class="exampleDiv">I was born in the year 1632, in the city of York, of a good family,
+    though not of that country, my father being a foreigner of Bremen, who settled first at Hull.
+    He got a good estate by merchandise, and leaving off his trade, lived afterwards at York,
+    from whence he had married my mother, whose relations were named Robinson, a very good family in that country,
+    and from whom I was called Robinson Kreutznaer; but, by the usual corruption of words in England,
+    we are now called—nay we call ourselves and write our name—Crusoe; and so my companions always called me.
+  </div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span>&lt;
+      <span class="black">I was born in the year 1632, in the city of York...</span>
+      &lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">overflow: </span>auto;<br />
+            <span class="crimson">width: </span>85%;<br />
+            <span class="crimson">min-height: </span><span class="text">?;</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
