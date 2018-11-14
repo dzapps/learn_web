@@ -23,14 +23,6 @@ function showAndHide(id) {
   }
 }
 
-function backfaceVisib(imgId, imgState, text) {
-  document.getElementById(`${imgId}`).style.backfaceVisibility = imgState;
-  document.getElementById(`${imgId}`).style.transform = 'rotateY(180deg)';
-
-  document.getElementsByClassName('text')[0].innerHTML = 'rotateY(180deg);';
-  document.getElementsByClassName('text')[1].innerHTML = text + ';';
-}
-
 function frontSide() {
   backfaceVisibDiv.style.transform = "rotateY(0deg)";
   document.getElementsByClassName('text')[0].innerHTML = 'rotateY(0deg);';

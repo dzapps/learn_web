@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<title>Transform</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/transform.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/transform.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The transform property applies a 2D or 3D transformation to an element.
+      This property allows you to rotate, scale, move, skew, etc., elements.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      Numbers followed by -webkit-, -moz-, or -o- specify the first version that worked with a prefix:<br />
+      2D — Chrome 4.0, Safari 3.2 and Opera 15.0 (-webkit-), Firefox 3.5 (-moz-), IE 9.0 (-ms-), Opera 10.5 (-o-);<br />
+      3D — Chrome 12.0, Safari 4.0 and Opera 15.0 (-webkit-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>Defines that there should be no transformation.</td>
+        <tr>
+          <td>matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())</td>
+          <td>Defines a 2D transformation, using a matrix of six values.</td>
+        </tr>
+        <tr>
+          <td>matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)</td>
+          <td>Defines a 3D transformation, using a 4x4 matrix of 16 values.</td>
+        </tr>
+        <tr>
+          <td>translate(x,y)</td>
+          <td>Defines a 2D translation.</td>
+        </tr>
+        <tr>
+          <td>translate3d(x,y,z)</td>
+          <td>Defines a 3D translation.</td>
+        </tr>
+        <tr>
+          <td>translateX(x)</td>
+          <td>Defines a translation, using only the value for the X-axis.</td>
+        </tr>
+        <tr>
+          <td>translateY(y)</td>
+          <td>Defines a translation, using only the value for the Y-axis.</td>
+        </tr>
+        <tr>
+          <td>translateZ(z)</td>
+          <td>Defines a 3D translation, using only the value for the Z-axis.</td>
+        </tr>
+        <tr>
+          <td>scale(x,y)</td>
+          <td>Defines a 2D scale transformation.</td>
+        </tr>
+        <tr>
+          <td>scale3d(x,y,z)</td>
+          <td>Defines a 3D scale transformation.</td>
+        </tr>
+        <tr>
+          <td>scaleX(x)</td>
+          <td>Defines a scale transformation by giving a value for the X-axis.</td>
+        </tr>
+        <tr>
+          <td>scaleY(y)</td>
+          <td>Defines a scale transformation by giving a value for the Y-axis.</td>
+        </tr>
+        <tr>
+          <td>scaleZ(z)</td>
+          <td>Defines a 3D scale transformation by giving a value for the Z-axis.</td>
+        </tr>
+        <tr>
+          <td>rotate(angle)</td>
+          <td>Defines a 2D rotation, the angle is specified in the parameter.</td>
+        </tr>
+        <tr>
+          <td>rotate3d(x,y,z,angle)</td>
+          <td>Defines a 3D rotation.</td>
+        </tr>
+        <tr>
+          <td>rotateX(angle)</td>
+          <td>Defines a 3D rotation along the X-axis.</td>
+        </tr>
+        <tr>
+          <td>rotateY(angle)</td>
+          <td>Defines a 3D rotation along the Y-axis.</td>
+        </tr>
+        <tr>
+          <td>rotateZ(angle)</td>
+          <td>Defines a 3D rotation along the Z-axis.</td>
+        </tr>
+        <tr>
+          <td>skew(x-angle,y-angle)</td>
+          <td>Defines a 2D skew transformation along the X- and the Y-axis.</td>
+        </tr>
+        <tr>
+          <td>skewX(angle)</td>
+          <td>Defines a 2D skew transformation along the X-axis.</td>
+        </tr>
+        <tr>
+          <td>skewY(angle)</td>
+          <td>Defines a 2D skew transformation along the Y-axis.</td>
+        </tr>
+        <tr>
+          <td>perspective(n)</td>
+          <td>Defines a perspective view for a 3D transformed element.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.
+          </td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="transformExamplesBar" class="left-padding">
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="showTransform('transMatrix')" class="example-button example-rounded-buttons">matrix</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="showTransform('transTranslate')" class="example-button example-rounded-buttons">translate</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="showTransform('transScale')" class="example-button example-rounded-buttons">scale</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="showTransform('transRotate')" class="example-button example-rounded-buttons">rotate</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="showTransform('transSkew')" class="example-button example-rounded-buttons">skew</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="transMatrix" class="show max-padding" style="display: none;">
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'matrix(1, 0.2, 0.2, 1, 30, 0)')" class="example-button example-double-level-rounded-buttons">example1</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'matrix(1, -0.3, -0.3, 1, 30, 0)')" class="example-button example-double-level-rounded-buttons">example2</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'matrix(1.3, -0.3, -0.3, 1.3, 150, 0)')" class="example-button example-double-level-rounded-buttons">example3</button>
+    </a>
+  </div>
+
+  <div id="transTranslate" class="show max-padding" style="display: none;">
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'translateX(50px)')" class="example-button example-double-level-rounded-buttons">x(50px)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'translateX(-100px)')" class="example-button example-double-level-rounded-buttons">x(-100px)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'translateY(30px)')" class="example-button example-double-level-rounded-buttons">y(30px)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'translateY(-40px)')" class="example-button example-double-level-rounded-buttons">y(-40px)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'translateZ(60px)')" class="example-button example-double-level-rounded-buttons">z(60px)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'translateZ(-40px)')" class="example-button example-double-level-rounded-buttons">z(-40px)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'translate(50px, 50px)')" class="example-button example-double-level-rounded-buttons">(50px, 50px)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'translate(-100px, 30px)')" class="example-button example-double-level-rounded-buttons">(-100px, 30px)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'translate3d(50px, 50px, 20px)')" class="example-button example-double-level-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">(50px, 50px, 20px)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'translate3d(-100px, 30px, -80px)')" class="example-button example-double-level-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">(-100px, 30px, -80px)</button>
+    </a>
+  </div>
+
+  <div id="transScale" class="show max-padding" style="display: none;">
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'scaleX(2)')" class="example-button example-double-level-rounded-buttons">x(2)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'scaleX(5)')" class="example-button example-double-level-rounded-buttons">x(5)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'scaleY(3)')" class="example-button example-double-level-rounded-buttons">y(3)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'scaleY(-4)')" class="example-button example-double-level-rounded-buttons">y(-4)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'scaleZ(6)')" class="example-button example-double-level-rounded-buttons">z(6)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'scaleZ(-2)')" class="example-button example-double-level-rounded-buttons">z(-2)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'scale(2, 2)')" class="example-button example-double-level-rounded-buttons">(2, 2)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'scale(-1, 3)')" class="example-button example-double-level-rounded-buttons">(-1, 3)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'scale3d(5, 5, 2)')" class="example-button example-double-level-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">(5, 5, 2)</button>
+    </a>
+    <a href="#transformExamplesBar">
+      <button onclick="transform('transformImg', 'scale3d(1, 3, -8)')" class="example-button example-double-level-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">(1, 3, -8)</button>
+    </a>
+  </div>
+
+
+    <div id="transRotate" class="show max-padding" style="display: none;">
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'rotateX(50deg)')" class="example-button example-double-level-rounded-buttons">x(50deg)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'rotateX(-40deg)')" class="example-button example-double-level-rounded-buttons">x(-40deg)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'rotateY(30deg)')" class="example-button example-double-level-rounded-buttons">y(30deg)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'rotateY(-60deg)')" class="example-button example-double-level-rounded-buttons">y(-60deg)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'rotateZ(50deg)')" class="example-button example-double-level-rounded-buttons">z(50deg)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'rotateZ(-80deg)')" class="example-button example-double-level-rounded-buttons">z(-80deg)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'rotate(40deg)')" class="example-button example-double-level-rounded-buttons">(40deg)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'rotate(-70deg)')" class="example-button example-double-level-rounded-buttons">(-70deg)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'rotate3d(5, 5, 2)')" class="example-button example-double-level-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">(5, 5, 2)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'rotate3d(1, 3, -8)')" class="example-button example-double-level-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">(1, 3, -8)</button>
+      </a>
+    </div>
+
+    <div id="transSkew" class="show max-padding" style="display: none;">
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'skewX(50deg)')" class="example-button example-double-level-rounded-buttons">x(50deg)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'skewX(-40deg)')" class="example-button example-double-level-rounded-buttons">x(-40deg)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'skewY(30deg)')" class="example-button example-double-level-rounded-buttons">y(30deg)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'skewY(70deg)')" class="example-button example-double-level-rounded-buttons">y(70deg)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'skew(-60deg, 30deg)')" class="example-button example-double-level-rounded-buttons">(-60deg, 30deg)</button>
+      </a>
+      <a href="#transformExamplesBar">
+        <button onclick="transform('transformImg', 'skew(20deg, 20deg)')" class="example-button example-double-level-rounded-buttons">(20deg, 20deg)</button>
+      </a>
+    </div>
+
+  <div class="exampleDiv" style="text-align: center;">
+    <img id="transformImgOrigin" src="../images/vasserman_thinking.gif" alt="vasserman_thinking" />
+    <img id="transformImg" src="../images/vasserman_thinking.gif" alt="vasserman_thinking" />
+  </div>
+
+  <div id="animationDivCode">
+
+    <div class="blue code float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <span class="left-padding">
+        &lt;<span class="brown">p</span>&gt;
+        &lt;<span class="brown">img</span>
+        <span class="crimson">src=</span><span class="olive">"../images/vasserman_thinking.gif"</span>&gt;
+        &lt;<span class="brown">/p</span>&gt;
+      </span><br />
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">text-align: </span>center;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">img </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">transform: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

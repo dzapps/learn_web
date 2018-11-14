@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<title>Visibility</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/visibility.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/visibility.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The visibility property specifies whether or not an element is visible.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Notes:<br />
+    <div class="note-value">
+      Hidden elements take up space on the page. Use the display property to both hide and remove an element from the document layout!
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>visible</td>
+          <td>Default value. The element is visible.</td>
+        </tr>
+        <tr>
+          <td>hidden</td>
+          <td>The element is hidden (but still takes up space).</td>
+        </tr>
+        <tr>
+          <td>collapse</td>
+          <td>Only for table rows (&lt;tr&gt;), row groups (&lt;tbody&gt;), columns (&lt;col&gt;), column groups (&lt;colgroup&gt;).
+            This value removes a row or column, but it does not affect the table layout.
+            The space taken up by the row or column will be available for other content.<br />
+            If collapse is used on other elements, it renders as "hidden".
+          </td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.
+          </td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="visibExamplesBar" class="left-padding">
+      <a href="#visibExamplesBar">
+        <button onclick="visib('visibDivTable', 'visible')" class="example-button example-rounded-buttons">visible</button>
+      </a>
+      <a href="#visibExamplesBar">
+        <button onclick="visib('visibDivTable', 'hidden')" class="example-button example-rounded-buttons">hidden</button>
+      </a>
+      <a href="#visibExamplesBar">
+        <button onclick="visib('visibDivTable', 'collapse')" class="example-button example-rounded-buttons">collapse</button>
+      </a>
+      <a href="#visibExamplesBar">
+        <button onclick="visib('visibDivTable', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#visibExamplesBar">
+        <button onclick="visib('visibDivTable', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv" style="text-align: center;">
+    <p>
+      <table id="visibDivTable">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Taste</th>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>Fruit</td>
+          <td>Sweet and sour</td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td>Fruit</td>
+          <td>Sweet</td>
+        </tr>
+      </table>
+    </p>
+    <p>Example text.</p>
+  </div>
+
+  <div id="animationDivCode">
+
+    <div class="blue code float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <span class="left-padding">&lt;<span class="brown">/table</span>&gt;<br /></span>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br />
+        <span class="more-padding">&lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        <span class="more-padding">&lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        <span class="more-padding">&lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;<br /></span>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br />
+        <span class="more-padding">&lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        <span class="more-padding">&lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        <span class="more-padding">&lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;<br /></span>
+      <span class="left-padding">&lt;<span class="brown">/table</span>&gt;<br /></span>
+      <span class="left-padding">
+        &lt;<span class="brown">p</span>&gt;
+        <span class="black">Example text.</span>
+        &lt;<span class="brown">/p</span>&gt;
+      </span><br />
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">text-align: </span>center;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">table </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">border: </span>2px solid blue;<br />
+            <span class="crimson">margin: </span>5px auto;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">#first </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">visibility: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

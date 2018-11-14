@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<title>Visibility</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/verticAlign.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/main_window_css.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The vertical-align property sets the vertical alignment of an element.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>baseline</td>
+          <td>The element is aligned with the baseline of the parent. This is default.</td>
+        </tr>
+        <tr>
+          <td>sub</td>
+          <td>The element is aligned with the subscript baseline of the parent.</td>
+        </tr>
+        <tr>
+          <td>super</td>
+          <td>The element is aligned with the superscript baseline of the parent.</td>
+        </tr>
+        <tr>
+          <td>top</td>
+          <td>The element is aligned with the top of the tallest element on the line.</td>
+        </tr>
+        <tr>
+          <td>text-top</td>
+          <td>The element is aligned with the top of the parent element's font.</td>
+        </tr>
+        <tr>
+          <td>middle</td>
+          <td>The element is placed in the middle of the parent element.</td>
+        </tr>
+        <tr>
+          <td>bottom</td>
+          <td>The element is aligned with the lowest element on the line.</td>
+        </tr>
+        <tr>
+          <td>text-bottom</td>
+          <td>The element is aligned with the bottom of the parent element's font.</td>
+        </tr>
+        <tr>
+          <td>length</td>
+          <td>Raises or lower an element by the specified length. Negative values are allowed.</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Raises or lower an element in a percent of the "line-height" property. Negative values are allowed.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.
+          </td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="verticAlignExamplesBar" class="left-padding">
+      <a href="#verticAlignExamplesBar">
+        <button onclick="verticAlign('verticAlignImg', 'baseline')" class="example-button example-rounded-buttons">baseline</button>
+      </a>
+      <a href="#verticAlignExamplesBar">
+        <button onclick="verticAlign('verticAlignImg', 'sub')" class="example-button example-rounded-buttons">sub</button>
+      </a>
+      <a href="#verticAlignExamplesBar">
+        <button onclick="verticAlign('verticAlignImg', 'super')" class="example-button example-rounded-buttons">super</button>
+      </a>
+      <a href="#verticAlignExamplesBar">
+        <button onclick="verticAlign('verticAlignImg', 'top')" class="example-button example-rounded-buttons">top</button>
+      </a>
+      <a href="#verticAlignExamplesBar">
+        <button onclick="verticAlign('verticAlignImg', 'text-top')" class="example-button example-rounded-buttons">text-top</button>
+      </a>
+      <a href="#verticAlignExamplesBar">
+        <button onclick="verticAlign('verticAlignImg', 'middle')" class="example-button example-rounded-buttons">middle</button>
+      </a>
+      <a href="#verticAlignExamplesBar">
+        <button onclick="verticAlign('verticAlignImg', 'bottom')" class="example-button example-rounded-buttons">bottom</button>
+      </a>
+      <a href="#verticAlignExamplesBar">
+        <button onclick="verticAlign('verticAlignImg', 'text-bottom')" class="example-button example-rounded-buttons">text-bottom</button>
+      </a>
+      <a href="#verticAlignExamplesBar">
+        <button onclick="verticAlign('verticAlignImg', '30px')" class="example-button example-rounded-buttons">30px</button>
+      </a>
+      <a href="#verticAlignExamplesBar">
+        <button onclick="verticAlign('verticAlignImg', '1em')" class="example-button example-rounded-buttons">1em</button>
+      </a>
+      <a href="#verticAlignExamplesBar">
+        <button onclick="verticAlign('verticAlignImg', '100%')" class="example-button example-rounded-buttons">100%</button>
+      </a>
+      <a href="#verticAlignExamplesBar">
+        <button onclick="verticAlign('verticAlignImg', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#verticAlignExamplesBar">
+        <button onclick="verticAlign('verticAlignImg', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv" style="text-align: center;">
+    <p><img id="verticAlignImg" src="../images/list_style_image.png" alt="list_style_image" style="width: 10px; height: 10px;"/>Example text.</p>
+  </div>
+
+  <div id="animationDivCode">
+
+    <div class="blue code float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <span class="left-padding">
+        &lt;<span class="brown">p</span>&gt;
+        &lt;<span class="brown">img</span>
+        <span class="crimson">src=</span><span class="olive">"../images/list-style-image.png"</span>&gt;
+        <span class="black">Example text.</span>
+        &lt;<span class="brown">/p</span>&gt;
+      </span><br />
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">text-align: </span>center;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">img </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">vertical-align: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

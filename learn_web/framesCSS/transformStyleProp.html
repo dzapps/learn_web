@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<title>Transform style</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/transform.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/transform.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The transform-style property specifies how nested elements are rendered in 3D space.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+       This property must be used together with the transform property.
+    </div>
+    <div class="note-value">
+      Numbers followed by -webkit-, -moz-, or -o- specify the first version that worked with a prefix:<br />
+      Chrome 12.0, Safari 4.0 and Opera 15.0 (-webkit-), Firefox 10.0(-moz-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>flat</td>
+          <td>Specifies that child elements will NOT preserve its 3D position. This is default.</td>
+        </tr>
+        <tr>
+          <td>preserve-3d</td>
+          <td>Specifies that child elements will preserve its 3D position.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="transfStyleExamplesBar" class="left-padding;">
+      <a href="#transfStyleExamplesBar">
+        <button onclick="transfStyle('transStyleDiv2', 'flat')" class="example-button example-rounded-buttons">flat</button>
+      </a>
+      <a href="#transfStyleExamplesBar">
+        <button onclick="transfStyle('transStyleDiv2', 'preserve-3d')" class="example-button example-rounded-buttons">preserve-3d</button>
+      </a>
+      <a href="#transfStyleExamplesBar">
+        <button onclick="transfStyle('transStyleDiv2', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#transfStyleExamplesBar">
+        <button onclick="transfStyle('transStyleDiv2', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv">
+    <div style="width: 90%; margin: auto;">
+    <div id="transStyleDiv2Exam">
+      <div id="transStyleDiv3Exam">Original</div>
+    </div>
+    <div id="transStyleDiv2">
+      <div id="transStyleDiv3"></div>
+    </div>
+  </div>
+  </div>
+
+  <div id="animationDivCode">
+
+    <div class="blue code float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <span class="left-padding">
+        &lt;<span class="brown">div</span>
+        <span class="purple">id=</span><span class="olive">"div2"</span>&gt;<br />
+      </span>
+      <span class="more-padding">
+        &lt;<span class="brown">div</span>
+        <span class="purple">id=</span><span class="olive">"div3"</span>&gt;&lt;<span class="brown">/div</span>&gt;
+      </span><br />
+      <span class="left-padding">
+        &lt;<span class="brown">/div</span>&gt;
+      </span><br />
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div2 </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">width: </span>300px;<br />
+            <span class="crimson">margin: </span>30px auto;<br />
+            <span class="crimson">padding: </span>10px;<br />
+            <span class="crimson">border: </span>2px solid blue;<br />
+            <span class="crimson">background-color: </span>red;<br />
+            <span class="crimson">transform: </span>rotateX(30deg);<br />
+            <span class="crimson">transform: </span>rotateY(60deg);<br />
+            <span class="crimson">transform-style: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div3 </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">padding: </span>20px;<br />
+            <span class="crimson">border: </span>2px solid blue;<br />
+            <span class="crimson">background-color: </span>yellow;<br />
+            <span class="crimson">transform: </span>rotateY(-40deg);<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

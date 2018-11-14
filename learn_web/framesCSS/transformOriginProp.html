@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<title>Transform origin</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/transform.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/transform.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The transform-origin property allows you to change the position of transformed elements.
+    </div>
+    <div class="note-value">
+       2D transformations can change the x- and y-axis of an element. 3D transformations can also change the z-axis of an element.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+       This property must be used together with the transform property.
+    </div>
+    <div class="note-value">
+      Numbers followed by -webkit-, -moz-, or -o- specify the first version that worked with a prefix:<br />
+      two value — Chrome 4.0, Safari 3.2 and Opera 15.0 (-webkit-), Firefox 3.5 (-moz-), IE 9.0 (-ms-), Opera 10.5 (-o-);<br />
+      three values — Chrome 12.0, Safari 4.0 and Opera 15.0 (-webkit-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>x-axis</td>
+          <td>Defines where the view is placed at the x-axis. Possible values: left, center, right, length, %.</td>
+        </tr>
+        <tr>
+          <td>y-axis</td>
+          <td>Defines where the view is placed at the y-axis. Possible values: left, center, right, length, %.</td>
+        </tr>
+        <tr>
+          <td>z-axis</td>
+          <td>Defines where the view is placed at the z-axis (for 3D transformations). Possible values: length.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="transfOriginExamplesBar" class="left-padding;">
+      <a href="#transfOriginExamplesBar">
+        <button onclick="transfOrigin('transformImgOrigin2', '20px 30px')" class="example-button example-rounded-buttons">20px 30px</button>
+      </a>
+      <a href="#transfOriginExamplesBar">
+        <button onclick="transfOrigin('transformImgOrigin2', '50px 100px')" class="example-button example-rounded-buttons">50px 100px</button>
+      </a>
+      <a href="#transfOriginExamplesBar">
+        <button onclick="transfOrigin('transformImgOrigin2', '80% 80%')" class="example-button example-rounded-buttons">80% 80%</button>
+      </a>
+      <a href="#transfOriginExamplesBar">
+        <button onclick="transfOrigin('transformImgOrigin2', '80px 80px')" class="example-button example-rounded-buttons">80px 80px</button>
+      </a>
+      <a href="#transfOriginExamplesBar">
+        <button onclick="transfOrigin('transformImgOrigin2', '80px 80px 30px')" class="example-button example-rounded-buttons">80px 80px 30px</button>
+      </a>
+      <a href="#transfOriginExamplesBar">
+        <button onclick="transfOrigin('transformImgOrigin2', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#transfOriginExamplesBar">
+        <button onclick="transfOrigin('transformImgOrigin2', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv" style="text-align: center;">
+    <img id="transformImgOrigin1" src="../images/vasserman_thinking.gif" alt="vasserman_thinking" />
+    <img id="transformImgOrigin2" src="../images/vasserman_thinking.gif" alt="vasserman_thinking" style="transform: matrix(1, 0.2, 0.2, 1, 10, 10);"/>
+  </div>
+
+  <div id="animationDivCode">
+
+    <div class="blue code float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <span class="left-padding">
+        &lt;<span class="brown">img</span>
+        <span class="crimson">src=</span><span class="olive">"../images/vasserman_thinking.gif"</span>&gt;
+      </span><br />
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">text-align: </span>center;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">img </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">transform: </span>matrix(1, 0.2, 0.2, 1, 10, 10);<br />
+            <span class="crimson">transform-origin: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

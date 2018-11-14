@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<title>Transition property</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/transition.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/transition.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The transition-property property specifies the name of the CSS property the transition effect is for
+       (the transition effect will start when the specified CSS property changes).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+       A transition effect could typically occur when a user hover over an element.
+    </div>
+    <div class="note-value">
+      Numbers followed by -webkit-, -moz-, or -o- specify the first version that worked with a prefix:<br />
+      Chrome 4.0 and Safari 3.1, Firefox 4.0 (-moz-), Opera 10.5 (-o-).
+    </div>
+    <div class="note-value">
+       This transition-duration property does not work in Internet Explorer 9 and earlier versions.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>No property will get a transition effect.</td>
+        </tr>
+        <tr>
+          <td>all</td>
+          <td>Default value. All properties will get a transition effect.</td>
+        </tr>
+        <tr>
+          <td>property</td>
+          <td>Defines a comma separated list of CSS property names the transition effect is for.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="transitionPropExamplesBar" class="left-padding;">
+      <a href="#transitionPropExamplesBar">
+        <button onclick="transitionProp('transitionPropDiv', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#transitionPropExamplesBar">
+        <button onclick="transitionProp('transitionPropDiv', 'all')" class="example-button example-rounded-buttons">all</button>
+      </a>
+      <a href="#transitionPropExamplesBar">
+        <button onclick="transitionProp('transitionPropDiv', 'width')" class="example-button example-rounded-buttons">width</button>
+      </a>
+      <a href="#transitionPropExamplesBar">
+        <button onclick="transitionProp('transitionPropDiv', 'width, height')" class="example-button example-rounded-buttons">width, height</button>
+      </a>
+      <a href="#transitionPropExamplesBar">
+        <button onclick="transitionProp('transitionPropDiv', 'width, height, opacity')" class="example-button example-rounded-buttons">width, height, opacity</button>
+      </a>
+      <a href="#transitionPropExamplesBar">
+        <button onclick="transitionProp('transitionPropDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#transitionPropExamplesBar">
+        <button onclick="transitionProp('transitionPropDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv" style="text-align: center;">
+    <div id="transitionPropDiv"></div>
+  </div>
+
+  <div id="animationDivCode">
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">#div1 </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">width: </span>100px;<br />
+            <span class="crimson">height: </span>100px;<br />
+            <span class="crimson">padding: </span>10px;<br />
+            <span class="crimson">background: </span>blue;<br />
+            <span class="crimson">transition-duration: </span>3s;<br />
+            <span class="crimson">transition-property: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">#div1</span><span class="olive">:hover </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">width: </span>200px;<br />
+            <span class="crimson">height: </span>200px;<br />
+            <span class="crimson">opacity: </span>0.3;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

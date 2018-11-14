@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<title>Caption side</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/table.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/table.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The table-layout property defines the algorithm used to lay out table cells, rows, and columns.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      The main benefit of table-layout: fixed; is that the table renders much faster.
+      On large tables, users will not see any part of the table until the browser has rendered the whole table.
+      So, if you use table-layout: fixed, users will see the top of the table while the browser loads and renders rest of the table.
+      This gives the impression that the page loads a lot quicker!
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>auto</td>
+          <td>Browsers use an automatic table layout algorithm.
+            The column width is set by the widest unbreakable content in the cells.
+            The content will dictate the layout.
+          </td>
+        </tr>
+        <tr>
+          <td>fixed</td>
+          <td>Sets a fixed table layout algorithm. The table and column widths are set by the widths of table and col
+            or by the width of the first row of cells. Cells in other rows do not affect column widths.
+            If no widths are present on the first row, the column widths are divided equally across the table,
+            regardless of content inside the cells.
+          </td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="tableLayoutExamplesBar" class="left-padding">
+      <a href="#tableLayoutExamplesBar">
+        <button onclick="tableLayout('tableLayoutTable', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#tableLayoutExamplesBar">
+        <button onclick="tableLayout('tableLayoutTable', 'fixed')" class="example-button example-rounded-buttons">fixed</button>
+      </a>
+      <a href="#tableLayoutExamplesBar">
+        <button onclick="tableLayout('tableLayoutTable', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#tableLayoutExamplesBar">
+        <button onclick="tableLayout('tableLayoutTable', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv" style="resize: both;">
+    <table id="tableLayoutTable" style="width: 100%;">
+    <caption>Table 1 — Fruits and vegetables</caption>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Taste</th>
+    </tr>
+    <tr>
+      <td>Apple</td>
+      <td>Fruit</td>
+      <td>Sweet and sour</td>
+    </tr>
+    <tr>
+      <td>Banana</td>
+      <td>Fruit</td>
+      <td>Sweet</td>
+    </tr>
+    <tr>
+      <td>Potato</td>
+      <td>Vegetable</td>
+      <td>Sweet neutral (cooking required)</td>
+    </tr>
+    <tr>
+      <td>Watermelon</td>
+      <td>Berry</td>
+      <td>Sweet</td>
+    </tr>
+    </table>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+        <span class="left-padding">&lt;<span class="brown">table</span>&gt;<br /></span>
+        <span class="left-padding">
+          &lt;<span class="brown">caption</span>&gt;
+          <span class="black">Table 1 — Fruits and vegetables</span>
+          &lt;<span class="brown">/caption</span>&gt;<br />
+        </span>
+        <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br />
+          <span class="more-padding">&lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          <span class="more-padding">&lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          <span class="more-padding">&lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;<br /></span>
+        <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br />
+          <span class="more-padding">&lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          <span class="more-padding">&lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          <span class="more-padding">&lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;<br /></span>
+        <span class="left-padding"><span class="black">...</span><br /></span>
+        <span class="left-padding">&lt;<span class="brown">/table</span>&gt;<br /></span>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">div</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">resize: </span>both;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">table</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">width: </span>100%;<br />
+            <span class="crimson">table-layout: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

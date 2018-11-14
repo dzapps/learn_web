@@ -547,3 +547,93 @@ h2 {
 #scrollBehaviorDiv {
   scroll-behavior: smooth;
 }
+
+#captSideTable, #tableLayoutTable, #emptyCellsTable {
+  border: 2px solid blue;
+}
+
+#zIndexImgBig {
+  position: relative;
+}
+
+#zIndexImg {
+  position: relative;
+  left: -124px;
+  top: -55px;
+}
+
+#visibDivTable {
+  border: 2px solid blue;
+  margin: 5px auto;
+}
+
+#transformImg, #transformImgOrigin, #transformImgOrigin1, #transformImgOrigin2 {
+  margin: 30px auto;
+  width: 150px;
+  height: 150px;
+}
+
+#transformImgOrigin, #transformImgOrigin1 {
+  position: relative;
+  opacity: 0.4;
+}
+
+#transformImg, #transformImgOrigin2 {
+  margin-left: -153px;
+  z-index: 1;
+}
+
+#transStyleDiv2Exam {
+  float: left;
+  width: 300px;
+  margin-right: 50px;
+  padding: 10px;
+  border: 2px solid blue;
+  background-color: red;
+}
+
+#transStyleDiv3Exam {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid blue;
+  background-color: yellow;
+}
+
+#transStyleDiv2 {
+  float: left;
+  width: 300px;
+  /* margin: 30px auto; */
+  padding: 10px;
+  border: 2px solid blue;
+  background-color: red;
+  transform: rotateY(60deg);
+  transform: rotateX(30deg);
+}
+
+#transStyleDiv3 {
+  padding: 20px;
+  border: 2px solid blue;
+  background-color: yellow;
+  transform: rotateY(-40deg);
+}
+
+#transitionDiv,#transitionDurationDiv, #transitionDelayDiv, #transitionPropDiv, #transitionTimingFunctionDiv {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background: blue;
+}
+
+#transitionDurationDiv:hover, #transitionDelayDiv:hover, #transitionTimingFunctionDiv:hover {
+  width: 400px;
+}
+
+#transitionDelayDiv, #transitionPropDiv, #transitionTimingFunctionDiv {
+  transition-duration: 3s;
+}
+
+#transitionPropDiv:hover, #transitionDiv:hover {
+  width: 200px;
+  height: 200px;
+  opacity: 0.3;
+}

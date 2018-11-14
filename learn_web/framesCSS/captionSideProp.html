@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<title>Caption side</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/table.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/table.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The caption-side property specifies the placement of a table caption.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>top</td>
+          <td>Puts the caption above the table. This is default.</td>
+        </tr>
+        <tr>
+          <td>bottom</td>
+          <td>Puts the caption below the table.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="captSideExamplesBar" class="left-padding">
+      <a href="#captSideExamplesBar">
+        <button onclick="captSide('captSideTable', 'top')" class="example-button example-rounded-buttons">top</button>
+      </a>
+      <a href="#captSideExamplesBar">
+        <button onclick="captSide('captSideTable', 'bottom')" class="example-button example-rounded-buttons">bottom</button>
+      </a>
+      <a href="#captSideExamplesBar">
+        <button onclick="captSide('captSideTable', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#captSideExamplesBar">
+        <button onclick="captSide('captSideTable', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv">
+    <table id="captSideTable">
+    <caption>Table 1 — Fruits and vegetables</caption>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Taste</th>
+    </tr>
+    <tr>
+      <td>Apple</td>
+      <td>Fruit</td>
+      <td>Sweet and sour</td>
+    </tr>
+    <tr>
+      <td>Banana</td>
+      <td>Fruit</td>
+      <td>Sweet</td>
+    </tr>
+    <tr>
+      <td>Potato</td>
+      <td>Vegetable</td>
+      <td>Sweet neutral (cooking required)</td>
+    </tr>
+    <tr>
+      <td>Watermelon</td>
+      <td>Berry</td>
+      <td>Sweet</td>
+    </tr>
+    </table>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+        <span class="left-padding">&lt;<span class="brown">table</span>&gt;<br /></span>
+        <span class="left-padding">
+          &lt;<span class="brown">caption</span>&gt;
+          <span class="black">Table 1 — Fruits and vegetables</span>
+          &lt;<span class="brown">/caption</span>&gt;<br />
+        </span>
+        <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br />
+          <span class="more-padding">&lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          <span class="more-padding">&lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          <span class="more-padding">&lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;<br /></span>
+        <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br />
+          <span class="more-padding">&lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          <span class="more-padding">&lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          <span class="more-padding">&lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;<br /></span>
+        <span class="left-padding"><span class="black">...</span><br /></span>
+        <span class="left-padding">&lt;<span class="brown">/table</span>&gt;<br /></span>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">table</span><span class="black"> {</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">caption-side: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
