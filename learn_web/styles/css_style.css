@@ -3,6 +3,8 @@
 body {
   background-color: rgb(216, 237, 243);
   scroll-behavior: smooth;
+  counter-reset: biologists;
+  counter-reset: books of biologists;
 }
 
 #alignContentMenu {
@@ -140,7 +142,7 @@ body {
 
 #animationDivCode, .code {
   borders: none;
-  font-family: Arial, monospace;
+  font-family: Unknown, monospace;
   font-size: 85%;
 }
 
@@ -202,7 +204,7 @@ body {
 }
 
 .exampleDiv {
-  width: 85%;
+  max-width: 90%;
   min-height: 150px;
   margin-left: 2em;
   border: 1px solid white;
@@ -210,9 +212,19 @@ body {
 }
 
 .marginExampleDiv {
-  width: 85%;
+  max-width: 90%;
   margin-left: 2em;
   border: 1px solid white;
+  overflow: auto;
+}
+
+.stretchHeightExampleDiv {
+  font-size: 30px;
+  text-align: center;
+  max-width: 90%;
+  margin-left: 2em;
+  border: 1px solid white;
+  padding: 60px 0;
   overflow: auto;
 }
 
@@ -636,4 +648,43 @@ h2 {
   width: 200px;
   height: 200px;
   opacity: 0.3;
+}
+
+#counterIncrDiv1 h3::before {
+  counter-increment: biologists;
+  content: "Chapter " counter(biologists, upper-alpha) ". ";
+}
+
+#counterIncrDiv2 h3::before {
+  counter-increment: biologists -1;
+  content: "Chapter " counter(biologists) ". ";
+}
+
+#counterIncrDiv3 h3::before {
+  counter-increment: biologists;
+  content: "Chapter " counter(biologists) ". ";
+}
+
+#counterIncrDiv3 h3 {
+  counter-reset: books;
+}
+
+#counterIncrDiv3 p::before {
+  counter-increment: books;
+  content: counter(biologists) "." counter(books) " ";
+}
+
+#hyphensDivP {
+  border: 2px solid blue;
+  width: 150px;
+}
+
+#textOverflowDiv {
+  font-size: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#textOverflowDiv:hover {
+  overflow: visible;
 }

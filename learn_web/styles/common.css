@@ -18,6 +18,10 @@ div {
   margin: 2.5em auto;
 }
 
+.centerContent {
+  margin: 20px auto;
+}
+
 .mainBorder {
   border: 2px solid white;
   margin: 1em;

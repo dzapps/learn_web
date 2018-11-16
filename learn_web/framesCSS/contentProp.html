@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<title>Content</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/text.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/text.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The content property is used with the ::before and ::after pseudo-elements, to insert generated content.
+    </div>
+    <div class="note-value">
+      The counter-increment property is usually used together with the counter-reset property and the content property.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>normal</td>
+          <td>Default value. Sets the content, if specified, to normal, which default is "none" (which is nothing).</td>
+        </tr>
+        <tr>
+          <td>none</td>
+          <td>Sets the content, if specified, to nothing.</td>
+        </tr>
+        <tr>
+          <td>counter</td>
+          <td>Sets the content as a counter.</td>
+        </tr>
+        <tr>
+          <td>attr</td>
+          <td>Sets the content as one of the selector's attribute.</td>
+        </tr>
+        <tr>
+          <td>string</td>
+          <td>Sets the content to the text you specify.</td>
+        </tr>
+        <tr>
+          <td>open-quote</td>
+          <td>Sets the content to be an opening quote.</td>
+        </tr>
+        <tr>
+          <td>close-quote</td>
+          <td>Sets the content to be a closing quote.</td>
+        </tr>
+        <tr>
+          <td>no-open-quote</td>
+          <td>Removes the opening quote from the content, if specified.</td>
+        </tr>
+        <tr>
+          <td>no-close-quote</td>
+          <td>Removes the closing quote from the content, if specified.</td>
+        </tr>
+        <tr>
+          <td>url(url)</td>
+          <td>Sets the content to be some kind of media (an image, a sound, a video, etc.).</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="contentExamplesBar" class="left-padding;">
+      <a href="#contentExamplesBar">
+        <button onclick="content('contentDiv', 'width 2s ease')" class="example-button example-rounded-buttons">width 2s ease</button>
+      </a>
+      <a href="#contentExamplesBar">
+        <button onclick="content('contentDiv', 'height 4s ease-in-out')" class="example-button example-rounded-buttons">height 4s ease-in-out</button>
+      </a>
+      <a href="#contentExamplesBar">
+        <button onclick="content('contentDiv', 'opacity 5s steps(5, start)')" class="example-button example-rounded-buttons">opacity 5s steps(5, start)</button>
+      </a>
+      <a href="#contentExamplesBar">
+        <button onclick="content('contentDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#contentExamplesBar">
+        <button onclick="content('contentDiv', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv" style="text-align: center;">
+    <div id="contentDiv">
+      <p>Example text.</p>
+      <p>Example text.</p>
+      <a href="https://www.example.com" style="pointer-events: none;">Example text.</a>
+    </div>
+  </div>
+
+  <div id="animationDivCode">
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">#div1 </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">width: </span>100px;<br />
+            <span class="crimson">height: </span>100px;<br />
+            <span class="crimson">padding: </span>10px;<br />
+            <span class="crimson">background: </span>blue;<br />
+            <span class="crimson">content: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="purple">#div1</span><span class="olive">:hover </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="crimson">width: </span>200px;<br />
+            <span class="crimson">height: </span>200px;<br />
+            <span class="crimson">opacity: </span>0.3;<br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<title>Counter increment</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/text.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/text.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The counter-reset property creates or resets one or more CSS counters.
+    </div>
+    <div class="note-value">
+      The counter-reset property is usually used together with the counter-increment property and the content property.
+    </div>
+    <div class="note-value">
+      The counter-increment property increases or decreases the value of one or more CSS counters.
+    </div>
+    <div class="note-value">
+      The counter-increment property is usually used together with the counter-reset property and the content property.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+       This transition-duration property does not work in Internet Explorer 7 and earlier versions.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>Default value. No counters will be incremented.</td>
+        </tr>
+        <tr>
+          <td>id number</td>
+          <td>The id defines which counter to increment.
+            The number sets how much the counter will increment on each occurrence of the selector.
+            The default increment is 1. Negative values are allowed.
+            If id refers to a counter that has not been initialized by counter-reset, the default initial value is 0.
+          </td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="counterIncrExamplesBar" class="left-padding;">
+      <a href="#counterIncrExamplesBar">
+        <button onclick="showCountIncr('counterIncrDiv1', 'counterIncrDiv1Code')" class="example-button example-rounded-buttons">example1</button>
+      </a>
+      <a href="#counterIncrExamplesBar">
+        <button onclick="showCountIncr('counterIncrDiv2', 'counterIncrDiv2Code')" class="example-button example-rounded-buttons">example2</button>
+      </a>
+      <a href="#counterIncrExamplesBar">
+        <button onclick="showCountIncr('counterIncrDiv3', 'counterIncrDiv3Code')" class="example-button example-rounded-buttons">example3</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv" style="text-align: center;">
+    <div id="counterIncrDiv1" class="show">
+      <h3>Charles Darwin</h3>
+      <h3>Richard Dawkins</h3>
+      <h3>Alexander Markov</h3>
+    </div>
+    <div id="counterIncrDiv2" class="show" style="display: none;">
+      <h3>Charles Darwin</h3>
+      <h3>Richard Dawkins</h3>
+      <h3>Alexander Markov</h3>
+    </div>
+    <div id="counterIncrDiv3" class="show" style="display: none;">
+      <h3>Charles Darwin</h3>
+        <p>The Origin of Species.</p>
+        <p>The God Delusion.</p>
+      <h3>Richard Dawkins</h3>
+        <p>The Selfish Gene.</p>
+        <p>The Blind Watchmaker.</p>
+      <h3>Aleksander Markov</h3>
+        <p>The Evolution of Man (Book 1).</p>
+        <p>The Evolution of Man (Book 2).</p>
+    </div>
+  </div>
+
+  <div id="animationDivCode">
+
+    <div id="counterIncrDiv1Code" class="show blue borders-none">
+      <div class="code float-borders-none">
+        &lt;<span class="brown">div</span>&gt;<br>
+          <span class="left-padding">
+            &lt;<span class="brown">h3</span>&gt;</span>
+            <span class="black">Charles Darwin</span>
+            &lt;<span class="brown">/h3</span>&gt;</span><br>
+          </span>
+          <span class="left-padding">
+            &lt;<span class="brown">h3</span>&gt;</span>
+            <span class="black">Richard Dowkins</span>
+            &lt;<span class="brown">/h3</span>&gt;</span><br>
+          </span>
+          <span class="left-padding">
+            &lt;<span class="brown">h3</span>&gt;</span>
+            <span class="black">Aleksander Markov</span>
+            &lt;<span class="brown">/h3</span>&gt;</span><br>
+          </span>
+        &lt;<span class="brown">/div</span>&gt;
+      </div>
+
+      <div class="code float-borders-none">
+        <p class="blue" style="margin: 0">
+          <span class="purple">body </span>
+          <span class="black"> {</span><br />
+            <p class="blue left-padding" style="margin: 0;">
+              <span class="crimson">counter-reset: </span>biologists;<br />
+            </p>
+          <span class="black">}</span>
+        </p>
+      </div>
+
+      <div class="code float-borders-none">
+        <p class="blue" style="margin: 0">
+          <span class="purple">#div </span>
+          <span class="brown">h3</span><span class="olive">::before </span><span class="black">{</span><br />
+            <p class="blue left-padding" style="margin: 0;">
+              <span class="crimson">counter-increment: </span>biologists;<br />
+              <span class="crimson">content: </span>"Chapter " counter(biologists, upper-alpha) ". ";<br />
+            </p>
+          <span class="black">}</span>
+        </p>
+      </div>
+    </div>
+
+    <div id="counterIncrDiv2Code" class="show blue borders-none" style="display: none;">
+      <div class="code float-borders-none">
+        &lt;<span class="brown">div</span>&gt;<br>
+          <span class="left-padding">
+            &lt;<span class="brown">h3</span>&gt;</span>
+            <span class="black">Charles Darwin</span>
+            &lt;<span class="brown">/h3</span>&gt;</span><br>
+          </span>
+          <span class="left-padding">
+            &lt;<span class="brown">h3</span>&gt;</span>
+            <span class="black">Richard Dowkins</span>
+            &lt;<span class="brown">/h3</span>&gt;</span><br>
+          </span>
+          <span class="left-padding">
+            &lt;<span class="brown">h3</span>&gt;</span>
+            <span class="black">Aleksander Markov</span>
+            &lt;<span class="brown">/h3</span>&gt;</span><br>
+          </span>
+        &lt;<span class="brown">/div</span>&gt;
+      </div>
+
+      <div class="code float-borders-none">
+        <p class="blue" style="margin: 0">
+          <span class="purple">body </span>
+          <span class="black"> {</span><br />
+            <p class="blue left-padding" style="margin: 0;">
+              <span class="crimson">counter-reset: </span>biologists;<br />
+            </p>
+          <span class="black">}</span>
+        </p>
+      </div>
+
+      <div class="code float-borders-none">
+        <p class="blue" style="margin: 0">
+          <span class="purple">#div </span>
+          <span class="brown">h3</span><span class="olive">::before </span><span class="black">{</span><br />
+            <p class="blue left-padding" style="margin: 0;">
+              <span class="crimson">counter-increment: </span>biologists -1;<br />
+              <span class="crimson">content: </span>"Chapter " counter(biologists) ". ";<br />
+            </p>
+          <span class="black">}</span>
+        </p>
+      </div>
+    </div>
+
+    <div id="counterIncrDiv3Code" class="show blue" style="display: none;">
+      <div class="code float-borders-none">
+        &lt;<span class="brown">div</span>&gt;<br>
+          <span class="left-padding">
+            &lt;<span class="brown">h3</span>&gt;</span>
+            <span class="black">Charles Darwin</span>
+            &lt;<span class="brown">/h3</span>&gt;</span><br>
+          </span>
+          <span class="left-padding">
+            &lt;<span class="brown">p</span>&gt;</span>
+            <span class="black">The Origin of Species.</span>
+            &lt;<span class="brown">/p</span>&gt;</span><br>
+          </span>
+          <span class="left-padding">
+            &lt;<span class="brown">p</span>&gt;</span>
+            <span class="black">The God Delusion.</span>
+            &lt;<span class="brown">/p</span>&gt;</span><br>
+          </span>
+          <span class="left-padding">
+            &lt;<span class="brown">h3</span>&gt;</span>
+            <span class="black">Richard Dowkins</span>
+            &lt;<span class="brown">/h3</span>&gt;</span><br>
+          </span>
+          <span class="left-padding">
+            &lt;<span class="brown">p</span>&gt;</span>
+            <span class="black">The Selfish Gene.</span>
+            &lt;<span class="brown">/p</span>&gt;</span><br>
+          </span>
+          <span class="left-padding">
+            &lt;<span class="brown">p</span>&gt;</span>
+            <span class="black">The Blind Watchmaker.</span>
+            &lt;<span class="brown">/p</span>&gt;</span><br>
+          </span>
+          <span class="left-padding">
+            &lt;<span class="brown">h3</span>&gt;</span>
+            <span class="black">Aleksander Markov</span>
+            &lt;<span class="brown">/h3</span>&gt;</span><br>
+          </span>
+          <span class="left-padding">
+            &lt;<span class="brown">p</span>&gt;</span>
+            <span class="black">The Evolution of Man (Book 1).</span>
+            &lt;<span class="brown">/p</span>&gt;</span><br>
+          </span>
+          <span class="left-padding">
+            &lt;<span class="brown">p</span>&gt;</span>
+            <span class="black">The Evolution of Man (Book 2).</span>
+            &lt;<span class="brown">/p</span>&gt;</span><br>
+          </span>
+        &lt;<span class="brown">/div</span>&gt;
+      </div>
+
+      <div class="code float-borders-none">
+        <p class="blue" style="margin: 0">
+          <span class="purple">body </span>
+          <span class="black"> {</span><br />
+            <p class="blue left-padding" style="margin: 0;">
+              <span class="crimson">counter-reset: </span>biologists;<br />
+            </p>
+          <span class="black">}</span>
+        </p>
+      </div>
+
+      <div class="code float-borders-none">
+        <p class="blue" style="margin: 0">
+          <span class="purple">#div </span>
+          <span class="brown">h3</span><span class="black"> {</span><br />
+            <p class="blue left-padding" style="margin: 0;">
+              <span class="crimson">counter-reset: </span>books;<br />
+            </p>
+          <span class="black">}</span>
+        </p>
+      </div>
+
+      <div class="code float-borders-none">
+        <p class="blue" style="margin: 0">
+          <span class="purple">#div </span>
+          <span class="brown">p</span><span class="olive">::before </span><span class="black">{</span><br />
+            <p class="blue left-padding" style="margin: 0;">
+              <span class="crimson">counter-increment: </span>books;<br />
+              <span class="crimson">content: </span>counter(biologists) "." counter(books) " ";<br />
+            </p>
+          <span class="black">}</span>
+        </p>
+      </div>
+  </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

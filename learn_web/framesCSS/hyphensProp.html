@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<title>Hyphens</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/text.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/text.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS  noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The hyphens property defines whether hyphenation is allowed to create more soft wrap opportunities within a line of text.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Notes:<br />
+    <div class="note-value">
+      Starting with the following browser versions, a prefix is needed: IE 10.0 and Safari 5.1 (-webkit-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>Words are not hyphenated.</td>
+        </tr>
+        <tr>
+          <td>manual</td>
+          <td>Default. Words are only hyphenated at &amp;hyphen; or &amp;shy; (if needed).</td>
+        </tr>
+        <tr>
+          <td>auto</td>
+          <td>Words are hyphenated where the algorithm is deciding (if needed).</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.
+          </td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="hyphensExamplesBar" class="left-padding">
+      <a href="#hyphensExamplesBar">
+        <button onclick="hyphens('hyphensDivP', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#hyphensExamplesBar">
+        <button onclick="hyphens('hyphensDivP', 'manual')" class="example-button example-rounded-buttons">manual</button>
+      </a>
+      <a href="#hyphensExamplesBar">
+        <button onclick="hyphens('hyphensDivP', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#hyphensExamplesBar">
+        <button onclick="hyphens('hyphensDivP', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#hyphensExamplesBar">
+        <button onclick="hyphens('hyphensDivP', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="exampleDiv">
+    <p id="hyphensDivP" class="centerContent">
+      Veryveryveryvery­&shy;veryveryveryvery&shy;veryveryvery
+      longlonglong&hyphen;longlonglong texttext&shy;texttexttexttexttexttext.
+    </p>
+  </div>
+
+  <div id="animationDivCode">
+    <div class="code blue float-borders-none">
+      <p class="blue" style="margin: 0">
+        &lt;<span class="brown">div</span>&gt;<br />
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">p</span>&gt;
+          <span class="black">Veryveryveryvery­<b>&amp;shy;</b>veryveryveryvery<b>&amp;shy;</b>veryveryvery<br>
+            longlonglong<b>&amp;hyphen;</b>longlonglong texttext<b>&amp;shy;</b>texttexttexttexttexttext.
+          </span>
+          &lt;<span class="brown">/p</span>&gt;<br />
+        </p>
+        <span >&lt;<span class="brown">/div</span>&gt;</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">p </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">width: </span>100px;<br />
+            <span class="crimson">border: </span>2px solid blue;<br />
+            <span class="crimson">hyphens: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

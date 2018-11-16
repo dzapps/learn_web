@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<title>Text overflow</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/text.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/text.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The text-overflow property specifies how overflowed content that is not displayed should be signaled to the user.
+       It can be clipped, display an ellipsis (...), or display a custom string.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      Both of the following properties are required for text-overflow: white-space: nowrap; overflow: hidden;
+    </div>
+    <div class="note-value">
+       The text-overflow: "string" only works in Firefox.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>clip</td>
+          <td>Default value. The text is clipped and not accessible.</td>
+        </tr>
+        <tr>
+          <td>ellipsis</td>
+          <td>Render an ellipsis ("...") to represent the clipped text.</td>
+        </tr>
+        <tr>
+          <td>string</td>
+          <td>Render the given string to represent the clipped text.</td>
+        </tr>
+        <tr>
+          <td>none</td>
+          <td>Disables justification methods.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.
+          </td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="textOverflowExamplesBar" class="left-padding">
+      <a href="#textOverflowExamplesBar">
+        <button onclick="textOverflow('textOverflowDiv', 'clip')" class="example-button example-rounded-buttons">clip</button>
+      </a>
+      <a href="#textOverflowExamplesBar">
+        <button onclick="textOverflow('textOverflowDiv', 'ellipsis')" class="example-button example-rounded-buttons">ellipsis</button>
+      </a>
+      <a href="#textOverflowExamplesBar">
+        <button onclick="textOverflow('textOverflowDiv', '----')" class="example-button example-rounded-buttons">----</button>
+      </a>
+      <a href="#textOverflowExamplesBar">
+        <button onclick="textOverflow('textOverflowDiv', '=====')" class="example-button example-rounded-buttons">=====</button>
+      </a>
+      <a href="#textOverflowExamplesBar">
+        <button onclick="textOverflow('textOverflowDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#textOverflowExamplesBar">
+        <button onclick="textOverflow('textOverflowDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="textOverflowDiv" class="stretchHeightExampleDiv">
+    <p style="font-style: italic; font-size: 30px; margin-top: -30px;">Hover over me.</p>
+    I was born in the year 1632, in the city of York, of a good family, though not of that country,
+    my father being a foreigner of Bremen, who settled first at Hull.
+  </div>
+
+  <div id="animationDivCode">
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+      <span class="black">I was born in the year 1632, in the city of York,<br> of a good family,
+        though not of that country,<br> my father being a foreigner of Bremen, who settled first at Hull.</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">max-width: </span>85%;<br />
+            <span class="crimson">font-size: </span>20px;<br />
+            <span class="crimson">border: </span>1px solid white;<br />
+            <span class="crimson">padding: </span>60px 0;<br />
+            <span class="crimson">margin-left: </span>2em;<br />
+            <span class="crimson">white-space: </span>nowrap;<br />
+            <span class="crimson">overflow: </span>hidden;<br />
+            <span class="crimson">text-align: </span>center;<br />
+            <span class="crimson">text-overflow: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
