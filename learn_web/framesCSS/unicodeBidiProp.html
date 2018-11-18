@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<title>Unicode bidi</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/text.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/text.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The text-decoration property specifies the decoration added to text, and is a shorthand property for:
+      text-decoration-line (required), text-decoration-color, text-decoration-style.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>normal</td>
+          <td>The element does not open an additional level of embedding. This is default.</td>
+        </tr>
+        <tr>
+          <td>embed</td>
+          <td>For inline elements, this value opens an additional level of embedding.</td>
+        </tr>
+        <tr>
+          <td>bidi-override</td>
+          <td>For inline elements, this creates an override. For block elements,
+            this creates an override for inline-level descendants not within another block element.
+          </td>
+        </tr>
+        <tr>
+          <td>isolate</td>
+          <td>The element is isolated from its siblings.</td>
+        </tr>
+        <tr>
+          <td>isolate-override</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>plaintext</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.
+          </td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="unicodeBidiExamplesBar" class="left-padding">
+      <a href="#unicodeBidiExamplesBar">
+        <button onclick="unicodeBidi('unicodeBidiDiv', 'normal')" class="example-button example-rounded-buttons">normal</button>
+      </a>
+      <a href="#unicodeBidiExamplesBar">
+        <button onclick="unicodeBidi('unicodeBidiDiv', 'embed')" class="example-button example-rounded-buttons">embed</button>
+      </a>
+      <a href="#unicodeBidiExamplesBar">
+        <button onclick="unicodeBidi('unicodeBidiDiv', 'bidi-override')" class="example-button example-rounded-buttons">bidi-override</button>
+      </a>
+      <a href="#unicodeBidiExamplesBar">
+        <button onclick="unicodeBidi('unicodeBidiDiv', 'isolate')" class="example-button example-rounded-buttons">isolate</button>
+      </a>
+      <a href="#unicodeBidiExamplesBar">
+        <button onclick="unicodeBidi('unicodeBidiDiv', 'isolate-override')" class="example-button example-rounded-buttons">isolate-override</button>
+      </a>
+      <a href="#unicodeBidiExamplesBar">
+        <button onclick="unicodeBidi('unicodeBidiDiv', 'plaintext')" class="example-button example-rounded-buttons">plaintext</button>
+      </a>
+      <a href="#unicodeBidiExamplesBar">
+        <button onclick="unicodeBidi('unicodeBidiDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#unicodeBidiExamplesBar">
+        <button onclick="unicodeBidi('unicodeBidiDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="unicodeBidiDiv" class="stretchHeightExampleDiv" style="text-align: justify; direction: rtl;">
+    I was born in the year 1632, in the city of York, of a good family, though not of that country,
+    my father being a foreigner of Bremen, who settled first at Hull.
+  </div>
+
+  <div id="animationDivCode">
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+      <span class="black">I was born in the year 1632, in the city of York,<br> of a good family,
+        though not of that country,<br> my father being a foreigner of Bremen,<br> who settled first at Hull.</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">max-width: </span>85%;<br />
+            <span class="crimson">border: </span>1px solid white;<br />
+            <span class="crimson">margin-left: </span>2em;<br />
+            <span class="crimson">padding: </span>60px 0;<br />
+            <span class="crimson">overflow: </span>auto;<br />
+            <span class="crimson">font-size: </span>20px;<br />
+            <span class="crimson">text-align: </span>justify;<br />
+            <span class="crimson">direction: </span>rtl;<br />
+            <span class="crimson">unicode-bidi: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

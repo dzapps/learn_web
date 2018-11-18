@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<title>Writing mode</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/text.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/text.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The writing-mode property specifies whether lines of text are laid out horizontally or vertically.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>horizontal-tb</td>
+          <td>Let the content flow horizontally from left to right, vertically from top to bottom.</td>
+        </tr>
+        <tr>
+          <td>vertical-rl</td>
+          <td>Let the content flow vertically from top to bottom, horizontally from right to left.</td>
+        </tr>
+        <tr>
+          <td>vertical-lr</td>
+          <td>Let the content flow vertically from top to bottom, horizontally from left to right.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="writingModeExamplesBar" class="left-padding">
+      <a href="#writingModeExamplesBar">
+        <button onclick="writingMode('writingModeDivP', 'horizontal-tb')" class="example-button example-rounded-buttons">horizontal-tb</button>
+      </a>
+      <a href="#writingModeExamplesBar">
+        <button onclick="writingMode('writingModeDivP', 'vertical-rl')" class="example-button example-rounded-buttons">vertical-rl</button>
+      </a>
+      <a href="#writingModeExamplesBar">
+        <button onclick="writingMode('writingModeDivP', 'vertical-lr')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">vertical-lr</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="writingModeDiv" class="stretchHeightExampleDiv">
+    <p id="writingModeDivP">
+    I was born in the year 1632, in the city of York...
+    </p>
+  </div>
+
+  <div id="animationDivCode">
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+        <span class="black left-padding">I was born in the year 1632, in the city of York...</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">max-width: </span>85%;<br />
+            <span class="crimson">border: </span>1px solid white;<br />
+            <span class="crimson">margin-left: </span>2em;<br />
+            <span class="crimson">padding: </span>60px 0;<br />
+            <span class="crimson">overflow: </span>auto;<br />
+            <span class="crimson">font-size: </span>20px;<br />
+            <span class="crimson">text-align: </span>center;<br />
+            <span class="crimson">writing-mode: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

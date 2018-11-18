@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<title>Text decoration style</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/text.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/text.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The text-decoration-style property sets the style of the text decoration (like solid, wavy, dotted, dashed, double).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+       The text-decoration-line property is not supported in Edge/Internet Explorer and Safari.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>solid</td>
+          <td>Default value. The line will display as a single line.</td>
+        </tr>
+        <tr>
+          <td>double</td>
+          <td>The line will display as a double line.</td>
+        </tr>
+        <tr>
+          <td>dotted</td>
+          <td>The line will display as a dotted line.</td>
+        </tr>
+        <tr>
+          <td>dashed</td>
+          <td>The line will display as a dashed line.</td>
+        </tr>
+        <tr>
+          <td>wavy</td>
+          <td>The line will display as a wavy line.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.
+          </td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="textDecorStyleExamplesBar" class="left-padding">
+      <a href="#textDecorStyleExamplesBar">
+        <button onclick="textDecorStyle('textDecorStyleDiv', 'solid')" class="example-button example-rounded-buttons">solid</button>
+      </a>
+      <a href="#textDecorStyleExamplesBar">
+        <button onclick="textDecorStyle('textDecorStyleDiv', 'double')" class="example-button example-rounded-buttons">double</button>
+      </a>
+      <a href="#textDecorStyleExamplesBar">
+        <button onclick="textDecorStyle('textDecorStyleDiv', 'dotted')" class="example-button example-rounded-buttons">dotted</button>
+      </a>
+      <a href="#textDecorStyleExamplesBar">
+        <button onclick="textDecorStyle('textDecorStyleDiv', 'dashed')" class="example-button example-rounded-buttons">dashed</button>
+      </a>
+      <a href="#textDecorStyleExamplesBar">
+        <button onclick="textDecorStyle('textDecorStyleDiv', 'wavy')" class="example-button example-rounded-buttons">wavy</button>
+      </a>
+      <a href="#textDecorStyleExamplesBar">
+        <button onclick="textDecorStyle('textDecorStyleDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#textDecorStyleExamplesBar">
+        <button onclick="textDecorStyle('textDecorStyleDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="textDecorStyleDiv" class="stretchHeightExampleDiv" style="text-decoration-line: underline;">
+    I was born in the year 1632, in the city of York, of a good family, though not of that country,
+    my father being a foreigner of Bremen, who settled first at Hull.
+  </div>
+
+  <div id="animationDivCode">
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+      <span class="black">I was born in the year 1632, in the city of York,<br> of a good family,
+        though not of that country,<br> my father being a foreigner of Bremen,<br> who settled first at Hull.</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">max-width: </span>85%;<br />
+            <span class="crimson">border: </span>1px solid white;<br />
+            <span class="crimson">margin-left: </span>2em;<br />
+            <span class="crimson">padding: </span>60px 0;<br />
+            <span class="crimson">overflow: </span>auto;<br />
+            <span class="crimson">font-size: </span>20px;<br />
+            <span class="crimson">text-align: </span>center;<br />
+            <span class="crimson">text-decoration-line: </span>underline;<br />
+            <span class="crimson">text-decoration-style: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

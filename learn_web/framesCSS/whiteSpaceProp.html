@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<title>White space</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/text.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/text.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The white-space property specifies how white-space inside an element is handled.
+    </div>
+    <div class="note-value">
+      In web browsers, if you double-click on some text it will be selected/highlighted.
+      This property can be used to prevent this.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>normal</td>
+          <td>Sequences of whitespace will collapse into a single whitespace.
+            Text will wrap when necessary. This is default.
+          </td>
+        </tr>
+        <tr>
+          <td>nowrap</td>
+          <td>Sequences of whitespace will collapse into a single whitespace. Text will never wrap to the next line.
+            The text continues on the same line until a &lt;br&gt; tag is encountered.
+          </td>
+        </tr>
+        <tr>
+          <td>pre</td>
+          <td>Whitespace is preserved by the browser. Text will only wrap on line breaks. Acts like the &lt;pre&gt; tag in HTML.</td>
+        </tr>
+        <tr>
+          <td>pre-line</td>
+          <td>Sequences of whitespace will collapse into a single whitespace.
+            Text will wrap when necessary, and on line breaks.
+          </td>
+        </tr>
+        <tr>
+          <td>pre-wrap</td>
+          <td>Whitespace is preserved by the browser. Text will wrap when necessary, and on line breaks.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="whiteSpaceExamplesBar" class="left-padding">
+      <a href="#whiteSpaceExamplesBar">
+        <button onclick="whiteSpace('whiteSpaceDiv', 'normal')" class="example-button example-rounded-buttons">normal</button>
+      </a>
+      <a href="#whiteSpaceExamplesBar">
+        <button onclick="whiteSpace('whiteSpaceDiv', 'nowrap')" class="example-button example-rounded-buttons">nowrap</button>
+      </a>
+      <a href="#whiteSpaceExamplesBar">
+        <button onclick="whiteSpace('whiteSpaceDiv', 'pre')" class="example-button example-rounded-buttons">pre</button>
+      </a>
+      <a href="#whiteSpaceExamplesBar">
+        <button onclick="whiteSpace('whiteSpaceDiv', 'pre-line')" class="example-button example-rounded-buttons">pre-line</button>
+      </a>
+      <a href="#whiteSpaceExamplesBar">
+        <button onclick="whiteSpace('whiteSpaceDiv', 'pre-wrap')" class="example-button example-rounded-buttons">pre-wrap</button>
+      </a>
+      <a href="#whiteSpaceExamplesBar">
+        <button onclick="whiteSpace('whiteSpaceDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#whiteSpaceExamplesBar">
+        <button onclick="whiteSpace('whiteSpaceDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="whiteSpaceDiv" class="stretchHeightExampleDiv">
+    I was born in the year 1632,
+    in the city of York,
+    of a good family,
+    though not of that country,
+    my father being a foreigner of Bremen,
+    who settled first at Hull.
+  </div>
+
+  <div id="animationDivCode">
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+      <span class="black">I was born in the year 1632,<br> in the city of York,<br> of a good family,<br>
+        though not of that country,<br> my father being a foreigner of Bremen,<br> who settled first at Hull.<br></span>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">max-width: </span>85%;<br />
+            <span class="crimson">border: </span>1px solid white;<br />
+            <span class="crimson">margin-left: </span>2em;<br />
+            <span class="crimson">padding: </span>60px 0;<br />
+            <span class="crimson">overflow: </span>auto;<br />
+            <span class="crimson">font-size: </span>20px;<br />
+            <span class="crimson">text-align: </span>center;<br />
+            <span class="crimson">white-space: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

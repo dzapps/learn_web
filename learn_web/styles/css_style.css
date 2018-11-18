@@ -20,7 +20,7 @@ body {
 .show-and-hide {
   border-radius: 20px;
   margin-top: 3em;
-  width: 60%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -143,7 +143,7 @@ body {
 #animationDivCode, .code {
   borders: none;
   font-family: Unknown, monospace;
-  font-size: 85%;
+  font-size: 86%;
 }
 
 #blendDiv {
@@ -219,12 +219,12 @@ body {
 }
 
 .stretchHeightExampleDiv {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   max-width: 90%;
   margin-left: 2em;
   border: 1px solid white;
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: auto;
 }
 
@@ -521,6 +521,7 @@ h2 {
 }
 
 #topDivP, #bottomDivP, #leftDivP, #rightDivP {
+  position: relative;
   width: 110px;
   height: 30px;
   border: 2px solid blue;
@@ -629,7 +630,7 @@ h2 {
   transform: rotateY(-40deg);
 }
 
-#transitionDiv,#transitionDurationDiv, #transitionDelayDiv, #transitionPropDiv, #transitionTimingFunctionDiv {
+#transitionDiv, #transitionDurationDiv, #transitionDelayDiv, #transitionPropDiv, #transitionTimingFunctionDiv {
   width: 100px;
   height: 100px;
   padding: 10px;
@@ -687,4 +688,69 @@ h2 {
 
 #textOverflowDiv:hover {
   overflow: visible;
+}
+
+#wordBreakDivP, #wordWrapDivP {
+  margin: 0 auto;
+  width: 250px;
+  height: 150px;
+  border: 2px solid blue;
+}
+
+#cursorDiv {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+#cursorDiv p {
+  margin: 5px;
+}
+
+.alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.context-menu {cursor: context-menu;}
+.col-resize {cursor: col-resize;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: -webkit-grab; cursor: grab;}
+.grabbing {cursor: -webkit-grabbing; cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.url {cursor: url(myBall.cur),auto;}
+.w-resize {cursor: w-resize;}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;}
+
+#objectFitDivImg {
+  width: 150px;
+  height: 300px;
+}
+
+#objectPositionDivImg {
+  width: 150px;
+  height: 300px;
+  object-fit: none;
+  border: 3px solid blue;
 }

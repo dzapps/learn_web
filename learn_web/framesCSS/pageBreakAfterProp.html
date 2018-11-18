@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<title>Page break after</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/print.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/print.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The page-break-after property adds a page-break after a specified element.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    <div class="note-value">
+      You cannot use this property on an empty &lt;div&gt; or on absolutely positioned elements.
+    </div>
+    <div class="note-value">
+      None of the browsers support "avoid".
+    </div>
+    <div class="note-value">
+      Browsers may interpret "left" and "right" as "always".
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>auto</td>
+          <td>Default. Automatic page-break.</td>
+        </tr>
+        <tr>
+          <td>always</td>
+          <td>Always insert a page-break after the element.</td>
+        </tr>
+        <tr>
+          <td>avoid</td>
+          <td>Avoid a page-break after the element (if possible).</td>
+        </tr>
+        <tr>
+          <td>left</td>
+          <td>Insert page-break after the element so that the next page is formatted as a left page.</td>
+        </tr>
+        <tr>
+          <td>right</td>
+          <td>Insert page-break after the element so that the next page is formatted as a right page.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+
+  </div>
+
+  <div id='animationDivCode'>
+
+    <div class="code borders-none">
+      <p class="blue left-padding" style="margin: 0">
+        <span class="brown">@media print </span><span class="black">{</span><br />
+          <p class="blue more-padding" style="margin: 0;">
+            <span class="brown">footer </span>
+            <span class="black">{</span>
+            <span class="crimson">page-break-after:</span>
+            always;
+            <span class="black">}</span><br />
+          </p>
+        <span class="black left-padding">}</span>
+      </p>
+    </div>
+
+  </div>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<title>Hanging punctuation</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/text.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/text.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The hanging-punctuation property specifies whether a punctuation mark
+      may be placed outside the line box at the start or at the end of a full line of text.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      The property works only in the Safari 10.0+ browser.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>No punctuation mark may be placed outside the line box at the start or at the end of a full line of text.</td>
+        </tr>
+        <tr>
+          <td>first</td>
+          <td>Punctuation may hang outside the start edge of the first line.</td>
+        </tr>
+        <tr>
+          <td>last</td>
+          <td>Punctuation may hang outside the end edge of the last line.</td>
+        </tr>
+        <tr>
+          <td>allow-end</td>
+          <td>Punctuation may hang outside the end edge of all lines
+            if the punctuation does not otherwise fit prior to justification.
+          </td>
+        </tr>
+        <tr>
+          <td>force-end</td>
+          <td>Punctuation may hang outside the end edge of all lines.
+            If justification is enabled on this line, then it will force the punctuation to hang.
+          </td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.
+          </td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+  </div>
+
+  <div id="textDecorDiv" class="stretchHeightExampleDiv">
+    I was born in the year 1632, in the city of York, of a good family, though not of that country,
+    my father being a foreigner of Bremen, who settled first at Hull.
+  </div>
+
+  <div id="animationDivCode">
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+      <span class="black">I was born in the year 1632, in the city of York,<br> of a good family,
+        though not of that country,<br> my father being a foreigner of Bremen,<br> who settled first at Hull.</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">max-width: </span>85%;<br />
+            <span class="crimson">border: </span>1px solid white;<br />
+            <span class="crimson">margin-left: </span>2em;<br />
+            <span class="crimson">padding: </span>60px 0;<br />
+            <span class="crimson">overflow: </span>auto;<br />
+            <span class="crimson">font-size: </span>20px;<br />
+            <span class="crimson">text-align: </span>center;<br />
+            <span class="crimson">hanging-punctuation: </span>first;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<title>Text shadow</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/text.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/text.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+       The text-shadow property adds shadow to text.
+    </div>
+    <div class="note-value">
+       This property accepts a comma-separated list of shadows to be applied to the text.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      To add more than one shadow to the text, add a comma-separated list of shadows.
+    </div>
+    <div class="note-value">
+       Internet Explorer 9 and earlier do not support the text-shadow property.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>h-shadow</td>
+          <td>Required. The position of the horizontal shadow. Negative values are allowed.</td>
+        </tr>
+        <tr>
+          <td>v-shadow</td>
+          <td>Required. The position of the vertical shadow. Negative values are allowed.</td>
+        </tr>
+        <tr>
+          <td>blur-radius</td>
+          <td>Optional. The blur radius. Default value is 0.</td>
+        </tr>
+        <tr>
+          <td>color</td>
+          <td>Optional. The color of the shadow.</td>
+        </tr>
+        <tr>
+          <td>none</td>
+          <td>Disables justification methods.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.
+          </td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="textShadowExamplesBar" class="left-padding">
+      <a href="#textShadowExamplesBar">
+        <button onclick="textShadow('textShadowDiv', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#textShadowExamplesBar">
+        <button onclick="textShadow('textShadowDiv', '2px 2px')" class="example-button example-rounded-buttons">2px 2px</button>
+      </a>
+      <a href="#textShadowExamplesBar">
+        <button onclick="textShadow('textShadowDiv', '2px 2px blue')" class="example-button example-rounded-buttons">2px 2px blue</button>
+      </a>
+      <a href="#textShadowExamplesBar">
+        <button onclick="textShadow('textShadowDiv', '3px 3px 3px blue')" class="example-button example-rounded-buttons">3px 3px 3px blue</button>
+      </a>
+      <a href="#textShadowExamplesBar">
+        <button onclick="textShadow('textShadowDiv', '-3px -3px 3px blue')" class="example-button example-rounded-buttons">-3px -3px 3px blue</button>
+      </a>
+      <a href="#textShadowExamplesBar">
+        <button onclick="textShadow('textShadowDiv', '0px 0px 3px blue')" class="example-button example-rounded-buttons">0px 0px 3px blue</button>
+      </a>
+      <a href="#textShadowExamplesBar">
+        <button onclick="textShadow('textShadowDiv', '0px 0px 3px red')" class="example-button example-rounded-buttons">0px 0px 3px red</button>
+      </a>
+      <a href="#textShadowExamplesBar">
+        <button onclick="textShadow('textShadowDiv', '0px 0px 3px blue, 0px 0px 5px red')" class="example-button example-rounded-buttons">0px 0px 3px blue, 0px 0px 5px red</button>
+      </a>
+      <a href="#textShadowExamplesBar">
+        <button onclick="textShadow('textShadowDiv', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#textShadowExamplesBar">
+        <button onclick="textShadow('textShadowDiv', 'inherit')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="textShadowDiv" class="stretchHeightExampleDiv">
+    I was born in the year 1632, in the city of York, of a good family, though not of that country,
+    my father being a foreigner of Bremen, who settled first at Hull.
+  </div>
+
+  <div id="animationDivCode">
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+      <span class="black">I was born in the year 1632, in the city of York,<br> of a good family,
+        though not of that country,<br> my father being a foreigner of Bremen,<br> who settled first at Hull.</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">max-width: </span>85%;<br />
+            <span class="crimson">border: </span>1px solid white;<br />
+            <span class="crimson">margin-left: </span>2em;<br />
+            <span class="crimson">padding: </span>60px 0;<br />
+            <span class="crimson">overflow: </span>auto;<br />
+            <span class="crimson">font-size: </span>20px;<br />
+            <span class="crimson">text-align: </span>center;<br />
+            <span class="crimson">text-shadow: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

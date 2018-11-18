@@ -28,6 +28,11 @@ function frontSide() {
   document.getElementsByClassName('text')[0].innerHTML = 'rotateY(0deg);';
 }
 
+function background(id, background) {
+  document.getElementById(id).style.background = background;
+  document.getElementsByClassName('text')[0].innerHTML = background;
+}
+
 function backgrAttach(id, attach, blend, clip, color, image, origin, position, repeat, size, backgrImage) {
   let bodyImgState = document.body.style;
   let doc = document.getElementById(id).style;
@@ -452,4 +457,9 @@ function bottom(id, pos) {
   doc.border = '2px solid blue';
 
   document.getElementsByClassName('text')[0].innerHTML = pos + ';';
+}
+
+function bordWidth(id, width) {
+  document.getElementById(id).style.borderWidth = width;
+  document.getElementsByClassName('text')[0].innerHTML = width;
 }

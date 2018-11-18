@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<title>User select</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/text.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/text.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The user-select property specifies whether the text of an element can be selected.
+    </div>
+    <div class="note-value">
+      In web browsers, if you double-click on some text it will be selected/highlighted.
+      This property can be used to prevent this.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note descriptionCSS noteCSS note-round-bord">
+    Note:<br />
+    <div class="note-value">
+      In the following browsers, starting with the version indicated after the name, you need the prefix:
+      Firefox 2.0 (-moz-), Safary 3.1 (-webkit-), IE 10.0 and later (-ms-).
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>auto</td>
+          <td>Default. Text can be selected if the browser allows it.</td>
+        </tr>
+        <tr>
+          <td>none</td>
+          <td>Prevent text selection.</td>
+        </tr>
+        <tr>
+          <td>text</td>
+          <td>The text can be selected by the user.</td>
+        </tr>
+        <tr>
+          <td>all</td>
+          <td>Text selection is made with one click instead of a double-click.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="userSelectExamplesBar" class="left-padding">
+      <a href="#userSelectExamplesBar">
+        <button onclick="userSelect('userSelectDiv', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#userSelectExamplesBar">
+        <button onclick="userSelect('userSelectDiv', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#userSelectExamplesBar">
+        <button onclick="userSelect('userSelectDiv', 'text')" class="example-button example-rounded-buttons">text</button>
+      </a>
+      <a href="#userSelectExamplesBar">
+        <button onclick="userSelect('userSelectDiv', 'all')" class="example-button example-rounded-buttons" style="margin-top: 5px; margin-bottom: -5px;">all</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="userSelectDiv" class="stretchHeightExampleDiv">
+    I was born in the year 1632, in the city of York, of a good family, though not of that country,
+    my father being a foreigner of Bremen, who settled first at Hull.
+  </div>
+
+  <div id="animationDivCode">
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+      <span class="black">I was born in the year 1632, in the city of York,<br> of a good family,
+        though not of that country,<br> my father being a foreigner of Bremen,<br> who settled first at Hull.</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">max-width: </span>85%;<br />
+            <span class="crimson">border: </span>1px solid white;<br />
+            <span class="crimson">margin-left: </span>2em;<br />
+            <span class="crimson">padding: </span>60px 0;<br />
+            <span class="crimson">overflow: </span>auto;<br />
+            <span class="crimson">font-size: </span>20px;<br />
+            <span class="crimson">text-align: </span>center;<br />
+            <span class="crimson">-moz-user-select: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

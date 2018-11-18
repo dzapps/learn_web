@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<title>Background origin</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/image.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/image.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The object-fit property is used to specify how an &lt;img&gt; or &lt;video&gt; should be resized to fit its container.
+    </div>
+    <div class="note-value">
+      This property tells the content to fill the container in a variety of ways;
+      such as "preserve that aspect ratio" or "stretch up and take up as much space as possible".
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="note noteCSS note-round-bord">
+    <div class="note-value">
+      The object-fit property is not supported in Internet Explorer/Edge 15 or earlier.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>The replaced content is not resized.</td>
+        </tr>
+        <tr>
+          <td>fill</td>
+          <td>
+            This is default. The replaced content is sized to fill the element's content box.
+            If necessary, the object will be stretched or squished to fit.
+          </td>
+        </tr>
+        <tr>
+          <td>contain</td>
+          <td>The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box.</td>
+        </tr>
+        <tr>
+          <td>cover</td>
+          <td>
+            The replaced content is sized to maintain its aspect ratio
+            while filling the element's entire content box. The object will be clipped to fit.
+          </td>
+        </tr>
+        <tr>
+          <td>scale-down</td>
+          <td>The content is sized as if none or contain were specified (would result in a smaller concrete object size).</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="objectFitExamplesBar" class="left-padding;">
+      <a href="#objectFitExamplesBar">
+        <button onclick="objectFit('objectFitDivImg', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#objectFitExamplesBar">
+        <button onclick="objectFit('objectFitDivImg', 'fill')" class="example-button example-rounded-buttons">fill</button>
+      </a>
+      <a href="#objectFitExamplesBar">
+        <button onclick="objectFit('objectFitDivImg', 'contain')" class="example-button example-rounded-buttons">contain</button>
+      </a>
+      <a href="#objectFitExamplesBar">
+        <button onclick="objectFit('objectFitDivImg', 'scale-down')" class="example-button example-rounded-buttons">scale-down</button>
+      </a>
+      <a href="#objectFitExamplesBar">
+        <button onclick="objectFit('objectFitDivImg', 'initial')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#objectFitExamplesBar">
+        <button onclick="objectFit('objectFitDivImg', 'inherit')" class="example-button example-rounded-buttons">inherit</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="stretchHeightExampleDiv">
+    <img src="../images/mountain.jpg"/>
+    <img id="objectFitDivImg" src="../images/mountain.jpg"/>
+  </div>
+
+  <div id='animationDivCode'>
+
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br />
+      <span class=" left-padding">&lt;<span class="brown">img</span>
+        <span class="crimson">src=</span><span class="olive">"../images/mountain.jpg"</span>&gt;<br />
+      </span>
+      <span class=" left-padding">&lt;<span class="brown">img</span>
+        <span class="purple">id=</span><span class="olive">"fitImg"</span>
+        <span class="crimson">src=</span><span class="olive">"../images/mountain.jpg"</span>&gt;<br />
+      </span>
+      <span>&lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">max-width: </span>85%;<br />
+            <span class="crimson">border: </span>1px solid white;<br />
+            <span class="crimson">margin-left: </span>2em;<br />
+            <span class="crimson">padding: </span>30px 0;<br />
+            <span class="crimson">overflow: </span>auto;<br />
+            <span class="crimson">font-size: </span>20px;<br />
+            <span class="crimson">text-align: </span>center;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">img </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">width: </span>450px;<br />
+            <span class="crimson">height: </span>300px;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">#fitImg </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">width: </span>150px;<br />
+            <span class="crimson">height: </span>300px;<br />
+            <span class="crimson">object-fit: </span><span class="text">?</span>;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+<style>
+/* Does not work if you place this code in the css file (i do not know why) */
+  img {
+      width: 450px;
+      height: 300px;
+  }
+</style>
+</body>
+</html>

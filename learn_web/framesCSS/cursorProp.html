@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<title>Cursor</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/cursor.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+  <p><a href="../pages/main_window_css.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+  <div class="note noteCSS descriptionCSS note-round-bord">
+    Description:<br />
+    <div class="note-value">
+      The cursor property specifies the mouse cursor to be displayed when pointing over an element.
+    </div>
+  </div>
+  <div><hr class="hr-length-90perc" /></div>
+
+  <div class="tag">
+    <table class="attr-list attr-list-css">
+      <thead>
+        <tr>
+          <th colspan="2" style="font-size: 20px; text-align: center; background-color: black; color: white;">
+            Attribute values
+          </th>
+        </tr>
+        <tr style="background-color: rgba(73, 170, 249, 0.44);">
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>none</td>
+          <td>No cursor is rendered for the element.</td>
+        </tr>
+        <tr>
+          <td>default</td>
+          <td>The default cursor.</td>
+        </tr>
+        <tr>
+          <td>auto</td>
+          <td>Default. The browser sets a cursor.</td>
+        </tr>
+        <tr>
+          <td>alias</td>
+          <td>The cursor indicates an alias of something is to be created.</td>
+        </tr>
+        <tr>
+          <td>all-scroll</td>
+          <td>The cursor indicates that something can be scrolled in any direction.</td>
+        </tr>
+        <tr>
+          <td>cell</td>
+          <td>The cursor indicates that a cell (or set of cells) may be selected.</td>
+        </tr>
+        <tr>
+          <td>context-menu</td>
+          <td>The cursor indicates that a context-menu is available.</td>
+        </tr>
+        <tr>
+          <td>col-resize</td>
+          <td>The cursor indicates that the column can be resized horizontally.</td>
+        </tr>
+        <tr>
+          <td>copy</td>
+          <td>The cursor indicates something is to be copied.</td>
+        </tr>
+        <tr>
+          <td>e-resize</td>
+          <td>The cursor indicates that an edge of a box is to be moved right (east).</td>
+        </tr>
+        <tr>
+          <td>ew-resize</td>
+          <td>Indicates a bidirectional resize cursor.</td>
+        </tr>
+        <tr>
+          <td>grab</td>
+          <td>The cursor indicates that something can be grabbed.</td>
+        </tr>
+        <tr>
+          <td>grabbing</td>
+          <td>The cursor indicates that something can be grabbed.</td>
+        </tr>
+        <tr>
+          <td>help</td>
+          <td>The cursor indicates that help is available.</td>
+        </tr>
+        <tr>
+          <td>move</td>
+          <td>The cursor indicates something is to be moved.</td>
+        </tr>
+        <tr>
+          <td>ne-resize</td>
+          <td>The cursor indicates that an edge of a box is to be moved up and right (north/east).</td>
+        </tr>
+        <tr>
+          <td>nesw-resize</td>
+          <td>Indicates a bidirectional resize cursor.</td>
+        </tr>
+        <tr>
+          <td>ns-resize</td>
+          <td>Indicates a bidirectional resize cursor.</td>
+        </tr>
+        <tr>
+          <td>nw-resize</td>
+          <td>The cursor indicates that an edge of a box is to be moved up and left (north/west).</td>
+        </tr>
+        <tr>
+          <td>nwse-resize</td>
+          <td>Indicates a bidirectional resize cursor.</td>
+        </tr>
+        <tr>
+          <td>no-drop</td>
+          <td>The cursor indicates that the dragged item cannot be dropped here.</td>
+        </tr>
+        <tr>
+          <td>not-allowed</td>
+          <td>The cursor indicates that the requested action will not be executed.</td>
+        </tr>
+        <tr>
+          <td>pointer</td>
+          <td>The cursor is a pointer and indicates a link.</td>
+        </tr>
+        <tr>
+          <td>progress</td>
+          <td>The cursor indicates that the program is busy (in progress).</td>
+        </tr>
+        <tr>
+          <td>row-resize</td>
+          <td>The cursor indicates that the row can be resized vertically.</td>
+        </tr>
+        <tr>
+          <td>s-resize</td>
+          <td>The cursor indicates that an edge of a box is to be moved down (south).</td>
+        </tr>
+        <tr>
+          <td>se-resize</td>
+          <td>The cursor indicates that an edge of a box is to be moved down and right (south/east).</td>
+        </tr>
+        <tr>
+          <td>sw-resize</td>
+          <td>The cursor indicates that an edge of a box is to be moved down and left (south/west).</td>
+        </tr>
+        <tr>
+          <td>text</td>
+          <td>The cursor indicates text that may be selected.</td>
+        </tr>
+        <tr>
+          <td>URL</td>
+          <td>
+            A comma separated list of URLs to custom cursors.
+            Note: Always specify a generic cursor at the end of the list,
+            in case none of the URL-defined cursors can be used.
+          </td>
+        </tr>
+        <tr>
+          <td>vertical-text</td>
+          <td>The cursor indicates vertical-text that may be selected.</td>
+        </tr>
+        <tr>
+          <td>w-resize</td>
+          <td>The cursor indicates that an edge of a box is to be moved left (west).</td>
+        </tr>
+        <tr>
+          <td>wait</td>
+          <td>The cursor indicates that the program is busy.</td>
+        </tr>
+        <tr>
+          <td>zoom-in</td>
+          <td>The cursor indicates that something can be zoomed in.</td>
+        </tr>
+        <tr>
+          <td>zoom-out</td>
+          <td>The cursor indicates that something can be zoomed out.</td>
+        </tr>
+        <tr>
+          <td>initial</td>
+          <td>Sets this property to its default value.</td>
+        </tr>
+        <tr>
+          <td>inherit</td>
+          <td>Inherits this property from its parent element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div><hr class="hr-length-90perc" style="margin-left: 0"/></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+  </div>
+
+  <div id="cursorDiv" class="stretchHeightExampleDiv" style="padding: 20px 0;">
+    <p class="alias">alias</p>
+    <p class="all-scroll">all-scroll</p>
+    <p class="auto">auto</p>
+    <p class="cell">cell</p>
+    <p class="context-menu">context-menu</p>
+    <p class="col-resize">col-resize</p>
+    <p class="copy">copy</p>
+    <p class="crosshair">crosshair</p>
+    <p class="default">default</p>
+    <p class="e-resize">e-resize</p>
+    <p class="ew-resize">ew-resize</p>
+    <p class="grab">grab</p>
+    <p class="grabbing">grabbing</p>
+    <p class="help">help</p>
+    <p class="move">move</p>
+    <p class="n-resize">n-resize</p>
+    <p class="ne-resize">ne-resize</p>
+    <p class="nesw-resize">nesw-resize</p>
+    <p class="ns-resize">ns-resize</p>
+    <p class="nw-resize">nw-resize</p>
+    <p class="nwse-resize">nwse-resize</p>
+    <p class="no-drop">no-drop</p>
+    <p class="none">none</p>
+    <p class="not-allowed">not-allowed</p>
+    <p class="pointer">pointer</p>
+    <p class="progress">progress</p>
+    <p class="row-resize">row-resize</p>
+    <p class="s-resize">s-resize</p>
+    <p class="se-resize">se-resize</p>
+    <p class="sw-resize">sw-resize</p>
+    <p class="text">text</p>
+    <p class="url">url</p>
+    <p class="w-resize">w-resize</p>
+    <p class="wait">wait</p>
+    <p class="zoom-in">zoom-in</p>
+    <p class="zoom-out">zoom-out</p>
+  </div>
+
+  <div id='animationDivCode'>
+    <div class="code blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<span><br>
+        <span class="left-padding">&lt;<span class="brown">p</span>
+          <span class="crimson">class=</span><span class="olive">"alias"</span>&gt;
+          <span class="black">alias</span>
+          &lt;<span class="brown">/p</span>&gt;<br>
+        </span>
+        <span class="left-padding">&lt;<span class="brown">p</span>
+          <span class="crimson">class=</span><span class="olive">"all-scroll"</span>&gt;
+          <span class="black">all-scroll</span>
+          &lt;<span class="brown">/p</span>&gt;<br>
+        </span>
+        <span class="left-padding black">...</span><br>
+      &lt;<span class="brown">/div</span>&gt;</span>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">div </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">max-width: </span>85%;<br />
+            <span class="crimson">border: </span>1px solid white;<br />
+            <span class="crimson">margin-left: </span>2em;<br />
+            <span class="crimson">padding: </span>20px 0;<br />
+            <span class="crimson">overflow: </span>auto;<br />
+            <span class="crimson">font-size: </span>20px;<br />
+            <span class="crimson">text-align: </span>center;<br />
+            <span class="crimson">display: </span>grid;<br />
+            <span class="crimson">grid-template-columns: </span>auto auto auto auto;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">p </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">margin: </span>5px;<br />
+          </p>
+        <span class="black">}</span>
+      </p>
+    </div>
+
+    <div class="code float-borders-none">
+      <p class="blue" style="margin: 0">
+        <span class="brown">.alias </span><span class="black">{</span><span class="crimson">cursor: </span>alias;<span class="black">}</span><br>
+        <span class="brown">.all-scroll </span><span class="black">{</span><span class="crimson">cursor: </span>all-scroll;<span class="black">}</span><br>
+        <span class="black">...</span>
+      </p>
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
