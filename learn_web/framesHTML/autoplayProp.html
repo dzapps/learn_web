@@ -11,25 +11,25 @@
 <link rel="stylesheet" href="../styles/html_style.css" />
 <link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
 
-<script src="../scripts/print.js"></script>
+<script src="../scripts/audioAndVideo.js"></script>
 
 <body>
 
   <div class="frameWindowHTML">
     <div class="tag">
-      <h1>&lt;audio&gt;</h1>
+      <h2>&lt;autoplay&gt;</h2>
       <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
       <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
       <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
     </div>
-    <p><a href="../pages/print.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+    <p><a href="../pages/audioAndVideo.html"><button class="html-buttons-prop close-but-pos">X</button></a></p>
     <div class="noteCommonHTML descriptionHTML">
       Description:<br />
       <div class="note-value">
-        The &lt;audio&gt; tag defines sound, such as music or other audio streams.
+        The autoplay attribute is a boolean attribute.
       </div>
       <div class="note-value">
-        Currently, there are 3 supported file formats for the &lt;audio&gt; element: MP3, WAV, and OGG:
+        When present, the audio will automatically start playing as soon as it can do so without stopping.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -37,7 +37,10 @@
     <div class="noteCommonHTML noteHTML">
       Note:<br />
       <div class="note-value">
-        Any text inside the between &lt;audio&gt; and &lt;audio&gt; will be displayed in browsers that do not support the &lt;audio&gt; tag.
+        In XHTML, attribute minimization is forbidden, and the autoplay attribute must be defined as &lt;audio autoplay="autoplay"&gt;.
+      </div>
+      <div class="note-value">
+        The <audio> tag is new in HTML5.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>

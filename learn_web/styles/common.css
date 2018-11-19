@@ -66,9 +66,6 @@ div {
   font-size: 0.6em;
 }
 
-.attr-links:hover {
-  color: rgb(12, 108, 144);
-}
 
 .not-support {
   color: rgba(233, 93, 24, 0.5);
@@ -77,10 +74,6 @@ div {
 
 .tag {
   line-height: 0.1em;
-}
-
-table {
-  /* max-width: 100%; */
 }
 
 .deprecated {
@@ -110,10 +103,16 @@ table {
   font-size: 40px;
 }
 
+.attr-links:hover {
+  letter-spacing: 1px;
+  text-shadow: 1px 1px rgb(3, 233, 177);
+  color: rgb(12, 108, 144);
+}
+
 .attr-list {
   background-color: white;
   border-collapse: collapse;
-  width: 94%;
+  width: 93%;
   margin-bottom: 1em;
 }
 
@@ -131,7 +130,7 @@ table {
 }
 
 .attr-list td, .attr-list th {
-  padding: 5px 0;
+  padding: 8px 0;
   border: none;
   text-align: left;
 }
