@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="../styles/html_style.css" />
 <link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
 
-<script src="../scripts/print.js"></script>
+<script src="../scripts/audio.js"></script>
 
 <body>
   <div class="HTMLCateg">
@@ -35,7 +35,13 @@
     <div class="noteCommonHTML noteHTML">
       Note:<br />
       <div class="note-value">
-        Any text inside the between &lt;audio&gt; and &lt;audio&gt; will be displayed in browsers that do not support the &lt;audio&gt; tag.
+        The &lt;audio&gt; tag is new in HTML5.
+      </div>
+      <div class="note-value">
+        Any text inside the between &lt;audio&gt; and &lt;/audio&gt; will be displayed in browsers that do not support the &lt;audio&gt; tag.
+      </div>
+      <div class="note-value">
+        The &lt;audio&gt; tag is not supported in Internet Explorer 8 and earlier versions.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -59,12 +65,12 @@
             <td>Specifies that the audio will start playing as soon as it is ready.</td>
           </tr>
           <tr>
-            <td><a href="#audio-examples-bar" class="attr-links">&lt;controls&gt;</a></td>
+            <td><a href="../framesHTML/controlsProp.html" class="attr-links">&lt;controls&gt;</a></td>
             <td>controls</td>
             <td>Specifies that audio controls should be displayed (such as a play/pause button etc).</td>
           </tr>
           <tr>
-            <td><a href="#audio-examples-bar" class="attr-links">&lt;loop&gt;</a></td>
+            <td><a href="../framesHTML/autoplayProp.html" class="attr-links">&lt;loop&gt;</a></td>
             <td>loop</td>
             <td>Specifies that the audio will start over again, every time it is finished.</td>
           </tr>

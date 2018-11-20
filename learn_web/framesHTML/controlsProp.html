@@ -26,10 +26,13 @@
     <div class="noteCommonHTML descriptionHTML">
       Description:<br />
       <div class="note-value">
-        The autoplay attribute is a boolean attribute.
+        The controls attribute is a boolean attribute.
       </div>
       <div class="note-value">
-        When present, the audio will automatically start playing as soon as it can do so without stopping.
+        When present, it specifies that audio controls should be displayed.
+      </div>
+      <div class="note-value">
+        Audio controls should include: play, pause, seeking, volume.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -37,14 +40,14 @@
     <div class="noteCommonHTML noteHTML">
       Note:<br />
       <div class="note-value">
-        In XHTML, attribute minimization is forbidden, and the autoplay attribute must be defined as &lt;audio autoplay="autoplay"&gt;.
+        In XHTML, attribute minimization is forbidden, and the controls attribute must be defined as &lt;audio controls="controls"&gt;.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
 
     <div><h2 class=>Examples</h2></div>
     <div class="exampleHTMLDiv">
-      <audio controls autoplay>
+      <audio controls>
         <source src="../sounds/cat_mewing.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
@@ -54,7 +57,7 @@
 
     <div class="code blue float-borders-none">
       &lt;<span class="brown">audio </span>
-      <span class="crimson">controls autoplay</span>&gt;<br />
+      <span class="crimson">controls</span>&gt;<br />
         <p class="left-padding" style="margin: 0;">
           &lt;<span class="brown">source</span>
           <span class="crimson">src=</span><span class="olive">"..sounds/cat_mewing.mp3"</span>
