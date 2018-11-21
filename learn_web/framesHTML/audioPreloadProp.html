@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Autoplay</title>
+<title>Audio preload</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
@@ -17,22 +17,20 @@
 
   <div class="frameWindowHTML">
     <div class="tag">
-      <h2>&lt;autoplay&gt;</h2>
+      <h2>&lt;preload&gt;</h2>
       <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
       <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
       <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
     </div>
-    <p><a href="../pages/audioAndVideo.html"><button class="html-buttons-prop close-but-pos">X</button></a></p>
+    <p><a href="../pagesHTML/audioTag.html"><button class="html-buttons-prop close-but-pos">X</button></a></p>
     <div class="noteCommonHTML descriptionHTML">
       Description:<br />
       <div class="note-value">
-        The controls attribute is a boolean attribute.
+        The preload attribute specifies if and how the author thinks that the audio file should be loaded when the page loads.
       </div>
       <div class="note-value">
-        When present, it specifies that audio controls should be displayed.
-      </div>
-      <div class="note-value">
-        Audio controls should include: play, pause, seeking, volume.
+        The preload attribute allows the author to provide a hint to the browser about what he/she thinks will lead to the best user experience.
+        This attribute may be ignored in some instances.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -40,24 +38,65 @@
     <div class="noteCommonHTML noteHTML">
       Note:<br />
       <div class="note-value">
-        In XHTML, attribute minimization is forbidden, and the controls attribute must be defined as &lt;audio controls="controls"&gt;.
+        The preload attribute is ignored if autoplay is present.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
 
+    <div>
+      <table class="attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Attributes
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>auto</td>
+            <td>The author thinks that the browser should load the entire audio file when the page loads.</td>
+          </tr>
+          <tr>
+            <td>metadata</td>
+            <td>The author thinks that the browser should load only metadata when the page loads.</td>
+          </tr>
+          <tr>
+            <td>none</td>
+            <td>The author thinks that the browser should NOT load the audio file when the page loads.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
     <div><h2 class=>Examples</h2></div>
+    <div id="audioPreloadExamplBar" class="more-padding;">
+      <a href="#audioPreloadExamplBar">
+        <button onclick="audioPreload('audioPreload', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#audioPreloadExamplBar">
+        <button onclick="audioPreload('audioPreload', 'auto')" class="example-button example-rounded-buttons">auto</button>
+      </a>
+      <a href="#audioPreloadExamplBar">
+        <button onclick="audioPreload('audioPreload', 'metadata')" class="example-button example-rounded-buttons">metadata</button>
+      </a>
+    </div>
+
     <div class="exampleHTMLDiv">
-      <audio controls>
+      <audio id="audioPreload" controls preload="">
         <source src="../sounds/cat_mewing.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
     </div>
 
   <div>
-
     <div class="codeHTML blue float-borders-none">
       &lt;<span class="brown">audio </span>
-      <span class="crimson">controls</span>&gt;<br />
+      <span class="crimson">controls preload=</span>"<span class="replace">?</span>"&gt;<br />
         <p class="left-padding" style="margin: 0;">
           &lt;<span class="brown">source</span>
           <span class="crimson">src=</span><span class="olive">"..sounds/cat_mewing.mp3"</span>
@@ -66,7 +105,6 @@
         </p>
       &lt;<span class="brown">/audio</span>&gt;
     </div>
-
   </div>
   <p style="clear: left;"></p>
 
