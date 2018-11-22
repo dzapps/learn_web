@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Audio tag</title>
+<title>Source tag</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
@@ -11,12 +11,12 @@
 <link rel="stylesheet" href="../styles/html_style.css" />
 <link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
 
-<script src="../scripts/audio.js"></script>
+<script src="../scripts/audioAndVideo.js"></script>
 
 <body>
   <div>
     <div class="tag">
-      <h1>&lt;audio&gt;</h1>
+      <h1>&lt;source&gt;</h1>
       <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
       <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
       <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
@@ -24,10 +24,11 @@
     <div class="noteCommonHTML descriptionHTML">
       Description:<br />
       <div class="note-value">
-        The &lt;audio&gt; tag defines sound, such as music or other audio streams.
+        The &lt;source&gt; tag is used to specify multiple media resources for media elements, such as &lt;video&gt;, &lt;audio&gt;, and &lt;picture&gt;.
       </div>
       <div class="note-value">
-        Currently, there are 3 supported file formats for the &lt;audio&gt; element: MP3, WAV, and OGG.
+        The &lt;source&gt; tag allows you to specify alternative video/audio/image files which the browser may choose from,
+          based on its media type, codec support or media query.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -35,13 +36,10 @@
     <div class="noteCommonHTML noteHTML">
       Note:<br />
       <div class="note-value">
-        The &lt;audio&gt; tag is new in HTML5.
+        The &lt;source&gt; tag is new in HTML5.
       </div>
       <div class="note-value">
-        Any text inside the between &lt;audio&gt; and &lt;/audio&gt; will be displayed in browsers that do not support the &lt;audio&gt; tag.
-      </div>
-      <div class="note-value">
-        The &lt;audio&gt; tag is not supported in Internet Explorer 8 and earlier versions.
+        The &lt;source&gt; tag is not supported in Internet Explorer 8 and earlier versions.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -60,24 +58,24 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="../framesHTML/audioAutoplayProp.html" class="attr-links">&lt;autoplay&gt;</a></td>
-            <td>autoplay</td>
-            <td>Specifies that the audio will start playing as soon as it is ready.</td>
+            <td><a href="../framesHTML/audioAutoplayProp.html" class="attr-links">&lt;src&gt;</a></td>
+            <td>URL</td>
+            <td>Required when &lt;source&gt; is used in &lt;audio&gt; and &lt;video&gt;. Specifies the URL of the media file.</td>
           </tr>
           <tr>
-            <td><a href="../framesHTML/audioControlsProp.html" class="attr-links">&lt;controls&gt;</a></td>
-            <td>controls</td>
-            <td>Specifies that audio controls should be displayed (such as a play/pause button etc).</td>
+            <td><a href="../framesHTML/audioControlsProp.html" class="attr-links">&lt;srcset&gt;</a></td>
+            <td>URL</td>
+            <td>Required when &lt;source&gt; is used in &lt;picture&gt;. Specifies the URL of the image to use in different situations.</td>
           </tr>
           <tr>
-            <td><a href="../framesHTML/audioLoopProp.html" class="attr-links">&lt;loop&gt;</a></td>
-            <td>loop</td>
-            <td>Specifies that the audio will start over again, every time it is finished.</td>
+            <td><a href="../framesHTML/audioLoopProp.html" class="attr-links">&lt;media&gt;</a></td>
+            <td>media_query</td>
+            <td>Accepts any valid media query that would normally be defined in a CSS.</td>
           </tr>
           <tr>
-            <td><a href="../framesHTML/audioMutedProp.html" class="attr-links">&lt;muted&gt;</a></td>
-            <td>muted</td>
-            <td>Specifies that the audio output should be muted.</td>
+            <td><a href="../framesHTML/audioMutedProp.html" class="attr-links">&lt;sizes&gt;</a></td>
+            <td></td>
+            <td>Specifies image sizes for different page layouts.</td>
           </tr>
           <tr>
             <td><a href="../framesHTML/audioPreloadProp.html" class="attr-links">&lt;preload&gt;</a></td>
@@ -85,9 +83,9 @@
             <td>Specifies if and how the author thinks the audio should be loaded when the page loads.<td>
           </tr>
           <tr>
-            <td><a href="../framesHTML/audioSrcProp.html" class="attr-links">&lt;src&gt;</a></td>
-            <td>URL</td>
-            <td>Specifies the URL of the audio file.</td>
+            <td><a href="../framesHTML/audioSrcProp.html" class="attr-links">&lt;type&gt;</a></td>
+            <td>MIME-type</td>
+            <td>Specifies the MIME-type of the resource.</td>
           </tr>
         </tbody>
       </table>

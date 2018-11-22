@@ -33,6 +33,15 @@ p, span {
   color: black; */
 }
 
+.flexMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.flexMenu p {
+  margin: 30px 10px;
+}
+
 .codeHTML {
   font-family: Chilanka, monospace;
   font-size: 80%;
