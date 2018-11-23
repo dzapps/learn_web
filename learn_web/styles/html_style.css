@@ -43,7 +43,7 @@ p, span {
 }
 
 .codeHTML {
-  font-family: Chilanka, monospace;
+  font-family: Courier, 'Trebuchet MS', monospace;
   font-size: 80%;
   line-height: 1.2em;
 }

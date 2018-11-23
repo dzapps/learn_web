@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<title>Source src</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/html_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/audioAndVideo.js"></script>
+
+<body>
+
+  <div class="frameWindowHTML">
+    <div class="tag">
+      <h2>&lt;src&gt;</h2>
+      <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+      <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+      <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+    </div>
+
+    <p><a href="../pagesHTML/sourceTag.html"><button class="html-buttons-prop close-but-pos">X</button></a></p>
+    <div class="noteCommonHTML descriptionHTML">
+      Description:<br />
+      <div class="note-value">
+        The src attribute specifies the URL of the media file to play.
+      </div>
+      <div class="note-value">
+        This attribute is required when &lt;source&gt; is used in &lt;audio&gt; and &lt;video&gt;.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div>
+      <table class="attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Attributes
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>URL</td>
+            <td>Specifies the URL of the media file.<br>
+              An absolute URL - points to another web site (like src="http://www.example.com/example.ogg").<br>
+              A relative URL - points to a file within a web site (like src="example.ogg").
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class=>Examples</h2></div>
+    <div class="exampleHTMLDiv">
+      <audio controls>
+        <source src="../sounds/cat_mewing.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+  <div>
+
+    <div class="codeHTML blue float-borders-none">
+      &lt;<span class="brown">audio </span>
+      <span class="crimson">controls</span>&gt;<br />
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">source</span>
+          <span class="crimson">src=</span><span class="olive">"..sounds/cat_mewing.mp3"</span>
+          <span class="crimson">type=</span><span class="olive">"audio/mpeg"</span>&gt;<br>
+          <span class="black">Your browser does not support the audio element.</span><br>
+        </p>
+      &lt;<span class="brown">/audio</span>&gt;
+    </div>
+
+  </div>
+  <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
