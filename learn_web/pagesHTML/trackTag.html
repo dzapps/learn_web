@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<title>Track tag</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/html_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/audioAndVideo.js"></script>
+
+<body>
+  <div>
+    <div class="tag">
+      <h1>&lt;track&gt;</h1>
+      <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+      <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+      <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+    </div>
+    <div class="noteCommonHTML descriptionHTML">
+      Description:<br />
+      <div class="note-value">
+        The &lt;track&gt; tag specifies text tracks for media elements (&lt;audio&gt; and &lt;video&gt;).
+      </div>
+      <div class="note-value">
+        This element is used to specify subtitles, caption files or other files containing text, that should be visible when the media is playing.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        The &lt;source&gt; tag is new in HTML5.
+      </div>
+      <div class="note-value">
+        The &lt;source&gt; tag is not supported in Internet Explorer 8 and earlier versions.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div>
+      <table class="attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Attributes
+            </th>
+          </tr>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="../framesHTML/trackDefaultProp.html" class="attr-links">&lt;default&gt;</a></td>
+            <td>default</td>
+            <td>Specifies that the track is to be enabled if the user's preferences do not indicate that another track would be more appropriate.</td>
+          </tr>
+          <tr>
+            <td><a href="../framesHTML/trackKindProp.html" class="attr-links">&lt;kind&gt;</a></td>
+            <td>captions<br>chapters<br>descriptions<br>metadata<br>subtitles</td>
+            <td>Specifies the kind of text track.</td>
+          </tr>
+          <tr>
+            <td><a href="../framesHTML/trackLabelProp.html" class="attr-links">&lt;label&gt;</a></td>
+            <td>text</td>
+            <td>Specifies the title of the text track.</td>
+          </tr>
+          <tr>
+            <td><a href="../framesHTML/trackSrcProp.html" class="attr-links">&lt;src&gt;</a></td>
+            <td>URL</td>
+            <td>Required. Specifies the URL of the track file.</td>
+          </tr>
+          <tr>
+            <td><a href="../framesHTML/trackSrclangProp.html" class="attr-links">&lt;srclang&gt;</a></td>
+            <td>language_code</td>
+            <td>Specifies the language of the track text data (required if kind="subtitles").</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+  </div>
+
+</body>
+</html>

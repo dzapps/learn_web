@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<title>Video autoplay</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/html_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/audioAndVideo.js"></script>
+
+<body>
+
+  <div class="frameWindowHTML">
+    <div class="tag">
+      <h2>&lt;video&gt; <span>autoplay<span></h2>
+      <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+      <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+      <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+    </div>
+    <p><a href="../pagesHTML/videoTag.html"><button class="html-buttons-prop close-but-pos">X</button></a></p>
+    <div class="noteCommonHTML descriptionHTML">
+      Description:<br />
+      <div class="note-value">
+        The autoplay attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, the video will automatically start playing as soon as it can do so without stopping.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class=>Examples</h2></div>
+    <div class="exampleHTMLDiv">
+      <video width="320" height="240" autoplay controls>
+        <source src="../video/scolopendra_giant.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </div>
+
+    <div>
+      <div class="codeHTML blue float-borders-none">
+        &lt;<span class="brown">video </span>
+        <span class="crimson">controls autoplay</span>&gt;<br />
+          <p class="left-padding" style="margin: 0;">
+            &lt;<span class="brown">source</span>
+            <span class="crimson">src=</span><span class="olive">"../video/scolopendra_giant.mp4"</span>
+            <span class="crimson">type=</span><span class="olive">"video/mp4"</span>&gt;<br>
+            <span class="black">Your browser does not support the video element.</span><br>
+          </p>
+        &lt;<span class="brown">/video</span>&gt;
+      </div>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

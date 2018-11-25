@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<title>Video width</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/html_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/audioAndVideo.js"></script>
+
+<body>
+
+  <div class="frameWindowHTML">
+    <div class="tag">
+      <h2>&lt;video&gt; <span>width<span></h2>
+      <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+      <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+      <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+    </div>
+    <p><a href="../pagesHTML/videoTag.html"><button class="html-buttons-prop close-but-pos">X</button></a></p>
+    <div class="noteCommonHTML descriptionHTML">
+      Description:<br />
+      <div class="note-value">
+        The width attribute specifies the width of a video player, in pixels.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        Always specify both the height and width attributes for videos.
+        If height and width are set, the space required for the video is reserved when the page is loaded.
+        However, without these attributes, the browser does not know the size of the video,
+        and cannot reserve the appropriate space to it.
+        The effect will be that the page layout will change during loading (while the video loads).
+      </div>
+      <div class="note-value">
+        Do not rescale video with the height and width attributes!
+        Downsizing a large video with the height and width attributes forces a user to download the original video
+        (even if it looks small on the page). The correct way to rescale a video is with a program, before using it on a page.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class=>Examples</h2></div>
+
+    <div id="videoWidthExamplBar" class="more-padding;">
+      <a href="#videoWidthExamplBar">
+        <button onclick="videoWidth('videoWidthDiv', '140px')" class="example-button example-rounded-buttons">height 140px</button>
+      </a>
+      <a href="#videoWidthExamplBar">
+        <button onclick="videoWidth('videoWidthDiv', '340px')" class="example-button example-rounded-buttons">height 340px</button>
+      </a>
+      <a href="#videoWidthExamplBar">
+        <button onclick="videoWidth('videoWidthDiv', '640px')" class="example-button example-rounded-buttons">height 640px</button>
+      </a>
+    </div>
+
+    <div class="exampleHTMLDiv">
+      <video id="videoWidthDiv" width="320" height="240" controls>
+        <source src="../video/scolopendra_giant.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </div>
+
+    <div>
+      <div class="codeHTML blue float-borders-none">
+        &lt;<span class="brown">video</span>
+        <span class="crimson">width=</span><span class="olive">"<span class="replace">340px</span>"</span>
+        <span class="crimson">height=</span><span class="olive">"240px"</span>
+        <span class="crimson">controls</span>&gt;<br />
+          <p class="left-padding" style="margin: 0;">
+            &lt;<span class="brown">source</span>
+            <span class="crimson">src=</span><span class="olive">"../video/scolopendra_giant.mp4"</span>
+            <span class="crimson">type=</span><span class="olive">"video/mp4"</span>&gt;<br>
+            <span class="black">Your browser does not support the video element.</span><br>
+          </p>
+        &lt;<span class="brown">/video</span>&gt;
+      </div>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

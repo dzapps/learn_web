@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<title>Track src</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/html_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/audioAndVideo.js"></script>
+
+<body>
+
+  <div class="frameWindowHTML">
+    <div class="tag">
+      <h2>&lt;track&gt; <span>src</span></h2>
+      <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+      <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+      <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+    </div>
+
+    <p><a href="../pagesHTML/trackTag.html"><button class="html-buttons-prop close-but-pos">X</button></a></p>
+    <div class="noteCommonHTML descriptionHTML">
+      Description:<br />
+      <div class="note-value">
+        The required src attribute specifies the URL of the track file.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class=>Examples</h2></div>
+    <div id="audioSrcExamplBar" class="more-padding;">
+      <a href="#audioSrcExamplBar">
+        <button onclick="audioSrc('trackSrcVideo', '../video/scolopendra_giant.mp4')" class="example-button example-rounded-buttons">scolopendra</button>
+      </a>
+      <a href="#audioSrcExamplBar">
+        <button onclick="audioSrc('trackSrcVideo', '../video/peruvian_grasshopper.mp4')" class="example-button example-rounded-buttons">grasshopper</button>
+      </a>
+    </div>
+
+    <div class="exampleHTMLDiv">
+      <video id="trackSrcVideo" width="320" height="240" controls>
+        <source src="../video/scolopendra_giant.mp4" type="video/mp4">
+        <track src="../subtitles/example.vtt" kind="subtitles" srclang="ru" label="Russian" default>
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+      </video>
+    </div>
+
+    <div>
+      <div class="codeHTML blue float-borders-none">
+        &lt;<span class="brown">video</span>
+        <span class="crimson">width=</span><span class="olive">"320"</span>
+        <span class="crimson">height=</span><span class="olive">"240"</span><span class="crimson"> controls</span>&gt;<br>
+          <p class="left-padding" style="margin: 0;">
+            &lt;<span class="brown">source</span>
+            <span class="crimson">src=</span><span class="olive">"<span class="replace">..video/scolopendra_giant.mp4</span>"</span>
+            <span class="crimson">type=</span><span class="olive">"video/mp4"</span>&gt;<br>
+            &lt;<span class="brown">track</span>
+            <span class="crimson">src=</span><span class="olive">"subtitles_ru.vtt"</span>
+            <span class="crimson">kind=</span><span class="olive">"subtitles"</span>
+            <span class="crimson">srclang=</span><span class="olive">"ru"</span>
+            <span class="crimson">label=</span><span class="olive">"Russian"</span>
+            <span class="crimson">default</span>&gt;<br>
+            &lt;<span class="brown">track</span>
+            <span class="crimson">src=</span><span class="olive">"subtitles_en.vtt"</span>
+            <span class="crimson">kind=</span><span class="olive">"subtitles"</span>
+            <span class="crimson">srclang=</span><span class="olive">"en"</span>
+            <span class="crimson">label=</span><span class="olive">"English"</span>&gt;<br>
+          </p>
+        &lt;<span class="brown">/video</span>&gt;
+      </div>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

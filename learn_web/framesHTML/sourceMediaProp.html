@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<title>Source media</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/html_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/audioAndVideo.js"></script>
+
+<body>
+
+  <div class="frameWindowHTML">
+    <div class="tag">
+      <h2>&lt;media&gt;</h2>
+      <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+      <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+      <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+    </div>
+    <p><a href="../pagesHTML/sourceTag.html"><button class="html-buttons-prop close-but-pos">X</button></a></p>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Description:<br />
+      <div class="note-value">
+         The media attribute accepts any valid media query that would normally be defined in a CSS.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        This attribute can accept several values.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div>
+      <table class="attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Possible operators
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>and</td>
+            <td>Specifies an AND operator.</td>
+          </tr>
+          <tr>
+            <td>note</td>
+            <td>Specifies a NOT operator.</td>
+          </tr>
+          <tr>
+            <td>,</td>
+            <td>Specifies an OR operator.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <table class="attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Devices
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>all</td>
+            <td>Suitable for all devices. This is default.</td>
+          </tr>
+          <tr>
+            <td>aural</td>
+            <td>Speech synthesizers.</td>
+          </tr>
+          <tr>
+            <td>braille</td>
+            <td>Braille feedback devices.</td>
+          </tr>
+          <tr>
+            <td>handheld</td>
+            <td>Handheld devices (small screen, limited bandwidth).</td>
+          </tr>
+          <tr>
+            <td>projection</td>
+            <td>Projectors.</td>
+          </tr>
+          <tr>
+            <td>print</td>
+            <td>Print preview mode/printed pages.</td>
+          </tr>
+          <tr>
+            <td>screen</td>
+            <td>Computer screens.</td>
+          </tr>
+          <tr>
+            <td>tty</td>
+            <td>Teletypes and similar media using a fixed-pitch character grid.</td>
+          </tr>
+          <tr>
+            <td>tv</td>
+            <td>Television type devices (low resolution, limited scroll ability).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <table class="attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Values
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>width</td>
+            <td>
+              Specifies the width of the targeted display area.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (min-width:500px)".
+            </td>
+          </tr>
+          <tr>
+            <td>height</td>
+            <td>
+              Specifies the height of the targeted display area.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (max-height:700px)".
+            </td>
+          </tr>
+          <tr>
+            <td>device-width</td>
+            <td>
+              Specifies the width of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (device-width:500px)".
+            </td>
+          </tr>
+          <tr>
+            <td>device-height</td>
+            <td>
+              Specifies the height of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (device-height:500px)".
+            </td>
+          </tr>
+          <tr>
+            <td>orientation</td>
+            <td>
+              Specifies the orientation of the target display/paper.
+              Possible values: "portrait" or "landscape"
+              Example: media="all and (orientation: landscape)".
+            </td>
+          </tr>
+          <tr>
+            <td>aspect-ratio</td>
+            <td>
+              Specifies the width/height ratio of the targeted display area.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (aspect-ratio:16/9)".
+            </td>
+          </tr>
+          <tr>
+            <td>device-aspect-ratio</td>
+            <td>
+              Specifies the device-width/device-height ratio of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (aspect-ratio:16/9)".
+            </td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td>
+              Specifies the bits per color of target display.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (color:3)".
+            </td>
+          </tr>
+          <tr>
+            <td>color-index</td>
+            <td>
+              Specifies the number of colors the target display can handle.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (min-color-index:256)".
+            </td>
+          </tr>
+          <tr>
+            <td>monochrome</td>
+            <td>
+              Specifies the bits per pixel in a monochrome frame buffer.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (monochrome:2)".
+            </td>
+          </tr>
+          <tr>
+            <td>resolution</td>
+            <td>
+              Specifies the pixel density (dpi or dpcm) of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="print and (resolution:300dpi)".
+            </td>
+          </tr>
+          <tr>
+            <td>scan</td>
+            <td>
+              Specifies scanning method of a tv display.
+              Possible values are "progressive" and "interlace".
+              Example: media="tv and (scan:interlace)".
+            </td>
+          </tr>
+          <tr>
+            <td>grid</td>
+            <td>
+              Specifies if the output device is grid or bitmap.
+              Possible values are "1" for grid, and "0" otherwise.
+              Example: media="handheld and (grid:1)".
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class=>Examples</h2></div>
+
+    <div class="exampleHTMLDiv">
+      <p>Resize browser window (Ctrl-, Ctrl+)</p>
+      <picture>
+        <source media="(max-width: 800px)" srcset="../images/british_cat.jpg">
+        <source media="(max-width: 1150px)" srcset="../images/vasserman_big.jpg">
+        <img src="../images/vasserman_thinking.gif" alt="vasserman">
+      </picture>
+    </div>
+
+    <div>
+      <div class="codeHTML blue float-borders-none">
+        &lt;<span class="brown">picture</span>&gt;<br />
+          <p class="left-padding" style="margin: 0;">
+            &lt;<span class="brown">source </span><span class="crimson">media=</span><span class="olive">"(max-width: 800px)"</span>
+            <span class="crimson">srcset=</span><span class="olive">"../images/british_cat.jpg"</span>&gt;<br>
+            &lt;<span class="brown">source </span><span class="crimson">media=</span><span class="olive">"(max-width: 1150px)"</span>
+            <span class="crimson">srcset=</span><span class="olive">"../images/vasserman_big.jpg"</span>&gt;<br>
+            &lt;<span class="brown">img </span><span class="crimson">src=</span><span class="olive">"../images/vasserman_thinking.gif"</span>
+            <span class="crimson">alt=</span><span class="olive">"vasserman"</span>&gt;<br>
+          </p>
+        &lt;<span class="brown">/picture</span>&gt;
+      </div>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
