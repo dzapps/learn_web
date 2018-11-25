@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<title>Form name</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/html_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/formsAndInput.js"></script>
+
+<body>
+
+  <div class="frameWindowHTML">
+    <div class="tag">
+      <h2>&lt;form&gt; <span>name</span></h2>
+      <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+      <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+      <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+    </div>
+    <p><a href="../pagesHTML/formTag.html"><button class="html-buttons-prop close-but-pos">X</button></a></p>
+    <div class="noteCommonHTML descriptionHTML">
+      Description:<br />
+      <div class="note-value">
+         The name attribute specifies the name of a form.
+      </div>
+      <div class="note-value">
+        The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        In XHTML, the name attribute is deprecated. Use the id attribute instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div>
+      <table class="attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Attributes
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>text</td>
+            <td>Specifies the name of the form.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+
+    <div class="exampleHTMLDiv">
+      <form action="example.php" method="get" name="formName">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br><br>
+        <input type="button" onclick="formSubmit()" value="Send form data!">
+      </form>
+    </div>
+
+    <div class="codeHTML blue float-borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span>"example.php"
+      <span class="crimson">method=</span>"get"
+      <span class="crimson">name=</span>"formName"&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        <span class="black">First name: </span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span>"text"
+        <span class="crimson">name=</span>"fname"&gt;<br>
+        <span class="black">Last name: </span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span>"text"
+        <span class="crimson">name=</span>"lname"&gt;<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span>"button"
+        <span class="crimson">onclick=</span>"formSubmit()"
+        <span class="crimson">value=</span>"Send form data!"&gt;<br>
+      </p>
+      &lt;<span class="brown">/form</span>&gt;
+    </div>
+
+    <div class="codeHTML blue float-borders-none">
+      <span class="darkblue">function</span>
+      <span class="purple">formSubmit()</span><span class="black"> {</span><br>
+      <span class="left-padding maroon">document.forms</span><span class="black">[<span class="olive">"formName"</span>]</span><span class="teal">.submit</span><span class="black">();</span><br>
+      <span class="black">}</span><br>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

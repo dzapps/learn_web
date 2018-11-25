@@ -26,12 +26,16 @@ h3 {
   font-size: 1.5em;
 }
 
-.tagsProp {
-  display: inline-block;
-}
-
 h4 {
   color: dimgray;
+}
+
+.notSupported {
+  color: red;
+}
+
+.tagsProp {
+  display: inline-block;
 }
 
 .flexMenu {

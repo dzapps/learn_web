@@ -18,3 +18,19 @@ function videoWidth(id, width) {
   document.getElementById(id).style.width = width;
   document.getElementsByClassName("replace")[0].innerHTML = width;
 }
+
+function formAutocompl(id, state) {
+  document.getElementById(id).autocomplete = state;
+  document.getElementsByClassName("replace")[0].innerHTML = state;
+}
+
+function formNovalid(id, text) {
+  let data = document.getElementsByClassName("exampleHTMLDiv");
+  let len = data.length;
+
+  for (let j=0; j<=len; j++) {
+    data[j].style.display = 'none';
+    document.getElementById(id).style.display = 'block';
+    document.getElementsByClassName("replace")[0].innerHTML = text;
+  }
+}

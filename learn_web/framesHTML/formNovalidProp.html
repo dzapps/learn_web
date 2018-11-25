@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<title>Form novalidate</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/html_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/formsAndInput.js"></script>
+
+<body>
+
+  <div class="frameWindowHTML">
+    <div class="tag">
+      <h2>&lt;form&gt; <span>novalidate</span></h2>
+      <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+      <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+      <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+    </div>
+    <p><a href="../pagesHTML/formTag.html"><button class="html-buttons-prop close-but-pos">X</button></a></p>
+    <div class="noteCommonHTML descriptionHTML">
+      Description:<br />
+      <div class="note-value">
+         The novalidate attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that the form-data (input) should not be validated when submitted.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        The novalidate attribute of the form tag is not supported in Internet Explorer 9
+        and earlier versions, or in Safari 10 and earlier versions.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+
+    <div id="formNovalidExamplesBar" class="left-padding;">
+      <a href="#formNovalidExamplesBar">
+        <button onclick="formNovalid('formNovalidDiv', 'novalidate')" class="example-button example-rounded-buttons">novalidate</button>
+      </a>
+      <a href="#formNovalidExamplesBar">
+        <button onclick="formNovalid('formValidDiv', '')" class="example-button example-rounded-buttons">validate</button>
+      </a>
+    </div>
+
+    <div id="formNovalidDiv" class="exampleHTMLDiv">
+      <form action="example.php" novalidate>
+        E-mail: <input type="email" name="user_email">
+        <input type="submit">
+      </form>
+    </div>
+
+    <div id="formValidDiv" class="exampleHTMLDiv" style="display: none;">
+      <form action="example.php">
+        E-mail: <input type="email" name="user_email">
+        <input type="submit">
+      </form>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span>"example.php"
+      <span class="crimson replace">novalidate</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        <span class="black">E-mail: </span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span>"email"
+        <span class="crimson">name=</span>"user_email"&gt;<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span>"submit"&gt;<br>
+      </p>
+      &lt;<span class="brown">/form</span>&gt;
+    </div>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>

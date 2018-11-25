@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<title>Form accept</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/html_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/formsAndInput.js"></script>
+
+<body>
+
+  <div class="frameWindowHTML">
+    <div class="tag">
+      <h2>&lt;form&gt; <span>accept</span></h2>
+      <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+      <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+      <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+    </div>
+    <p><a href="../pagesHTML/formTag.html"><button class="html-buttons-prop close-but-pos">X</button></a></p>
+    <div class="noteCommonHTML descriptionHTML">
+      Description:<br />
+      <div class="note-value">
+         <span class="notSupported">The &lt;form&gt; accept attribute is not supported in HTML5.</span>
+      </div>
+      <div class="note-value">
+        The accept attribute specifies the types of files that the server accepts (that can be submitted through a file upload).
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+         Look at the &lt;input&gt; accept attribute instead.
+      </div>
+      <div class="note-value">
+        Do NOT use this attribute as a validation tool. File uploads should be validated on the server.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div>
+      <table class="attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Attributes
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>file_type</td>
+            <td>One or more file types that can be submitted/uploaded. To specify more than one file type, separate the types with a comma.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+
+    <div class="exampleHTMLDiv">
+      <form action="" accept="image/gif, image/jpeg">
+       First name: <input type="text" name="fname"><br>
+       Last name: <input type="text" name="lname"><br>
+       Your image: <input type="file" name="pic" id="pic"><br>
+       <input type="submit" value="Submit">
+     </form>
+    </div>
+
+    <div>
+      <div class="codeHTML blue float-borders-none">
+        &lt;<span class="brown">form </span>
+        <span class="crimson">action=</span>"example.php"
+        <span class="crimson">accept=</span>"image/gif, image/jpeg"&gt;<br />
+        <p class="left-padding" style="margin: 0;">
+          <span class="black">First name: </span>
+          &lt;<span class="brown">input</span>
+          <span class="crimson">type=</span>"text"
+          <span class="crimson">name=</span>"fname"&gt;<br>
+          <span class="black">Last name: </span>
+          &lt;<span class="brown">input</span>
+          <span class="crimson">type=</span>"text"
+          <span class="crimson">name=</span>"lname"&gt;<br>
+          <span class="black">Your image: </span>
+          &lt;<span class="brown">input</span>
+          <span class="crimson">type=</span>"file"
+          <span class="crimson">name=</span>"pic"
+          <span class="purple">id=</span>"pic"&gt;<br>
+          &lt;<span class="brown">input</span>
+          <span class="crimson">type=</span>"submit"
+          <span class="crimson">value=</span>"Submit"&gt;<br>
+        </p>
+        &lt;<span class="brown">/form</span>&gt;
+      </div>
+    </div>
+    <p style="clear: left;"></p>
+
+  <div><hr class="hr-length-90perc" /></div>
+</div>
+
+</body>
+</html>
