@@ -34,3 +34,8 @@ function formNovalid(id, text) {
     document.getElementsByClassName("replace")[0].innerHTML = text;
   }
 }
+
+function formTargets(id, target) {
+  document.getElementById(id).target = target;
+  document.getElementsByClassName("replace")[0].innerHTML = target;
+}
