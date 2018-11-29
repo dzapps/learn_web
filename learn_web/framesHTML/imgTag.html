@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frames</title>
+  <title>Images</title>
   <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
   <link rel="stylesheet" href="../styles/common.css" />
   <link rel="stylesheet" href="../styles/html_style.css" />
@@ -12,27 +12,28 @@
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
 </head>
 
+
 <body>
-  <script src="../scripts/iframes.js"></script>
+  <script src="../scripts/images.js"></script>
   <div class="tag">
-    <h1>Frames</h1>
+    <h1 class="highlightText">Images</h1>
     <a href="main_window_html.html"><button class="home html-buttons" type="button">Home</button></a>
     <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
     <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
   </div>
 
   <div class="frameWindowHTML">
-  <div><h2 class="tag">&lt;iframes&gt;</h2></div>
+  <div><h2 class="tag shadowText">&lt;img&gt;</h2></div>
     <div><hr class="hr-length-90perc" /></div>
     <p><a href="../pages/main_window_html.html"><button class="html-buttons-prop close-but-pos">X</button></a></p>
 
     <div class="noteCommonHTML descriptionHTML">
       Descriptions:<br />
       <div class="note-value">
-        The &lt;iframe&gt; tag specifies an inline frame.
+        The &lt;img&gt; tag defines an image in an HTML page.
       </div>
       <div class="note-value">
-        An inline frame is used to embed another document within the current HTML document.
+        The &lt;img&gt; tag has two required attributes: src and alt.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -40,24 +41,16 @@
     <div class="noteCommonHTML noteHTML">
       Notes:<br />
       <div class="note-value">
-        To deal with browsers that do not support &lt;iframe&gt;, add a text between the opening &lt;iframe&gt; tag and the closing &lt;/iframe&gt; tag.
+        Images are not technically inserted into an HTML page, images are linked to HTML pages.
+        The &lt;img&gt; tag creates a holding space for the referenced image.
       </div>
       <div class="note-value">
-        Use CSS to style the &lt;iframe&gt; (even to include scrollbars).
-      </div>
-      <div class="note-value">
-        In XHTML, the name attribute is deprecated, and will be removed. Use the id attribute instead.
-      </div>
-      <div class="note-value">
-        Attribute srcdoc is expected to be used together with the sandbox and seamless attributes.
-      </div>
-      <div class="note-value">
-        This property is read-only in DOM.
+        To link an image to another document, simply nest the &lt;img&gt; tag inside &lt;a&gt; tags.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
 
-    <div class="tag"><h2>Attributes</h2></div>
+    <div><h2 class="tag shadowText">Attributes</h2></div>
     <div>
       <table class="hover attr-list attr-list-3">
         <thead>
@@ -157,7 +150,7 @@
     </div>
     <div><hr class="hr-length-90perc" /></div>
 
-    <div><h2 class="tag">Examples</h2></div>
+    <div><h2 class="tag shadowText">Examples</h2></div>
     <div>
       <div class="hover" style="padding: 0 5px 5px;">
         <h3>Deprecated style</h3>

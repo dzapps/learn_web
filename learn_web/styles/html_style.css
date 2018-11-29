@@ -30,6 +30,7 @@ h4 {
   color: dimgray;
 }
 
+
 .notSupported {
   color: red;
 }
@@ -79,9 +80,16 @@ h4 {
   font-size: 1.4em;
 }
 
-.noteHTML:hover, .descriptionHTML:hover {
-  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.7);
-  /* font-size: 1.6em; */
+.noteHTML:hover, .descriptionHTML:hover, .hover:hover {
+  box-shadow: 0px 0px 5px 5px rgba(100, 0, 0, 0.7);
+}
+
+.shadowText {
+  text-shadow: 2px 2px 1px rgba(100, 0, 0, 1);
+}
+
+.highlightText {
+  text-shadow: 2px 2px 4px rgba(125, 27, 59, 1), 4px 4px 6px rgba(255, 0, 0, 1), 0px 0px 10px rgba(1, 22, 51, 1);
 }
 
 .descriptionHTML {
@@ -104,7 +112,6 @@ h4 {
 }
 
 .frameWindowHTML:hover {
-  /* border: 1px solid rgb(8, 37, 57); */
   background-color: rgba(255, 144, 13, 0.28);
   box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.6);
 }

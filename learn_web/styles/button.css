@@ -154,8 +154,8 @@ button:hover {
 
 .close-but-pos {
    position: absolute;
-   top: 15px;
-   right: 20px;
+   top: 20px;
+   right: 25px;
  }
 
 .js-buttons {
