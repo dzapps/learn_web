@@ -24,12 +24,16 @@ h2 span {
 
 h3 {
   font-size: 1.5em;
+  color: rgb(233, 93, 24);
 }
 
 h4 {
   color: dimgray;
 }
 
+.attrSeparation {
+  border-top: 5px solid red;
+}
 
 .notSupported {
   color: red;
@@ -60,7 +64,7 @@ h4 {
 }
 
 .exampleHTMLDiv, .resizingExampleHTMLDiv {
-  max-width: 90%;
+  max-width: 97%;
   border: 2px solid white;
   padding: 30px 0;
   text-align: center;
@@ -89,7 +93,7 @@ h4 {
 }
 
 .highlightText {
-  text-shadow: 2px 2px 4px rgba(125, 27, 59, 1), 4px 4px 6px rgba(255, 0, 0, 1), 0px 0px 10px rgba(1, 22, 51, 1);
+  text-shadow: 2px 2px 2px rgba(125, 27, 59, 1), 3px 3px 1px rgba(255, 0, 0, 1), 0px 0px 10px rgba(1, 22, 51, 1);
 }
 
 .descriptionHTML {
@@ -107,8 +111,6 @@ h4 {
   margin-left: 1em;
   margin-top: 0;
   width: 93%;
-  position: absolute;
-  z-index: 1;
 }
 
 .frameWindowHTML:hover {
