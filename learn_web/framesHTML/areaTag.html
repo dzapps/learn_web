@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Map</title>
+  <title>Area</title>
   <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
   <link rel="stylesheet" href="../styles/common.css" />
   <link rel="stylesheet" href="../styles/html_style.css" />
@@ -22,21 +22,26 @@
   </div>
 
   <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
-  <div><h2 class="tag shadowText" style="float: left;">&lt;map&gt;</h2></div>
-  <div class="" style="float: right;"><a href="../pagesHTML/images.html"><button class="html-buttons-prop">X</button></a></div>
+    <div><h2 class="tag shadowText" style="float: left;">&lt;area&gt;</h2></div>
+    <div class="" style="float: right;"><a href="../pagesHTML/images.html"><button class="html-buttons-prop">X</button></a></div>
     <div style="clear: both;"><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
       Descriptions:<br />
       <div class="note-value">
-        The &lt;map&gt; tag is used to define a client-side image-map. An image-map is an image with clickable areas.
+        The &lt;area&gt; tag defines an area inside an image-map (an image-map is an image with clickable areas).
       </div>
       <div class="note-value">
-        The required name attribute of the &lt;map&gt; element is associated with the &lt;img&gt;'s usemap attribute
+        The &lt;area&gt; element is always nested inside a &lt;map&gt; tag.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The usemap attribute in the &lt;img&gt; tag is associated with the &lt;map&gt; element's name attribute,
         and creates a relationship between the image and the map.
-      </div>
-      <div class="note-value">
-        The &lt;map&gt; element contains a number of &lt;area&gt; elements, that defines the clickable areas in the image map.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -51,11 +56,62 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="#mapName" class="attr-links">name</a></td>
-            <td>mapname</td>
+            <td><a href="#areaAlt" class="attr-links">alt</a></td>
+            <td>text</td>
+            <td>Specifies an alternate text for the area. Required if the href attribute is present.</td>
+          </tr>
+          <tr>
+            <td><a href="#areaCoords" class="attr-links">coords</a></td>
+            <td>coordinates</td>
+            <td>Specifies the coordinates of the area.</td>
+          </tr>
+          <tr>
+            <td><a href="#areaDownloads" class="attr-links">download</a></td>
+            <td>filename</td>
+            <td>Specifies that the target will be downloaded when a user clicks on the hyperlink.</td>
+          </tr>
+          <tr>
+            <td><a href="#areaHref" class="attr-links">href</a></td>
+            <td>URL</td>
+            <td>Specifies the hyperlink target for the area.</td>
+          </tr>
+          <tr>
+            <td><a href="#areaAlt" class="attr-links">hreflang</a></td>
+            <td>language_code</td>
+            <td>Specifies the language of the target URL.</td>
+          </tr>
+          <tr>
+            <td><a href="#areaCoords" class="attr-links">media</a></td>
+            <td>media query</td>
+            <td>Specifies what media/device the target URL is optimized for.</td>
+          </tr>
+          <tr>
+            <td><a href="#areaDownloads" class="attr-links">nohref</a></td>
+            <td>value</td>
             <td>
-              Required. Specifies the name of an image-map.
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies that an area has no associated link.
             </td>
+          </tr>
+          <tr>
+            <td><a href="#areaHref" class="attr-links">rel</a></td>
+            <td>alternate<br>author<br>bookmark<br>help<br>license<br>next<br>nofollow<br>noreferrer<br>prefetch<br>prev<br>search<br>tag</td>
+            <td>Specifies the relationship between the current document and the target URL.</td>
+          </tr>
+          <tr>
+            <td><a href="#areaHref" class="attr-links">shape</a></td>
+            <td>default<br>rect<br>circle<br>poly</td>
+            <td>Specifies the shape of the area.</td>
+          </tr>
+          <tr>
+            <td><a href="#areaAlt" class="attr-links">target</a></td>
+            <td> _blank<br>_parent<br>_self<br>_top<br>framename</td>
+            <td>Specifies where to open the target URL.</td>
+          </tr>
+          <tr>
+            <td><a href="#areaCoords" class="attr-links">type</a></td>
+            <td>media_type</td>
+            <td>Specifies the media type of the target URL.</td>
           </tr>
         </tbody>
       </table>
