@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+<body>
+  <script src="../scripts/images.js"></script>
+  <div class="tag">
+    <h1 class="highlightText">Images</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">Home</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+  <div><h2 class="tag shadowText" style="float: left;">&lt;map&gt;</h2></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/images.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;map&gt; tag is used to define a client-side image-map. An image-map is an image with clickable areas.
+      </div>
+      <div class="note-value">
+        The required name attribute of the &lt;map&gt; element is associated with the &lt;img&gt;'s usemap attribute
+        and creates a relationship between the image and the map.
+      </div>
+      <div class="note-value">
+        The &lt;map&gt; element contains a number of &lt;area&gt; elements, that defines the clickable areas in the image map.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributs"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#imgAlign" class="attr-links">name</a></td>
+            <td>mapname</td>
+            <td>
+              Required. Specifies the name of an image-map.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="mapName" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">name</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;map&gt; tag is used to define a client-side image-map. An image-map is an image with clickable areas.
+      </div>
+      <div class="note-value">
+        The required name attribute of the &lt;map&gt; element is associated with the &lt;img&gt;'s usemap attribute and creates a relationship between the image and the map.
+      </div>
+      <div class="note-value">
+        The &lt;map&gt; element contains a number of &lt;area&gt; elements, that defines the clickable areas in the image map.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        In HTML5, if the id attribute of the &lt;map&gt; tag is also specified, it must have the same value as the name attribute.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributs"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#imgAlign" class="attr-links">name</a></td>
+            <td>mapname</td>
+            <td>
+              Required. Specifies the name of an image-map.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <img id="mapNameImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman">
+      </div>
+
+      <map name="vasserman">
+        <area shape="rect" coords="50, 150, 200, 240" alt="beard" href="https://en.wikipedia.org/wiki/Beard">
+        <area shape="circle" coords="100, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+        <area shape="circle" coords="155, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+      </map>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0 0 1em;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;
+        </p>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"50, 150, 200, 240"</span>
+            <span class="crimson">alt=</span><span class="olive">"beard"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Beard"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"100, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Beard"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"150, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Beard"</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>

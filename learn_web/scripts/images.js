@@ -53,17 +53,12 @@ function changeImgSrc(id, src) {
   document.getElementsByClassName('replace')[7].innerHTML = src;
 }
 
-function changeImgSrcset(id, src) {
-  document.getElementById(id).srcset = src;
-  document.getElementsByClassName('replace')[8].innerHTML = src;
-}
-
 function changeImgVspace(id, pixels) {
   document.getElementById(id).vspace = pixels;
-  document.getElementsByClassName('replace')[12].innerHTML = pixels;
+  document.getElementsByClassName('replace')[8].innerHTML = pixels;
 }
 
 function changeImgWidth(id, pixels) {
   document.getElementById(id).width = pixels;
-  document.getElementsByClassName('replace')[13].innerHTML = pixels;
+  document.getElementsByClassName('replace')[9].innerHTML = pixels;
 }
