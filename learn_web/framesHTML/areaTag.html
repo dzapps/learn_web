@@ -66,7 +66,7 @@
             <td>Specifies the coordinates of the area.</td>
           </tr>
           <tr>
-            <td><a href="#areaDownloads" class="attr-links">download</a></td>
+            <td><a href="#areaDownload" class="attr-links">download</a></td>
             <td>filename</td>
             <td>Specifies that the target will be downloaded when a user clicks on the hyperlink.</td>
           </tr>
@@ -120,21 +120,22 @@
   <div class="attrSeparation"></div>
 
 
-  <div id="mapName" class="frameWindowHTML" style="padding-bottom: 0.5em;">
-    <div><h2 class="tag shadowText" style="float: left;">name</h2></div>
+  <div id="areaAlt" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">alt</h2></div>
     <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
     <div style="clear: both;"><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
       Descriptions:<br />
       <div class="note-value">
-        The &lt;map&gt; tag is used to define a client-side image-map. An image-map is an image with clickable areas.
+        The alt attribute specifies an alternate text for an area, if the image cannot be displayed.
       </div>
       <div class="note-value">
-        The required name attribute of the &lt;map&gt; element is associated with the &lt;img&gt;'s usemap attribute and creates a relationship between the image and the map.
+        The alt attribute provides alternative information for an image if a user for some reason cannot view it
+        (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
       </div>
       <div class="note-value">
-        The &lt;map&gt; element contains a number of &lt;area&gt; elements, that defines the clickable areas in the image map.
+        The alt attribute is required if the href attribute is present.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -142,26 +143,24 @@
     <div class="noteCommonHTML noteHTML">
       Notes:<br />
       <div class="note-value">
-        In HTML5, if the id attribute of the &lt;map&gt; tag is also specified, it must have the same value as the name attribute.
+        In HTML5, the alt attribute is only required if the href attribute is present.
+        If the href attribute is not present, the alt attribute should not be used.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
 
     <div id="attributs"><h2 class="tag shadowText">Attributes</h2></div>
     <div>
-      <table class="hover attr-list attr-list-3">
+      <table class="hover attr-list">
         <thead>
           <tr>
-            <th>Attribute</th><th>Value</th><th>Description</th>
+            <th>Value</th><th>Description</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><a href="#imgAlign" class="attr-links">name</a></td>
-            <td>mapname</td>
-            <td>
-              Required. Specifies the name of an image-map.
-            </td>
+            <td><a href="#areaAlt" class="attr-links">text</a></td>
+            <td>Specifies the alternate text for the area, if the image cannot be displayed.</td>
           </tr>
         </tbody>
       </table>
@@ -171,7 +170,7 @@
     <div><h2 class="tag shadowText">Examples</h2></div>
     <div class="hover" style="padding: 5px; max-width: 90%;">
       <div class="exampleHTMLDiv">
-        <img id="mapNameImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman">
+        <img id="areaAltImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman">
       </div>
 
       <map name="vasserman">
@@ -215,6 +214,336 @@
             <span class="crimson">coords=</span><span class="olive">"150, 88, 25"</span>
             <span class="crimson">alt=</span><span class="olive">"glasses"</span>
             <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Beard"</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="areaCoords" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">coords</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The coords attribute specifies the coordinates of an area in an image-map.
+      </div>
+      <div class="note-value">
+        The coords attribute is used together with the shape attribute to specify the size, shape, and placement of an area.
+      </div>
+      <div class="note-value">
+        The coordinates of the top-left corner of an area are 0,0.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>x1, y1, x2, y2</td>
+            <td>Specifies the coordinates of the top-left and bottom-right corner of the rectangle (shape="rect").</td>
+          </tr>
+          <tr>
+            <td>x, y, radius</td>
+            <td>Specifies the coordinates of the circle center and the radius (shape="circle").</td>
+          </tr>
+          <tr>
+            <td>x1, y1, x2, y2, ..., xn, yn</td>
+            <td>
+              Specifies the coordinates of the edges of the polygon.
+              If the first and last coordinate pairs are not the same, the browser will add the last coordinate pair to close the polygon (shape="poly").
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="areaCoordsExamplBar" class="more-padding;">
+        <a href="#areaCoordsExamplBar">
+          <button onclick="changeAreaCoords('area1', 'rect', '50, 0, 200, 50', 'forehead', 'https://en.wikipedia.org/wiki/Forehead')" class="example-button example-rounded-buttons">example1</button>
+        </a>
+        <a href="#areaCoordsExamplBar">
+          <button onclick="changeImgAlign('areaCoordsImg', 'right')" class="example-button example-rounded-buttons">right</button>
+        </a>
+        <a href="#areaCoordsExamplBar">
+          <button onclick="changeImgAlign('areaCoordsImg', 'middle')" class="example-button example-rounded-buttons">middle</button>
+        </a>
+        <a href="#areaCoordsExamplBar">
+          <button onclick="changeImgAlign('areaCoordsImg', 'top')" class="example-button example-rounded-buttons">top</button>
+        </a>
+        <a href="#areaCoordsExamplBar">
+          <button onclick="changeImgAlign('areaCoordsImg', 'bottom')" class="example-button example-rounded-buttons">bottom</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <img id="areaCoordsImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman2">
+      </div>
+
+      <map name="vasserman2">
+        <area id="area1" shape="rect" coords="50, 150, 200, 240" alt="beard" href="https://en.wikipedia.org/wiki/Beard">
+        <area id="area2" shape="circle" coords="100, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+        <area shape="circle" coords="155, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+      </map>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0 0 1em;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;
+        </p>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"50, 150, 200, 240"</span>
+            <span class="crimson">alt=</span>"<span class="olive replace">beard</span>"
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Beard"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"100, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"150, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="areaDownload" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">download</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The download attribute specifies that the target will be downloaded when a user clicks on the hyperlink.
+      </div>
+      <div class="note-value">
+        This attribute is only used if the href attribute is set.
+      </div>
+      <div class="note-value">
+        The value of the attribute will be the name of the downloaded file.
+        There are no restrictions on allowed values, and the browser will automatically detect the correct file extension
+        and add it to the file (.img, .pdf, .txt, .html, etc.).
+      </div>
+      <div class="note-value">
+        If the value is omitted, the original filename is used.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        The download attribute is not supported in IE, Safari or Opera version 12 (and earlier).
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>filename</td>
+            <td>Optional. Specifies the new filename for the downloaded file.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+
+      <div class="exampleHTMLDiv">
+        <p>Files will be uploaded if they are on the server.</p><br>
+        <img id="areaDownloadImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman3">
+      </div>
+
+      <map name="vasserman3">
+        <area shape="rect" coords="70, 60, 180, 110" alt="glasses" href="../images/glasses.png" download="glasses">
+        <area shape="rect" coords="50, 150, 200, 240" alt="beard" href="../examples/areaDownload.txt" download>
+      </map>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0 0 1em;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_big.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;
+        </p>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"70, 60, 180, 110"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"../images/glasses.png"</span>
+            <span class="crimson">download=</span>"<span class="olive">glasses</span>"&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"50, 150, 200, 240"</span>
+            <span class="crimson">alt=</span><span class="olive">"beard"</span>
+            <span class="crimson">href=</span><span class="olive">"../examples/areaDownload.txt"</span>
+            <span class="crimson">download</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="areaHref" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">href</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The href attribute specifies the hyperlink target for the area.
+      </div>
+      <div class="note-value">
+        If the href attribute is not present, the <area> tag is not a hyperlink.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        In HTML5, if the <area> tag has no href attribute, it is a placeholder for a hyperlink.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>URL</td>
+            <td>
+              Specifies the hyperlink target for the area.<br>
+              Possible values:
+              <ul>
+                <li>An absolute URL - points to another web site (like href="http://www.example.com/example.htm").</li>
+                <li>A relative URL - points to a file within a web site (like href="example.htm").</li>
+                <li>Link to an element with a specified id within the page (like href="#top").</li>
+                <li>Other protocols (like https://, ftp://, mailto:, file:, etc..).</li>
+                <li>A script (like href="javascript:alert('Hello');").</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+
+      <div class="exampleHTMLDiv">
+        <img id="areaHrefImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman4">
+      </div>
+
+      <map name="vasserman4">
+        <area shape="rect" coords="70, 60, 180, 110" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+        <area shape="rect" coords="50, 150, 200, 240" alt="beard" href="https://en.wikipedia.org/wiki/Beard">
+        <area shape="rect" coords="60, 0, 200, 80" alt="forehead" href="javascript:alert('Forehead');">
+      </map>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0 0 1em;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_big.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;
+        </p>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"70, 60, 180, 110"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"50, 150, 200, 240"</span>
+            <span class="crimson">alt=</span><span class="olive">"beard"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Beard"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"60, 0, 200, 80"</span>
+            <span class="crimson">alt=</span><span class="olive">"forehead"</span>
+            <span class="crimson">href=</span><span class="olive">"javascript:alert('Forehead');"</span>&gt;<br>
           </p>
         <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
       &lt;<span class="brown">/div</span>&gt;

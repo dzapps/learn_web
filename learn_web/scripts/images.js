@@ -62,3 +62,11 @@ function changeImgWidth(id, pixels) {
   document.getElementById(id).width = pixels;
   document.getElementsByClassName('replace')[9].innerHTML = pixels;
 }
+
+function changeAreaCoords(id, shape, coords, alt, href) {
+  // document.getElementById(id).shape = shape;
+  // document.getElementById(id).coords = coords;
+  // document.getElementById(id).alt = alt;
+  document.getElementById(id).href = href;
+  document.getElementsByClassName('replace')[0].innerHTML = alt;
+}
