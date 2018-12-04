@@ -76,17 +76,17 @@
             <td>Specifies the hyperlink target for the area.</td>
           </tr>
           <tr>
-            <td><a href="#areaAlt" class="attr-links">hreflang</a></td>
+            <td><a href="#areaHreflang" class="attr-links">hreflang</a></td>
             <td>language_code</td>
             <td>Specifies the language of the target URL.</td>
           </tr>
           <tr>
-            <td><a href="#areaCoords" class="attr-links">media</a></td>
+            <td><a href="#areaMedia" class="attr-links">media</a></td>
             <td>media query</td>
             <td>Specifies what media/device the target URL is optimized for.</td>
           </tr>
           <tr>
-            <td><a href="#areaDownloads" class="attr-links">nohref</a></td>
+            <td><a href="#areaNohref" class="attr-links">nohref</a></td>
             <td>value</td>
             <td>
               <span class="deprecated">Not supported in HTML5.</span><br>
@@ -94,22 +94,22 @@
             </td>
           </tr>
           <tr>
-            <td><a href="#areaHref" class="attr-links">rel</a></td>
+            <td><a href="#areaRel" class="attr-links">rel</a></td>
             <td>alternate<br>author<br>bookmark<br>help<br>license<br>next<br>nofollow<br>noreferrer<br>prefetch<br>prev<br>search<br>tag</td>
             <td>Specifies the relationship between the current document and the target URL.</td>
           </tr>
           <tr>
-            <td><a href="#areaHref" class="attr-links">shape</a></td>
+            <td><a href="#areaShape" class="attr-links">shape</a></td>
             <td>default<br>rect<br>circle<br>poly</td>
             <td>Specifies the shape of the area.</td>
           </tr>
           <tr>
-            <td><a href="#areaAlt" class="attr-links">target</a></td>
+            <td><a href="#areaTarget" class="attr-links">target</a></td>
             <td> _blank<br>_parent<br>_self<br>_top<br>framename</td>
             <td>Specifies where to open the target URL.</td>
           </tr>
           <tr>
-            <td><a href="#areaCoords" class="attr-links">type</a></td>
+            <td><a href="#areaType" class="attr-links">type</a></td>
             <td>media_type</td>
             <td>Specifies the media type of the target URL.</td>
           </tr>
@@ -427,7 +427,7 @@
             <span class="crimson">coords=</span><span class="olive">"70, 60, 180, 110"</span>
             <span class="crimson">alt=</span><span class="olive">"glasses"</span>
             <span class="crimson">href=</span><span class="olive">"../images/glasses.png"</span>
-            <span class="crimson">download=</span>"<span class="olive">glasses</span>"&gt;<br>
+            <span class="crimson">download=</span><span class="olive">"glasses"</span>&gt;<br>
           </p>
           <p class="more-padding" style="margin: 0;">
             &lt;<span class="brown">area</span>
@@ -455,7 +455,7 @@
         The href attribute specifies the hyperlink target for the area.
       </div>
       <div class="note-value">
-        If the href attribute is not present, the <area> tag is not a hyperlink.
+        If the href attribute is not present, the &lt;area&gt; tag is not a hyperlink.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -463,7 +463,7 @@
     <div class="noteCommonHTML noteHTML">
       Note:<br />
       <div class="note-value">
-        In HTML5, if the <area> tag has no href attribute, it is a placeholder for a hyperlink.
+        In HTML5, if the &lt;area&gt; tag has no href attribute, it is a placeholder for a hyperlink.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -544,6 +544,768 @@
             <span class="crimson">coords=</span><span class="olive">"60, 0, 200, 80"</span>
             <span class="crimson">alt=</span><span class="olive">"forehead"</span>
             <span class="crimson">href=</span><span class="olive">"javascript:alert('Forehead');"</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="areaHreflang" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">hreflang</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The hreflang attribute specifies the language of the target URL in the area.
+      </div>
+      <div class="note-value">
+        This attribute is only used if the href attribute is set.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        This attribute is purely advisory.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>language_code</td>
+            <td>A two-letter language code that specifies the language of the linked document.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+
+      <div class="exampleHTMLDiv">
+        <img id="areaHreflangImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman5">
+      </div>
+
+      <map name="vasserman5">
+        <area shape="rect" coords="70, 60, 180, 110" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+      </map>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0 0 1em;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_big.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;
+        </p>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"70, 60, 180, 110"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>
+            <span class="crimson">hreflang=</span><span class="olive">"en"</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="areaMedia" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">media</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The media attribute specifies what media/device the target URL is optimized for.
+      </div>
+      <div class="note-value">
+        This attribute is used to specify that the URL is designed for special devices (like iPhone), speech or print media.
+      </div>
+      <div class="note-value">
+        This attribute can accept several values.
+      </div>
+      <div class="note-value">
+        Only used if the href attribute is present.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        This attribute is purely advisory.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Possible operators
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>and</td>
+            <td>Specifies an AND operator.</td>
+          </tr>
+          <tr>
+            <td>note</td>
+            <td>Specifies a NOT operator.</td>
+          </tr>
+          <tr>
+            <td>,</td>
+            <td>Specifies an OR operator.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Devices
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>all</td>
+            <td>Suitable for all devices. This is default.</td>
+          </tr>
+          <tr>
+            <td>aural</td>
+            <td>Speech synthesizers.</td>
+          </tr>
+          <tr>
+            <td>braille</td>
+            <td>Braille feedback devices.</td>
+          </tr>
+          <tr>
+            <td>handheld</td>
+            <td>Handheld devices (small screen, limited bandwidth).</td>
+          </tr>
+          <tr>
+            <td>projection</td>
+            <td>Projectors.</td>
+          </tr>
+          <tr>
+            <td>print</td>
+            <td>Print preview mode/printed pages.</td>
+          </tr>
+          <tr>
+            <td>screen</td>
+            <td>Computer screens.</td>
+          </tr>
+          <tr>
+            <td>tty</td>
+            <td>Teletypes and similar media using a fixed-pitch character grid.</td>
+          </tr>
+          <tr>
+            <td>tv</td>
+            <td>Television type devices (low resolution, limited scroll ability).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Values
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>width</td>
+            <td>
+              Specifies the width of the targeted display area.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (min-width:500px)".
+            </td>
+          </tr>
+          <tr>
+            <td>height</td>
+            <td>
+              Specifies the height of the targeted display area.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (max-height:700px)".
+            </td>
+          </tr>
+          <tr>
+            <td>device-width</td>
+            <td>
+              Specifies the width of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (device-width:500px)".
+            </td>
+          </tr>
+          <tr>
+            <td>device-height</td>
+            <td>
+              Specifies the height of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (device-height:500px)".
+            </td>
+          </tr>
+          <tr>
+            <td>orientation</td>
+            <td>
+              Specifies the orientation of the target display/paper.
+              Possible values: "portrait" or "landscape"
+              Example: media="all and (orientation: landscape)".
+            </td>
+          </tr>
+          <tr>
+            <td>aspect-ratio</td>
+            <td>
+              Specifies the width/height ratio of the targeted display area.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (aspect-ratio:16/9)".
+            </td>
+          </tr>
+          <tr>
+            <td>device-aspect-ratio</td>
+            <td>
+              Specifies the device-width/device-height ratio of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (aspect-ratio:16/9)".
+            </td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td>
+              Specifies the bits per color of target display.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (color:3)".
+            </td>
+          </tr>
+          <tr>
+            <td>color-index</td>
+            <td>
+              Specifies the number of colors the target display can handle.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (min-color-index:256)".
+            </td>
+          </tr>
+          <tr>
+            <td>monochrome</td>
+            <td>
+              Specifies the bits per pixel in a monochrome frame buffer.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (monochrome:2)".
+            </td>
+          </tr>
+          <tr>
+            <td>resolution</td>
+            <td>
+              Specifies the pixel density (dpi or dpcm) of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="print and (resolution:300dpi)".
+            </td>
+          </tr>
+          <tr>
+            <td>scan</td>
+            <td>
+              Specifies scanning method of a tv display.
+              Possible values are "progressive" and "interlace".
+              Example: media="tv and (scan:interlace)".
+            </td>
+          </tr>
+          <tr>
+            <td>grid</td>
+            <td>
+              Specifies if the output device is grid or bitmap.
+              Possible values are "1" for grid, and "0" otherwise.
+              Example: media="handheld and (grid:1)".
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+
+      <div class="exampleHTMLDiv">
+        <img id="areaMediaImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman6">
+      </div>
+
+      <map name="vasserman6">
+        <area shape="rect" coords="0, 0, 250, 220" alt="pockets" href="../images/vasserman_pockets.jpg" media="screen and (min-color-index:256)">
+      </map>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0 0 1em;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_big.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;
+        </p>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"0, 0, 250, 220"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"../images/vasserman_pockets.jpg"</span>
+            <span class="crimson">media=</span><span class="olive">"screen and (min-color-index:256)"</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="areaNohref" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">nohref</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;area&gt; nohref attribute is not supported in HTML5.
+      </div>
+      <div class="note-value">
+        The nohref attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that an area has no associated link.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        The nohref attribute indicates that an &lt;area&gt; has no associated link. You could more easily do that by NOT including a href attribute.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+
+      <div class="exampleHTMLDiv">
+        <img id="areaNohrefImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman7">
+      </div>
+
+      <map name="vasserman7">
+        <area shape="rect" coords="70, 60, 180, 110" alt="glasses" nohref>
+      </map>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0 0 1em;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_big.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;
+        </p>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"70, 60, 180, 110"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">nohref</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="areaShape" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">shape</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The shape attribute specifies the shape of an area.
+      </div>
+      <div class="note-value">
+        The shape attribute is used together with the coords attribute to specify the size, shape, and placement of an area.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>default</td>
+            <td>Specifies the entire region.</td>
+          </tr>
+          <tr>
+            <td>rect</td>
+            <td>Defines a rectangular region.</td>
+          </tr>
+          <tr>
+            <td>circle</td>
+            <td>Defines a circular region.</td>
+          </tr>
+          <tr>
+            <td>poly</td>
+            <td>Defines a polygonal region.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+
+      <div class="exampleHTMLDiv">
+        <img id="areaShapeImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman8">
+      </div>
+
+      <map name="vasserman8">
+        <area shape="rect" coords="50, 150, 200, 240" alt="beard" href="https://en.wikipedia.org/wiki/Beard">
+        <area shape="circle" coords="100, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+        <area shape="circle" coords="155, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+        <area shape="poly" coords="75, 0, 160, 0, 220, 60, 65, 70, 75, 0" alt="forehead" href="https://en.wikipedia.org/wiki/Forehead">
+      </map>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0 0 1em;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;
+        </p>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"50, 150, 200, 240"</span>
+            <span class="crimson">alt=</span><span class="olive">"beard"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Beard"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"100, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"155, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"poly"</span>
+            <span class="crimson">coords=</span><span class="olive">"75, 0, 160, 0, 220, 60, 65, 70, 75, 0"</span>
+            <span class="crimson">alt=</span><span class="olive">"forehead"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Forehead"</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="areaTarget" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">target</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The target attribute specifies where to open the linked document.
+      </div>
+      <div class="note-value">
+        Only used if the href attribute is present.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>_blank</td>
+            <td>Opens the linked document in a new window or tab.</td>
+          </tr>
+          <tr>
+            <td>_self</td>
+            <td>Opens the linked document in the same frame (this is default).</td>
+          </tr>
+          <tr>
+            <td>_parent</td>
+            <td>Opens the linked document in the parent frame.</td>
+          </tr>
+          <tr>
+            <td>_top</td>
+            <td>Opens the linked document in the full body of the window.</td>
+          </tr>
+          <tr>
+            <td>framename</td>
+            <td>Opens the linked document in a named iframe.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+
+      <div class="exampleHTMLDiv">
+        <img id="areaTargetImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman9">
+
+        <iframe width="250" height="220" name="areaTargerFramename"></iframe>
+      </div>
+
+      <map name="vasserman9">
+        <area shape="rect" coords="50, 150, 200, 240" alt="beard" href="https://en.wikipedia.org/wiki/Beard" target="_blank">
+        <area shape="circle" coords="100, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses" target="_parent">
+        <area shape="circle" coords="155, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses" target="_self">
+        <area shape="poly" coords="75, 0, 160, 0, 220, 60, 65, 70, 75, 0" alt="forehead" href="https://en.wikipedia.org/wiki/Forehead" target="_top">
+        <area shape="poly" coords="125, 70, 145, 150, 100, 150, 125, 70" alt="nose" href="https://en.wikipedia.org/wiki/Nose" target="areaTargerFramename">
+      </map>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0 0 1em;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;
+        </p>
+        <p class="left-padding" style="margin: 0 0 1em;">
+          &lt;<span class="brown">iframe</span>&gt;
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">name=</span><span class="olive">"framename"</span>&lt;<span class="brown">/iframe</span>&gt;
+        </p>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"50, 150, 200, 240"</span>
+            <span class="crimson">alt=</span><span class="olive">"beard"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Beard"</span>
+            <span class="crimson">target=</span><span class="olive">"_blank"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"100, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>
+            <span class="crimson">target=</span><span class="olive">"_parent"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"155, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>
+            <span class="crimson">target=</span><span class="olive">"_self"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"poly"</span>
+            <span class="crimson">coords=</span><span class="olive">"75, 0, 160, 0, 220, 60, 65, 70, 75, 0"</span>
+            <span class="crimson">alt=</span><span class="olive">"forehead"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Forehead"</span>
+            <span class="crimson">target=</span><span class="olive">"_top"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"poly"</span>
+            <span class="crimson">coords=</span><span class="olive">"125, 70, 145, 150, 100, 150, 125, 70"</span>
+            <span class="crimson">alt=</span><span class="olive">"nose"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Nose"</span>
+            <span class="crimson">target=</span><span class="olive">"framename"</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="areaType" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">type</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The type attribute specifies the Internet media type (formerly known as MIME type) of the target URL.
+      </div>
+      <div class="note-value">
+        This attribute is only used if the href attribute is set.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        This attribute is purely advisory.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>media_type</td>
+            <td>The Internet media type of the linked document.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+
+      <div class="exampleHTMLDiv">
+        <img id="areaTypeImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman10">
+      </div>
+
+      <map name="vasserman10">
+        <area shape="circle" coords="100, 88, 25" alt="glasses" href="../images/glasses.png" type="image/png">
+        <area shape="circle" coords="155, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+      </map>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0 0 1em;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;
+        </p>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"100, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"htt../images/glasses.png"</span>
+            <span class="crimson">type=</span><span class="olive">"image/png"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"155, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>&gt;<br>
           </p>
         <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
       &lt;<span class="brown">/div</span>&gt;
