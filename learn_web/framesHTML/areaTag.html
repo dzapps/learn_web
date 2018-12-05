@@ -38,7 +38,7 @@
     <div><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
-      Descriptions:<br />
+      Note:<br />
       <div class="note-value">
         The usemap attribute in the &lt;img&gt; tag is associated with the &lt;map&gt; element's name attribute,
         and creates a relationship between the image and the map.
@@ -159,7 +159,7 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="#areaAlt" class="attr-links">text</a></td>
+            <td>text</td>
             <td>Specifies the alternate text for the area, if the image cannot be displayed.</td>
           </tr>
         </tbody>
@@ -970,6 +970,134 @@
             <span class="crimson">coords=</span><span class="olive">"70, 60, 180, 110"</span>
             <span class="crimson">alt=</span><span class="olive">"glasses"</span>
             <span class="crimson">nohref</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="areaRel" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">rel</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The rel attribute specifies the relationship between the current document and the linked document.
+      </div>
+      <div class="note-value">
+        Only used if the href attribute is present.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Attribute values
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>alternate</td>
+            <td>Links to an alternate version of the document (i.e. print page, translated or mirror).</td>
+          </tr>
+          <tr>
+            <td>autor</td>
+            <td>Links to the author of the document.</td>
+          </tr>
+          <tr>
+            <td>bookmark</td>
+            <td>Permanent URL used for bookmarking.</td>
+          </tr>
+          <tr>
+            <td>help</td>
+            <td>Links to a help document.</td>
+          </tr>
+          <tr>
+            <td>license</td>
+            <td>Links to copyright information for the document.</td>
+          </tr>
+          <tr>
+            <td>next</td>
+            <td>The next document in a selection.</td>
+          </tr>
+          <tr>
+            <td>nofollow</td>
+            <td>
+              Links to an unendorsed document, like a paid link.
+              ("nofollow" is used by Google, to specify that the Google search spider should not follow that link).
+            </td>
+          </tr>
+          <tr>
+            <td>noreferrer</td>
+            <td>Specifies that the browser should not send a HTTP referer header if the user follows the hyperlink.</td>
+          </tr>
+          <tr>
+            <td>prefetch</td>
+            <td>Specifies that the target document should be cached.</td>
+          </tr>
+          <tr>
+            <td>prev</td>
+            <td>The previous document in a selection.</td>
+          </tr>
+          <tr>
+            <td>search</td>
+            <td>Links to a search tool for the document.</td>
+          </tr>
+          <tr>
+            <td>tag</td>
+            <td>A tag (keyword) for the current document.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+
+      <div class="exampleHTMLDiv">
+        <img id="areaRelImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman6">
+      </div>
+
+      <map name="vasserman6">
+        <area shape="rect" coords="0, 0, 250, 220" alt="pockets" href="../images/vasserman_pockets.jpg" media="screen and (min-color-index:256)">
+      </map>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0 0 1em;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_big.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;
+        </p>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"0, 0, 250, 220"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"../images/vasserman_pockets.jpg"</span>
+            <span class="crimson">media=</span><span class="olive">"screen and (min-color-index:256)"</span>&gt;<br>
           </p>
         <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
       &lt;<span class="brown">/div</span>&gt;

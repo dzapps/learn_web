@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+<body>
+  <script src="../scripts/images.js"></script>
+  <div class="tag">
+    <h1 class="highlightText">Images</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">&lt;canvas&gt;</h2></div>
+    <div class="" style="float: right;"><a href="../pagesHTML/images.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;canvas&gt; tag is used to draw graphics, on the fly, via scripting (usually JavaScript).
+      </div>
+      <div class="note-value">
+        The &lt;canvas&gt; tag is only a container for graphics, you must use a script to actually draw the graphics.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Note:<br />
+      <div class="note-value">
+        Any text inside the &lt;canvas&gt; element will be displayed in browsers that does not support &lt;canvas&gt;.
+      </div>
+      <div class="note-value">
+        The canvas tag is not supported in Internet Explorer 8 and earlier versions.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="canvasAttributs"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#canvasHeight" class="attr-links">height</a></td>
+            <td>pixels</td>
+            <td>Specifies the height of the canvas.</td>
+          </tr>
+          <tr>
+            <td><a href="#canvasWidth" class="attr-links">width</a></td>
+            <td>pixels</td>
+            <td>Specifies the width of the canvas.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="canvasHeight" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">height</h2></div>
+    <div style="float: right;"><a href="#canvasAttributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The height attribute specifies the height of the &lt;canvas&gt; element, in pixels.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Each time the height or width of a canvas is re-set, the canvas content will be cleared.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributs"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>Specifies the height of the canvas, in pixels (e.g. "100"). Default height is "150".</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+
+      <div id="canvasHeightExamplBar" class="more-padding;">
+        <a href="#canvasHeightExamplBar">
+          <button onclick="changeCanvasHeight('myCanvasHeight', '50')" class="example-button example-rounded-buttons">50</button>
+        </a>
+        <a href="#canvasHeightExamplBar">
+          <button onclick="changeCanvasHeight('myCanvasHeight', '250')" class="example-button example-rounded-buttons">250</button>
+        </a>
+        <a href="#canvasHeightExamplBar">
+          <button onclick="changeCanvasHeight('myCanvasHeight', '300')" class="example-button example-rounded-buttons">300</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <canvas id="myCanvasHeight" width="200" height="200" style="border: 2px solid">
+      </div>
+    </div>
+
+    <script>
+      var c = document.getElementById("myCanvasHeight");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "#0890ff";
+      ctx.fillRect(50, 50, 100, 100);
+    </script>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">canvas</span>
+          <span class="purple">id=</span><span class="olive">"myCanvas"</span>
+          <span class="crimson">width=</span><span class="olive">"200"</span>
+          <span class="crimson">height=</span><span class="olive">"<span class="replaceCanvas">200</span>"</span>
+          <span class="crimson">style=</span><span class="olive">"2px solid"</span>&gt;
+        </p>
+      &lt;<span class="brown">/div</span>&gt;<br><br>
+
+      &lt;<span class="brown">script</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          <span class="purple">var </span><span class="black">c =</span>
+          <span class="maroon">document.</span><span class="slateblue">getElementById</span><span class="black">(<span class="olive">"myCanvas"</span>);</span><br>
+          <span class="purple">var </span><span class="black">ctx =</span>
+          <span class="maroon">c.</span><span class="slateblue">getContext</span><span class="black">(<span class="olive">"2d"</span>);</span><br>
+          <span class="maroon">ctx.fillStyle </span><span class="black">= <span class="olive">"#0890ff"</span>;</span><br>
+          <span class="maroon">ctx.</span><span class="blue">fillRect</span><span class="black">(<span class="olive">50, 50, 100, 100</span>);</span><br>
+        </p>
+      &lt;<span class="brown">/script</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="canvasWidth" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">width</h2></div>
+    <div style="float: right;"><a href="#canvasAttributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The width attribute specifies the height of the &lt;canvas&gt; element, in pixels.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Each time the height or width of a canvas is re-set, the canvas content will be cleared.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributs"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>Specifies the width of the canvas, in pixels (e.g. "100"). Default width is "150".</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+
+      <div id="canvasWidthExamplBar" class="more-padding;">
+        <a href="#canvasWidthExamplBar">
+          <button onclick="changeCanvasWidth('myCanvasWidth', '50')" class="example-button example-rounded-buttons">50</button>
+        </a>
+        <a href="#canvasWidthExamplBar">
+          <button onclick="changeCanvasWidth('myCanvasWidth', '250')" class="example-button example-rounded-buttons">250</button>
+        </a>
+        <a href="#canvasWidthExamplBar">
+          <button onclick="changeCanvasWidth('myCanvasWidth', '300')" class="example-button example-rounded-buttons">300</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <canvas id="myCanvasWidth" width="200" height="200" style="border: 2px solid">
+      </div>
+    </div>
+
+    <script>
+      var c = document.getElementById("myCanvasWidth");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "#0890ff";
+      ctx.fillRect(50, 50, 100, 100);
+    </script>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">canvas</span>
+          <span class="purple">id=</span><span class="olive">"myCanvas"</span>
+          <span class="crimson">width=</span><span class="olive">"<span class="replaceCanvas">200</span>"</span>
+          <span class="crimson">height=</span><span class="olive">"200"</span>
+          <span class="crimson">style=</span><span class="olive">"2px solid"</span>&gt;
+        </p>
+      &lt;<span class="brown">/div</span>&gt;<br><br>
+
+      &lt;<span class="brown">script</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          <span class="purple">var </span><span class="black">c =</span>
+          <span class="maroon">document.</span><span class="slateblue">getElementById</span><span class="black">(<span class="olive">"myCanvas"</span>);</span><br>
+          <span class="purple">var </span><span class="black">ctx =</span>
+          <span class="maroon">c.</span><span class="slateblue">getContext</span><span class="black">(<span class="olive">"2d"</span>);</span><br>
+          <span class="maroon">ctx.fillStyle </span><span class="black">= <span class="olive">"#0890ff"</span>;</span><br>
+          <span class="maroon">ctx.</span><span class="blue">fillRect</span><span class="black">(<span class="olive">50, 50, 100, 100</span>);</span><br>
+        </p>
+      &lt;<span class="brown">/script</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>

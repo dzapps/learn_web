@@ -70,3 +70,13 @@ function changeAreaCoords(id, shape, coords, alt, href) {
   document.getElementById(id).href = href;
   document.getElementsByClassName('replace')[0].innerHTML = alt;
 }
+
+function changeCanvasHeight(id, height) {
+  document.getElementById(id).height = height;
+  document.getElementsByClassName('replaceCanvas')[0].innerHTML = height;
+}
+
+function changeCanvasWidth(id, width) {
+  document.getElementById(id).width = width;
+  document.getElementsByClassName('replaceCanvas')[1].innerHTML = width;
+}
