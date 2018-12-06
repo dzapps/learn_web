@@ -272,32 +272,16 @@
 
     <div><h2 class="tag shadowText">Examples</h2></div>
     <div class="hover" style="padding: 5px; max-width: 90%;">
-      <div id="areaCoordsExamplBar" class="more-padding;">
-        <a href="#areaCoordsExamplBar">
-          <button onclick="changeAreaCoords('area1', 'rect', '50, 0, 200, 50', 'forehead', 'https://en.wikipedia.org/wiki/Forehead')" class="example-button example-rounded-buttons">example1</button>
-        </a>
-        <a href="#areaCoordsExamplBar">
-          <button onclick="changeImgAlign('areaCoordsImg', 'right')" class="example-button example-rounded-buttons">right</button>
-        </a>
-        <a href="#areaCoordsExamplBar">
-          <button onclick="changeImgAlign('areaCoordsImg', 'middle')" class="example-button example-rounded-buttons">middle</button>
-        </a>
-        <a href="#areaCoordsExamplBar">
-          <button onclick="changeImgAlign('areaCoordsImg', 'top')" class="example-button example-rounded-buttons">top</button>
-        </a>
-        <a href="#areaCoordsExamplBar">
-          <button onclick="changeImgAlign('areaCoordsImg', 'bottom')" class="example-button example-rounded-buttons">bottom</button>
-        </a>
-      </div>
 
       <div class="exampleHTMLDiv">
         <img id="areaCoordsImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman2">
       </div>
 
       <map name="vasserman2">
-        <area id="area1" shape="rect" coords="50, 150, 200, 240" alt="beard" href="https://en.wikipedia.org/wiki/Beard">
-        <area id="area2" shape="circle" coords="100, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+        <area shape="rect" coords="50, 150, 200, 240" alt="beard" href="https://en.wikipedia.org/wiki/Beard">
+        <area shape="circle" coords="100, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
         <area shape="circle" coords="155, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+        <area shape="poly" coords="75, 0, 160, 0, 220, 60, 65, 70, 75, 0" alt="forehead" href="https://en.wikipedia.org/wiki/Forehead">
       </map>
     </div>
 
@@ -335,6 +319,13 @@
             <span class="crimson">coords=</span><span class="olive">"150, 88, 25"</span>
             <span class="crimson">alt=</span><span class="olive">"glasses"</span>
             <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"poly"</span>
+            <span class="crimson">coords=</span><span class="olive">"75, 0, 160, 0, 220, 60, 65, 70, 75, 0"</span>
+            <span class="crimson">alt=</span><span class="olive">"forehead"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Forehead"</span>&gt;<br>
           </p>
         <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
       &lt;<span class="brown">/div</span>&gt;
@@ -1069,11 +1060,11 @@
     <div class="hover" style="padding: 5px; max-width: 90%;">
 
       <div class="exampleHTMLDiv">
-        <img id="areaRelImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman6">
+        <img id="areaRelImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman8">
       </div>
 
-      <map name="vasserman6">
-        <area shape="rect" coords="0, 0, 250, 220" alt="pockets" href="../images/vasserman_pockets.jpg" media="screen and (min-color-index:256)">
+      <map name="vasserman8">
+        <area shape="rect" coords="0, 0, 250, 220" alt="pockets" href="../images/vasserman_pockets.jpg" rel="alernate">
       </map>
     </div>
 
@@ -1095,9 +1086,9 @@
             &lt;<span class="brown">area</span>
             <span class="crimson">shape=</span><span class="olive">"rect"</span>
             <span class="crimson">coords=</span><span class="olive">"0, 0, 250, 220"</span>
-            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">alt=</span><span class="olive">"pockets"</span>
             <span class="crimson">href=</span><span class="olive">"../images/vasserman_pockets.jpg"</span>
-            <span class="crimson">media=</span><span class="olive">"screen and (min-color-index:256)"</span>&gt;<br>
+            <span class="crimson">rel=</span><span class="olive">"alternate"</span>&gt;<br>
           </p>
         <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
       &lt;<span class="brown">/div</span>&gt;
@@ -1156,10 +1147,10 @@
     <div class="hover" style="padding: 5px; max-width: 90%;">
 
       <div class="exampleHTMLDiv">
-        <img id="areaShapeImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman8">
+        <img id="areaShapeImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman9">
       </div>
 
-      <map name="vasserman8">
+      <map name="vasserman9">
         <area shape="rect" coords="50, 150, 200, 240" alt="beard" href="https://en.wikipedia.org/wiki/Beard">
         <area shape="circle" coords="100, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
         <area shape="circle" coords="155, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
@@ -1270,12 +1261,12 @@
     <div class="hover" style="padding: 5px; max-width: 90%;">
 
       <div class="exampleHTMLDiv">
-        <img id="areaTargetImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman9">
+        <img id="areaTargetImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman10">
 
         <iframe width="250" height="220" name="areaTargerFramename"></iframe>
       </div>
 
-      <map name="vasserman9">
+      <map name="vasserman10">
         <area shape="rect" coords="50, 150, 200, 240" alt="beard" href="https://en.wikipedia.org/wiki/Beard" target="_blank">
         <area shape="circle" coords="100, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses" target="_parent">
         <area shape="circle" coords="155, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses" target="_self">
@@ -1397,10 +1388,10 @@
     <div class="hover" style="padding: 5px; max-width: 90%;">
 
       <div class="exampleHTMLDiv">
-        <img id="areaTypeImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman10">
+        <img id="areaTypeImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman11">
       </div>
 
-      <map name="vasserman10">
+      <map name="vasserman11">
         <area shape="circle" coords="100, 88, 25" alt="glasses" href="../images/glasses.png" type="image/png">
         <area shape="circle" coords="155, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
       </map>

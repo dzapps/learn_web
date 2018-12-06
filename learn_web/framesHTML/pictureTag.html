@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capture</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+<body>
+  <script src="../scripts/images.js"></script>
+  <div class="tag">
+    <h1 class="highlightText">Images</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">&lt;picture&gt;</h2></div>
+    <div class="" style="float: right;"><a href="../pagesHTML/images.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+         The &lt;picture&gt; tag gives web developers more flexibility in specifying image resources.
+      </div>
+      <div class="note-value">
+        The most common use of the &lt;picture&gt; element will be for art direction in responsive designs.
+        Instead ofhaving one image that is scaled up or down based on the viewport width,
+        multiple images can be designed to more nicely fill the browser viewport.
+      </div>
+      <div class="note-value">
+        The browser will use the attribute values to load the most appropriate image.
+        The browser will use the first &lt;source&gt; element with a matching hint and ignore any following &lt;source&gt; tags.
+      </div>
+      <div class="note-value">
+        The &lt;img&gt; element is required as the last child tag of the &lt;picture&gt; declaration block.
+        The &lt;img&gt; element is used to provide backward compatibility for browsers that do not support the &lt;picture&gt; element, or if none of the &lt;source&gt; tags matched.
+      </div>
+      <div class="note-value">
+        The &lt;picture&gt; element works similar to the &lt;video&gt; and &lt;audio&gt; elements. You set up different sources, and the first source that fits the preferences is the one being used.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+      <div style="float: right;"><a href="#canvasAttributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+      <p style="clear: both;"></p>
+
+      <div><h2 class="tag shadowText">Attributes</h2></div>
+      <div>
+        <table class="hover attr-list">
+          <thead>
+            <tr>
+              <th>Value</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>srcset</td>
+              <td>Required. Defines the URL of the image to show.</td>
+            </tr>
+            <tr>
+              <td>media</td>
+              <td>Accepts any valid media query that would normally be defined in a CSS.</td>
+            </tr>
+            <tr>
+              <td>sizes</td>
+              <td>
+                Defines a single width descriptor, a single media query with width descriptor,
+                or a comma-delimited list of media queries with a width descriptor.
+              </td>
+            </tr>
+            <tr>
+              <td>type</td>
+              <td>Defines the MIME type.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div><hr class="hr-length-90perc"></div>
+
+      <div><h2 class="tag shadowText">Examples</h2></div>
+      <div class="hover" style="padding: 5px; max-width: 90%;">
+        <div class="exampleHTMLDiv">
+          <picture>
+            <source media="(max-width: 1265px)" srcset="../images/vasserman_thinking.gif">
+            <source media="(max-width: 1500px)" srcset="../images/vasserman_big.jpg">
+            <img src="../images/mountain.jpg" alt="" style="width:auto;">
+          </picture>
+        </div>
+      </div>
+
+      <div class="codeHTML blue borders-none">
+        &lt;<span class="brown">figure</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_big.jpg"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">height=</span><span class="olive">"200"</span>&gt;<br>
+        </p>
+        &lt;<span class="brown">/figure</span>&gt;
+      </div>
+    </div>
+
+    <div class="attrSeparation"></div>
+
+</body>
+</html>
