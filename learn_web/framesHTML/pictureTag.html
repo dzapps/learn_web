@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Capture</title>
+  <title>Picture</title>
   <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
   <link rel="stylesheet" href="../styles/common.css" />
   <link rel="stylesheet" href="../styles/html_style.css" />
@@ -89,6 +89,7 @@
       <div><h2 class="tag shadowText">Examples</h2></div>
       <div class="hover" style="padding: 5px; max-width: 90%;">
         <div class="exampleHTMLDiv">
+          <p>Change the size of the browser window.</p><br>
           <picture>
             <source media="(max-width: 1265px)" srcset="../images/vasserman_thinking.gif">
             <source media="(max-width: 1500px)" srcset="../images/vasserman_big.jpg">
@@ -98,15 +99,22 @@
       </div>
 
       <div class="codeHTML blue borders-none">
-        &lt;<span class="brown">figure</span>&gt;
+        &lt;<span class="brown">picture</span>&gt;
         <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">source</span>
+          <span class="crimson">media=</span><span class="olive">"(max-width: 1265px)"</span>
+          <span class="crimson">alt=</span><span class="olive">"../images/vasserman_thinking.gif"</span>&gt;<br>
+
+          &lt;<span class="brown">source</span>
+          <span class="crimson">media=</span><span class="olive">"(max-width: 1500px)"</span>
+          <span class="crimson">alt=</span><span class="olive">"../images/vasserman_big.jpg"</span>&gt;<br>
+
           &lt;<span class="brown">img</span>
-          <span class="crimson">src=</span><span class="olive">"..images/vasserman_big.jpg"</span>
+          <span class="crimson">src=</span><span class="olive">"..images/mountain.jpg"</span>
           <span class="crimson">alt=</span><span class="olive">""</span>
-          <span class="crimson">width=</span><span class="olive">"250"</span>
-          <span class="crimson">height=</span><span class="olive">"200"</span>&gt;<br>
+          <span class="crimson">style=</span><span class="olive">"width:<span class="crimson">auto</span>"</span>&gt;<br>
         </p>
-        &lt;<span class="brown">/figure</span>&gt;
+        &lt;<span class="brown">/picture</span>&gt;
       </div>
     </div>
 
