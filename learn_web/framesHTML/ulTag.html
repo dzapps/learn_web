@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ul</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+<body>
+  <script src="../scripts/lists.js"></script>
+  <div class="tag">
+    <h1 class="highlightText">Lists</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+  <div><h2 class="tag shadowText" style="float: left;">&lt;ul&gt;</h2></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/images.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;ul&gt; tag defines an unordered (bulleted) list.
+      </div>
+      <div class="note-value">
+        Use the &lt;ul&gt; tag together with the &lt;li&gt; tag to create unordered lists.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributs"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#listsUl" class="attr-links">compact</a></td>
+            <td>compact</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies that the list should render smaller than normal.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#imgAlt" class="attr-links">type</a></td>
+            <td>disc<br>square<br>circle</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the kind of marker to use in the list.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="lis" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">compact</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The compact attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that the list should render smaller than normal,
+        by reducing the space between lines and the indentation of the list.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The compact attribute of &lt;ul&gt; is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+
+    <div class="exampleHTMLDiv" style="text-align: left;">
+      <ul compact>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="codeHTML blue borders-none">
+    &lt;<span class="brown">div</span>&gt;
+      <p class="left-padding" style="margin: 0;">
+        <span class="black">Example text.</span><br>
+        &lt;<span class="brown">img</span>
+        <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+        <span class="crimson">alt=</span><span class="olive">""</span>
+        <span class="crimson">align=</span><span class="olive">"<span class="replace">bottom</span>"</span>&gt;<br>
+        <span class="black">Example text.</span>
+      </p>
+    &lt;<span class="brown">/div</span>&gt;
+  </div>
+</div>
+<div class="attrSeparation"></div>
+
+
+  <div id="imgAlt" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">alt</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The required alt attribute specifies an alternate text for an image, if the image cannot be displayed.
+      </div>
+      <div class="note-value">
+        The alt attribute provides alternative information for an image if a user for some reason cannot view it
+        (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        To create a tooltip for an image, use the title attribute!
+      </div>
+      <div class="note-value">
+        Internet Explorer 7 (and earlier) displays the value of the alt attribute as a tooltip,
+        when mousing over the image. This is NOT the correct behavior, according to the HTML specification.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>text</td>
+            <td>
+              Specifies an alternate text for an image.<br>
+              Guidelines for the alt text:
+              <ul>
+              <li>The text should describe the image if the image contains information.</li>
+              <li>The text should explain where the link goes if the image is inside an &lt;a&gt; element.</li>
+              <li>Use alt="" if the image is only for decoration</li>
+            </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="imgAltExamplBar" class="more-padding;">
+        <a href="#imgAltExamplBar">
+          <button onclick="changeImgAlt('imgAltImg', '')" class="example-button example-rounded-buttons">example1</button>
+        </a>
+        <a href="#imgAltExamplBar">
+          <button onclick="changeImgAlt('imgAltImg', 'vasserman_thinking')" class="example-button example-rounded-buttons">example2</button>
+        </a>
+        <a href="#imgAltExamplBar">
+          <button onclick="changeImgAlt('imgAltImg', 'vasserman')" class="example-button example-rounded-buttons">example3</button>
+        </a>
+        <a href="#imgAltExamplBar">
+          <button onclick="changeImgAndSrcAlt('imgAltImg', 'vasserman')" class="example-button example-rounded-buttons">example4</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <img id="imgAltImg" src="../images/vasserman_thinking.gif" alt="">
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"<span class="replace">..images/vasserman_thinking.gif</span>"</span>
+          <span class="crimson">alt=</span><span class="olive">"<span class="replace"></span>"</span>&gt;<br>
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="imgBorder" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">border</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The border attribute specifies the width of the border around an image.
+      </div>
+      <div class="note-value">
+        An image has no border by default.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The border attribute of &lt;img&gt; is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>The width of the border, in pixels.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="imgBorderExamplBar" class="more-padding;">
+        <a href="#imgBorderExamplBar">
+          <button onclick="changeImgBorder('imgBorderImg', '1')" class="example-button example-rounded-buttons">1</button>
+        </a>
+        <a href="#imgBorderExamplBar">
+          <button onclick="changeImgBorder('imgBorderImg', '3')" class="example-button example-rounded-buttons">3</button>
+        </a>
+        <a href="#imgBorderExamplBar">
+          <button onclick="changeImgBorder('imgBorderImg', '5')" class="example-button example-rounded-buttons">5</button>
+        </a>
+        <a href="#imgBorderExamplBar">
+          <button onclick="changeImgBorder('imgBorderImg', '10')" class="example-button example-rounded-buttons">10</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <img id="imgBorderImg" src="../images/vasserman_thinking.gif" alt="" border="5">
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">border=</span><span class="olive">"<span class="replace"></span>"</span>&gt;<br>
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="imgCrossorigin" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">crossorigin</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        Allow images from third-party sites that allow cross-origin access to be used with canvas.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>anonimous</td>
+            <td>
+              Before downloading the execution script, cross-domain request (Origin: HTTP header),
+              while not passing access parameters (such as: cookie, X.509 certificate, login / password for basic HTTP authentication).
+              The server response must contain a header. Access-Control-Allow-Origin: HTTP header.
+            </td>
+          </tr>
+          <tr>
+            <td>use-credentials</td>
+            <td>
+              Before downloading the script, a cross-domain request (Origin: HTTP header)
+              is executed with the indication of access parameters (in the form of a cookie, a certificate or a login / password pair).
+              The server response must include an Access-Control-Allow-Origin: HTTP header, otherwise, the use of the image on &lt;canvas&gt; is restricted.
+              If this attribute is not specified, then CORS is not used when loading the script (there is no Origin: HTTP header).
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">crossorigin=</span><span class="olive">"use-credentials"</span>&gt;<br>
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="imgHeight" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">height</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The height attribute specifies the height of an image, in pixels.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Always specify both the height and width attributes for images.
+        If height and width are set, the space required for the image is reserved when the page is loaded.
+        However, without these attributes, the browser does not know the size of the image,
+        and cannot reserve the appropriate space to it.
+        The effect will be that the page layout will change during loading (while the images load).
+      </div>
+      <div class="note-value">
+        Downsizing a large image with the height and width attributes forces a user to download the large image (even if it looks small on the page).
+        To avoid this, rescale the image with a program before using it on a page.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>The height in pixels.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="imgHeightExamplBar" class="more-padding;">
+        <a href="#imgHeightExamplBar">
+          <button onclick="changeImgHeight('imgHeightImg', '10')" class="example-button example-rounded-buttons">10</button>
+        </a>
+        <a href="#imgHeightExamplBar">
+          <button onclick="changeImgHeight('imgHeightImg', '100')" class="example-button example-rounded-buttons">100</button>
+        </a>
+        <a href="#imgHeightExamplBar">
+          <button onclick="changeImgHeight('imgHeightImg', '150')" class="example-button example-rounded-buttons">150</button>
+        </a>
+        <a href="#imgHeightExamplBar">
+          <button onclick="changeImgHeight('imgHeightImg', '200')" class="example-button example-rounded-buttons">200</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <img id="imgHeightImg" src="../images/vasserman_thinking.gif" alt="" height="" width="100">
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"<span class="replace"></span>"</span>
+          <span class="crimson">width=</span><span class="olive">"100"</span>&gt;<br>
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="imgHspace" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">hspace</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The hspace attribute specifies the whitespace on left and right side of an image.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The hspace attribute of &lt;img&gt; is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>The whitespace on left and right side of an image, in pixels.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="imgHspaceExamplBar" class="more-padding;">
+        <a href="#imgHspaceExamplBar">
+          <button onclick="changeImgHspace('imgHspaceImg', '10')" class="example-button example-rounded-buttons">10</button>
+        </a>
+        <a href="#imgHspaceExamplBar">
+          <button onclick="changeImgHspace('imgHspaceImg', '30')" class="example-button example-rounded-buttons">30</button>
+        </a>
+        <a href="#imgHspaceExamplBar">
+          <button onclick="changeImgHspace('imgHspaceImg', '60')" class="example-button example-rounded-buttons">60</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <span style="border: 2px solid maroon; display: inline-block;">
+          <img id="imgHspaceImg" src="../images/vasserman_thinking.gif" alt="" height="120" width="120" vspace="">
+        </span>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"120"</span>
+          <span class="crimson">width=</span><span class="olive">"120"</span>
+          <span class="crimson">vspace=</span><span class="olive">"<span class="replace"></span>"</span>&gt;<br>
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="imgIsmap" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">ismap</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The ismap attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that the image is part of a server-side image-map (an image-map is an image with clickable areas).
+      </div>
+      <div class="note-value">
+        When clicking on a server-side image-map, the click coordinates are sent to the server as a URL query string.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The ismap attribute is allowed only if the &lt;img&gt; element is a descendant of an &lt;a&gt; element with a valid href attribute.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+
+    <div class="exampleHTMLDiv">
+      <img id="imgIsmapImg" src="../images/vasserman_thinking.gif" alt="" height="120" width="120" ismap>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"120"</span>
+          <span class="crimson">width=</span><span class="olive">"120"</span>
+          <span class="crimson">ismap</span>&gt;<br>
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="imgLongdesc" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">longdesc</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The longdesc attribute specifies a hyperlink to a detailed description of an image.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Attrbut longdesc is not supported by any of the browsers.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>text</td>
+            <td>
+              A hyperlink to a detailed description of an image.<br>
+              Possible values:
+              <ul style="margin: 0;">
+                <li>An id to another element.</li>
+                <li>An absolute URL - points to another web site (like longdesc="http://www.example.com/description.txt").</li>
+                <li>A relative URL - points to a file within a web site (like longdesc="description.txt").</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="imgLongdescExamplBar" class="more-padding;">
+        <a href="#imgLongdescExamplBar">
+          <button onclick="changeImgLongdesc('imgLongdescImg', '#exampleText')" class="example-button example-rounded-buttons">example1</button>
+        </a>
+        <a href="#imgLongdescExamplBar">
+          <button onclick="changeImgLongdesc('imgLongdescImg', 'description.txt')" class="example-button example-rounded-buttons">example2</button>
+        </a>
+        <a href="#imgLongdescExamplBar">
+          <button onclick="changeImgLongdesc('imgLongdescImg', 'http://www.example.com/description.txt')" class="example-button example-rounded-buttons">example3</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <span style="border: 2px solid maroon; display: inline-block;">
+          <img id="imgLongdescImg" src="../images/vasserman_thinking.gif" alt="" height="120" width="120" longdesc="">
+        </span>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"120"</span>
+          <span class="crimson">width=</span><span class="olive">"120"</span>
+          <span class="crimson">longdesc=</span><span class="olive">"<span class="replace"></span>"</span>&gt;<br>
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="imgSrc" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">src</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The required src attribute specifies the URL of the image.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        When a web page loads; it is the browser, at that moment,
+        that gets the image from a web server and inserts it into the page.
+        Therefore, make sure that the image actually stay in the same spot in relation to the web page,
+        otherwise your visitors will get a broken link icon. The broken link icon is shown if the browser cannot find the image.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>URL</td>
+            <td>
+              The URL of the image.<br>
+              Possible values:
+              <ul style="margin: 0;">
+                <li>An absolute URL - points to another web site (like src="http://www.example.com/image.gif").</li>
+                <li>A relative URL - points to a file within a web site (like src="image.gif").</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="imgSrcExamplBar" class="more-padding;">
+        <a href="#imgSrcExamplBar">
+          <button onclick="changeImgSrc('imgSrcImg', '../images/vasserman_thinking.gif')" class="example-button example-rounded-buttons">relative URL 1</button>
+        </a>
+        <a href="#imgSrcExamplBar">
+          <button onclick="changeImgSrc('imgSrcImg', '../images/mountain.jpg')" class="example-button example-rounded-buttons">relative URL 2</button>
+        </a>
+        <a href="#imgSrcExamplBar">
+          <button onclick="changeImgSrc('imgSrcImg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkBUzAYexYYTwacVDXQOX9C-NXRfCXubtHkIKhI1QvLHVi6T5ZfQ')" class="example-button example-rounded-buttons">absolute URL</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <img id="imgSrcImg" src="../images/vasserman_thinking.gif" alt="" height="120" width="120">
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"<span class="replace">..images/vasserman_thinking.gif</span>"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"120"</span>
+          <span class="crimson">width=</span><span class="olive">"120"</span>&gt;<br>
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="imgSrcset" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">srcset</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The required src attribute specifies the URL of the image.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        When a web page loads; it is the browser, at that moment,
+        that gets the image from a web server and inserts it into the page.
+        Therefore, make sure that the image actually stay in the same spot in relation to the web page,
+        otherwise your visitors will get a broken link icon. The broken link icon is shown if the browser cannot find the image.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>URL</td>
+            <td>
+              The URL of the image.<br>
+              Possible values:
+              <ul style="margin: 0;">
+                <li>An absolute URL - points to another web site (like src="http://www.example.com/image.gif").</li>
+                <li>A relative URL - points to a file within a web site (like src="image.gif").</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p>Resize your browser window.</p><br>
+        <img id="imgSrcsetImg" src="../images/vasserman_thinking.gif" srcset="../images/vasserman_big.jpg 2x, ../images/mountain.jpg 0.8x" alt="" height="120" width="120">
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">srcset=</span><span class="olive">"..images/vasserman_big.jpg 2x"</span>,
+          <span class="olive">"..images/mountain.jpg 0.8x"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"120"</span>
+          <span class="crimson">width=</span><span class="olive">"120"</span>&gt;<br>
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="imgUsemap" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">usemap</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The usemap attribute specifies an image as a client-side image-map (an image-map is an image with clickable areas).
+      </div>
+      <div class="note-value">
+        The usemap attribute is associated with a &lt;map&gt; element's name attribute, and creates a relationship between the &lt;img&gt; and the &lt;map&gt;.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The usemap attribute cannot be used if the &lt;img&gt; element is a descendant of an &lt;a&gt; or &lt;button&gt; element.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#mapname</td>
+            <td>A hash character ("#") plus the name of the &lt;map&gt; element to use.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <img id="imgUsemapImg" src="../images/vasserman_big.jpg" alt="" height="220" width="250" usemap="#vasserman">
+      </div>
+
+      <map name="vasserman">
+        <area shape="rect" coords="50, 150, 200, 240" alt="beard" href="https://en.wikipedia.org/wiki/Beard">
+        <area shape="circle" coords="100, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+        <area shape="circle" coords="155, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+      </map>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0 0 1em;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_big.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;
+        </p>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"50, 150, 200, 240"</span>
+            <span class="crimson">alt=</span><span class="olive">"beard"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Beard"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"100, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"150, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="imgVspace" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">vspace</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The vspace attribute specifies the whitespace on left and right side of an image.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The vspace attribute of &lt;img&gt; is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>The whitespace on top and bottom of an image, in pixels.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="imgVspaceExamplBar" class="more-padding;">
+        <a href="#imgVspaceExamplBar">
+          <button onclick="changeImgVspace('imgVspaceImg', '10')" class="example-button example-rounded-buttons">10</button>
+        </a>
+        <a href="#imgVspaceExamplBar">
+          <button onclick="changeImgVspace('imgVspaceImg', '30')" class="example-button example-rounded-buttons">30</button>
+        </a>
+        <a href="#imgVspaceExamplBar">
+          <button onclick="changeImgVspace('imgVspaceImg', '60')" class="example-button example-rounded-buttons">60</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <span style="border: 2px solid maroon; display: inline-block;">
+          <img id="imgVspaceImg" src="../images/vasserman_thinking.gif" alt="" height="120" width="120" vspace="">
+        </span>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"120"</span>
+          <span class="crimson">width=</span><span class="olive">"120"</span>
+          <span class="crimson">vspace=</span><span class="olive">"<span class="replace"></span>"</span>&gt;<br>
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="imgWidth" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">width</h2></div>
+    <div style="float: right;"><a href="#attributs"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The width attribute specifies the width of an image, in pixels.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Always specify both the height and width attributes for images.
+        If height and width are set, the space required for the image is reserved when the page is loaded.
+        However, without these attributes, the browser does not know the size of the image,
+        and cannot reserve the appropriate space to it.
+        The effect will be that the page layout will change during loading (while the images load).
+      </div>
+      <div class="note-value">
+        Downsizing a large image with the height and width attributes forces a user to download the large image (even if it looks small on the page).
+        To avoid this, rescale the image with a program before using it on a page.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>The width in pixels.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="imgWidthExamplBar" class="more-padding;">
+        <a href="#imgWidthExamplBar">
+          <button onclick="changeImgWidth('imgWidthImg', '10')" class="example-button example-rounded-buttons">10</button>
+        </a>
+        <a href="#imgWidthExamplBar">
+          <button onclick="changeImgWidth('imgWidthImg', '100')" class="example-button example-rounded-buttons">100</button>
+        </a>
+        <a href="#imgWidthExamplBar">
+          <button onclick="changeImgWidth('imgWidthImg', '150')" class="example-button example-rounded-buttons">150</button>
+        </a>
+        <a href="#imgWidthExamplBar">
+          <button onclick="changeImgWidth('imgWidthImg', '200')" class="example-button example-rounded-buttons">200</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <img id="imgWidthImg" src="../images/vasserman_thinking.gif" alt="" height="100" width="">
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"100"</span>
+          <span class="crimson">width=</span><span class="olive">"<span class="replace"></span>"</span>&gt;<br>
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>
