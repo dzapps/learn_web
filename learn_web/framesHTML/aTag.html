@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+  <script src="../scripts/a.js"></script>
+</head>
+
+<body>
+  <div class="tag">
+    <h1 class="highlightText">Links</h1>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">&lt;a&gt;</h2></div>
+    <div class="" style="float: right;"><a href="../pagesHTML/links.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.
+      </div>
+      <div class="note-value">
+        The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Note:<br />
+      <div class="note-value">
+        The following attributes: download, hreflang, media, rel, target, and type cannot be present if the href attribute is not present.
+      </div>
+      <div class="note-value">
+        A linked page is normally displayed in the current browser window, unless you specify another target.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesA"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#aCharset" class="attr-links">charset</a></td>
+            <td>char_encoding</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the character-set of a linked document.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#aCoords" class="attr-links">coords</a></td>
+            <td>coordinates</td>
+            <td>Specifies the coordinates of a link.</td>
+          </tr>
+          <tr>
+            <td><a href="#aDownload" class="attr-links">download</a></td>
+            <td>filename</td>
+            <td>Specifies that the target will be downloaded when a user clicks on the hyperlink.</td>
+          </tr>
+          <tr>
+            <td><a href="#aHref" class="attr-links">href</a></td>
+            <td>URL</td>
+            <td>Specifies the URL of the page the link goes to.</td>
+          </tr>
+          <tr>
+            <td><a href="#aHreflang" class="attr-links">hreflang</a></td>
+            <td>language_code</td>
+            <td>Specifies the language of the linked document.</td>
+          </tr>
+          <tr>
+            <td><a href="#aMedia" class="attr-links">media</a></td>
+            <td>media_query</td>
+            <td>Specifies what media/device the linked document is optimized for.</td>
+          </tr>
+          <tr>
+            <td><a href="#aName" class="attr-links">name</a></td>
+            <td>section_name</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5. Use the global id attribute instead.</span><br>
+              Specifies that an area has no associated link.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#aPing" class="attr-links">ping</a></td>
+            <td>list_of_URLs</td>
+            <td>
+              Specifies a space-separated list of URLs to which, when the link is followed,
+              post requests with the body ping will be sent by the browser (in the background).
+              Typically used for tracking.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#aRel" class="attr-links">rel</a></td>
+            <td>
+              alternate<br>author<br>bookmark<br>external<br>help<br>license<br>
+              next<br>nofollow<br>noreferrer<br>noopener<br>prefetch<br>prev<br>search<br>tag
+            </td>
+            <td>Specifies the relationship between the current document and the linked document.</td>
+          </tr>
+          <tr>
+            <td><a href="#aRev" class="attr-links">rev</a></td>
+            <td>text</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the relationship between the linked document and the current document.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#aShape" class="attr-links">shape</a></td>
+            <td>default<br>rect<br>circle<br>poly</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the shape of a link.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#aTarget" class="attr-links">target</a></td>
+            <td> _blank<br>_parent<br>_self<br>_top<br>framename</td>
+            <td>Specifies where to open the linked document.</td>
+          </tr>
+          <tr>
+            <td><a href="#aType" class="attr-links">type</a></td>
+            <td>media_type</td>
+            <td>Specifies the media type of the linked document.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="aCharset" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">charset</h2></div>
+    <div style="float: right;"><a href="#attributesA"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The charset attribute specifies the character-set of the linked document (the document referenced in the href attribute).
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The &lt;a&gt; charset attribute is not supported in HTML5.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesA"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>character_set</td>
+            <td>
+              The character-set of the linked document.<br>
+              Common character sets:
+              <ul>
+                <li>UTF-8 - Character encoding for Unicode.</li>
+                <li>ISO-8859-1 - Character encoding for the Latin alphabet.</li>
+              </ul>
+              In theory, any character-set can be used, but no browser understands all of them.
+              The more widely a character-set is used, the better the chance that a browser will understand it.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <a charset="UTF-8" href="https://www.w3schools.com">Visit W3Schools.com!</a>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">a</span>
+          <span class="crimson">charset=</span><span class="olive">"UTF-8"</span>
+          <span class="crimson">href=</span><span class="olive">"https://www.w3schools.com"</span>&gt;
+          <span class="black">Visit W3Schools.com!</span>
+          &lt;<span class="brown">/a</span>&gt;
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="aCoords" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">coords</h2></div>
+    <div style="float: right;"><a href="#attributesA"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The coords attribute is used together with the shape attribute to specify the size, shape, and placement of a link in an &lt;object&gt; or &lt;img&gt; element.
+      </div>
+      <div class="note-value">
+        The coordinates of the top-left corner of an area are 0,0.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The coords attribute is only supported in Firefox and Opera.
+      </div>
+      <div class="note-value">
+        To create image-maps that works in all browsers, use the &lt;area&gt; element!
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>x1, y1, x2, y2</td>
+            <td>Specifies the coordinates of the top-left and bottom-right corner of the rectangle (shape="rect").</td>
+          </tr>
+          <tr>
+            <td>x, y, radius</td>
+            <td>Specifies the coordinates of the circle center and the radius (shape="circle").</td>
+          </tr>
+          <tr>
+            <td>x1, y1, x2, y2, ..., xn, yn</td>
+            <td>
+              Specifies the coordinates of the edges of the polygon.
+              If the first and last coordinate pairs are not the same,
+              the browser will add the last coordinate pair to close the polygon (shape="poly").
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <object data="../images/vasserman_big.jpg" alt="" type="image/jpg" usemap="#vasserman" width="250" height="220">
+          <map name="vasserman">
+            <area shape="rect" coords="50, 150, 200, 240" alt="beard" href="https://en.wikipedia.org/wiki/Beard">
+            <area shape="circle" coords="100, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+            <area shape="circle" coords="155, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+            <area shape="poly" coords="75, 0, 160, 0, 220, 60, 65, 70, 75, 0" alt="forehead" href="https://en.wikipedia.org/wiki/Forehead">
+          </map>
+        </object>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">object</span>
+          <span class="crimson">data=</span><span class="olive">"..images/vasserman_big.jpg"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">type=</span><span class="olive">"image/jpg"</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;<br>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"50, 150, 200, 240"</span>
+            <span class="crimson">alt=</span><span class="olive replace">"beard"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Beard"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"100, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"150, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"poly"</span>
+            <span class="crimson">coords=</span><span class="olive">"75, 0, 160, 0, 220, 60, 65, 70, 75, 0"</span>
+            <span class="crimson">alt=</span><span class="olive">"forehead"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Forehead"</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/object</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="aDownload" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">download</h2></div>
+    <div style="float: right;"><a href="#attributesA"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The download attribute specifies that the target will be downloaded when a user clicks on the hyperlink.
+      </div>
+      <div class="note-value">
+        This attribute is only used if the href attribute is set.
+      </div>
+      <div class="note-value">
+        The value of the attribute will be the name of the downloaded file.
+        There are no restrictions on allowed values, and the browser will automatically detect the correct file extension
+        and add it to the file (.img, .pdf, .txt, .html, etc.).
+      </div>
+      <div class="note-value">
+        If the value is omitted, the original filename is used.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        The download attribute is not supported in Edge version 12, IE, Safari 10 (and earlier), or Opera version 12 (and earlier).
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>filename</td>
+            <td>Optional. Specifies the new filename for the downloaded file.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p>Files will be uploaded if they are on the server.</p><br>
+        <a href="../images/vasserman_big.jpg" download>
+          <img src="../images/vasserman_big.jpg" alt="" width="300" height="220">
+        </a>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+        <span class="left-padding">&lt;<span class="brown">a</span></span>
+        <span class="crimson">href=</span><span class="olive">"../images/vasserman_big.gif"</span>
+        <span class="crimson">download=</span><span class="olive">"vasserman"</span>&gt;<br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">img</span>
+            <span class="crimson">src=</span><span class="olive">"../images/vasserman_big.gif"</span>
+            <span class="crimson">alt=</span><span class="olive">""</span>
+            <span class="crimson">width=</span><span class="olive">"300"</span>
+            <span class="crimson">height=</span><span class="olive">"220"</span>&gt;
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/a</span>&gt;</span><br>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="aHref" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">href</h2></div>
+    <div style="float: right;"><a href="#attributesA"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The href attribute specifies the URL of the page the link goes to.
+      </div>
+      <div class="note-value">
+        If the href attribute is not present, the &lt;a&gt; tag is not a hyperlink.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        In HTML5, if the &lt;area&gt; tag has no href attribute, it is a placeholder for a hyperlink.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>URL</td>
+            <td>
+              The URL of the link.<br>
+              Possible values:
+              <ul>
+                <li>An absolute URL - points to another web site (like href="http://www.example.com/example.htm").</li>
+                <li>A relative URL - points to a file within a web site (like href="example.htm").</li>
+                <li>Link to an element with a specified id within the page (like href="#top").</li>
+                <li>Other protocols (like https://, ftp://, mailto:, file:, etc..).</li>
+                <li>A script (like href="javascript:alert('Hello');").</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="aHrefExampleBar" class="more-padding;">
+        <a href="#aHrefExampleBar">
+          <button onclick="changeAHref('aHrefExample', '../framesCSS/wordSpacingProp.html', 'Propertie \'word-space\'.')" class="example-button example-rounded-buttons">relative</button>
+        </a>
+        <a href="#aHrefExampleBar">
+          <button onclick="changeAHref('aHrefExample', 'https://www.w3schools.com', 'Visit W3Schools.com!')" class="example-button example-rounded-buttons">absolute</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <a id="aHrefExample" href="https://www.w3schools.com"><span class="replaceAHref">Visit W3Schools.com!</span></a>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">a</span>
+          <span class="crimson">href=</span>"<span class="olive replaceAHref">https://www.w3schools.com</span>"&gt;
+          <span class="black replaceAHref">Visit W3Schools.com!</span>
+          &lt;<span class="brown">/a</span>&gt;
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="aHreflang" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">hreflang</h2></div>
+    <div style="float: right;"><a href="#attributesA"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The hreflang attribute specifies the language of the linked document.
+      </div>
+      <div class="note-value">
+        This attribute is only used if the href attribute is set.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        This attribute is purely advisory.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>language_code</td>
+            <td>A two-letter language code that specifies the language of the linked document.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+
+      <div class="exampleHTMLDiv">
+        <a href="https://www.w3schools.com" hreflang="en">Visit W3Schools.com!</a>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">a</span>
+          <span class="crimson">href=</span><span class="olive">"https://www.w3schools.com"</span>
+          <span class="crimson">hreflang=</span><span class="olive">"en"</span>&gt;
+          <span class="black">Visit W3Schools.com!</span>
+          &lt;<span class="brown">/a</span>&gt;
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="aMedia" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">media</h2></div>
+    <div style="float: right;"><a href="#attributesA"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The media attribute specifies what media/device the linked document is optimized for.
+      </div>
+      <div class="note-value">
+        This attribute is used to specify that the target URL is designed for special devices (like iPhone), speech or print media.
+      </div>
+      <div class="note-value">
+        This attribute can accept several values.
+      </div>
+      <div class="note-value">
+        Only used if the href attribute is present.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        This attribute is purely advisory.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Possible operators
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>and</td>
+            <td>Specifies an AND operator.</td>
+          </tr>
+          <tr>
+            <td>note</td>
+            <td>Specifies a NOT operator.</td>
+          </tr>
+          <tr>
+            <td>,</td>
+            <td>Specifies an OR operator.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Devices
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>all</td>
+            <td>Suitable for all devices. This is default.</td>
+          </tr>
+          <tr>
+            <td>aural</td>
+            <td>Speech synthesizers.</td>
+          </tr>
+          <tr>
+            <td>braille</td>
+            <td>Braille feedback devices.</td>
+          </tr>
+          <tr>
+            <td>handheld</td>
+            <td>Handheld devices (small screen, limited bandwidth).</td>
+          </tr>
+          <tr>
+            <td>projection</td>
+            <td>Projectors.</td>
+          </tr>
+          <tr>
+            <td>print</td>
+            <td>Print preview mode/printed pages.</td>
+          </tr>
+          <tr>
+            <td>screen</td>
+            <td>Computer screens.</td>
+          </tr>
+          <tr>
+            <td>tty</td>
+            <td>Teletypes and similar media using a fixed-pitch character grid.</td>
+          </tr>
+          <tr>
+            <td>tv</td>
+            <td>Television type devices (low resolution, limited scroll ability).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Values
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>width</td>
+            <td>
+              Specifies the width of the targeted display area.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (min-width:500px)".
+            </td>
+          </tr>
+          <tr>
+            <td>height</td>
+            <td>
+              Specifies the height of the targeted display area.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (max-height:700px)".
+            </td>
+          </tr>
+          <tr>
+            <td>device-width</td>
+            <td>
+              Specifies the width of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (device-width:500px)".
+            </td>
+          </tr>
+          <tr>
+            <td>device-height</td>
+            <td>
+              Specifies the height of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (device-height:500px)".
+            </td>
+          </tr>
+          <tr>
+            <td>orientation</td>
+            <td>
+              Specifies the orientation of the target display/paper.
+              Possible values: "portrait" or "landscape"
+              Example: media="all and (orientation: landscape)".
+            </td>
+          </tr>
+          <tr>
+            <td>aspect-ratio</td>
+            <td>
+              Specifies the width/height ratio of the targeted display area.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (aspect-ratio:16/9)".
+            </td>
+          </tr>
+          <tr>
+            <td>device-aspect-ratio</td>
+            <td>
+              Specifies the device-width/device-height ratio of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (aspect-ratio:16/9)".
+            </td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td>
+              Specifies the bits per color of target display.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (color:3)".
+            </td>
+          </tr>
+          <tr>
+            <td>color-index</td>
+            <td>
+              Specifies the number of colors the target display can handle.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (min-color-index:256)".
+            </td>
+          </tr>
+          <tr>
+            <td>monochrome</td>
+            <td>
+              Specifies the bits per pixel in a monochrome frame buffer.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (monochrome:2)".
+            </td>
+          </tr>
+          <tr>
+            <td>resolution</td>
+            <td>
+              Specifies the pixel density (dpi or dpcm) of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="print and (resolution:300dpi)".
+            </td>
+          </tr>
+          <tr>
+            <td>scan</td>
+            <td>
+              Specifies scanning method of a tv display.
+              Possible values are "progressive" and "interlace".
+              Example: media="tv and (scan:interlace)".
+            </td>
+          </tr>
+          <tr>
+            <td>grid</td>
+            <td>
+              Specifies if the output device is grid or bitmap.
+              Possible values are "1" for grid, and "0" otherwise.
+              Example: media="handheld and (grid:1)".
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <a href="#example.asp?output=print" media="print and (resolution:300dpi)">Open media attribute page for print</a>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">a</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">img</span>
+          <span class="crimson">href=</span><span class="olive">"example.asp?output=print"</span>
+          <span class="crimson">media=</span><span class="olive">"print and (resolution:300dpi)"</span>&gt;<br>
+          <span class="black">Open media attribute page for print</span>
+        </p>
+      &lt;<span class="brown">/a</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="aName" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">name</h2></div>
+    <div style="float: right;"><a href="#attributesA"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The name attribute specifies the name of an anchor.
+      </div>
+      <div class="note-value">
+        The name attribute is used to create a bookmark inside a document.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        The &lt;a&gt; name attribute is not supported in HTML5. Use the id attribute instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>anchor_name</td>
+            <td>The name of an anchor.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <a href="#attributesA">Attributes list.</a>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">a</span>
+          <span class="crimson">href=</span><span class="olive">"#attributesA"</span>&gt;
+          <span class="black">Attributes</span>
+          &lt;<span class="brown">/a</span>&gt;
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="aPing" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">ping</h2></div>
+    <div style="float: right;"><a href="#attributesA"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The ping attribute specifies a list of URLs to be notified if the user follows the hyperlink.
+      </div>
+      <div class="note-value">
+        When the user clicks on the hyperlink, the ping attribute will send a short HTTP POST request to the specified URL.
+      </div>
+      <div class="note-value">
+        This attribute is useful for monitoring/tracking.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>URL</td>
+            <td>Specifies the URL to be notified if the user follows the hyperlink. Must be a space separated list of one or more valid URLs.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+         <a href="https://www.w3schools.com/html" ping="https://www.example.com/trackpings">Ping</a>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">a</span>
+          <span class="crimson">href=</span><span class="olive">"https://www.w3schools.com/html"</span>
+          <span class="crimson">href=</span><span class="olive">"https://www.example.com/html"</span>&gt;
+          <span class="black">Ping</span>
+          &lt;<span class="brown">/a</span>&gt;
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="aRel" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">rel</h2></div>
+    <div style="float: right;"><a href="#attributesA"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The rel attribute specifies the relationship between the current document and the linked document.
+      </div>
+      <div class="note-value">
+        Only used if the href attribute is present.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Search engines can use this attribute to get more information about a link.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Attribute values
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>alternate</td>
+            <td>Links to an alternate version of the document (i.e. print page, translated or mirror).</td>
+          </tr>
+          <tr>
+            <td>autor</td>
+            <td>Links to the author of the document.</td>
+          </tr>
+          <tr>
+            <td>bookmark</td>
+            <td>Permanent URL used for bookmarking.</td>
+          </tr>
+          <tr>
+            <td>external</td>
+            <td>Indicates that the referenced document is not part of the same site as the current document.</td>
+          </tr>
+          <tr>
+            <td>help</td>
+            <td>Links to a help document.</td>
+          </tr>
+          <tr>
+            <td>license</td>
+            <td>Links to copyright information for the document.</td>
+          </tr>
+          <tr>
+            <td>next</td>
+            <td>The next document in a selection.</td>
+          </tr>
+          <tr>
+            <td>nofollow</td>
+            <td>
+              Links to an unendorsed document, like a paid link.
+              ("nofollow" is used by Google, to specify that the Google search spider should not follow that link).
+            </td>
+          </tr>
+          <tr>
+            <td>noreferrer</td>
+            <td>Specifies that the browser should not send a HTTP referer header if the user follows the hyperlink.</td>
+          </tr>
+          <tr>
+            <td>noopener</td>
+            <td>Requires that any browsing context created by following the hyperlink must not have an opener browsing context.</td>
+          </tr>
+          <tr>
+            <td>prev</td>
+            <td>The previous document in a selection.</td>
+          </tr>
+          <tr>
+            <td>search</td>
+            <td>Links to a search tool for the document.</td>
+          </tr>
+          <tr>
+            <td>tag</td>
+            <td>A tag (keyword) for the current document.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <a rel="nofollow" href="http://www.functravel.com/">Cheap Flights</a>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">a</span>
+          <span class="crimson">rel=</span><span class="olive">"nofollow"</span>
+          <span class="crimson">src=</span><span class="olive">"http://www.functravel.com/"</span>&gt;
+          <span class="black">Cheap Flights</span>
+          &lt;<span class="brown">a</span>&gt;
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="aShape" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">shape</h2></div>
+    <div style="float: right;"><a href="#attributesA"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The shape attribute is used together with the coords attribute to specify
+        the size, shape, and placement of a link in an &lt;object&gt; or &lt;img&gt; element.
+      </div>
+      <div class="note-value">
+        The shape attribute is used together with the coords attribute to specify the size, shape, and placement of an area.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        To create image-maps that works in all browsers, use the &lt;area&gt; element!
+      </div>
+      <div class="note-value">
+        The shape attribute is only supported in Firefox and Opera!
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>default</td>
+            <td>Specifies the entire region.</td>
+          </tr>
+          <tr>
+            <td>rect</td>
+            <td>Defines a rectangular region.</td>
+          </tr>
+          <tr>
+            <td>circle</td>
+            <td>Defines a circular region.</td>
+          </tr>
+          <tr>
+            <td>poly</td>
+            <td>Defines a polygonal region.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <object data="../images/vasserman_big.jpg" alt="" type="image/jpg" usemap="#vasserman2" width="250" height="220">
+          <map name="vasserman2">
+            <area shape="rect" coords="50, 150, 200, 240" alt="beard" href="https://en.wikipedia.org/wiki/Beard">
+            <area shape="circle" coords="100, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+            <area shape="circle" coords="155, 88, 25" alt="glasses" href="https://en.wikipedia.org/wiki/Glasses">
+            <area shape="poly" coords="75, 0, 160, 0, 220, 60, 65, 70, 75, 0" alt="forehead" href="https://en.wikipedia.org/wiki/Forehead">
+          </map>
+        </object>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">object</span>
+          <span class="crimson">data=</span><span class="olive">"..images/vasserman_big.jpg"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">type=</span><span class="olive">"image/jpg"</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">usemap=</span><span class="olive">"#vasserman"</span>&gt;<br>
+        <span class="left-padding">
+          &lt;<span class="brown">map</span>
+          <span class="crimson">name=</span><span class="olive">"vasserman"</span>&gt;
+        </span><br>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"rect"</span>
+            <span class="crimson">coords=</span><span class="olive">"50, 150, 200, 240"</span>
+            <span class="crimson">alt=</span><span class="olive replace">"beard"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Beard"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"100, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"circle"</span>
+            <span class="crimson">coords=</span><span class="olive">"150, 88, 25"</span>
+            <span class="crimson">alt=</span><span class="olive">"glasses"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Glasses"</span>&gt;<br>
+          </p>
+          <p class="more-padding" style="margin: 0;">
+            &lt;<span class="brown">area</span>
+            <span class="crimson">shape=</span><span class="olive">"poly"</span>
+            <span class="crimson">coords=</span><span class="olive">"75, 0, 160, 0, 220, 60, 65, 70, 75, 0"</span>
+            <span class="crimson">alt=</span><span class="olive">"forehead"</span>
+            <span class="crimson">href=</span><span class="olive">"https://en.wikipedia.org/wiki/Forehead"</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/map</span>&gt;</span><br>
+      &lt;<span class="brown">/object</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="aTarget" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">target</h2></div>
+    <div style="float: right;"><a href="#attributesA"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The target attribute specifies where to open the linked document.
+      </div>
+      <div class="note-value">
+        Only used if the href attribute is present.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>_blank</td>
+            <td>Opens the linked document in a new window or tab.</td>
+          </tr>
+          <tr>
+            <td>_self</td>
+            <td>Opens the linked document in the same frame (this is default).</td>
+          </tr>
+          <tr>
+            <td>_parent</td>
+            <td>Opens the linked document in the parent frame.</td>
+          </tr>
+          <tr>
+            <td>_top</td>
+            <td>Opens the linked document in the full body of the window.</td>
+          </tr>
+          <tr>
+            <td>framename</td>
+            <td>Opens the linked document in a named iframe.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <a href="../images/vasserman_big.jpg" alt="" height="220" width="250" target="_top">Top</a>
+        <a href="../images/vasserman_big.jpg" alt="" height="220" width="250" target="_self">Self</a>
+        <a href="../images/vasserman_big.jpg" alt="" height="220" width="250" target="_parent">Parent</a>
+        <a href="../images/vasserman_big.jpg" alt="" height="220" width="250" target="_blank">Blank</a>
+        <a href="../images/vasserman_big.jpg" alt="" height="220" width="250" target="aShapeFrame">Frame</a><br>
+
+        <iframe width="250" height="220" name="aShapeFrame" style="margin-top: 1em;"></iframe>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">a</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">target=</span><span class="olive">"_top"</span>&gt;
+          <span class="black">Top</span>
+          &lt;<span class="brown">/a</span>&gt;
+        </p>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">a</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">target=</span><span class="olive">"_self"</span>&gt;
+          <span class="black">Self</span>
+          &lt;<span class="brown">/a</span>&gt;
+        </p>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">a</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">target=</span><span class="olive">"_parent"</span>&gt;
+          <span class="black">Parent</span>
+          &lt;<span class="brown">/a</span>&gt;
+        </p>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">a</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">target=</span><span class="olive">"_blank"</span>&gt;
+          <span class="black">Blank</span>
+          &lt;<span class="brown">/a</span>&gt;
+        </p>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">a</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">target=</span><span class="olive">"framename"</span>&gt;
+          <span class="black">Frame</span>
+          &lt;<span class="brown">/a</span>&gt;
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="aType" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">type</h2></div>
+    <div style="float: right;"><a href="#attributesA"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The type attribute specifies the Internet media type (formerly known as MIME type) of the linked document.
+      </div>
+      <div class="note-value">
+        This attribute is only used if the href attribute is set.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        This attribute is purely advisory.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>media_type</td>
+            <td>The Internet media type of the linked document.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <a href="https://www.w3schools.com" type="text/html">W3Schools.com</a>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">div</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">a</span>
+          <span class="crimson">src=</span><span class="olive">"..images/vasserman_thinking.gif"</span>
+          <span class="crimson">alt=</span><span class="olive">""</span>
+          <span class="crimson">height=</span><span class="olive">"220"</span>
+          <span class="crimson">width=</span><span class="olive">"250"</span>
+          <span class="crimson">type=</span><span class="olive">"text/html"</span>&gt;
+          <span class="black">W3Schools.com</span>
+          &lt;<span class="brown">/a</span>&gt;
+        </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>

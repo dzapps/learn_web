@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+  <script src="../scripts/a.js"></script>
+</head>
+
+<body>
+  <div class="tag">
+    <h1 class="highlightText">Links</h1>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">&lt;link&gt;</h2></div>
+    <div class="" style="float: right;"><a href="../pagesHTML/links.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;link&gt; tag defines a link between a document and an external resource.
+      </div>
+      <div class="note-value">
+        The &lt;link&gt; tag is used to link to external style sheets.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Note:<br />
+      <div class="note-value">
+        The &lt;link&gt; element is an empty element, it contains attributes only.
+      </div>
+      <div class="note-value">
+        This element goes only in the head section, but it can appear any number of times.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesLink"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#linkCharset" class="attr-links">charset</a></td>
+            <td>char_encoding</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the character encoding of the linked document.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#linkCrossorigin" class="attr-links">crossorigin</a></td>
+            <td>anonimouse<br>use-credentials</td>
+            <td>Specifies how the element handles cross-origin requests.</td>
+          </tr>
+          <tr>
+            <td><a href="#linkHref" class="attr-links">href</a></td>
+            <td>URL</td>
+            <td>Specifies the location of the linked document.</td>
+          </tr>
+          <tr>
+            <td><a href="#linkHreflang" class="attr-links">hreflang</a></td>
+            <td>language_code</td>
+            <td>Specifies the language of the text in the linked document.</td>
+          </tr>
+          <tr>
+            <td><a href="#linkMedia" class="attr-links">media</a></td>
+            <td>media_query</td>
+            <td>Specifies on what device the linked document will be displayed.</td>
+          </tr>
+          <tr>
+            <td><a href="#linkRel" class="attr-links">rel</a></td>
+            <td>
+              alternate<br>author<br>dns-prefetch<br>help<br>icon<br>license<br>
+              next<br>pingback<br>preconnect<br>prefetch<br>preload<br>prerender<br>prev<br>search<br>stylesheet
+            </td>
+            <td>Required. Specifies the relationship between the current document and the linked document.</td>
+          </tr>
+          <tr>
+            <td><a href="#linkRev" class="attr-links">rev</a></td>
+            <td>reversed relationship</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the relationship between the linked document and the current document.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#linkSizes" class="attr-links">sizes</a></td>
+            <td>Height x Width<br>any<br></td>
+            <td>Specifies the size of the linked resource. Only for rel="icon".</td>
+          </tr>
+          <tr>
+            <td><a href="#linkTarget" class="attr-links">target</a></td>
+            <td>
+               _blank<br>_parent<br>_self<br>_top<br>framename
+             </td>
+
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies where the linked document is to be loaded.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#linkType" class="attr-links">type</a></td>
+            <td>media_type</td>
+            <td>Specifies the media type of the linked document.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="linkCharset" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">charset</h2></div>
+    <div style="float: right;"><a href="#attributesLink"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The charset attribute specifies the character encoding of the linked document.
+      </div>
+      <div class="note-value">
+        The default character-set for modern browsers is ISO-8859-1.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The &lt;link&gt; charset attribute is not supported in HTML5.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesLink"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>character_set</td>
+            <td>
+              The character-set of the linked document.<br>
+              Common character sets:
+              <ul>
+                <li>UTF-8 - Character encoding for Unicode.</li>
+                <li>ISO-8859-1 - Character encoding for the Latin alphabet.</li>
+              </ul>
+              In theory, any character-set can be used, but no browser understands all of them.
+              The more widely a character-set is used, the better the chance that a browser will understand it.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+         <p>The charset attribute indicates that the linked document is written in Japanese.</p>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">head</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">link</span>
+          <span class="crimson">href=</span><span class="olive">"example.html"</span>
+          <span class="crimson">charset=</span><span class="olive">"ISO-2022-JP"</span>&gt;
+        </p>
+      &lt;<span class="brown">/head</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="linkHref" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">href</h2></div>
+    <div style="float: right;"><a href="#attributesLink"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The href attribute specifies the location (URL) of the external resource (most often a style sheet file).
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>URL</td>
+            <td>
+              The URL of the linked resource/document.<br>
+              Possible values:
+              <ul>
+                <li>An absolute URL - points to another web site (like href="http://www.example.com/theme.css").</li>
+                <li>A relative URL - points to a file within a web site (like href="theme.css").</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p>Link to an external stylesheet.</p>
+      </div>
+    </div>
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">head</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">link</span>
+          <span class="crimson">rel=</span><span class="olive">"stylesheet"</span>
+          <span class="crimson">type=</span><span class="olive">"text/css"</span>
+          <span class="crimson">href=</span><span class="olive">"styles.css"</span>&gt;
+        </p>
+      &lt;<span class="brown">/head</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="linkHreflang" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">hreflang</h2></div>
+    <div style="float: right;"><a href="#attributesLink"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The hreflang attribute specifies the language of the text in the linked document.
+      </div>
+      <div class="note-value">
+        This attribute is only used if the href attribute is set.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Note:<br />
+      <div class="note-value">
+        This attribute is purely advisory.
+      </div>
+      <div class="note-value">
+        The hreflang attribute does not render as anything special in any of the major browsers.
+        However, it can be used by search engines, or in scripts.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>language_code</td>
+            <td>A two-letter language code that specifies the language of the linked document.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p>Here, the hreflang attribute indicates that the linked document is in English.</p>
+      </div>
+    </div>
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">head</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">link</span>
+          <span class="crimson">rel=</span><span class="olive">"parent"</span>
+          <span class="crimson">href=</span><span class="olive">"tag_link.html"</span>
+          <span class="crimson">hreflang=</span><span class="olive">"en"</span>&gt;
+        </p>
+      &lt;<span class="brown">/head</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="linkMedia" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">media</h2></div>
+    <div style="float: right;"><a href="#attributesLink"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The media attribute specifies what media/device the target resource is optimized for.
+      </div>
+      <div class="note-value">
+        This attribute is mostly used with CSS stylesheets to specify different styles for different media types.
+      </div>
+      <div class="note-value">
+        This attribute can accept several values.
+      </div>
+      <div class="note-value">
+        Only used if the href attribute is present.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Possible operators
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>and</td>
+            <td>Specifies an AND operator.</td>
+          </tr>
+          <tr>
+            <td>note</td>
+            <td>Specifies a NOT operator.</td>
+          </tr>
+          <tr>
+            <td>,</td>
+            <td>Specifies an OR operator.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Devices
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>all</td>
+            <td>Suitable for all devices. This is default.</td>
+          </tr>
+          <tr>
+            <td>aural</td>
+            <td><span class="deprecated">Deprecated. </span>Speech synthesizers.</td>
+          </tr>
+          <tr>
+            <td>braille</td>
+            <td><span class="deprecated">Deprecated. </span>Braille feedback devices.</td>
+          </tr>
+          <tr>
+            <td>handheld</td>
+            <td><span class="deprecated">Deprecated. </span>Handheld devices (small screen, limited bandwidth).</td>
+          </tr>
+          <tr>
+            <td>projection</td>
+            <td><span class="deprecated">Deprecated. </span>Projectors.</td>
+          </tr>
+          <tr>
+            <td>print</td>
+            <td>Print preview mode/printed pages.</td>
+          </tr>
+          <tr>
+            <td>screen</td>
+            <td>Computer screens.</td>
+          </tr>
+          <tr>
+            <td>speech</td>
+            <td>Used for screenreaders that "reads" the page out loud.</td>
+          </tr>
+          <tr>
+            <td>tty</td>
+            <td><span class="deprecated">Deprecated. </span>Teletypes and similar media using a fixed-pitch character grid.</td>
+          </tr>
+          <tr>
+            <td>tv</td>
+            <td><span class="deprecated">Deprecated. </span>Television type devices (low resolution, limited scroll ability).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Values
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>width</td>
+            <td>
+              Specifies the width of the targeted display area.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (min-width:500px)".
+            </td>
+          </tr>
+          <tr>
+            <td>height</td>
+            <td>
+              Specifies the height of the targeted display area.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (max-height:700px)".
+            </td>
+          </tr>
+          <tr>
+            <td>device-width</td>
+            <td>
+              <span class="deprecated">Deprecated. </span><br>
+              Specifies the width of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (device-width:500px)".
+            </td>
+          </tr>
+          <tr>
+            <td>device-height</td>
+            <td>
+              <span class="deprecated">Deprecated. </span><br>
+              Specifies the height of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (device-height:500px)".
+            </td>
+          </tr>
+          <tr>
+            <td>device-aspect-ratio</td>
+            <td>
+              <span class="deprecated">Deprecated. </span><br>
+              Specifies the device-width/device-height ratio of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (aspect-ratio:16/9)".
+            </td>
+          </tr>
+          <tr>
+            <td>orientation</td>
+            <td>
+              Specifies the orientation of the target display/paper.
+              Possible values: "portrait" or "landscape"
+              Example: media="all and (orientation: landscape)".
+            </td>
+          </tr>
+          <tr>
+            <td>aspect-ratio</td>
+            <td>
+              Specifies the width/height ratio of the targeted display area.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (aspect-ratio:16/9)".
+            </td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td>
+              Specifies the bits per color of target display.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (color:3)".
+            </td>
+          </tr>
+          <tr>
+            <td>color-index</td>
+            <td>
+              Specifies the number of colors the target display can handle.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (min-color-index:256)".
+            </td>
+          </tr>
+          <tr>
+            <td>monochrome</td>
+            <td>
+              Specifies the bits per pixel in a monochrome frame buffer.
+              "min-" and "max-" prefixes can be used.
+              Example: media="screen and (monochrome:2)".
+            </td>
+          </tr>
+          <tr>
+            <td>resolution</td>
+            <td>
+              Specifies the pixel density (dpi or dpcm) of the target display/paper.
+              "min-" and "max-" prefixes can be used.
+              Example: media="print and (resolution:300dpi)".
+            </td>
+          </tr>
+          <tr>
+            <td>scan</td>
+            <td>
+              Specifies scanning method of a tv display.
+              Possible values are "progressive" and "interlace".
+              Example: media="tv and (scan:interlace)".
+            </td>
+          </tr>
+          <tr>
+            <td>grid</td>
+            <td>
+              Specifies if the output device is grid or bitmap.
+              Possible values are "1" for grid, and "0" otherwise.
+              Example: media="handheld and (grid:1)".
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p>Link to a page with a different style for printing.</p>
+      </div>
+    </div>
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">head</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">link</span>
+          <span class="crimson">rel=</span><span class="olive">"stylesheet"</span>
+          <span class="crimson">type=</span><span class="olive">"text/css"</span>
+          <span class="crimson">href=</span><span class="olive">"print.css"</span>
+          <span class="crimson">media=</span><span class="olive">"print"</span>&gt;
+        </p>
+      &lt;<span class="brown">/head</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="linkRel" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">rel</h2></div>
+    <div style="float: right;"><a href="#attributesLink"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The required rel attribute specifies the relationship between the current document and the linked document/resource.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Attribute values
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>alternate</td>
+            <td>Links to an alternate version of the document (i.e. print page, translated or mirror).</td>
+          </tr>
+          <tr>
+            <td>autor</td>
+            <td>Links to the author of the document.</td>
+          </tr>
+          <tr>
+            <td>dns-prefetch</td>
+            <td>Specifies that the browser should preemptively perform DNS resolution for the target resource's origin.</td>
+          </tr>
+          <tr>
+            <td>help</td>
+            <td>Provides a link to a help document.</td>
+          </tr>
+          <tr>
+            <td>icon</td>
+            <td>Imports an icon to represent the document.</td>
+          </tr>
+          <tr>
+            <td>license</td>
+            <td>Provides a link to copyright information for the document.</td>
+          </tr>
+          <tr>
+            <td>next</td>
+            <td>Provides a link to the next document in the series.</td>
+          </tr>
+          <tr>
+            <td>pingback</td>
+            <td>Provides the address of the pingback server that handles pingbacks to the current document.</td>
+          </tr>
+          <tr>
+            <td>noreferrer</td>
+            <td>Specifies that the browser should preemptively connect to the target resource's origin.</td>
+          </tr>
+          <tr>
+            <td>preconnect</td>
+            <td>Requires that any browsing context created by following the hyperlink must not have an opener browsing context.</td>
+          </tr>
+          <tr>
+            <td>prefetch</td>
+            <td>
+              Specifies that the browser should preemptively fetch and cache
+              the target resource as it is likely to be required for a follow-up navigation.
+            </td>
+          </tr>
+          <tr>
+            <td>preload</td>
+            <td>
+              Specifies that the browser agent must preemptively fetch and cache
+              the target resource for current navigation according to the destination
+              given by the "as" attribute (and the priority associated with that destination).
+            </td>
+          </tr>
+          <tr>
+            <td>prev</td>
+            <td>
+              Indicates that the document is a part of a series,
+              and that the previous document in the series is the referenced document.
+            </td>
+          </tr>
+          <tr>
+            <td>search</td>
+            <td>Provides a link to a resource that can be used to search through the current document and its related pages.</td>
+          </tr>
+          <tr>
+            <td>stylesheet</td>
+            <td>Imports a style sheet.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p>An external stylesheet.</p>
+      </div>
+    </div>
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">head</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">link</span>
+          <span class="crimson">rel=</span><span class="olive">"stylesheet"</span>
+          <span class="crimson">type=</span><span class="olive">"text/css"</span>
+          <span class="crimson">href=</span><span class="olive">"theme.css"</span>&gt;
+        </p>
+      &lt;<span class="brown">/head</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="linkSizes" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">sizes</h2></div>
+    <div style="float: right;"><a href="#attributesLink"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The sizes attribute specifies the sizes of icons for visual media.
+      </div>
+      <div class="note-value">
+        This attribute is only used if rel="icon".
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The sizes attribute is not currently supported in any of the major browsers.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Height x Width</td>
+            <td>
+              Specifies one or more sizes for the linked icon.<br>
+              The height and width values are separated by an "x" or "X".<br>
+            </td>
+          </tr>
+          <tr>
+            <td>any</td>
+            <td>Specifies that the icon is scalable (like an SVG image).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p>The sizes attribute is not currently supported in any of the major browsers.</p>
+      </div>
+    </div>
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">head</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">link</span>
+          <span class="crimson">rel=</span><span class="olive">"icon"</span>
+          <span class="crimson">href=</span><span class="olive">"favicon.png"</span>
+          <span class="crimson">sizes=</span><span class="olive">"16x16 32x32"</span>
+          <span class="crimson">type=</span><span class="olive">"img/png"</span>&gt;
+        </p>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">link</span>
+          <span class="crimson">rel=</span><span class="olive">"icon"</span>
+          <span class="crimson">href=</span><span class="olive">"icon.svg"</span>
+          <span class="crimson">sizes=</span><span class="olive">"any"</span>
+          <span class="crimson">type=</span><span class="olive">"image/svg+xml"</span>&gt;
+        </p>
+      &lt;<span class="brown">/head</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="linkTarget" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">target</h2></div>
+    <div style="float: right;"><a href="#attributesLink"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The target attribute specifies a window or a frame where the linked document is loaded.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;link&gt; target attribute is not supported in HTML5.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>_blank</td>
+            <td>Load in a new window.</td>
+          </tr>
+          <tr>
+            <td>_self</td>
+            <td>Load in the same frame as it was clicked.</td>
+          </tr>
+          <tr>
+            <td>_parent</td>
+            <td>Load in the parent frameset.</td>
+          </tr>
+          <tr>
+            <td>_top</td>
+            <td>Load in the full body of the window.</td>
+          </tr>
+          <tr>
+            <td>framename</td>
+            <td>Load in a named frame.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p>The <link> target attribute is not supported in HTML5.</p>
+      </div>
+    </div>
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">head</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">link</span>
+          <span class="crimson">rel=</span><span class="olive">"parent"</span>
+          <span class="crimson">href=</span><span class="olive">"example.html"</span>
+          <span class="crimson">target=</span><span class="olive">"_blank"</span>&gt;
+        </p>
+      &lt;<span class="brown">/head</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="linkType" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">type</h2></div>
+    <div style="float: right;"><a href="#attributesLink"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The type attribute specifies the Internet media type (formerly known as MIME type) of the linked document/resource.
+      </div>
+      <div class="note-value">
+        This attribute is only used if the href attribute is set.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        This attribute is purely advisory.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>media_type</td>
+            <td>The Internet media type of the linked document.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p>The type attribute indicates that the linked document is an external style sheet.</p>
+      </div>
+    </div>
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">head</span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">link</span>
+          <span class="crimson">rel=</span><span class="olive">"stylesheet"</span>
+          <span class="crimson">type=</span><span class="olive">"text/css"</span>
+          <span class="crimson">href=</span><span class="olive">"theme.css"</span>&gt;
+        </p>
+      &lt;<span class="brown">/head</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>

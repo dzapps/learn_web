@@ -1,27 +1,29 @@
-function discType() {
-  document.getElementById("disc-type").style.display = "block";
-  document.getElementById("circle-type").style.display = "none";
-  document.getElementById("square-type").style.display = "none";
-  document.getElementById("none-type").style.display = "none";
+function discType(id, type) {
+  document.getElementById(id).type = type;
+  document.getElementsByClassName("replaceUl")[0].innerHTML = type;
 }
 
-function circleType() {
-  document.getElementById("disc-type").style.display = "none";
-  document.getElementById("circle-type").style.display = "block";
-  document.getElementById("square-type").style.display = "none";
-  document.getElementById("none-type").style.display = "none";
+function listsOlReversed(id, state) {
+  if (state == '') {
+    document.getElementById(id).reversed = false;
+    document.getElementsByClassName("replaceOl")[0].innerHTML = state;
+  } else {
+    document.getElementById(id).reversed = true;
+    document.getElementsByClassName("replaceOl")[0].innerHTML = ' ' + state;
+  }
 }
 
-function squareType() {
-  document.getElementById("disc-type").style.display = "none";
-  document.getElementById("circle-type").style.display = "none";
-  document.getElementById("square-type").style.display = "block";
-  document.getElementById("none-type").style.display = "none";
+function listsOlStart(id, number) {
+  document.getElementById(id).start = number;
+  document.getElementsByClassName("replaceStart")[0].innerHTML = number;
 }
 
-function noneType() {
-  document.getElementById("disc-type").style.display = "none";
-  document.getElementById("circle-type").style.display = "none";
-  document.getElementById("square-type").style.display = "none";
-  document.getElementById("none-type").style.display = "block";
+function listsOlType(id, type) {
+  document.getElementById(id).type = type;
+  document.getElementsByClassName("replaceType")[0].innerHTML = type;
+}
+
+function changeListsLiType(id, type) {
+  document.getElementById(id).type = type;
+  document.getElementsByClassName("replaceLiType")[0].innerHTML = type;
 }

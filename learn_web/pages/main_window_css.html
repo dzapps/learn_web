@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../styles/common.css" />
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+  <script src="../scripts/main_window.js"></script>
 </head>
 
 <style>
@@ -19,16 +20,24 @@
 </style>
 
 <body>
-  <script src="../scripts/main_window.js"></script>
-  <div id="logos">
-    <a href="../pages/main_window_html.html">
-      <img onclick="shooseHTML()" src="../images/html5_logo.png" alt="html5_logo" />
+  <div style="display: flex; justify-content: center; flex-flow: row wrap;">
+    <a href="#" style="text-decoration: none;">
+      <figure class="dom">
+        <figcaption style="font-weight: 800; color: black;">DOM</figcaption>
+        <img src="../images/dom.png" alt="dom" width="200px" height="100px" style="margin: -2em;">
+      </figure>
+    </a>
+    <a class="logos" style="margin-left: -3em; margin-top: 2em;" href="../pages/main_window_html.html">
+      <img class="logos" onclick="shooseHTML()" src="../images/html5_logo.png" alt="html5_logo" />
     </a>
     <a href="../pages/main_window_css.html">
-      <img style="margin: -30px 0 0 24px;" src="../images/css3_logo.png" alt="css3_logo"/>
+      <img class="logos" style="margin-left: 1em; margin-top: 2em;" src="../images/css3_logo.png" alt="css3_logo"/>
     </a>
     <a href="../pages/main_window_js.html">
-      <img style=" width: 8em; height: 8.1em;" onclick="chooseJS()" src="../images/js_logo.png" alt="css3_logo"/>
+      <img class="logos" style=" width: 8em; height: 8.1em; margin-left: -0.3em; margin-top: 2em;" onclick="chooseJS()" src="../images/js_logo.png" alt="css3_logo"/>
+    </a>
+    <a href="../pages/main_window_angular.html">
+      <img class="logos" style=" width: 8em; height: 8.1em; margin-left: -1.6em;" onclick="chooseJS()" src="../images/angular_logo_svg.png" alt="css3_logo"/>
     </a>
   </div>
   <p style="clear: left;"></p>

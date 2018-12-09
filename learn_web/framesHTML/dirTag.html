@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dir</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+<body>
+  <script src="../scripts/lists.js"></script>
+  <div class="tag">
+    <h1 class="highlightText">Lists</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+  <div><h2 class="tag shadowText" style="float: left;">&lt;dir&gt;</h2></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/lists.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;dir&gt; tag is used to list directory titles.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The &lt;dir&gt; tag is not supported in HTML5. Use &lt;ul&gt; or CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsDir"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+            <td><a href="#listsDirCompact" class="attr-links">compact</a></td>
+            <td>compact</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies that the list should render smaller than normal.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="listsDirCompact" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">compact</h2></div>
+    <div style="float: right;"><a href="#attributsDir"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The compact attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that the list should render smaller than normal,
+        by reducing the space between lines and the indentation of the list.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The compact attribute of &lt;dir&gt; is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover exampleHTMLDiv" style="text-align: left;">
+      <dir compact>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li >Milk</li>
+      </dir>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">dir </span><span class="crimson">compact</span>&gt;
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">li</span>&gt;<span class="black">Coffee</span>&lt;<span class="brown">/li</span>&gt;<br>
+        &lt;<span class="brown">li</span>&gt;<span class="black">Tea</span>&lt;<span class="brown">/li</span>&gt;<br>
+        &lt;<span class="brown">li</span>&gt;<span class="black">Milk</span>&lt;<span class="brown">/li</span>&gt;<br>
+      </p>
+      &lt;<span class="brown">/dir</span>&gt;
+    </div>
+  </div>
+</div>
+<div class="attrSeparation"></div>
+
+</body>
+</html>

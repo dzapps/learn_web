@@ -7,8 +7,7 @@ nav {
   text-align: center;
 }
 
-img {
-  float: left;
+.logos {
   width: 5.5em;
   height: 8em;
 }
@@ -19,4 +18,12 @@ img:hover {
 
 .view {
   display: none;
+}
+
+.dom {
+  text-align: center;
+  font-size: 40px;
+  line-height: 0.7em;
+  margin-right: 2.8em;
+  margin-top: 0.3em;
 }
