@@ -23,6 +23,11 @@ function changeTableCellspacing(id, cellspacing) {
   document.getElementsByClassName('replaceTableCellspacing')[0].innerHTML = '"' + cellspacing + '"';
 }
 
+function changeTableFrame(id, frame) {
+  document.getElementById(id).frame = frame;
+  document.getElementsByClassName('replaceTableFrame')[0].innerHTML = '"' + frame + '"';
+}
+
 function changeTableRules(id, rules) {
   document.getElementById(id).rules = rules;
   document.getElementsByClassName('replaceTableRules')[0].innerHTML = '"' + rules + '"';
@@ -31,4 +36,9 @@ function changeTableRules(id, rules) {
 function changeTableWidth(id, width) {
   document.getElementById(id).width = width;
   document.getElementsByClassName('replaceTableWidth')[0].innerHTML = '"' + width + '"';
+}
+
+function changeCaptionAlign(id, align) {
+  document.getElementById(id).align = align;
+  document.getElementsByClassName('replaceCaptionAlign')[0].innerHTML = '"' + align + '"';
 }

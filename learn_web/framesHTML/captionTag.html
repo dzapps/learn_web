@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caption</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+<body>
+  <script src="../scripts/tables.js"></script>
+  <div class="tag">
+    <h1 class="highlightText">Tables</h1>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+  <div><h2 class="tag shadowText" style="float: left;">&lt;caption&gt;</h2></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/tables.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;caption&gt; tag defines a table caption.
+      </div>
+      <div class="note-value">
+        The &lt;caption&gt; tag must be inserted immediately after the &lt;table&gt; tag.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        You can specify only one caption per table.
+      </div>
+      <div class="note-value">
+        By default, a table caption will be center-aligned above a table.
+        However, the CSS properties text-align and caption-side can be used to align and place the caption.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsTable"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#captionAlign">align</a></td>
+            <td>left<br>right<br>top<br>bottom</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Defines the alignment of the caption.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="captionAlign" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">align</h2></div>
+    <div style="float: right;"><a href="#attributsTable"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The align attribute defines the alignment of a caption element.
+      </div>
+      <div class="note-value">
+        This attribute should align the caption as a block element to the left, right, above, or below a table.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The &lt;caption&gt; align attribute is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsCaption"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>left</td>
+            <td>The caption is at the left of the table.</td>
+          </tr>
+          <tr>
+            <td>right</td>
+            <td>The caption is at the right of the table.</td>
+          </tr>
+          <tr>
+            <td>top</td>
+            <td>The caption is at the top of the table (this is default).</td>
+          </tr>
+          <tr>
+            <td>bottom</td>
+            <td>The caption is at the bottom of the table.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="captionAlignExamplBar" class="more-padding;">
+        <a href="#captionAlignExamplBar">
+          <button onclick="changeTableAlign('captionAlignExamp', 'left')" class="example-button example-rounded-buttons">left</button>
+        </a>
+        <a href="#captionAlignExamplBar">
+          <button onclick="changeTableAlign('captionAlignExamp', 'right')" class="example-button example-rounded-buttons">right</button>
+        </a>
+        <a href="#captionAlignExamplBar">
+          <button onclick="changeTableAlign('captionAlignExamp', 'top')" class="example-button example-rounded-buttons">top</button>
+        </a>
+        <a href="#captionAlignExamplBar">
+          <button onclick="changeTableAlign('captionAlignExamp', 'bottom')" class="example-button example-rounded-buttons">bottom</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <table class="tableHTML">
+        <caption id="captionAlignExamp" align="">Fruit list</caption>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Taste</th>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Fruit</td>
+            <td>Sweet and sour</td>
+          </tr>
+          <tr>
+            <td>Banana</td>
+            <td>Fruit</td>
+            <td>Sweet</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">table</span>&gt;<br>
+      &lt;<span class="brown">caption</span>
+      <span class="crimson">align=</span><span class="olive replaceTableAlign">"top"</span>&gt;&lt;<span class="brown">/caption</span>&gt;<br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Banana</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      &lt;<span class="brown">/table</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+</body>
+</html>

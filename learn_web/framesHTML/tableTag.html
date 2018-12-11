@@ -23,7 +23,7 @@
 
   <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
   <div><h2 class="tag shadowText" style="float: left;">&lt;table&gt;</h2></div>
-  <div class="" style="float: right;"><a href="../pagesHTML/lists.html"><button class="html-buttons-prop">X</button></a></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/tables.html"><button class="html-buttons-prop">X</button></a></div>
     <div style="clear: both;"><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
@@ -852,24 +852,36 @@
     <div class="hover" style="padding: 5px; max-width: 90%;">
       <div id="tableFrameExamplBar" class="more-padding;">
         <a href="#tableFrameExamplBar">
-          <button onclick="changeTableFrame('tableFrameExamp', 'none')" class="example-button example-rounded-buttons">none</button>
+          <button onclick="changeTableFrame('tableFrameExamp', 'void')" class="example-button example-rounded-buttons">void</button>
         </a>
         <a href="#tableFrameExamplBar">
-          <button onclick="changeTableFrame('tableFrameExamp', 'groups')" class="example-button example-rounded-buttons">groups</button>
+          <button onclick="changeTableFrame('tableFrameExamp', 'above')" class="example-button example-rounded-buttons">above</button>
         </a>
         <a href="#tableFrameExamplBar">
-          <button onclick="changeTableFrame('tableFrameExamp', 'rows')" class="example-button example-rounded-buttons">rows</button>
+          <button onclick="changeTableFrame('tableFrameExamp', 'below')" class="example-button example-rounded-buttons">below</button>
         </a>
         <a href="#tableFrameExamplBar">
-          <button onclick="changeTableFrame('tableFrameExamp', 'cols')" class="example-button example-rounded-buttons">cols</button>
+          <button onclick="changeTableFrame('tableFrameExamp', 'hsides')" class="example-button example-rounded-buttons">hsides</button>
         </a>
         <a href="#tableFrameExamplBar">
-          <button onclick="changeTableFrame('tableFrameExamp', 'all')" class="example-button example-rounded-buttons">all</button>
+          <button onclick="changeTableFrame('tableFrameExamp', 'vsides')" class="example-button example-rounded-buttons">vsides</button>
+        </a>
+        <a href="#tableFrameExamplBar">
+          <button onclick="changeTableFrame('tableFrameExamp', 'lhs')" class="example-button example-rounded-buttons">lhs</button>
+        </a>
+        <a href="#tableFrameExamplBar">
+          <button onclick="changeTableFrame('tableFrameExamp', 'rhs')" class="example-button example-rounded-buttons">rhs</button>
+        </a>
+        <a href="#tableFrameExamplBar">
+          <button onclick="changeTableFrame('tableFrameExamp', 'box')" class="example-button example-rounded-buttons">box</button>
+        </a>
+        <a href="#tableFrameExamplBar">
+          <button onclick="changeTableFrame('tableFrameExamp', 'border')" class="example-button example-rounded-buttons">border</button>
         </a>
       </div>
 
       <div class="exampleHTMLDiv">
-        <table id="tableFrameExamp" class="" rules="">
+        <table id="tableFrameExamp" class="" frame="">
           <tr>
             <th>Name</th>
             <th>Description</th>
