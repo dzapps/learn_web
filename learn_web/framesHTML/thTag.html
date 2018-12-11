@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Th</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+<body>
+  <script src="../scripts/tables.js"></script>
+  <div class="tag">
+    <h1 class="highlightText">Tables</h1>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+  <div><h2 class="tag shadowText" style="float: left;">&lt;th&gt;</h2></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/tables.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The <th> tag defines a header cell in an HTML table.
+      </div>
+      <div class="note-value">
+        The text in <th> elements are bold and centered by default.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Use the colspan and rowspan attribute to let the content span over multiple columns or rows!
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsTh"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#thAbbr" class="attr-links">abbr</a></td>
+            <td>text</td>
+            <td>Specifies an abbreviated version of the content in a header cell.</td>
+          </tr>
+          <tr>
+            <td><a href="#thAlign" class="attr-links">align</a></td>
+            <td>left<br>right<br>center<br>justify<br>char</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Aligns the content in a header cell.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#thAxis" class="attr-links">axis</a></td>
+            <td>category_name</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Categorizes header cells.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#thBgcolor" class="attr-links">bgcolor</a></td>
+            <td>rgb(x,x,x)<br>#xxxxxx<br>colorname</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the background color of a header cell.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#thChar" class="attr-links">char</a></td>
+            <td>character</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Aligns the content in a header cell to a character.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#thCharoff" class="attr-links">charoff</a></td>
+            <td>number</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Sets the number of characters the content will be aligned from the character specified by the char attribute.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#thColspan" class="attr-links">colspan</a></td>
+            <td>number</td>
+            <td>
+              Specifies the number of columns a header cell should span.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#thHeaders" class="attr-links">headers</a></td>
+            <td>header_id</td>
+            <td>Specifies one or more header cells a cell is related to.</td>
+          </tr>
+          <tr>
+            <td><a href="#thHeight" class="attr-links">height</a></td>
+            <td>pixels<br>%</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Sets the height of a header cell.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#thNowrap" class="attr-links">nowrap</a></td>
+            <td>nowrap</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies that the content inside a header cell should not wrap.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#thRowspan" class="attr-links">rowspan</a></td>
+            <td>number</td>
+            <td>
+              Specifies the number of rows a header cell should span.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#thScope" class="attr-links">scope</a></td>
+            <td>col<br>colgroup<br>row<br>rowgroup</td>
+            <td>Specifies whether a header cell is a header for a column, row, or group of columns or rows.</td>
+          </tr>
+          <tr>
+            <td><a href="#thSorted" class="attr-links">sorted</a></td>
+            <td>reversed<br>number<br>reversed number<br>number reversed</td>
+            <td>Defines the sort direction of a column.</td>
+          </tr>
+          <tr>
+            <td><a href="#thValign" class="attr-links">valign</a></td>
+            <td>top<br>middle<br>bottom<br>baseline</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Vertical aligns the content in a header cell.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#thWidth" class="attr-links">width</a></td>
+            <td>pixels<br>%</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the width of a table.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="thAbbr" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">abbr</h2></div>
+    <div style="float: right;"><a href="#attributsTh"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The abbr attribute specifies a shorter version of the content in a header cell.
+      </div>
+      <div class="note-value">
+        The abbr attribute has no visual effect in ordinary web browsers, but can be used by screen readers.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsTh"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>text</td>
+            <td>A short description of the header cell content.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <table id="thAbbrExamp" class="tableHTML">
+          <tr>
+            <th abbr="Name">Name</th>
+            <th abbr="Desc">Description</th>
+            <th abbr="Taste">Taste</th>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Fruit</td>
+            <td>Sweet and sour</td>
+          </tr>
+          <tr>
+            <td>Banana</td>
+            <td>Fruit</td>
+            <td>Sweet</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">table</span>&gt;<br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>
+          <span class="brown">abbr=</span><span class="olive">"Name"</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>
+          <span class="brown">abbr=</span><span class="olive">"Desc"</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>
+          <span class="brown">abbr=</span><span class="olive">"Taste"</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Banana</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      &lt;<span class="brown">/table</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="thAlign" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">align</h2></div>
+    <div style="float: right;"><a href="#attributsTh"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The align attribute specifies the horizontal alignment of the content in a header cell.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The align attribute of &lt;th&gt; is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsTh"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>left</td>
+            <td>Left-aligns content.</td>
+          </tr>
+          <tr>
+            <td>right</td>
+            <td>Right-aligns content.</td>
+          </tr>
+          <tr>
+            <td>center</td>
+            <td>Default. Center-aligns content.</td>
+          </tr>
+          <tr>
+            <td>justify</td>
+            <td>Stretches the lines so that each line has equal width (like in newspapers and magazines).</td>
+          </tr>
+          <tr>
+            <td>char</td>
+            <td>Aligns the content to a specific character.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="thAlignExamplBar" class="more-padding;">
+        <a href="#thAlignExamplBar">
+          <button onclick="changeThAlign('thAlignExamp', 'left')" class="example-button example-rounded-buttons">left</button>
+        </a>
+        <a href="#thAlignExamplBar">
+          <button onclick="changeThAlign('thAlignExamp', 'right')" class="example-button example-rounded-buttons">right</button>
+        </a>
+        <a href="#thAlignExamplBar">
+          <button onclick="changeThAlign('thAlignExamp', 'center')" class="example-button example-rounded-buttons">center</button>
+        </a>
+        <a href="#thAlignExamplBar">
+          <button onclick="changeThAlign('thAlignExamp', 'justify')" class="example-button example-rounded-buttons">justify</button>
+        </a>
+        <a href="#thAlignExamplBar">
+          <button onclick="changeThAlign('thAlignExamp', 'char')" class="example-button example-rounded-buttons">char</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <table class="tableHTML" style="width: 50%;">
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th id="thAlignExamp" align="">Taste</th>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Fruit</td>
+            <td>Sweet and sour</td>
+          </tr>
+          <tr>
+            <td>Banana</td>
+            <td>Fruit</td>
+            <td>Sweet</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">table</span>&gt;<br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>
+          <span class="crimson">align=</span><span class="olive replaceThAlign">"left"</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Banana</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      &lt;<span class="brown">/table</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="tableBgcolor" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">bgcolor</h2></div>
+    <div style="float: right;"><a href="#attributsTable"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The bgcolor attribute specifies a background color of a table.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The align attribute of &lt;table&gt; is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsTable"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>color_name</td>
+            <td>Specifies the background color with a color name (like "red").</td>
+          </tr>
+          <tr>
+            <td>hex_number</td>
+            <td>Specifies the background color with a hex code (like "#ff0000").</td>
+          </tr>
+          <tr>
+            <td>rgb_number</td>
+            <td>Specifies the background color with an rgb code (like "rgb(255,0,0)").</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="tableBgcolorExamplBar" class="more-padding;">
+        <a href="#tableBgcolorExamplBar">
+          <button onclick="changeTableBgcolor('tableBgcolorExamp', 'lightblue')" class="example-button example-rounded-buttons">lightblue</button>
+        </a>
+        <a href="#tableBgcolorExamplBar">
+          <button onclick="changeTableBgcolor('tableBgcolorExamp', '#16a4a8')" class="example-button example-rounded-buttons">#16a4a8</button>
+        </a>
+        <a href="#tableBgcolorExamplBar">
+          <button onclick="changeTableBgcolor('tableBgcolorExamp', 'rgb(165, 217, 228)')" class="example-button example-rounded-buttons">rgb(32, 135, 158)</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <table id="tableBgcolorExamp" class="tableHTML">
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Taste</th>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Fruit</td>
+            <td>Sweet and sour</td>
+          </tr>
+          <tr>
+            <td>Banana</td>
+            <td>Fruit</td>
+            <td>Sweet</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">table</span>
+      <span class="crimson">bgcolor=</span><span class="olive replaceTableBgcolor">""</span>&gt;<br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Banana</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      &lt;<span class="brown">/table</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="tableBorder" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">border</h2></div>
+    <div style="float: right;"><a href="#attributsTable"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The border attribute specifies if a border should be displayed around the table cells or not.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The border attribute of &lt;table&gt; is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsTable"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>No borders around the table cells.</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Add borders around the table cells.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="tableBorderExamplBar" class="more-padding;">
+        <a href="#tableBorderExamplBar">
+          <button onclick="changeTableBorder('tableBorderExamp', '0')" class="example-button example-rounded-buttons">0</button>
+        </a>
+        <a href="#tableBorderExamplBar">
+          <button onclick="changeTableBorder('tableBorderExamp', '1')" class="example-button example-rounded-buttons">1</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <table id="tableBorderExamp" class="" border="0">
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Taste</th>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Fruit</td>
+            <td>Sweet and sour</td>
+          </tr>
+          <tr>
+            <td>Banana</td>
+            <td>Fruit</td>
+            <td>Sweet</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">table</span>
+      <span class="crimson">border=</span><span class="olive replaceTableBorder">""</span>&gt;<br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Banana</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      &lt;<span class="brown">/table</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="tableCellpadding" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">cellpadding</h2></div>
+    <div style="float: right;"><a href="#attributsTable"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The cellpadding attribute specifies the space, in pixels, between the cell wall and the cell content.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The cellpadding attribute of &lt;table&gt; is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsTable"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>The space between the cell wall and the cell content.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="tableCellpaddingExamplBar" class="more-padding;">
+        <a href="#tableCellpaddingExamplBar">
+          <button onclick="changeTableCellpadding('tableCellpaddingExamp', '5px')" class="example-button example-rounded-buttons">5px</button>
+        </a>
+        <a href="#tableCellpaddingExamplBar">
+          <button onclick="changeTableCellpadding('tableCellpaddingExamp', '10px')" class="example-button example-rounded-buttons">10px</button>
+        </a>
+        <a href="#tableCellpaddingExamplBar">
+          <button onclick="changeTableCellpadding('tableCellpaddingExamp', '20px')" class="example-button example-rounded-buttons">20px</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <table id="tableCellpaddingExamp" class="tableHTML" cellpadding="">
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Taste</th>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Fruit</td>
+            <td>Sweet and sour</td>
+          </tr>
+          <tr>
+            <td>Banana</td>
+            <td>Fruit</td>
+            <td>Sweet</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">table</span>
+      <span class="crimson">cellpadding=</span><span class="olive replaceTableCellpadding">""</span>&gt;<br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Banana</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      &lt;<span class="brown">/table</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="tableCellspacing" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">cellspacing</h2></div>
+    <div style="float: right;"><a href="#attributsTable"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+         The cellspacing attribute specifies the space, in pixels, between cells.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The cellspacing attribute of &lt;table&gt; is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsTable"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>The space between cells.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="tableCellspacingExamplBar" class="more-padding;">
+        <a href="#tableCellspacingExamplBar">
+          <button onclick="changeTableCellspacing('tableCellspacingExamp', '5px')" class="example-button example-rounded-buttons">5px</button>
+        </a>
+        <a href="#tableCellspacingExamplBar">
+          <button onclick="changeTableCellspacing('tableCellspacingExamp', '10px')" class="example-button example-rounded-buttons">10px</button>
+        </a>
+        <a href="#tableCellspacingExamplBar">
+          <button onclick="changeTableCellspacing('tableCellspacingExamp', '20px')" class="example-button example-rounded-buttons">20px</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <table id="tableCellspacingExamp" class="tableHTML" cellpadding="">
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Taste</th>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Fruit</td>
+            <td>Sweet and sour</td>
+          </tr>
+          <tr>
+            <td>Banana</td>
+            <td>Fruit</td>
+            <td>Sweet</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">table</span>
+      <span class="crimson">cellspacing=</span><span class="olive replaceTableCellspacing">""</span>&gt;<br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Banana</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      &lt;<span class="brown">/table</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="tableSummary" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">summary</h2></div>
+    <div style="float: right;"><a href="#attributsTable"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+         The summary attribute specifies a summary of the content of a table.
+      </div>
+      <div class="note-value">
+         The summary attribute has no visual effect in ordinary web browsers, but can be used by screen readers.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The summary attribute of &lt;table&gt; is not supported in HTML5.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsTable"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>text</td>
+            <td>A summary of the content of the table.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <table id="tableSummaryExamp" class="tableHTML" summary="List of fruit flavors">
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Taste</th>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Fruit</td>
+            <td>Sweet and sour</td>
+          </tr>
+          <tr>
+            <td>Banana</td>
+            <td>Fruit</td>
+            <td>Sweet</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">table</span>
+      <span class="crimson">summary=</span><span class="olive replaceTableSummary">"List of fruit flavors"</span>&gt;<br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Banana</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      &lt;<span class="brown">/table</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="tableFrame" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">frame</h2></div>
+    <div style="float: right;"><a href="#attributsTable"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+         Specifies which parts of the outside borders that should be visible.
+      </div>
+      <div class="note-value">
+         The frame attribute specifies which parts of the outside table borders that should be visible.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The frame attribute of &lt;table&gt; is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsTable"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>void</td>
+            <td>The outside borders are not shown.</td>
+          </tr>
+          <tr>
+            <td>above</td>
+            <td>The top outside border is shown.</td>
+          </tr>
+          <tr>
+            <td>below</td>
+            <td>The bottom outside border is shown.</td>
+          </tr>
+          <tr>
+            <td>hsides</td>
+            <td>The top and bottom outside borders are shown.</td>
+          </tr>
+          <tr>
+            <td>vsides</td>
+            <td>The left and right outside borders are shown.</td>
+          </tr>
+          <tr>
+            <td>lhs</td>
+            <td>The left outside border is shown.</td>
+          </tr>
+          <tr>
+            <td>rhs</td>
+            <td>The right outside border is shown.</td>
+          </tr>
+          <tr>
+            <td>box</td>
+            <td>The outside borders are shown on all four sides.</td>
+          </tr>
+          <tr>
+            <td>border</td>
+            <td>The outside borders are shown on all four sides.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="tableFrameExamplBar" class="more-padding;">
+        <a href="#tableFrameExamplBar">
+          <button onclick="changeTableFrame('tableFrameExamp', 'void')" class="example-button example-rounded-buttons">void</button>
+        </a>
+        <a href="#tableFrameExamplBar">
+          <button onclick="changeTableFrame('tableFrameExamp', 'above')" class="example-button example-rounded-buttons">above</button>
+        </a>
+        <a href="#tableFrameExamplBar">
+          <button onclick="changeTableFrame('tableFrameExamp', 'below')" class="example-button example-rounded-buttons">below</button>
+        </a>
+        <a href="#tableFrameExamplBar">
+          <button onclick="changeTableFrame('tableFrameExamp', 'hsides')" class="example-button example-rounded-buttons">hsides</button>
+        </a>
+        <a href="#tableFrameExamplBar">
+          <button onclick="changeTableFrame('tableFrameExamp', 'vsides')" class="example-button example-rounded-buttons">vsides</button>
+        </a>
+        <a href="#tableFrameExamplBar">
+          <button onclick="changeTableFrame('tableFrameExamp', 'lhs')" class="example-button example-rounded-buttons">lhs</button>
+        </a>
+        <a href="#tableFrameExamplBar">
+          <button onclick="changeTableFrame('tableFrameExamp', 'rhs')" class="example-button example-rounded-buttons">rhs</button>
+        </a>
+        <a href="#tableFrameExamplBar">
+          <button onclick="changeTableFrame('tableFrameExamp', 'box')" class="example-button example-rounded-buttons">box</button>
+        </a>
+        <a href="#tableFrameExamplBar">
+          <button onclick="changeTableFrame('tableFrameExamp', 'border')" class="example-button example-rounded-buttons">border</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <table id="tableFrameExamp" class="" frame="">
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Taste</th>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Fruit</td>
+            <td>Sweet and sour</td>
+          </tr>
+          <tr>
+            <td>Banana</td>
+            <td>Fruit</td>
+            <td>Sweet</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">table</span>
+      <span class="crimson">frame=</span><span class="olive replaceTableFrame">""</span>&gt;<br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Banana</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      &lt;<span class="brown">/table</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="tableRules" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">rules</h2></div>
+    <div style="float: right;"><a href="#attributsTable"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+         The rules attribute specifies which parts of the inside borders that should be visible.
+      </div>
+      <div class="note-value">
+         If the width attribute is not set, a table takes up the space it needs to display the table data.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Chrome and Safari displays this attribute incorrectly:
+        They add the affected outside borders in addition to the inside borders.
+      </div>
+      <div class="note-value">
+        The width attribute of &lt;table&gt; is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsTable"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>none</td>
+            <td>No lines.</td>
+          </tr>
+          <tr>
+            <td>groups</td>
+            <td>Lines between row groups and column groups.</td>
+          </tr>
+          <tr>
+            <td>rows</td>
+            <td>Lines between rows.</td>
+          </tr>
+          <tr>
+            <td>cols</td>
+            <td>Lines between columns.</td>
+          </tr>
+          <tr>
+            <td>all</td>
+            <td>Lines between rows and columns.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="tableRulesExamplBar" class="more-padding;">
+        <a href="#tableRulesExamplBar">
+          <button onclick="changeTableRules('tableRulesExamp', 'none')" class="example-button example-rounded-buttons">none</button>
+        </a>
+        <a href="#tableRulesExamplBar">
+          <button onclick="changeTableRules('tableRulesExamp', 'groups')" class="example-button example-rounded-buttons">groups</button>
+        </a>
+        <a href="#tableRulesExamplBar">
+          <button onclick="changeTableRules('tableRulesExamp', 'rows')" class="example-button example-rounded-buttons">rows</button>
+        </a>
+        <a href="#tableRulesExamplBar">
+          <button onclick="changeTableRules('tableRulesExamp', 'cols')" class="example-button example-rounded-buttons">cols</button>
+        </a>
+        <a href="#tableRulesExamplBar">
+          <button onclick="changeTableRules('tableRulesExamp', 'all')" class="example-button example-rounded-buttons">all</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <table id="tableRulesExamp" class="" rules="">
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Taste</th>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Fruit</td>
+            <td>Sweet and sour</td>
+          </tr>
+          <tr>
+            <td>Banana</td>
+            <td>Fruit</td>
+            <td>Sweet</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">table</span>
+      <span class="crimson">rules=</span><span class="olive replaceTableRules">""</span>&gt;<br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Banana</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      &lt;<span class="brown">/table</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="tableWidth" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">width</h2></div>
+    <div style="float: right;"><a href="#attributsTable"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+         The width attribute specifies the width of a table.
+      </div>
+      <div class="note-value">
+         If the width attribute is not set, a table takes up the space it needs to display the table data.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The width attribute of &lt;table&gt; is not supported in HTML5. Use CSS instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsTable"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>Sets the width in pixels.</td>
+          </tr>
+          <tr>
+            <td>%</td>
+            <td>Sets the width in percent of the surrounding element.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="tableWidthExamplBar" class="more-padding;">
+        <a href="#tableWidthExamplBar">
+          <button onclick="changeTableWidth('tableWidthExamp', '')" class="example-button example-rounded-buttons">normal</button>
+        </a>
+        <a href="#tableWidthExamplBar">
+          <button onclick="changeTableWidth('tableWidthExamp', '200px')" class="example-button example-rounded-buttons">200px</button>
+        </a>
+        <a href="#tableWidthExamplBar">
+          <button onclick="changeTableWidth('tableWidthExamp', '400px')" class="example-button example-rounded-buttons">400px</button>
+        </a>
+        <a href="#tableWidthExamplBar">
+          <button onclick="changeTableWidth('tableWidthExamp', '80%')" class="example-button example-rounded-buttons">80%</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <table id="tableWidthExamp" class="tableHTML" width="">
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Taste</th>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Fruit</td>
+            <td>Sweet and sour</td>
+          </tr>
+          <tr>
+            <td>Banana</td>
+            <td>Fruit</td>
+            <td>Sweet</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">table</span>
+      <span class="crimson">width=</span><span class="olive replaceTableWidth">""</span>&gt;<br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Banana</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      &lt;<span class="brown">/table</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>

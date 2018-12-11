@@ -42,3 +42,8 @@ function changeCaptionAlign(id, align) {
   document.getElementById(id).align = align;
   document.getElementsByClassName('replaceCaptionAlign')[0].innerHTML = '"' + align + '"';
 }
+
+function changeThAlign(id, align) {
+  document.getElementById(id).align = align;
+  document.getElementsByClassName('replaceThAlign')[0].innerHTML = '"' + align + '"';
+}
