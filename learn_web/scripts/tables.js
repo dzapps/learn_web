@@ -47,3 +47,18 @@ function changeThAlign(id, align) {
   document.getElementById(id).align = align;
   document.getElementsByClassName('replaceThAlign')[0].innerHTML = '"' + align + '"';
 }
+
+function changeThBgcolor(id, color) {
+  document.getElementById(id).bgColor = color;
+  document.getElementsByClassName('replaceThBgcolor')[0].innerHTML = '"' + color + '"';
+}
+
+function changeThColspan(id, span) {
+  document.getElementById(id).colSpan = span;
+  document.getElementsByClassName('replaceThColspan')[0].innerHTML = '"' + span + '"';
+}
+
+function changeThRowspan(id, span) {
+  document.getElementById(id).rowSpan = span;
+  document.getElementsByClassName('replaceThRowspan')[0].innerHTML = '"' + span + '"';
+}
