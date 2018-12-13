@@ -62,3 +62,13 @@ function changeThRowspan(id, span) {
   document.getElementById(id).rowSpan = span;
   document.getElementsByClassName('replaceThRowspan')[0].innerHTML = '"' + span + '"';
 }
+
+function changeTdColspan(id, span) {
+  document.getElementById(id).colSpan = span;
+  document.getElementsByClassName('replaceTdColspan')[0].innerHTML = '"' + span + '"';
+}
+
+function changeTdRowspan(id, span) {
+  document.getElementById(id).rowSpan = span;
+  document.getElementsByClassName('replaceTdRowspan')[0].innerHTML = '"' + span + '"';
+}
