@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Col</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+<body>
+  <script src="../scripts/tables.js"></script>
+  <div class="tag">
+    <h1 class="highlightText">Tables</h1>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+  <div><h2 class="tag shadowText" style="float: left;">&lt;col&gt;</h2></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/tables.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;col&gt; tag specifies column properties for each column within a &lt;colgroup&gt; element.
+      </div>
+      <div class="note-value">
+        The &lt;col&gt; tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsCol"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+          <tr>
+            <td><a href="#colAlign" class="attr-links">align</a></td>
+            <td>left<br>right<br>center<br>justify<br>char</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the alignment of the content related to a &lt;col&gt; element.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#colChar" class="attr-links">char</a></td>
+            <td>character</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the alignment of the content related to a &lt;col&gt; element to a character.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#colCharoff" class="attr-links">charoff</a></td>
+            <td>number</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the number of characters the content will be aligned from the character specified by the char attribute.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#colSpan" class="attr-links">span</a></td>
+            <td>number</td>
+            <td>
+              Specifies the number of columns a &lt;col&gt; element should span.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#colValign" class="attr-links">valign</a></td>
+            <td>top<br>middle<br>bottom<br>baseline</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the vertical alignment of the content related to a &lt;col&gt; element.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#colWidth" class="attr-links">width</a></td>
+            <td>%<br>pixels<br>relative_length</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the width of a &lt;col&gt; element.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="colSpan" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">span</h2></div>
+    <div style="float: right;"><a href="#attributsTable"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The span attribute defines the number of columns a <col> element should span.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsCol"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>number</td>
+            <td>Sets the number of columns a <col> element should span.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div id="colSpanExamplBar" class="more-padding;">
+        <a href="#colSpanExamplBar">
+          <button onclick="changeColSpan('colSpanExamp', '1')" class="example-button example-rounded-buttons">1</button>
+        </a>
+        <a href="#colSpanExamplBar">
+          <button onclick="changeColSpan('colSpanExamp', '2')" class="example-button example-rounded-buttons">2</button>
+        </a>
+        <a href="#colSpanExamplBar">
+          <button onclick="changeColSpan('colSpanExamp', '3')" class="example-button example-rounded-buttons">3</button>
+        </a>
+      </div>
+
+      <div class="exampleHTMLDiv">
+        <table class="tableHTML">
+          <colgroup>
+            <col id="colSpanExamp" span="2" style="background-color:red">
+            <col style="background-color:yellow">
+          </colgroup>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Taste</th>
+            </tr>
+            <tr>
+              <td>Apple</td>
+              <td>Fruit</td>
+              <td>Sweet and sour</td>
+            </tr>
+            <tr>
+              <td>Banana</td>
+              <td>Fruit</td>
+              <td>Sweet</td>
+            </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">table</span>&gt;<br>
+      <span class="left-padding">&lt;<span class="brown">colgroup</span>&gt;</span><br>
+      <p class="more-padding" style="margin: 0;">
+        &lt;<span class="brown">col</span>
+        <span class="crimson">span=</span><span class="olive replaceColSpan">"2"</span>
+        <span class="crimson">style=</span><span class="olive">"background-color: red;"</span>&gt;<br /></span>
+        &lt;<span class="brown">col</span>
+        <span class="crimson">style=</span><span class="olive">"background-color: yellow;"</span>&gt;<br /></span>
+      </p>
+      <span class="left-padding">&lt;<span class="brown">/colgroup</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Banana</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      &lt;<span class="brown">/table</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>

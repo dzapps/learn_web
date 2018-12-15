@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aside</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+
+  <style>
+    header, footer, section, aside {
+      padding: 1px;
+    }
+
+    header {
+      background-color: lightblue;
+    }
+
+    section {
+      background-color: aqua;
+    }
+
+    aside {
+      background-color: lightgreen;
+    }
+
+    footer {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="../scripts/stylesAndSemantics.js"></script>
+  <div class="tag">
+    <h1 class="highlightText">Styles and Semantics</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+  <div><h2 class="tag shadowText" style="float: left;">&lt;aside&gt;</h2></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/stylesAndSemantics.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+         The &lt;aside&gt; tag defines some content aside from the content it is placed in.
+      </div>
+      <div class="note-value">
+         The aside content should be related to the surrounding content.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+         The &lt;aside&gt; content could be placed as a sidebar in an article.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv" style="display: block; text-align: center;">
+        <header>
+          <h1 style="color: black;">Desined by: Uncle Sam.</h1>
+        </header>
+        <section>
+          <h3 style="color: black;">The story about Uncle Sam.</h3>
+          <p>Once upon a time, there was Uncle Sam...</p>
+        </section>
+        <aside>
+          <p>Uncle Sam (initials U.S.) is a common national personification of the American government or the United States.</p>
+        </aside>
+        <footer>
+          <p>Posted by: Uncle Sam.</p>
+          <p>Contact information: <a href="#">unclesam@gmail.com</a>.</p>
+        </footer>
+      </div>
+    </div>
+
+    <div class="codeHTML blue float-borders-none" style="width: 50%;">
+      <span>&lt;<span class="brown">header</span>&gt;</span><br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">h1</span>&gt;<span class="black">Desined by: Uncle Sam.</span>&lt;<span class="brown">/h1</span>&gt;<br>
+      </p>
+      <span>&lt;<span class="brown">/header</span>&gt;</span><br>
+      <span>&lt;<span class="brown">section</span>&gt;</span><br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">h3</span>&gt;<span class="black">The story about Uncle Sam.</span>&lt;<span class="brown">/h3</span>&gt;<br>
+        &lt;<span class="brown">p</span>&gt;<span class="black">Once upon a time, there was Uncle Sam...</span>&lt;<span class="brown">/p</span>&gt;<br>
+      </p>
+      <span>&lt;<span class="brown">/section</span>&gt;</span><br>
+      <span>&lt;<span class="brown">aside</span>&gt;</span><br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">p</span>&gt;<span class="black">Uncle Sam (initials U.S.) is a common national personification of the American government or the United States.</span>&lt;<span class="brown">/p</span>&gt;<br>
+      </p>
+      <span>&lt;<span class="brown">/aside</span>&gt;</span><br>
+      <span>&lt;<span class="brown">footer</span>&gt;</span><br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">p</span>&gt;<span class="black">Posted by: Uncle Sam.</span>&lt;<span class="brown">/p</span>&gt;<br>
+        &lt;<span class="brown">p</span>&gt;<span class="black">Contact information:</span><br>
+        <span class="left-padding">&lt;<span class="brown">a</span>
+        <span class="crimson">href=</span><span class="olive">"unclesam@gmail.com"</span>&gt;
+        <span class="black">unclesam@gmail.com.</span>&lt;<span class="brown">/a</span>&gt;<span><br>&lt;<span class="brown">/p</span>&gt;
+      </p>
+      <span>&lt;<span class="brown">/footer</span>&gt;</span><br>
+    </div>
+
+    <div class="codeHTML blue float-borders-none">
+      &lt;<span class="brown">style</span>&gt;<br>
+      <span class="brown left-padding">header </span><span class="black">{</span><br>
+        <p class="more-padding" style="margin: 0;">
+            <span class="crimson">background-color: </span><span class="blue">lightblue;</span><br>
+        </p>
+      <span class="black left-padding">}</span><br><br>
+      <span class="brown left-padding">section </span><span class="black">{</span><br>
+        <p class="more-padding" style="margin: 0;">
+            <span class="crimson">background-color: </span><span class="blue">aqua;</span><br>
+        </p>
+      <span class="black left-padding">}</span><br><br>
+      <span class="brown left-padding">aside </span><span class="black">{</span><br>
+        <p class="more-padding" style="margin: 0;">
+            <span class="crimson">background-color: </span><span class="blue">lightgreen;</span><br>
+        </p>
+      <span class="black left-padding">}</span><br><br>
+      <span class="brown left-padding">footer </span><span class="black">{</span><br>
+        <p class="more-padding" style="margin: 0;">
+            <span class="crimson">background-color: </span><span class="blue">blue;</span><br>
+        </p>
+      <span class="black left-padding">}</span><br>
+      &lt;<span class="brown">/style</span>&gt;
+    </div>
+    <p style="clear: left;"></p>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>

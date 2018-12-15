@@ -72,3 +72,8 @@ function changeTdRowspan(id, span) {
   document.getElementById(id).rowSpan = span;
   document.getElementsByClassName('replaceTdRowspan')[0].innerHTML = '"' + span + '"';
 }
+
+function changeColSpan(id, span) {
+  document.getElementById(id).span = span;
+  document.getElementsByClassName('replaceColSpan')[0].innerHTML = '"' + span + '"';
+}
