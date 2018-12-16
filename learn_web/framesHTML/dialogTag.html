@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dialog</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+<body>
+  <script src="../scripts/stylesAndSemantics.js"></script>
+  <div class="tag">
+    <h1 class="highlightText">StylesAndSemantics</h1>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+  <div><h2 class="tag shadowText" style="float: left;">&lt;dialog&gt;</h2></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/stylesAndSemantics.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;dialog&gt; tag defines a dialog box or window.
+      </div>
+      <div class="note-value">
+        The &lt;dialog&gt; element makes it easy to create popup dialogs and modals on a web page.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsTable"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#dialogOpen" class="attr-links">open</a></td>
+            <td>open</td>
+            <td>
+              Specifies that the dialog element is active and that the user can interact with it
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="dialogOpen" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">open</h2></div>
+    <div style="float: right;"><a href="#attributsTable"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The open attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that the dialog element is active and that the user can interact with it.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+
+      <div class="exampleHTMLDiv">
+        <table class="tableHTML">
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Taste</th>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Fruit</td>
+            <td>Sweet and sour</td>
+          </tr>
+          <tr>
+            <td><dialog open>Good fruit!</dialog>Banana</td>
+            <td>Fruit</td>
+            <td>Sweet</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">table</span>&gt;<br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">th</span>&gt;<span class="black">Name</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Description</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+          &lt;<span class="brown">th</span>&gt;<span class="black">Taste</span>&lt;<span class="brown">th</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;<span class="black">Apple</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet and sour</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      <span class="left-padding">&lt;<span class="brown">tr</span>&gt;</span><br>
+        <p class="more-padding" style="margin: 0;">
+          &lt;<span class="brown">td</span>&gt;&lt;<span class="brown">dialog</span>
+            <span class="crimson">open</span>&gt;<span class="black">Good fruit!</span>&lt;<span class="brown">/dialog</span>&gt;<span class="black">Banana</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Fruit</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+          &lt;<span class="brown">td</span>&gt;<span class="black">Sweet</span>&lt;<span class="brown">td</span>&gt;<br /></span>
+        </p>
+      <span class="left-padding">&lt;<span class="brown">/tr</span>&gt;</span><br>
+      &lt;<span class="brown">/table</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+
+</body>
+</html>

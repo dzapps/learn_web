@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+<body>
+  <script src="../scripts/stylesAndSemantics.js"></script>
+  <div class="tag">
+    <h1 class="highlightText">Styles And Semantics</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+  <div><h2 class="tag shadowText" style="float: left;">&lt;data&gt;</h2></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/stylesAndSemantics.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;data&gt; tag links the given content with a machine-readable translation.
+      </div>
+      <div class="note-value">
+        This element provides both a machine-readable value for data processors, and a human-readable value for rendering in a browser.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        If the content is time- or date-related, the &lt;time&gt; element must be used instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesData"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#sAndSDataValue" class="attr-links">value</a></td>
+            <td>machine-readable-format</td>
+            <td>Specifies the machine-readable translation of the content of the element.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="sAndSDataValue" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">value</h2></div>
+    <div style="float: right;"><a href="#attributesData"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover exampleHTMLDiv" style="flex-direction: column;">
+      <p>The following example displays product names but also associates each name with a product number.</p>
+      <ul>
+        <li><data value="1">Coffee</data></li>
+        <li><data value="2">Tea</data></li>
+        <li><data value="3">Milk</data></li>
+      </ul>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">ul</span>&gt;
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">li</span>&gt;&lt;<span class="brown">data</span>
+        <span class="crimson">value=</span><span class="olive">"1"</span>&gt;<span class="black">Coffee</span>&lt;<span class="brown">/data</span>&gt;&lt;<span class="brown">/li</span>&gt;<br>
+        &lt;<span class="brown">li</span>&gt;&lt;<span class="brown">data</span>
+        <span class="crimson">value=</span><span class="olive">"2"</span>&gt;<span class="black">Tea</span>&lt;<span class="brown">/data</span>&gt;&lt;<span class="brown">/li</span>&gt;<br>
+        &lt;<span class="brown">li</span>&gt;&lt;<span class="brown">data</span>
+        <span class="crimson">value=</span><span class="olive">"3"</span>&gt;<span class="black">Milk</span>&lt;<span class="brown">/data</span>&gt;&lt;<span class="brown">/li</span>&gt;<br>
+      </p>
+      &lt;<span class="brown">/ul</span>&gt;
+    </div>
+  </div>
+</div>
+<div class="attrSeparation"></div>
+
+
+</body>
+</html>
