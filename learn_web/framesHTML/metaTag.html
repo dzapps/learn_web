@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+
+  <style>
+  </style>
+</head>
+
+<body>
+  <script src="../scripts/metaInfo.js"></script>
+  <div class="tag">
+    <h1 class="highlightText">Meta info</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">&lt;meta&gt;</h2></div>
+    <div class="" style="float: right;"><a href="../pagesHTML/metaInfo.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        Metadata is data (information) about data.
+      </div>
+      <div class="note-value">
+        The &lt;meta&gt; tag provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable.
+      </div>
+      <div class="note-value">
+        Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.
+      </div>
+      <div class="note-value">
+        The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services.
+      </div>
+      <div class="note-value">
+        HTML5 introduced a method to let web designers take control over the viewport (the user's visible area of a web page), through the &lt;meta&gt; tag.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Metadata is always passed as name/value pairs.
+      </div>
+      <div class="note-value">
+        The content attribute MUST be defined if the name or the http-equiv attribute is defined.
+        If none of these are defined, the content attribute CANNOT be defined.
+      </div>
+      <div class="note-value">
+        You should include the &lt;meta&gt; viewport element in all your web pages.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <meta http-equiv="refresh" content="20">
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="codeHTML blue borders-none">
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">meta</span>
+          <span class="crimson">charset=</span><span class="olive">"UTF-8"</span>&gt;<br>
+          &lt;<span class="brown">meta</span>
+          <span class="crimson">name=</span><span class="olive">"description"</span>
+          <span class="crimson">content=</span><span class="olive">"Crib for me"</span>&gt;<br>
+          &lt;<span class="brown">meta</span>
+          <span class="crimson">name=</span><span class="olive">"viewport"</span>
+          <span class="crimson">content=</span><span class="olive">"width=device-width, initial-scale=1.0"</span>&gt;<br>
+          &lt;<span class="brown">meta</span>
+          <span class="crimson">http-equiv=</span><span class="olive">"refresh"</span>
+          <span class="crimson">content=</span><span class="olive">"20"</span>&gt;<br>
+          &lt;<span class="brown">meta</span>
+          <span class="crimson">name=</span><span class="olive">"keywords"</span>
+          <span class="crimson">content=</span><span class="olive">"HTML, CSS"</span>&gt;<br>
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>
