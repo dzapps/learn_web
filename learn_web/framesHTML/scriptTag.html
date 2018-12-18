@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Script</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+
+  <style>
+  </style>
+</head>
+
+<body>
+  <script src="../scripts/programming.js" async></script>
+
+  <div class="tag">
+    <h1 class="highlightText">Programming</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+  <div><h2 class="tag shadowText" style="float: left;">&lt;script&gt;</h2></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/programming.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+         The &lt;script&gt; tag is used to define a client-side script (JavaScript).
+      </div>
+      <div class="note-value">
+         The &lt;script&gt; element either contains scripting statements, or it points to an external script file through the src attribute.
+      </div>
+      <div class="note-value">
+        Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+         If the "src" attribute is present, the &lt;script&gt; element must be empty.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributsScript"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#scriptAsync" class="attr-links">async</a></td>
+            <td>async</td>
+            <td>Specifies that the script is executed asynchronously (only for external scripts).</td>
+          </tr>
+          <tr>
+            <td><a href="#scriptCharset" class="attr-links">charset</a></td>
+            <td>charset</td>
+            <td>Specifies the character encoding used in an external script file.</td>
+          </tr>
+          <tr>
+            <td><a href="#scriptDefer" class="attr-links">defer</a></td>
+            <td>defer</td>
+            <td>Specifies that the script is executed when the page has finished parsing (only for external scripts).</td>
+          </tr>
+          <tr>
+            <td><a href="#scriptSrc" class="attr-links">src</a></td>
+            <td>URL</td>
+            <td>Specifies the URL of an external script file.</td>
+          </tr>
+          <tr>
+            <td><a href="#scriptType" class="attr-links">type</a></td>
+            <td>media_type</td>
+            <td>Specifies the media type of the script.</td>
+          </tr>
+          <tr>
+            <td><a href="#scriptSmlSpace" class="attr-links">xml:space</a></td>
+            <td>preserve</td>
+            <td>
+              <span class="deprecated"></span>Not supported in HTML5.<br>
+              Specifies whether whitespace in code should be preserved.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="scriptAsync" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">async</h2></div>
+    <div style="float: right;"><a href="#attributsScript"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The async attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that the script will be executed asynchronously as soon as it is available.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The async attribute is only for external scripts (and should only be used if the src attribute is present).
+      </div>
+      <div class="note-value">
+        If neither async or defer is present:
+        The script is fetched and executed immediately, before the browser continues parsing the page.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">script</span>
+          <span class="crimson">src=</span><span class="olive">"example.js" </span><span class="crimson">async</span>&gt;&lt;<span class="brown">/script</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="scriptCharset" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">charset</h2></div>
+    <div style="float: right;"><a href="#attributsScript"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The defer attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that the script is executed when the page has finished parsing.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The defer attribute is only for external scripts (should only be used if the src attribute is present).
+      </div>
+      <div class="note-value">
+        If neither async or defer is present:
+        The script is fetched and executed immediately, before the browser continues parsing the page.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="2" class="tableNameStyle">
+              Attributes
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>charset</td>
+            <td>
+              Specifies the character encoding of an external script file.
+              Some common values:
+              <ul>
+                <li>"ISO-8859-1" - Standard encoding for the Latin alphabet.</li>
+                <li>"UTF-8" - Character encoding for Unicode. Compatible with ASCII.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">script</span>
+          <span class="crimson">src=</span><span class="olive">"example.js"</span>
+          <span class="crimson">charset=</span><span class="olive">"UTF-8"</span>&gt;&lt;<span class="brown">/script</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="scriptDefer" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">defer</h2></div>
+    <div style="float: right;"><a href="#attributsScript"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The charset attribute specifies the character encoding used in an external script file.
+      </div>
+      <div class="note-value">
+        The charset attribute is used when the character encoding in an external script file differs from the encoding in the HTML document.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The charset attribute is only for external scripts (can only be used if the src attribute is present).
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">script</span>
+          <span class="crimson">src=</span><span class="olive">"example.js" </span><span class="crimson">defer</span>&gt;&lt;<span class="brown">/script</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="scriptSrc" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">src</h2></div>
+    <div style="float: right;"><a href="#attributsScript"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The src attribute specifies the URL of an external script file.
+      </div>
+      <div class="note-value">
+        If you want to run the same JavaScript on several pages in a web site,
+        you should create an external JavaScript file, instead of writing the same script over and over again.
+        Save the script file with a .js extension, and then refer to it using the src attribute in the &lt;script&gt; tag.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The external script file cannot contain the &lt;script&gt; tag.
+      </div>
+      <div class="note-value">
+        Point to the external script file exactly where you would have written the script.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="2" class="tableNameStyle">
+              Attributes
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>URL</td>
+            <td>
+              The URL of the external script file.<br>
+              Possible values:
+              <ul>
+                <li>An absolute URL - points to another web site (like src="http://www.example.com/example.js").</li>
+                <li>A relative URL - points to a file within a web site (like src="/scripts/example.js").</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">script</span>
+          <span class="crimson">src=</span><span class="olive">"example.js"</span>&gt;&lt;<span class="brown">/script</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="scriptType" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">type</h2></div>
+    <div style="float: right;"><a href="#attributsScript"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The type attribute specifies the Internet media type (formerly known as MIME type) of a script.
+      </div>
+      <div class="note-value">
+        The type attribute identifies the content between the &lt;script&gt; and &lt;/script&gt; tags.
+      </div>
+      <div class="note-value">
+        The media type consists of two parts: one media type and one subtype. For JavaScript, the media type is "application/javascript".
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th colspan="2" class="tableNameStyle">
+              Attributes
+            </th>
+          </tr>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>media_type</td>
+            <td>
+              The URL of the external script file.<br>
+              Some common values:
+              <ul>
+                <li>application/javascript (default)</li>
+                <li>application/ecmascript</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv" style="display: block; text-align: center;">
+        <p id="scriptTypeExec"></p>
+        <script type="application/javascript">
+          document.getElementById("scriptTypeExec").innerHTML = "Hello JavaScript!";
+        </script>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+      <span  class="left-padding">&lt;<span class="brown">p</span>
+      <span class="purple">id=</span><span class="olive">"exmpleId"</span>&gt;&lt;<span class="brown">/p</span></span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">script</span>
+          <span class="crimson">type=</span><span class="olive">"application/javascript"</span>&gt;<br>
+          <span class="more-padding blue">
+            <span class="brown">document.</span><span class="darkblue">getElementById</span><span class="black">(<span class="olive">"exampleId"</span>)</span><span class="brown">.innerHTML</span>
+            <span class="black">= </span><span class="olive">"Hello JavaScript!"</span><br>
+          </span>
+          &lt;<span class="brown">/script</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>

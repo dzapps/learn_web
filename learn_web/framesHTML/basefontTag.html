@@ -4,13 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Base</title>
+  <title>Basefont</title>
   <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
   <link rel="stylesheet" href="../styles/common.css" />
   <link rel="stylesheet" href="../styles/html_style.css" />
   <link rel="stylesheet" href="../styles/button.css" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
-  <base href="../images/">
 </head>
 
 <body>
@@ -23,29 +22,20 @@
   </div>
 
   <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
-    <div><h2 class="tag shadowText" style="float: left;">&lt;base&gt;</h2></div>
+    <div><h2 class="tag shadowText" style="float: left;">&lt;basefont&gt;</h2></div>
     <div class="" style="float: right;"><a href="../pagesHTML/metaInfo.html"><button class="html-buttons-prop">X</button></a></div>
     <div style="clear: both;"><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
       Descriptions:<br />
       <div class="note-value">
-        The &lt;base&gt; tag specifies the base URL/target for all relative URLs in a document.
+        <span class="deprecated">The &lt;basefont&gt; tag is not supported in HTML5. Use CSS instead.</span>
       </div>
       <div class="note-value">
-        There can be at maximum one &lt;base&gt; element in a document, and it must be inside the &lt;head&gt; element.
+        The &lt;basefont&gt; tag specifies a default text-color, font-size, or font-family for all the text in a document.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
-
-    <div class="noteCommonHTML noteHTML">
-      Notes:<br />
-      <div class="note-value">
-        If the &lt;base&gt; tag is present, it must have either an href attribute or a target attribute, or both.
-      </div>
-    </div>
-    <div><hr class="hr-length-90perc" /></div>
-
 
     <div><h2 class="tag shadowText">Attributes</h2></div>
     <div>
@@ -57,17 +47,27 @@
         </thead>
         <tbody>
           <tr>
-            <td>href</td>
-            <td>URL</td>
+            <td>color</td>
+            <td>color</td>
             <td>
-              Specifies the base URL for all relative URLs in the page.
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the default color for text in a document.
             </td>
           </tr>
           <tr>
-            <td>target</td>
-            <td>_blank<br>_parent<br>_self<br>_top<br>framename</td>
+            <td>face</td>
+            <td>font-family</td>
             <td>
-              Specifies the default target for all hyperlinks and forms in the page.
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the default font for text in a document.
+            </td>
+          </tr>
+          <tr>
+            <td>size</td>
+            <td>number</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the default size of text in a document.
             </td>
           </tr>
         </tbody>
@@ -75,29 +75,14 @@
     </div>
 
     <div><h2 class="tag shadowText">Examples</h2></div>
-    <div class="hover" style="padding: 5px; max-width: 90%;">
-      <div class="exampleHTMLDiv">
-        <img src="vasserman_big.jpg" alt="" width="250" height="200">
-      </div>
-    </div>
-
     <div class="codeHTML blue borders-none">
-      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
-      &lt;<span class="brown">html</span>&gt;<br>
       <span>&lt;<span class="brown">head</span>&gt;</span>
         <p class="left-padding" style="margin: 0;">
-          &lt;<span class="brown">base </span>
-          <span class="crimson">href=</span><span class="olive">"../images/"</span>
-          <span class="crimson">target=</span><span class="olive">"_blank"</span>&gt;<br>
+          &lt;<span class="brown">basefont </span>
+          <span class="crimson">color=</span><span class="olive">"red"</span>
+          <span class="crimson">size=</span><span class="olive">"5"</span>&gt;<br>
         </p>
       <span>&lt;<span class="brown">/head</span>&gt;</span><br>
-      <span>&lt;<span class="brown">body</span>&gt;</span>
-        <p class="left-padding" style="margin: 0;">
-          &lt;<span class="brown">img</span>
-          <span class="crimson">srs=</span><span class="olive">"vasserman_big.jpg"</span>&gt;<br>
-        </p>
-      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
-      &lt;<span class="brown">/html</span>&gt;<br>
     </div>
   </div>
   <div class="attrSeparation"></div>
