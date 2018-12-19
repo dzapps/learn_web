@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noscript</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+
+  <style>
+  </style>
+</head>
+
+<body>
+  <script src="../scripts/programming.js" async></script>
+
+  <div class="tag">
+    <h1 class="highlightText">Programming</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+  <div><h2 class="tag shadowText" style="float: left;">&lt;noscript&gt;</h2></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/programming.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+         The &lt;noscript&gt; tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support script.
+      </div>
+      <div class="note-value">
+         The &lt;noscript&gt; element can be used in both &lt;head&gt; and &lt;body&gt;.
+      </div>
+      <div class="note-value">
+        When used inside the &lt;head&gt; element: &lt;noscript&gt; must contain only &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt; elements.
+      </div>
+      <div class="note-value">
+        The content inside the &lt;noscript&gt; element will be displayed if scripts are not supported, or are disabled in the user's browser.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+         It is also a good practice to use the comment tag to "hide" scripts from browsers
+         without support for client-side scripts (so they don't show them as plain text).
+      </div>
+    </div>
+
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv" style="display: block; text-align: center;">
+        <p id="scriptTypeExec"></p>
+        <script type="application/javascript">
+          document.getElementById("scriptTypeExec").innerHTML = "Hello JavaScript!";
+        </script>
+        <noscript>Your browser does not support JavaScript!</noscript>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+      <span  class="left-padding">&lt;<span class="brown">p</span>
+      <span class="purple">id=</span><span class="olive">"exmpleId"</span>&gt;&lt;<span class="brown">/p</span></span>&gt;
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">script</span>
+          <span class="crimson">type=</span><span class="olive">"application/javascript"</span>&gt;<br>
+          <span class="more-padding blue">
+            <span class="brown">document.</span><span class="darkblue">getElementById</span><span class="black">(<span class="olive">"exampleId"</span>)</span><span class="brown">.innerHTML</span>
+            <span class="black">= </span><span class="olive">"Hello JavaScript!"</span><br>
+          </span>
+          &lt;<span class="brown">/script</span>&gt;<br>
+          &lt;<span class="brown">noscript</span>&gt;<span class="black">Your browser does not support JavaScript!</span>&lt;<span class="brown">/noscript</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>
