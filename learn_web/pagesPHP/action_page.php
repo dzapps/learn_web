@@ -2,8 +2,9 @@
 <html>
 <body>
 
-Welcome <?php echo $_POST["FirstName"]; ?><br>
-Your email address is: <?php echo $_POST["LastName"]; ?>
+<?php
+echo "My first PHP script!";
+?>
 
 </body>
 </html>

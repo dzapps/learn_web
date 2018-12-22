@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Datalist</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+  <script src="../scripts/formsAndInput.js"></script>
+</head>
+
+<body>
+  <div class="tag">
+    <h1 class="highlightText">Forms and input</h1>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">&lt;datalist&gt;</h2></div>
+    <div class="" style="float: right;"><a href="../pagesHTML/formsAndInput.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Description:<br />
+      <div class="note-value">
+        The &lt;datalist&gt; tag specifies a list of pre-defined options for an &lt;input&gt; element.
+      </div>
+      <div class="note-value">
+        The &lt;datalist&gt; tag is used to provide an "autocomplete" feature on &lt;input&gt; elements.
+        Users will see a drop-down list of pre-defined options as they input data.
+      </div>
+      <div class="note-value">
+        Use the &lt;input&gt; element's list attribute to bind it together with a &lt;datalist&gt; element.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <form action="#" method="get">
+          <input list="browsers" name="browser">
+          <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form</span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>
+      <span class="crimson">method=</span><span class="olive">"get"</span>&gt;<br>
+        <span class="left-padding">&lt;<span class="brown">input</span>
+          <span class="crimson">list=</span><span class="olive">"browsers"</span>
+          <span class="crimson">name=</span><span class="olive">"browser"</span>&gt;<br>
+        </span>
+        <span class="left-padding">&lt;<span class="brown">datalist</span>
+        <span class="purple">id=</span><span class="olive">"browsers"</span>&gt;
+          <p class="more-padding" style="margin: 0">
+            &lt;<span class="brown">option</span>
+            <span class="crimson">value=</span><span class="olive">"Internet Explorer"</span>&gt;<br>
+            &lt;<span class="brown">option</span>
+            <span class="crimson">value=</span><span class="olive">"Firefox"</span>&gt;<br>
+            &lt;<span class="brown">option</span>
+            <span class="crimson">value=</span><span class="olive">"Chrome"</span>&gt;<br>
+            &lt;<span class="brown">option</span>
+            <span class="crimson">value=</span><span class="olive">"Opera"</span>&gt;<br>
+            &lt;<span class="brown">option</span>
+            <span class="crimson">value=</span><span class="olive">"Safari"</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/datalist</span>&gt;<br>
+        <span class="left-padding">&lt;<span class="brown">input</span>
+          <span class="crimson">type=</span><span class="olive">"submit"</span>&gt;<br>
+        </span>
+      &lt;<span class="brown">/form</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>

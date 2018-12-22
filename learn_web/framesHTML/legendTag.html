@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Legend</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+  <script src="../scripts/formsAndInput.js"></script>
+</head>
+
+<body>
+  <div class="tag">
+    <h1 class="highlightText">Forms and input</h1>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">&lt;legend&gt;</h2></div>
+    <div class="" style="float: right;"><a href="../pagesHTML/formsAndInput.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Description:<br />
+      <div class="note-value">
+        The &lt;legend&gt; tag defines a caption for the &lt;fieldset&gt; element.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesLegend"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Attributes
+            </th>
+          </tr>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#legendAlign" class="attr-links">&lt;align&gt;</a></td>
+            <td>top<br>bottom<br>left<br>right</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the alignment of the caption.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <form>
+          <fieldset>
+           <legend>Personalia:</legend>
+           Name: <input type="text"><br>
+           Email: <input type="text"><br>
+           Date of birth: <input type="text">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form</span>
+      <span class="crimson">oninput=</span><span class="olive">"x.value=parseInt(a.value)+parseInt(b.value)"</span>&gt;0<br>
+      <p class="left-padding" style="margin: 0">
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"range"</span>
+        <span class="purple">id=</span><span class="olive">"a"</span>
+        <span class="crimson">value=</span><span class="olive">"50"</span>&gt;100<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"range"</span>
+        <span class="purple">id=</span><span class="olive">"b"</span>
+        <span class="crimson">value=</span><span class="olive">"50"</span>&gt;<br>
+        &lt;<span class="brown">output</span>
+        <span class="crimson">name=</span><span class="olive">"x"</span>
+        <span class="crimson">for=</span><span class="olive">"a b"</span>&gt;&lt;<span class="brown">/output</span>&gt;
+      </p>
+      &lt;<span class="brown">/form</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>

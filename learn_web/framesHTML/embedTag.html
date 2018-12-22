@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embed</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+<body>
+  <script src="../scripts/programming.js" async></script>
+
+  <div class="tag">
+    <h1 class="highlightText">Programming</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+  <div><h2 class="tag shadowText" style="float: left;">&lt;embed&gt;</h2></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/programming.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+         The &lt;embed&gt; tag defines a container for an external application or interactive content (a plug-in).
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Many web browsers have supported the &lt;embed&gt; tag for a long time.
+        However, the &lt;embed&gt; tag has not been a part of the HTML 4 specification.
+        The &lt;embed&gt; tag is new in HTML5, and will validate in an HTML5 page.
+        However, if you use it in an HTML 4 page, the page will not validate.
+      </div>
+    </div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesEmbed"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#embedHeight" class="attr-links">height</a></td>
+            <td>pixels</td>
+            <td>Specifies the height of the embedded content.</td>
+          </tr>
+          <tr>
+            <td><a href="#embedSrc" class="attr-links">src</a></td>
+            <td>URL</td>
+            <td>Specifies the address of the external file to embed.</td>
+          </tr>
+          <tr>
+            <td><a href="#embedType" class="attr-links">type</a></td>
+            <td>media_type</td>
+            <td>Specifies the media type of the embedded content.</td>
+          </tr>
+          <tr>
+            <td><a href="#embedWidth" class="attr-links">width</a></td>
+            <td>pixels</td>
+            <td>Specifies the width of the embedded content.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="embedHeight" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">height</h2></div>
+    <div style="float: right;"><a href="#attributesEmbed"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The height attribute specifies the height of the embedded content, in pixels.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesEmbed"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>The height of the embedded content, in pixels.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p style="margin: 140px 0 0; position: absolute;">Sorry file missing!</p>
+        <embed src="" width="300" height="300" style="border: 2px solid blue;">
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">embed</span>
+          <span class="crimson">src=</span><span class="olive">"example.swf"</span>
+          <span class="crimson">width=</span><span class="olive">"300"</span>
+          <span class="crimson">height=</span><span class="olive">"300"</span>&gt;<br>
+        </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="embedSrc" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">src</h2></div>
+    <div style="float: right;"><a href="#attributesSrc"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The src attribute specifies the address of the external file to embed.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesEmbed"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>URL</td>
+            <td>
+              Specifies the address of the external file to embed.<br>
+              Possible values:
+              <ul>
+                <li>An absolute URL - points to another web site (like href="http://www.example.com/hello.swf").</li>
+                <li>A relative URL - points to a file within a web site (like href="hello.swf").</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p>Sorry file missing!</p>
+        <embed src="https://www.w3schools.com/tags/helloworld.swf">
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">embed</span>
+          <span class="crimson">src=</span><span class="olive">"example.swf"</span>&gt;<br>
+        </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="embedType" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">type</h2></div>
+    <div style="float: right;"><a href="#attributesEmbed"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The type attribute specifies the Internet media type (formerly known as MIME type) of the embedded content.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesEmbed"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>media_type</td>
+            <td>The Internet media type of the embedded content.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p style="margin: 140px 0 0; position: absolute;">Sorry file missing!</p>
+        <embed src="" width="300" height="300" style="border: 2px solid blue;">
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">embed</span>
+          <span class="crimson">src=</span><span class="olive">"example.swf"</span>
+          <span class="crimson">type=</span><span class="olive">"application/x-shockwave-flash"</span>&gt;<br>
+        </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="embedWidth" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">width</h2></div>
+    <div style="float: right;"><a href="#attributesEmbed"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The width attribute specifies the width of the embedded content, in pixels.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesEmbed"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>The width of the embedded content, in pixels.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p style="margin: 140px 0 0; position: absolute;">Sorry file missing!</p>
+        <embed src="" width="300" height="300" style="border: 2px solid blue;">
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">embed</span>
+          <span class="crimson">src=</span><span class="olive">"example.swf"</span>
+          <span class="crimson">width=</span><span class="olive">"300"</span>
+          <span class="crimson">height=</span><span class="olive">"300"</span>&gt;<br>
+        </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>

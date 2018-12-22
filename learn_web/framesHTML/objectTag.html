@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+</head>
+
+<body>
+  <script src="../scripts/programming.js" async></script>
+
+  <div class="tag">
+    <h1 class="highlightText">Programming</h1>
+    <a href="main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+  <div><h2 class="tag shadowText" style="float: left;">&lt;object&gt;</h2></div>
+  <div class="" style="float: right;"><a href="../pagesHTML/programming.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The &lt;object&gt; tag defines an embedded object within an HTML document.
+        Use this element to embed multimedia (like audio, video, Java applets, ActiveX, PDF, and Flash) in your web pages.
+      </div>
+      <div class="note-value">
+        You can also use the &lt;object&gt; tag to embed another webpage into your HTML document.
+      </div>
+      <div class="note-value">
+        You can use the &lt;param&gt; tag to pass parameters to plugins that have been embedded with the &lt;object&gt; tag.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        An &lt;object&gt; element must appear inside the &lt;body&gt; element.
+        The text between the &lt;object&gt; and &lt;object&gt; is an alternate text, for browsers that do not support this tag.
+      </div>
+      <div class="note-value">
+        For images use the &lt;img&gt; tag instead of the &lt;object&gt; tag.
+      </div>
+      <div class="note-value">
+        At least one of the "data" or "type" attribute MUST be defined.
+      </div>
+    </div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesObject"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>align</td>
+            <td>left<br>right<br>top<br>bottom<br>middle</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies a reference to a serialized representation of an applet.
+            </td>
+          </tr>
+          <tr>
+            <td>archive</td>
+            <td>URL</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the location of an archive file.
+            </td>
+          </tr>
+          <tr>
+            <td>border</td>
+            <td>pixels</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the width of the border around an &lt;object&gt;.
+            </td>
+          </tr>
+          <tr>
+            <td>classid</td>
+            <td>class_ID</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Defines a class ID value as set in the Windows Registry or a URL.
+            </td>
+          </tr>
+          <tr>
+            <td>codebase</td>
+            <td>URL</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Defines where to find the code for the object.
+            </td>
+          </tr>
+          <tr>
+            <td>codetype</td>
+            <td>media_type</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              The media type of the code referred to by the classid attribute.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#objectData" class="attr-links">data</a></td>
+            <td>URL</td>
+            <td>Specifies the URL of the resource to be used by the object.</td>
+          </tr>
+          <tr>
+            <td>declare</td>
+            <td>declare</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Defines that the object should only be declared, not created or instantiated until needed.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#objectForm" class="attr-links">form</a></td>
+            <td>form_id</td>
+            <td>Specifies one or more forms the object belongs to.</td>
+          </tr>
+          <tr>
+            <td><a href="#objectHeight" class="attr-links">height</a></td>
+            <td>pixels</td>
+            <td>Specifies the height of the object.</td>
+          </tr>
+          <tr>
+            <td>hspace</td>
+            <td>pixels</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Defines the horizontal spacing around an applet.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#objectName" class="attr-links">name</a></td>
+            <td>name</td>
+            <td>Specifies a name for the object.</td>
+          </tr>
+          <tr>
+            <td>standby</td>
+            <td>text</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Defines a text to display while the object is loading.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#objectType" class="attr-links">type</a></td>
+            <td>media_type</td>
+            <td>Specifies the media type of data specified in the data attribute.</td>
+          </tr>
+          <tr>
+            <td><a href="#objectUsemap" class="attr-links">usemap</a></td>
+            <td>#mapname</td>
+            <td>Specifies the name of a client-side image map to be used with the object.</td>
+          </tr>
+          <tr>
+            <td>vspace</td>
+            <td>pixels</td>
+            <td>
+              <span class="deprecated">Not supported in HTML5.</span><br>
+              Specifies the whitespace on top and bottom of an object.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#objectWidth" class="attr-links">width</a></td>
+            <td>pixels</td>
+            <td>Specifies the width of the object.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="objectData" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">data</h2></div>
+    <div style="float: right;"><a href="#attributesObject"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The data attribute specifies the URL of the resource to be used by the object.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesEmbed"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>URL</td>
+            <td>
+              Specifies the address of the external file to embed.<br>
+              Possible values:
+              <ul>
+                <li>An absolute URL - points to another web site (like href="http://www.example.com/hello.swf").</li>
+                <li>A relative URL - points to a file within a web site (like href="hello.swf").</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p style="margin: 140px 0 0; position: absolute;">Sorry file missing!</p>
+        <object width="300" height="300" data="" style="border: 2px solid blue;">
+        </object>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">object</span>&gt;
+          <span class="crimson">width=</span><span class="olive">"300"</span>
+          <span class="crimson">height=</span><span class="olive">"300"</span>
+          <span class="crimson">data=</span><span class="olive">"example.swf"</span>&gt;
+          &lt;<span class="brown">/object</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="objectForm" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">form</h2></div>
+    <div style="float: right;"><a href="#attributesObject"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The form attribute specifies one or more forms the &lt;object&gt; element belongs to.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The form attribute is not supported in any of the major browsers.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesObject"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>form_id</td>
+            <td>The form attribute specifies one or more forms the &lt;object&gt; element belongs to.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <form action="#" id="form1">
+          First name: <input type="text" name="fname"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+
+        <object data="example.swf" height="300" width="300" form="form1" name="obj1" style="border: 1px solid blue;"></object>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span>"example.php"
+      <span class="purple">id=</span>"form1"&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        <span class="black">First name: </span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span>"text"
+        <span class="crimson">name=</span>"fname"&gt;<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span>"submit"
+        <span class="crimson">value=</span>"Submit"&gt;<br>
+      </p>
+      &lt;<span class="brown">/form</span>&gt;<br>
+
+      &lt;<span class="brown">object</span>
+      <span class="crimson">width=</span><span class="olive">"300"</span>
+      <span class="crimson">height=</span><span class="olive">"300"</span>
+      <span class="crimson">data=</span><span class="olive">"example.swf"</span>
+      <span class="crimson">form=</span><span class="olive">"form1"</span>
+      <span class="crimson">name=</span><span class="olive">"obj1"</span>&gt;
+      &lt;<span class="brown">/object</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="objectHeight" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">height</h2></div>
+    <div style="float: right;"><a href="#attributesObject"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The height attribute specifies the height of the object, in pixels.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesObject"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>The height of the object, in pixels.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p style="margin: 140px 0 0; position: absolute;">Sorry file missing!</p>
+        <object data="example.swf" height="300" width="300" form="form1" name="obj1" style="border: 1px solid blue;"></object>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">object</span>
+          <span class="crimson">width=</span><span class="olive">"300"</span>
+          <span class="crimson">height=</span><span class="olive">"300"</span>
+          <span class="crimson">data=</span><span class="olive">"example.swf"</span>&gt;
+          &lt;<span class="brown">/object</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="objectName" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">name</h2></div>
+    <div style="float: right;"><a href="#attributesObject"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The name attribute specifies the name of an &lt;object&gt; element.
+      </div>
+      <div class="note-value">
+        The name attribute is used for referencing an &lt;object&gt; element in JavaScript
+        (an alternative, is to reference it by using its id attribute).
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesObject"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>name</td>
+            <td>The name of the &lt;object&gt; element.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p style="margin: 140px 0 0; position: absolute;">Sorry file missing!</p>
+        <object data="example.swf" height="300" width="300"  name="obj1" style="border: 1px solid blue;"></object>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">object</span>
+        <span class="crimson">width=</span><span class="olive">"300"</span>
+        <span class="crimson">height=</span><span class="olive">"300"</span>
+        <span class="crimson">data=</span><span class="olive">"example.swf"</span>
+        <span class="crimson">name=</span><span class="olive">"obj1"</span>&gt;
+        &lt;<span class="brown">/object</span>&gt;
+      </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="objectType" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">type</h2></div>
+    <div style="float: right;"><a href="#attributesObject"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The type attribute specifies the Internet media type (formerly known as MIME type) of the object.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesObject"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>media_type</td>
+            <td>The Internet media type of the embedded content.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p style="margin: 140px 0 0; position: absolute;">Sorry file missing!</p>
+        <object data="example.swf" height="300" width="300" style="border: 1px solid blue;"></object>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">object</span>
+        <span class="crimson">width=</span><span class="olive">"300"</span>
+        <span class="crimson">height=</span><span class="olive">"300"</span>
+        <span class="crimson">data=</span><span class="olive">"example.swf"</span>
+        <span class="crimson">type=</span><span class="olive">"application/vnd.adobe.flash-movie"</span>&gt;
+        &lt;<span class="brown">/object</span>&gt;
+      </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="objectWidth" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">width</h2></div>
+    <div style="float: right;"><a href="#attributesObject"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The width attribute specifies the width of the object, in pixels.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesEmbed"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pixels</td>
+            <td>The width of the object, in pixels.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <p style="margin: 140px 0 0; position: absolute;">Sorry file missing!</p>
+        <object data="example.swf" height="300" width="300" style="border: 1px solid blue;"></object>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">object</span>
+        <span class="crimson">width=</span><span class="olive">"300"</span>
+        <span class="crimson">height=</span><span class="olive">"300"</span>
+        <span class="crimson">data=</span><span class="olive">"example.swf"</span>&gt;
+        &lt;<span class="brown">/object</span>&gt;
+      </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>

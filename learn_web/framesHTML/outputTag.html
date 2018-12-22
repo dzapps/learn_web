@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Output</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+  <script src="../scripts/formsAndInput.js"></script>
+</head>
+
+<body>
+  <div class="tag">
+    <h1 class="highlightText">Forms and input</h1>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">&lt;output&gt;</h2></div>
+    <div class="" style="float: right;"><a href="../pagesHTML/formsAndInput.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Description:<br />
+      <div class="note-value">
+        The <output> tag represents the result of a calculation (like one performed by a script).
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The form attribute of the <output> element is not supported in IE/Edge.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesOutput"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Attributes
+            </th>
+          </tr>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#outputFor" class="attr-links">&lt;for&gt;</a></td>
+            <td>element_id</td>
+            <td>Specifies the relationship between the result of the calculation, and the elements used in the calculation.</td>
+          </tr>
+          <tr>
+            <td><a href="#outputForm" class="attr-links">&lt;form&gt;</a></td>
+            <td>form_id</td>
+            <td>Specifies one or more forms the output element belongs to.</td>
+          </tr>
+          <tr>
+            <td><a href="#outputName" class="attr-links">&lt;name&gt;</a></td>
+            <td>name</td>
+            <td>Specifies a name for the output element.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="outputFor" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">for</h2></div>
+    <div style="float: right;"><a href="#attributesOutput"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The for attribute specifies the relationship between the result of the calculation, and the elements used in the calculation.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>element_id</td>
+            <td>
+              Specifies a space separated list of ids of one or more elements
+              that specifies the relationship between the result of the calculation, and the elements used in the calculation.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+          <input type="range" id="a" value="50">100
+          +<input type="number" id="b" value="50">
+          =<output name="x" for="a b"></output>
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form</span>
+      <span class="crimson">oninput=</span><span class="olive">"x.value=parseInt(a.value)+parseInt(b.value)"</span>&gt;0<br>
+      <p class="left-padding" style="margin: 0">
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"range"</span>
+        <span class="purple">id=</span><span class="olive">"a"</span>
+        <span class="crimson">value=</span><span class="olive">"50"</span>&gt;100<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"range"</span>
+        <span class="purple">id=</span><span class="olive">"b"</span>
+        <span class="crimson">value=</span><span class="olive">"50"</span>&gt;<br>
+        &lt;<span class="brown">output</span>
+        <span class="crimson">name=</span><span class="olive">"x"</span>
+        <span class="crimson">for=</span><span class="olive">"a b"</span>&gt;&lt;<span class="brown">/output</span>&gt;
+      </p>
+      &lt;<span class="brown">/form</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="outputForm" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">form</h2></div>
+    <div style="float: right;"><a href="#attributesOutput"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The form attribute specifies one or more forms the <output> element belongs to.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>form_id</td>
+            <td>
+              Specifies the form element the &lt;output&gt; element belongs to.
+              The value of this attribute must be the id attribute of a &lt;form&gt; element in the same document.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <form action="#" id="numform"
+          oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+          <input type="range" id="a" name="a" value="50">100
+          +<input type="number" id="b" name="b" value="50">
+          <input type="submit">
+        </form>
+        <output form="numform" name="x" for="a b"></output>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form</span>
+      <span class="crimson">oninput=</span><span class="olive">"x.value=parseInt(a.value)+parseInt(b.value)"</span>
+      <span class="purple">id=</span><span class="olive">"numform"</span>&gt;0<br>
+      <p class="left-padding" style="margin: 0">
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"range"</span>
+        <span class="purple">id=</span><span class="olive">"a"</span>
+        <span class="crimson">value=</span><span class="olive">"50"</span>&gt;100<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"range"</span>
+        <span class="purple">id=</span><span class="olive">"b"</span>
+        <span class="crimson">value=</span><span class="olive">"50"</span>&gt;<br>
+        &lt;<span class="brown">output</span>
+        <span class="crimson">form=</span><span class="olive">"numform"</span>
+        <span class="crimson">name=</span><span class="olive">"x"</span>
+        <span class="crimson">for=</span><span class="olive">"a b"</span>&gt;&lt;<span class="brown">/output</span>&gt;
+      </p>
+      &lt;<span class="brown">/form</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="outputName" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">name</h2></div>
+    <div style="float: right;"><a href="#attributesOutput"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The name attribute specifies the name of an &lt;output&gt; element.
+      </div>
+      <div class="note-value">
+        The name attribute is used to reference form data after it has been submitted, or to reference the element in a JavaScript.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>name</td>
+            <td>
+              Specifies the name of the &lt;output&gt; element.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+          <input type="range" id="a" value="50">100
+          +<input type="number" id="b" value="50">
+          =<output name="x" for="a b"></output>
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form</span>
+      <span class="crimson">oninput=</span><span class="olive">"x.value=parseInt(a.value)+parseInt(b.value)"</span>&gt;0<br>
+      <p class="left-padding" style="margin: 0">
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"range"</span>
+        <span class="purple">id=</span><span class="olive">"a"</span>
+        <span class="crimson">value=</span><span class="olive">"50"</span>&gt;100<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"range"</span>
+        <span class="purple">id=</span><span class="olive">"b"</span>
+        <span class="crimson">value=</span><span class="olive">"50"</span>&gt;<br>
+        &lt;<span class="brown">output</span>
+        <span class="crimson">name=</span><span class="olive">"x"</span>
+        <span class="crimson">for=</span><span class="olive">"a b"</span>&gt;&lt;<span class="brown">/output</span>&gt;
+      </p>
+      &lt;<span class="brown">/form</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>

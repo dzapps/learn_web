@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Textarea</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/html5_logo.png" type="image/jpg" />
+  <link rel="stylesheet" href="../styles/button.css" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/html_style.css" />
+  <link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+  <script src="../scripts/formsAndInput.js"></script>
+</head>
+
+<body>
+  <div class="tag">
+    <h1 class="highlightText">Forms and input</h1>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+
+  <div class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">&lt;textarea&gt;</h2></div>
+    <div class="" style="float: right;"><a href="../pagesHTML/formsAndInput.html"><button class="html-buttons-prop">X</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Description:<br />
+      <div class="note-value">
+        The &lt;textarea&gt; tag defines a multi-line text input control.
+      </div>
+      <div class="note-value">
+        A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
+      </div>
+      <div class="note-value">
+        The size of a text area can be specified by the cols and rows attributes, or even better; through CSS' height and width properties.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div id="attributesTextarea"><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list attr-list-3">
+        <thead>
+          <tr>
+            <th colspan="3" class="tableNameStyle">
+              Attributes
+            </th>
+          </tr>
+          <tr>
+            <th>Attribute</th><th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#textareaAutofocus" class="attr-links">&lt;autofocus&gt;</a></td>
+            <td>autofocus</td>
+            <td>Specifies that a text area should automatically get focus when the page loads.</td>
+          </tr>
+          <tr>
+            <td><a href="#textareaChecked" class="attr-links">&lt;cols&gt;</a></td>
+            <td>number</td>
+            <td>Specifies the visible width of a text area.</td>
+          </tr>
+          <tr>
+            <td><a href="#textareaDirname" class="attr-links">&lt;dirname&gt;</a></td>
+            <td>textareaname.dir</td>
+            <td>Specifies that the text direction of the textarea will be submitted.</td>
+          </tr>
+          <tr>
+            <td><a href="#textareaDisabled" class="attr-links">&lt;disabled&gt;</a></td>
+            <td>disabled</td>
+            <td>Specifies that a text area should be disabled.</td>
+          </tr>
+          <tr>
+            <td><a href="#textareaForm" class="attr-links">&lt;form&gt;</a></td>
+            <td>form_id</td>
+            <td>Specifies one or more forms the text area belongs to.</td>
+          </tr>
+          <tr>
+            <td><a href="#textareaMaxlength" class="attr-links">&lt;maxlength&gt;</a></td>
+            <td>number</td>
+            <td>Specifies the maximum number of characters allowed in the text area.</td>
+          </tr>
+          <tr>
+            <td><a href="#textareaName" class="attr-links">&lt;name&gt;</a></td>
+            <td>text</td>
+            <td>Specifies a name for a text area.</td>
+          </tr>
+          <tr>
+            <td><a href="#textareaPlaceholder" class="attr-links">&lt;placeholder&gt;</a></td>
+            <td>text</td>
+            <td>Specifies a short hint that describes the expected value of a text area.</td>
+          </tr>
+          <tr>
+            <td><a href="#textareaReadonly" class="attr-links">&lt;readonly&gt;</a></td>
+            <td>readonly</td>
+            <td>Specifies that a text area should be read-only.</td>
+          </tr>
+          <tr>
+            <td><a href="#textareaRequired" class="attr-links">&lt;required&gt;</a></td>
+            <td>required</td>
+            <td>Specifies that a text area is required/must be filled out.</td>
+          </tr>
+          <tr>
+            <td><a href="#textareaSize" class="attr-links">&lt;rows&gt;</a></td>
+            <td>number</td>
+            <td>Specifies the visible number of lines in a text area.</td>
+          </tr>
+          <tr>
+            <td><a href="#textareaWidth" class="attr-links">&lt;wrap&gt;</a></td>
+            <td>hard<br>soft</td>
+            <td>Specifies how the text in a text area is to be wrapped when submitted in a form.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="inputAccept" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">accept</h2></div>
+    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The accept attribute specifies the types of files that the server accepts (that can be submitted through a file upload).
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Do not use this attribute as a validation tool. File uploads should be validated on the server.
+      </div>
+      <div class="note-value">
+        To specify more than one value, separate the values with a comma (e.g. &lt;input accept="audio/*,video/*,image/*" /&gt;.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>file_extension</td>
+            <td>A file extension starting with the STOP character, e.g: .gif, .jpg, .png, .doc.</td>
+          </tr>
+          <tr>
+            <td>audio/*</td>
+            <td>All sound files are accepted.</td>
+          </tr>
+          <tr>
+            <td>video/*</td>
+            <td>All video files are accepted.</td>
+          </tr>
+          <tr>
+            <td>image/*</td>
+            <td>All image files are accepted.</td>
+          </tr>
+          <tr>
+            <td>media_type</td>
+            <td>A valid media type, with no parameters. Look at IANA Media Types for a complete list of standard media types.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <form action="#">
+          <input type="file" name="pic" accept="image/*">
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">object</span>
+        <span class="crimson">data=</span><span class="olive">"../sounds/dog_barks.mp3"</span>&gt;<br>
+        <span class="left-padding">
+          &lt;<span class="brown">param</span>
+          <span class="crimson">name=</span><span class="olive">"autoplay"</span>
+          <span class="crimson">value=</span><span class="olive">"true"</span>&gt;
+        </span><br>
+        &lt;<span class="brown">/object</span>&gt;
+      </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="inputTextarea" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">textarea</h2></div>
+    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The <textarea> tag defines a multi-line text input control.
+      </div>
+      <div class="note-value">
+        A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
+      </div>
+      <div class="note-value">
+        The size of a text area can be specified by the cols and rows attributes, or even better; through CSS' height and width properties.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Do not use this attribute as a validation tool. File uploads should be validated on the server.
+      </div>
+      <div class="note-value">
+        To specify more than one value, separate the values with a comma (e.g. &lt;input accept="audio/*,video/*,image/*" /&gt;.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>file_extension</td>
+            <td>A file extension starting with the STOP character, e.g: .gif, .jpg, .png, .doc.</td>
+          </tr>
+          <tr>
+            <td>audio/*</td>
+            <td>All sound files are accepted.</td>
+          </tr>
+          <tr>
+            <td>video/*</td>
+            <td>All video files are accepted.</td>
+          </tr>
+          <tr>
+            <td>image/*</td>
+            <td>All image files are accepted.</td>
+          </tr>
+          <tr>
+            <td>media_type</td>
+            <td>A valid media type, with no parameters. Look at IANA Media Types for a complete list of standard media types.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <form action="#">
+          <input type="file" name="pic" accept="image/*">
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
+      &lt;<span class="brown">html</span>&gt;<br>
+      <span>&lt;<span class="brown">head</span>&gt;</span>
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">title</span>&gt;
+          <span class="black">Title of the page</span>
+          &lt;<span class="brown">/title</span>&gt;
+        </p>
+      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
+      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">object</span>
+        <span class="crimson">data=</span><span class="olive">"../sounds/dog_barks.mp3"</span>&gt;<br>
+        <span class="left-padding">
+          &lt;<span class="brown">param</span>
+          <span class="crimson">name=</span><span class="olive">"autoplay"</span>
+          <span class="crimson">value=</span><span class="olive">"true"</span>&gt;
+        </span><br>
+        &lt;<span class="brown">/object</span>&gt;
+      </p>
+      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
+      &lt;<span class="brown">/html</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+</body>
+</html>
