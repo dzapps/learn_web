@@ -39,3 +39,8 @@ function formTargets(id, target) {
   document.getElementById(id).target = target;
   document.getElementsByClassName("replace")[0].innerHTML = target;
 }
+
+function changeFieldsetDisabled(id, state, text) {
+  document.getElementById(id).disabled = state;
+  document.getElementsByClassName("replaceFieldsetDisabled")[0].innerHTML = ' ' + text;
+}
