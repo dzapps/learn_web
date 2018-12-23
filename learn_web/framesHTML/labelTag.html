@@ -82,26 +82,15 @@
   <div class="attrSeparation"></div>
 
 
-  <div id="inputAccept" class="frameWindowHTML" style="padding-bottom: 0.5em;">
-    <div><h2 class="tag shadowText" style="float: left;">accept</h2></div>
+  <div id="labelFor" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">for</h2></div>
     <div style="float: right;"><a href="#attributesLabel"><button class="html-buttons-prop">&uarr;</button></a></div>
     <div style="clear: both;"><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
       Descriptions:<br />
       <div class="note-value">
-        The accept attribute specifies the types of files that the server accepts (that can be submitted through a file upload).
-      </div>
-    </div>
-    <div><hr class="hr-length-90perc" /></div>
-
-    <div class="noteCommonHTML noteHTML">
-      Notes:<br />
-      <div class="note-value">
-        Do not use this attribute as a validation tool. File uploads should be validated on the server.
-      </div>
-      <div class="note-value">
-        To specify more than one value, separate the values with a comma (e.g. &lt;input accept="audio/*,video/*,image/*" /&gt;.
+        The for attribute specifies which form element a label is bound to.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -116,24 +105,8 @@
         </thead>
         <tbody>
           <tr>
-            <td>file_extension</td>
-            <td>A file extension starting with the STOP character, e.g: .gif, .jpg, .png, .doc.</td>
-          </tr>
-          <tr>
-            <td>audio/*</td>
-            <td>All sound files are accepted.</td>
-          </tr>
-          <tr>
-            <td>video/*</td>
-            <td>All video files are accepted.</td>
-          </tr>
-          <tr>
-            <td>image/*</td>
-            <td>All image files are accepted.</td>
-          </tr>
-          <tr>
-            <td>media_type</td>
-            <td>A valid media type, with no parameters. Look at IANA Media Types for a complete list of standard media types.</td>
+            <td>element_id</td>
+            <td>The id of the element the label is bound to.</td>
           </tr>
         </tbody>
       </table>
@@ -144,66 +117,70 @@
     <div class="hover" style="padding: 5px; max-width: 90%;">
       <div class="exampleHTMLDiv">
         <form action="#">
-          <input type="file" name="pic" accept="image/*">
-          <input type="submit">
+          <label for="red">Red color</label>
+          <input type="radio" name="color" id="red" value="red"><br>
+          <label for="coral">Coral color</label>
+          <input type="radio" name="color" id="coral" value="coral"><br>
+          <label for="orange">Orange color</label>
+          <input type="radio" name="color" id="orange" value="orange"><br><br>
+          <input type="submit" value="Submit">
         </form>
       </div>
     </div>
 
     <div class="codeHTML blue borders-none">
-      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
-      &lt;<span class="brown">html</span>&gt;<br>
-      <span>&lt;<span class="brown">head</span>&gt;</span>
-        <p class="left-padding" style="margin: 0;">
-          &lt;<span class="brown">title</span>&gt;
-          <span class="black">Title of the page</span>
-          &lt;<span class="brown">/title</span>&gt;
-        </p>
-      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
-      <span>&lt;<span class="brown">body</span>&gt;</span><br>
-      <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">object</span>
-        <span class="crimson">data=</span><span class="olive">"../sounds/dog_barks.mp3"</span>&gt;<br>
-        <span class="left-padding">
-          &lt;<span class="brown">param</span>
-          <span class="crimson">name=</span><span class="olive">"autoplay"</span>
-          <span class="crimson">value=</span><span class="olive">"true"</span>&gt;
-        </span><br>
-        &lt;<span class="brown">/object</span>&gt;
+      &lt;<span class="brown">form</span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>&gt;<br>
+      <p class="left-padding" style="margin: 0">
+        &lt;<span class="brown">label</span>
+        <span class="crimson">for=</span><span class="olive">"red"</span>&gt;
+        <span class="black">Red color</span>
+        &lt;<span class="brown">/label</span>&gt;<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"radio"</span>
+        <span class="crimson">name=</span><span class="olive">"color"</span>
+        <span class="purple">id=</span><span class="olive">"red"</span>
+        <span class="crimson">value=</span><span class="olive">"red"</span>&gt;<br>
+
+        &lt;<span class="brown">label</span>
+        <span class="crimson">for=</span><span class="olive">"coral"</span>&gt;
+        <span class="black">Coral color</span>
+        &lt;<span class="brown">/label</span>&gt;<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"radio"</span>
+        <span class="crimson">name=</span><span class="olive">"color"</span>
+        <span class="purple">id=</span><span class="olive">"coral"</span>
+        <span class="crimson">value=</span><span class="olive">"coral"</span>&gt;<br>
+
+        &lt;<span class="brown">label</span>
+        <span class="crimson">for=</span><span class="olive">"orange"</span>&gt;
+        <span class="black">Orange color</span>
+        &lt;<span class="brown">/label</span>&gt;<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"radio"</span>
+        <span class="crimson">name=</span><span class="olive">"color"</span>
+        <span class="purple">id=</span><span class="olive">"orange"</span>
+        <span class="crimson">value=</span><span class="olive">"orange"</span>&gt;<br>
+
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">value=</span><span class="olive">"Submit"</span>&gt;
       </p>
-      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
-      &lt;<span class="brown">/html</span>&gt;<br>
+      &lt;<span class="brown">/form</span>&gt;
     </div>
   </div>
   <div class="attrSeparation"></div>
 
 
-  <div id="inputTextarea" class="frameWindowHTML" style="padding-bottom: 0.5em;">
-    <div><h2 class="tag shadowText" style="float: left;">textarea</h2></div>
+  <div id="labelForm" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">form</h2></div>
     <div style="float: right;"><a href="#attributesLabel"><button class="html-buttons-prop">&uarr;</button></a></div>
     <div style="clear: both;"><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
       Descriptions:<br />
       <div class="note-value">
-        The <textarea> tag defines a multi-line text input control.
-      </div>
-      <div class="note-value">
-        A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
-      </div>
-      <div class="note-value">
-        The size of a text area can be specified by the cols and rows attributes, or even better; through CSS' height and width properties.
-      </div>
-    </div>
-    <div><hr class="hr-length-90perc" /></div>
-
-    <div class="noteCommonHTML noteHTML">
-      Notes:<br />
-      <div class="note-value">
-        Do not use this attribute as a validation tool. File uploads should be validated on the server.
-      </div>
-      <div class="note-value">
-        To specify more than one value, separate the values with a comma (e.g. &lt;input accept="audio/*,video/*,image/*" /&gt;.
+        The form attribute specifies one or more forms the <output> element belongs to.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -218,24 +195,11 @@
         </thead>
         <tbody>
           <tr>
-            <td>file_extension</td>
-            <td>A file extension starting with the STOP character, e.g: .gif, .jpg, .png, .doc.</td>
-          </tr>
-          <tr>
-            <td>audio/*</td>
-            <td>All sound files are accepted.</td>
-          </tr>
-          <tr>
-            <td>video/*</td>
-            <td>All video files are accepted.</td>
-          </tr>
-          <tr>
-            <td>image/*</td>
-            <td>All image files are accepted.</td>
-          </tr>
-          <tr>
-            <td>media_type</td>
-            <td>A valid media type, with no parameters. Look at IANA Media Types for a complete list of standard media types.</td>
+            <td>form_id</td>
+            <td>
+              Specifies the form element the &lt;output&gt; element belongs to.
+              The value of this attribute must be the id attribute of a &lt;form&gt; element in the same document.
+            </td>
           </tr>
         </tbody>
       </table>
@@ -245,36 +209,35 @@
     <div><h2 class="tag shadowText">Examples</h2></div>
     <div class="hover" style="padding: 5px; max-width: 90%;">
       <div class="exampleHTMLDiv">
-        <form action="#">
-          <input type="file" name="pic" accept="image/*">
+        <form action="#" id="numform"
+          oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+          <input type="range" id="a" name="a" value="50">100
+          +<input type="number" id="b" name="b" value="50">
           <input type="submit">
         </form>
+        <output form="numform" name="x" for="a b"></output>
       </div>
     </div>
 
     <div class="codeHTML blue borders-none">
-      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
-      &lt;<span class="brown">html</span>&gt;<br>
-      <span>&lt;<span class="brown">head</span>&gt;</span>
-        <p class="left-padding" style="margin: 0;">
-          &lt;<span class="brown">title</span>&gt;
-          <span class="black">Title of the page</span>
-          &lt;<span class="brown">/title</span>&gt;
-        </p>
-      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
-      <span>&lt;<span class="brown">body</span>&gt;</span><br>
-      <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">object</span>
-        <span class="crimson">data=</span><span class="olive">"../sounds/dog_barks.mp3"</span>&gt;<br>
-        <span class="left-padding">
-          &lt;<span class="brown">param</span>
-          <span class="crimson">name=</span><span class="olive">"autoplay"</span>
-          <span class="crimson">value=</span><span class="olive">"true"</span>&gt;
-        </span><br>
-        &lt;<span class="brown">/object</span>&gt;
+      &lt;<span class="brown">form</span>
+      <span class="crimson">oninput=</span><span class="olive">"x.value=parseInt(a.value)+parseInt(b.value)"</span>
+      <span class="purple">id=</span><span class="olive">"numform"</span>&gt;0<br>
+      <p class="left-padding" style="margin: 0">
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"range"</span>
+        <span class="purple">id=</span><span class="olive">"a"</span>
+        <span class="crimson">value=</span><span class="olive">"50"</span>&gt;100<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"range"</span>
+        <span class="purple">id=</span><span class="olive">"b"</span>
+        <span class="crimson">value=</span><span class="olive">"50"</span>&gt;<br>
+        &lt;<span class="brown">output</span>
+        <span class="crimson">form=</span><span class="olive">"numform"</span>
+        <span class="crimson">name=</span><span class="olive">"x"</span>
+        <span class="crimson">for=</span><span class="olive">"a b"</span>&gt;&lt;<span class="brown">/output</span>&gt;
       </p>
-      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
-      &lt;<span class="brown">/html</span>&gt;<br>
+      &lt;<span class="brown">/form</span>&gt;
     </div>
   </div>
   <div class="attrSeparation"></div>

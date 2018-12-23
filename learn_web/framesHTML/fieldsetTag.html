@@ -222,7 +222,6 @@
         </p>
       &lt;<span class="brown">/form</span>&gt;<br><br>
 
-
       &lt;<span class="brown">fieldset</span>
       <span class="crimson">form=</span><span class="olive">"form1"</span>&gt;<br>
         <p class="left-padding" style="margin: 0">
@@ -235,6 +234,82 @@
           <span class="crimson">name=</span><span class="olive">"usermail"</span>&gt;<br>
         </p>
       &lt;<span class="brown">fieldset</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="fieldsetName" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">name</h2></div>
+    <div style="float: right;"><a href="#attributesFieldset"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The name attribute specifies a name for a fieldset.
+      </div>
+      <div class="note-value">
+        The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>name</td>
+            <td>Specifies the name of the fieldset.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <form action="#" method="get">
+          <fieldset name="personalia">
+            Name: <input type="text" name="username"><br>
+            Email: <input type="text" name="usermail"><br>
+          </fieldset>
+          <button type="button" onclick="form.personalia.style.background = 'red'">Change background color of fieldset</button>
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form</span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>
+      <span class="crimson">method=</span><span class="olive">"get"</span>&gt;<br>
+        <span class="left-padding">&lt;<span class="brown">fieldset</span>
+        <span class="crimson">name=</span><span class="olive">"personalia"</span>&gt;</span><br>
+          <p class="more-padding" style="margin: 0">
+            <span class="black">Name:</span>&lt;<span class="brown">input</span>
+            <span class="crimson">type=</span><span class="olive">"text"</span>
+            <span class="crimson">name=</span><span class="olive">"username"</span>&gt;<br>
+            <span class="black">Email:</span>&lt;<span class="brown">input</span>
+            <span class="crimson">type=</span><span class="olive">"text"</span>
+            <span class="crimson">name=</span><span class="olive">"usermail"</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">fieldset</span>&gt;</span><br>
+        <span class="left-padding">&lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>&gt</span><br>
+        <span class="left-padding">&lt;<span class="brown">button</span>
+        <span class="crimson">type=</span><span class="olive">"button"</span>
+        <span class="crimson">onclick=</span><span class="olive">"form.personalia.style.background = 'red'"</span>&gt;
+        <span class="black">Change background color of fieldset</span>
+        &lt;<span class="brown">/button</span>&gt;</span><br>
+      &lt;<span class="brown">/form</span>&gt;<br><br>
     </div>
   </div>
   <div class="attrSeparation"></div>
