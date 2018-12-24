@@ -44,3 +44,18 @@ function changeFieldsetDisabled(id, state, text) {
   document.getElementById(id).disabled = state;
   document.getElementsByClassName("replaceFieldsetDisabled")[0].innerHTML = ' ' + text;
 }
+
+function changeOptionDisabled(id, state, text) {
+  document.getElementById(id).disabled = state;
+  document.getElementsByClassName("replaceOptionDisabled")[0].innerHTML = ' ' + text;
+}
+
+function changeOptionSelected(id, state, text) {
+  document.getElementById(id).selected = state;
+  document.getElementsByClassName("replaceOptionSelected")[0].innerHTML = ' ' + text;
+}
+
+function changeOptgroupDisabled(id, state, text) {
+  document.getElementById(id).disabled = state;
+  document.getElementsByClassName("replaceOptgroupDisabled")[0].innerHTML = ' ' + text;
+}

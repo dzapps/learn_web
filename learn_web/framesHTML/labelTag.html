@@ -180,7 +180,7 @@
     <div class="noteCommonHTML descriptionHTML">
       Descriptions:<br />
       <div class="note-value">
-        The form attribute specifies one or more forms the <output> element belongs to.
+        The form attribute specifies one or more forms the &lt;label&gt; element belongs to.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -197,7 +197,7 @@
           <tr>
             <td>form_id</td>
             <td>
-              Specifies the form element the &lt;output&gt; element belongs to.
+              Specifies the form element the &lt;label&gt; element belongs to.
               The value of this attribute must be the id attribute of a &lt;form&gt; element in the same document.
             </td>
           </tr>
@@ -209,35 +209,60 @@
     <div><h2 class="tag shadowText">Examples</h2></div>
     <div class="hover" style="padding: 5px; max-width: 90%;">
       <div class="exampleHTMLDiv">
-        <form action="#" id="numform"
-          oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
-          <input type="range" id="a" name="a" value="50">100
-          +<input type="number" id="b" name="b" value="50">
-          <input type="submit">
+        <form action="#">
+          <input type="radio" name="color" id="red" value="red"><br>
+          <label for="coral">Coral color</label>
+          <input type="radio" name="color" id="coral" value="coral"><br>
+          <label for="orange">Orange color</label>
+          <input type="radio" name="color" id="orange" value="orange"><br><br>
+          <input type="submit" value="Submit">
         </form>
-        <output form="numform" name="x" for="a b"></output>
+        <label for="red">Red color</label>
       </div>
     </div>
 
     <div class="codeHTML blue borders-none">
       &lt;<span class="brown">form</span>
-      <span class="crimson">oninput=</span><span class="olive">"x.value=parseInt(a.value)+parseInt(b.value)"</span>
-      <span class="purple">id=</span><span class="olive">"numform"</span>&gt;0<br>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>
+      <span class="purple">id=</span><span class="olive">"form1"</span>&gt;<br>
       <p class="left-padding" style="margin: 0">
         &lt;<span class="brown">input</span>
-        <span class="crimson">type=</span><span class="olive">"range"</span>
-        <span class="purple">id=</span><span class="olive">"a"</span>
-        <span class="crimson">value=</span><span class="olive">"50"</span>&gt;100<br>
+        <span class="crimson">type=</span><span class="olive">"radio"</span>
+        <span class="crimson">name=</span><span class="olive">"color"</span>
+        <span class="purple">id=</span><span class="olive">"red"</span>
+        <span class="crimson">value=</span><span class="olive">"red"</span>&gt;<br>
+
+        &lt;<span class="brown">label</span>
+        <span class="crimson">for=</span><span class="olive">"coral"</span>&gt;
+        <span class="black">Coral color</span>
+        &lt;<span class="brown">/label</span>&gt;<br>
         &lt;<span class="brown">input</span>
-        <span class="crimson">type=</span><span class="olive">"range"</span>
-        <span class="purple">id=</span><span class="olive">"b"</span>
-        <span class="crimson">value=</span><span class="olive">"50"</span>&gt;<br>
-        &lt;<span class="brown">output</span>
-        <span class="crimson">form=</span><span class="olive">"numform"</span>
-        <span class="crimson">name=</span><span class="olive">"x"</span>
-        <span class="crimson">for=</span><span class="olive">"a b"</span>&gt;&lt;<span class="brown">/output</span>&gt;
+        <span class="crimson">type=</span><span class="olive">"radio"</span>
+        <span class="crimson">name=</span><span class="olive">"color"</span>
+        <span class="purple">id=</span><span class="olive">"coral"</span>
+        <span class="crimson">value=</span><span class="olive">"coral"</span>&gt;<br>
+
+        &lt;<span class="brown">label</span>
+        <span class="crimson">for=</span><span class="olive">"orange"</span>&gt;
+        <span class="black">Orange color</span>
+        &lt;<span class="brown">/label</span>&gt;<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"radio"</span>
+        <span class="crimson">name=</span><span class="olive">"color"</span>
+        <span class="purple">id=</span><span class="olive">"orange"</span>
+        <span class="crimson">value=</span><span class="olive">"orange"</span>&gt;<br>
+
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">value=</span><span class="olive">"Submit"</span>&gt;
       </p>
-      &lt;<span class="brown">/form</span>&gt;
+      &lt;<span class="brown">/form</span>&gt;<br>
+
+      &lt;<span class="brown">label</span>
+      <span class="crimson">for=</span><span class="olive">"red"</span>
+      <span class="crimson">form=</span><span class="olive">"form1"</span>&gt;
+      <span class="black">Red color</span>
+      &lt;<span class="brown">/label</span>&gt;<br>
     </div>
   </div>
   <div class="attrSeparation"></div>

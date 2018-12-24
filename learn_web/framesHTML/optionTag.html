@@ -53,11 +53,6 @@
       <table class="hover attr-list attr-list-3">
         <thead>
           <tr>
-            <th colspan="3" class="tableNameStyle">
-              Attributes
-            </th>
-          </tr>
-          <tr>
             <th>Attribute</th><th>Value</th><th>Description</th>
           </tr>
         </thead>
@@ -89,117 +84,93 @@
   <div class="attrSeparation"></div>
 
 
-  <div id="inputAccept" class="frameWindowHTML" style="padding-bottom: 0.5em;">
-    <div><h2 class="tag shadowText" style="float: left;">accept</h2></div>
+  <div id="optionDisabled" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">disabled</h2></div>
     <div style="float: right;"><a href="#attributesOption"><button class="html-buttons-prop">&uarr;</button></a></div>
     <div style="clear: both;"><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
       Descriptions:<br />
       <div class="note-value">
-        The accept attribute specifies the types of files that the server accepts (that can be submitted through a file upload).
-      </div>
-    </div>
-    <div><hr class="hr-length-90perc" /></div>
-
-    <div class="noteCommonHTML noteHTML">
-      Notes:<br />
-      <div class="note-value">
-        Do not use this attribute as a validation tool. File uploads should be validated on the server.
+        The disabled attribute is a boolean attribute.
       </div>
       <div class="note-value">
-        To specify more than one value, separate the values with a comma (e.g. &lt;input accept="audio/*,video/*,image/*" /&gt;.
+        When present, it specifies that an option should be disabled.
       </div>
-    </div>
-    <div><hr class="hr-length-90perc" /></div>
-
-    <div><h2 class="tag shadowText">Attributes</h2></div>
-    <div>
-      <table class="hover attr-list">
-        <thead>
-          <tr>
-            <th>Value</th><th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>file_extension</td>
-            <td>A file extension starting with the STOP character, e.g: .gif, .jpg, .png, .doc.</td>
-          </tr>
-          <tr>
-            <td>audio/*</td>
-            <td>All sound files are accepted.</td>
-          </tr>
-          <tr>
-            <td>video/*</td>
-            <td>All video files are accepted.</td>
-          </tr>
-          <tr>
-            <td>image/*</td>
-            <td>All image files are accepted.</td>
-          </tr>
-          <tr>
-            <td>media_type</td>
-            <td>A valid media type, with no parameters. Look at IANA Media Types for a complete list of standard media types.</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="note-value">
+        A disabled option is unusable and un-clickable.
+      </div>
+      <div class="note-value">
+        The disabled attribute can be set to keep a user from selecting the option
+        until some other condition has been met (like selecting a checkbox, etc.).
+        Then, a JavaScript is required to remove the disabled value, and make the option selectable.
+      </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
 
     <div><h2 class="tag shadowText">Examples</h2></div>
+    <div id="optionDisabledExamplBar" class="more-padding;">
+      <a href="#optionDisabledExamplBar">
+        <button onclick="changeOptionDisabled('optionDisabledField', '', '')" class="example-button example-rounded-buttons">enabled</button>
+      </a>
+      <a href="#optionDisabledExamplBar">
+        <button onclick="changeOptionDisabled('optionDisabledField', 'true', 'disabled')" class="example-button example-rounded-buttons">disabled</button>
+      </a>
+    </div>
+
     <div class="hover" style="padding: 5px; max-width: 90%;">
       <div class="exampleHTMLDiv">
-        <form action="#">
-          <input type="file" name="pic" accept="image/*">
-          <input type="submit">
-        </form>
+        <select>
+          <option id="optionDisabledField" value="banana">Banana</option>
+          <option value="apple">Apple</option>
+          <option value="orange">Orange</option>
+          <option value="kiwi">Kiwi</option>
+        </select>
       </div>
     </div>
 
     <div class="codeHTML blue borders-none">
-      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
-      &lt;<span class="brown">html</span>&gt;<br>
-      <span>&lt;<span class="brown">head</span>&gt;</span>
-        <p class="left-padding" style="margin: 0;">
-          &lt;<span class="brown">title</span>&gt;
-          <span class="black">Title of the page</span>
-          &lt;<span class="brown">/title</span>&gt;
+      &lt;<span class="brown">select</span>&gt;<br>
+        <p class="left-padding" style="margin: 0">
+          &lt;<span class="brown">option</span>
+          <span class="crimson">value=</span><span class="olive">"banana"</span>
+          <span class="crimson replaceOptionDisabled"></span>&gt;
+          <span class="black">Banana</span>
+          &lt;<span class="brown">/option</span>&gt;<br>
+
+          &lt;<span class="brown">option</span>
+          <span class="crimson">value=</span><span class="olive">"apple"</span>&gt;
+          <span class="black">Apple</span>
+          &lt;<span class="brown">/option</span>&gt;<br>
+
+          &lt;<span class="brown">option</span>
+          <span class="crimson">value=</span><span class="olive">"orange"</span>&gt;
+          <span class="black">Orange</span>
+          &lt;<span class="brown">/option</span>&gt;<br>
+
+          &lt;<span class="brown">option</span>
+          <span class="crimson">value=</span><span class="olive">"kiwi"</span>&gt;
+          <span class="black">Kiwi</span>
+          &lt;<span class="brown">/option</span>&gt;<br>
         </p>
-      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
-      <span>&lt;<span class="brown">body</span>&gt;</span><br>
-      <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">object</span>
-        <span class="crimson">data=</span><span class="olive">"../sounds/dog_barks.mp3"</span>&gt;<br>
-        <span class="left-padding">
-          &lt;<span class="brown">param</span>
-          <span class="crimson">name=</span><span class="olive">"autoplay"</span>
-          <span class="crimson">value=</span><span class="olive">"true"</span>&gt;
-        </span><br>
-        &lt;<span class="brown">/object</span>&gt;
-      </p>
-      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
-      &lt;<span class="brown">/html</span>&gt;<br>
+      &lt;<span class="brown">/select</span>&gt;
     </div>
   </div>
   <div class="attrSeparation"></div>
 
 
-  <div id="inputTextarea" class="frameWindowHTML" style="padding-bottom: 0.5em;">
-    <div><h2 class="tag shadowText" style="float: left;">textarea</h2></div>
+  <div id="optionLabel" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">label</h2></div>
     <div style="float: right;"><a href="#attributesOption"><button class="html-buttons-prop">&uarr;</button></a></div>
     <div style="clear: both;"><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
       Descriptions:<br />
       <div class="note-value">
-        The <textarea> tag defines a multi-line text input control.
+        The label attribute specifies a shorter version of an option.
       </div>
       <div class="note-value">
-        A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
-      </div>
-      <div class="note-value">
-        The size of a text area can be specified by the cols and rows attributes, or even better; through CSS' height and width properties.
+        The shorter version will be displayed in the drop-down list.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -207,10 +178,7 @@
     <div class="noteCommonHTML noteHTML">
       Notes:<br />
       <div class="note-value">
-        Do not use this attribute as a validation tool. File uploads should be validated on the server.
-      </div>
-      <div class="note-value">
-        To specify more than one value, separate the values with a comma (e.g. &lt;input accept="audio/*,video/*,image/*" /&gt;.
+        The label attribute is not supported in Firefox.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -225,63 +193,223 @@
         </thead>
         <tbody>
           <tr>
-            <td>file_extension</td>
-            <td>A file extension starting with the STOP character, e.g: .gif, .jpg, .png, .doc.</td>
-          </tr>
-          <tr>
-            <td>audio/*</td>
-            <td>All sound files are accepted.</td>
-          </tr>
-          <tr>
-            <td>video/*</td>
-            <td>All video files are accepted.</td>
-          </tr>
-          <tr>
-            <td>image/*</td>
-            <td>All image files are accepted.</td>
-          </tr>
-          <tr>
-            <td>media_type</td>
-            <td>A valid media type, with no parameters. Look at IANA Media Types for a complete list of standard media types.</td>
+            <td>text</td>
+            <td>A shorter version for the option.</td>
           </tr>
         </tbody>
       </table>
     </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <select>
+          <option label="Banana">Banana (very sweet fruit)</option>
+          <option label="Apple">Apple (sour and sweet fruit)</option>
+          <option label="Orange">Orange (sweet fruit)</option>
+          <option label="Kiwi">Kiwi (sweet fruit)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">select</span>&gt;<br>
+        <p class="left-padding" style="margin: 0">
+          &lt;<span class="brown">option</span>
+          <span class="crimson">label=</span><span class="olive">"Banana"</span>&gt;
+          <span class="black">Banana (very sweet fruit)</span>
+          &lt;<span class="brown">/option</span>&gt;<br>
+
+          &lt;<span class="brown">option</span>
+          <span class="crimson">label=</span><span class="olive">"Apple"</span>&gt;
+          <span class="black">Apple (sour and sweet fruit)</span>
+          &lt;<span class="brown">/option</span>&gt;<br>
+
+          &lt;<span class="brown">option</span>
+          <span class="crimson">label=</span><span class="olive">"Orange"</span>&gt;
+          <span class="black">Orange (sweet fruit)</span>
+          &lt;<span class="brown">/option</span>&gt;<br>
+
+          &lt;<span class="brown">option</span>
+          <span class="crimson">label=</span><span class="olive">"Kiwi"</span>&gt;
+          <span class="black">Kiwi (sweet fruit)</span>
+          &lt;<span class="brown">/option</span>&gt;<br>
+        </p>
+      &lt;<span class="brown">/select</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="optionSelected" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">selected</h2></div>
+    <div style="float: right;"><a href="#attributesOption"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The selected attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that an option should be pre-selected when the page loads.
+      </div>
+      <div class="note-value">
+        The pre-selected option will be displayed first in the drop-down list.
+      </div>
+    </div>
     <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The selected attribute can also be set after the page loads, with a JavaScript.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div id="optionSelectedExamplBar" class="more-padding;">
+      <a href="#optionSelectedExamplBar">
+        <button onclick="changeOptionSelected('optionSelectedField', '', '')" class="example-button example-rounded-buttons">initial</button>
+      </a>
+      <a href="#optionSelectedExamplBar">
+        <button onclick="changeOptionSelected('optionSelectedField', 'true', 'selected')" class="example-button example-rounded-buttons">selected</button>
+      </a>
+    </div>
+
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <select>
+          <option value="banana">Banana</option>
+          <option value="apple">Apple</option>
+          <option id="optionSelectedField" value="orange">Orange</option>
+          <option value="kiwi">Kiwi</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">select</span>&gt;<br>
+        <p class="left-padding" style="margin: 0">
+          &lt;<span class="brown">option</span>
+          <span class="crimson">value=</span><span class="olive">"banana"</span>&gt;
+          <span class="black">Banana</span>
+          &lt;<span class="brown">/option</span>&gt;<br>
+
+          &lt;<span class="brown">option</span>
+          <span class="crimson">value=</span><span class="olive">"apple"</span>&gt;
+          <span class="black">Apple</span>
+          &lt;<span class="brown">/option</span>&gt;<br>
+
+          &lt;<span class="brown">option</span>
+          <span class="crimson">value=</span><span class="olive">"orange"</span>
+          <span class="crimson replaceOptionSelected"></span>&gt;
+          <span class="black">Orange</span>
+          &lt;<span class="brown">/option</span>&gt;<br>
+
+          &lt;<span class="brown">option</span>
+          <span class="crimson">value=</span><span class="olive">"kiwi"</span>&gt;
+          <span class="black">Kiwi</span>
+          &lt;<span class="brown">/option</span>&gt;<br>
+        </p>
+      &lt;<span class="brown">/select</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="optionValue" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">value</h2></div>
+    <div style="float: right;"><a href="#attributesOption"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The value attribute specifies the value to be sent to a server when a form is submitted.
+      </div>
+      <div class="note-value">
+        The content between the opening &lt;option&gt; and closing &lt;/option&gt; tags
+        is what the browsers will display in a drop-down list.
+        However, the value of the value attribute is what will be sent to the server when a form is submitted.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        If the value attribute is not specified, the content will be passed as a value instead.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>value</td>
+            <td>The value to be sent to the server.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
 
     <div><h2 class="tag shadowText">Examples</h2></div>
     <div class="hover" style="padding: 5px; max-width: 90%;">
       <div class="exampleHTMLDiv">
         <form action="#">
-          <input type="file" name="pic" accept="image/*">
-          <input type="submit">
+          <select>
+            <option value="banana">Banana</option>
+            <option value="apple">Apple</option>
+            <option value="orange">Orange</option>
+            <option value="kiwi">Kiwi</option>
+          </select>
+          <input type="submit" value="Submit">
         </form>
       </div>
     </div>
 
     <div class="codeHTML blue borders-none">
-      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
-      &lt;<span class="brown">html</span>&gt;<br>
-      <span>&lt;<span class="brown">head</span>&gt;</span>
-        <p class="left-padding" style="margin: 0;">
-          &lt;<span class="brown">title</span>&gt;
-          <span class="black">Title of the page</span>
-          &lt;<span class="brown">/title</span>&gt;
-        </p>
-      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
-      <span>&lt;<span class="brown">body</span>&gt;</span><br>
-      <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">object</span>
-        <span class="crimson">data=</span><span class="olive">"../sounds/dog_barks.mp3"</span>&gt;<br>
-        <span class="left-padding">
-          &lt;<span class="brown">param</span>
-          <span class="crimson">name=</span><span class="olive">"autoplay"</span>
-          <span class="crimson">value=</span><span class="olive">"true"</span>&gt;
-        </span><br>
-        &lt;<span class="brown">/object</span>&gt;
-      </p>
-      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
-      &lt;<span class="brown">/html</span>&gt;<br>
+      &lt;<span class="brown">form</span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>&gt;</span><br>
+        <span class="left-padding">&lt;<span class="brown">select</span>
+        <span class="crimson">name=</span><span class="olive">"fruits"</span>&gt;</span><br>
+          <p class="more-padding" style="margin: 0">
+            &lt;<span class="brown">option</span>
+            <span class="crimson">value=</span><span class="olive">"banana"</span>&gt;
+            <span class="black">Banana</span>
+            &lt;<span class="brown">/option</span>&gt;<br>
+
+            &lt;<span class="brown">option</span>
+            <span class="crimson">value=</span><span class="olive">"apple"</span>&gt;
+            <span class="black">Apple</span>
+            &lt;<span class="brown">/option</span>&gt;<br>
+
+            &lt;<span class="brown">option</span>
+            <span class="crimson">value=</span><span class="olive">"orange"</span>&gt;
+            <span class="black">Orange</span>
+            &lt;<span class="brown">/option</span>&gt;<br>
+
+            &lt;<span class="brown">option</span>
+            <span class="crimson">value=</span><span class="olive">"kiwi"</span>&gt;
+            <span class="black">Kiwi</span>
+            &lt;<span class="brown">/option</span>&gt;<br>
+          </p>
+        <span class="left-padding">&lt;<span class="brown">/select</span>&gt;</span><br>
+        <span class="left-padding">&lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">value=</span><span class="olive">"Submit"</span>&gt;</span><br>
+      &lt;<span class="brown">/form</span>&gt;
     </div>
   </div>
   <div class="attrSeparation"></div>
