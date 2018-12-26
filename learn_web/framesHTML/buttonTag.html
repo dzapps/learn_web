@@ -50,7 +50,7 @@
     </div>
     <div><hr class="hr-length-90perc" /></div>
 
-    <div id="attributesTextarea"><h2 class="tag shadowText">Attributes</h2></div>
+    <div id="attributesButton"><h2 class="tag shadowText">Attributes</h2></div>
     <div>
       <table class="hover attr-list attr-list-3">
         <thead>
@@ -121,128 +121,111 @@
   <div class="attrSeparation"></div>
 
 
-  <div id="inputAccept" class="frameWindowHTML" style="padding-bottom: 0.5em;">
-    <div><h2 class="tag shadowText" style="float: left;">accept</h2></div>
-    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+  <div id="buttonAutofocus" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">autofocus</h2></div>
+    <div style="float: right;"><a href="#attributesButton"><button class="html-buttons-prop">&uarr;</button></a></div>
     <div style="clear: both;"><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
       Descriptions:<br />
       <div class="note-value">
-        The accept attribute specifies the types of files that the server accepts (that can be submitted through a file upload).
-      </div>
-    </div>
-    <div><hr class="hr-length-90perc" /></div>
-
-    <div class="noteCommonHTML noteHTML">
-      Notes:<br />
-      <div class="note-value">
-        Do not use this attribute as a validation tool. File uploads should be validated on the server.
+        The autofocus attribute is a boolean attribute.
       </div>
       <div class="note-value">
-        To specify more than one value, separate the values with a comma (e.g. &lt;input accept="audio/*,video/*,image/*" /&gt;.
+        When present, it specifies that a button should automatically get focus when the page loads.
       </div>
-    </div>
-    <div><hr class="hr-length-90perc" /></div>
-
-    <div><h2 class="tag shadowText">Attributes</h2></div>
-    <div>
-      <table class="hover attr-list">
-        <thead>
-          <tr>
-            <th>Value</th><th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>file_extension</td>
-            <td>A file extension starting with the STOP character, e.g: .gif, .jpg, .png, .doc.</td>
-          </tr>
-          <tr>
-            <td>audio/*</td>
-            <td>All sound files are accepted.</td>
-          </tr>
-          <tr>
-            <td>video/*</td>
-            <td>All video files are accepted.</td>
-          </tr>
-          <tr>
-            <td>image/*</td>
-            <td>All image files are accepted.</td>
-          </tr>
-          <tr>
-            <td>media_type</td>
-            <td>A valid media type, with no parameters. Look at IANA Media Types for a complete list of standard media types.</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
     <div><hr class="hr-length-90perc" /></div>
 
     <div><h2 class="tag shadowText">Examples</h2></div>
+    <div id="buttonAutofocusExamplBar" class="more-padding;">
+      <a href="#buttonAutofocusExamplBar">
+        <button onclick="changeButtonAutofocus('buttonAutofocusField', 'true', 'autofocus')" class="example-button example-rounded-buttons">enabled</button>
+      </a>
+      <a href="#buttonAutofocusExamplBar">
+        <button onclick="changeButtonAutofocus('buttonAutofocusField', '', '')" class="example-button example-rounded-buttons">disabled</button>
+      </a>
+    </div>
+
     <div class="hover" style="padding: 5px; max-width: 90%;">
       <div class="exampleHTMLDiv">
-        <form action="#">
-          <input type="file" name="pic" accept="image/*">
-          <input type="submit">
-        </form>
+        <button class="html-buttons" type="button" autofocus onclick="alert('Here I\'m!')">Click Me!</button>
       </div>
     </div>
 
     <div class="codeHTML blue borders-none">
-      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
-      &lt;<span class="brown">html</span>&gt;<br>
-      <span>&lt;<span class="brown">head</span>&gt;</span>
-        <p class="left-padding" style="margin: 0;">
-          &lt;<span class="brown">title</span>&gt;
-          <span class="black">Title of the page</span>
-          &lt;<span class="brown">/title</span>&gt;
-        </p>
-      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
-      <span>&lt;<span class="brown">body</span>&gt;</span><br>
-      <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">object</span>
-        <span class="crimson">data=</span><span class="olive">"../sounds/dog_barks.mp3"</span>&gt;<br>
-        <span class="left-padding">
-          &lt;<span class="brown">param</span>
-          <span class="crimson">name=</span><span class="olive">"autoplay"</span>
-          <span class="crimson">value=</span><span class="olive">"true"</span>&gt;
-        </span><br>
-        &lt;<span class="brown">/object</span>&gt;
-      </p>
-      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
-      &lt;<span class="brown">/html</span>&gt;<br>
+      &lt;<span class="brown">button</span>
+      <span class="crimson">type=</span><span class="olive">"button"</span>
+      <span class="crimson">autofocus</span>
+      <span class="crimson">onclick=</span><span class="olive">"alert('Here I\'m')"</span>&gt;<br>
+      <span class="black left-padding">Click me!</span><br>
+      &lt;<span class="brown">/button</span>&gt;
     </div>
   </div>
   <div class="attrSeparation"></div>
 
 
-  <div id="inputTextarea" class="frameWindowHTML" style="padding-bottom: 0.5em;">
-    <div><h2 class="tag shadowText" style="float: left;">textarea</h2></div>
-    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+  <div id="buttonDisabled" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">disabled</h2></div>
+    <div style="float: right;"><a href="#attributesButton"><button class="html-buttons-prop">&uarr;</button></a></div>
     <div style="clear: both;"><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
       Descriptions:<br />
       <div class="note-value">
-        The <textarea> tag defines a multi-line text input control.
+        The disabled attribute is a boolean attribute.
       </div>
       <div class="note-value">
-        A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
+        When present, it specifies that the button should be disabled.
       </div>
       <div class="note-value">
-        The size of a text area can be specified by the cols and rows attributes, or even better; through CSS' height and width properties.
+        A disabled button is unusable and un-clickable.
+      </div>
+      <div class="note-value">
+        The disabled attribute can be set to keep a user from clicking on the button
+        until some other condition has been met (like selecting a checkbox, etc.).
+        Then, a JavaScript could remove the disabled value, and make the button usable.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
 
-    <div class="noteCommonHTML noteHTML">
-      Notes:<br />
-      <div class="note-value">
-        Do not use this attribute as a validation tool. File uploads should be validated on the server.
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div id="buttonDisabledExamplBar" class="more-padding;">
+      <a href="#buttonDisabledExamplBar">
+        <button onclick="changeButtonDisabled('buttonDisabledField', '', '')" class="example-button example-rounded-buttons">enabled</button>
+      </a>
+      <a href="#buttonDisabledExamplBar">
+        <button onclick="changeButtonDisabled('buttonDisabledField', 'true', 'disabled')" class="example-button example-rounded-buttons">disabled</button>
+      </a>
+    </div>
+
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <button id="buttonDisabledField" class="html-buttons" type="button" onclick="alert('Here I\'m!')">Click Me!</button>
       </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">button</span>
+      <span class="crimson">type=</span><span class="olive">"button"</span>
+      <span class="crimson replaceButtonDisabled"></span>
+      <span class="crimson">onclick=</span><span class="olive">"alert('Here I\'m')"</span>&gt;<br>
+      <span class="black left-padding">Click me!</span><br>
+      &lt;<span class="brown">/button</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="buttonForm" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">form</h2></div>
+    <div style="float: right;"><a href="#attributesSelect"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
       <div class="note-value">
-        To specify more than one value, separate the values with a comma (e.g. &lt;input accept="audio/*,video/*,image/*" /&gt;.
+        The form attribute specifies one or more forms the button belongs to.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -257,63 +240,53 @@
         </thead>
         <tbody>
           <tr>
-            <td>file_extension</td>
-            <td>A file extension starting with the STOP character, e.g: .gif, .jpg, .png, .doc.</td>
-          </tr>
-          <tr>
-            <td>audio/*</td>
-            <td>All sound files are accepted.</td>
-          </tr>
-          <tr>
-            <td>video/*</td>
-            <td>All video files are accepted.</td>
-          </tr>
-          <tr>
-            <td>image/*</td>
-            <td>All image files are accepted.</td>
-          </tr>
-          <tr>
-            <td>media_type</td>
-            <td>A valid media type, with no parameters. Look at IANA Media Types for a complete list of standard media types.</td>
+            <td>form_id</td>
+            <td>
+              Specifies the form element the &lt;button&gt; element belongs to.
+              The value of this attribute must be the id attribute of a &lt;form&gt; element in the same document.
+            </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div><hr class="hr-length-90perc" /></div>
+    <div><hr class="hr-length-90perc"></div>
 
     <div><h2 class="tag shadowText">Examples</h2></div>
     <div class="hover" style="padding: 5px; max-width: 90%;">
-      <div class="exampleHTMLDiv">
-        <form action="#">
-          <input type="file" name="pic" accept="image/*">
-          <input type="submit">
-        </form>
+      <div class="exampleHTMLDiv" style="display: block; text-align: center;">
+        <form action="#" method="get" id="nameform">
+          First name: <input type="text" name="fname"><br>
+          Last name: <input type="text" name="lname"><br>
+        </form><br>
+
+        <button class="html-buttons" type="submit" form="nameform" value="Submit">Submit</button>
       </div>
     </div>
 
     <div class="codeHTML blue borders-none">
-      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
-      &lt;<span class="brown">html</span>&gt;<br>
-      <span>&lt;<span class="brown">head</span>&gt;</span>
-        <p class="left-padding" style="margin: 0;">
-          &lt;<span class="brown">title</span>&gt;
-          <span class="black">Title of the page</span>
-          &lt;<span class="brown">/title</span>&gt;
-        </p>
-      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
-      <span>&lt;<span class="brown">body</span>&gt;</span><br>
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>
+      <span class="crimson">method=</span><span class="olive">"get"</span>
+      <span class="purple">id=</span><span class="olive">"fruitsform"</span>&gt;<br />
       <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">object</span>
-        <span class="crimson">data=</span><span class="olive">"../sounds/dog_barks.mp3"</span>&gt;<br>
-        <span class="left-padding">
-          &lt;<span class="brown">param</span>
-          <span class="crimson">name=</span><span class="olive">"autoplay"</span>
-          <span class="crimson">value=</span><span class="olive">"true"</span>&gt;
-        </span><br>
-        &lt;<span class="brown">/object</span>&gt;
+        <span class="black">First name:</span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"text"</span>
+        <span class="crimson">name=</span><span class="olive">"fname"</span>&gt;<br>
+        <span class="black">Last name:</span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"text"</span>
+        <span class="crimson">name=</span><span class="olive">"fname"</span>&gt;<br>
       </p>
-      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
-      &lt;<span class="brown">/html</span>&gt;<br>
+      &lt;<span class="brown">/form</span>&gt;<br><br>
+
+      &lt;<span class="brown">button</span>
+      <span class="crimson">type=</span><span class="olive">"submit"</span>
+      <span class="crimson replaceButtonDisabled"></span>
+      <span class="crimson">form=</span><span class="olive">"nameform"</span>
+      <span class="crimson">value=</span><span class="olive">"Submit"</span>&gt;<br>
+      <span class="black left-padding">Submit</span><br>
+      &lt;<span class="brown">/button</span>&gt;
     </div>
   </div>
   <div class="attrSeparation"></div>

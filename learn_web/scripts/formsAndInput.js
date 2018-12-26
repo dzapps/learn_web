@@ -74,3 +74,8 @@ function changeSelectSize(id, size) {
   document.getElementById(id).size = size;
   document.getElementsByClassName("replaceSelectSize")[0].innerHTML = '"' + size + '"';
 }
+
+function changeButtonDisabled(id, state, text) {
+  document.getElementById(id).disabled = state;
+  document.getElementsByClassName("replaceButtonDisabled")[0].innerHTML = ' ' + text;
+}
