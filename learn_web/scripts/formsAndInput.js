@@ -59,3 +59,18 @@ function changeOptgroupDisabled(id, state, text) {
   document.getElementById(id).disabled = state;
   document.getElementsByClassName("replaceOptgroupDisabled")[0].innerHTML = ' ' + text;
 }
+
+function changeSelectAutofocus(id, state, text) {
+  document.getElementById(id).autofocus = state;
+  document.getElementsByClassName("replaceSelectAutofocus")[0].innerHTML = ' ' + text;
+}
+
+function changeSelectDisabled(id, state, text) {
+  document.getElementById(id).disabled = state;
+  document.getElementsByClassName("replaceSelectDisabled")[0].innerHTML = ' ' + text;
+}
+
+function changeSelectSize(id, size) {
+  document.getElementById(id).size = size;
+  document.getElementsByClassName("replaceSelectSize")[0].innerHTML = '"' + size + '"';
+}
