@@ -138,15 +138,6 @@
     <div><hr class="hr-length-90perc" /></div>
 
     <div><h2 class="tag shadowText">Examples</h2></div>
-    <div id="buttonAutofocusExamplBar" class="more-padding;">
-      <a href="#buttonAutofocusExamplBar">
-        <button onclick="changeButtonAutofocus('buttonAutofocusField', 'true', 'autofocus')" class="example-button example-rounded-buttons">enabled</button>
-      </a>
-      <a href="#buttonAutofocusExamplBar">
-        <button onclick="changeButtonAutofocus('buttonAutofocusField', '', '')" class="example-button example-rounded-buttons">disabled</button>
-      </a>
-    </div>
-
     <div class="hover" style="padding: 5px; max-width: 90%;">
       <div class="exampleHTMLDiv">
         <button class="html-buttons" type="button" autofocus onclick="alert('Here I\'m!')">Click Me!</button>
@@ -219,7 +210,7 @@
 
   <div id="buttonForm" class="frameWindowHTML" style="padding-bottom: 0.5em;">
     <div><h2 class="tag shadowText" style="float: left;">form</h2></div>
-    <div style="float: right;"><a href="#attributesSelect"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="float: right;"><a href="#attributesButton"><button class="html-buttons-prop">&uarr;</button></a></div>
     <div style="clear: both;"><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
@@ -267,7 +258,7 @@
       &lt;<span class="brown">form </span>
       <span class="crimson">action=</span><span class="olive">"example.php"</span>
       <span class="crimson">method=</span><span class="olive">"get"</span>
-      <span class="purple">id=</span><span class="olive">"fruitsform"</span>&gt;<br />
+      <span class="purple">id=</span><span class="olive">"nameform"</span>&gt;<br />
       <p class="left-padding" style="margin: 0;">
         <span class="black">First name:</span>
         &lt;<span class="brown">input</span>
@@ -287,6 +278,172 @@
       <span class="crimson">value=</span><span class="olive">"Submit"</span>&gt;<br>
       <span class="black left-padding">Submit</span><br>
       &lt;<span class="brown">/button</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="buttonFormaction" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">formaction</h2></div>
+    <div style="float: right;"><a href="#attributesButton"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The formaction attribute specifies where to send the form-data when a form is submitted.
+        This attribute overrides the form's action attribute.
+      </div>
+      <div class="note-value">
+        The formaction attribute is only used for buttons with type="submit".
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>URL</td>
+            <td>
+              Specifies where to send the form data.<br>
+              Possible values:
+              <ul>
+                <li>An absolute URL - the full address of a page (like href="http://www.example.com/formresult.asp").</li>
+                <li>A relative URL - points to a file within the current site (like href="formresult.asp").</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv" style="display: block; text-align: center;">
+        <form action="#" method="get">
+          First name: <input type="text" name="fname"><br>
+          Last name: <input type="text" name="lname"><br>
+          <button class="html-buttons" type="submit">Submit</button><br>
+          <button class="html-buttons" type="submit" formaction="#">Submit to another page</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>
+      <span class="crimson">method=</span><span class="olive">"get"</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        <span class="black">First name:</span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"text"</span>
+        <span class="crimson">name=</span><span class="olive">"fname"</span>&gt;<br>
+        <span class="black">Last name:</span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"text"</span>
+        <span class="crimson">name=</span><span class="olive">"lname"</span>&gt;<br>
+        &lt;<span class="brown">button</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">form=</span><span class="olive">"nameform"</span>&gt;
+        <span class="black">Submit</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+        &lt;<span class="brown">button</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">formaction=</span><span class="olive">"example2.php"</span>&gt;
+        <span class="black">Submit to another page</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+      </p>
+      &lt;<span class="brown">/form</span>&gt;<br><br>
+
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="buttonFormenctype" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">formenctype</h2></div>
+    <div style="float: right;"><a href="#attributesButton"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The formenctype attribute specifies how form-data should be encoded before sending it to a server.
+        This attribute overrides the form's enctype attribute.
+      </div>
+      <div class="note-value">
+        The formenctype attribute is only used for buttons with type="submit".
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>application/x-www-form-urlencoded</td>
+            <td>Default. All characters will be encoded before sent.</td>
+          </tr>
+          <tr>
+            <td>multipart/form-data</td>
+            <td>No characters are encoded (use this when you are using forms that have a file upload control).</td>
+          </tr>
+          <tr>
+            <td>text/plain</td>
+            <td>Spaces are converted to "+" symbols, but no characters are encoded.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv" style="display: block; text-align: center;">
+        <form action="#" method="post">
+          Name: <input type="text" name="fname" value="Example text"><br>
+          <button class="html-buttons" type="submit">Submit with character encoding</button>
+          <button class="html-buttons" type="submit" formenctype="text/plain">Submit without character encoding</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>
+      <span class="crimson">method=</span><span class="olive">"post"</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        <span class="black">Name:</span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"text"</span>
+        <span class="crimson">name=</span><span class="olive">"fname"</span>
+        <span class="crimson">value=</span><span class="olive">"Example text"</span>&gt;<br>
+        &lt;<span class="brown">button</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>&gt;
+        <span class="black">Submit with character encoding</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+        &lt;<span class="brown">button</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">formenctype=</span><span class="olive">"text/plain"</span>&gt;
+        <span class="black">Submit without character encoding</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+      </p>
+      &lt;<span class="brown">/form</span>&gt;<br><br>
+
     </div>
   </div>
   <div class="attrSeparation"></div>
