@@ -448,5 +448,255 @@
   </div>
   <div class="attrSeparation"></div>
 
+
+  <div id="buttonFormmethod" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">formmethod</h2></div>
+    <div style="float: right;"><a href="#attributesButton"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The formmethod attribute specifies which HTTP method to use when sending the form-data.
+        This attribute overrides the form's method attribute.
+      </div>
+      <div class="note-value">
+        The formmethod attribute is only used for buttons with type="submit".
+      </div>
+      <div class="note-value">
+        The form-data can be sent as URL variables (with method="get") or as HTTP post (with method="post").
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Notes on the "get" method:
+        <ul>
+          <li>it appends the form-data to the URL in name/value pairs</li>
+          <li>it is useful for form submissions where a user want to bookmark the result</li>
+          <li>
+            There is a limit to how much data you can place in a URL (varies between browsers),
+            therefore, you cannot be sure that all of the form-data will be correctly transferred
+          </li>
+          <li>
+            Never use the "get" method to pass sensitive information!
+            (password or other sensitive information will be visible in the browser's address bar)
+          </li>
+        </ul>
+      </div>
+      <div class="note-value">
+        Notes on the "post" method:
+        <ul>
+          <li>it sends the form-data as an HTTP post transaction</li>
+          <li>Form submissions with the "post" method cannot be bookmarked</li>
+          <li>it is more robust and secure than "get"</li>
+          <li>it does not have size limitations</li>
+        </ul>
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>get</td>
+            <td>Appends the form-data to the URL: URL?name=value&name=value.</td>
+          </tr>
+          <tr>
+            <td>post</td>
+            <td>Sends the form-data as an HTTP post transaction.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv" style="display: block; text-align: center;">
+        <form action="#" method="get">
+          First name: <input type="text" name="fname"><br>
+          Last name: <input type="text" name="lname"><br>
+          <button class="html-buttons" type="submit">Submit</button>
+          <button class="html-buttons" type="submit" formmethod="post">Submit using POST</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>
+      <span class="crimson">method=</span><span class="olive">"get"</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        <span class="black">First name:</span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"text"</span>
+        <span class="crimson">name=</span><span class="olive">"fname"</span>&gt;<br>
+        <span class="black">Last name:</span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"text"</span>
+        <span class="crimson">name=</span><span class="olive">"lname"</span>&gt;<br>
+        &lt;<span class="brown">button</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>&gt;
+        <span class="black">Submit</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+        &lt;<span class="brown">button</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">formmethod=</span><span class="olive">"post"</span>&gt;
+        <span class="black">Submit using POST</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+      </p>
+      &lt;<span class="brown">/form</span>&gt;<br><br>
+
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="buttonFormnovalidate" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">formnovalidate</h2></div>
+    <div style="float: right;"><a href="#attributesButton"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The formnovalidate attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that the form-data should not be validated on submission.
+        This attribute overrides the form's novalidate attribute.
+      </div>
+      <div class="note-value">
+        The formnovalidate attribute is only used for buttons with type="submit".
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv" style="display: block; text-align: center;">
+        <form action="#" method="get">
+          E-mail: <input type="email" name="userid"><br>
+          <button class="html-buttons" type="submit">Submit</button>
+          <button class="html-buttons" type="submit" formnovalidate>Submit without validation</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>
+      <span class="crimson">method=</span><span class="olive">"get"</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        <span class="black">E-mail:</span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"email"</span>
+        <span class="crimson">name=</span><span class="olive">"userid"</span>&gt;<br>
+        &lt;<span class="brown">button</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>&gt;
+        <span class="black">Submit</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+        &lt;<span class="brown">button</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">formnovalidate</span>&gt;
+        <span class="black">Submit without validation</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+      </p>
+      &lt;<span class="brown">/form</span>&gt;<br><br>
+
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="buttonName" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">name</h2></div>
+    <div style="float: right;"><a href="#attributesButton"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The name attribute specifies the name for a &lt;button&gt; element.
+      </div>
+      <div class="note-value">
+        The name attribute is used to reference form-data after the form has been submitted, or to reference the element in a JavaScript.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Several &lt;button&gt; elements can share the same name.
+        This allows you to have several buttons with equal names, which can submit different values when used in a form.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>name</td>
+            <td>The name of the button.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv" style="display: block; text-align: center;">
+        <form action="#" method="get">
+          Choose your favorite fruit:
+          <button class="html-buttons" name="fruit" type="submit" value="Apple">Apple</button>
+          <button class="html-buttons" name="fruit" type="submit" value="Banana">Banana</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>
+      <span class="crimson">method=</span><span class="olive">"get"</span>&gt;<br />
+      <span class="black left-padding">Choose your favorite fruit:</span>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">button</span>
+        <span class="crimson">name=</span><span class="olive">"fruit"</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">value=</span><span class="olive">"Apple"</span>&gt;
+        <span class="black">Apple</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+        &lt;<span class="brown">button</span>
+        <span class="crimson">name=</span><span class="olive">"fruit"</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">value=</span><span class="olive">"Banana"</span>&gt;
+        <span class="black">Banana</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+      </p>
+      &lt;<span class="brown">/form</span>&gt;<br><br>
+
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
 </body>
 </html>
