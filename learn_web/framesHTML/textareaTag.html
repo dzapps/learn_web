@@ -60,7 +60,7 @@
             <td>Specifies that a text area should automatically get focus when the page loads.</td>
           </tr>
           <tr>
-            <td><a href="#textareaChecked" class="attr-links">&lt;cols&gt;</a></td>
+            <td><a href="#textareaCols" class="attr-links">&lt;cols&gt;</a></td>
             <td>number</td>
             <td>Specifies the visible width of a text area.</td>
           </tr>
@@ -121,15 +121,61 @@
   <div class="attrSeparation"></div>
 
 
-  <div id="inputAccept" class="frameWindowHTML" style="padding-bottom: 0.5em;">
-    <div><h2 class="tag shadowText" style="float: left;">accept</h2></div>
+  <div id="textareaAutofocus" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">autofocus</h2></div>
     <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
     <div style="clear: both;"><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
       Descriptions:<br />
       <div class="note-value">
-        The accept attribute specifies the types of files that the server accepts (that can be submitted through a file upload).
+        The autofocus attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that the text area should automatically get focus when the page loads.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div id="textareaAutofocusExamplBar" class="more-padding;">
+      <a href="#textareaAutofocusExamplBar">
+        <button onclick="changeTextareaAutofocus('replaceTextareaAutofocus', 'true', 'autofocus')" class="example-button example-rounded-buttons">enabled</button>
+      </a>
+      <a href="#textareaDisabledExamplBar">
+        <button onclick="changeTextareaAutofocus('replaceTextareaAutofocus', 'false', '')" class="example-button example-rounded-buttons">disabled</button>
+      </a>
+    </div>
+
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <textarea id="replaceTextareaAutofocus" rows="4" cols="50" autofocus>
+          I was born in the year 1632, in the city of York, of a good family, though not of that country, my father being a foreigner of Bremen, who settled first at Hull.
+        </textarea>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">textarea</span>
+      <span class="crimson">rows=</span><span class="olive">"4"</span>
+      <span class="crimson">cols=</span><span class="olive">"50"</span>
+      <span class="crimson replaceTextareaAutofocus">autofocus</span>&gt;<br>
+      <span class="black left-padding">I was born in the year 1632, in the city of York, of a good family...</span><br>
+      &lt;<span class="brown">/textarea</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="textareaCols" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">cols</h2></div>
+    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The cols attribute specifies the visible width of a text area.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -137,10 +183,7 @@
     <div class="noteCommonHTML noteHTML">
       Notes:<br />
       <div class="note-value">
-        Do not use this attribute as a validation tool. File uploads should be validated on the server.
-      </div>
-      <div class="note-value">
-        To specify more than one value, separate the values with a comma (e.g. &lt;input accept="audio/*,video/*,image/*" /&gt;.
+        The size of a textarea can also be set by the CSS height and width properties.
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -155,94 +198,61 @@
         </thead>
         <tbody>
           <tr>
-            <td>file_extension</td>
-            <td>A file extension starting with the STOP character, e.g: .gif, .jpg, .png, .doc.</td>
-          </tr>
-          <tr>
-            <td>audio/*</td>
-            <td>All sound files are accepted.</td>
-          </tr>
-          <tr>
-            <td>video/*</td>
-            <td>All video files are accepted.</td>
-          </tr>
-          <tr>
-            <td>image/*</td>
-            <td>All image files are accepted.</td>
-          </tr>
-          <tr>
-            <td>media_type</td>
-            <td>A valid media type, with no parameters. Look at IANA Media Types for a complete list of standard media types.</td>
+            <td>number</td>
+            <td>Specifies the width of the text area (in average character width). Default value is 20.</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div><hr class="hr-length-90perc" /></div>
+    <div><hr class="hr-length-90perc"></div>
 
     <div><h2 class="tag shadowText">Examples</h2></div>
+    <div id="textareaColsExamplBar" class="more-padding;">
+      <a href="#textareaColsExamplBar">
+        <button onclick="changeTextareaCols('replaceTextareaCols', '30')" class="example-button example-rounded-buttons">cols=30</button>
+      </a>
+      <a href="#textareaColsExamplBar">
+        <button onclick="changeTextareaCols('replaceTextareaCols', '60')" class="example-button example-rounded-buttons">cols=60</button>
+      </a>
+      <a href="#textareaColsExamplBar">
+        <button onclick="changeTextareaCols('replaceTextareaCols', '100')" class="example-button example-rounded-buttons">cols=100</button>
+      </a>
+      <a href="#textareaColsExamplBar">
+        <button onclick="changeTextareaCols('replaceTextareaCols', '')" class="example-button example-rounded-buttons">default</button>
+      </a>
+    </div>
+
     <div class="hover" style="padding: 5px; max-width: 90%;">
       <div class="exampleHTMLDiv">
-        <form action="#">
-          <input type="file" name="pic" accept="image/*">
-          <input type="submit">
-        </form>
+        <textarea id="replaceTextareaCols" rows="4" cols="" autofocus>
+          I was born in the year 1632, in the city of York, of a good family, though not of that country, my father being a foreigner of Bremen, who settled first at Hull.
+        </textarea>
       </div>
     </div>
 
     <div class="codeHTML blue borders-none">
-      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
-      &lt;<span class="brown">html</span>&gt;<br>
-      <span>&lt;<span class="brown">head</span>&gt;</span>
-        <p class="left-padding" style="margin: 0;">
-          &lt;<span class="brown">title</span>&gt;
-          <span class="black">Title of the page</span>
-          &lt;<span class="brown">/title</span>&gt;
-        </p>
-      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
-      <span>&lt;<span class="brown">body</span>&gt;</span><br>
-      <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">object</span>
-        <span class="crimson">data=</span><span class="olive">"../sounds/dog_barks.mp3"</span>&gt;<br>
-        <span class="left-padding">
-          &lt;<span class="brown">param</span>
-          <span class="crimson">name=</span><span class="olive">"autoplay"</span>
-          <span class="crimson">value=</span><span class="olive">"true"</span>&gt;
-        </span><br>
-        &lt;<span class="brown">/object</span>&gt;
-      </p>
-      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
-      &lt;<span class="brown">/html</span>&gt;<br>
+      &lt;<span class="brown">textarea</span>
+      <span class="crimson">rows=</span><span class="olive">"4"</span>
+      <span class="crimson">cols=</span><span class="olive replaceTextareaCols">"50"</span>&gt;<br>
+      <span class="black left-padding">I was born in the year 1632, in the city of York, of a good family...</span><br>
+      &lt;<span class="brown">/textarea</span>&gt;
     </div>
   </div>
   <div class="attrSeparation"></div>
 
 
-  <div id="inputTextarea" class="frameWindowHTML" style="padding-bottom: 0.5em;">
-    <div><h2 class="tag shadowText" style="float: left;">textarea</h2></div>
+  <div id="textareaDirname" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">dirname</h2></div>
     <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
     <div style="clear: both;"><hr class="hr-length-90perc" /></div>
 
     <div class="noteCommonHTML descriptionHTML">
       Descriptions:<br />
       <div class="note-value">
-        The <textarea> tag defines a multi-line text input control.
+        The dirname attribute enables the submission of the text direction of the textarea.
       </div>
       <div class="note-value">
-        A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
-      </div>
-      <div class="note-value">
-        The size of a text area can be specified by the cols and rows attributes, or even better; through CSS' height and width properties.
-      </div>
-    </div>
-    <div><hr class="hr-length-90perc" /></div>
-
-    <div class="noteCommonHTML noteHTML">
-      Notes:<br />
-      <div class="note-value">
-        Do not use this attribute as a validation tool. File uploads should be validated on the server.
-      </div>
-      <div class="note-value">
-        To specify more than one value, separate the values with a comma (e.g. &lt;input accept="audio/*,video/*,image/*" /&gt;.
+        The dirname attribute's value is always the name of the textarea, followed by ".dir".
       </div>
     </div>
     <div><hr class="hr-length-90perc" /></div>
@@ -257,66 +267,43 @@
         </thead>
         <tbody>
           <tr>
-            <td>file_extension</td>
-            <td>A file extension starting with the STOP character, e.g: .gif, .jpg, .png, .doc.</td>
-          </tr>
-          <tr>
-            <td>audio/*</td>
-            <td>All sound files are accepted.</td>
-          </tr>
-          <tr>
-            <td>video/*</td>
-            <td>All video files are accepted.</td>
-          </tr>
-          <tr>
-            <td>image/*</td>
-            <td>All image files are accepted.</td>
-          </tr>
-          <tr>
-            <td>media_type</td>
-            <td>A valid media type, with no parameters. Look at IANA Media Types for a complete list of standard media types.</td>
+            <td>name.dir</td>
+            <td>Specifies that the text direction of the textarea will be submitted.</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div><hr class="hr-length-90perc" /></div>
+    <div><hr class="hr-length-90perc"></div>
 
     <div><h2 class="tag shadowText">Examples</h2></div>
     <div class="hover" style="padding: 5px; max-width: 90%;">
       <div class="exampleHTMLDiv">
         <form action="#">
-          <input type="file" name="pic" accept="image/*">
-          <input type="submit">
+          Example text:<br>
+          <textarea name="explanation "dirname="explanation.dir"></textarea>
+          <input type="submit" value="Submit">
         </form>
       </div>
     </div>
 
     <div class="codeHTML blue borders-none">
-      <span style="color: grey;">&lt;!DOCTYPE html&gt;</span><br>
-      &lt;<span class="brown">html</span>&gt;<br>
-      <span>&lt;<span class="brown">head</span>&gt;</span>
-        <p class="left-padding" style="margin: 0;">
-          &lt;<span class="brown">title</span>&gt;
-          <span class="black">Title of the page</span>
-          &lt;<span class="brown">/title</span>&gt;
-        </p>
-      <span>&lt;<span class="brown">/head</span>&gt;</span><br>
-      <span>&lt;<span class="brown">body</span>&gt;</span><br>
-      <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">object</span>
-        <span class="crimson">data=</span><span class="olive">"../sounds/dog_barks.mp3"</span>&gt;<br>
-        <span class="left-padding">
-          &lt;<span class="brown">param</span>
-          <span class="crimson">name=</span><span class="olive">"autoplay"</span>
-          <span class="crimson">value=</span><span class="olive">"true"</span>&gt;
-        </span><br>
-        &lt;<span class="brown">/object</span>&gt;
+      &lt;<span class="brown">form</span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>&gt;<br>
+      <p class="left-padding" style="margin: 0">
+        <span class="black">Example text:</span>&lt;<span class="brown">br</span>&gt;<br>
+        &lt;<span class="brown">textarea</span>
+        <span class="crimson">name=</span><span class="olive">"explanation"</span>
+        <span class="crimson">dirname=</span><span class="olive">"explanation.dir"</span>&gt;<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">value=</span><span class="olive">"Submit"</span>&gt;<br>
+        &lt;<span class="brown">/textarea</span>&gt;
       </p>
-      <span>&lt;<span class="brown">/body</span>&gt;</span><br>
-      &lt;<span class="brown">/html</span>&gt;<br>
+      &lt;<span class="brown">/form</span>&gt;
     </div>
   </div>
   <div class="attrSeparation"></div>
+
 
 </body>
 </html>

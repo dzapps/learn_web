@@ -698,5 +698,176 @@
   </div>
   <div class="attrSeparation"></div>
 
+
+  <div id="buttonType" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">type</h2></div>
+    <div style="float: right;"><a href="#attributesButton"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The type attribute specifies the type of button.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        Always specify the type attribute for the &lt;button&gt; element. Different browsers may use different default types for the &lt;button&gt; element.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>button</td>
+            <td>The button is a clickable button.</td>
+          </tr>
+          <tr>
+            <td>submit</td>
+            <td>The button is a submit button (submits form-data).</td>
+          </tr>
+          <tr>
+            <td>reset</td>
+            <td>The button is a reset button (resets the form-data to its initial values).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv" style="display: block; text-align: center;">
+        <form action="#" method="get">
+          First name: <input type="text" name="fname"><br>
+          Last name: <input type="text" name="lname"><br>
+          <button class="html-buttons" type="submit" value="Submit">Submit</button>
+          <button class="html-buttons" type="submit" value="Reset">Reset</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>
+      <span class="crimson">method=</span><span class="olive">"get"</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        <span class="black">First name:</span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"text"</span>
+        <span class="crimson">name=</span><span class="olive">"fname"</span>&gt;<br>
+        <span class="black">Last name:</span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"text"</span>
+        <span class="crimson">name=</span><span class="olive">"fname"</span>&gt;<br>
+        &lt;<span class="brown">button</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">value=</span><span class="olive">"Submit"</span>&gt;
+        <span class="black">Submit</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+        &lt;<span class="brown">button</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">value=</span><span class="olive">"Reset"</span>&gt;
+        <span class="black">Reset</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+      </p>
+      &lt;<span class="brown">/form</span>&gt;<br><br>
+
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="buttonValue" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">value</h2></div>
+    <div style="float: right;"><a href="#attributesButton"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The value attribute specifies the initial value for a &lt;button&gt; in a &lt;form&gt;.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        In a form, the button and its value is only submitted if the button itself was used to submit the form.
+      </div>
+      <div class="note-value">
+        If you use the &lt;button&gt; element in an HTML form, Internet Explorer, prior version 8,
+        will submit the text between the &lt;button&gt; and <&lt;button&gt; tags,
+        while the other browsers will submit the content of the value attribute.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>value</td>
+            <td>The initial value of the button.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv" style="display: block; text-align: center;">
+        <form action="#" method="get">
+          Choose your favorite fruit:
+          <button class="html-buttons" name="fruit" type="submit" value="Apple">Apple</button>
+          <button class="html-buttons" name="fruit" type="submit" value="Banana">Banana</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>
+      <span class="crimson">method=</span><span class="olive">"get"</span>&gt;<br />
+      <span class="black left-padding">Choose your favorite fruit:</span>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">button</span>
+        <span class="crimson">name=</span><span class="olive">"fruit"</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">value=</span><span class="olive">"Apple"</span>&gt;
+        <span class="black">Apple</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+        &lt;<span class="brown">button</span>
+        <span class="crimson">name=</span><span class="olive">"fruit"</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>
+        <span class="crimson">value=</span><span class="olive">"Banana"</span>&gt;
+        <span class="black">Banana</span>
+        &lt;<span class="brown">/button</span>&gt;<br>
+      </p>
+      &lt;<span class="brown">/form</span>&gt;<br><br>
+
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
 </body>
 </html>

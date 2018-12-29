@@ -79,3 +79,13 @@ function changeButtonDisabled(id, state, text) {
   document.getElementById(id).disabled = state;
   document.getElementsByClassName("replaceButtonDisabled")[0].innerHTML = ' ' + text;
 }
+
+function changeTextareaAutofocus(id, state, text) {
+  document.getElementById(id).autofocus = state;
+  document.getElementsByClassName("replaceTextareaAutofocus")[0].innerHTML = ' ' + text;
+}
+
+function changeTextareaCols(id, cols) {
+  document.getElementById(id).cols = cols;
+  document.getElementsByClassName("replaceTextareaCols")[0].innerHTML = '"' + cols + '"';
+}
