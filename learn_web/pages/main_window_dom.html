@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>MainJs</title>
+  <title>MainDOM</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../images/dom.png" type="image/png" />
   <link rel="stylesheet" href="../styles/initial_page_style.css" />
   <link rel="stylesheet" href="../styles/button.css" />
   <link rel="stylesheet" href="../styles/common.css" />
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+  <link
   <script src="../scripts/main_window.js"></script>
-</head>
 
-<style>
-  body {
-    background-color: rgb(255, 249, 179);
-  }
-</style>
+  <style>
+    body {
+      background-color: rgba(27, 226, 17, 0.26);
+    }
+  </style>
+</head>
 
 <body>
   <div style="display: flex; justify-content: center; flex-flow: row wrap;">
     <a href="../pages/main_window_dom.html" style="text-decoration: none;">
       <figure class="dom">
         <figcaption style="font-weight: 800; color: black;">DOM</figcaption>
-        <img src="../images/dom.png" onclick="chooseDOM()" alt="dom" width="200px" height="100px" style="margin: -2em;">
+        <img onclick="chooseDOM()" src="../images/dom.png" alt="dom_logo" width="200px" height="100px" style="margin: -2em;">
       </figure>
     </a>
     <a class="logos" style="margin-left: -3em; margin-top: 2em;" href="../pages/main_window_html.html">
@@ -41,25 +43,26 @@
   </div>
   <p style="clear: left;"></p>
 
-  <nav id="jsButtons" style="just-cont-flex-space-around">
+  <nav id="domButtons" style="just-cont-flex-space-around">
     <a href="../examples/character_entity_reference_chart.html"><button class="main-buttons auxiliary-button" style="margin: 5px;">Entities</button></a>
     <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><button class="main-buttons auxiliary-button" style="margin: 5px;">Media types</button></a>
     <p style="margin: 2em 0;"></p>
-    <a href="#"><button class="main-buttons js-buttons" type="button">Array</button></a>
-    <a href="#"><button class="main-buttons js-buttons" type="button">Boolean</button></a>
-    <a href="#"><button class="main-buttons js-buttons" type="button">Date</button></a>
-    <a href="#"><button class="main-buttons js-buttons" type="button">Error</button></a>
-    <a href="#"><button class="main-buttons js-buttons" type="button">Global</button></a>
-    <a href="#"><button class="main-buttons js-buttons" type="button">JSON</button></a>
-    <a href="#"><button class="main-buttons js-buttons" type="button">Math</button></a>
-    <a href="#"><button class="main-buttons js-buttons" type="button">Number</button></a>
-    <a href="#"><button class="main-buttons js-buttons" type="button">Operators</button></a>
-    <a href="#"><button class="main-buttons js-buttons" type="button">RegExp</button></a>
-    <a href="#"><button class="main-buttons js-buttons" type="button">Statements</button></a>
-    <a href="#"><button class="main-buttons js-buttons" type="button">String</button></a>
+    <a href="../pagesDOM/domAttributes.html"><button class="main-buttons dom-buttons" type="button">Attributes</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">Console</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">Document</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">Elements</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">Events</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">Event objects</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">Geolocation</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">History</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">HTMLcollection</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">Location</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">Navigator</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">Screen</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">Storage</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">Style</button></a>
+    <a href="#"><button class="main-buttons dom-buttons" type="button">Window</button></a>
   </nav>
-
-  <h3 style="color: red;">To fix &lt;template&gt; in Formatting.</h3>
 
 </body>
 </html>

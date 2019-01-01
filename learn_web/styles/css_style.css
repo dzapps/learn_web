@@ -754,3 +754,15 @@ h2 {
   object-fit: none;
   border: 3px solid blue;
 }
+
+.selectors1 {
+  background-color: blue;
+}
+
+.selectors2 {
+  background-color: darkblue;
+}
+
+.selectors3 {
+  color: white;
+}

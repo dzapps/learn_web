@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<title>Class</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/css3_logo_black.jpeg" type="image/jpg" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/css_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/selectors.js"></script>
+
+<body>
+
+  <div class="frameWindow">
+    <p><a href="../pages/cssSelectors.html"><button class="css-buttons-prop close-but-pos">X</button></a></p>
+    <div class="note descriptionCSS  noteCSS note-round-bord">
+      Description:<br />
+      <div class="note-value">
+        The <em>.class</em> selector selects elements with a specific class attribute.
+      </div>
+      <div class="note-value">
+        You can also specify that only specific HTML elements should be affected by a class.
+        To do this, start with the element name, then write the period (.) character,
+        followed by the name of the class (look at Example 1 below).
+      </div>
+      <div class="note-value">
+        HTML elements can also refer to more than one class (look at Example 2 below).
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag">Examples</h2></div>
+    <div id="selectorsClassExamplesBar" class="left-padding">
+      <a href="#selectorsClassExamplesBar">
+        <button onclick="animAttributes('animationDiv', '0px', '200px', 3000, 'ease', 1000, 1, 'normal', 'none', 'none')" class="example-button example-rounded-buttons">none</button>
+      </a>
+      <a href="#selectorsClassExamplesBar">
+        <button onclick="animAttributes('animationDiv', '0px', '200px', 3000, 'ease', 1000, 1, 'normal', 'forwards', 'forwards')" class="example-button example-rounded-buttons">forwards</button>
+      </a>
+      <a href="#selectorsClassExamplesBar">
+        <button onclick="animAttributes('animationDiv', '0px', '200px', 3000, 'ease', 1000, 1, 'normal', 'backwards', 'backwards')" class="example-button example-rounded-buttons">backwards</button>
+      </a>
+    </div>
+
+    <div class="exampleDiv" style="text-align: center;">
+      <div class="selectors1">First</div>
+      <div class="selectors2">Second</div>
+      <div class="selectors1">First</div>
+      <div class="selectors3">Third</div>
+    </div>
+
+    <div id="selectorsDivCode" style="border: none;">
+      <div class="code blue float-borders-none">
+        &lt;<span class="brown">div</span>&gt;<br />
+        <p class="left-padding" style="margin: 0;">
+          &lt;<span class="brown">div</span>
+          <span class="crimson">class=</span><span class="olive">"example1"</span>&gt;&lt;<span class="brown">/div</span>&gt;<br>
+          &lt;<span class="brown">div</span>
+          <span class="crimson">class=</span><span class="olive">"example2"</span>&gt;&lt;<span class="brown">/div</span>&gt;<br>
+          &lt;<span class="brown">div</span>
+          <span class="crimson">class=</span><span class="olive">"example1"</span>&gt;&lt;<span class="brown">/div</span>&gt;<br>
+          &lt;<span class="brown">div</span>
+          <span class="crimson">class=</span><span class="olive">"example3"</span>&gt;&lt;<span class="brown">/div</span>&gt;
+        </p>
+        <span>&lt;<span class="brown">/div</span>&gt;</span>
+      </div>
+
+      <div class="code float-borders-none">
+        <span class="brown">.example1 </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">background-color:</span> blue;<br />
+          </p>
+        <span class="black">}</span><br><br>
+        <span class="brown">.example2 </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">background-color:</span> darkblue;<br />
+          </p>
+        <span class="black">}</span><br><br>
+        <span class="brown">.example3 </span><span class="black">{</span><br />
+          <p class="blue left-padding" style="margin: 0;">
+            <span class="crimson">color:</span> white;<br />
+          </p>
+        <span class="black">}</span>
+      </div>
+    </div>
+    <p style="clear: left;"></p>
+  </div>
+  <!-- <div><hr class="hr-length-90perc" /></div> -->
+
+</body>
+</html>

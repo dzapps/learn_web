@@ -105,12 +105,12 @@
             <td>Specifies that a text area is required/must be filled out.</td>
           </tr>
           <tr>
-            <td><a href="#textareaSize" class="attr-links">&lt;rows&gt;</a></td>
+            <td><a href="#textareaRows" class="attr-links">&lt;rows&gt;</a></td>
             <td>number</td>
             <td>Specifies the visible number of lines in a text area.</td>
           </tr>
           <tr>
-            <td><a href="#textareaWidth" class="attr-links">&lt;wrap&gt;</a></td>
+            <td><a href="#textareaWrap" class="attr-links">&lt;wrap&gt;</a></td>
             <td>hard<br>soft</td>
             <td>Specifies how the text in a text area is to be wrapped when submitted in a form.</td>
           </tr>
@@ -224,7 +224,7 @@
 
     <div class="hover" style="padding: 5px; max-width: 90%;">
       <div class="exampleHTMLDiv">
-        <textarea id="replaceTextareaCols" rows="4" cols="" autofocus>
+        <textarea id="replaceTextareaCols" rows="4" cols="">
           I was born in the year 1632, in the city of York, of a good family, though not of that country, my father being a foreigner of Bremen, who settled first at Hull.
         </textarea>
       </div>
@@ -304,6 +304,513 @@
   </div>
   <div class="attrSeparation"></div>
 
+
+  <div id="textareaDisabled" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">disabled</h2></div>
+    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The disabled attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that the text area should be disabled.
+      </div>
+      <div class="note-value">
+        A disabled text area is unusable and the text is not selectable (cannot be copied).
+      </div>
+      <div class="note-value">
+        The disabled attribute can be set to keep a user from using the text area
+        until some other condition has been met (like selecting a checkbox, etc.).
+        Then, a JavaScript could remove the disabled value, and make the text area usable.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div id="textareaDisabledExamplBar" class="more-padding;">
+      <a href="#textareaDisabledExamplBar">
+        <button onclick="changeTextareaDisabled('replaceTextareaDisabled', 'true', 'disabled')" class="example-button example-rounded-buttons">disabled</button>
+      </a>
+      <a href="#textareaDisabledExamplBar">
+        <button onclick="changeTextareaDisabled('replaceTextareaDisabled', '', '')" class="example-button example-rounded-buttons">enabled</button>
+      </a>
+    </div>
+
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <textarea id="replaceTextareaDisabled" rows="4" cols="50" disabled>
+          I was born in the year 1632, in the city of York, of a good family, though not of that country, my father being a foreigner of Bremen, who settled first at Hull.
+        </textarea>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">textarea</span>
+      <span class="crimson">rows=</span><span class="olive">"4"</span>
+      <span class="crimson">cols=</span><span class="olive">"50"</span>
+      <span class="crimson replaceTextareaDisabled">disabled</span>&gt;<br>
+      <span class="black left-padding">I was born in the year 1632, in the city of York, of a good family...</span><br>
+      &lt;<span class="brown">/textarea</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="textareaForm" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">form</h2></div>
+    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The form attribute specifies one or more forms the text area belongs to.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>form_id</td>
+            <td>
+              Specifies the form element the &lt;textarea&gt; element belongs to.
+              The value of this attribute must be the id attribute of a &lt;form&gt; element in the same document.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv" style="display: block; text-align: center;">
+        <form action="#" id="usrform">
+          Name: <input type="text" name="usrname">
+          <input type="submit">
+        </form><br>
+
+        <textarea rows="4" cols="50" name="comment" form="usrform">
+          Enter text here...
+        </textarea>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>
+      <span class="purple">id=</span><span class="olive">"usrform"</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        <span class="black">Name:</span>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"text"</span>
+        <span class="crimson">name=</span><span class="olive">"usrname"</span>&gt;<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>&gt;<br>
+      </p>
+      &lt;<span class="brown">/form</span>&gt;<br><br>
+
+      &lt;<span class="brown">textarea</span>
+      <span class="crimson">rows=</span><span class="olive">"4"</span>
+      <span class="crimson">cols=</span><span class="olive">"50"</span>
+      <span class="crimson">name=</span><span class="olive">"comment"</span>
+      <span class="crimson">form=</span><span class="olive">"usrform"</span>&gt;<br>
+      <span class="black left-padding">Example text...</span><br>
+      &lt;<span class="brown">/textarea</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="textareaMaxlength" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">disabled</h2></div>
+    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The disabled attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that the text area should be disabled.
+      </div>
+      <div class="note-value">
+        A disabled text area is unusable and the text is not selectable (cannot be copied).
+      </div>
+      <div class="note-value">
+        The disabled attribute can be set to keep a user from using the text area
+        until some other condition has been met (like selecting a checkbox, etc.).
+        Then, a JavaScript could remove the disabled value, and make the text area usable.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div id="textareaMaxlengthExamplBar" class="more-padding;">
+      <a href="#textareaMaxlengthExamplBar">
+        <button onclick="changeTextareaMaxlength('replaceTextareaMaxlength', '30')" class="example-button example-rounded-buttons">length=30</button>
+      </a>
+      <a href="#textareaMaxlengthExamplBar">
+        <button onclick="changeTextareaMaxlength('replaceTextareaMaxlength', '60')" class="example-button example-rounded-buttons">length=60</button>
+      </a>
+      <a href="#textareaMaxlengthExamplBar">
+        <button onclick="changeTextareaMaxlength('replaceTextareaMaxlength', '100')" class="example-button example-rounded-buttons">length=100</button>
+      </a>
+    </div>
+
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <textarea id="replaceTextareaMaxlength" rows="4" cols="50" maxlength="30">
+          Example text...
+        </textarea>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">textarea</span>
+      <span class="crimson">rows=</span><span class="olive">"4"</span>
+      <span class="crimson">cols=</span><span class="olive">"50"</span>
+      <span class="crimson">maxlength=</span><span class="olive replaceTextareaMaxlength">"30"</span>&gt;<br>
+      <span class="black left-padding">Example text...</span><br>
+      &lt;<span class="brown">/textarea</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="textareaName" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">name</h2></div>
+    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The name attribute specifies a name for a text area.
+      </div>
+      <div class="note-value">
+        The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <form action="#">
+          <textarea rows="4" cols="50" name="comment">
+          Enter text here...</textarea>
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">textarea</span>
+        <span class="crimson">rows=</span><span class="olive">"4"</span>
+        <span class="crimson">cols=</span><span class="olive">"50"</span>
+        <span class="crimson">name=</span><span class="olive">"comment"</span>&gt;<br>
+        <span class="black left-padding">Example text...</span><br>
+        &lt;<span class="brown">/textarea</span>&gt;
+      </p>
+      &lt;<span class="brown">/form</span>&gt;<br><br>
+
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="textareaPlaceholder" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">placeholder</h2></div>
+    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The placeholder attribute specifies a short hint that describes the expected value of a text area.
+      </div>
+      <div class="note-value">
+        The short hint is displayed in the text area before the user enters a value.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <textarea rows="4" cols="50" placeholder="Describe yourself here..."></textarea>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+        &lt;<span class="brown">textarea</span>
+        <span class="crimson">rows=</span><span class="olive">"4"</span>
+        <span class="crimson">cols=</span><span class="olive">"50"</span>
+        <span class="crimson">placeholder=</span><span class="olive">"Describe yourself here..."</span>&gt;<br>
+        &lt;<span class="brown">/textarea</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="textareaReadonly" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">readonly</h2></div>
+    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The readonly attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that a text area should be read-only.
+      </div>
+      <div class="note-value">
+        In a read-only text area, the content cannot be changed,
+        but a user can tab to it, highlight it and copy content from it.
+      </div>
+      <div class="note-value">
+        The readonly attribute can be set to keep a user from using a text area
+        until some other condition has been met (like selecting a checkbox, etc.).
+        Then, a JavaScript is required to remove the readonly value, and make the text area editable.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <textarea rows="4" cols="50" readonly>
+          I was born in the year 1632, in the city of York, of a good family, though not of that country, my father being a foreigner of Bremen, who settled first at Hull.
+        </textarea>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+        &lt;<span class="brown">textarea</span>
+        <span class="crimson">rows=</span><span class="olive">"4"</span>
+        <span class="crimson">cols=</span><span class="olive">"50"</span>
+        <span class="crimson">readonly</span>&gt;<br>
+        <span class="black left-padding">I was born in the year 1632, in the city of York, of a good family...</span><br>
+        &lt;<span class="brown">/textarea</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="textareaRequired" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">required</h2></div>
+    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The required attribute is a boolean attribute.
+      </div>
+      <div class="note-value">
+        When present, it specifies that a text area is required/must be filled out (in order to submit the form).
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <form action="#">
+          <textarea rows="4" cols="50" name="comment" required></textarea>
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">textarea</span>
+        <span class="crimson">rows=</span><span class="olive">"4"</span>
+        <span class="crimson">cols=</span><span class="olive">"50"</span>
+        <span class="crimson">name=</span><span class="olive">"comment"</span>&gt;&lt;<span class="brown">/textarea</span>&gt;<br>
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>&gt;<br>
+      </p>
+      &lt;<span class="brown">/form</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="textareaRows" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">rows</h2></div>
+    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The rows attribute specifies the visible height of a text area, in lines.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML noteHTML">
+      Notes:<br />
+      <div class="note-value">
+        The size of a textarea can also be set by the CSS height and width properties.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>number</td>
+            <td>Specifies the height of the text area (in lines). Default value is 2.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div id="textareaRowsExamplBar" class="more-padding;">
+      <a href="#textareaRowsExamplBar">
+        <button onclick="changeTextareaRows('replaceTextareaRows', '3')" class="example-button example-rounded-buttons">rows=3</button>
+      </a>
+      <a href="#textareaRowsExamplBar">
+        <button onclick="changeTextareaRows('replaceTextareaRows', '6')" class="example-button example-rounded-buttons">rows=6</button>
+      </a>
+      <a href="#textareaRowsExamplBar">
+        <button onclick="changeTextareaRows('replaceTextareaRows', '10')" class="example-button example-rounded-buttons">rows=10</button>
+      </a>
+      <a href="#textareaRowsExamplBar">
+        <button onclick="changeTextareaRows('replaceTextareaRows', '')" class="example-button example-rounded-buttons">default</button>
+      </a>
+    </div>
+
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <textarea id="replaceTextareaRows" rows="4" cols="50">
+          I was born in the year 1632, in the city of York, of a good family, though not of that country, my father being a foreigner of Bremen, who settled first at Hull.
+        </textarea>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">textarea</span>
+      <span class="crimson">rows=</span><span class="olive replaceTextareaRows">"4"</span>
+      <span class="crimson">cols=</span><span class="olive">"50"</span>&gt;<br>
+      <span class="black left-padding">I was born in the year 1632, in the city of York, of a good family...</span><br>
+      &lt;<span class="brown">/textarea</span>&gt;
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
+
+
+  <div id="textareaWrap" class="frameWindowHTML" style="padding-bottom: 0.5em;">
+    <div><h2 class="tag shadowText" style="float: left;">wrap</h2></div>
+    <div style="float: right;"><a href="#attributesTextarea"><button class="html-buttons-prop">&uarr;</button></a></div>
+    <div style="clear: both;"><hr class="hr-length-90perc" /></div>
+
+    <div class="noteCommonHTML descriptionHTML">
+      Descriptions:<br />
+      <div class="note-value">
+        The wrap attribute specifies how the text in a text area is to be wrapped when submitted in a form.
+      </div>
+    </div>
+    <div><hr class="hr-length-90perc" /></div>
+
+    <div><h2 class="tag shadowText">Attributes</h2></div>
+    <div>
+      <table class="hover attr-list">
+        <thead>
+          <tr>
+            <th>Value</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>soft</td>
+            <td>The text in the textarea is not wrapped when submitted in a form. This is default.</td>
+          </tr>
+          <tr>
+            <td>hard</td>
+            <td>
+              The text in the textarea is wrapped (contains newlines) when submitted in a form.
+              When "hard" is used, the cols attribute must be specified.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div><hr class="hr-length-90perc"></div>
+
+    <div><h2 class="tag shadowText">Examples</h2></div>
+    <div id="textareaWrapExamplBar" class="more-padding;">
+      <a href="#textareaWrapExamplBar">
+        <button onclick="changeTextareaWrap('textareaWrapField', 'soft')" class="example-button example-rounded-buttons">soft</button>
+      </a>
+      <a href="#textareaWrapExamplBar">
+        <button onclick="changeTextareaWrap('textareaWrapField', 'hard')" class="example-button example-rounded-buttons">hard</button>
+      </a>
+    </div>
+
+    <div class="hover" style="padding: 5px; max-width: 90%;">
+      <div class="exampleHTMLDiv">
+        <form action="#">
+          <textarea id="textareaWrapField" rows="4" cols="50" name="usrtext" wrap="soft">
+            I was born in the year 1632, in the city of York, of a good family, though not of that country, my father being a foreigner of Bremen, who settled first at Hull.
+          </textarea>
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+
+    <div class="codeHTML blue borders-none">
+      &lt;<span class="brown">form </span>
+      <span class="crimson">action=</span><span class="olive">"example.php"</span>&gt;<br />
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">textarea</span>
+        <span class="crimson">rows=</span><span class="olive">"4"</span>
+        <span class="crimson">cols=</span><span class="olive">"50"</span>
+        <span class="crimson">name=</span><span class="olive">"usrtext"</span>
+        <span class="crimson">wrap=</span><span class="olive replaceTextareaWrap">"hard"</span>&gt;<br>
+        <span class="black left-padding">I was born in the year 1632, in the city of York, of a good family...</span><br>
+        &lt;<span class="brown">/textarea</span>&gt;<br>
+      </p>
+      <span class="left-padding">
+        &lt;<span class="brown">input</span>
+        <span class="crimson">type=</span><span class="olive">"submit"</span>&gt;
+      </span><br>
+      &lt;<span class="brown">/form</span>&gt;<br>
+    </div>
+  </div>
+  <div class="attrSeparation"></div>
 
 </body>
 </html>

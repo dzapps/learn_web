@@ -1,0 +1,136 @@
+body {
+  background-color: rgba(27, 226, 17, 0.26);
+}
+
+a {
+  color: purple;
+}
+
+a:hover {
+  color: rgb(120, 88, 131);
+}
+
+.attrSeparationDOM {
+  border: 2px rgb(0, 71, 71) solid;
+  width: 87%;
+}
+
+.codeDOM {
+  font-family: 'Andale Mono', monospace;
+  font-size: 85%;
+}
+
+.domTitle {
+  color: rgb(0, 128, 47);
+  animation: manyColors 2s alternate infinite;
+}
+
+.dom-hr-length-90perc {
+  color: rgb(22, 228, 172);
+  margin-left: 0;
+  width: 90%;
+}
+
+@keyframes manyColors {
+  0% {color: rgb(6, 158, 62);}
+  25% {color: rgb(5, 145, 57);}
+  50% {color: rgb(0, 128, 47);}
+  75% {color: rgb(3, 115, 44);}
+  100% {color: rgb(3, 96, 37);}
+}
+
+.dom-buttons-prop-node {
+  border-radius: 20px;
+  margin-top: 3em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dom-buttons-prop-node p {
+  margin: 10px;
+}
+
+
+.descriptionDOM {
+  background-color: rgb(96, 232, 101);
+}
+
+.noteDOM {
+  background-color: rgb(17, 246, 26);
+}
+
+.descriptionDOM, .noteDOM {
+  width: 85%;
+  font-size: 23px;
+  font-family: Trebushet, sans-serif;
+  animation: shadow 1s alternate infinite;
+}
+
+@keyframes shadow {
+  0% {box-shadow: 0 0 2px 2px rgb(123, 255, 0);}
+  12% {box-shadow: 0 0 2px 2px rgb(122, 237, 15);}
+  25% {box-shadow: 0 0 3px 3px rgb(123, 226, 27);}
+  37% {box-shadow: 0 0 3px 3px rgb(121, 217, 31);}
+  50% {box-shadow: 0 0 4px 4px rgb(118, 203, 40);}
+  68% {box-shadow: 0 0 4px 4px rgb(112, 189, 42);}
+  75% {box-shadow: 0 0 5px 5px rgb(110, 181, 45);}
+  87% {box-shadow: 0 0 5px 5px rgb(110, 181, 45);}
+  100% {box-shadow: 0 0 8px 8px rgb(91, 134, 52);}
+}
+
+.descriptionDOM:hover, .noteDOM:hover, .tableDOM:hover {
+  animation-play-state: paused;
+}
+
+.exampleDOMDiv, .resizingExampleDOMDiv {
+  font-size: 30px;
+  max-width: 85%;
+  border: 2px solid white;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.just-cont-flex-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tableDOM {
+  background-color: white;
+  border-collapse: collapse;
+  width: 88%;
+  margin-bottom: 1em;
+  animation: shadow 1s alternate infinite;
+}
+
+.tableDOM thead th {
+  font-size: 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 18px 0;
+}
+
+.tableDOM tbody tr:nth-child(odd) {
+  background-color: rgba(13, 254, 0, 0.91);
+}
+
+.tableDOM tbody th {
+  padding: 18px 5px;
+  text-align: left;
+}
+
+.tableDOM tbody td {
+  padding: 8px 5px;
+  border: none;
+  text-align: left;
+}
+
+.tableDOM td {
+  vertical-align: top;
+  line-height: 1.1em;
+}

@@ -89,3 +89,23 @@ function changeTextareaCols(id, cols) {
   document.getElementById(id).cols = cols;
   document.getElementsByClassName("replaceTextareaCols")[0].innerHTML = '"' + cols + '"';
 }
+
+function changeTextareaDisabled(id, state, text) {
+  document.getElementById(id).disabled = state;
+  document.getElementsByClassName("replaceTextareaDisabled")[0].innerHTML = ' ' + text;
+}
+
+function changeTextareaMaxlength(id, length) {
+  document.getElementById(id).maxLength = length;
+  document.getElementsByClassName("replaceTextareaMaxlength")[0].innerHTML = '"' + length + '"';
+}
+
+function changeTextareaRows(id, rows) {
+  document.getElementById(id).rows = rows;
+  document.getElementsByClassName("replaceTextareaRows")[0].innerHTML = '"' + rows + '"';
+}
+
+function changeTextareaWrap(id, wrap) {
+  document.getElementById(id).wrap = wrap;
+  document.getElementsByClassName("replaceTextareaWrap")[0].innerHTML = '"' + wrap + '"';
+}
