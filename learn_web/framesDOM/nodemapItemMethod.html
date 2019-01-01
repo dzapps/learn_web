@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Attr name</title>
+<title>Nodemap item</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/dom.png" type="image/png" />
@@ -21,34 +21,50 @@
     <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
-  <div><h1 class="domTitle">attr.name</h1></div>
+  <div><h1 class="domTitle">item()</h1></div>
   <p><a href="../pagesDOM/domAttributes.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
   <div class="note descriptionDOM">
     Description:<br />
     <div class="note-value">
-      In the HTML DOM, the Attr object represents an HTML attribute.
+      The item() method returns the node at the specified index in a NamedNodeMap, as a Node object.
     </div>
     <div class="note-value">
-      An HTML attribute always belongs to an HTML element.
-    </div>
-    <div class="note-value">
-      The name property returns the name of the attribute.
-    </div>
-    <div class="note-value">
-      This property is read-only.
+      The nodes are sorted as they appear in the source code, and the index starts at 0.
     </div>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
 
+  <div><h2 class="tag domTitle">Parameter Values</h2></div>
+  <div>
+    <table class="tableDOMAttr tableDOM">
+      <thead>
+        <tr>
+          <th>Parameter</th><th>Type</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>index</td>
+          <td>Number</td>
+          <td>Required. The index of the node in the NamedNodeMap you want to return.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
   <div><h2 class="tag domTitle">Examples</h2></div>
-  <div id="attrNameExamplesBar" class="left-padding">
-    <a href="#attrNameExamplesBar">
-      <button onclick="returnAttrName()" class="dom-buttons-prop">Try fetch</button>
+  <div id="nodemapItemExamplesBar" class="left-padding">
+    <a href="#nodemapItemExamplesBar">
+      <button onclick="returnItem()" class="dom-buttons-prop">Try fetch</button>
     </a>
   </div>
 
   <div class="exampleDOMDiv ">
-    <div id="attrNameDiv"></div>
+    <div style="text-align: center;">
+      <p>Hint: max buttons = 5, max items = 2.</p>
+      <p id="nodemapItemP"></p>
+    </div>
   </div>
 
   <div class="codeDOM">
@@ -64,18 +80,18 @@
         <p class="left-padding" style="margin: 0;">
           let <span class="black">butNum =</span>
           <span class="blue">prompt</span><span class="black">(<span class="olive">'Input button number:'</span>);</span><br>
-          let <span class="black">attrNum =</span>
-          <span class="blue">prompt</span><span class="black">(<span class="olive">'Input attr number:'</span>);</span><br><br>
-          if <span class="black">(<span class="blue">isNan</span>(butNum) || <span class="blue">isNan</span>(attrNum)) {</span><br>
+          let <span class="black">itemNum =</span>
+          <span class="blue">prompt</span><span class="black">(<span class="olive">'Input item name:'</span>);</span><br><br>
+          if <span class="black">(<span class="blue">isNan</span>(butNum)) {</span><br>
             <span class="left-padding"><span class="blue">alert</span><span class="black">(<span class="olive">'Please enter numbers!'</span>);</span></span><br>
           <span class="black">} <span class="purple">else</span> {</span><br>
             <p class="more-padding" style="margin: 0;">
               let <span class="black">btn =</span>
               <span class="maroon">document.</span><span class="blue">getElementsByTagName</span><span class="black">(<span class="olive">'button'</span>)[butNum];</span><br>
-              let <span class="black">name =</span>
-              <span class="maroon">btn.attributes<span class="black">[attrNum]</span>.name</span><span class="black">;</span><br>
+              let <span class="black">value =</span>
+              <span class="maroon">btn.attributes.<span class="blue">item</span><span class="black">(itemNum)</span>.name</span><span class="black">;</span><br>
               <span class="maroon">document.</span><span class="blue">getElementById</span><span class="black">(<span class="olive">'example'</span>)</span><span class="maroon">.innerHTML</span>
-              <span class="black">= name;</span>
+              <span class="black">= value;</span>
             </p>
           <span class="black left-padding">}</span><br>
           <span class="black">}</span>

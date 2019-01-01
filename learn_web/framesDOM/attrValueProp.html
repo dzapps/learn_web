@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<title>Attr value</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/dom.png" type="image/png" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/dom_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/domAttributes.js"></script>
+
+<body>
+  <div style="background: black; display: inline-block; width: auto; margin-bottom: 1em;">
+    <a href="../pages/main_window_dom.html"><button class="dom-buttons" type="button" style="padding: 10px 20px;">DOM</button></a>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+  <div><h1 class="domTitle">attr.value</h1></div>
+  <p><a href="../pagesDOM/domAttributes.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
+  <div class="note descriptionDOM">
+    Description:<br />
+    <div class="note-value">
+      In the HTML DOM, the Attr object represents an HTML attribute.
+    </div>
+    <div class="note-value">
+      An HTML attribute always belongs to an HTML element.
+    </div>
+    <div class="note-value">
+      The value property sets or returns the value of the attribute.
+    </div>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
+  <div><h2 class="tag domTitle">Attributes</h2></div>
+  <div>
+    <table class="tableDOMAttr tableDOM">
+      <thead>
+        <tr>
+          <th>Value</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>value</td>
+          <td>Specifies the value of the attribute.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
+  <div><h2 class="tag domTitle">Examples</h2></div>
+  <div id="attrValueExamplesBar" class="left-padding">
+    <a href="#attrValueExamplesBar">
+      <button onclick="returnAttrValue()" class="dom-buttons-prop">Return</button>
+    </a>
+    <a href="#attrValueExamplesBar">
+      <button onclick="setAttrValue()" class="dom-buttons-prop">Set</button>
+    </a>
+  </div>
+
+  <div class="exampleDOMDiv ">
+    <div>
+      <figure style="text-align: center;">
+        <img src="../images/vasserman_thinking.gif" alt="" width="100" height="100">
+        <figcaption id="attrValueP"></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="codeDOM">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">img</span>
+        <span class="crimson">src=</span><span class="olive replace">"../images/vasserman_thinking.gif"</span>
+        <span class="crimson">alt=</span><span class="olive">""</span>
+        <span class="crimson">width=</span><span class="olive">"100"</span>
+        <span class="crimson">height=</span><span class="olive">"100"</span>&gt;<br>
+        &lt;<span class="brown">button</span>
+        <span class="crimson">onclick=</span><span class="olive">"anyFunction()"</span>&gt;&lt;<span class="brown">/button</span>&gt;
+      </p>
+      &lt;<span class="brown">div</span>&gt;
+    </div>
+
+    <div id="returnValue" class="purple float-borders-none">
+      function <span class="blue">returnAttrValue</span><span class="black">() {</span><br>
+        <p class="left-padding" style="margin: 0;">
+          <span class="maroon">document.</span><span class="blue">getElementsByTagName</span><span class="black">(<span class="olive">'img'</span>)[0];</span><br>
+          let <span class="black">value =</span>
+          <span class="maroon">data.</span><span class="blue">getAttributeNode</span><span class="black">(<span class="olive">'src'</span>)<span class="maroon">.value</span>;</span><br>
+          <span class="maroon">document.</span><span class="blue">getElementById</span><span class="black">(<span class="olive">'example'</span>)</span><span class="maroon">.innerHTML</span>
+          <span class="black">= value;</span>
+        </p>
+      <span class="black">}</span>
+    </div>
+
+    <div id="setValue" class="purple float-borders-none" style="display: none;">
+      function <span class="blue">setAttrValue</span><span class="black">() {</span><br>
+        <p class="left-padding" style="margin: 0;">
+          let <span class="black">data =</span>
+          <span class="maroon">document.</span><span class="blue">getElementsByTagName</span><span class="black">(<span class="olive">'img'</span>)[0];</span><br>
+          <span class="maroon">data.</span><span class="blue">getAttributeNode</span><span class="black">(<span class="olive">'src'</span>)<span class="maroon">.value</span> =</span>
+          <span class="olive">"../images/scolopendra.jpg"</span><span class="black">;</span>
+        </p>
+      <span class="black">}</span>
+    </div>
+  </div>
+  <p style="clear: left;"></p>
+  <div><hr class="dom-hr-length-90perc" /></div>
+</body>
+</html>

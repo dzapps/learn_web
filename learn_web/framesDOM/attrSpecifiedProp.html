@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Attr name</title>
+<title>Attr specified</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/dom.png" type="image/png" />
@@ -21,7 +21,7 @@
     <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
-  <div><h1 class="domTitle">attr.name</h1></div>
+  <div><h1 class="domTitle">attr.specified</h1></div>
   <p><a href="../pagesDOM/domAttributes.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
   <div class="note descriptionDOM">
     Description:<br />
@@ -32,23 +32,26 @@
       An HTML attribute always belongs to an HTML element.
     </div>
     <div class="note-value">
-      The name property returns the name of the attribute.
+      The specified property returns true if the attribute is specified.
     </div>
     <div class="note-value">
-      This property is read-only.
+      Returns true also if the attribute has been created but not been attached to an element yet.
+      Otherwise return false.
     </div>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
 
   <div><h2 class="tag domTitle">Examples</h2></div>
-  <div id="attrNameExamplesBar" class="left-padding">
-    <a href="#attrNameExamplesBar">
-      <button onclick="returnAttrName()" class="dom-buttons-prop">Try fetch</button>
+  <div id="attrValueExamplesBar" class="left-padding">
+    <a href="#attrValueExamplesBar">
+      <button onclick="returnAttrSpecified()" class="dom-buttons-prop">Try fetch</button>
     </a>
   </div>
 
   <div class="exampleDOMDiv ">
-    <div id="attrNameDiv"></div>
+    <div>
+      <p id="attrSpecifiedP"></p>
+    </div>
   </div>
 
   <div class="codeDOM">
@@ -72,10 +75,10 @@
             <p class="more-padding" style="margin: 0;">
               let <span class="black">btn =</span>
               <span class="maroon">document.</span><span class="blue">getElementsByTagName</span><span class="black">(<span class="olive">'button'</span>)[butNum];</span><br>
-              let <span class="black">name =</span>
-              <span class="maroon">btn.attributes<span class="black">[attrNum]</span>.name</span><span class="black">;</span><br>
+              let <span class="black">value =</span>
+              <span class="maroon">btn.attributes<span class="black">[attrNum]</span>.specified</span><span class="black">;</span><br>
               <span class="maroon">document.</span><span class="blue">getElementById</span><span class="black">(<span class="olive">'example'</span>)</span><span class="maroon">.innerHTML</span>
-              <span class="black">= name;</span>
+              <span class="black">= value;</span>
             </p>
           <span class="black left-padding">}</span><br>
           <span class="black">}</span>
