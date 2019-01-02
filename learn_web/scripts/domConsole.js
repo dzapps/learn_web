@@ -8,6 +8,13 @@ function consoleCount() {
   }
 }
 
+function endTrace() {
+  startTrace();
+}
+
+function startTrace() {
+  console.trace();
+}
 
 
 function returnAttrName() {

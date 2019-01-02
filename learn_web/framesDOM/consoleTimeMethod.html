@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Console clear</title>
+<title>Console time</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/dom.png" type="image/png" />
@@ -21,32 +21,52 @@
     <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
-  <div><h1 class="domTitle">clear()</h1></div>
+  <div><h1 class="domTitle">time()</h1></div>
   <p><a href="../pagesDOM/domConsole.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
 
   <div class="note descriptionDOM">
     Description:<br />
     <div class="note-value">
-      The console.clear() method clears the console.
+      The console.time() method starts a timer in the console view.
     </div>
     <div class="note-value">
-      The console.clear() method will also write a message in the console: "Console was cleared".
+      This method allows you to time certain operations in your code for testing purposes.
+    </div>
+    <div class="note-value">
+      Use the label parameter to name the timer, then you are able to have many timers on the same page.
     </div>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
 
-  <div><h2 class="tag domTitle">Examples</h2></div>
-  <div id="consoleClearExamplesBar" class="left-padding">
-    <a href="#consoleClearExamplesBar">
-      <button onclick="consoleClear()" class="dom-buttons-prop">Try clear</button>
-    </a>
+  <div><h2 class="tag domTitle">Parameter Values</h2></div>
+  <div>
+    <table class="tableDOMAttr tableDOM">
+      <thead>
+        <tr>
+          <th>Parameter</th><th>Type</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>label</td>
+          <td>String</td>
+          <td>Optional. Use the label parameter to give the timer a name.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
 
+  <div><h2 class="tag domTitle">Examples</h2></div>
   <div class="exampleDOMDiv ">
-    <div>
+    <div style="text-align: center;">
       <p>Press F12 on your keyboard to view the message in the console view.</p>
       <script>
-        console.log('This message must be removed.');
+        console.time("test for loop");
+        for (i = 0; i < 100000; i++) {
+          // some code
+        }
+        console.timeEnd("test for loop");
       </script>
     </div>
   </div>
@@ -55,24 +75,23 @@
     <div class="blue float-borders-none half">
       &lt;<span class="brown">div</span>&gt;<br>
       <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">p</span><span class="black replace"></span>&gt;
+        &lt;<span class="brown">p</span><span class="black"></span>&gt;
         <span class="black">Press F12 on your keyboard to view the message in the console view.</span>
         &lt;<span class="brown">/p</span>&gt;
       </p>
       &lt;<span class="brown">/div</span>&gt;
     </div>
 
-    <div class="black float-borders-none half">
+    <div class="black float-borders-none">
       &lt;<span class="brown">script</span>&gt;<br>
+      <span class="orange left-padding">console.</span><span class="blue">time</span>(<span class="olive">"test for loop"</span>);<br>
         <p class="left-padding" style="margin: 0;">
-          <span class="orange">console.</span><span class="blue">log</span>(<span class="olive">'This message must be removed.'</span>);<br><br>
-          <span class="purple">function </span><span class="blue">consoleClear</span>() {<br>
-            <p class="more-padding" style="margin: 0;">
-              <span class="orange">console.</span><span class="blue">clear</span>();
-            </p>
-            <span class="black left-padding">}</span><br>
-          &lt;<span class="brown">/script</span>&gt;
+          <span class="purple">for </span>(i = <span class="olive">0</span>; i < <span class="olive">100000</span>; i++) {<br>
+            <span class="grey left-padding">// some code</span><br>
+          <span class="black">}</span><br>
         </p>
+      <span class="orange left-padding">console.</span><span class="blue">timeEnd</span>(<span class="olive">"test for loop"</span>);<br>
+      &lt;<span class="brown">script</span>&gt;<br>
     </div>
   </div>
   <p style="clear: left;"></p>

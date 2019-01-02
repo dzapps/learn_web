@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Console clear</title>
+<title>Console group end</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/dom.png" type="image/png" />
@@ -21,32 +21,28 @@
     <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
-  <div><h1 class="domTitle">clear()</h1></div>
+  <div><h1 class="domTitle">groupEnd()</h1></div>
   <p><a href="../pagesDOM/domConsole.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
 
   <div class="note descriptionDOM">
     Description:<br />
     <div class="note-value">
-      The console.clear() method clears the console.
-    </div>
-    <div class="note-value">
-      The console.clear() method will also write a message in the console: "Console was cleared".
+      The console.groupEnd() method indicates the end of a message group.
     </div>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
 
   <div><h2 class="tag domTitle">Examples</h2></div>
-  <div id="consoleClearExamplesBar" class="left-padding">
-    <a href="#consoleClearExamplesBar">
-      <button onclick="consoleClear()" class="dom-buttons-prop">Try clear</button>
-    </a>
-  </div>
-
   <div class="exampleDOMDiv ">
     <div>
       <p>Press F12 on your keyboard to view the message in the console view.</p>
       <script>
-        console.log('This message must be removed.');
+        console.log("Here I'm!");
+        console.groupCollapsed("myLabel");
+        console.log("Hello again, this time inside a group, with a label!");
+        console.log("Here I'm again!");
+        console.groupEnd();
+        console.log("This message is outside the group.");
       </script>
     </div>
   </div>
@@ -56,7 +52,7 @@
       &lt;<span class="brown">div</span>&gt;<br>
       <p class="left-padding" style="margin: 0;">
         &lt;<span class="brown">p</span><span class="black replace"></span>&gt;
-        <span class="black">Press F12 on your keyboard to view the message in the console view.</span>
+        <span class="black">Press F12 on your keyboard to view the error in the console view.</span>
         &lt;<span class="brown">/p</span>&gt;
       </p>
       &lt;<span class="brown">/div</span>&gt;
@@ -65,14 +61,14 @@
     <div class="black float-borders-none half">
       &lt;<span class="brown">script</span>&gt;<br>
         <p class="left-padding" style="margin: 0;">
-          <span class="orange">console.</span><span class="blue">log</span>(<span class="olive">'This message must be removed.'</span>);<br><br>
-          <span class="purple">function </span><span class="blue">consoleClear</span>() {<br>
-            <p class="more-padding" style="margin: 0;">
-              <span class="orange">console.</span><span class="blue">clear</span>();
-            </p>
-            <span class="black left-padding">}</span><br>
-          &lt;<span class="brown">/script</span>&gt;
+          <span class="orange">console.</span><span class="blue">log</span>(<span class="olive">"Here I'm!"</span>);<br>
+          <span class="orange">console.</span><span class="blue">groupCollapsed</span>(<span class="olive">"myLabel"</span>);<br>
+          <span class="orange">console.</span><span class="blue">log</span>(<span class="olive">"Hello again, this time inside a group, with a label!"</span>);<br>
+          <span class="orange">console.</span><span class="blue">log</span>(<span class="olive">"Here I'm again!"</span>);<br>
+          <span class="orange">console.</span><span class="blue">groupEnd</span>();<br>
+          <span class="orange">console.</span><span class="blue">log</span>(<span class="olive">"This message is outside the group."</span>);<br>
         </p>
+      &lt;<span class="brown">/script</span>&gt;
     </div>
   </div>
   <p style="clear: left;"></p>
