@@ -73,24 +73,8 @@
       &lt;<span class="brown">/div</span>&gt;
     </div>
 
-    <script>
-    function removeNamedItem() {
-      let butNum = prompt('Input button number:');
-      let itemName = prompt('Input item name:');
-
-      if (isNaN(butNum)) {
-        alert('Please enter numbers!');
-      } else {
-        let btn = document.getElementsByTagName("button")[butNum];
-        btn.attributes.removeNamedItem(itemName);
-        document.getElementById("nodemapRemoveNamedItemP").innerHTML = itemName + ' removed';
-        document.getElementsByClassName("replace")[0].innerHTML = itemName + ' removed';
-      }
-    }
-    </script>
-
     <div class="purple float-borders-none">
-      function <span class="blue">fetchAttrName</span><span class="black">() {</span><br>
+      function <span class="blue">removeNamedItem</span><span class="black">() {</span><br>
         <p class="left-padding" style="margin: 0;">
           let <span class="black">butNum =</span>
           <span class="blue">prompt</span><span class="black">(<span class="olive">'Input button number:'</span>);</span><br>

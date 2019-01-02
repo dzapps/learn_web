@@ -1,3 +1,15 @@
+function consoleClear() {
+  console.clear();
+}
+
+function consoleCount() {
+  for (i = 0; i < 10; i++) {
+    console.count();
+  }
+}
+
+
+
 function returnAttrName() {
   let butNum = prompt('Input button number:');
   let attrNum = prompt('Input attr number:');
