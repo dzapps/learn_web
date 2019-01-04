@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Console trace</title>
+<title>History go</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/dom.png" type="image/png" />
@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="../styles/dom_style.css" />
 <link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
 
-<script src="../scripts/domConsole.js"></script>
+<script src="../scripts/domHistory.js"></script>
 
 <body>
   <div style="background: black; display: inline-block; width: auto; margin-bottom: 1em;">
@@ -21,54 +21,56 @@
     <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
-  <div><h1 class="domTitle">trace()</h1></div>
-  <p><a href="../pagesDOM/domConsole.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
+  <div><h1 class="domTitle">go()</h1></div>
+  <p><a href="../pagesDOM/domHistory.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
 
   <div class="note descriptionDOM">
     Description:<br />
     <div class="note-value">
-      The console.trace() method displays a trace that show how the code ended up at a certain point.
+      The go() method loads a specific URL from the history list.
     </div>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
 
   <div><h2 class="tag domTitle">Examples</h2></div>
-  <div id="consoleTraceExamplesBar" class="left-padding">
-    <a href="#consoleTraceExamplesBar">
-      <button onclick="endTrace()" class="dom-buttons-prop">Show trace</button>
+  <div id="historyGoExamplesBar" class="left-padding">
+    <a href="#historyGoExamplesBar">
+      <button onclick="historyGo(-2)" class="dom-buttons-prop">Go back 2 pages</button>
+    </a>
+    <a href="#historyGoExamplesBar">
+      <button onclick="historyGo(-3)" class="dom-buttons-prop">Go back 3 pages</button>
+    </a>
+    <a href="#historyGoExamplesBar">
+      <button onclick="historyGo(2)" class="dom-buttons-prop">Go forward 2 pages</button>
+    </a>
+    <a href="#historyGoExamplesBar">
+      <button onclick="historyGo(3)" class="dom-buttons-prop">Go forward 3 pages</button>
     </a>
   </div>
 
-  <div class="exampleDOMDiv">
+  <div class="exampleDOMDiv ">
     <div>
-      <p>Press F12 on your keyboard, and then click the "Show trace" button to view the result.</p>
+      <p id="historyGoP"></p>
     </div>
   </div>
 
   <div class="codeDOM">
-    <div class="blue float-borders-none third">
+    <div class="blue float-borders-none">
       &lt;<span class="brown">div</span>&gt;<br>
       <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">p</span><span class="black"></span>&gt;
-        <span class="black">Press F12 on your keyboard, and then click the "Show trace" button to view the result.</span>
+        &lt;<span class="brown">p</span>&gt;
+        <span class="black"></span>
         &lt;<span class="brown">/p</span>&gt;
       </p>
       &lt;<span class="brown">/div</span>&gt;
     </div>
 
     <div class="black float-borders-none">
-      <span class="purple">function </span><span class="blue">endTrace</span>() {<br>
+      <span class="purple">function </span><span class="blue">historyGo</span>() {<br>
         <p class="left-padding" style="margin: 0;">
-          <span class="purple">function </span><span class="blue">startTrace</span>() {<br>
-          <span class="black">}</span><br>
+          <span class="maroon">window.document.</span><span class="blue">go</span>(<span class="replace"></span>);
         </p>
-      <span class="black">}</span><br><br>
-
-      <span class="purple">function </span><span class="blue">startTrace</span>() {<br>
-        <p class="left-padding" style="margin: 0;">
-          <span class="orange left-padding">console.</span><span class="blue">trace</span>();
-        </p>
-      <span class="black">}</span><br>
+      <span class="black">}</span>
     </div>
   </div>
   <p style="clear: left;"></p>

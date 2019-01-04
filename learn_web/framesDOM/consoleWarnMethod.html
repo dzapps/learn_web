@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Console trace</title>
+<title>Console warn</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/dom.png" type="image/png" />
@@ -21,54 +21,61 @@
     <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
-  <div><h1 class="domTitle">trace()</h1></div>
+  <div><h1 class="domTitle">warn()</h1></div>
   <p><a href="../pagesDOM/domConsole.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
 
   <div class="note descriptionDOM">
     Description:<br />
     <div class="note-value">
-      The console.trace() method displays a trace that show how the code ended up at a certain point.
+      The console.warn() method writes a warning to the console.
     </div>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
 
-  <div><h2 class="tag domTitle">Examples</h2></div>
-  <div id="consoleTraceExamplesBar" class="left-padding">
-    <a href="#consoleTraceExamplesBar">
-      <button onclick="endTrace()" class="dom-buttons-prop">Show trace</button>
-    </a>
+  <div><h2 class="tag domTitle">Parameter Values</h2></div>
+  <div>
+    <table class="tableDOMAttr tableDOM">
+      <thead>
+        <tr>
+          <th>Parameter</th><th>Type</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>message</td>
+          <td>String or Object</td>
+          <td>Required. The message or object to write as a waring.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
 
-  <div class="exampleDOMDiv">
+  <div><h2 class="tag domTitle">Examples</h2></div>
+  <div class="exampleDOMDiv ">
     <div>
-      <p>Press F12 on your keyboard, and then click the "Show trace" button to view the result.</p>
+      <p>Press F12 on your keyboard to view a warning in the console view.</p>
+      <script>
+        console.warn("This is a warning!");
+      </script>
     </div>
   </div>
 
   <div class="codeDOM">
-    <div class="blue float-borders-none third">
+    <div class="blue float-borders-none half">
       &lt;<span class="brown">div</span>&gt;<br>
       <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">p</span><span class="black"></span>&gt;
-        <span class="black">Press F12 on your keyboard, and then click the "Show trace" button to view the result.</span>
+        &lt;<span class="brown">p</span><span class="black replace"></span>&gt;
+        <span class="black">Press F12 on your keyboard to view a warning in the console view.</span>
         &lt;<span class="brown">/p</span>&gt;
       </p>
       &lt;<span class="brown">/div</span>&gt;
     </div>
 
-    <div class="black float-borders-none">
-      <span class="purple">function </span><span class="blue">endTrace</span>() {<br>
-        <p class="left-padding" style="margin: 0;">
-          <span class="purple">function </span><span class="blue">startTrace</span>() {<br>
-          <span class="black">}</span><br>
-        </p>
-      <span class="black">}</span><br><br>
-
-      <span class="purple">function </span><span class="blue">startTrace</span>() {<br>
-        <p class="left-padding" style="margin: 0;">
-          <span class="orange left-padding">console.</span><span class="blue">trace</span>();
-        </p>
-      <span class="black">}</span><br>
+    <div class="black float-borders-none half">
+      &lt;<span class="brown">script</span>&gt;<br>
+        <span class="orange left-padding">console.</span><span class="blue">warn</span>(<span class="olive">"This is a warning!"</span>);<br>
+      &lt;<span class="brown">/script</span>&gt;
     </div>
   </div>
   <p style="clear: left;"></p>

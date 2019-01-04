@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<title>Location href</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/dom.png" type="image/png" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/dom_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/domLocation.js"></script>
+
+<body>
+  <div id="top" style="background: black; display: inline-block; width: auto; margin-bottom: 1em;">
+    <a href="../pages/main_window_dom.html"><button class="dom-buttons" type="button" style="padding: 10px 20px;">DOM</button></a>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+  <div><h1 class="domTitle">href()</h1></div>
+  <p><a href="../pagesDOM/domLocation.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
+
+  <div class="note descriptionDOM">
+    Description:<br />
+    <div class="note-value">
+     The href property sets or returns the entire URL of the current page.
+    </div>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
+  <div><h2 class="tag domTitle">Property Values</h2></div>
+  <div>
+    <table class="tableDOMAttr tableDOM">
+      <thead>
+        <tr>
+          <th>Value</th><th>Type</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>URL</td>
+          <td>String</td>
+          <td>
+            Specifies the URL of the link.<br>
+            Possible values:
+            <ul>
+              <li>An absolute URL - points to another web site (like location.href="http://www.example.com/default.htm")</li>
+              <li>A relative URL - points to a file within a web site (like location.href="default.htm")</li>
+              <li>An anchor URL - points to an anchor within a page (like location.href="#top")</li>
+              <li>
+                A new protocol - specifies a different protocol (like location.href="ftp://someftpserver.com",<br>
+                location.href="mailto:someone@example.com" or location.href="file://host/path/example.txt")
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
+  <div><h2 class="tag domTitle">Examples</h2></div>
+  <div id="locationHrefExamplesBar" class="left-padding">
+    <a href="#locationHrefExamplesBar">
+      <button onclick="showLocationHref()" class="dom-buttons-prop">Show local href</button>
+    </a>
+    <a href="#locationHrefExamplesBar">
+      <button onclick="goToExternalHref()" class="dom-buttons-prop">Go to external href</button>
+    </a>
+    <a>
+      <button onclick="goToAnAnchorHref()" class="dom-buttons-prop">Anchor</button>
+    </a>
+  </div>
+
+  <div class="exampleDOMDiv ">
+    <div>
+      <p id="locationHrefP"></p>
+    </div>
+  </div>
+
+  <div class="codeDOM">
+    <div class="blue float-borders-none half">
+      &lt;<span class="brown">div</span>&gt;<br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">p</span>
+        <span class="purple">id=</span><span class="olive">"example"</span>&gt;
+        <span class="black replace"></span>
+        &lt;<span class="brown">/p</span>&gt;
+      </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+<script>
+
+</script>
+    <div id="locationHref" class="black float-borders-none">
+      <span class="purple">function </span><span class="blue">showLocationHref</span>() {<br>
+        <p class="left-padding" style="margin: 0;">
+          <span class="purple">let </span>href = <span class="maroon">location.href</span>;<br>
+          <span class="maroon">document.</span><span class="blue">getElementById</span><span class="black">(<span class="olive">"example"</span>)</span><span class="maroon">.innerHTML</span>
+          <span class="black">= href;</span>
+        </p>
+      <span class="black">}</span>
+    </div>
+
+    <div id="anchorHref" class="black float-borders-none" style="display: none;">
+      <span class="purple">function </span><span class="blue">goToAnAnchorHref</span>() {<br>
+        <p class="left-padding" style="margin: 0;">
+          <span class="maroon">location.href</span> = <span class="olive">"#top"</span>;<br>
+          <span class="purple">let </span>href =
+          <span class="maroon">location.href</span>;<br>
+          <span class="maroon">document.</span><span class="blue">getElementById</span><span class="black">(<span class="olive">"example"</span>)</span><span class="maroon">.innerHTML</span>
+          <span class="black">= href;</span>
+        </p>
+      <span class="black">}</span>
+    </div>
+  </div>
+  <p style="clear: left;"></p>
+  <div><hr class="dom-hr-length-90perc" /></div>
+</body>
+</html>

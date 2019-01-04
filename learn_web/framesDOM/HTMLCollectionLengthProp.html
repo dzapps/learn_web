@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<title>HTMLCollection length</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/dom.png" type="image/png" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/dom_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/domHTMLCollection.js"></script>
+
+<body>
+  <div style="background: black; display: inline-block; width: auto; margin-bottom: 1em;">
+    <a href="../pages/main_window_dom.html"><button class="dom-buttons" type="button" style="padding: 10px 20px;">DOM</button></a>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+  <div><h1 class="domTitle">length</h1></div>
+  <p><a href="../pagesDOM/domHTMLCollection.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
+
+  <div class="note descriptionDOM">
+    Description:<br />
+    <div class="note-value">
+      The length property returns the number of elements in a HTMLCollection.
+    </div>
+    <div class="note-value">
+      This element is useful when you want to loop through a HTMLCollection.
+    </div>
+    <div class="note-value">
+      This property is read-only.
+    </div>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
+  <div><h2 class="tag domTitle">Examples</h2></div>
+  <div id="HTMLCollectionLengthExamplesBar" class="left-padding">
+    <a href="#HTMLCollectionLengthExamplesBar">
+      <button onclick="showHTMLCollectionLength()" class="dom-buttons-prop">Show HTMLCollection length</button>
+    </a>
+  </div>
+
+  <div class="exampleDOMDiv ">
+    <div>
+      <p id="HTMLCollectionLengthP"></p>
+    </div>
+  </div>
+
+  <div class="codeDOM">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">p</span>
+        <span class="purple">id=</span><span class="olive">"example"</span>&gt;
+        <span class="black replace"></span>
+        &lt;<span class="brown">/p</span>&gt;
+      </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+<script>
+function showHTMLCollectionLength() {
+  let but, i, arr;
+  arr = [];
+  but = document.getElementsByTagName("button");
+  for (i = 0; i < but.length; i++) {
+    arr.push(but[i].attributes[0].name);
+  }
+  document.getElementById("HTMLCollectionLengthP").innerHTML = arr;
+  document.getElementsByClassName("replace")[0].innerHTML = arr;
+}
+</script>
+    <div class="black float-borders-none">
+      <span class="purple">function</span> <span class="blue">showHTMLCollectionLength</span>() {<br>
+        <p class="left-padding" style="margin: 0;">
+          <span class="purple">let </span>but, i, arr;<br>
+          arr = [];<br>
+          but = <span class="maroon">document.</span><span class="blue">getElementsByTagName</span>(<span class="olive">"button"</span>);<br>
+
+          <span class="purple">for </span>(i = 0; i < <span class="maroon">but.length</span>; i++)<br>
+          <span class="maroon left-padding">arr.</span><span class="blue">push</span>(but[i].<span class="maroon">attributes</span>[<span class="olive">0</span>].<span class="maroon">name</span>);<br>
+          <span class="black">}</span><br>
+        </p>
+        <span class="maroon left-padding">document.</span><span class="blue">getElementById</span><span class="black">(<span class="olive">"example"</span>)</span><span class="maroon">.innerHTML</span>
+        <span class="black">= arr;</span><br>
+      <span class="black">}</span>
+    </div>
+  </div>
+  <p style="clear: left;"></p>
+  <div><hr class="dom-hr-length-90perc" /></div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<title>HTMLCollection item method</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/dom.png" type="image/png" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/dom_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/domHTMLCollection.js"></script>
+
+<body>
+  <div style="background: black; display: inline-block; width: auto; margin-bottom: 1em;">
+    <a href="../pages/main_window_dom.html"><button class="dom-buttons" type="button" style="padding: 10px 20px;">DOM</button></a>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+  <div><h1 class="domTitle">item()</h1></div>
+  <p><a href="../pagesDOM/domHTMLCollection.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
+
+  <div class="note descriptionDOM">
+    Description:<br />
+    <div class="note-value">
+      The item() method returns the element at the specified index in an HTMLCollection.
+    </div>
+    <div class="note-value">
+      The Elements are sorted as they appear in the source code, and the index starts at 0.
+    </div>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
+  <div><h2 class="tag domTitle">Parameter Values</h2></div>
+  <div>
+    <table class="tableDOMAttr tableDOM">
+      <thead>
+        <tr>
+          <th>Parameter</th><th>Type</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>index</td>
+          <td>Number</td>
+          <td>Required. The index of the element you want to return.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
+  <div><h2 class="tag domTitle">Examples</h2></div>
+  <div id="HTMLCollectionItemExamplesBar" class="left-padding">
+    <a href="#HTMLCollectionItemExamplesBar">
+      <button onclick="showHTMLCollectionItem()" class="dom-buttons-prop">Show item</button>
+    </a>
+    <a href="#HTMLCollectionItemExamplesBar">
+      <button onclick="showHTMLCollectionItemShortMethod()" class="dom-buttons-prop">Shorthand method</button>
+    </a>
+  </div>
+
+  <div class="exampleDOMDiv ">
+    <div style="text-align: center;">
+      <p>Hint: max buttons = 6.</p>
+      <p id="HTMLCollectionItemP"></p>
+    </div>
+  </div>
+
+  <div class="codeDOM">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">p</span>
+        <span class="purple">id=</span><span class="olive">"example"</span>&gt;
+        <span class="black replace"></span>
+        &lt;<span class="brown">/p</span>&gt;
+      </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div id="collectionItem" class="black float-borders-none">
+      <span class="purple">function</span><span class="blue">showHTMLCollectionItem</span>() {<br>
+        <p class="left-padding" style="margin: 0;">
+          <span class="purple">let </span>butNum = <span class="blue">prompt</span>(<span class="olive">"Input button number:"</span>);<br><br>
+          <span class="purple">let </span>but =
+          <span class="maroon">document.</span><span class="blue">getElementsByTagName</span>(<span class="olive">"button"</span>).<span class="blue">item</span>(butNum).<span class="maroon">innerHTML</span>;<br>
+          <span class="maroon">document.</span><span class="blue">getElementById</span><span class="black">(<span class="olive">'example'</span>)</span><span class="maroon">.innerHTML</span>
+          <span class="black">= but;</span>
+        </p>
+      <span class="black">}</span>
+    </div>
+
+    <div id="collectionItemShort" class="black float-borders-none" style="display: none;">
+      <span class="purple">function</span><span class="blue">showHTMLCollectionItem</span>() {<br>
+        <p class="left-padding" style="margin: 0;">
+          <span class="purple">let </span>butNum = <span class="blue">prompt</span>(<span class="olive">"Input button number:"</span>);<br><br>
+          <span class="purple">let </span>but =
+          <span class="maroon">document.</span><span class="blue">getElementsByTagName</span>(<span class="olive">"button"</span>)[<span class="olive">butNum</span>].<span class="maroon">innerHTML</span>;<br>
+          <span class="maroon">document.</span><span class="blue">getElementById</span><span class="black">(<span class="olive">'example'</span>)</span><span class="maroon">.innerHTML</span>
+          <span class="black">= but;</span>
+        </p>
+      <span class="black">}</span>
+    </div>
+  </div>
+  <p style="clear: left;"></p>
+  <div><hr class="dom-hr-length-90perc" /></div>
+</body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>Console trace</title>
+<title>Location assign</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../images/dom.png" type="image/png" />
@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="../styles/dom_style.css" />
 <link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
 
-<script src="../scripts/domConsole.js"></script>
+<script src="../scripts/domLocation.js"></script>
 
 <body>
   <div style="background: black; display: inline-block; width: auto; margin-bottom: 1em;">
@@ -21,27 +21,51 @@
     <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
-  <div><h1 class="domTitle">trace()</h1></div>
-  <p><a href="../pagesDOM/domConsole.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
+  <div><h1 class="domTitle">assign()</h1></div>
+  <p><a href="../pagesDOM/domLocation.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
 
   <div class="note descriptionDOM">
     Description:<br />
     <div class="note-value">
-      The console.trace() method displays a trace that show how the code ended up at a certain point.
+      The assign() method loads a new document.
+    </div>
+    <div class="note-value">
+      The difference between this method and replace(),
+      is that replace() removes the URL of the current document from the document history,
+      meaning that it is not possible to use the "back" button to navigate back to the original document.
     </div>
   </div>
   <div><hr class="dom-hr-length-90perc" /></div>
 
+  <div><h2 class="tag domTitle">Property Values</h2></div>
+  <div>
+    <table class="tableDOMAttr tableDOM">
+      <thead>
+        <tr>
+          <th>Value</th><th>Type</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>URL</td>
+          <td>String</td>
+          <td>Required. Specifies the URL of the page to navigate to.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
   <div><h2 class="tag domTitle">Examples</h2></div>
-  <div id="consoleTraceExamplesBar" class="left-padding">
-    <a href="#consoleTraceExamplesBar">
-      <button onclick="endTrace()" class="dom-buttons-prop">Show trace</button>
+  <div id="locationAssignExamplesBar" class="left-padding">
+    <a href="#locationAssignExamplesBar">
+      <button onclick="locationAssign()" class="dom-buttons-prop">New location</button>
     </a>
   </div>
 
-  <div class="exampleDOMDiv">
+  <div class="exampleDOMDiv ">
     <div>
-      <p>Press F12 on your keyboard, and then click the "Show trace" button to view the result.</p>
+      <p id="locationAssignP"></p>
     </div>
   </div>
 
@@ -49,26 +73,20 @@
     <div class="blue float-borders-none third">
       &lt;<span class="brown">div</span>&gt;<br>
       <p class="left-padding" style="margin: 0;">
-        &lt;<span class="brown">p</span><span class="black"></span>&gt;
-        <span class="black">Press F12 on your keyboard, and then click the "Show trace" button to view the result.</span>
+        &lt;<span class="brown">p</span>
+        <span class="purple">id=</span><span class="olive">"example"</span>&gt;
+        <span class="black replace"></span>
         &lt;<span class="brown">/p</span>&gt;
       </p>
       &lt;<span class="brown">/div</span>&gt;
     </div>
 
     <div class="black float-borders-none">
-      <span class="purple">function </span><span class="blue">endTrace</span>() {<br>
+      <span class="purple">function </span><span class="blue">showLocationAssign</span>() {<br>
         <p class="left-padding" style="margin: 0;">
-          <span class="purple">function </span><span class="blue">startTrace</span>() {<br>
-          <span class="black">}</span><br>
+          <span class="maroon">location.</span><span class="blue">assign</span>(<span class="olive">"https://www.w3schools.com"</span>);<br>
         </p>
-      <span class="black">}</span><br><br>
-
-      <span class="purple">function </span><span class="blue">startTrace</span>() {<br>
-        <p class="left-padding" style="margin: 0;">
-          <span class="orange left-padding">console.</span><span class="blue">trace</span>();
-        </p>
-      <span class="black">}</span><br>
+      <span class="black">}</span>
     </div>
   </div>
   <p style="clear: left;"></p>
