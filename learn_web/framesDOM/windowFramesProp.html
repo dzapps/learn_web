@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<title>Window frames</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/dom.png" type="image/png" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/dom_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/domWindow.js"></script>
+
+<body>
+  <div style="background: black; display: inline-block; width: auto; margin-bottom: 1em;">
+    <a href="../pages/main_window_dom.html"><button class="dom-buttons" type="button" style="padding: 10px 20px;">DOM</button></a>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+  <div><h1 class="domTitle">frames</h1></div>
+  <p><a href="../pagesDOM/domWindow.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
+
+  <div class="note descriptionDOM">
+    Description:<br />
+    <div class="note-value">
+      The frames property returns an array-like object, which represents all &lt;iframe&gt; elements in the current window.
+    </div>
+    <div class="note-value">
+      The &lt;iframe&gt; elements can be accessed by index numbers. The index starts at 0.
+    </div>
+    <div class="note-value">
+      This property is read-only.
+    </div>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
+  <div><h2 class="tag domTitle">Examples</h2></div>
+  <div id="windowFrameElementExamplesBar" class="left-padding">
+    <a href="#windowFrameElementExamplesBar">
+      <button onclick="replaceFrameData()" class="dom-buttons-prop">Replace frame data</button>
+    </a>
+  </div>
+
+  <div class="exampleDOMDiv">
+    <div>
+      <iframe src="../framesHTML/frames.html" width="400"></iframe>
+      <iframe src="../framesHTML/frames.html" width="400"></iframe>
+    </div>
+  </div>
+
+  <div class="codeDOM">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">iframe</span>
+        <span class="crimson">src=</span><span class="olive replace">"../framesHTML/frames.html"</span>
+        <span class="crimson">width=</span><span class="olive">"400"</span>&gt;
+        &lt;<span class="brown">/iframe</span>&gt;<br>
+        &lt;<span class="brown">iframe</span>
+        <span class="crimson">src=</span><span class="olive replace">"../framesHTML/frames.html"</span>
+        <span class="crimson">width=</span><span class="olive">"400"</span>&gt;
+        &lt;<span class="brown">/iframe</span>&gt;<br>
+      </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="black float-borders-none">
+      <span class="purple">function </span><span class="blue">replaceFrameData</span>() {<br>
+        <span class="maroon left-padding">window.frames</span>[<span class="orange">0</span>]<span class="maroon">.location</span>
+        = <span class="olive">"https://www.w3schools.com/jsref/"</span>;<br>
+      <span class="black">}</span><br>
+    </div>
+  </div>
+  <p style="clear: left;"></p>
+  <div><hr class="dom-hr-length-90perc" /></div>
+</body>
+</html>
