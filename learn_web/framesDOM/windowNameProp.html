@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<title>Window name</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/dom.png" type="image/png" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/dom_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/domWindow.js"></script>
+
+<body>
+  <div style="background: black; display: inline-block; width: auto; margin-bottom: 1em;">
+    <a href="../pages/main_window_dom.html"><button class="dom-buttons" type="button" style="padding: 10px 20px;">DOM</button></a>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+  <div><h1 class="domTitle">name</h1></div>
+  <p><a href="../pagesDOM/domWindow.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
+
+  <div class="note descriptionDOM">
+    Description:<br />
+    <div class="note-value">
+      The name property sets or returns the name of the window.
+    </div>
+    <div class="note-value">
+      This property is often used to modify the name of a window, after the window has been created.
+    </div>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
+  <div class="note noteDOM">
+    Notes:<br />
+    <div class="note-value">
+      The name of the window is often used for setting targets for hyperlinks and forms.
+      However, this is not required, as windows do not need to have names.
+    </div>
+    <div class="note-value">
+      If the name is not specified, this property returns "view".
+    </div>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
+  <div><h2 class="tag domTitle">Propertie Values</h2></div>
+  <div>
+    <table class="tableDOMAttr tableDOM">
+      <thead>
+        <tr>
+          <th>Propertie</th><th>Type</th><th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>name</td>
+          <td>String</td>
+          <td>Specifies the name of the window.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
+  <div><h2 class="tag domTitle">Examples</h2></div>
+  <div id="windowNameExamplesBar" class="left-padding">
+    <a href="#windowNameExamplesBar">
+      <button onclick="openWindow()" class="dom-buttons-prop">Open window</button>
+    </a>
+    <a href="#windowNameExamplesBar">
+      <button onclick="closeWindow()" class="dom-buttons-prop">Close window</button>
+    </a>
+    <a href="#windowNameExamplesBar">
+      <button onclick="showWindowName()" class="dom-buttons-prop">Show window name</button>
+    </a>
+  </div>
+
+  <div class="exampleDOMDiv">
+    <div>
+      <p id="windowNameP"></p>
+    </div>
+  </div>
+
+  <div class="codeDOM">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">p</span>
+        <span class="purple">id=</span><span class="olive">"example"</span>&gt;
+        <span class="black replace"></span>
+        &lt;<span class="brown">/p</span>&gt;
+      </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+
+    <div class="black float-borders-none">
+      <span class="purple">let </span>myWindow;<br><br>
+
+      <span class="purple">function </span><span class="blue">openWindow</span>() {<br>
+        <p class="left-padding" style="margin: 0;">
+          myWindow = <span class="maroon">window.</span><span class="blue">open</span>(<span class="olive">"", "myWindow", "width=400, height=150"</span>);
+        </p>
+      <span class="black">}</span><br><br>
+
+      <span class="purple">function </span><span class="blue">closeWindow</span>() {<br>
+        <p class="left-padding" style="margin: 0;">
+          <span class="purple">if </span>(myWindow) {<br>
+            <span class="maroon left-padding">myWindow.</span><span class="blue">close</span>();<br>
+          <span class="black">}</span><br>
+        </p>
+      <span class="black">}</span><br><br>
+
+      <span class="purple">function </span><span class="blue">showWindowName</span>() {<br>
+        <p class="left-padding" style="margin: 0;">
+          <span class="purple">let </span>winName = <span class="maroon">myWindow.name</span>;<br>
+          <span class="maroon">document.</span><span class="blue">getElementById</span><span class="black">(<span class="olive">'example'</span>)</span><span class="maroon">.innerHTML</span>
+          = <span class="olive">"Window name: "</span>+ winName;<br>
+        </p>
+      <span class="black">}</span><br><br>
+
+    </div>
+  </div>
+  <p style="clear: left;"></p>
+  <div><hr class="dom-hr-length-90perc" /></div>
+</body>
+</html>

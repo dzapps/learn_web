@@ -1,7 +1,7 @@
-var myWindow;
+let myWindow;
 
 function openWindow() {
-  myWindow = window.open("", "myWindow", "width=400, height=200");
+  myWindow = window.open("", "myWindow", "width=400, height=150");
 }
 
 function closeWindow() {
@@ -38,7 +38,58 @@ function replaceFrameData() {
 }
 
 function showInnerHeight() {
-  var h = window.innerHeight;
-  document.getElementById("windowInnerHeightP").innerHTML = "Inner height: " + h;
-  document.getElementsByClassName("replace")[0].innerHTML = "Inner height: " + h;
+  let h = window.innerHeight;
+  document.getElementById("windowInnerHeightP").innerHTML = "Inner height: " + h + "px";
+  document.getElementsByClassName("replace")[0].innerHTML = "Inner height: " + h + "px";
+}
+
+function showInnerWidth() {
+  let w = window.innerWidth;
+  document.getElementById("windowInnerWidthP").innerHTML = "Inner width: " + w + "px";
+  document.getElementsByClassName("replace")[0].innerHTML = "Inner width: " + w + "px";
+}
+
+function showWindowsLength() {
+  let len = window.length;
+  document.getElementById("windowLengthP").innerHTML = "Number of windows: " + len;
+  document.getElementsByClassName("replace")[0].innerHTML = "Number of windows: " + len;
+}
+
+function showWindowName() {
+  let winName = myWindow.name;
+  document.getElementById("windowNameP").innerHTML = "Window name: " + winName;
+  document.getElementsByClassName("replace")[0].innerHTML = "Window name: " + winName;
+}
+
+function workWindowOpener() {
+  let myWindow = window.open("", "myWindow", "width=200, height=150");
+  myWindow.document.write("This is 'myWindow'");
+  myWindow.opener.document.write("<p>This is the source window!</p>");
+}
+
+function showOuterHeight() {
+  let h = window.outerHeight;
+  document.getElementById("windowOuterHeightP").innerHTML = "Outer height: " + h + "px";
+  document.getElementsByClassName("replace")[0].innerHTML = "Outer height: " + h + "px";
+}
+
+function showOuterWidth() {
+  let w = window.outerWidth;
+  document.getElementById("windowOuterWidthP").innerHTML = "Outer width: " + w + "px";
+  document.getElementsByClassName("replace")[0].innerHTML = "Outer width: " + w + "px";
+}
+
+function showPageXOffset() {
+  document.getElementById("windowPageXOffsetP").innerHTML = "pageXOffset: " + window.pageXOffset;
+  document.getElementsByClassName("replace")[0].innerHTML = "pageXOffset: " + window.pageXOffset;
+}
+
+function showPageYOffset(height) {
+  document.getElementById("windowPageYOffsetP").innerHTML = "pageYOffset: " + window.pageYOffset;
+  document.getElementsByClassName("replace")[0].innerHTML = "pageYOffset: " + window.pageYOffset;
+}
+
+function showWindowParent() {
+  document.getElementById("windowParentP").innerHTML = "Show parent window: " + window.parent.location;
+  document.getElementsByClassName("replace")[0].innerHTML = "Show parent window: " + window.parent.location;
 }

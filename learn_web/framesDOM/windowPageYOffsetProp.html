@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<title>Window page y-offset</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../images/dom.png" type="image/png" />
+<link rel="stylesheet" href="../styles/button.css" />
+<link rel="stylesheet" href="../styles/reset.css" />
+<link rel="stylesheet" href="../styles/common.css" />
+<link rel="stylesheet" href="../styles/dom_style.css" />
+<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=ubuntu-mono" />
+
+<script src="../scripts/domWindow.js"></script>
+
+<body>
+  <div style="background: black; display: inline-block; width: auto; margin-bottom: 1em;">
+    <a href="../pages/main_window_dom.html"><button class="dom-buttons" type="button" style="padding: 10px 20px;">DOM</button></a>
+    <a href="../pages/main_window_html.html"><button class="home html-buttons" type="button">HTML</button></a>
+    <a href="../pages/main_window_css.html"><button class="css-buttons" type="button" style="padding: 10px 24px;">CSS</button></a>
+    <a href="../pages/main_window_js.html"><button class="js-buttons" type="button" style="padding: 10px 31px;">JS</button></a>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+  <div><h1 class="domTitle">pageYOffset</h1></div>
+  <p><a href="../pagesDOM/domWindow.html"><button class="dom-buttons-prop dom-close-but-pos">X</button></a></p>
+
+  <div class="note descriptionDOM">
+    Description:<br />
+    <div class="note-value">
+      The pageYOffset and pageYOffset properties returns the pixels the current document
+      has been scrolled from the upper left corner of the window, horizontally and vertically.
+    </div>
+    <div class="note-value">
+      The pageYOffset and pageYOffset properties are equal to the scrollX and scrollY properties.
+    </div>
+    <div class="note-value">
+      This property is read-only.
+    </div>
+  </div>
+  <div><hr class="dom-hr-length-90perc" /></div>
+
+  <div><h2 class="tag domTitle">Examples</h2></div>
+  <div id="windowPageYOffsetElementExamplesBar" class="left-padding">
+    <a href="#windowPageYOffsetElementExamplesBar">
+      <button onclick="showPageYOffset('100px')" class="dom-buttons-prop">Show page y-offset</button>
+    </a>
+  </div>
+
+  <div class="exampleDOMDiv">
+    <div style="height: 300px; text-align: center;">
+      <p>Scroll to different levels and click a button.</p>
+      <p id="windowPageYOffsetP"></p>
+    </div>
+  </div>
+
+  <div class="codeDOM">
+    <div class="blue float-borders-none">
+      &lt;<span class="brown">div</span>&gt;<br>
+      <p class="left-padding" style="margin: 0;">
+        &lt;<span class="brown">p</span>
+        <span class="purple">id=</span><span class="olive">"example"</span>&gt;
+        <span class="black replace"></span>
+        &lt;<span class="brown">/p</span>&gt;<br>
+      </p>
+      &lt;<span class="brown">/div</span>&gt;
+    </div>
+    <script>
+    document.getElementById("windowPageYOffsetP").innerHTML = "pageYOffset: " + window.pageYOffset;
+    document.getElementsByClassName("replace")[0].innerHTML = "pageYOffset: " + window.pageYOffset;
+    </script>
+
+    <div class="black float-borders-none">
+      <span class="purple">function </span><span class="blue">showPageYOffset</span>() {<br>
+        <p class="left-padding" style="margin: 0;">
+          <span class="maroon">document.</span><span class="blue">getElementById</span><span class="black">(<span class="olive">"example"</span>)</span><span class="maroon">.outerHTML</span>
+          = <span class="olive">"pageYOffset: "</span> + window.pageYOffset;<br>
+        </p>
+      <span class="black">}</span><br>
+    </div>
+  </div>
+  <p style="clear: left;"></p>
+  <div><hr class="dom-hr-length-90perc" /></div>
+</body>
+</html>
